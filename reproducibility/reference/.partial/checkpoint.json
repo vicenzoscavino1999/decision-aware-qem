@@ -1,0 +1,113 @@
+{
+  "blocks": {
+    "level1/budget_ledger": {
+      "duration_seconds": 0.123442,
+      "input_fingerprint": "sha256:4E0575B3029A7337575A92947190261E094F499AAF0738D180C954A30507FFA7",
+      "outputs": {
+        "frozen/budget_ledger.csv": "sha256:97853E5482654C0AD7CB7064BBF431A51D6F4AC10AE969C661407451E9445D71"
+      },
+      "status": "complete"
+    },
+    "level1/gate0_mini": {
+      "duration_seconds": 0.022823,
+      "input_fingerprint": "sha256:DD3402AA806039FB9A66D166F866BBEED889A0C6456ADAA770B273E0BE4837F8",
+      "outputs": {
+        "level1/gate0_mini.csv": "sha256:D3B93F4534F9217A0FCDC3891EC8C4303859016908D8F1354A7A7CA949742C02"
+      },
+      "status": "complete"
+    },
+    "level1/pullback_mini": {
+      "duration_seconds": 348.5468707000837,
+      "input_fingerprint": "sha256:6E7456183ECA86113BAC06F5C8441902440A7B05F882FE0DD8FBEBA03FA6068A",
+      "outputs": {
+        "pilot/pullback_frontier.csv": "sha256:008A32EC06EB341A051A9771B356CE1D3EE4EEAD11BBD856FFA0BE5A9A442D95"
+      },
+      "status": "complete"
+    },
+    "pilot/e0_executability": {
+      "duration_seconds": 30.475272,
+      "input_fingerprint": "sha256:816260DCAF81D7AEDE492E919F5378509C4349D8721D5E884309FDCBD6F8C872",
+      "outputs": {
+        "pilot/executability_budget_table.csv": "sha256:4FA85A76D83E8CDC759097E14A2057EEFFC402C2D3026E68A3C8E862D5F54DC4",
+        "pilot/executability_budget_table.md": "sha256:B43D21B2BB1CD7C91F7B37096E303636928B77D528CC7E52FACAA3C4D84BA949"
+      },
+      "status": "complete"
+    },
+    "pilot/gate0_analysis": {
+      "duration_seconds": 0.260879,
+      "input_fingerprint": "sha256:B0D711CA1AA60945C2F6168F06B90C14D80D4F91909D16649020ADE549882BA1",
+      "outputs": {
+        "pilot/gate0_example_sigma.csv": "sha256:761BD6157EAF2A1AB864780AAE1040883F4BA53F60442D08AEF8378165735718",
+        "pilot/gate0_full_vs_diagonal.csv": "sha256:D0092C31024EC1C82642CE601E4DFC2BE2250610308487F06197E4F050CAC9EE"
+      },
+      "status": "complete"
+    },
+    "pilot/gate0_analysis/full": {
+      "duration_seconds": 14.468619,
+      "input_fingerprint": "sha256:C698C46D37AD106109907323E51C139059F143FBE6FAF55342136473A859810A",
+      "outputs": {
+        "pilot/gate0_example_sigma.csv": "sha256:882509E83742A286C92498CBCA80C6765D5A552C2150B6A46A539D131B55BFDE",
+        "pilot/gate0_full_vs_diagonal.csv": "sha256:1228C2CA610F55CBE14C44BC325482B37B8F535B6E07CBDE135D8B3B3DBE4011"
+      },
+      "status": "complete"
+    },
+    "pilot/gate0_analysis/smoke": {
+      "duration_seconds": 1.086955,
+      "input_fingerprint": "sha256:74D124D899638C45DFE5A695DA9A7241CA5D2388E1208CEB1F07260BD3E858A3",
+      "outputs": {
+        "pilot/gate0_example_sigma.csv": "sha256:F763FC391296B754F78229F5A2727B73A59E6D488E782CA196640288CAFCE300",
+        "pilot/gate0_full_vs_diagonal.csv": "sha256:772C6B326A2270B61EBA98AA2469D6F5103C2F7BCC567B2D7B5AF07AB3850DE7"
+      },
+      "status": "complete"
+    },
+    "pilot/gate0_generate/P001": {
+      "duration_seconds": 142.355927,
+      "input_fingerprint": "sha256:602C45F3F1297A4D0178BBE6EEBC6E8BFF114687D31010FA04FAF81906DD392B",
+      "outputs": {
+        "pilot/raw/P001.npz": "sha256:35931A14DAD8F9F704D709152AAA92FFF27D0B7AE86F842FE870DBDEAAB69433"
+      },
+      "status": "complete"
+    },
+    "pilot/gate0_generate/full/P001": {
+      "duration_seconds": 1987.588815,
+      "input_fingerprint": "sha256:A612FD07E190B5CEBE3ADBF8BB105FA631715038E53734693F0EF1F972F0B9C4",
+      "outputs": {
+        "pilot/raw/P001.npz": "sha256:006782FBD2A70906380B12C367C1792210F3221A4CA270247A820BDE782E0F71"
+      },
+      "status": "complete"
+    },
+    "pilot/gate0_generate/full/P002": {
+      "duration_seconds": 1926.777986,
+      "input_fingerprint": "sha256:5496079C335470CDF66D567CFEB7D689A17665BEE15390EDF7A1064C64D80896",
+      "outputs": {
+        "pilot/raw/P002.npz": "sha256:C87955DDEA5A29ECCF2BE5BF2018E1EC2AAE1C9609AD5BF4BBC1D4672EBFEE49"
+      },
+      "status": "complete"
+    },
+    "pilot/gate0_generate/full/P003": {
+      "duration_seconds": 1864.308331,
+      "input_fingerprint": "sha256:16B97C9B9EFA420FD0922ECBD6C6182140F9629C29ED8D6119C70E940C6280BA",
+      "outputs": {
+        "pilot/raw/P003.npz": "sha256:C7CE1E3B1DD0902AF3369D073F293C3C818CECA6DFA767189D067D4577EFFB6C"
+      },
+      "status": "complete"
+    },
+    "pilot/gate0_generate/full/P004": {
+      "duration_seconds": 1887.355237,
+      "input_fingerprint": "sha256:8A0A0C8EB2A3ED5663D5D221671B0A22F412B78336BA1556C2260AC8F3CACF6C",
+      "outputs": {
+        "pilot/raw/P004.npz": "sha256:1B7EAC238ABE3E77BB87E598D59FAEC9A45FE93FD5EF8527FB5904E8E6C2FBB4"
+      },
+      "status": "complete"
+    },
+    "pilot/gate0_generate/smoke/P001": {
+      "duration_seconds": 18.202093,
+      "input_fingerprint": "sha256:1B7D200FFC79C074995D43F14422165246DF2C35CCAC16465BB084E32EC8A217",
+      "outputs": {
+        "pilot/raw/P001.npz": "sha256:BEFDA4A0284C60C512DC34BD0735833EB83A846D519210DB62AC07421DD77057"
+      },
+      "status": "complete"
+    }
+  },
+  "version": 1
+}

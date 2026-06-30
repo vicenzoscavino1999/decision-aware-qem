@@ -14,6 +14,10 @@ tmp/
 scratchpad
 *.partial
 *.tmp
+!reproducibility/reference/.partial/
+!reproducibility/reference/.partial/**
+!reproducibility/reference_level1/.partial/
+!reproducibility/reference_level1/.partial/**
 
 # Superseded local probes, not part of the public reproduction package.
 archived_level1_kernel_probe/
