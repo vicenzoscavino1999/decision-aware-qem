@@ -1,0 +1,55 @@
+exclude: |
+  (?x)^(
+    \.playwright-mcp/.*|
+    EXPERIMENTAL_PLAN_v13_PRXQ\.md|
+    PAP_HASH\.txt|
+    PLAN_EXTENSION_CDR_v1\.md|
+    archived_level1_kernel_probe/.*|
+    archived_level2_aer_probe/.*|
+    decision_residual_fields_theory_v17_polished\.(aux|log)|
+    decision_residual_fields_theory_v18\.(aux|log)|
+    experiments/(a3_pullback_frontier|confirmatory_instance_manifest|e1_static_da_selector|e2_dynamic_batch_candidate_optimizer|e3_bstar_prediction|gate0_pilot_full_vs_diagonal|pilot_power_report)\.py|
+    reproducibility/config/(a3_gaussianity|a3_pullback_frontier|budget_allocation|budget_grid|cdev_learning|claim_registry|confirmatory_design|decision_aware_qem|dynamic_task|gate0_pilot|gri_calibration|inference|pullback_prediction_spec|rng_policy|selectors|tolerances)\.yaml|
+    reproducibility/reference/.*|
+    reproducibility/reference_confirmatory/.*|
+    reproducibility/reference_extension/.*|
+    reproducibility/reference_level1/.*|
+    reproducibility/(run_all|verify)\.py|
+    results/.*|
+    results/frozen/.*|
+    scripts/(build_freeze_manifest|update_reference_manifest)\.py|
+    src/daqem/.*|
+    src/daqem\.egg-info/.*|
+    \.venv-aer/.*|
+    \.pytest_cache/.*|
+    __pycache__/.*|
+    figures/.*\.pdf
+  )$
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-yaml
+      - id: check-json
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.6
+    hooks:
+      - id: ruff
+        args: ["--select=E9,F63,F7,F82"]
+      - id: ruff-format
+        args: [--check]
+        exclude: |
+          (?x)^(
+            archived_level1_kernel_probe/.*|
+            archived_level2_aer_probe/.*|
+            experiments/.*|
+            reproducibility/.*|
+            scripts/.*|
+            tests/.*|
+            src/daqem/.*|
+            src/daqem\.egg-info/.*
+          )$

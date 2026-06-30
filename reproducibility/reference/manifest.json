@@ -1,0 +1,63 @@
+{
+  "block_input_fingerprints": {
+    "level1/budget_ledger": "sha256:4E0575B3029A7337575A92947190261E094F499AAF0738D180C954A30507FFA7",
+    "level1/gate0_mini": "sha256:DD3402AA806039FB9A66D166F866BBEED889A0C6456ADAA770B273E0BE4837F8",
+    "level1/pullback_mini": "sha256:6E7456183ECA86113BAC06F5C8441902440A7B05F882FE0DD8FBEBA03FA6068A",
+    "pilot/e0_executability": "sha256:816260DCAF81D7AEDE492E919F5378509C4349D8721D5E884309FDCBD6F8C872",
+    "pilot/gate0_analysis/full": "sha256:C698C46D37AD106109907323E51C139059F143FBE6FAF55342136473A859810A",
+    "pilot/gate0_generate/full/P001": "sha256:A612FD07E190B5CEBE3ADBF8BB105FA631715038E53734693F0EF1F972F0B9C4",
+    "pilot/gate0_generate/full/P002": "sha256:5496079C335470CDF66D567CFEB7D689A17665BEE15390EDF7A1064C64D80896",
+    "pilot/gate0_generate/full/P003": "sha256:16B97C9B9EFA420FD0922ECBD6C6182140F9629C29ED8D6119C70E940C6280BA",
+    "pilot/gate0_generate/full/P004": "sha256:8A0A0C8EB2A3ED5663D5D221671B0A22F412B78336BA1556C2260AC8F3CACF6C"
+  },
+  "block_status": {
+    "level1/budget_ledger": "complete",
+    "level1/gate0_mini": "complete",
+    "level1/pullback_mini": "complete",
+    "pilot/e0_executability": "complete",
+    "pilot/gate0_analysis/full": "complete",
+    "pilot/gate0_generate/full/P001": "complete",
+    "pilot/gate0_generate/full/P002": "complete",
+    "pilot/gate0_generate/full/P003": "complete",
+    "pilot/gate0_generate/full/P004": "complete"
+  },
+  "checkpoint_path": ".partial/checkpoint.json",
+  "checkpoint_preexisting": true,
+  "dependencies": {
+    "cvxpy": "1.9.1",
+    "numpy": "2.4.6",
+    "qiskit": "2.4.2",
+    "qiskit-aer": "0.17.2",
+    "scipy": "1.18.0"
+  },
+  "execution_mode": "resumed",
+  "git_commit_sha": null,
+  "git_dirty": null,
+  "incomplete_blocks": [],
+  "level": 1,
+  "log_path": "run.log",
+  "outputs": {
+    "frozen/budget_ledger.csv": "sha256:97853E5482654C0AD7CB7064BBF431A51D6F4AC10AE969C661407451E9445D71",
+    "level1/gate0_mini.csv": "sha256:D3B93F4534F9217A0FCDC3891EC8C4303859016908D8F1354A7A7CA949742C02",
+    "pilot/executability_budget_table.csv": "sha256:4FA85A76D83E8CDC759097E14A2057EEFFC402C2D3026E68A3C8E862D5F54DC4",
+    "pilot/executability_budget_table.md": "sha256:B43D21B2BB1CD7C91F7B37096E303636928B77D528CC7E52FACAA3C4D84BA949",
+    "pilot/gate0_example_sigma.csv": "sha256:882509E83742A286C92498CBCA80C6765D5A552C2150B6A46A539D131B55BFDE",
+    "pilot/gate0_full_vs_diagonal.csv": "sha256:1228C2CA610F55CBE14C44BC325482B37B8F535B6E07CBDE135D8B3B3DBE4011",
+    "pilot/pullback_frontier.csv": "sha256:008A32EC06EB341A051A9771B356CE1D3EE4EEAD11BBD856FFA0BE5A9A442D95",
+    "pilot/raw/P001.npz": "sha256:006782FBD2A70906380B12C367C1792210F3221A4CA270247A820BDE782E0F71",
+    "pilot/raw/P002.npz": "sha256:C87955DDEA5A29ECCF2BE5BF2018E1EC2AAE1C9609AD5BF4BBC1D4672EBFEE49",
+    "pilot/raw/P003.npz": "sha256:C7CE1E3B1DD0902AF3369D073F293C3C818CECA6DFA767189D067D4577EFFB6C",
+    "pilot/raw/P004.npz": "sha256:1B7EAC238ABE3E77BB87E598D59FAEC9A45FE93FD5EF8527FB5904E8E6C2FBB4"
+  },
+  "pap_hash": "sha256:84317E348002DC98CFFB18D8F340A382C0675846C6298852E7465C0097628101",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "profile": "full",
+  "python_version": "3.12.4",
+  "rng": {
+    "bit_generator": "PCG64DXSM",
+    "root_seed": 260616
+  },
+  "runtime_seconds": 7682.638375,
+  "stage": "pilot",
+  "timestamp_utc": "2026-06-21T08:57:49.318229Z"
+}

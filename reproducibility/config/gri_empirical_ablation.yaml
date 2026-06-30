@@ -1,0 +1,3 @@
+# Secondary ablation config, excluded from primary freeze manifest.
+# Filled when the GRI-vs-empirical selector ablation is run.
+{}

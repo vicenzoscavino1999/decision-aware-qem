@@ -1,0 +1,8 @@
+block,primary_unit,N_minimum,estimated_shots,wall_hours,backend_or_resource,risk,decision
+E1_static,paired_decisions,1500.0,921600000.0,5.530381875068997,sim/Aer,within sim ceiling,go
+E2_dynamic,trajectories,1200.0,2949120000.0,17.69722200022079,sim/Aer,within sim ceiling,go
+E3_pullback,Sigma_hat_replicates,200.0,4915200.0,0.029495370000367983,sim/Aer,within sim ceiling,go
+Sparse_PL_Cdev,characterization_circuits,200.0,819200.0,0.00983179000012266,sim/Aer,within sim ceiling,go
+Hardware_Sigma_microcell,schedulability_only,200.0,7372800.0,0.0,IBM_hardware,schedulability only; no hardware submitted,conditional
+Hardware_3budget_ordering,schedulability_only,25.0,307200.0,0.0,IBM_hardware,schedulability only; no hardware submitted,conditional
+Scaling_4_6_8,trend_only,3.0,138240.0,0.006636458250082797,sim/Aer,trend only small scaling probe,go

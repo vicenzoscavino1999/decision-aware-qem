@@ -1,0 +1,149 @@
+{
+  "budgets": [
+    {
+      "GRI_pec": 0.8801191087234853,
+      "GRI_raw": 0.12938732959281352,
+      "PEC_wins": false,
+      "budget": 256,
+      "delta_raw_minus_pec": -0.7507317791306718,
+      "relative_savings": -5.802204756008576,
+      "rho_gap_noise": -29.01102378004288
+    },
+    {
+      "GRI_pec": 0.8260833330169591,
+      "GRI_raw": 0.025300511046010943,
+      "PEC_wins": false,
+      "budget": 512,
+      "delta_raw_minus_pec": -0.8007828219709482,
+      "relative_savings": -31.65085560978047,
+      "rho_gap_noise": -158.25427804890234
+    },
+    {
+      "GRI_pec": 0.73709145674091,
+      "GRI_raw": 0.0014047836447002027,
+      "PEC_wins": false,
+      "budget": 1024,
+      "delta_raw_minus_pec": -0.7356866730962098,
+      "relative_savings": -523.7010523803572,
+      "rho_gap_noise": -2618.5052619017856
+    },
+    {
+      "GRI_pec": 0.5978711982951919,
+      "GRI_raw": 7.375289132194318e-06,
+      "PEC_wins": false,
+      "budget": 2048,
+      "delta_raw_minus_pec": -0.5978638230060597,
+      "relative_savings": -81063.10305806024,
+      "rho_gap_noise": -405315.5152903012
+    },
+    {
+      "GRI_pec": 0.40406289939936413,
+      "GRI_raw": 3.676896564996923e-10,
+      "PEC_wins": false,
+      "budget": 4096,
+      "delta_raw_minus_pec": -0.40406289903167447,
+      "relative_savings": -1098923757.8186064,
+      "rho_gap_noise": -5494618789.093032
+    },
+    {
+      "GRI_pec": 0.1933970033066259,
+      "GRI_raw": 0.0,
+      "PEC_wins": false,
+      "budget": 8192,
+      "delta_raw_minus_pec": -0.1933970033066259,
+      "relative_savings": null,
+      "rho_gap_noise": null
+    }
+  ],
+  "config_path": "reproducibility\\config\\het_pec_derisk.yaml",
+  "gamma_het": 9.431005627350325,
+  "gamma_squared_het": 88.94386714311351,
+  "graph_consistency": {
+    "channel_graph_equals_a3_graph": true,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "num_edges": 15,
+    "num_qubits": 10
+  },
+  "output_note": "No confirmatory effect sizes used; channel/Phi/rho_c read from locked config.",
+  "ranking_diagnostic": {
+    "ideal_argmin": 0,
+    "min_mu_ideal": 0.3759864843888252,
+    "min_mu_raw": 0.24428143450932538,
+    "ranking_flip": false,
+    "raw_het_argmin": 0
+  },
+  "rate_ranges": {
+    "p1_max": 0.015103560570849172,
+    "p1_min": 0.0046558307007546675,
+    "p2_max": 0.054669988956088454,
+    "p2_min": 0.01703065199403917
+  },
+  "rho_c": 1.0,
+  "scale_treatment": "A3 primitive moments keep the frozen three-scale layout. The same locked heterogeneous channel is supplied for all scale slots; the Raw gap map uses only lambda=1 coefficients [1,0,0].",
+  "sigma_diagnostics": {
+    "dimension": 24,
+    "mean_abs_offdiag_correlation": 0.46996514857210514,
+    "min_eigenvalue": 3.1989133259416214
+  }
+}

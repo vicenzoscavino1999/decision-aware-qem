@@ -1,0 +1,21 @@
+{
+  "title": "Decision Kernels for Finite-Shot Quantum Error Mitigation: A Quotient-Space Theory of Accuracy–Decision Separation",
+  "upload_type": "software",
+  "description": "Reproduction package for decision-aware finite-shot quantum error mitigation experiments. DOI: TBD. The title is a DRAFT from manuscript v18; REPRODUCIBILITY_PLAN_v13_PRXQ.md uses a different empirical title, so confirm the final title before DOI minting or submission.",
+  "creators": [
+    {
+      "name": "Scavino, Vicenzo",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+    "quantum error mitigation",
+    "finite-shot estimation",
+    "decision risk",
+    "QAOA",
+    "reproducibility"
+  ],
+  "notes": "DRAFT metadata. DOI: TBD. Code is MIT licensed; archived numerical outputs, figures, counts, and related data are CC-BY-4.0 under LICENSE-DATA."
+}

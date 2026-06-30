@@ -1,0 +1,24 @@
+# filled in F1c-A/pilot
+defaults:
+  a3_profile: full
+  tau_R: 0.05
+  bootstrap_replicates: 200
+  bootstrap_ci: 0.95
+  subsample_sizes: [50, 100, 200]
+  tail_thresholds: [2.0, 3.0]
+  skew_abs_flag: 1.0
+  excess_kurtosis_abs_flag: 2.0
+  tail_ratio_low_flag: 0.5
+  tail_ratio_high_flag: 2.0
+  hz_max_dim: 8
+  focus_cases:
+    - {instance_id: P003, budget: 256}
+
+profiles:
+  smoke:
+    instance_ids: [P001]
+
+  full:
+    instance_ids: [P001, P002, P003, P004]
+    focus_cases:
+      - {instance_id: P003, budget: 256}

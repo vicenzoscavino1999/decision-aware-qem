@@ -1,0 +1,64 @@
+# PAP §5.2 artefacto #14 | transcrito de EXPERIMENTAL_PLAN_v13_PRXQ.md §17.1-§17.2
+# y §5.4 | firewall: no recalcular
+freeze_status: pre_hash_consolidated
+artifact_ids: [14]
+
+sources:
+  multiplicity_plan: EXPERIMENTAL_PLAN_v13_PRXQ.md §17.1-§17.2
+  power_gate: EXPERIMENTAL_PLAN_v13_PRXQ.md §5.4
+  pilot_context_note: results/pilot/dynamic_pilot_full.md
+
+primary_family:
+  procedure: gatekeeping
+  alpha_primary: 0.05
+  claims:
+    - id: Claim 2
+      label: shots-to-success
+      endpoint: B_DA(0.80) < B_MSE(0.80)
+    - id: Claim 1
+      label: static failure
+      endpoint: R_dec_DA(B_star) < R_dec_MSE(B_star)
+    - id: Claim 3A
+      label: B_star prediction
+      endpoint: B_star_prediction_directional
+  gatekeeping_order:
+    - Claim 2
+    - Claim 1
+    - Claim 3A
+  contingency_rule_2647: "Si Claim 2 falla, Claim 1/3 se reportan como soporte, no headline."
+  no_reordering_note: >
+    The order is transcribed exactly from PAP §17.1 and is not reordered by
+    pilot outcomes.
+
+secondary_scans:
+  scanned_dimensions:
+    - budgets
+    - problems
+    - depths
+    - noise_families
+    - bands
+    - methods
+  procedure: Romano-Wolf_step-down_or_descriptive
+  descriptive_allowed: true
+
+stratified_reporting:
+  source: STEP_4_Fase_C_confirmatory_manifest
+  strata: epsilon_opt_ideal_terciles
+  role: descriptive
+  alpha_protected: false
+  pap_section: §17.2
+
+pilot_note_not_a_gate_change: >
+  The pilot indicates Claim 2 is cost_only. This anticipates the support branch
+  of PAP line 2647 if Claim 2 fails confirmatory testing, but the actual
+  determination is made only on confirmatory data in step_5.
+
+language_guardrails:
+  if_claim2_fails:
+    claim1_claim3_status: support_not_headline
+  forbidden_absolute_phrases:
+    - DA always wins
+    - MSE is useless
+    - CDR/PEC generally worse/better
+    - universal superiority
+    - saturates lower bound

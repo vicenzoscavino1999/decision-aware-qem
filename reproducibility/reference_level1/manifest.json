@@ -1,0 +1,43 @@
+{
+  "block_input_fingerprints": {
+    "level1/budget_ledger": "sha256:B65A2F7F986A6E931AE7E300D2AEBC201C99CDC4BCE602F1F6A2B798C6EDB502",
+    "level1/gate0_mini": "sha256:341DC14A5E174D966AD90210B554533C58A6E18B9AFF22FF3EDFF2F2601BB73E",
+    "level1/pullback_mini": "sha256:7733181AD117F0B58C1C8B589B474119CEB60BF0D35D1B727B0BA985DC6A2A9C"
+  },
+  "block_status": {
+    "level1/budget_ledger": "complete",
+    "level1/gate0_mini": "complete",
+    "level1/pullback_mini": "complete"
+  },
+  "checkpoint_path": ".partial/checkpoint.json",
+  "checkpoint_preexisting": false,
+  "dependencies": {
+    "cvxpy": "1.9.1",
+    "numpy": "2.4.6",
+    "qiskit": "2.4.2",
+    "qiskit-aer": "0.17.2",
+    "scipy": "1.18.0"
+  },
+  "execution_mode": "clean",
+  "git_commit_sha": null,
+  "git_dirty": null,
+  "incomplete_blocks": [],
+  "level": 1,
+  "log_path": "run.log",
+  "outputs": {
+    "frozen/budget_ledger.csv": "sha256:7A0851C526C8D17FB5D4A30F27A229610A560444CC9482D7F19B0DE7639A8D82",
+    "level1/gate0_mini.csv": "sha256:332D75D95A4FB6AD5EC9C9774855DEC7B4DCDAA32E7FBD8D85845840C8AC1BBA",
+    "pilot/pullback_frontier.csv": "sha256:84F7AC16B56E0DB36EA5F755663B6D1337DE231EE9A6546F8B3CB887D2C22406"
+  },
+  "pap_hash": "sha256:84317E348002DC98CFFB18D8F340A382C0675846C6298852E7465C0097628101",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+  "profile": "smoke",
+  "python_version": "3.12.4",
+  "rng": {
+    "bit_generator": "PCG64DXSM",
+    "root_seed": 260616
+  },
+  "runtime_seconds": 0.684948,
+  "stage": "level1",
+  "timestamp_utc": "2026-06-28T23:05:31.402817Z"
+}

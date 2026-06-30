@@ -1,0 +1,3 @@
+# Secondary ablation config, excluded from primary freeze manifest.
+# Filled when the Accuracy-ZNE-only vs DA-ZNE-only method-tuning ablation is run.
+{}

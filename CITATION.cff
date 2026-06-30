@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this reproduction package, please cite the accompanying manuscript and software archive."
+title: "Decision Kernels for Finite-Shot Quantum Error Mitigation: A Quotient-Space Theory of Accuracy–Decision Separation"
+authors:
+  - family-names: Scavino
+    given-names: Vicenzo
+    affiliation: Independent Researcher
+version: 0.1.0
+date-released: 2026-06-24
+license: MIT
+abstract: "DRAFT citation metadata for the Decision-Aware Quantum Error Mitigation reproduction package. DOI: TBD. The title is a DRAFT from manuscript v18; REPRODUCIBILITY_PLAN_v13_PRXQ.md uses a different empirical title, so confirm the final title before DOI minting or submission."
+keywords:
+  - quantum error mitigation
+  - finite-shot estimation
+  - decision risk
+  - QAOA
+  - reproducibility
+# DOI: TBD
+# Title note: DRAFT from manuscript v18; confirm against the final manuscript and reproduction-plan title before DOI/submission.

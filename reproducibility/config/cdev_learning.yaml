@@ -1,0 +1,32 @@
+# F1c-B diagnostic: sparse Pauli-Lindblad C_dev learning arm.
+defaults:
+  gate0_profile: full
+  a3_profile: full
+  basis_instance_id: P001
+  include_one_qubit_generators: true
+  include_graph_edge_generators: true
+  locality_cutoff: graph_edges_weight_2
+  freeze_weights_before_learning_results: true
+  rho_C: 0.25
+  epsilon0: 0.000000000001
+  support_threshold: 0.0001
+  relative_weighted_generator_error_max: 0.20
+  support_F1_min: 0.90
+  secondary_relative_frobenius_error_max: 0.20
+  same_active_pairs_as_A3: true
+  budget_accounting:
+    charged_to_budget_ledger: true
+    cost_components: [C_noiselearn]
+
+profiles:
+  smoke:
+    instance_ids: [P001]
+    characterization_depths: [1, 2, 4]
+    pauli_twirls: 2
+    shots_per_circuit: 512
+
+  full:
+    instance_ids: [P001, P002, P003, P004]
+    characterization_depths: [1, 2, 4, 8, 16]
+    pauli_twirls: 8
+    shots_per_circuit: 4096

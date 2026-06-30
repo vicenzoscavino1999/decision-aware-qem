@@ -1,0 +1,3 @@
+# Secondary R-block diagnostic, excluded from primary freeze manifest.
+# Filled only if the focal lower-bound secondary figure is run.
+{}

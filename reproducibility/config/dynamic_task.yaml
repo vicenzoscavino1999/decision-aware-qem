@@ -1,0 +1,189 @@
+# filled in STEP_4/Fase_B pilot
+defaults:
+  optimizer: BatchCandidateOptimizer
+  gate0_profile: full
+  method_menu_core: [Raw, Accuracy-ZNE, Decision-ZNE]
+  zne_lambdas: [1.0, 2.0, 3.0]
+  zne_order: 1
+  qubits: 10
+  graph_degree: 3
+  depth: 2
+  candidate_generation_independent_of_selector: true
+  same_candidates_for_DA_and_MSE: true
+  same_initial_points_for_DA_and_MSE: true
+  same_budget_grid_for_DA_and_MSE: true
+  same_stopping_rule_for_DA_and_MSE: true
+  selector_does_not_generate_candidates: true
+  tie_breaking: lexicographic_by_grid_index
+  epsilon_opt_rule: ideal_landscape_quantile
+  epsilon_quantile: 0.25
+  P_target: 0.80
+  dynamic_primary_min_paired_trajectories: 1200
+  minimum_detectable_shot_savings: 0.20
+  proposal_update_reference: Raw_Bmax
+  success_metric_primary: decision_quality
+  success_metric_secondary: global_opt
+
+profiles:
+  smoke:
+    instance_ids: [P001]
+    trajectories: 20
+    candidates_per_round: 5
+    max_rounds: 5
+    budget_grid: [256, 1024]
+    B_max: 1024
+    candidate_radius: 0.16
+    initial_landscape_count: 25
+    local_radius: 0.16
+    search_radius: 0.55
+    search_count: 64
+
+  regime_probe:
+    instance_ids: [P001]
+    trajectories: 12
+    candidates_per_round: 5
+    max_rounds: 4
+    budget_grid: [32, 64, 128, 256, 512, 1024]
+    B_max: 1024
+    candidate_radius: 0.08
+    initial_landscape_count: 25
+    local_radius: 0.16
+    search_radius: 0.55
+    search_count: 64
+
+  regime_probe_highB:
+    instance_ids: [P001]
+    trajectories: 20
+    candidates_per_round: 5
+    max_rounds: 4
+    budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+    B_max: 8192
+    candidate_radius: 0.08
+    initial_landscape_count: 25
+    local_radius: 0.16
+    search_radius: 0.55
+    search_count: 64
+
+  radius_sweep:
+    instance_ids: [P001]
+    trajectories: 20
+    candidates_per_round: 5
+    max_rounds: 4
+    budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+    B_max: 8192
+    candidate_radius_grid: [0.12, 0.16, 0.24, 0.32]
+    initial_landscape_count: 25
+    local_radius: 0.16
+    search_radius: 0.55
+    search_count: 64
+    selection_rule:
+      ceiling_min_both_selectors: 0.85
+      mse_rise_min: 0.15
+
+  decision_quality_probe:
+    instance_ids: [P001]
+    trajectories: 30
+    candidates_per_round: 5
+    max_rounds: 4
+    budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+    B_max: 8192
+    candidate_radius: 0.24
+    initial_landscape_count: 25
+    local_radius: 0.16
+    search_radius: 0.55
+    search_count: 64
+
+  epsilon_sweep:
+    instance_ids: [P001]
+    trajectories: 30
+    candidates_per_round: 5
+    max_rounds: 4
+    budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+    B_max: 8192
+    candidate_radius: 0.24
+    epsilon_quantile_grid: [0.10, 0.05, 0.02, 0.01]
+    initial_landscape_count: 25
+    local_radius: 0.16
+    search_radius: 0.55
+    search_count: 64
+    epsilon_selection_rule:
+      mse_p256_max: 0.60
+      mse_rise_min: 0.20
+
+  dynamic_pilot_full:
+    instance_ids: [P001, P002, P003, P004]
+    trajectories: 100
+    candidates_per_round: 5
+    max_rounds: 20
+    budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+    B_max: 8192
+    candidate_radius: 0.24
+    epsilon_quantile: 0.01
+    initial_landscape_count: 25
+    local_radius: 0.16
+    search_radius: 0.55
+    search_count: 64
+    checkpoint_by_instance: true
+
+  confirmatory_dyn_smoke:
+    instance_ids: [C001]
+    output_namespace: confirmatory
+    trajectories: 5
+    candidates_per_round: 5
+    max_rounds: 2
+    budget_grid: [512]
+    B_max: 512
+    candidate_radius: 0.24
+    epsilon_quantile: 0.01
+    initial_landscape_count: 25
+    local_radius: 0.16
+    search_radius: 0.55
+    search_count: 64
+
+  full:
+    instance_ids:
+      - C001
+      - C002
+      - C003
+      - C004
+      - C005
+      - C006
+      - C007
+      - C008
+      - C009
+      - C010
+      - C011
+      - C012
+      - C013
+      - C014
+      - C015
+      - C016
+      - C017
+      - C018
+      - C019
+      - C020
+      - C021
+      - C022
+      - C023
+      - C024
+      - C025
+      - C026
+      - C027
+      - C028
+      - C029
+      - C030
+      - C031
+      - C032
+    output_namespace: confirmatory
+    trajectories: 40
+    candidates_per_round: 5
+    max_rounds: 20
+    budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+    B_max: 8192
+    candidate_radius: 0.24
+    epsilon_quantile: 0.01
+    initial_landscape_count: 25
+    local_radius: 0.16
+    search_radius: 0.55
+    search_count: 64
+    checkpoint_by_instance: true

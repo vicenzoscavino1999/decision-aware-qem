@@ -1,0 +1,56 @@
+# PAP §5.2 artefacto #4 | valores transcritos de reproducibility/config/confirmatory_design.yaml,
+# reproducibility/config/gate0_pilot.yaml y reproducibility/config/dynamic_task.yaml
+# | firewall: no recalcular
+freeze_status: pre_hash_consolidated
+artifact_ids: [4]
+
+sources:
+  confirmatory_design: reproducibility/config/confirmatory_design.yaml
+  gate0_pilot_config: reproducibility/config/gate0_pilot.yaml
+  dynamic_task_config: reproducibility/config/dynamic_task.yaml
+
+method_menu_core: [Raw, Accuracy-ZNE, Decision-ZNE]
+budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+B_star_operational: 512
+
+active_scales:
+  Raw: 1
+  Accuracy-ZNE: 3
+  Decision-ZNE: 3
+
+scale_lambdas:
+  Raw: [1.0]
+  Accuracy-ZNE: [1.0, 2.0, 3.0]
+  Decision-ZNE: [1.0, 2.0, 3.0]
+
+cost_model:
+  cost_per_candidate_shots: budget_nominal_times_active_scales
+  formula: C_candidate(method,B)=B*active_scales[method]
+  non_amortized_primary: true
+
+confirmatory_counts:
+  E1:
+    instances: 48
+    replicates_per_instance: 40
+    paired_decisions: 1920
+    gate_minimum: 1500
+  E2:
+    instances: 32
+    trajectories_per_instance: 40
+    paired_trajectories: 1280
+    gate_minimum: 1200
+  E3:
+    instances: 48
+    same_instances_as: E1
+
+confirmatory_ids:
+  E1: C001-C048
+  E2: C001-C032
+  E3: C001-C048
+
+dynamic_allocation:
+  candidates_per_round: 5
+  max_rounds: 20
+  candidate_radius: 0.24
+  success_metric_primary: decision_quality
+  success_metric_secondary: global_opt

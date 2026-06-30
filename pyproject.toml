@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daqem"
+version = "0.1.0"
+description = "Decision-Aware Quantum Error Mitigation - reproduction package"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "qiskit>=2.4,<3",
+  "qiskit-aer>=0.17,<0.18",
+  "qiskit-ibm-runtime>=0.47",
+  "qiskit-algorithms>=0.4",
+  "qiskit-optimization>=0.7",
+  "qiskit-experiments>=0.14",
+  "numpy>=2,<3",
+  "scipy>=1.18",
+  "pandas>=2",
+  "matplotlib>=3.8",
+  "networkx>=3",
+  "scikit-learn>=1.5",
+  "statsmodels>=0.14",
+  "cvxpy>=1.9",
+  "pyyaml>=6",
+  "jsonschema>=4",
+  "tqdm>=4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

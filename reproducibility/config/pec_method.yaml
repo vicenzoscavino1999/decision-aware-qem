@@ -1,0 +1,64 @@
+# PEC arm P0 | isolated true-channel probabilistic error cancellation spec | firewall: no ZNE freeze changes
+freeze_status: preregistered_P0_isolated_not_wired
+zne_freeze_hash_reference: sha256:C25B4F0243F41C12F8AC685ADAF150E79E066D9910B4EEEF1707E0F9BA5A66EA
+
+menu_addition:
+  method_name: PEC
+  expanded_menu_if_refrozen: [Raw, Accuracy-ZNE, Decision-ZNE, PEC]
+  wiring_status: declared_for_P2_refreeze_not_in_frozen_menu
+  selectors_unchanged: true
+
+true_noise_channel:
+  source: src/daqem/noise.py
+  use_known_simulation_channel: true
+  learned_channel_required_for_P0: false
+  p1: 0.01
+  p2: 0.03
+  one_qubit_noisy_gates: [h, rx, rz, sx, x, u, u1, u2, u3]
+  two_qubit_noisy_gates: [cx, cz, rzz]
+  honesty_note: >
+    P0 PEC uses the known depolarizing channel fixed in simulation, not a learned
+    hardware channel. The learned/heterogeneous channel arm remains separate and
+    deferred.
+
+quasiprobability_inverse:
+  extraction_rule: qiskit_aer.noise.depolarizing_error(p, n).to_dict()
+  pauli_probabilities: read_from_qiskit_object_not_assumed
+  inverse_rule: symmetric_pauli_transfer_inverse
+  one_qubit_gamma_sanity_check: gamma_1q_equals_(2+p)/(2*(1-p))
+  sampling_rule: sample_Pauli_with_probability_abs(q_i)/gamma_gate
+  estimator: sign_product * gamma_total * measured_MaxCut_value
+  correction_gate_noise: ideal_correction_unitary_not_in_noise_model
+  seed: make_rng(instance_id, method="PEC", budget, replicate_id, stream="pec_quasiprob_sampling")
+
+cost:
+  ledger_component: C_overhead
+  C_overhead: gamma_total_squared
+  amortization_flag: non_amortized
+  note: >
+    gamma^2 is the real PEC shot overhead and is charged explicitly in the
+    budget ledger. P0 records the overhead but does not wire PEC into the frozen
+    confirmatory budget.
+
+decision_effect:
+  status: required_P0_check
+  reason: >
+    Unlike global-affine CDR, PEC de-biases margins and inflates variance by
+    different factors. Therefore mu and Sigma do not transform by the same
+    positive affine scale, and gri_risk is not invariant in general.
+  test: tests/test_pec.py::test_pec_changes_representative_gri_risk
+
+smoke:
+  num_qubits: 2
+  degree: 1
+  graph_seed: 260616
+  depth: 1
+  n_samples: 1200
+  shots_per_sample: 128
+
+validation:
+  unbiasedness_test: tests/test_pec.py::test_pec_estimator_moves_toward_exact_for_known_noise
+  gamma_test: tests/test_pec.py::test_one_qubit_gamma_matches_closed_form_from_qiskit_probabilities
+  ledger_test: tests/test_pec.py::test_pec_gamma_squared_is_recorded_in_budget_ledger
+  determinism_test: tests/test_pec.py::test_pec_sampling_is_deterministic
+  decision_effect_test: tests/test_pec.py::test_pec_changes_representative_gri_risk

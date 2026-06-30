@@ -1,0 +1,163 @@
+{
+  "instances": [
+    {
+      "abs_slope": 1.0682280305898002,
+      "error_mitigated": 0.0719026803912346,
+      "error_noisy": 0.27635149976010887,
+      "error_ratio_mitigated_over_noisy": 0.2601855986077543,
+      "fit_a": 1.0682280305898002,
+      "fit_b": -0.6775142658411217,
+      "graph_seed": 260616,
+      "instance_id": "CDR_P0_VALIDITY_S001",
+      "target_exact": 6.657242250239891,
+      "target_mitigated": 6.729144930631126,
+      "target_noisy": 6.93359375,
+      "training_exact_max": 7.376164918520417,
+      "training_exact_min": 6.043015344659599,
+      "training_exact_std": 0.31288499439090417,
+      "validity_checks": {
+        "cdr_improves": true,
+        "slope_nondegenerate": true,
+        "target_bracketed": true,
+        "training_spread": true
+      },
+      "validity_pass": true
+    },
+    {
+      "abs_slope": 1.1060193200853072,
+      "error_mitigated": 0.044205038385721096,
+      "error_noisy": 0.16990618726010887,
+      "error_ratio_mitigated_over_noisy": 0.26017321145608274,
+      "fit_a": 1.1060193200853072,
+      "fit_b": -0.9379208611110472,
+      "graph_seed": 260617,
+      "instance_id": "CDR_P0_VALIDITY_S002",
+      "target_exact": 6.657242250239891,
+      "target_mitigated": 6.61303721185417,
+      "target_noisy": 6.8271484375,
+      "training_exact_max": 7.282128136908073,
+      "training_exact_min": 5.802079949097334,
+      "training_exact_std": 0.3192216383938204,
+      "validity_checks": {
+        "cdr_improves": true,
+        "slope_nondegenerate": true,
+        "target_bracketed": true,
+        "training_spread": true
+      },
+      "validity_pass": true
+    },
+    {
+      "abs_slope": 1.155378985696129,
+      "error_mitigated": 0.09273755256661786,
+      "error_noisy": 0.10899999304146668,
+      "error_ratio_mitigated_over_noisy": 0.8508032888712009,
+      "fit_a": 1.155378985696129,
+      "fit_b": -1.2557047669413972,
+      "graph_seed": 260618,
+      "instance_id": "CDR_P0_VALIDITY_S003",
+      "target_exact": 6.674203131958533,
+      "target_mitigated": 6.5814655793919155,
+      "target_noisy": 6.783203125,
+      "training_exact_max": 7.3316726506251655,
+      "training_exact_min": 5.776039736258861,
+      "training_exact_std": 0.3744478653648967,
+      "validity_checks": {
+        "cdr_improves": true,
+        "slope_nondegenerate": true,
+        "target_bracketed": true,
+        "training_spread": true
+      },
+      "validity_pass": true
+    },
+    {
+      "abs_slope": 1.1036103947864186,
+      "error_mitigated": 0.11988411463143933,
+      "error_noisy": 0.2929566079126644,
+      "error_ratio_mitigated_over_noisy": 0.4092214047862642,
+      "fit_a": 1.1036103947864186,
+      "fit_b": -0.8949050678967626,
+      "graph_seed": 260619,
+      "instance_id": "CDR_P0_VALIDITY_S004",
+      "target_exact": 6.673840267087336,
+      "target_mitigated": 6.793724381718775,
+      "target_noisy": 6.966796875,
+      "training_exact_max": 7.368292830670042,
+      "training_exact_min": 6.271457839799288,
+      "training_exact_std": 0.27766953544136797,
+      "validity_checks": {
+        "cdr_improves": true,
+        "slope_nondegenerate": true,
+        "target_bracketed": true,
+        "training_spread": true
+      },
+      "validity_pass": true
+    },
+    {
+      "abs_slope": 1.098715821224029,
+      "error_mitigated": 0.05604674348282579,
+      "error_noisy": 0.2580773481669496,
+      "error_ratio_mitigated_over_noisy": 0.21717033238643357,
+      "fit_a": 1.098715821224029,
+      "fit_b": -0.8861967992416772,
+      "graph_seed": 260620,
+      "instance_id": "CDR_P0_VALIDITY_S005",
+      "target_exact": 6.67258671433305,
+      "target_mitigated": 6.728633457815876,
+      "target_noisy": 6.9306640625,
+      "training_exact_max": 7.2083867119275205,
+      "training_exact_min": 5.949990330638252,
+      "training_exact_std": 0.3483584390916934,
+      "validity_checks": {
+        "cdr_improves": true,
+        "slope_nondegenerate": true,
+        "target_bracketed": true,
+        "training_spread": true
+      },
+      "validity_pass": true
+    },
+    {
+      "abs_slope": 1.1232946743105385,
+      "error_mitigated": 0.02563477198479802,
+      "error_noisy": 0.1518742495453509,
+      "error_ratio_mitigated_over_noisy": 0.16878945615558924,
+      "fit_a": 1.1232946743105385,
+      "fit_b": -1.0241966677720504,
+      "graph_seed": 260621,
+      "instance_id": "CDR_P0_VALIDITY_S006",
+      "target_exact": 6.715313250454649,
+      "target_mitigated": 6.689678478469851,
+      "target_noisy": 6.8671875,
+      "training_exact_max": 7.380783466435987,
+      "training_exact_min": 6.11402134145132,
+      "training_exact_std": 0.33428134199261617,
+      "validity_checks": {
+        "cdr_improves": true,
+        "slope_nondegenerate": true,
+        "target_bracketed": true,
+        "training_spread": true
+      },
+      "validity_pass": true
+    }
+  ],
+  "summary": {
+    "abs_slope_range": [
+      1.0682280305898002,
+      1.155378985696129
+    ],
+    "all_improved": true,
+    "all_passed_validity_bar": true,
+    "date": "2026-06-24",
+    "error_ratio_mitigated_over_noisy_range": [
+      0.16878945615558924,
+      0.8508032888712009
+    ],
+    "instances_improved": 6,
+    "instances_passed_all_validity_checks": 6,
+    "num_instances": 6,
+    "profile": "P0 validity evidence; non-confirmatory graph seeds; no pipeline/C-ids",
+    "training_exact_std_range": [
+      0.27766953544136797,
+      0.3744478653648967
+    ]
+  }
+}

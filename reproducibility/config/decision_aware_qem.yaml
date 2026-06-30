@@ -1,0 +1,52 @@
+# PAP §5.2 artefacto #3 | valores transcritos de src/daqem/qem_methods.py,
+# reproducibility/config/gate0_pilot.yaml y results/pilot/a3_frozen_prediction/*.npz
+# | firewall: no recalcular
+freeze_status: pre_hash_consolidated
+artifact_ids: [3]
+
+sources:
+  implementation: src/daqem/qem_methods.py
+  pilot_config: reproducibility/config/gate0_pilot.yaml
+  frozen_prediction_npz: results/pilot/a3_frozen_prediction/*.npz
+
+method_menu_core: [Raw, Accuracy-ZNE, Decision-ZNE]
+zne_lambdas: [1.0, 2.0, 3.0]
+zne_order: 1
+richardson_constraints:
+  A_rows:
+    - sum_c_equals_1
+    - sum_c_lambda_equals_0
+  rho: [1.0, 0.0]
+
+methods:
+  Raw:
+    active_scales: [1.0]
+    coefficient_rule: fixed_raw_scale
+    coefficients: [1.0, 0.0, 0.0]
+  Accuracy-ZNE:
+    active_scales: [1.0, 2.0, 3.0]
+    coefficient_rule: minimum_norm_solution_of_Richardson_constraints
+    recompute_function: accuracy_zne_coeffs
+    coefficients_for_configured_lambdas_order_1:
+      - 1.3333333333333333
+      - 0.3333333333333333
+      - -0.6666666666666666
+  Decision-ZNE:
+    active_scales: [1.0, 2.0, 3.0]
+    coefficient_rule: SOCP_decision_optimal_under_Richardson_constraints
+    recompute_function: decision_optimal_zne_coeffs
+    recomputation_inputs:
+      - Q_list_gap_covariances
+      - mu_lower
+      - Richardson_A
+      - Richardson_rho
+    decision_zne_mu_floor: 0.000001
+    coefficient_materialization: per_cell_or_budget_recomputed_by_rule
+    pilot_materialized_coefficients_source: results/pilot/a3_frozen_prediction/*.npz
+
+scope:
+  freeze_rule_not_numbers_for_Decision_ZNE: true
+  reason: >
+    Decision-ZNE coefficients depend on pilot covariance and margin inputs; the
+    frozen artifact is the recomputation rule plus the already frozen inputs,
+    not one global coefficient vector.

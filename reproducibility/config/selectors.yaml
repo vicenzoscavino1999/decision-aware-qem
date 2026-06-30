@@ -1,0 +1,57 @@
+# PAP §5.2 artefactos #1-#2 | valores transcritos de src/daqem/selectors.py,
+# reproducibility/config/gate0_pilot.yaml, results/pilot/gate0_full_vs_diagonal.csv
+# y results/pilot/pilot_power_report.md | firewall: no recalcular
+freeze_status: pre_hash_consolidated
+artifact_ids: [1, 2]
+
+sources:
+  implementation: src/daqem/selectors.py
+  pilot_gate0: results/pilot/gate0_full_vs_diagonal.csv
+  pilot_static_power: results/pilot/pilot_power_report.md
+  method_menu_source: reproducibility/config/gate0_pilot.yaml
+  pap_reference: EXPERIMENTAL_PLAN_v13_PRXQ.md §9.4
+
+method_menu_core: [Raw, Accuracy-ZNE, Decision-ZNE]
+
+shared:
+  argmin_tie_breaking_implemented: lexicographic_by_method_name
+  empty_input: raise_ValueError
+  confirmatory_selector_tables:
+    mse_selector_table: consolidated_here_from_pilot_power_report
+    da_selector_table: consolidated_here_from_gate0_full_vs_diagonal
+  pap_tie_breaking_reference:
+    tolerance: 0.0001
+    order: [Raw, Accuracy-ZNE, Decision-ZNE, CDR, PEC]
+    note: >
+      The PAP names a cost/simple-method tie-break for numerically
+      indistinguishable risks. The current frozen implementation in
+      src/daqem/selectors.py uses exact argmin with lexicographic method-name
+      tie-break; this config records the implementation exactly.
+
+da_selector_rule:
+  artifact_id: 1
+  function: da_selector
+  primary_metric: GRI_decision_risk
+  criterion_when_gri_valid: argmin_gri_by_method
+  fallback_when_gri_invalid:
+    enabled: true
+    required_input: empirical_by_method
+    criterion: argmin_empirical_risk_by_method
+    missing_empirical_input: raise_ValueError
+  tie_breaking: lexicographic_by_method_name
+  frozen_source_by_regime:
+    static_E1: results/pilot/gate0_full_vs_diagonal.csv
+    dynamic_E2: static_selector_replayed_by_budget_from_gate0_pilot
+    bstar_E3: results/pilot/pullback_frontier.csv
+
+mse_selector_rule:
+  artifact_id: 2
+  function: mse_selector
+  primary_metric: MSE
+  criterion: argmin_mse_by_method
+  mse_definition: bias_squared_plus_variance_of_estimator
+  tie_breaking: lexicographic_by_method_name
+  frozen_source_by_regime:
+    static_E1: results/pilot/pilot_power_report.md
+    dynamic_E2: static_selector_replayed_by_budget_from_gate0_pilot
+    bstar_E3: results/pilot/pilot_power_report.md

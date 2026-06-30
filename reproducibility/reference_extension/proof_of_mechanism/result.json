@@ -1,0 +1,584 @@
+{
+  "aggregate": {
+    "cdr_control_budgets": [
+      768,
+      1536,
+      3072,
+      6144
+    ],
+    "coexistence_budgets_PEC": [
+      768,
+      1536,
+      3072,
+      6144
+    ],
+    "death_criteria": {
+      "gap_kernel_explains": true,
+      "margins_nondegenerate": true,
+      "not_affine_control_only": true,
+      "pec_effect_persists_matched_shot": true,
+      "randomized_execution_order": true
+    },
+    "gap_kernel_explained_budgets": [
+      768,
+      1536,
+      3072,
+      6144
+    ],
+    "table": [
+      {
+        "GRI_mean": 0.5176167028519274,
+        "I_hat_mean": 0.1425791882561606,
+        "MSE_ci": [
+          0.37620642206032173,
+          0.4214528067198212
+        ],
+        "MSE_mean": 0.39929045651411293,
+        "R_ci": [
+          0.42916666666666664,
+          0.5541666666666667
+        ],
+        "R_empirical": 0.49166666666666664,
+        "budget": 768,
+        "method": "Raw"
+      },
+      {
+        "GRI_mean": 0.6868794163008618,
+        "I_hat_mean": 0.021663746710915185,
+        "MSE_ci": [
+          0.09292701653417722,
+          0.10447198352473902
+        ],
+        "MSE_mean": 0.09900496784252635,
+        "R_ci": [
+          0.6041666666666666,
+          0.725
+        ],
+        "R_empirical": 0.6666666666666666,
+        "budget": 768,
+        "method": "Accuracy-ZNE"
+      },
+      {
+        "GRI_mean": 0.6865511809824785,
+        "I_hat_mean": 0.021679358822605424,
+        "MSE_ci": [
+          0.09135181313912542,
+          0.1029197672992866
+        ],
+        "MSE_mean": 0.09724760371942338,
+        "R_ci": [
+          0.6083333333333333,
+          0.7291666666666666
+        ],
+        "R_empirical": 0.6708333333333333,
+        "budget": 768,
+        "method": "Decision-ZNE"
+      },
+      {
+        "GRI_mean": 0.5176167028519294,
+        "I_hat_mean": 0.14257918825615912,
+        "MSE_ci": [
+          0.008904307982744502,
+          0.009631589900816709
+        ],
+        "MSE_mean": 0.009277518660106222,
+        "R_ci": [
+          0.425,
+          0.5583333333333333
+        ],
+        "R_empirical": 0.49166666666666664,
+        "budget": 768,
+        "method": "CDR"
+      },
+      {
+        "GRI_mean": 0.8703845168112754,
+        "I_hat_mean": 0.0022123400165191104,
+        "MSE_ci": [
+          0.2976620847175714,
+          0.32263902641824604
+        ],
+        "MSE_mean": 0.3098506645144743,
+        "R_ci": [
+          0.7958333333333333,
+          0.8833333333333333
+        ],
+        "R_empirical": 0.8416666666666667,
+        "budget": 768,
+        "method": "PEC"
+      },
+      {
+        "GRI_mean": 0.44891625649769495,
+        "I_hat_mean": 0.2851583765123212,
+        "MSE_ci": [
+          0.37484930154826396,
+          0.4190933094344133
+        ],
+        "MSE_mean": 0.39580592688579047,
+        "R_ci": [
+          0.4125,
+          0.5334374999999999
+        ],
+        "R_empirical": 0.4708333333333333,
+        "budget": 1536,
+        "method": "Raw"
+      },
+      {
+        "GRI_mean": 0.6093855665072538,
+        "I_hat_mean": 0.04332749342183037,
+        "MSE_ci": [
+          0.07691775729210629,
+          0.08885731251363951
+        ],
+        "MSE_mean": 0.08267030831251793,
+        "R_ci": [
+          0.5375,
+          0.6583333333333333
+        ],
+        "R_empirical": 0.6,
+        "budget": 1536,
+        "method": "Accuracy-ZNE"
+      },
+      {
+        "GRI_mean": 0.6088820342289554,
+        "I_hat_mean": 0.04335871764521085,
+        "MSE_ci": [
+          0.07577990785965358,
+          0.08619891213799366
+        ],
+        "MSE_mean": 0.08091956565924231,
+        "R_ci": [
+          0.5248958333333333,
+          0.65
+        ],
+        "R_empirical": 0.5875,
+        "budget": 1536,
+        "method": "Decision-ZNE"
+      },
+      {
+        "GRI_mean": 0.4489162564976976,
+        "I_hat_mean": 0.28515837651231823,
+        "MSE_ci": [
+          0.005201515373787888,
+          0.005643446171307159
+        ],
+        "MSE_mean": 0.005434434989060562,
+        "R_ci": [
+          0.4041666666666667,
+          0.5333333333333333
+        ],
+        "R_empirical": 0.4708333333333333,
+        "budget": 1536,
+        "method": "CDR"
+      },
+      {
+        "GRI_mean": 0.8178334270446816,
+        "I_hat_mean": 0.004645914034690132,
+        "MSE_ci": [
+          0.14527469978769242,
+          0.15825994347776665
+        ],
+        "MSE_mean": 0.15172223725239178,
+        "R_ci": [
+          0.8082291666666667,
+          0.8916666666666667
+        ],
+        "R_empirical": 0.85,
+        "budget": 1536,
+        "method": "PEC"
+      },
+      {
+        "GRI_mean": 0.3904561217254361,
+        "I_hat_mean": 0.5703167530246424,
+        "MSE_ci": [
+          0.37026033143873666,
+          0.4138280392885204
+        ],
+        "MSE_mean": 0.3935056565999457,
+        "R_ci": [
+          0.2916666666666667,
+          0.4166666666666667
+        ],
+        "R_empirical": 0.3541666666666667,
+        "budget": 3072,
+        "method": "Raw"
+      },
+      {
+        "GRI_mean": 0.5295581393256485,
+        "I_hat_mean": 0.08665498684366074,
+        "MSE_ci": [
+          0.0700060666499342,
+          0.08049031237554323
+        ],
+        "MSE_mean": 0.07530810978396918,
+        "R_ci": [
+          0.475,
+          0.6
+        ],
+        "R_empirical": 0.5375,
+        "budget": 3072,
+        "method": "Accuracy-ZNE"
+      },
+      {
+        "GRI_mean": 0.5288821212799043,
+        "I_hat_mean": 0.0867174352904217,
+        "MSE_ci": [
+          0.06874359261796821,
+          0.07900049669102517
+        ],
+        "MSE_mean": 0.07359414909442097,
+        "R_ci": [
+          0.47072916666666664,
+          0.5959374999999999
+        ],
+        "R_empirical": 0.5333333333333333,
+        "budget": 3072,
+        "method": "Decision-ZNE"
+      },
+      {
+        "GRI_mean": 0.39045612172543936,
+        "I_hat_mean": 0.5703167530246365,
+        "MSE_ci": [
+          0.0030272792782395593,
+          0.003259149399295382
+        ],
+        "MSE_mean": 0.003136954058592733,
+        "R_ci": [
+          0.29583333333333334,
+          0.4166666666666667
+        ],
+        "R_empirical": 0.3541666666666667,
+        "budget": 3072,
+        "method": "CDR"
+      },
+      {
+        "GRI_mean": 0.7531844935062761,
+        "I_hat_mean": 0.009291828069380264,
+        "MSE_ci": [
+          0.07191386161446323,
+          0.07831438334553757
+        ],
+        "MSE_mean": 0.0750711618482149,
+        "R_ci": [
+          0.7125,
+          0.825
+        ],
+        "R_empirical": 0.7708333333333334,
+        "budget": 3072,
+        "method": "PEC"
+      },
+      {
+        "GRI_mean": 0.34964011161240327,
+        "I_hat_mean": 1.1406335060492847,
+        "MSE_ci": [
+          0.3708108594973669,
+          0.4158386461557241
+        ],
+        "MSE_mean": 0.3938460832609008,
+        "R_ci": [
+          0.30822916666666667,
+          0.425
+        ],
+        "R_empirical": 0.36666666666666664,
+        "budget": 6144,
+        "method": "Raw"
+      },
+      {
+        "GRI_mean": 0.4515508217611904,
+        "I_hat_mean": 0.17330997368732148,
+        "MSE_ci": [
+          0.06686453788333761,
+          0.07742481962174697
+        ],
+        "MSE_mean": 0.07218099002105553,
+        "R_ci": [
+          0.42083333333333334,
+          0.5458333333333333
+        ],
+        "R_empirical": 0.48333333333333334,
+        "budget": 6144,
+        "method": "Accuracy-ZNE"
+      },
+      {
+        "GRI_mean": 0.45072199068639857,
+        "I_hat_mean": 0.1734348705808434,
+        "MSE_ci": [
+          0.06518655412816016,
+          0.07563475990454899
+        ],
+        "MSE_mean": 0.070395441631585,
+        "R_ci": [
+          0.4,
+          0.5291666666666667
+        ],
+        "R_empirical": 0.4666666666666667,
+        "budget": 6144,
+        "method": "Decision-ZNE"
+      },
+      {
+        "GRI_mean": 0.34964011161240643,
+        "I_hat_mean": 1.140633506049273,
+        "MSE_ci": [
+          0.002108944258608295,
+          0.0022701040286761086
+        ],
+        "MSE_mean": 0.0021886877283792735,
+        "R_ci": [
+          0.30416666666666664,
+          0.42916666666666664
+        ],
+        "R_empirical": 0.36666666666666664,
+        "budget": 6144,
+        "method": "CDR"
+      },
+      {
+        "GRI_mean": 0.6750928338627769,
+        "I_hat_mean": 0.018583656138760528,
+        "MSE_ci": [
+          0.03669657471208344,
+          0.0397388617531011
+        ],
+        "MSE_mean": 0.03818522635535377,
+        "R_ci": [
+          0.6083333333333333,
+          0.725
+        ],
+        "R_empirical": 0.6666666666666666,
+        "budget": 6144,
+        "method": "PEC"
+      }
+    ]
+  },
+  "all_pool_instances": [
+    {
+      "epsilon_opt": 0.00906606065433678,
+      "graph_seed": 2069068057,
+      "instance_id": "POM_001",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.060617580047573935,
+      "graph_seed": 1493138512,
+      "instance_id": "POM_002",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.010664688341335875,
+      "graph_seed": 308104174,
+      "instance_id": "POM_003",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.0121524306206733,
+      "graph_seed": 1721104813,
+      "instance_id": "POM_004",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.07829694307247564,
+      "graph_seed": 656692723,
+      "instance_id": "POM_005",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.06977938713242424,
+      "graph_seed": 1736131871,
+      "instance_id": "POM_006",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.025730584809709994,
+      "graph_seed": 487037075,
+      "instance_id": "POM_007",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.03344471274743043,
+      "graph_seed": 1224686317,
+      "instance_id": "POM_008",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.05077689115562237,
+      "graph_seed": 9576942,
+      "instance_id": "POM_009",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.049697800442802274,
+      "graph_seed": 239059104,
+      "instance_id": "POM_010",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.07732891430680382,
+      "graph_seed": 1564308540,
+      "instance_id": "POM_011",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.0003897061006901481,
+      "graph_seed": 768728133,
+      "instance_id": "POM_012",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.030437783809554444,
+      "graph_seed": 721211310,
+      "instance_id": "POM_013",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.01833612464401085,
+      "graph_seed": 2066395250,
+      "instance_id": "POM_014",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.012887112452387441,
+      "graph_seed": 1653595009,
+      "instance_id": "POM_015",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.05828425895822846,
+      "graph_seed": 1869254596,
+      "instance_id": "POM_016",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.009391032544282467,
+      "graph_seed": 1825628384,
+      "instance_id": "POM_017",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.016443991423465292,
+      "graph_seed": 2035330806,
+      "instance_id": "POM_018",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.024546927350581314,
+      "graph_seed": 710980012,
+      "instance_id": "POM_019",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.09267493947165491,
+      "graph_seed": 482537299,
+      "instance_id": "POM_020",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.1198146103096667,
+      "graph_seed": 481160234,
+      "instance_id": "POM_021",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.001936657880972632,
+      "graph_seed": 918575863,
+      "instance_id": "POM_022",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.14254936699508278,
+      "graph_seed": 398668947,
+      "instance_id": "POM_023",
+      "selected": false,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.04511183544368805,
+      "graph_seed": 510301311,
+      "instance_id": "POM_024",
+      "selected": false,
+      "x_star": 0
+    }
+  ],
+  "config_path": "reproducibility\\config\\proof_of_mechanism.yaml",
+  "instance_gamma_squared_range": [
+    72.56683490923633,
+    72.56683490923633
+  ],
+  "selected_instances": [
+    {
+      "epsilon_opt": 0.00906606065433678,
+      "graph_seed": 2069068057,
+      "instance_id": "POM_001",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.010664688341335875,
+      "graph_seed": 308104174,
+      "instance_id": "POM_003",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.0121524306206733,
+      "graph_seed": 1721104813,
+      "instance_id": "POM_004",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.0003897061006901481,
+      "graph_seed": 768728133,
+      "instance_id": "POM_012",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.012887112452387441,
+      "graph_seed": 1653595009,
+      "instance_id": "POM_015",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.009391032544282467,
+      "graph_seed": 1825628384,
+      "instance_id": "POM_017",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.016443991423465292,
+      "graph_seed": 2035330806,
+      "instance_id": "POM_018",
+      "selected": true,
+      "x_star": 0
+    },
+    {
+      "epsilon_opt": 0.001936657880972632,
+      "graph_seed": 918575863,
+      "instance_id": "POM_022",
+      "selected": true,
+      "x_star": 0
+    }
+  ]
+}

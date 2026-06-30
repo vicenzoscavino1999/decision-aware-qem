@@ -1,0 +1,73 @@
+# R1 structured-noise de-risk | PAP section 5.3 robustness cell and section 16.1.1 frontier
+freeze_status: preregistered_R1_derisk_locked
+zne_freeze_hash_reference: sha256:C25B4F0243F41C12F8AC685ADAF150E79E066D9910B4EEEF1707E0F9BA5A66EA
+
+scope:
+  purpose: derisk_R1_structured_noise_before_full_robustness_campaign
+  computes_confirmatory_effects: false
+  no_confirmatory_instance_ids: true
+  no_rate_sweep: true
+
+primary_cell:
+  instance_id: R1_STRUCTURED_DERISK_P0
+  problem: QAOA-MaxCut
+  num_qubits: 10
+  degree: 3
+  graph_seed: 260616
+  depth: 2
+  candidate_count: 25
+  local_radius: 0.16
+  search_radius: 0.55
+  search_count: 64
+  budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+
+structured_noise_channel:
+  family: amplitude_damping_plus_phase_damping
+  seed: 260616
+  gamma_amplitude_damping: 0.006
+  gamma_phase_damping: 0.004
+  scale_policy: multiply_each_gamma_by_zne_scale
+  clipping: [0.0, 0.95]
+  one_qubit_gates: [h, rx, rz, sx, x, u, u1, u2, u3]
+  two_qubit_gates: [cx, cz, rzz]
+  two_qubit_error: tensor_of_same_single_qubit_channel_on_both_gate_qubits
+  composition_order: amplitude_damping_then_phase_damping
+  justification: >
+    The one-qubit structured channel has gamma_ad+gamma_pd=0.010, matching the
+    uniform depolarizing p1 scale. Two-qubit gates receive the same local
+    channel on both participating qubits, giving an effective magnitude of the
+    same order as p2=0.03 without adding a second tuned rate. These values are
+    device-realistic and fixed before observing the de-risk outcome.
+
+decision_metric:
+  status: computed_once_by_experiments_r1_derisk_run
+  method_menu: [Raw, Accuracy-ZNE, Decision-ZNE]
+  formulas:
+    mu_m: gaps_of_coefficients_dot_structured_noise_means
+    Sigma_m: gap_map_m_Cdev_diag_gap_map_m_transpose
+    GRI_m: gri_risk(mu_m, Sigma_m, B)
+    DA_selector: argmin_GRI_with_frozen_lexicographic_tiebreak
+    MSE_selector: argmin_MSE_with_frozen_lexicographic_tiebreak
+  decisive_questions:
+    - does_DA_selected_GRI_fall_below_Raw_GRI_at_operational_budgets
+    - does_structured_bias_flip_argmin_raw_vs_ideal
+
+regime_frontier:
+  status: secondary_formal_summary_PAP_16_1_1
+  rho_name: rho_gap_noise
+  rho_definition: relative_GRI_savings_DA_vs_Raw / 0.20
+  rho_c: 1.0
+  rho_c_interpretation: rho >= 1 iff predicted relative decision-risk saving is at least 0.20
+  inputs_allowed: [structured_noise_channel, L_frozen, A3_pullback_moments]
+  forbidden_inputs: [confirmatory_effect_sizes]
+
+discipline:
+  anti_phacking: >
+    This is a single-shot R1 de-risk. Do not sweep channel families or rates
+    until DA wins. Report the result whether DA wins or loses.
+  no_go: >
+    If structured noise does not create decision-relevant ranking distortion or
+    GRI savings, stop before R1-full and record the no-go.
+  go: >
+    If the de-risk shows decision-relevant GRI savings, only then consider the
+    full R1 robustness campaign.

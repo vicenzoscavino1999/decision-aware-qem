@@ -1,0 +1,237 @@
+{
+  "e1": {
+    "aggregate": {
+      "b": 165,
+      "both_fail": 725,
+      "both_ok": 967,
+      "c": 63,
+      "failure_rate_DA": 0.41041666666666665,
+      "failure_rate_MSE": 0.4635416666666667,
+      "mcnemar_z": 6.755115021031723,
+      "observed_rel_reduction": 0.11460674157303377,
+      "one_sided_reject": true,
+      "paired_n": 1920
+    },
+    "budget": 512,
+    "epsilon_opt_terciles": {
+      "easy": {
+        "b": 61,
+        "both_fail": 90,
+        "both_ok": 474,
+        "c": 15,
+        "failure_rate_DA": 0.1640625,
+        "failure_rate_MSE": 0.2359375,
+        "mcnemar_z": 5.27656187902292,
+        "observed_rel_reduction": 0.304635761589404,
+        "one_sided_reject": true,
+        "paired_n": 640
+      },
+      "hard": {
+        "b": 40,
+        "both_fail": 357,
+        "both_ok": 216,
+        "c": 27,
+        "failure_rate_DA": 0.6,
+        "failure_rate_MSE": 0.6203125,
+        "mcnemar_z": 1.5882027766319677,
+        "observed_rel_reduction": 0.0327455919395467,
+        "one_sided_reject": false,
+        "paired_n": 640
+      },
+      "medium": {
+        "b": 64,
+        "both_fail": 278,
+        "both_ok": 277,
+        "c": 21,
+        "failure_rate_DA": 0.4671875,
+        "failure_rate_MSE": 0.534375,
+        "mcnemar_z": 4.664004843101107,
+        "observed_rel_reduction": 0.1257309941520469,
+        "one_sided_reject": true,
+        "paired_n": 640
+      }
+    }
+  },
+  "e2": {
+    "aggregate_success_decision": {
+      "DA": {
+        "1024": 0.65625,
+        "2048": 0.7,
+        "256": 0.5078125,
+        "4096": 0.74609375,
+        "512": 0.57734375,
+        "8192": 0.77578125
+      },
+      "MSE": {
+        "1024": 0.640625,
+        "2048": 0.69296875,
+        "256": 0.4765625,
+        "4096": 0.7578125,
+        "512": 0.553125,
+        "8192": 0.78828125
+      }
+    },
+    "budgets": [
+      256,
+      512,
+      1024,
+      2048,
+      4096,
+      8192
+    ],
+    "max_success": {
+      "DA": 0.77578125,
+      "MSE": 0.78828125
+    },
+    "median_shot_ratio_MSE_over_DA_where_both_reach": 6.0,
+    "per_instance_B80_cost_per_candidate_shots": {
+      "C001": {
+        "DA_B80_cost_per_candidate_shots": 256,
+        "MSE_B80_cost_per_candidate_shots": 1536
+      },
+      "C002": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C003": {
+        "DA_B80_cost_per_candidate_shots": 2048,
+        "MSE_B80_cost_per_candidate_shots": 6144
+      },
+      "C004": {
+        "DA_B80_cost_per_candidate_shots": 1024,
+        "MSE_B80_cost_per_candidate_shots": 6144
+      },
+      "C005": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C006": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C007": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C008": {
+        "DA_B80_cost_per_candidate_shots": 2048,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C009": {
+        "DA_B80_cost_per_candidate_shots": 512,
+        "MSE_B80_cost_per_candidate_shots": 3072
+      },
+      "C010": {
+        "DA_B80_cost_per_candidate_shots": 2048,
+        "MSE_B80_cost_per_candidate_shots": 12288
+      },
+      "C011": {
+        "DA_B80_cost_per_candidate_shots": 256,
+        "MSE_B80_cost_per_candidate_shots": 1536
+      },
+      "C012": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C013": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C014": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C015": {
+        "DA_B80_cost_per_candidate_shots": 1024,
+        "MSE_B80_cost_per_candidate_shots": 6144
+      },
+      "C016": {
+        "DA_B80_cost_per_candidate_shots": 512,
+        "MSE_B80_cost_per_candidate_shots": 3072
+      },
+      "C017": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C018": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C019": {
+        "DA_B80_cost_per_candidate_shots": 512,
+        "MSE_B80_cost_per_candidate_shots": 3072
+      },
+      "C020": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C021": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": 12288
+      },
+      "C022": {
+        "DA_B80_cost_per_candidate_shots": 1024,
+        "MSE_B80_cost_per_candidate_shots": 3072
+      },
+      "C023": {
+        "DA_B80_cost_per_candidate_shots": 1024,
+        "MSE_B80_cost_per_candidate_shots": 6144
+      },
+      "C024": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C025": {
+        "DA_B80_cost_per_candidate_shots": 2048,
+        "MSE_B80_cost_per_candidate_shots": 6144
+      },
+      "C026": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C027": {
+        "DA_B80_cost_per_candidate_shots": 8192,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C028": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C029": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C030": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C031": {
+        "DA_B80_cost_per_candidate_shots": null,
+        "MSE_B80_cost_per_candidate_shots": null
+      },
+      "C032": {
+        "DA_B80_cost_per_candidate_shots": 24576,
+        "MSE_B80_cost_per_candidate_shots": 24576
+      }
+    },
+    "per_instance_reach_counts": {
+      "DA_reaches": 15,
+      "MSE_reaches": 14,
+      "instances": 32
+    },
+    "reaches_0.80": {
+      "DA": false,
+      "MSE": false
+    },
+    "threshold": 0.8
+  },
+  "e3": {
+    "active_pairs": 502,
+    "directional_match_fraction": 1.0,
+    "directionally_sensitive_pass": 487,
+    "fail": 15,
+    "ordering_matches": 502
+  },
+  "level2_abs_tolerance": 1e-06,
+  "result_neutral": true
+}

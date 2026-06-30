@@ -1,0 +1,120 @@
+# filled in F1a/pilot
+pilot_instance_ids: [P001, P002, P003, P004, P005, P006, P007, P008]
+confirmatory_instance_ids:
+  [C001, C002, C003, C004, C005, C006, C007, C008,
+   C009, C010, C011, C012, C013, C014, C015, C016,
+   C017, C018, C019, C020, C021, C022, C023, C024,
+   C025, C026, C027, C028, C029, C030, C031, C032]
+
+defaults:
+  qubits: 10
+  graph_degree: 3
+  depth: 2
+  method_menu_core: [Raw, Accuracy-ZNE, Decision-ZNE]
+  zne_lambdas: [1.0, 2.0, 3.0]
+  zne_order: 1
+  use_ledoit_wolf: true
+  local_radius: 0.16
+  search_radius: 0.55
+  search_count: 64
+  margin_threshold: 0.005
+  bstar_gain_threshold: 1.0
+  decision_zne_mu_floor: 0.000001
+
+profiles:
+  smoke:
+    instance_ids: [P001]
+    candidate_count: 6
+    replicates: 30
+    budget_grid: [1024]
+    B_max: 1024
+
+  regime_probe:
+    instance_ids: [P001, P002]
+    candidate_count: 25
+    replicates: 40
+    budget_grid: [256, 512, 1024]
+    B_max: 1024
+
+  full:
+    instance_ids: [P001, P002, P003, P004]
+    candidate_count: 25
+    replicates: 200
+    budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+    B_max: 8192
+    freeze_status: frozen_from_pilot_before_confirmatory_hash
+
+  confirmatory_smoke:
+    instance_ids: [C001]
+    output_namespace: confirmatory
+    raw_generation_only: true
+    candidate_count: 6
+    replicates: 5
+    budget_grid: [256]
+    B_max: 256
+
+  confirmatory_e1_smoke:
+    instance_ids: [C001, C017]
+    output_namespace: confirmatory
+    raw_generation_only: true
+    candidate_count: 25
+    replicates: 20
+    budget_grid: [512]
+    B_max: 512
+
+  confirmatory_full:
+    instance_ids:
+      - C001
+      - C002
+      - C003
+      - C004
+      - C005
+      - C006
+      - C007
+      - C008
+      - C009
+      - C010
+      - C011
+      - C012
+      - C013
+      - C014
+      - C015
+      - C016
+      - C017
+      - C018
+      - C019
+      - C020
+      - C021
+      - C022
+      - C023
+      - C024
+      - C025
+      - C026
+      - C027
+      - C028
+      - C029
+      - C030
+      - C031
+      - C032
+      - C033
+      - C034
+      - C035
+      - C036
+      - C037
+      - C038
+      - C039
+      - C040
+      - C041
+      - C042
+      - C043
+      - C044
+      - C045
+      - C046
+      - C047
+      - C048
+    output_namespace: confirmatory
+    raw_generation_only: true
+    candidate_count: 25
+    replicates: 40
+    budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+    B_max: 8192

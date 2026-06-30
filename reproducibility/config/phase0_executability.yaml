@@ -1,0 +1,21 @@
+# filled in A2/pilot
+benchmark_cell:
+  qubits: 10
+  depth: 2
+  graph_degree: 3
+  graph_seed: 1
+budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+power_mins:
+  E1: 1500
+  E2: 1200
+method_menu_core: [Raw, Accuracy-ZNE, Decision-ZNE]
+candidate_count: 25
+dynamic_candidates_per_round: 5
+dynamic_rounds: 20
+e3_sigma_hat_replicates: 200
+max_wall_hours_per_sim_block: 48
+benchmark_repetitions: 3
+batch_size: 50
+hardware_schedulable:
+  sigma_microcell:
+  three_budget_ordering:

@@ -1,0 +1,52 @@
+# PAP §5.2 artefacto #12 | transcrito de reproducibility/config/a3_gaussianity.yaml,
+# results/pilot/a3_gaussianity.md, src/daqem/risk.py y src/daqem/selectors.py
+# | firewall: no recalcular
+freeze_status: pre_hash_consolidated
+artifact_ids: [12]
+
+sources:
+  gaussianity_config: reproducibility/config/a3_gaussianity.yaml
+  gaussianity_report: results/pilot/a3_gaussianity.md
+  risk_implementation: src/daqem/risk.py
+  selector_fallback_implementation: src/daqem/selectors.py
+
+gri_definition:
+  function: gri_risk
+  model: Gaussian_decision_orthant_risk
+  event: leave_positive_decision_orthant
+  covariance_singular: allow_singular
+  zero_variance_coordinate_rule:
+    threshold_nonpositive: risk_equals_1
+    threshold_positive: drop_zero_variance_coordinate
+  cdf_rng:
+    bit_generator: PCG64DXSM
+    seed: 260616
+
+calibration:
+  tau_R: 0.05
+  valid_mask_rule: abs_diff_gaussianity <= tau_R
+  abs_diff_gaussianity: abs(GRI_at_sample_mean - empirical_failure)
+  empirical_failure_event: any_gap_leq_zero
+  gaussianity_audit_scope: active_gaps_from_A3
+  diagnostics:
+    - Anderson-Darling_per_active_gap
+    - skewness
+    - kurtosis
+    - tail_ratios
+    - Henze-Zirkler_when_dimension_supported
+
+fallback_when_invalid:
+  selector_function: da_selector
+  condition: gri_valid == false
+  required_input: empirical_by_method
+  fallback_metric: empirical_risk_by_method
+  missing_empirical_input: raise_ValueError
+  tie_breaking: lexicographic_by_method_name
+
+scope:
+  pilot_profiles: [full]
+  confirmatory_use: freeze_pre_hash_GRI_validity_rule
+  note: >
+    GRI validity is calibrated with pilot diagnostics before confirmatory
+    execution. If invalid under this rule, DA selection falls back to empirical
+    pilot risk as implemented in src/daqem/selectors.py.

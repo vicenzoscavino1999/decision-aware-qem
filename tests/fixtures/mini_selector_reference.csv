@@ -1,0 +1,7 @@
+problem_cell,method,budget,selector_full,selector_diagonal
+G001,Raw,256,Raw,DA-ZNE
+G001,DA-ZNE,256,Raw,DA-ZNE
+G002,Raw,512,Raw,Raw
+G002,DA-ZNE,512,Raw,Raw
+G003,Raw,768,DA-ZNE,DA-ZNE
+G003,DA-ZNE,768,DA-ZNE,DA-ZNE

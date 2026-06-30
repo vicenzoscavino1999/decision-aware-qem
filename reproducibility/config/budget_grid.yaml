@@ -1,0 +1,9 @@
+# PAP §5.2 freeze support | canonical budget grid | firewall: no recalcular
+freeze_status: pre_hash_consolidated
+artifact_ids: [4, 8, 11]
+
+budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+B_max: 8192
+note: >
+  Canonical shot-budget grid for confirmatory E1/E2/E3. Allocation and
+  per-method active-scale costing are frozen in budget_allocation.yaml.

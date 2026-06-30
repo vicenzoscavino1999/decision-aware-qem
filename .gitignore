@@ -1,0 +1,49 @@
+# Local environments and caches
+.venv-aer/
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.claude/
+.playwright-mcp/
+src/*.egg-info/
+
+# Temporary work areas
+tmp/
+scratchpad
+*.partial
+*.tmp
+
+# Superseded local probes, not part of the public reproduction package.
+archived_level1_kernel_probe/
+archived_level2_aer_probe/
+
+# Full confirmatory outputs are archived under reproducibility/reference_confirmatory/.
+results/confirmatory/
+
+# Keep only public reproduction results.
+results/*
+!results/frozen/
+!results/frozen/**
+!results/pilot/
+!results/pilot/**
+!results/phase_diagram/
+!results/phase_diagram/**
+
+# Manuscript build products and private source files.
+*.tex
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.pdf
+!figures/
+!figures/*.pdf
+
+# Internal planning and decision records.
+STEP_*.md
+DECISION_*.md
+PLAN_EXTENSION_*.md
+TODO_*.md
+reproducibility/docker_build_report.md

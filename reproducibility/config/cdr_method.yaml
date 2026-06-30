@@ -1,0 +1,221 @@
+# CDR arm P0 | pre-registered isolated method spec | firewall: no ZNE freeze changes
+freeze_status: locked_P0_validated_2026-06-24
+zne_freeze_hash_reference: sha256:C25B4F0243F41C12F8AC685ADAF150E79E066D9910B4EEEF1707E0F9BA5A66EA
+
+preregistration:
+  phase: P0_closed_pre_hash
+  locked_date: 2026-06-24
+  revision_log:
+    - version: P0_initial
+      construction: round_almost_all_gates_leave_K2_at_target
+      outcome: rejected_before_freeze
+      evidence: >
+        Smoke showed a mechanism degeneracy: training_exact collapsed to the
+        uniform cut value 7.5 with zero spread, the target exact value was
+        outside the training distribution, the fitted slope was approximately
+        zero, and CDR worsened the target estimate.
+      reason_for_revision: >
+        Fix of a mechanism degeneracy observed in a P0 smoke test, not tuning
+        against confirmatory outcomes, DA margins, or venue results.
+    - version: P0_final_locked
+      construction: target_local_gate_subset_perturbation
+      outcome: locked
+      evidence_file_json: results/cdr/p0_validity_evidence.json
+      evidence_file_md: results/cdr/p0_validity_evidence.md
+      note: >
+        This is the final P0 construction. No further set/model changes are
+        allowed before P1/P2 except by explicit re-preregistration.
+  validity_bar_result:
+    status: PASS
+    graph_seeds: [260616, 260617, 260618, 260619, 260620, 260621]
+    instances_improved: 6
+    instances_passed_all_validity_checks: 6
+    training_exact_std_range: [0.27766953544136797, 0.3744478653648967]
+    abs_slope_range: [1.0682280305898002, 1.155378985696129]
+    error_ratio_mitigated_over_noisy_range: [0.16878945615558924, 0.8508032888712009]
+    checks:
+      training_exact_has_spread: PASS
+      target_exact_inside_training_range: PASS
+      cdr_improves_over_noisy: PASS
+      slope_nondegenerate: PASS
+  anti_phacking_commitment: >
+    The CDR training-set construction and linear model are locked at P0. The
+    arm must report the P1/P2/P3 outcomes as observed, whether DA wins or loses.
+    Sweeping CDR constructions until DA wins is forbidden.
+
+decision_lever_status:
+  status: discarded_after_P0_as_decision_lever
+  reason: global_positive_affine_invariance_of_decision_gaps
+  evidence_note: results/cdr/cdr_decision_invariance_note.md
+  scope: >
+    The P0 CDR estimator uses one global linear correction per instance,
+    F_CDR(x)=a*F_raw(x)+b. For the validated P0 evidence the fitted slope is
+    positive and non-degenerate, so candidate ordering, decision gaps, Gaussian
+    decision risk, and empirical argmin decisions are invariant relative to Raw.
+  implication: >
+    CDR remains valid evidence that an estimator can improve value/MSE while
+    being decision-flat. It should not be advanced to P1/P2/P3 as the PRXQ
+    decision lever unless a separately preregistered non-affine or
+    candidate-specific CDR variant is introduced.
+  next_arm: PEC
+  anti_phacking_note: >
+    This stop decision is based on an algebraic invariance of the locked P0
+    model, not on confirmatory outcomes or a search over CDR variants.
+
+menu_addition:
+  method_name: CDR
+  expanded_menu_if_refrozen: [Raw, Accuracy-ZNE, Decision-ZNE, CDR]
+  wiring_status: declared_for_P2_refreeze_not_in_frozen_menu
+  selectors_unchanged: true
+
+base_problem:
+  family: QAOA-MaxCut
+  depth: 2
+  target_noise_model: same_as_target_depolarizing_noise_model
+  exact_truth: noiseless_statevector_expectation_of_MaxCut
+
+target_local_perturbation_rule:
+  level: gate_subset
+  qaoa_gate_angles:
+    rzz: "RZZ(2*gamma)"
+    rx: "RX(2*beta)"
+  clifford_angle_set_radians: [0.0, 1.5707963267948966, -1.5707963267948966, 3.141592653589793]
+  endpoint_rule: lower_and_upper_clifford_endpoints_bracketing_target_angle
+  rounded_gate_counts: [1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 18]
+  endpoint_modes: [lower, upper]
+  mask_stride: 7
+  selected_gate_order: deterministic_seeded_permutation
+  seed_stream: cdr_training
+  justification: >
+    The first P0 Cliffordization rule rounded almost all gates and empirically
+    collapsed the smoke training set to a constant cut value. This replacement
+    uses a single pre-fixed target-local construction: keep most gates at the
+    target QAOA angle, round only a small stratified subset, and use both lower
+    and upper Clifford endpoints. The sweep from 1 to 18 rounded gates gives a
+    local training cloud around the target instead of a fully Cliffordized
+    circuit family.
+  scope_note: >
+    At n=10 this is a local perturbation demo for CDR mechanics, not a claim of
+    scalable near-Clifford simulation. The construction is allowed only for P0
+    de-risking and must pass the pre-fixed validity bar before any P1/P2 work.
+
+training_set:
+  training_set_size: 24
+  shots_per_training_circuit: 1024
+  fit_policy:
+    name: use_all_training_circuits_for_P0_fit
+    holdout_validation: false
+    reason: >
+      P0 validates only mechanism non-degeneracy and deterministic CDR plumbing.
+      The linear CDR fit uses all 24 target-local perturbation circuits. A
+      separate holdout split is deferred until P1/P2 integration if model
+      selection or hyperparameter comparison is introduced.
+  composition_guardrail:
+    rule: training_set_size_equals_len_rounded_gate_counts_times_len_endpoint_modes
+    expected_training_set_size: 24
+    enforced_by_test: tests/test_cdr.py::test_cdr_config_training_set_size_matches_declared_grid
+  generation_seed: make_rng(instance_id, method="CDR", budget=0, replicate_id=0, stream="cdr_training")
+  justification: >
+    Linear CDR has two fitted parameters. Twenty-four circuits provide a
+    twelve-fold overdetermined fit while keeping C_train moderate for P0/P1.
+    1024 shots matches the low-to-mid simulation budget scale and keeps
+    shot noise visible without making P0 expensive.
+
+regression_model:
+  name: ordinary_least_squares_linear
+  formula: exact_expectation ~= a * noisy_expectation + b
+  fit_parameters: [a, b]
+  model_selection: forbidden
+  fallback: none
+
+seeds:
+  rng_function: daqem.rng.make_rng
+  method: CDR
+  streams:
+    training_set: cdr_training
+    training_shots: cdr_training_shots
+    target_shots: cdr_target_shots
+
+cost:
+  ledger_component: C_train
+  training_set_size: 24
+  shots_per_training_circuit: 1024
+  C_train: 24576
+  amortization_flag: non_amortized
+
+dynamic_cost_analysis:
+  status: superseded_by_decision_lever_stop
+  superseded_reason: >
+    The global affine P0 CDR model is decision-equivalent to Raw for positive
+    slopes. The cost-quality analysis below remains documented as the original
+    preregistered P1/P2/P3 plan, but the arm is stopped before P1 as a decision
+    lever.
+  success_vs_total_cost:
+    x_axis: total_cost_including_non_amortized_C_train
+    y_axis: P_success
+    grouping:
+      - method
+      - difficulty_tercile
+    cost_convention: >
+      C_train is charged as a non-amortized method cost for CDR in the dynamic
+      comparison. Per-candidate evaluation costs remain method-specific and are
+      added to C_train for total-cost curves.
+  figure:
+    name: cost_quality_frontier
+    description: >
+      Plot P_success versus total cost for Raw, Accuracy-ZNE, Decision-ZNE, and
+      CDR, stratified by the same difficulty terciles used in the ZNE package.
+      This is the CDR analogue of the dynamic cost-quality frontier.
+  go_no_go:
+    declared_before_dynamic: true
+    go: >
+      Continue P1 -> P2 -> P3 if CDR produces a quality or mixed advantage:
+      decision quality improves at moderate total cost, giving evidence that
+      mitigation can help the decision rather than only spend more shots.
+    no_go: >
+      If the result is cost_only, as in the ZNE package, report honestly that
+      mitigation did not improve the decision in this arm and do not force a
+      PRXQ claim. Pivot to the PEC arm if justified.
+  endpoints_unchanged:
+    claim_1_static_failure: same_estimand_and_threshold_as_ZNE
+    claim_2_dynamic_shots_to_success: same_estimand_and_threshold_as_ZNE
+    claim_3_pullback_directional: same_estimand_and_threshold_as_ZNE
+    practical_effect_threshold: relative_reduction_at_least_0.15
+    power_gates:
+      static_primary_min_paired_decisions: 1500
+      dynamic_primary_min_paired_trajectories: 1200
+    critical_band_to_recheck_in_P1: [0.15, 0.70]
+
+validation:
+  exact_truth_test: statevector_reference_on_small_clifford_case
+  regression_recovery_test: known_linear_noisy_to_exact_relation
+  determinism_test: same_seed_same_training_set_same_fit_same_result
+  ledger_test: C_train_recorded_in_budget_ledger_row
+
+validation_status:
+  section_10_items:
+    a_exact_equals_statevector:
+      status: covered_by_tests
+      test: tests/test_cdr.py::test_cdr_exact_truth_matches_statevector_reference_on_clifford_case
+    b_regression_recovers_known_relation:
+      status: covered_by_tests
+      test: tests/test_cdr.py::test_cdr_regression_recovers_known_linear_correction
+    c_determinism:
+      status: covered_by_tests
+      test: tests/test_cdr.py::test_cdr_training_generation_and_fit_are_deterministic
+    d_c_train_ledger:
+      status: covered_by_tests
+      test: tests/test_cdr.py::test_cdr_c_train_is_recorded_in_budget_ledger_row
+    e_schema_verify_like_rest_of_repo:
+      status: deferred_to_P2_P3_integration
+      reason: >
+        CDR is intentionally not wired into the frozen method menu, pipeline, or
+        canonical outputs at P0. Schema/verify integration becomes meaningful
+        only after a P2 re-freeze wires CDR into the runners and output schema.
+      no_synthetic_schema_fabricated_in_P0: true
+
+validity_bar:
+  training_exact_std_min: 0.05
+  target_must_be_within_training_exact_range: true
+  cdr_must_improve_over_noisy: true
+  abs_slope_min: 0.10

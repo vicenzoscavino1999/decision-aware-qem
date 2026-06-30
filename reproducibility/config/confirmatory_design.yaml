@@ -1,0 +1,132 @@
+# STEP_4/Fase_C pre-hash design artifact. Filled for review; frozen in Fase D.
+freeze_status: to_be_frozen_in_phase_D
+
+instance_generation:
+  cell:
+    problem: QAOA-MaxCut
+    graph_family: random_regular
+    n_qubits: 10
+    degree: 3
+    depth: 2
+    confirmatory_noise_family: Pauli/depolarizing
+  graph_seed_policy: "sha256(instance_id)"
+  graph_seed_policy_note: >
+    Equivalent to the PAP hash(instance_id, graph_family, depth) for the primary
+    cell because graph_family and depth are constants; this is the exact same
+    mechanism used by the pilot split.
+  pilot_ids: [P001, P002, P003, P004, P005, P006, P007, P008]
+  confirmatory_ids:
+    - C001
+    - C002
+    - C003
+    - C004
+    - C005
+    - C006
+    - C007
+    - C008
+    - C009
+    - C010
+    - C011
+    - C012
+    - C013
+    - C014
+    - C015
+    - C016
+    - C017
+    - C018
+    - C019
+    - C020
+    - C021
+    - C022
+    - C023
+    - C024
+    - C025
+    - C026
+    - C027
+    - C028
+    - C029
+    - C030
+    - C031
+    - C032
+    - C033
+    - C034
+    - C035
+    - C036
+    - C037
+    - C038
+    - C039
+    - C040
+    - C041
+    - C042
+    - C043
+    - C044
+    - C045
+    - C046
+    - C047
+    - C048
+  E1_ids: all_confirmatory_ids
+  E2_ids: C001-C032
+  E3_ids: all_confirmatory_ids
+  gate0_firewall_check_ids: C001-C032
+  gate0_firewall_check_note: >
+    Gate 0 uses C001-C032 as the confirmatory firewall subset only; E1/E3 use
+    C001-C048 and E2 uses C001-C032.
+  firewall:
+    pilot_disjoint_ids: true
+    pilot_disjoint_graph_seeds: true
+    pilot_disjoint_graphs: true
+    verified_by: experiments/confirmatory_instance_manifest.py
+
+regime:
+  B_star_operational: 512
+  epsilon_opt_rule: ideal_landscape_quantile
+  epsilon_quantile: 0.01
+  source: pilot_power_report_and_dynamic_pilot_calibration
+
+counts:
+  E1:
+    instances: 48
+    replicates_per_instance: 40
+    paired_decisions: 1920
+    gate_minimum: 1500
+    passes_gate: true
+  E2:
+    instances: 32
+    trajectories_per_instance: 40
+    paired_trajectories: 1280
+    gate_minimum: 1200
+    passes_gate: true
+  E3:
+    instances: 48
+    same_instances_as: E1
+
+budgets: [256, 512, 1024, 2048, 4096, 8192]
+
+endpoints:
+  E1: R_dec_at_B_star
+  E2: B_0_80
+  E3: B_star_obs
+
+dynamic:
+  optimizer: BatchCandidateOptimizer
+  candidate_radius: 0.24
+  max_rounds: 20
+  candidates_per_round: 5
+  success_metric_primary: decision_quality
+  success_metric_secondary: global_opt
+  same_candidates_for_DA_and_MSE: true
+  same_initial_points_for_DA_and_MSE: true
+  same_budget_grid_for_DA_and_MSE: true
+  same_stopping_rule_for_DA_and_MSE: true
+
+stratification:
+  mode: report_not_select
+  covariate: epsilon_opt_ideal_noise_free
+  difficulty_terciles: data_driven
+  lower_epsilon_is_harder: true
+  no_discard_no_reorder: true
+
+firewall_note: >
+  This file records the pre-hash confirmatory design. Confirmatory data must not
+  modify B*, selectors, L, epsilon_opt, thresholds, shrinkage, coefficients, or
+  dynamic parameters. Final freezing and hash generation happen in Fase D.

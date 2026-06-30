@@ -1,0 +1,68 @@
+# R1 full structured-noise robustness campaign | additive, not confirmatory C-ids
+freeze_status: preregistered_R1_full_locked
+zne_freeze_hash_reference: sha256:C25B4F0243F41C12F8AC685ADAF150E79E066D9910B4EEEF1707E0F9BA5A66EA
+
+scope:
+  purpose: confirm_R1_structured_noise_derisk_across_hash_generated_instances
+  no_confirmatory_instance_ids: true
+  no_rate_sweep: true
+  report_not_select: true
+
+instance_ids:
+  - R1_001
+  - R1_002
+  - R1_003
+  - R1_004
+  - R1_005
+  - R1_006
+  - R1_007
+  - R1_008
+  - R1_009
+  - R1_010
+  - R1_011
+  - R1_012
+  - R1_013
+  - R1_014
+  - R1_015
+  - R1_016
+
+primary_cell:
+  problem: QAOA-MaxCut
+  num_qubits: 10
+  degree: 3
+  depth: 2
+  candidate_count: 25
+  local_radius: 0.16
+  search_radius: 0.55
+  search_count: 64
+  budget_grid: [512, 1024, 2048, 4096]
+  replicates: 30
+  epsilon_opt_quantile: 0.01
+
+structured_noise_channel:
+  family: amplitude_damping_plus_phase_damping
+  seed: 260616
+  gamma_amplitude_damping: 0.006
+  gamma_phase_damping: 0.004
+  scale_policy: multiply_each_gamma_by_zne_scale
+  clipping: [0.0, 0.95]
+  one_qubit_gates: [h, rx, rz, sx, x, u, u1, u2, u3]
+  two_qubit_gates: [cx, cz, rzz]
+  two_qubit_error: tensor_of_same_single_qubit_channel_on_both_gate_qubits
+  composition_order: amplitude_damping_then_phase_damping
+  source: same_locked_rates_as_r1_structured_noise_derisk
+
+metrics:
+  phase_a_prediction:
+    methods: [Raw, Accuracy-ZNE, Decision-ZNE]
+    DA_selector: argmin_GRI_with_frozen_lexicographic_tiebreak
+    MSE_selector: argmin_MSE_with_frozen_lexicographic_tiebreak
+    fail_fast: stop_before_empirical_if_DA_not_better_than_Raw_in_majority_of_instances_for_any_budget
+  phase_b_empirical:
+    sampler: multinomial_from_density_matrix_probabilities
+    common_random_numbers: true
+    success: empirical_argmin_equals_ideal_x_star
+  stratification:
+    epsilon_opt_quantile: 0.01
+    terciles: confirmatory_manifest_difficulty_bounds_logic
+    tercile_claim_status: descriptive_only

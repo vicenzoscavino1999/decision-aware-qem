@@ -1,0 +1,15 @@
+{
+  "name": "daqem-repro",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "remoteEnv": {
+    "PYTHONHASHSEED": "0",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONPATH": "/app:/app/src"
+  },
+  "workspaceFolder": "/app"
+}

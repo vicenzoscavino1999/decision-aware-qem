@@ -1,0 +1,3 @@
+# Secondary schema stub, excluded from primary freeze manifest.
+# The primary frozen ledger artifact is results/frozen/budget_ledger.csv.
+{}

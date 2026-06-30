@@ -1,0 +1,5 @@
+# filled in A2/pilot
+root_seed: 260616
+bit_generator: PCG64DXSM
+seed_derivation: sha256(root_seed, instance_id, method, budget, replicate_id, stream) -> first_8_bytes_uint64
+global_numpy_seed: forbidden

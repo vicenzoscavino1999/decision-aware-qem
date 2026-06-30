@@ -1,0 +1,71 @@
+# PAP §5.2 artefacto #13 | transcrito de EXPERIMENTAL_PLAN_v13_PRXQ.md §5.4,
+# reproducibility/config/gate0_pilot.yaml, experiments/pilot_power_report.py,
+# results/pilot/a3_sigmahat_audit.md y reproducibility/config/tolerances.yaml
+# | firewall: no recalcular
+freeze_status: pre_hash_consolidated
+artifact_ids: [13]
+
+sources:
+  pap_power_gate: EXPERIMENTAL_PLAN_v13_PRXQ.md §5.4
+  pilot_power_code: experiments/pilot_power_report.py
+  gate0_config: reproducibility/config/gate0_pilot.yaml
+  sigmahat_audit: results/pilot/a3_sigmahat_audit.md
+  tolerances: reproducibility/config/tolerances.yaml
+
+covariance_estimator:
+  primary: Ledoit-Wolf
+  use_ledoit_wolf: true
+  implementation_source: experiments/gate0_pilot_full_vs_diagonal.py::_covariance
+  fallback:
+    condition: "not shrinkage or n_samples <= n_features"
+    estimator: sample_covariance
+    ddof: 1
+  one_dimensional_rule:
+    estimator: sample_variance
+    ddof: 1
+  psd_postprocess: nearest_psd
+
+static_primary_test:
+  name: paired_McNemar_style_z_test
+  implementation_source: experiments/pilot_power_report.py::paired_test_rejects
+  alternative: DA_reduces_failure_relative_to_MSE
+  paired_outcomes:
+    b: mse_fail_and_da_success
+    c: mse_success_and_da_fail
+  alpha_primary: 0.05
+  bootstrap_repetitions: 10000
+  bootstrap_model: multinomial_from_observed_pooled_paired_outcomes
+  bootstrap_rng:
+    function: make_rng
+    stream: paired_observed_outcome_bootstrap
+
+power_gate:
+  static_primary_min_paired_decisions: 1500
+  dynamic_primary_min_paired_trajectories: 1200
+  baseline_failure_rate_acceptable_range: [0.15, 0.70]
+  minimum_detectable_relative_failure_reduction: 0.15
+  minimum_detectable_shot_savings: 0.20
+
+sigmahat_audit:
+  bootstrap_replicates: 200
+  bootstrap_CI: 0.95
+  shrinkage_sensitivity: Ledoit-Wolf_vs_sample_covariance
+  replicate_count_sufficiency_subsamples: [50, 100, 200]
+  focus_case: {instance_id: P003, budget: 256}
+
+tolerances:
+  level1_numeric_abs: 0.000000000001
+  level2_numeric_abs: 0.000001
+  level3_numeric_abs: 0.000000000001
+  integer_abs: 0
+  verdict_fields_hard_fail_on_flip: true
+
+confidence_intervals:
+  default_source: sigmahat_bootstrap_CI
+  default_level: 0.95
+  confirmatory_CI_decision:
+    method: bootstrap
+    repetitions: 10000
+    alpha: 0.05
+    implementation_scope: E1_E2_E3_runners
+    table_format_is_presentational_not_frozen_parameter: true
