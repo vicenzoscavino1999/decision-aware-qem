@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import subprocess
 import sys
 import time
 from dataclasses import dataclass
@@ -33,6 +34,7 @@ from daqem.rng import make_rng
 INSTANCE_ID = "HSMC001"
 BACKEND_NAME = "ibm_marrakesh"
 PHYSICAL_QUBITS = (14, 15, 19, 35)
+AMENDMENT_V1_1_PHYSICAL_QUBITS = (13, 14, 15, 19)
 OPTIMIZATION_LEVEL = 1
 SEED_TRANSPILE = 260616
 B_NOMINAL = 4096
@@ -41,6 +43,8 @@ METHODS = ("Raw", "Accuracy-ZNE", "DA-ZNE")
 R_FINAL = 70
 EPOCHS = 10
 REPS_PER_EPOCH = 7
+AMENDMENT_V1_1_R_FINAL = 60
+AMENDMENT_V1_1_REPS_PER_EPOCH = 6
 BOOTSTRAP_REPETITIONS = 10_000
 RHO_C = 0.25
 FROBENIUS_TOLERANCE = 0.20
@@ -50,6 +54,7 @@ ZNE_SHOTS_PER_SCALE = B_NOMINAL // 3
 DECISION_ZNE_MU_FLOOR = 1e-6
 TOTAL_QUANTUM_TIME_CAP_MINUTES = 50.0
 DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent / "dry_run_outputs"
+DEFAULT_PHASE_B_OUTPUT_DIR = REPO_ROOT / "results" / "hardware_sigma_attempt2"
 TOKEN_PATH = Path(r"D:\paper fisica cuantica\apikey (1).json")
 FEASIBILITY_RECORD = Path(__file__).resolve().parent / "feasibility_result.json"
 ISA_OPTIMIZATION_LEVEL = 0
@@ -63,6 +68,28 @@ LAMBDA2_RULE = (
     "ties such as 5/3 vs 7/3 are resolved upward. This is fixed before execution."
 )
 RZ_NOISE_CONVENTION = "rz_virtual_no_noise; learned sparse-PL rates are applied to physical sx/x and cz gate instances only."
+FALLBACK_QPU_MINUTES_PER_INTERLEAVED_REP = 0.64
+PHASE_B_ATTEMPT1_CONSUMED_MINUTES = 3.6666666666666643
+_ACTIVE_PHYSICAL_QUBITS = PHYSICAL_QUBITS
+
+
+def active_physical_qubits() -> tuple[int, int, int, int]:
+    return _ACTIVE_PHYSICAL_QUBITS
+
+
+def set_active_physical_qubits(qubits: tuple[int, int, int, int] | list[int]) -> None:
+    values = tuple(int(q) for q in qubits)
+    if len(values) != 4 or len(set(values)) != 4:
+        raise ValueError(f"expected four distinct physical qubits, got {values}")
+    global _ACTIVE_PHYSICAL_QUBITS
+    _ACTIVE_PHYSICAL_QUBITS = values
+
+
+def parse_physical_qubits(value: str) -> tuple[int, int, int, int]:
+    parts = [int(part.strip()) for part in str(value).split(",") if part.strip()]
+    if len(parts) != 4:
+        raise ValueError(f"expected comma-separated four-qubit path, got {value!r}")
+    return tuple(parts)  # type: ignore[return-value]
 
 
 @dataclass(frozen=True)
@@ -161,7 +188,7 @@ def transpile_to_isa(circuit: QuantumCircuit, *, optimization_level: int = ISA_O
         circuit,
         basis_gates=ibm_marrakesh_basis_gates(),
         coupling_map=ibm_marrakesh_coupling_map(),
-        initial_layout=list(PHYSICAL_QUBITS),
+        initial_layout=list(active_physical_qubits()),
         optimization_level=int(optimization_level),
         seed_transpiler=SEED_TRANSPILE,
     )
@@ -181,7 +208,7 @@ def measurement_physical_by_clbit(isa_circuit: QuantumCircuit) -> dict[int, int]
         physical = isa_circuit.find_bit(inst.qubits[0]).index
         clbit = isa_circuit.find_bit(inst.clbits[0]).index
         mapping[int(clbit)] = int(physical)
-    expected = {idx: physical for idx, physical in enumerate(PHYSICAL_QUBITS)}
+    expected = {idx: physical for idx, physical in enumerate(active_physical_qubits())}
     if mapping != expected:
         raise RuntimeError(f"ISA measurement/clbit mapping mismatch: expected {expected}, got {mapping}")
     return mapping
@@ -189,7 +216,7 @@ def measurement_physical_by_clbit(isa_circuit: QuantumCircuit) -> dict[int, int]
 
 def compact_isa_circuit(isa_circuit: QuantumCircuit) -> QuantumCircuit:
     measurement_physical_by_clbit(isa_circuit)
-    physical_to_compact = {physical: idx for idx, physical in enumerate(PHYSICAL_QUBITS)}
+    physical_to_compact = {physical: idx for idx, physical in enumerate(active_physical_qubits())}
     compact = QuantumCircuit(4)
     compact.global_phase = isa_circuit.global_phase
     for inst in isa_circuit.data:
@@ -211,7 +238,7 @@ def assert_isa_mapping(circuit: QuantumCircuit) -> None:
         if inst.operation.name in {"measure", "barrier", "delay"}:
             continue
         physical_qargs = [circuit.find_bit(q).index for q in inst.qubits]
-        if not all(q in PHYSICAL_QUBITS for q in physical_qargs):
+        if not all(q in active_physical_qubits() for q in physical_qargs):
             raise RuntimeError(f"ISA circuit touches non-frozen physical qubit(s): {physical_qargs}")
 
 
@@ -948,18 +975,33 @@ class RuntimeSamplerAdapter:
         before = self.usage_minutes()
         submitted_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
         job = sampler.run(pubs)
+        job_id = job.job_id()
+        print(
+            f"HARDWARE_SIGMA_JOB_SUBMITTED epoch={int(epoch)} job_id={job_id} "
+            f"circuits={len(tasks)} usage_before_minutes={before}",
+            flush=True,
+        )
         result = job.result()
         after = self.usage_minutes()
         completed_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        usage_delta = None if before is None or after is None else max(0.0, float(after) - float(before))
+        print(
+            f"HARDWARE_SIGMA_JOB_COMPLETED epoch={int(epoch)} job_id={job_id} "
+            f"usage_after_minutes={after} usage_delta_minutes={usage_delta}",
+            flush=True,
+        )
         self.submitted_batches += 1
         self.job_metadata.append(
             {
                 "epoch": int(epoch),
-                "job_id": job.job_id(),
+                "job_id": job_id,
                 "submitted_utc": submitted_at,
                 "completed_utc": completed_at,
                 "usage_before_minutes": before,
                 "usage_after_minutes": after,
+                "usage_delta_minutes": usage_delta,
+                "circuit_count": int(len(tasks)),
+                "shot_count_total": int(sum(int(task.shots) for task in tasks)),
             }
         )
         return [_extract_pub_counts(result[idx]) for idx in range(len(tasks))]
@@ -1102,8 +1144,49 @@ class BudgetGuard:
     def can_start_epoch(self) -> bool:
         return self.consumed_minutes + self.per_epoch_minutes <= self.cap_minutes
 
-    def record_epoch(self) -> None:
-        self.consumed_minutes += self.per_epoch_minutes
+    def can_start_job(self, fallback_minutes: float | None = None) -> bool:
+        projected = self.per_epoch_minutes if fallback_minutes is None else float(fallback_minutes)
+        return self.consumed_minutes + projected <= self.cap_minutes
+
+    def record_job(self, runtime_delta_minutes: float | None = None, fallback_minutes: float | None = None) -> float:
+        fallback = self.per_epoch_minutes if fallback_minutes is None else float(fallback_minutes)
+        used = float(runtime_delta_minutes) if runtime_delta_minutes is not None and runtime_delta_minutes > 0.0 else fallback
+        self.consumed_minutes += used
+        return used
+
+    def record_epoch(self, runtime_delta_minutes: float | None = None, fallback_minutes: float | None = None) -> float:
+        return self.record_job(runtime_delta_minutes=runtime_delta_minutes, fallback_minutes=fallback_minutes)
+
+
+def _last_runtime_usage_delta_minutes(sampler: SamplerAdapter) -> float | None:
+    metadata = getattr(sampler, "job_metadata", None)
+    if not metadata:
+        return None
+    value = metadata[-1].get("usage_delta_minutes")
+    return None if value is None else float(value)
+
+
+def _fallback_minutes_for_tasks(tasks: list[Any]) -> float:
+    if not tasks:
+        return 0.0
+    if isinstance(tasks[0], CharacterizationTask):
+        return FALLBACK_QPU_MINUTES_PER_INTERLEAVED_REP * (len(tasks) / 28.0)
+    replicates = {int(task.replicate) for task in tasks if hasattr(task, "replicate")}
+    return FALLBACK_QPU_MINUTES_PER_INTERLEAVED_REP * max(1, len(replicates))
+
+
+def checkpointed_quantum_minutes(output_dir: Path) -> float:
+    total = 0.0
+    checkpoint_dir = Path(output_dir) / "checkpoints"
+    if not checkpoint_dir.exists():
+        return total
+    for path in checkpoint_dir.glob("*.json"):
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        metadata = payload.get("metadata", {}) if path.name == "characterization.json" else payload.get("job_metadata", {})
+        value = metadata.get("budget_guard_delta_minutes", metadata.get("usage_delta_minutes"))
+        if value is not None:
+            total += float(value)
+    return total
 
 
 def run_pipeline(
@@ -1135,17 +1218,52 @@ def run_pipeline(
         if resume and char_cp.exists():
             char_counts = load_counts_checkpoint(char_cp)
         else:
+            fallback_minutes = _fallback_minutes_for_tasks(char_tasks)
+            if budget_guard is not None and not budget_guard.can_start_job(fallback_minutes):
+                payload = {
+                    "status": "stopped_budget_guard",
+                    "backend_frozen": BACKEND_NAME,
+                    "physical_qubits": list(active_physical_qubits()),
+                    "instance_id": INSTANCE_ID,
+                    "completed_epochs": [],
+                    "sampler_submitted_batches": int(getattr(sampler, "submitted_batches", -1)),
+                    "stopped_for_budget": True,
+                    "budget_guard": {
+                        "consumed_minutes": budget_guard.consumed_minutes,
+                        "cap_minutes": budget_guard.cap_minutes,
+                        "blocked_before": "characterization",
+                    },
+                    "forbidden_outputs_computed": [],
+                    "duration_seconds": time.perf_counter() - start,
+                }
+                result_path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+                return payload
             char_counts = sampler.run(char_tasks, epoch=-1)
+            budget_delta = None
+            budget_consumed = None
+            if budget_guard is not None:
+                budget_delta = budget_guard.record_job(
+                    runtime_delta_minutes=_last_runtime_usage_delta_minutes(sampler),
+                    fallback_minutes=fallback_minutes,
+                )
+                budget_consumed = budget_guard.consumed_minutes
+            metadata = {
+                "job_id": "offline_characterization" if not isinstance(sampler, RuntimeSamplerAdapter) else "runtime_characterization",
+                "submitted_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                "mode": "offline_or_injected_sampler",
+                "budget_guard_delta_minutes": budget_delta,
+                "budget_guard_consumed_minutes": budget_consumed,
+            }
+            if hasattr(sampler, "job_metadata") and getattr(sampler, "job_metadata"):
+                metadata = {**metadata, **dict(getattr(sampler, "job_metadata")[-1])}
+                metadata["budget_guard_delta_minutes"] = budget_delta
+                metadata["budget_guard_consumed_minutes"] = budget_consumed
             save_counts_checkpoint(
                 char_cp,
                 kind="characterization_sparse_pl",
                 tasks=char_tasks,
                 counts_list=char_counts,
-                metadata={
-                    "job_id": "offline_characterization" if not isinstance(sampler, RuntimeSamplerAdapter) else "runtime_characterization",
-                    "submitted_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                    "mode": "offline_or_injected_sampler",
-                },
+                metadata=metadata,
             )
         char_source = "physical_characterization_circuits"
     else:
@@ -1169,6 +1287,18 @@ def run_pipeline(
                 "learned_intercepts": learned_model["intercepts"].tolist(),
             },
             "gate_c1": gate_c1,
+            "completed_epochs": [],
+            "sampler_submitted_batches": int(getattr(sampler, "submitted_batches", -1)),
+            "stopped_for_budget": False,
+            "budget_guard": (
+                None
+                if budget_guard is None
+                else {
+                    "consumed_minutes": budget_guard.consumed_minutes,
+                    "cap_minutes": budget_guard.cap_minutes,
+                    "fallback_qpu_minutes_per_interleaved_rep": FALLBACK_QPU_MINUTES_PER_INTERLEAVED_REP,
+                }
+            ),
             "forbidden_outputs_computed": [],
         }
         result_path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -1196,19 +1326,32 @@ def run_pipeline(
             epoch_vectors.append(epoch_data)
             completed_epochs.append(epoch)
             continue
-        if budget_guard is not None and not budget_guard.can_start_epoch():
+        tasks = build_epoch_tasks(epoch, config.reps_per_epoch)
+        fallback_minutes = _fallback_minutes_for_tasks(tasks)
+        if budget_guard is not None and not budget_guard.can_start_job(fallback_minutes):
             stopped_for_budget = True
             break
-        tasks = build_epoch_tasks(epoch, config.reps_per_epoch)
         counts = sampler.run(tasks, epoch=epoch)
         epoch_data = gap_vectors_for_epoch(tasks, counts, maps, L)
+        budget_delta = None
+        budget_consumed = None
+        if budget_guard is not None:
+            budget_delta = budget_guard.record_epoch(
+                runtime_delta_minutes=_last_runtime_usage_delta_minutes(sampler),
+                fallback_minutes=fallback_minutes,
+            )
+            budget_consumed = budget_guard.consumed_minutes
         metadata = {
             "job_id": f"offline_epoch_{epoch:02d}",
             "submitted_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "mode": "offline_or_injected_sampler",
+            "budget_guard_delta_minutes": budget_delta,
+            "budget_guard_consumed_minutes": budget_consumed,
         }
         if hasattr(sampler, "job_metadata") and getattr(sampler, "job_metadata"):
-            metadata = dict(getattr(sampler, "job_metadata")[-1])
+            metadata = {**metadata, **dict(getattr(sampler, "job_metadata")[-1])}
+            metadata["budget_guard_delta_minutes"] = budget_delta
+            metadata["budget_guard_consumed_minutes"] = budget_consumed
         save_epoch_checkpoint(
             cp,
             epoch_data,
@@ -1219,8 +1362,6 @@ def run_pipeline(
         )
         epoch_vectors.append(epoch_data)
         completed_epochs.append(epoch)
-        if budget_guard is not None:
-            budget_guard.record_epoch()
         if stop_after_epoch is not None and epoch >= int(stop_after_epoch):
             break
 
@@ -1229,7 +1370,7 @@ def run_pipeline(
         payload = {
             "status": "stopped_budget_guard" if stopped_for_budget else "incomplete_checkpointed",
             "backend_frozen": BACKEND_NAME,
-            "physical_qubits": list(PHYSICAL_QUBITS),
+            "physical_qubits": list(active_physical_qubits()),
             "instance_id": INSTANCE_ID,
             "gate_c1": gate_c1,
             "characterization": {
@@ -1273,7 +1414,7 @@ def run_pipeline(
     payload = {
         "status": "complete" if complete else ("stopped_budget_guard" if stopped_for_budget else "incomplete_checkpointed"),
         "backend_frozen": BACKEND_NAME,
-        "physical_qubits": list(PHYSICAL_QUBITS),
+        "physical_qubits": list(active_physical_qubits()),
         "instance_id": INSTANCE_ID,
         "config": {
             "B_nominal": config.shots,
@@ -1289,7 +1430,7 @@ def run_pipeline(
             "bootstrap_repetitions": config.bootstrap_repetitions,
             "isa_transpilation": {
                 "backend": BACKEND_NAME,
-                "physical_qubits": list(PHYSICAL_QUBITS),
+                "physical_qubits": list(active_physical_qubits()),
                 "optimization_level_for_main_circuits": ISA_OPTIMIZATION_LEVEL,
                 "seed_transpiler": SEED_TRANSPILE,
                 "implementation_note": ISA_IMPLEMENTATION_NOTE,
@@ -1329,6 +1470,15 @@ def run_pipeline(
             ),
             "amortization_flag": "non_amortized",
         },
+        "budget_guard": (
+            None
+            if budget_guard is None
+            else {
+                "consumed_minutes": budget_guard.consumed_minutes,
+                "cap_minutes": budget_guard.cap_minutes,
+                "fallback_qpu_minutes_per_interleaved_rep": FALLBACK_QPU_MINUTES_PER_INTERLEAVED_REP,
+            }
+        ),
         "primary_projected_ranking": endpoint,
         "secondary_frobenius": secondary,
         "result_label": label,
@@ -1339,24 +1489,116 @@ def run_pipeline(
     return payload
 
 
+def phase_b_preflight_isa_asserts(config: RunConfig) -> dict[str, Any]:
+    char_tasks = build_characterization_tasks()
+    for task in char_tasks:
+        assert_isa_mapping(task.circuit)
+    epoch_summaries = []
+    for epoch in range(config.epochs):
+        tasks = build_epoch_tasks(epoch, config.reps_per_epoch)
+        for task in tasks:
+            assert_isa_mapping(task.circuit)
+        epoch_summaries.append(
+            {
+                "epoch": int(epoch),
+                "circuit_count": len(tasks),
+                "shot_count_total": int(sum(int(task.shots) for task in tasks)),
+                "methods": sorted({task.method for task in tasks}),
+            }
+        )
+    effective = effective_scale_tuple()
+    return {
+        "characterization_circuits": len(char_tasks),
+        "epochs_checked": len(epoch_summaries),
+        "epoch_circuits_each": [row["circuit_count"] for row in epoch_summaries],
+        "effective_scales": list(effective),
+        "physical_qubits": list(active_physical_qubits()),
+        "isa_optimization_level": ISA_OPTIMIZATION_LEVEL,
+    }
+
+
+def run_phase_b_preflight(config: RunConfig) -> dict[str, Any]:
+    print("HARDWARE_SIGMA_PHASE_B_PREFLIGHT_TESTS_START", flush=True)
+    subprocess.run(
+        [sys.executable, "-m", "pytest", "experiments/hardware_sigma/test_run_main.py", "-q"],
+        cwd=REPO_ROOT,
+        check=True,
+    )
+    print("HARDWARE_SIGMA_PHASE_B_PREFLIGHT_TESTS_PASS", flush=True)
+    print("HARDWARE_SIGMA_PHASE_B_PREFLIGHT_ISA_START", flush=True)
+    summary = phase_b_preflight_isa_asserts(config)
+    print(
+        "HARDWARE_SIGMA_PHASE_B_PREFLIGHT_ISA_PASS "
+        f"characterization_circuits={summary['characterization_circuits']} "
+        f"epochs_checked={summary['epochs_checked']} effective_scales={summary['effective_scales']}",
+        flush=True,
+    )
+    return summary
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Hardware-Sigma main runner, offline dry-run by default.")
     parser.add_argument("--dry-run", action="store_true", help="Run the complete pipeline with an injected Aer sampler.")
-    parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
+    parser.add_argument("--phase-b", action="store_true", help="Submit the sealed hardware micro-cell to IBM Runtime.")
+    parser.add_argument("--output-dir", type=Path, default=None)
+    parser.add_argument("--physical-qubits", type=str, default=None, help="Comma-separated physical path for ISA layout.")
+    parser.add_argument("--reps-per-epoch", type=int, default=None)
+    parser.add_argument("--initial-consumed-minutes", type=float, default=None)
     parser.add_argument("--bootstrap-repetitions", type=int, default=BOOTSTRAP_REPETITIONS)
     parser.add_argument("--resume", action="store_true")
     args = parser.parse_args()
-    if not args.dry_run:
-        raise SystemExit("Phase A forbids hardware submission. Use --dry-run for offline validation.")
-    config = RunConfig(output_dir=args.output_dir, bootstrap_repetitions=int(args.bootstrap_repetitions))
-    sampler = AerSamplerAdapter(noise_model=dry_run_noise_model())
-    result = run_pipeline(config=config, sampler=sampler, resume=bool(args.resume))
-    print("HARDWARE_SIGMA_DRY_RUN_COMPLETE")
+    if bool(args.dry_run) == bool(args.phase_b):
+        raise SystemExit("Choose exactly one execution mode: --dry-run or --phase-b.")
+    default_qubits = AMENDMENT_V1_1_PHYSICAL_QUBITS if args.phase_b else PHYSICAL_QUBITS
+    set_active_physical_qubits(parse_physical_qubits(args.physical_qubits) if args.physical_qubits else default_qubits)
+    reps_per_epoch = int(args.reps_per_epoch) if args.reps_per_epoch is not None else (
+        AMENDMENT_V1_1_REPS_PER_EPOCH if args.phase_b else REPS_PER_EPOCH
+    )
+    r_final = EPOCHS * reps_per_epoch
+    output_dir = Path(args.output_dir) if args.output_dir is not None else (DEFAULT_PHASE_B_OUTPUT_DIR if args.phase_b else DEFAULT_OUTPUT_DIR)
+    config = RunConfig(
+        r_final=r_final,
+        epochs=EPOCHS,
+        reps_per_epoch=reps_per_epoch,
+        output_dir=output_dir,
+        bootstrap_repetitions=int(args.bootstrap_repetitions),
+    )
+    if args.phase_b:
+        preflight = run_phase_b_preflight(config)
+        service = load_ibm_service_phase_b_only()
+        sampler = RuntimeSamplerAdapter(service)
+        initial_consumed = (
+            float(args.initial_consumed_minutes)
+            if args.initial_consumed_minutes is not None
+            else PHASE_B_ATTEMPT1_CONSUMED_MINUTES
+        )
+        consumed = initial_consumed + (checkpointed_quantum_minutes(output_dir) if bool(args.resume) else 0.0)
+        guard = BudgetGuard(
+            consumed_minutes=consumed,
+            per_epoch_minutes=FALLBACK_QPU_MINUTES_PER_INTERLEAVED_REP * config.reps_per_epoch,
+            cap_minutes=config.budget_cap_minutes,
+        )
+        print(
+            f"HARDWARE_SIGMA_PHASE_B_START output={output_dir} resume={bool(args.resume)} "
+            f"initial_consumed_minutes={initial_consumed} checkpointed_plus_initial_minutes={consumed} "
+            f"cap_minutes={config.budget_cap_minutes}",
+            flush=True,
+        )
+        result = run_pipeline(config=config, sampler=sampler, resume=bool(args.resume), budget_guard=guard)
+        print("HARDWARE_SIGMA_PHASE_B_COMPLETE")
+        print(f"preflight={preflight}")
+    else:
+        sampler = AerSamplerAdapter(noise_model=dry_run_noise_model())
+        result = run_pipeline(config=config, sampler=sampler, resume=bool(args.resume))
+        print("HARDWARE_SIGMA_DRY_RUN_COMPLETE")
     print(f"status={result['status']}")
-    print(f"result_label={result['result_label']}")
+    if "result_label" in result:
+        print(f"result_label={result['result_label']}")
     print(f"completed_epochs={len(result['completed_epochs'])}")
     print(f"sampler_submitted_batches={result['sampler_submitted_batches']}")
-    print(f"output={Path(args.output_dir) / 'hsmc_result.json'}")
+    if result.get("budget_guard"):
+        print(f"budget_guard={result['budget_guard']}")
+    print(f"output={output_dir / 'hsmc_result.json'}")
     return 0
 
 
