@@ -1,0 +1,294 @@
+{
+  "backend_frozen": "ibm_marrakesh",
+  "characterization": {
+    "circuit_count": 203,
+    "learned_intercepts": [
+      0.0018787946375708273,
+      0.0025135709472437,
+      0.0027191892020074562,
+      0.0016048410400339407,
+      0.012940623312283564,
+      0.01407360959691283,
+      0.014108777311074716
+    ],
+    "learned_rates": [
+      0.0019568111457221268,
+      0.0019199983643801365,
+      0.0020038082797730773,
+      0.0019404375390153347,
+      0.01026366091211264,
+      0.010445827444046594,
+      0.010128175671602607
+    ],
+    "observations_minmax": [
+      0.003913899321136329,
+      0.273032952235549
+    ],
+    "shots_per_circuit": 4096,
+    "source": "physical_characterization_circuits"
+  },
+  "completed_epochs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "config": {
+    "B_nominal": 4096,
+    "R_final": 70,
+    "accuracy_zne_coefficients": [
+      1.4642857142857133,
+      0.10714285714285687,
+      -0.571428571428571
+    ],
+    "bootstrap_repetitions": 10000,
+    "decision_zne_coefficients": [
+      1.4626349608829539,
+      0.11209511735113804,
+      -0.5747300782340921
+    ],
+    "effective_scales": [
+      1.0,
+      2.3333333333333335,
+      3.0
+    ],
+    "epochs": 10,
+    "isa_transpilation": {
+      "backend": "ibm_marrakesh",
+      "implementation_note": "Main-run circuits are transpiled to ibm_marrakesh ISA with optimization_level=0 after folding/characterization construction. Level 0 preserves folded/self-inverse blocks; the level-1 feasibility transpilation was used only to derive the blind mapping.",
+      "lambda2_rule": "partial folding from_left over two-qubit gates with ceil(n_2q/2) folds; ties such as 5/3 vs 7/3 are resolved upward. This is fixed before execution.",
+      "optimization_level_for_main_circuits": 0,
+      "physical_qubits": [
+        14,
+        15,
+        19,
+        35
+      ],
+      "rz_noise_convention": "rz_virtual_no_noise; learned sparse-PL rates are applied to physical sx/x and cz gate instances only.",
+      "seed_transpiler": 260616
+    },
+    "methods": [
+      "Raw",
+      "Accuracy-ZNE",
+      "DA-ZNE"
+    ],
+    "nominal_scales": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "reps_per_epoch": 7,
+    "shots_per_scale": {
+      "Accuracy-ZNE": 1365,
+      "DA-ZNE": 1365,
+      "Raw": 4096
+    }
+  },
+  "duration_seconds": 35.91702439985238,
+  "forbidden_outputs_computed": [],
+  "gate_c1": {
+    "heldout_relative_generalization_error": 0.04849450368887859,
+    "passed": true,
+    "support_f1_stability": 1.0,
+    "thresholds": {
+      "gen_error_max": 0.2,
+      "support_f1_min": 0.9
+    }
+  },
+  "instance_id": "HSMC001",
+  "ledger": {
+    "C_Sigmahat": 3440080,
+    "C_noiselearn": 831488,
+    "C_total": 4271568,
+    "amortization_flag": "non_amortized"
+  },
+  "ordering_gate": {
+    "abs_error": 0.0,
+    "expected_observable": -1.5,
+    "passed": true,
+    "recovered_observable": -1.5,
+    "tolerance": 1e-05
+  },
+  "physical_qubits": [
+    14,
+    15,
+    19,
+    35
+  ],
+  "primary_projected_ranking": {
+    "pairs": [
+      {
+        "delta_pred": -0.01110782137623445,
+        "delta_rank": 7.239176732478004e-05,
+        "pair": [
+          "Raw",
+          "Accuracy-ZNE"
+        ],
+        "passed": false,
+        "threshold": 0.0027769553440586126,
+        "ucb95": 0.00981216963253501
+      },
+      {
+        "delta_pred": -0.011107316221357966,
+        "delta_rank": 0.0005426909652111044,
+        "pair": [
+          "Raw",
+          "DA-ZNE"
+        ],
+        "passed": false,
+        "threshold": 0.0027768290553394914,
+        "ucb95": 0.013958148051144866
+      },
+      {
+        "delta_pred": 5.051548764845037e-07,
+        "delta_rank": 0.0004702991978863244,
+        "pair": [
+          "Accuracy-ZNE",
+          "DA-ZNE"
+        ],
+        "passed": false,
+        "threshold": 1.2628871912112594e-07,
+        "ucb95": 0.020681571933492963
+      }
+    ],
+    "primary_pass": false,
+    "risks": {
+      "Accuracy-ZNE": 0.011107821604002033,
+      "DA-ZNE": 0.011107316449125548,
+      "Raw": 2.2776758257236907e-10
+    }
+  },
+  "result_label": "failed_or_inconclusive",
+  "sampler_submitted_batches": 11,
+  "secondary_frobenius": {
+    "methods": {
+      "Accuracy-ZNE": {
+        "passed": true,
+        "relative_frobenius_error": 0.08469834069733809
+      },
+      "DA-ZNE": {
+        "passed": true,
+        "relative_frobenius_error": 0.13612424497116277
+      },
+      "Raw": {
+        "passed": false,
+        "relative_frobenius_error": 0.3299805501962469
+      }
+    },
+    "secondary_pass": false
+  },
+  "sigma_hat": {
+    "Accuracy-ZNE": [
+      [
+        0.0030959144897258037,
+        0.0015315692075678507,
+        0.001255890327548039
+      ],
+      [
+        0.0015315692075678507,
+        0.0025462896226481997,
+        0.0015574945291151857
+      ],
+      [
+        0.001255890327548039,
+        0.0015574945291151857,
+        0.0025884008023111115
+      ]
+    ],
+    "DA-ZNE": [
+      [
+        0.0031391958319185384,
+        0.001240954128580616,
+        0.001413411287173554
+      ],
+      [
+        0.001240954128580616,
+        0.0028157039965416514,
+        0.0010605229401298532
+      ],
+      [
+        0.001413411287173554,
+        0.0010605229401298532,
+        0.001857061401777564
+      ]
+    ],
+    "Raw": [
+      [
+        0.00038980519549446823,
+        0.00013222835078742937,
+        0.00016176379738880748
+      ],
+      [
+        0.00013222835078742937,
+        0.0002513716803327603,
+        9.383171735096184e-05
+      ],
+      [
+        0.00016176379738880748,
+        9.383171735096184e-05,
+        0.00026961223185679415
+      ]
+    ]
+  },
+  "sigma_pred": {
+    "Accuracy-ZNE": [
+      [
+        0.0030890418821367034,
+        0.0013665815058540034,
+        0.0013665815058540032
+      ],
+      [
+        0.0013665815058540034,
+        0.0028301116598284264,
+        0.0013665815058540043
+      ],
+      [
+        0.0013665815058540032,
+        0.0013665815058540043,
+        0.0024401484412219184
+      ]
+    ],
+    "DA-ZNE": [
+      [
+        0.0030889951446534435,
+        0.0013666064477473928,
+        0.0013666064477473926
+      ],
+      [
+        0.0013666064477473928,
+        0.0028301293582294967,
+        0.0013666064477473932
+      ],
+      [
+        0.0013666064477473926,
+        0.0013666064477473932,
+        0.0024402769224321865
+      ]
+    ],
+    "Raw": [
+      [
+        0.0004156699939956986,
+        0.00018342777823075263,
+        0.00018342777823075266
+      ],
+      [
+        0.00018342777823075263,
+        0.000380217725512829,
+        0.00018342777823075252
+      ],
+      [
+        0.00018342777823075266,
+        0.00018342777823075252,
+        0.0003266878467829565
+      ]
+    ]
+  },
+  "status": "complete",
+  "stopped_for_budget": false
+}
