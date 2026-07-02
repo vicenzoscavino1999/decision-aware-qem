@@ -14,8 +14,11 @@ The current package freeze is:
 sha256:2AF91BE182897D9885C1F09816B3342BB64EB499B15B1212CB4ACD6D110E4026
 ```
 
-The current freeze contains 52 files and includes the post-confirmatory extension
-code. The controlled transition is documented in `STEP_7_refreeze_audit.md`.
+The current freeze contains 52 files. It was produced by a controlled transition
+from `C25B4F02...` to `2AF91BE1...`: the original 49 frozen files remained
+byte-identical and three already validated extension modules (`cdr.py`, `pec.py`,
+and `structured_noise.py`) were added. The old hash remains the historical
+pre-registration anchor; the current hash is the package-integrity anchor.
 
 Guardrail: frozen files are immutable unless a future re-freeze is explicitly
 documented with old-to-new hashes and a reason.
@@ -35,11 +38,17 @@ Individual verifiers:
 python scripts/verify_freeze.py
 python scripts/verify_confirmatory.py
 python scripts/verify_extension.py
+python scripts/verify_hardware_archive.py
+python scripts/analysis_from_hardware.py
 ```
 
 ## Continuous Integration
 
-`.github/workflows/reproduce.yml` defines the public CI entry point. Once the repository is pushed to GitHub, each push or pull request to `main` builds the canonical `linux/amd64` Docker image and runs `python scripts/reproduce_all.py`, failing unless `REPRODUCE_ALL_PASS` appears in the output. The workflow requires no quantum cloud account, no hardware, and no secrets.
+`.github/workflows/reproduce.yml` is the public CI entry point. Each push or pull
+request to `main` builds the canonical `linux/amd64` Docker image and runs
+`python scripts/reproduce_all.py`, failing unless `REPRODUCE_ALL_PASS` appears in
+the output. The workflow requires no quantum-cloud account, hardware access, or
+secrets.
 
 ## Artifact Map
 
@@ -55,10 +64,16 @@ Confirmatory archive:
 reproducibility/reference_confirmatory/
 ```
 
-Post-confirmatory extension archive:
+Numerical extension archive:
 
 ```text
 reproducibility/reference_extension/
+```
+
+Hardware raw-count archive and calibration records:
+
+```text
+reproducibility/hardware/
 ```
 
 Claim adjudication:
@@ -92,6 +107,8 @@ reproducibility/reference_extension/phase_diagram/grid.csv
 reproducibility/reference_extension/phase_diagram/NOTE.md
 ```
 
+Known limitations of frozen code are listed in `KNOWN_ISSUES.md`.
+
 ## Figure Boundary
 
 The package regenerates 5 data-driven figures. The analytic Eq. 1300 boundary and
@@ -100,6 +117,6 @@ not part of the executable reproduction bundle.
 
 ## Release Boundary
 
-Zenodo DOI minting and any registry/container digest publication are deferred to
-final manuscript release. They are release logistics, not unresolved scientific
-or numerical reproducibility claims.
+The next public release merges the additive robustness records, receives the
+`v1.1.0` tag, and is then archived on Zenodo. DOI insertion and any published
+container digest are release logistics, not unresolved numerical claims.

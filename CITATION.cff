@@ -1,19 +1,18 @@
 cff-version: 1.2.0
 message: "If you use this reproduction package, please cite the accompanying manuscript and software archive."
-title: "Decision Kernels for Finite-Shot Quantum Error Mitigation: A Quotient-Space Theory of Accuracy–Decision Separation"
+title: "Decision Kernels for Quantum Error Mitigation: Why Accuracy Gains Need Not Improve Downstream Decisions"
 authors:
   - family-names: Scavino
     given-names: Vicenzo
     affiliation: Independent Researcher
-version: 0.1.0
-date-released: 2026-06-24
+    orcid: "https://orcid.org/0009-0000-2472-9785"
+repository-code: "https://github.com/vicenzoscavino1999/decision-aware-qem"
 license: MIT
-abstract: "DRAFT citation metadata for the Decision-Aware Quantum Error Mitigation reproduction package. DOI: TBD. The title is a DRAFT from manuscript v18; REPRODUCIBILITY_PLAN_v13_PRXQ.md uses a different empirical title, so confirm the final title before DOI minting or submission."
+abstract: "Reproduction package for finite-shot quantum error mitigation experiments centered on downstream decision risk and residual gap geometry."
 keywords:
   - quantum error mitigation
   - finite-shot estimation
   - decision risk
   - QAOA
   - reproducibility
-# DOI: TBD
-# Title note: DRAFT from manuscript v18; confirm against the final manuscript and reproduction-plan title before DOI/submission.
+# Version, release date, and DOI are added when the v1.1.0 release is archived.

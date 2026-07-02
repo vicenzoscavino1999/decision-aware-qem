@@ -20,11 +20,12 @@ The Dockerfile uses `python:3.12.4-slim` and fixes single-thread numerical
 defaults through `PYTHONHASHSEED=0`, `OMP_NUM_THREADS=1`, `MKL_NUM_THREADS=1`,
 and `OPENBLAS_NUM_THREADS=1`.
 
-Pinned package versions are recorded in `requirements-lock.txt`, but that file
-was generated on Windows and is not the final Linux/Docker lockfile. The
-reproducible `linux/amd64` environment is a Phase B task: regenerate the
-lockfile inside the container and then build-verify the Docker image from that
-container-native lock.
+The canonical dependency graph is recorded in the cross-platform,
+hash-locked `requirements-lock.linux.txt`. The Docker build installs it with
+`pip --require-hashes` before installing the local package without dependency
+resolution. Core pins include `numpy==2.4.6`, `cvxpy==1.9.1`,
+`scipy==1.18.0`, `qiskit==2.4.2`, `qiskit-aer==0.17.2`, and
+`matplotlib==3.11.0`.
 
 The official hardware policy is analysis-from-archive only. Re-running a
 quantum device is a new experiment, not reproduction.
@@ -90,6 +91,23 @@ Accuracy-ZNE uses Richardson constraints. Decision-ZNE uses the decision-aware
 SOCP rule implemented in `src/daqem/qem_methods.py`; the rule is frozen, and
 per-cell coefficients are read from frozen A3 prediction artifacts when needed.
 
+## Pre-Registered Robustness Methods
+
+The additive robustness studies import the frozen core without changing it.
+The calibrated simulator studies use
+`NoiseModel.from_backend(FakeKolkataV2())` with deterministic, calibration-based
+layouts. Their menu adds `Raw+REM`, a tensored readout-confusion correction whose
+calibration consumes 20% of the nominal budget; evaluation shots are reduced so
+that calibration plus evaluation remains matched to Raw. CDR is retained as an
+affine accuracy control and its training cost is reported separately.
+
+The hardware covariance micro-cell uses archived `ibm_marrakesh` counts for a
+four-qubit path-graph QAOA circuit. A local sparse Pauli--Lindblad model is fitted
+from physical characterization circuits before constructing the predicted
+pullback covariance. Direct gap-vector repetitions are interleaved by method and
+analyzed with a cluster bootstrap by epoch. Public reproduction verifies the raw
+archive and reruns this analysis only; it never submits device jobs.
+
 ## Randomness
 
 All deterministic streams follow `reproducibility/config/rng_policy.yaml`:
@@ -106,10 +124,9 @@ should derive a local generator through `daqem.rng.make_rng(...)`.
 
 ## RNG Seed Streams
 
-The frozen `rng_policy.yaml` is not edited for the PRR rescope. Its `stream`
-field is the namespace used to separate bootstrap, Aer, candidate-generation,
-and extension randomness while keeping the same root seed and SHA256 derivation
-rule.
+The frozen `rng_policy.yaml` uses its `stream` field to separate bootstrap, Aer,
+candidate-generation, and robustness-study randomness while keeping the same
+root seed and SHA256 derivation rule.
 
 Current stream usage:
 
@@ -123,7 +140,9 @@ Current stream usage:
 | CDR extension | `cdr_training`, `cdr_training_shots`, `cdr_target_shots` | `src/daqem/cdr.py` |
 | PEC extension | `pec_quasiprob_sampling`, `pec_aer_counts`, `pec_raw_reference`, `het_channel` | `src/daqem/pec.py`, `reproducibility/config/het_pec_derisk.yaml` |
 | Proof-of-mechanism CRN/order | `method_order`, `proof_multinomial`, `proof_effective_multinomial` | `experiments/proof_of_mechanism_run.py` |
-| Transpiler randomness | not used in current runners | The current reproduction path does not rely on stochastic transpiler passes. If a stochastic transpiler path is added, it should derive its seed through `make_rng(..., stream="transpiler")` rather than introducing a global seed. |
+| Readout-mitigation robustness | `rem_calibration`, `rem_eval_counts`, `derisk_multinomial`, `tier1_*_relative_reduction` | `experiments/derisk_fakebackend/` |
+| Hardware covariance bootstrap | `hardware_sigma_epoch_bootstrap` | `experiments/hardware_sigma/run_main.py` |
+| Transpilation | fixed `seed_transpiler=260616` | Calibrated simulator and hardware runners use deterministic layouts; the public archive-only hardware analysis does not transpile or submit circuits. |
 
 ## Budget Accounting
 
@@ -155,6 +174,11 @@ Decision-ZNE active scales: 3
 
 For matched-cost dynamic reporting, the total shot cost per candidate is the
 nominal budget multiplied by the number of active scales.
+
+For Raw+REM, `C_calib` is 20% of the nominal budget and `C_eval` is reduced by
+the same amount, so `C_eval + C_calib` remains inside the Raw budget envelope.
+Hardware characterization and covariance estimation are recorded separately as
+`C_noiselearn` and `C_Sigmahat`.
 
 ## Inference and Tolerances
 
@@ -196,6 +220,10 @@ Measured confirmatory timings in this workspace:
 The recorded E2 checkpoint contains 32 complete instances, with mean
 per-instance duration about 64.9 minutes.
 
+The canonical umbrella additionally verifies the calibrated robustness archive,
+checksums every captured hardware-count job, and reconstructs the Level-3
+hardware endpoint from those counts.
+
 ## Hardware Carve-Out
 
 Level 3 consumes archived hardware counts, calibration snapshots, and job
@@ -205,10 +233,11 @@ part of verification.
 
 ## Long-Running Execution
 
-Long runs should be started as detached processes and monitored through their
-own logs and checkpoint files. The current generic `run_all.py` harness supports
-checkpoint/resume for the fast Level 1 path only. Level 2 confirmatory runners
-use their own direct script entry points and per-instance checkpoints.
+Long simulation runs use experiment-specific entry points, logs, and
+per-instance checkpoints. `scripts/reproduce_all.py` intentionally verifies the
+archived Level-2 evidence instead of launching the multi-hour generation jobs.
+Level-3 reproduction reads captured hardware counts and never reconnects to the
+quantum service.
 
 Example Level 1 run:
 

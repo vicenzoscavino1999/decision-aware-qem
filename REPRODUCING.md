@@ -38,20 +38,22 @@ docker run --rm --platform linux/amd64 daqem-repro:local make reproduce-all
 Expected final line:
 
 ```text
-REPRODUCE_ALL_PASS: Level 1 exact, determinism, tests, freeze audit, confirmatory verification, extension verification, and figures completed
+REPRODUCE_ALL_PASS: Level 1 exact, determinism, tests, freeze audit, confirmatory verification, extension verification, hardware archive, hardware analysis, and figures completed
 ```
 
 ## What This Checks
 
 The umbrella command performs, fail-fast:
 
-1. Level-1 reproduction and exact verify against `reproducibility/reference_level1/`.
-2. Level-1 determinism from two independent output directories.
-3. Test suite: 157 passed, 3 skipped host-only tests in the canonical Docker run.
+1. Level-1 reproduction and exact verification against `reproducibility/reference_level1/`.
+2. Level-1 determinism across three independent temporary output directories.
+3. The full test suite; platform-specific skips are allowed only when explicitly marked.
 4. Freeze audit: 52/52 frozen files intact.
 5. Confirmatory verification from `reproducibility/reference_confirmatory/`.
 6. Extension verification from `reproducibility/reference_extension/`.
-7. Regeneration of the 5 data-driven paper figures from archived data.
+7. Hardware-archive checksum and completeness verification from `reproducibility/hardware/`.
+8. Level-3 hardware analysis recomputed from archived raw counts, with no device access.
+9. Regeneration of the 5 data-driven manuscript figures from archived data.
 
 Typical runtime is about 10-20 minutes including the Docker build, depending on
 network and CPU.
@@ -62,6 +64,8 @@ The end-to-end reviewer clone test is recorded in
 `reproducibility/REVIEWER_CLONE_RESULT.md`. It copies the repository to a fresh
 directory outside the working tree, excludes `figures/`, builds Docker from that
 copy, and confirms that `scripts/reproduce_all.py` regenerates all five figures.
+The current GitHub workflow repeats the canonical Docker reproduction on every
+push and pull request to `main`.
 
 ## Cross-Platform Note
 
