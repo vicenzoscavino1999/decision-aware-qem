@@ -7,6 +7,9 @@ authors:
     affiliation: Independent Researcher
     orcid: "https://orcid.org/0009-0000-2472-9785"
 repository-code: "https://github.com/vicenzoscavino1999/decision-aware-qem"
+doi: 10.5281/zenodo.21146260
+version: v1.1.0
+date-released: 2026-07-02
 license: MIT
 abstract: "Reproduction package for finite-shot quantum error mitigation experiments centered on downstream decision risk and residual gap geometry."
 keywords:
@@ -15,4 +18,3 @@ keywords:
   - decision risk
   - QAOA
   - reproducibility
-# Version, release date, and DOI are added when the v1.1.0 release is archived.

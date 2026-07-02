@@ -132,6 +132,7 @@ manuscript text and are not part of the executable reproduction bundle.
 
 ## Release Boundary
 
-The next public release merges the additive robustness records, receives the
-`v1.1.0` tag, and is then archived on Zenodo. DOI insertion and any published
-container digest are release logistics, not unresolved numerical claims.
+The additive robustness records are published under tag `v1.1.0` and archived
+on Zenodo under DOI [`10.5281/zenodo.21146260`](https://doi.org/10.5281/zenodo.21146260).
+The release boundary is complete; any future container digest remains release
+metadata rather than an unresolved numerical claim.

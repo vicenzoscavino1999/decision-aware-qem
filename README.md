@@ -124,8 +124,9 @@ limitations are documented in [KNOWN_ISSUES.md](KNOWN_ISSUES.md).
 
 ## Citation and Licenses
 
-Citation metadata is provided in `CITATION.cff` and `.zenodo.json`. A
-version-specific Zenodo DOI will be added to those files at release.
+Citation metadata is provided in `CITATION.cff` and `.zenodo.json`. Release
+`v1.1.0` is archived on Zenodo under DOI
+[`10.5281/zenodo.21146260`](https://doi.org/10.5281/zenodo.21146260).
 
 Code is licensed under MIT (`LICENSE`). Archived numerical outputs, figures,
 counts, and related data are licensed under CC BY 4.0 (`LICENSE-DATA`).

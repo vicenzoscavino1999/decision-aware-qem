@@ -11,3 +11,11 @@ The remaining external release steps are:
    manuscript's Code and data availability statement.
 
 Do not mint or insert a provisional DOI before the tagged release artifact exists.
+
+## Completion Status
+
+Completed on 2026-07-02: release `v1.1.0` is published and archived under the
+version-specific DOI [`10.5281/zenodo.21146260`](https://doi.org/10.5281/zenodo.21146260).
+Step 5 deliberately does not insert the DOI into `.zenodo.json`: that file is
+metadata input for future releases, and a fixed DOI that is already registered
+would conflict with minting the next version-specific DOI.
