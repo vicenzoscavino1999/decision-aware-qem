@@ -12,9 +12,11 @@ results/pilot/*
 !results/pilot/gate0_full_vs_diagonal.csv
 !results/pilot/a3_frozen_prediction/
 !results/pilot/a3_frozen_prediction/**
+!results/hardware_sigma_attempt2/
+results/hardware_sigma_attempt2/*
+!results/hardware_sigma_attempt2/hsmc_result.json
 __pycache__/
 *.pyc
 .mypy_cache/
 .pytest_cache/
 *.pdf
-reproducibility/hardware/raw_counts/
