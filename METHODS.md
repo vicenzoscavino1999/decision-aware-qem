@@ -146,8 +146,9 @@ Current stream usage:
 
 ## Budget Accounting
 
-The budget ledger follows PAP section 4.4. The cost components in
-`src/daqem/budget.py` are:
+The budget ledger follows section 4.4 of the pre-analysis plan (PAP),
+`EXPERIMENTAL_PLAN_v13_PRXQ.md`, whose SHA256 is anchored in `PAP_HASH.txt`.
+The cost components in `src/daqem/budget.py` are:
 
 ```text
 C_train
@@ -239,11 +240,16 @@ archived Level-2 evidence instead of launching the multi-hour generation jobs.
 Level-3 reproduction reads captured hardware counts and never reconnects to the
 quantum service.
 
-Example Level 1 run:
+Canonical public reproduction:
 
-```powershell
-.\.venv-aer\Scripts\python.exe reproducibility\run_all.py --mode fast --level 1
-.\.venv-aer\Scripts\python.exe reproducibility\verify.py --reference reproducibility\reference\
+```bash
+docker run --rm --platform linux/amd64 daqem-repro:local python scripts/reproduce_all.py
+```
+
+Native Level-1 alternative:
+
+```bash
+make reproduce-fast
 ```
 
 If a Level 2 runner is interrupted, re-run the same experiment command without

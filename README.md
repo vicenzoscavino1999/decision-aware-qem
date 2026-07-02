@@ -76,6 +76,8 @@ approximately 5 hours, 49 minutes, and 35 hours, respectively.
 The primary confirmatory package remains anchored to the 52-file freeze. Additional
 studies are isolated from that package, governed by hash-locked protocols, and
 reported without changing the frozen E1/E2/E3 results.
+The historical `*_PRXQ.md` plan filenames are immutable pre-registration artifacts
+anchored by hash and retain their original names to preserve the hash chain.
 
 | Study | Scope | Protocol record |
 |---|---|---|

@@ -52,11 +52,22 @@ secrets.
 
 ## Artifact Map
 
-Level-1 reference:
+Canonical Level-1 reference used by `make reproduce-fast` and
+`make reproduce-level1`:
 
 ```text
 reproducibility/reference_level1/
 ```
+
+Legacy Level-1 compatibility reference:
+
+```text
+reproducibility/reference/
+```
+
+This path is read directly by `make verify` and the legacy stage/full targets.
+`make run` generates the default result tree that `make verify` compares against
+this reference; `make run` itself does not read the reference.
 
 Confirmatory archive:
 
@@ -99,6 +110,10 @@ figures/F5_e3_directional_ordering.pdf
 figures/F6_gate0_full_vs_diagonal.pdf
 ```
 
+The F1--F6 prefixes are historical artifact identifiers and do not match the
+manuscript's figure numbering. F2 was the phase-diagram artifact and was moved
+from the figure set to the supporting grid documented below.
+
 The computed phase-diagram grid is retained as support data, not as a paper
 figure:
 
@@ -111,9 +126,9 @@ Known limitations of frozen code are listed in `KNOWN_ISSUES.md`.
 
 ## Figure Boundary
 
-The package regenerates 5 data-driven figures. The analytic Eq. 1300 boundary and
-schematic C1/C2-style explanatory drawings belong to the manuscript text and are
-not part of the executable reproduction bundle.
+The package regenerates 5 data-driven figures. The manuscript's analytic phase-
+boundary equation and schematic C1/C2-style explanatory drawings belong to the
+manuscript text and are not part of the executable reproduction bundle.
 
 ## Release Boundary
 
