@@ -1,0 +1,98 @@
+{
+  "attempt": "feasibility",
+  "counts_summary": [
+    {
+      "candidate_idx": 0,
+      "label": "candidate_0_lambda_1",
+      "max_bitstring_probability": 0.1533203125,
+      "not_saturated": true,
+      "observable_mean": 1.973388671875,
+      "observable_variance": 0.7593016028404236,
+      "scale": 1.0,
+      "shots": 4096,
+      "unique_bitstrings": 16
+    },
+    {
+      "candidate_idx": 0,
+      "label": "candidate_0_lambda_3",
+      "max_bitstring_probability": 0.1484375,
+      "not_saturated": true,
+      "observable_mean": 1.985595703125,
+      "observable_variance": 0.7319702506065369,
+      "scale": 3.0,
+      "shots": 4096,
+      "unique_bitstrings": 16
+    },
+    {
+      "candidate_idx": 1,
+      "label": "candidate_1_lambda_1",
+      "max_bitstring_probability": 0.1572265625,
+      "not_saturated": true,
+      "observable_mean": 1.865966796875,
+      "observable_variance": 0.9544472098350525,
+      "scale": 1.0,
+      "shots": 4096,
+      "unique_bitstrings": 16
+    },
+    {
+      "candidate_idx": 1,
+      "label": "candidate_1_lambda_3",
+      "max_bitstring_probability": 0.142578125,
+      "not_saturated": true,
+      "observable_mean": 1.841552734375,
+      "observable_variance": 0.9370526671409607,
+      "scale": 3.0,
+      "shots": 4096,
+      "unique_bitstrings": 16
+    },
+    {
+      "candidate_idx": 2,
+      "label": "candidate_2_lambda_1",
+      "max_bitstring_probability": 0.10888671875,
+      "not_saturated": true,
+      "observable_mean": 1.74560546875,
+      "observable_variance": 0.7951467037200928,
+      "scale": 1.0,
+      "shots": 4096,
+      "unique_bitstrings": 16
+    },
+    {
+      "candidate_idx": 2,
+      "label": "candidate_2_lambda_3",
+      "max_bitstring_probability": 0.111328125,
+      "not_saturated": true,
+      "observable_mean": 1.748779296875,
+      "observable_variance": 0.8126205801963806,
+      "scale": 3.0,
+      "shots": 4096,
+      "unique_bitstrings": 16
+    },
+    {
+      "candidate_idx": 3,
+      "label": "candidate_3_lambda_1",
+      "max_bitstring_probability": 0.125244140625,
+      "not_saturated": true,
+      "observable_mean": 1.61376953125,
+      "observable_variance": 0.5656697750091553,
+      "scale": 1.0,
+      "shots": 4096,
+      "unique_bitstrings": 16
+    },
+    {
+      "candidate_idx": 3,
+      "label": "candidate_3_lambda_3",
+      "max_bitstring_probability": 0.125,
+      "not_saturated": true,
+      "observable_mean": 1.60595703125,
+      "observable_variance": 0.5952184200286865,
+      "scale": 3.0,
+      "shots": 4096,
+      "unique_bitstrings": 16
+    }
+  ],
+  "job_id": "d92mef8oamcc73db82v0",
+  "purpose": "feasibility",
+  "raw_counts": "not_captured",
+  "reason": "The feasibility record archived per-circuit count summaries and saturation diagnostics, but not raw per-bitstring counts.",
+  "source": "experiments/hardware_sigma/feasibility_result.json"
+}

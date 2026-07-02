@@ -35,6 +35,27 @@ next reproducibility phase.
 | Level 2 | Aer simulation outputs for pilot and confirmatory QAOA/MaxCut studies. | Science scripts exist and have been run directly; full orchestration is pending. |
 | Level 3 | Hardware analysis from archived counts and calibration snapshots. | Analysis-from-archive only; no hardware re-execution is part of reproduction. |
 
+## Additive robustness arms (post-v1.0.0)
+
+The released ZNE confirmatory package remains anchored to the 52-file freeze.
+Several robustness arms were added after that release as separate,
+pre-registered stress tests:
+
+| Arm | Scope | Sealed document |
+|---|---|---|
+| FakeBackend de-risk | Three-cell calibrated `FakeKolkataV2` stress test, including Raw+REM in the method menu. | `DERISK_FAKEBACKEND_v1.md`, seal `6210C6F1` |
+| FakeBackend tier-1 | Blind C001--C048 calibrated device-noise pool, powered like E1; outputs are archived under `results/derisk_fakebackend_tier1/`. | `DERISK_FAKEBACKEND_TIER1_v1.md`, seal `AA029CA5` |
+| Hardware-Sigma micro-cell v1 | Four-qubit `ibm_marrakesh` pullback stress test; first path stopped at the characterization gate. | `HARDWARE_SIGMA_MICROCELL_v1.md`, seal `734FC61A` |
+| Hardware-Sigma amendment v1.1 | One sealed re-selection after the failed edge; attempt 2 produced `failed_or_inconclusive`, so no device-level claim is made. | `HARDWARE_SIGMA_MICROCELL_v1_1_AMENDMENT.md`, seal `934F0E4F` |
+
+The data policy follows the reproduction plan:
+
+| Data tier | Contents |
+|---|---|
+| Archived | Hardware raw counts when captured, calibration snapshots, job metadata, hardware claim-language status, and canonical outputs for the FakeBackend and hardware stress-test arms. |
+| Recomputable | FakeBackend arms are deterministic but may be slow; the tier-1 run takes roughly 10 hours on the validated environment. |
+| Analysis-reproducible only | Hardware is reproduced from archived counts with `make analysis-from-hardware`; the quantum device is never re-executed as part of reproduction. |
+
 ## Make Targets
 
 The `Makefile` exposes the intended public interface, but not every target is
@@ -49,7 +70,7 @@ fully wired yet.
 | `make reproduce-pilot` | Target exists, but current `run_all.py` only implements the fast/Level-1 subset. It is not the full pilot Level 2 workflow. |
 | `make reproduce-confirmatory` | Aspirational until Level 2 orchestration is added. Confirmatory science currently runs via direct `python -m experiments.*` commands. |
 | `make reproduce-full` | Aspirational. `run_all.py` raises `NotImplementedError` outside `--mode fast --level 1`. |
-| `make analysis-from-hardware` | Aspirational until the Level 3 archive path is implemented. Hardware is never re-executed. |
+| `make analysis-from-hardware` | Supported Level 3 route: verifies the hardware archive and recomputes the Hardware-Sigma endpoint from archived counts. Hardware is never re-executed. |
 
 ## Recompute vs Archive Verification
 

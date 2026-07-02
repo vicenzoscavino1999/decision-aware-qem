@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import os
 import subprocess
 import sys
 import time
@@ -55,7 +56,7 @@ DECISION_ZNE_MU_FLOOR = 1e-6
 TOTAL_QUANTUM_TIME_CAP_MINUTES = 50.0
 DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent / "dry_run_outputs"
 DEFAULT_PHASE_B_OUTPUT_DIR = REPO_ROOT / "results" / "hardware_sigma_attempt2"
-TOKEN_PATH = Path(r"D:\paper fisica cuantica\apikey (1).json")
+TOKEN_PATH = Path(os.environ.get("IBM_TOKEN_PATH", r"D:\paper fisica cuantica\apikey (1).json"))
 FEASIBILITY_RECORD = Path(__file__).resolve().parent / "feasibility_result.json"
 ISA_OPTIMIZATION_LEVEL = 0
 ISA_IMPLEMENTATION_NOTE = (

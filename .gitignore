@@ -34,6 +34,14 @@ results/*
 !results/pilot/**
 !results/phase_diagram/
 !results/phase_diagram/**
+!results/derisk_fakebackend/
+!results/derisk_fakebackend/**
+!results/derisk_fakebackend_tier1/
+!results/derisk_fakebackend_tier1/**
+!results/hardware_sigma/
+!results/hardware_sigma/**
+!results/hardware_sigma_attempt2/
+!results/hardware_sigma_attempt2/**
 
 # Manuscript build products and private source files.
 *.tex

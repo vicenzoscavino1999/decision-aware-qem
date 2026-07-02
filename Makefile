@@ -50,8 +50,8 @@ reproduce-full:
 	python reproducibility/verify.py --reference reproducibility/reference/
 
 analysis-from-hardware:
-	python reproducibility/run_all.py --level 3 --from-archived-counts
-	python reproducibility/verify.py --reference reproducibility/reference/
+	python scripts/verify_hardware_archive.py
+	python scripts/analysis_from_hardware.py
 
 determinism-check:
 	python reproducibility/run_all.py --mode fast --level 1 --output results/determinism-run-1

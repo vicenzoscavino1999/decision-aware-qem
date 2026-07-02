@@ -13,7 +13,8 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 PYTHON = sys.executable
 FINAL_PASS = (
     "REPRODUCE_ALL_PASS: Level 1 exact, determinism, tests, freeze audit, "
-    "confirmatory verification, extension verification, and figures completed"
+    "confirmatory verification, extension verification, hardware archive, "
+    "hardware analysis, and figures completed"
 )
 
 
@@ -181,6 +182,16 @@ def run_extension() -> None:
     require_output("extension", proc, "EXTENSION VERIFY PASS")
 
 
+def run_hardware_archive() -> None:
+    proc = run_command("hardware-archive", [PYTHON, "scripts/verify_hardware_archive.py"])
+    require_output("hardware-archive", proc, "HARDWARE ARCHIVE VERIFY PASS")
+
+
+def run_hardware_analysis() -> None:
+    proc = run_command("hardware-analysis", [PYTHON, "scripts/analysis_from_hardware.py"])
+    require_output("hardware-analysis", proc, "HARDWARE ANALYSIS PASS")
+
+
 def run_figures() -> None:
     proc = run_command("figures", [PYTHON, "scripts/generate_all_figures.py"])
     require_output("figures", proc, "FIGURES PASS")
@@ -194,6 +205,8 @@ def main() -> int:
         ("freeze audit", run_freeze_audit),
         ("confirmatory verification", run_confirmatory),
         ("extension verification", run_extension),
+        ("hardware archive", run_hardware_archive),
+        ("hardware analysis", run_hardware_analysis),
         ("figures", run_figures),
     ]
     for label, func in steps:

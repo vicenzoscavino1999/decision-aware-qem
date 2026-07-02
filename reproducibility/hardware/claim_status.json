@@ -1,0 +1,10 @@
+{
+  "hardware_sigma_microcell": {
+    "attempt2_result_path": "results/hardware_sigma_attempt2/hsmc_result.json",
+    "device_level_language_allowed": false,
+    "primary_projected_ranking_pass": false,
+    "result_label": "failed_or_inconclusive",
+    "rule": "PAP section 15.3: device-level covariance/shot-cost language requires hardware-Sigma micro-cell primary pass. failed_or_inconclusive forbids device-level claim language.",
+    "secondary_frobenius_pass": false
+  }
+}
