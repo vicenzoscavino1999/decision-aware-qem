@@ -202,6 +202,14 @@ verdict_fields.hard_fail_on_flip = true
 ```
 
 Any pass/fail or claim-verdict flip is a hard reproducibility failure.
+The Level 3 `numeric_abs = 1e-12` declaration describes determinism within a
+single platform. The Level 3 hardware re-analysis comparison in
+`scripts/analysis_from_hardware.py` uses absolute tolerance `1e-9` because the
+archived reference was computed in the validated Windows environment and the
+canonical Docker `linux/amd64` platform introduces BLAS/solver ULP drift: the
+maximum measured difference is `1.5e-11` in the DA-ZNE relative Frobenius error,
+with no verdict change. This follows the same policy as the Cross-Platform Note
+in `REPRODUCING.md`.
 
 ## Recompute and Archive Policy
 

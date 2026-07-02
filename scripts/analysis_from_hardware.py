@@ -185,7 +185,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--reference", type=Path, default=REFERENCE_RESULT)
-    parser.add_argument("--atol", type=float, default=1e-12)
+    parser.add_argument("--atol", type=float, default=1e-9)
     args = parser.parse_args()
 
     recomputed = recompute_from_archive()

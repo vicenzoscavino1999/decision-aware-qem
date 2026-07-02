@@ -74,4 +74,5 @@ deterministic environment variables from the Dockerfile. Exact byte identity of
 floating-point CSVs is not treated as a cross-platform contract where BLAS/solver
 ULPs can differ; the verifier applies the registered Level-1/Level-2 tolerances
 for numerical files while still checking exact hashes for frozen artifacts and
-non-floating outputs.
+non-floating outputs. The Level-3 hardware comparison uses `atol=1e-9` for the
+same reason, with measured drift at or below `1.5e-11` and no verdict flips.
