@@ -1,0 +1,24 @@
+ACTUALIZACIONES DEL MANUSCRITO: APLICADAS EN V39
+
+cdr_slopes: Applied to v39 text/figures
+pec_effective_shots: Applied to v39 text/figures
+f1_source: Applied to v39 text/figures
+e3_counts: Retained and checked against corrected evidence
+e1: Retained and checked against corrected evidence
+f8: Applied to v39 text/figures
+noise_controls: Applied to v39 text/figures
+fakekolkata: Retained and checked against corrected evidence
+hardware_initial: Applied to v39 text/figures
+hardware_validation: Applied to v39 text/figures
+hardware_table_Accuracy-ZNE_Raw: Applied to v39 text/figures
+hardware_table_DA-ZNE_Raw: Applied to v39 text/figures
+hardware_table_Accuracy-ZNE_DA-ZNE: Applied to v39 text/figures
+gate0: Applied to v39 text/figures
+gate0_caption: Applied to v39 text/figures
+calibration: Retained and checked against corrected evidence
+channel_scope: Applied to v39 text/figures
+availability: Applied to v39 text/figures
+derivative_method: Applied to v39 text/figures
+tie_convention: Applied to v39 text/figures
+
+Ver manuscript_review/claim_resolutions_v39.json y validation/clean_environment/manuscript_correspondence.json.

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "passes": 3,
+  "compiler": "C:\\Users\\ASROCK\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.exe",
+  "diagnostics": [
+    "Package caption Warning: Unknown document class (or package),",
+    "Class quantumarticle Warning: The quantumarticle class recommends generating th",
+    "Underfull \\hbox (badness 2326) in paragraph at lines 798--801",
+    "Underfull \\hbox (badness 2368) in paragraph at lines 798--801",
+    "Underfull \\hbox (badness 10000) in paragraph at lines 818--821",
+    "Underfull \\hbox (badness 10000) in paragraph at lines 818--821",
+    "Underfull \\hbox (badness 10000) in paragraph at lines 839--842",
+    "Underfull \\hbox (badness 1742) in paragraph at lines 839--842",
+    "Underfull \\hbox (badness 10000) in paragraph at lines 844--847",
+    "Underfull \\hbox (badness 1038) in paragraph at lines 894--897"
+  ],
+  "output": [
+    "Output written on main.pdf (34 pages, 970242 bytes)."
+  ],
+  "source_sha256": "4d0b70cea6da3742245f3e477c968d33b7e86e7a3ae2ee108d0dc35f9c50427d",
+  "pdf_sha256": "51a23a507d271ea2dafbc906b537451dfa2f2ed68e692b6c6fab8306e291b03a"
+}

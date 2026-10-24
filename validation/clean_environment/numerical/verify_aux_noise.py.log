@@ -1,0 +1,13 @@
+{
+  "primitive_moments_verified": 1350,
+  "gaussian_scores_verified": 222,
+  "method_orders_verified": 76,
+  "max_mean_difference": 8.881784197001252e-15,
+  "max_variance_difference": 4.3076653355456074e-14,
+  "max_covariance_difference": 1.2079226507921703e-13,
+  "max_minimax_relative_excess": 3.1929191532639105e-12,
+  "max_gaussian_absolute_difference": 1.111344550719373e-06,
+  "max_small_risk_relative_difference": 3.9983298070397545e-13,
+  "gamma_squared_independent": 88.9438671431129,
+  "phase_b_status": "not_run_fail_fast_phase_a_no_majority"
+}

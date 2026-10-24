@@ -1,0 +1,15 @@
+{
+  "frozen_sha256": "143b28618d832473380156bb2facc7702f6ed09f0652189a91e300f5bc556fac",
+  "crosscheck": {
+    "problem_cell": "C045",
+    "B_max": 8192,
+    "replicates": 40,
+    "max_abs_empirical_minus_analytic": 0.009682173601516908,
+    "max_abs_diff_scale_index": 2,
+    "max_abs_diff_candidate_index": 18,
+    "max_z_score": 2.8097842116900087,
+    "max_z_scale_index": 2,
+    "max_z_candidate_index": 18,
+    "means_ok": true
+  }
+}

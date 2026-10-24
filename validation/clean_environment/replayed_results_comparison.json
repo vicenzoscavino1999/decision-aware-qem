@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "stages": {
+    "confirmatory": {
+      "fingerprint": "3d02ad747fd41ac27316165f624055d1ed591bf12e5936e5643364d7e6435adb",
+      "output_files": 244,
+      "byte_identical": true,
+      "seconds": 439.5710732000007,
+      "workers": 8
+    },
+    "e1": {
+      "fingerprint": "da8c1174af4eec9fc9bc0760d9e62f69d3f6710730cb955da16c502591085e46",
+      "output_files": 52,
+      "byte_identical": true,
+      "seconds": 44.05001330000232,
+      "workers": 8
+    },
+    "pilot": {
+      "fingerprint": "982ca7ea2b08fd261bd49443f8585924badf072c14e138628bdfbb67b0d310fc",
+      "output_files": 152,
+      "byte_identical": true,
+      "seconds": 272.58181790000526,
+      "workers": 8
+    },
+    "c3": {
+      "fingerprint": "5a03988c8bd583b17ad63ba1c38f253df6968bafc90239fafe5d62e9f92c1f8d",
+      "output_files": 6,
+      "byte_identical": true,
+      "seconds": 34.75773429998662,
+      "workers": 8
+    },
+    "e2": {
+      "fingerprint": "5dfd9f6565dafbc899b2145562b72026b3a12505b9455c341fefab9459516033",
+      "output_files": 3,
+      "byte_identical": true,
+      "seconds": 1.215367700002389,
+      "workers": 8
+    },
+    "fakekolkata": {
+      "fingerprint": "1e9265ea76c96c9a724101ff45fdc9064432732593f6451370554cbc8b4ece89",
+      "output_files": 194,
+      "byte_identical": true,
+      "seconds": 63.31009450001875,
+      "workers": 8
+    },
+    "hardware": {
+      "fingerprint": "5f6d80911c6a52850502ad2d3381bcef2ab3e445bdd3137396daaff40e19e5f1",
+      "output_files": 2,
+      "byte_identical": true,
+      "seconds": 7.87889950000681,
+      "workers": 8
+    }
+  },
+  "total_output_files": 653,
+  "all_replayed_output_bytes_identical": true,
+  "source": "new venv + extracted v2 ZIP + single --new-run invocation",
+  "scientific_sources_identical_to_v3": true
+}

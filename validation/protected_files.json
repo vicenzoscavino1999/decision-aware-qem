@@ -1,0 +1,50 @@
+{
+  "cierre_E2_v3": {
+    "changed": [],
+    "files_verified": 22
+  },
+  "correccion_codigo_parte1_v3": {
+    "changed": [],
+    "files_verified": 1903
+  },
+  "correccion_codigo_parte2_e3_v2": {
+    "changed": [],
+    "files_verified": 187
+  },
+  "correccion_codigo_parte2_fakekolkata_v1": {
+    "changed": [],
+    "files_verified": 370
+  },
+  "correccion_codigo_parte2_hardware_v1": {
+    "changed": [],
+    "files_verified": 203
+  },
+  "correccion_codigo_parte3_a3_auditoria_v1": {
+    "changed": [],
+    "files_verified": 406
+  },
+  "correccion_codigo_parte3_canal_ablaciones_v1": {
+    "changed": [],
+    "files_verified": 255
+  },
+  "correccion_codigo_parte3_cdr_pec_v1": {
+    "changed": [],
+    "files_verified": 232
+  },
+  "correccion_codigo_parte3_controles_v1": {
+    "changed": [],
+    "files_verified": 267
+  },
+  "correccion_codigo_parte3_generacion_ejecutabilidad_v1": {
+    "changed": [],
+    "files_verified": 233
+  },
+  "correccion_codigo_parte3_ruido_v1": {
+    "changed": [],
+    "files_verified": 216
+  },
+  "revision_v38": {
+    "changed": [],
+    "files_verified": 31
+  }
+}

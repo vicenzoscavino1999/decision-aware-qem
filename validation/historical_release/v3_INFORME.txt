@@ -1,0 +1,55 @@
+INTEGRACIÓN Y REPRODUCCIÓN V3 - CIERRE LOCAL DE LA PARTE 4
+23 de octubre de 2026.
+
+RESULTADO
+Se incorpora el manuscrito v39, con las precisiones y cifras verificadas y cinco
+figuras vectoriales regeneradas. El PDF tiene 30 páginas. Se conserva la teoría
+y las conclusiones; no se añade investigación ni desarrollo de Fisher.
+
+REPRODUCCIÓN EN ENTORNO NUEVO
+Se creó un venv Python 3.12.10 sin paquetes del entorno habitual, se instalaron
+las 85 versiones fijadas y pip check terminó sin conflictos. Se extrajo el ZIP
+v2 y se ejecutó su comando global --new-run con 8 procesos. Las siete etapas
+terminaron, seguidas por las diez verificaciones numéricas y cinco figuras.
+Los 653 archivos de resultados generados coinciden byte por byte con los
+entregados anteriormente. También coinciden las identidades de código/entradas.
+No se reutilizaron registros de etapa terminada para saltar esos siete análisis.
+Sí se reutilizaron los datos y probabilidades que define el protocolo.
+
+El código numérico de v3 es idéntico al utilizado en esa ejecución. El único
+archivo de código preexistente modificado cambia audit por comparison en el
+título de la figura E1. Se añaden lanzadores de regresiones, figuras PDF,
+compilación y correspondencia del manuscrito, sin cambiar cálculos científicos.
+Las 311 regresiones vigentes pasan en el venv nuevo. Los 323 avisos proceden de
+la misma deprecación de un plugin Qiskit. La invocación genérica de todo tests/
+intentó recoger pruebas históricas de un ejecutor ausente; se conserva ese
+diagnóstico y se documenta el comando de la suite vigente. No se omitió ningún
+caso de las 311 regresiones previamente usadas.
+
+MANUSCRITO
+Treinta cifras/descripciones y las fuentes de cinco figuras verificadas.
+Regeneración de figuras PDF y tres pasadas de pdflatex en una carpeta nueva.
+El texto y la representación a 90 dpi de las 30 páginas resultaron idénticos.
+Inspección visual sin recortes ni solapamientos. Sin referencias pendientes ni
+desbordamientos; permanecen avisos tipográficos y de clase ya conocidos.
+El entorno Python es nuevo; MiKTeX es la instalación existente de esta PC.
+
+ARCHIVO E2
+datos_E2_v3.zip conserva 25.600 rondas NPZ, sus metadatos y demás registros:
+51.555 archivos originales. Se leyeron y validaron todos los miembros del ZIP
+por SHA-256. Tamaño: 4.763.777.177 bytes. La corrida larga no se repitió.
+El archivo principal incluye los resultados por trayectoria necesarios para
+reproducir tablas y figuras aunque se omita la descarga de los datos pesados.
+
+ALCANCE
+Esto verifica análisis desde evidencia archivada en esta PC y este entorno.
+No repite la adquisición física de hardware ni toda la simulación de shots.
+No verifica otros sistemas operativos, una campaña nueva, ni que el código
+carezca de cualquier error. El resultado de hardware sigue siendo
+failed_or_inconclusive para su criterio científico; no es un fallo de ejecución.
+
+ESTADO
+Los cuatro bloques del plan quedan cerrados para esta entrega local. GitHub y
+Zenodo no se modificaron. El depósito, su licencia/metadatos finales y actualizar
+el enlace/DOI de disponibilidad corresponden al paso de publicación posterior.
+REPRODUCIR.txt contiene los comandos y límites exactos de cada comprobación.

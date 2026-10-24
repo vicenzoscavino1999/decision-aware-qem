@@ -1,0 +1,4 @@
+1. Núcleo numérico: revisado y corregido en las entregas previas.
+2. Experimentos principales: corregidos; E1/E3/E2/FakeKolkata/hardware consolidados.
+3. Auxiliares: bloques revisados, evidencias incorporadas y verificadores ejecutados.
+4. Integración: consolidación numérica y entrada global completadas. Quedan aplicación al LaTeX, compilación/revisión del PDF y archivo final de publicación (incluido el recurso de rondas E2).

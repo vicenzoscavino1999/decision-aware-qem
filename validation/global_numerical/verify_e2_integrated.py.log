@@ -1,0 +1,110 @@
+C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v2\code\scripts\verify_e2_integrated.py:10: Pandas4Warning: The 'float_precision' argument is deprecated. Use the default float precision instead.
+  frames=[pd.read_csv(p,float_precision='round_trip') for p in sorted((source/'inputs/reproducibility/reference_confirmatory/e2/instances').glob('*_results.csv'))]
+C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v2\code\scripts\verify_e2_integrated.py:32: Pandas4Warning: The 'float_precision' argument is deprecated. Use the default float precision instead.
+  actual=pd.read_csv(root/'e2_full_ledger.csv',float_precision='round_trip')
+C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v2\code\scripts\verify_e2_integrated.py:39: Pandas4Warning: The 'float_precision' argument is deprecated. Use the default float precision instead.
+  pd.testing.assert_frame_equal(cross,pd.read_csv(root/'e2_corrected_crossings.csv',float_precision='round_trip'),check_exact=True,check_dtype=False)
+{
+  "outcomes_verified": 15360,
+  "ledger_rows": 384,
+  "both_cross_instances": 13,
+  "series": [
+    {
+      "selector": "DA",
+      "budget": 256,
+      "mean_full_shots": 803520.0,
+      "successful_trajectories": 650,
+      "trajectories": 1280,
+      "success_rate": 0.5078125
+    },
+    {
+      "selector": "DA",
+      "budget": 512,
+      "mean_full_shots": 828800.0,
+      "successful_trajectories": 739,
+      "trajectories": 1280,
+      "success_rate": 0.57734375
+    },
+    {
+      "selector": "DA",
+      "budget": 1024,
+      "mean_full_shots": 898560.0,
+      "successful_trajectories": 840,
+      "trajectories": 1280,
+      "success_rate": 0.65625
+    },
+    {
+      "selector": "DA",
+      "budget": 2048,
+      "mean_full_shots": 1018880.0,
+      "successful_trajectories": 896,
+      "trajectories": 1280,
+      "success_rate": 0.7
+    },
+    {
+      "selector": "DA",
+      "budget": 4096,
+      "mean_full_shots": 1208320.0,
+      "successful_trajectories": 955,
+      "trajectories": 1280,
+      "success_rate": 0.74609375
+    },
+    {
+      "selector": "DA",
+      "budget": 8192,
+      "mean_full_shots": 1792000.0,
+      "successful_trajectories": 993,
+      "trajectories": 1280,
+      "success_rate": 0.77578125
+    },
+    {
+      "selector": "MSE",
+      "budget": 256,
+      "mean_full_shots": 849920.0,
+      "successful_trajectories": 610,
+      "trajectories": 1280,
+      "success_rate": 0.4765625
+    },
+    {
+      "selector": "MSE",
+      "budget": 512,
+      "mean_full_shots": 921600.0,
+      "successful_trajectories": 708,
+      "trajectories": 1280,
+      "success_rate": 0.553125
+    },
+    {
+      "selector": "MSE",
+      "budget": 1024,
+      "mean_full_shots": 1064960.0,
+      "successful_trajectories": 820,
+      "trajectories": 1280,
+      "success_rate": 0.640625
+    },
+    {
+      "selector": "MSE",
+      "budget": 2048,
+      "mean_full_shots": 1351680.0,
+      "successful_trajectories": 887,
+      "trajectories": 1280,
+      "success_rate": 0.69296875
+    },
+    {
+      "selector": "MSE",
+      "budget": 4096,
+      "mean_full_shots": 1925120.0,
+      "successful_trajectories": 971,
+      "trajectories": 1280,
+      "success_rate": 0.75859375
+    },
+    {
+      "selector": "MSE",
+      "budget": 8192,
+      "mean_full_shots": 3072000.0,
+      "successful_trajectories": 1009,
+      "trajectories": 1280,
+      "success_rate": 0.78828125
+    }
+  ],
+  "scope": "Outcome-level aggregation and costs; does not independently reconstruct all raw trajectories"
+}

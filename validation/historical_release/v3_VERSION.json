@@ -1,0 +1,29 @@
+{
+  "analysis_stages": [
+    "E1",
+    "E2",
+    "E3",
+    "FakeKolkata",
+    "Hardware",
+    "A3",
+    "C3"
+  ],
+  "date_utc": "2026-10-23T12:58:29.392220+00:00",
+  "entrypoint": "code/scripts/reproduce_all.py",
+  "independent_auxiliary_blocks": [
+    "CDR_PEC",
+    "Noise",
+    "Controls",
+    "Learned_channel_and_ablation"
+  ],
+  "manuscript_modified": true,
+  "new_E2_acquisition": false,
+  "new_hardware_jobs": 0,
+  "phase4_status": "Local consolidation complete: manuscript, fresh-environment analysis replay, verified separate E2 data archive; remote publication pending",
+  "revision": "part4_consolidation_v3",
+  "manuscript_revision": "v39",
+  "clean_python_environment": true,
+  "replayed_output_files_byte_identical": 653,
+  "regression_tests_passed": 311,
+  "remote_publication": false
+}

@@ -1,0 +1,3634 @@
+[
+  [
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 37,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 36,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 9,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 19,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 4,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 18,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 1,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 30,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 5,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 38,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 21,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 36,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 16,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 9,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 23,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 19,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 4,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 18,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 1,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 21,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 36,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 16,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 9,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 19,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 4,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 18,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 1,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 21,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 36,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 16,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 9,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 19,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 4,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 18,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 1,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 37,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 36,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 9,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 19,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 4,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 18,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 1,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 30,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 5,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 38,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 21,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 36,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 9,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 19,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 4,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 25,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 18,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 1,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 17,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 36,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 16,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 9,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 19,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 4,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 25,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 18,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 1,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 30,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 0,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 38,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 21,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 36,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 16,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 9,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 19,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 4,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 18,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 1,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 21,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 36,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 16,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 9,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 19,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 4,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 18,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 1,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 37,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 36,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 9,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 19,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 4,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 18,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 1,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 30,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 5,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 38,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 36,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 9,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 19,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 4,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 25,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 18,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 1,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 17,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 36,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 9,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 19,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 4,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 18,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 1,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 36,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 9,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 19,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 4,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 18,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 1,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 36,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 9,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 19,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 4,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 18,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 1,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 36,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 9,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 19,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 4,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 25,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 18,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 1,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 17,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 37,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 36,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 9,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 19,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 4,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 18,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 1,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 30,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 5,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 17,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 36,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 9,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 23,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 19,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 4,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 18,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 1,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 36,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 9,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 19,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 4,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 18,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 1,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 30,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 36,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 9,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 19,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 4,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 25,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 18,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 1,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 17,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "replicate_id": 38,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 11,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 21,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 37,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 36,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 16,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 9,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 23,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 19,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 4,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 25,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 29,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 12,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 18,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 1,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 30,
+      "failure": 1
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 0,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 5,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 17,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 24,
+      "failure": 0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "replicate_id": 38,
+      "failure": 0
+    }
+  ],
+  [
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "solver_status": {
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "common_scale": 38.64732055966214,
+        "normalized_primal_objective": 1.3624567574508442,
+        "normalized_dual_objective": 1.3624567574613446,
+        "normalized_gap": -1.050048936690473e-11,
+        "affine_residual": 4.996003610813204e-16,
+        "cone_residual": 0.0,
+        "dual_cone_residual": 0.0,
+        "stationarity_residual": 1.251776460264864e-14,
+        "dual_balance_residual": 4.6717582212928485e-11
+      },
+      "fit_ids": [
+        27,
+        20,
+        2,
+        26,
+        8,
+        28,
+        35,
+        14,
+        13,
+        10
+      ],
+      "select_ids": [
+        6,
+        39,
+        32,
+        7,
+        33,
+        34,
+        15,
+        31,
+        3,
+        22
+      ],
+      "test_ids": [
+        11,
+        21,
+        37,
+        36,
+        16,
+        9,
+        23,
+        19,
+        4,
+        25,
+        29,
+        12,
+        18,
+        1,
+        30,
+        0,
+        5,
+        17,
+        24,
+        38
+      ],
+      "coefficients": {
+        "Accuracy-ZNE": [
+          1.3333333333333333,
+          0.3333333333333333,
+          -0.6666666666666666
+        ],
+        "Decision-ZNE": [
+          1.5661059620831914,
+          -0.13221192416638294,
+          -0.43389403791680853
+        ]
+      },
+      "scores": {
+        "Raw": {
+          "mse": 0.5937638551538857,
+          "gri": 0.4066929407507548
+        },
+        "Accuracy-ZNE": {
+          "mse": 0.1152299741432806,
+          "gri": 0.4875648056844907
+        },
+        "Decision-ZNE": {
+          "mse": 0.09898706130010977,
+          "gri": 0.48461372913417855
+        }
+      },
+      "choices": {
+        "MSE-selector": "Decision-ZNE",
+        "GRI-selector": "Raw"
+      }
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "solver_status": {
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "common_scale": 20.604824456227263,
+        "normalized_primal_objective": 1.2980185881388635,
+        "normalized_dual_objective": 1.298018588144279,
+        "normalized_gap": -5.4154458695165886e-12,
+        "affine_residual": 1.1102230246251565e-16,
+        "cone_residual": 0.0,
+        "dual_cone_residual": 0.0,
+        "stationarity_residual": 8.820721930646869e-14,
+        "dual_balance_residual": 2.2625703704941808e-11
+      },
+      "fit_ids": [
+        27,
+        20,
+        2,
+        26,
+        8,
+        28,
+        35,
+        14,
+        13,
+        10
+      ],
+      "select_ids": [
+        6,
+        39,
+        32,
+        7,
+        33,
+        34,
+        15,
+        31,
+        3,
+        22
+      ],
+      "test_ids": [
+        11,
+        21,
+        37,
+        36,
+        16,
+        9,
+        23,
+        19,
+        4,
+        25,
+        29,
+        12,
+        18,
+        1,
+        30,
+        0,
+        5,
+        17,
+        24,
+        38
+      ],
+      "coefficients": {
+        "Accuracy-ZNE": [
+          1.3333333333333333,
+          0.3333333333333333,
+          -0.6666666666666666
+        ],
+        "Decision-ZNE": [
+          1.3911475035675624,
+          0.21770499286487488,
+          -0.6088524964324374
+        ]
+      },
+      "scores": {
+        "Raw": {
+          "mse": 0.6017366552396336,
+          "gri": 0.20589325950164605
+        },
+        "Accuracy-ZNE": {
+          "mse": 0.09713379301197717,
+          "gri": 0.41653720660291604
+        },
+        "Decision-ZNE": {
+          "mse": 0.0920357319270765,
+          "gri": 0.42093164977792796
+        }
+      },
+      "choices": {
+        "MSE-selector": "Decision-ZNE",
+        "GRI-selector": "Raw"
+      }
+    }
+  ],
+  [
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "fit_shots": 0,
+      "selection_shots": 0,
+      "evaluation_shots": 768000,
+      "total_shots_20_decisions": 768000,
+      "evaluation_shots_per_decision": 38400,
+      "amortized_total_per_decision": 38400.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "fit_shots": 0,
+      "selection_shots": 0,
+      "evaluation_shots": 768000,
+      "total_shots_20_decisions": 768000,
+      "evaluation_shots_per_decision": 38400,
+      "amortized_total_per_decision": 38400.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "fit_shots": 384000,
+      "selection_shots": 0,
+      "evaluation_shots": 768000,
+      "total_shots_20_decisions": 1152000,
+      "evaluation_shots_per_decision": 38400,
+      "amortized_total_per_decision": 57600.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "fit_shots": 384000,
+      "selection_shots": 768000,
+      "evaluation_shots": 768000,
+      "total_shots_20_decisions": 1920000,
+      "evaluation_shots_per_decision": 38400,
+      "amortized_total_per_decision": 96000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "fit_shots": 384000,
+      "selection_shots": 768000,
+      "evaluation_shots": 768000,
+      "total_shots_20_decisions": 1920000,
+      "evaluation_shots_per_decision": 38400,
+      "amortized_total_per_decision": 96000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "fit_shots": 0,
+      "selection_shots": 0,
+      "evaluation_shots": 1920000,
+      "total_shots_20_decisions": 1920000,
+      "evaluation_shots_per_decision": 96000,
+      "amortized_total_per_decision": 96000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "fit_shots": 0,
+      "selection_shots": 0,
+      "evaluation_shots": 1920000,
+      "total_shots_20_decisions": 1920000,
+      "evaluation_shots_per_decision": 96000,
+      "amortized_total_per_decision": 96000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "fit_shots": 384000,
+      "selection_shots": 0,
+      "evaluation_shots": 1536000,
+      "total_shots_20_decisions": 1920000,
+      "evaluation_shots_per_decision": 76800,
+      "amortized_total_per_decision": 96000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "fit_shots": 384000,
+      "selection_shots": 768000,
+      "evaluation_shots": 768000,
+      "total_shots_20_decisions": 1920000,
+      "evaluation_shots_per_decision": 38400,
+      "amortized_total_per_decision": 96000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 512,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "fit_shots": 384000,
+      "selection_shots": 768000,
+      "evaluation_shots": 768000,
+      "total_shots_20_decisions": 1920000,
+      "evaluation_shots_per_decision": 38400,
+      "amortized_total_per_decision": 96000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Raw",
+      "fit_shots": 0,
+      "selection_shots": 0,
+      "evaluation_shots": 1536000,
+      "total_shots_20_decisions": 1536000,
+      "evaluation_shots_per_decision": 76800,
+      "amortized_total_per_decision": 76800.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Accuracy-ZNE",
+      "fit_shots": 0,
+      "selection_shots": 0,
+      "evaluation_shots": 1536000,
+      "total_shots_20_decisions": 1536000,
+      "evaluation_shots_per_decision": 76800,
+      "amortized_total_per_decision": 76800.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "Decision-ZNE",
+      "fit_shots": 768000,
+      "selection_shots": 0,
+      "evaluation_shots": 1536000,
+      "total_shots_20_decisions": 2304000,
+      "evaluation_shots_per_decision": 76800,
+      "amortized_total_per_decision": 115200.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "MSE-selector",
+      "fit_shots": 768000,
+      "selection_shots": 1536000,
+      "evaluation_shots": 1536000,
+      "total_shots_20_decisions": 3840000,
+      "evaluation_shots_per_decision": 76800,
+      "amortized_total_per_decision": 192000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "evaluation",
+      "policy": "GRI-selector",
+      "fit_shots": 768000,
+      "selection_shots": 1536000,
+      "evaluation_shots": 1536000,
+      "total_shots_20_decisions": 3840000,
+      "evaluation_shots_per_decision": 76800,
+      "amortized_total_per_decision": 192000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Raw",
+      "fit_shots": 0,
+      "selection_shots": 0,
+      "evaluation_shots": 3840000,
+      "total_shots_20_decisions": 3840000,
+      "evaluation_shots_per_decision": 192000,
+      "amortized_total_per_decision": 192000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Accuracy-ZNE",
+      "fit_shots": 0,
+      "selection_shots": 0,
+      "evaluation_shots": 3840000,
+      "total_shots_20_decisions": 3840000,
+      "evaluation_shots_per_decision": 192000,
+      "amortized_total_per_decision": 192000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "Decision-ZNE",
+      "fit_shots": 768000,
+      "selection_shots": 0,
+      "evaluation_shots": 3072000,
+      "total_shots_20_decisions": 3840000,
+      "evaluation_shots_per_decision": 153600,
+      "amortized_total_per_decision": 192000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "MSE-selector",
+      "fit_shots": 768000,
+      "selection_shots": 1536000,
+      "evaluation_shots": 1536000,
+      "total_shots_20_decisions": 3840000,
+      "evaluation_shots_per_decision": 76800,
+      "amortized_total_per_decision": 192000.0
+    },
+    {
+      "instance": "C031",
+      "base_t": 1024,
+      "comparison": "end_to_end",
+      "policy": "GRI-selector",
+      "fit_shots": 768000,
+      "selection_shots": 1536000,
+      "evaluation_shots": 1536000,
+      "total_shots_20_decisions": 3840000,
+      "evaluation_shots_per_decision": 76800,
+      "amortized_total_per_decision": 192000.0
+    }
+  ]
+]

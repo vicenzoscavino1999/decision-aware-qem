@@ -1,0 +1,108 @@
+--- v38/main.tex
++++ v39/main.tex
+@@ -517,14 +517,14 @@
+ 
+ \subsection{Accuracy and decision quality}
+ 
+-The CDR control in Fig.~\ref{fig:accuracy_decision_separation} isolates the effect of a positive affine correction $x\mapsto ax+b$, with slopes $a\in[1.068,1.155]$. It reduces MSE by factors of $43$--$180$ over the reported budgets while preserving every ranking and tie. Its gap mean and covariance satisfy $\mu_{\CDR}=a\mu_{\Raw}$ and $\Sigma_{\CDR}=a^2\Sigma_{\Raw}$, so $\GRI_{\CDR}=\GRI_{\Raw}$.
+-
+-PEC illustrates the competing effect of sampling overhead in Section~\ref{sec:pec_signature}. Under the scalar-overhead model, the aggregate inequalities $\MSE_{\PEC}<\MSE_{\Raw}$ and $\GRI_{\PEC}>\GRI_{\Raw}$ hold at budgets $768,1536,3072,6144$. Both inequalities hold on $5/8,7/8,7/8,7/8$ instances, respectively. For POM\_004, Raw already has low MSE at small budgets, while PEC becomes decision-better at high budgets; the two inequalities never hold together on that instance. The observed separation therefore depends on both the landscape and the overhead.
++The CDR control in Fig.~\ref{fig:accuracy_decision_separation} isolates the effect of a positive affine correction $x\mapsto ax+b$, with slopes $a\in[1.292,1.478]$. This oracle control fits exact noisy means to ideal values on the same candidates. It reduces MSE by factors of $43$--$180$ over the reported evaluation budgets while preserving every ranking and tie. Its gap mean and covariance satisfy $\mu_{\CDR}=a\mu_{\Raw}$ and $\Sigma_{\CDR}=a^2\Sigma_{\Raw}$, so $\GRI_{\CDR}=\GRI_{\Raw}$.
++
++PEC illustrates the competing effect of sampling overhead in Section~\ref{sec:pec_signature}. Here an effective-shot proxy samples the ideal multinomial distribution with $n_{\rm eff}=\lfloor B/\gamma^2\rfloor$ shots per candidate, giving covariance $\Sigma_{\rm ideal}/n_{\rm eff}$ for ideal single-shot covariance $\Sigma_{\rm ideal}$. This calculation models the overhead without sampling signed circuit contributions. The aggregate inequalities $\MSE_{\PEC}<\MSE_{\Raw}$ and $\GRI_{\PEC}>\GRI_{\Raw}$ hold at budgets $768,1536,3072,6144$. Both inequalities hold on $5/8,7/8,7/8,7/8$ instances, respectively. For POM\_004, Raw already has low MSE at small budgets, while the PEC proxy becomes decision-better at high budgets; the two inequalities never hold together on that instance. The observed separation therefore depends on both the landscape and the overhead. These budgets cover evaluation; they exclude the cost of learning a physical correction.
+ 
+ \begin{figure}[!ht]
+     \centering
+     \includegraphics[width=0.92\linewidth]{figures/F1_accuracy_decision_separation.pdf}
+-    \caption{Accuracy--decision separation. CDR lowers MSE while preserving GRI; its GRI curve overlays Raw's. PEC has lower MSE and higher GRI than Raw over the reported budgets.}
++    \caption{Accuracy--decision separation at the reported evaluation budgets. The oracle affine CDR control lowers MSE while preserving GRI; its GRI curve overlays Raw's. The PEC effective-shot proxy has lower MSE and higher GRI than Raw.}
+     \label{fig:accuracy_decision_separation}
+ \end{figure}
+ 
+@@ -585,7 +585,7 @@
+ \FloatBarrier
+ \subsection{Dynamic selection and total shot cost}
+ 
+-The dynamic experiment applies the fixed static method choices to repeated decisions along a shared trajectory. The next proposal is chosen using Raw at $B_{\max}=8192$, including at smaller reported budgets. Over C001--C032, aggregate success reaches at most $0.7758$ for decision-aware selection (DA) and $0.7883$ for MSE selection, both below the target $0.80$.
++The dynamic experiment applies the archived static method choices to repeated decisions along a shared trajectory. These choices retain the original training procedure; they are separate from the retrospective static split in Section~\ref{sec:e1_reanalysis}. The next proposal is chosen using Raw at $B_{\max}=8192$, including at smaller reported budgets. Over C001--C032, aggregate success reaches at most $0.7758$ for decision-aware selection (DA) and $0.7883$ for MSE selection, both below the target $0.80$.
+ 
+ The total shot cost includes Raw at $B_{\max}$ for the 19 proposal updates that affect later rounds, the selected method's additional scales and the final-round evaluation. It also charges static-selector training (40 repetitions, three scales and 25 candidates at the source budget), amortized over 40 trajectories. Optimizing the target crossing by full shot cost gives a median MSE/DA cost ratio of $1.30$ on the 13 instances where both policies cross the target. Analytic coefficient construction and ideal truth are oracle inputs excluded from the shot cost.
+ 
+@@ -599,7 +599,7 @@
+ \subsection{Noise-model controls and device tests}
+ 
+ \paragraph{Noise-model controls.}
+-To examine sensitivity to the noise model, a heterogeneous-PEC calculation propagates covariance through the known heterogeneous channel. PEC has higher GRI than Raw throughout the evaluated budgets, with overhead $\gamma^2=88.94$. Under amplitude damping plus phase damping, the analytic decision-aware prediction beats Raw on $0/16$ instances at every budget. These controls identify regimes in which the available correction and its sampling cost provide no decision gain.
++To examine sensitivity to the noise model, a heterogeneous-PEC Gaussian proxy uses the ideal mean and covariance $\gamma^2\Sigma_{\Raw}$, with overhead $\gamma^2=88.94$. Its GRI exceeds Raw's throughout the evaluated budgets. This proxy scales noisy covariance, whereas Fig.~\ref{fig:accuracy_decision_separation} uses ideal multinomial samples. Under amplitude damping plus phase damping, a separate calculation uses known moments and $B$ shots per candidate and scale: Raw costs $B$ and ZNE costs $3B$. The analytic decision-aware prediction beats Raw on $0/16$ instances at every budget, so the planned empirical stage was not triggered. These controls identify regimes in which the available correction and its sampling cost provide no decision gain.
+ 
+ \paragraph{Calibrated device-noise simulation.}
+ A four-method \texttt{FakeKolkataV2} simulation uses Raw, Raw+REM, Accuracy-ZNE and Decision-ZNE on all 48 original landscapes. Routing is restricted to the 10-qubit physical block $[16,22,25,19,20,24,23,14,26,13]$, previously specified for P004, to make density-matrix simulation tractable. Sampling separates 10 coefficient-fitting, 10 method-selection and 20 test repetitions. At nominal evaluation budget $512$, ZNE uses $3\lfloor512/3\rfloor=510$ shots per candidate, while Raw and REM use 512. Candidate labels and ideal gaps remain simulation-oracle inputs.
+@@ -639,7 +639,7 @@
+ 
+ \section*{Code and data availability}
+ 
+-The public reproduction package \texttt{decision-aware-qem} is available at \url{https://github.com/vicenzoscavino1999/decision-aware-qem}; release \texttt{v1.1.0} is archived under DOI \href{https://doi.org/10.5281/zenodo.21146260}{10.5281/zenodo.21146260}. That release contains the earlier analysis. The numerical results reported here use the separate \texttt{revision\_v21/} package, including archived inputs, split IDs, shot ledgers, fixed simulation streams, code and a hash manifest. It has not been deposited under that DOI or published as a new release.
++The public reproduction package \texttt{decision-aware-qem} is available at \url{https://github.com/vicenzoscavino1999/decision-aware-qem}; release \texttt{v1.1.0} is archived under DOI \href{https://doi.org/10.5281/zenodo.21146260}{10.5281/zenodo.21146260}. That release contains the earlier analysis. The corrected numerical results reported here use a separate consolidated analysis package, including archived inputs, split IDs, shot ledgers, fixed simulation streams, code, numerical checks and hash manifests. Its analysis workflow regenerates the reported summaries from stored evidence; the original dynamic-experiment shot records form a separate data archive. The corrected package and revised manuscript have not yet been deposited under that DOI or published as a new release.
+ 
+ The manuscript source and provenance metadata accompany the analysis package; Appendix~\ref{app:implementation_checks} describes the numerical methods used for the reported results.
+ 
+@@ -1379,18 +1379,18 @@
+ \section{Hardware micro-cell: protocol and results}
+ \label{app:hardware_microcell}
+ 
+-A preregistered exploratory four-qubit micro-cell (path-graph MaxCut, QAOA depth 1, four candidates and three active gaps) ran on the 156-qubit device \texttt{ibm\_marrakesh}. The protocol used blind calibration-based qubit selection, interleaved method scheduling and cluster bootstrap by epoch. An initial path, with held-out generalization error $0.74$, did not meet the characterization criterion. The same blind rule selected a replacement under a protocol amendment fixed and recorded before decision-covariance data collection.
+-
+-On the selected path, the learned sparse Pauli--Lindblad channel \cite{vandenBerg2023} had held-out error $0.095$ and support stability $1.0$, meeting the characterization criterion; rates on the two shared edges reproduced within calibration noise. For $R=60$ independent repetitions over 10 epochs, the relative Frobenius errors between $LMC_{\rm dev}M^\top L^\top$ and the directly estimated covariance were $0.126$ for Accuracy-ZNE, $0.173$ for Raw and $0.209$ for DA-ZNE. The first two lie within the specified $0.20$ band. The predicted ZNE-to-Raw variance amplification of approximately $7.4\times$ also appeared in the measured kernels.
++A preregistered exploratory four-qubit micro-cell (path-graph MaxCut, QAOA depth 1, four candidates and three active gaps) ran on the 156-qubit device \texttt{ibm\_marrakesh}. The protocol used blind calibration-based qubit selection, interleaved method scheduling and cluster bootstrap by epoch. An initial path, with held-out generalization error $0.75$, did not meet the characterization criterion. The same blind rule selected a replacement under a protocol amendment fixed and recorded before decision-covariance data collection.
++
++On the selected path, a local depolarizing model estimates rates on the specified qubits and edges, using $p=1-e^{-r}$ to map each fitted rate to its depolarizing parameter. A retrospective fit on 162 characterization records gives held-out error $0.097$ on 41 reserved records, meeting the characterization criterion. The final model is then refitted to all 203 records. The support-stability score is $1.0$ within the specified support; it does not assess recovery of an unknown support. Covariance predictions retain the mitigation coefficients used in the executed circuits. For $R=60$ independent repetitions over 10 epochs, the relative Frobenius errors between $LMC_{\rm dev}M^\top L^\top$ and the directly estimated covariance were $0.126$ for Accuracy-ZNE, $0.173$ for Raw and $0.209$ for DA-ZNE. The first two lie within the specified $0.20$ band. The predicted ZNE-to-Raw variance amplification of approximately $7.4\times$ also appeared in the measured kernels.
+ 
+ The decision-direction criterion requires projected ranking error below $0.25$ times the predicted risk margin at the upper 95\% cluster-bootstrap bound. The upper bounds exceed this threshold for all three pairs. The Accuracy-ZNE/Raw point estimate lies below the threshold, while the Accuracy-ZNE/DA-ZNE pair has a near-zero predicted margin. The table uses analytic conditional-Gaussian derivatives, assigning half of each symmetric off-diagonal derivative to each matrix entry, and 10,000 whole-epoch bootstrap resamples of the archived counts.
+ 
+ \begin{center}\small
+ \begin{tabular}{lrrr}\toprule
+ Pair & Projected error & 95\% upper bound & Required bound\\\midrule
+-Accuracy-ZNE / DA-ZNE & $0.0060206$ & $0.0139547$ & $0.00000009$ \\
+-Accuracy-ZNE / Raw & $0.0022542$ & $0.0062907$ & $0.00279585$ \\
+-DA-ZNE / Raw & $0.0037665$ & $0.0112263$ & $0.00279576$ \\
++Accuracy-ZNE / DA-ZNE & $0.0060209$ & $0.0139553$ & $0.00000009$ \\
++Accuracy-ZNE / Raw & $0.0022532$ & $0.0062904$ & $0.00279613$ \\
++DA-ZNE / Raw & $0.0037677$ & $0.0112278$ & $0.00279604$ \\
+ \bottomrule\end{tabular}\end{center}
+ 
+ Persistent calibration drift can add covariance beyond the shot-scaling prediction in Section~\ref{subsec:anchoring_cdev}, providing one possible source of mismatch. The present data leave decision ordering unresolved. A larger repetition budget and a prespecified margin floor for active pairs would improve the resolution of this test.
+@@ -1398,18 +1398,18 @@
+ \section{Additional covariance and calibration diagnostics}
+ \label{app:extended_experiments}
+ 
+-The full gap covariance changes Gaussian risk most at low budget: the largest full-minus-diagonal difference is $-0.2865$ for P002 Accuracy-ZNE at $B=256$, and differences become negligible at high budget. The selected method is nevertheless identical in all 72 method-budget rows (Fig.~\ref{fig:gate0_full_diag}). This distinguishes a change in the value of a risk estimate from a change in the method minimizing it.
++The full gap covariance changes Gaussian risk most at low budget: the largest full-minus-diagonal difference is $-0.2865$ for P002 Accuracy-ZNE at $B=256$, and differences become negligible at high budget. The selected method is nevertheless identical in all 24 instance--budget cells, represented by 72 method rows (Fig.~\ref{fig:gate0_full_diag}). This distinguishes a change in the value of a risk estimate from a change in the method minimizing it.
+ 
+ \begin{figure}[!ht]
+     \centering
+     \includegraphics[width=0.74\linewidth]{figures/F6_gate0_full_vs_diagonal.pdf}
+-    \caption{Effect of retaining off-diagonal gap covariance in the Gaussian risk score. The effect on score values is largest at low budget; the minimizing method is unchanged across all 72 method-budget rows.}
++    \caption{Effect of retaining off-diagonal gap covariance in the Gaussian risk score. The effect on score values is largest at low budget; the minimizing method is unchanged in all 24 instance--budget cells. The 72 plotted points represent the three methods in each cell.}
+     \label{fig:gate0_full_diag}
+ \end{figure}
+ 
+ A preliminary sample-mean calibration check placed 70/72 cells within tolerance $\tau_R=0.05$, with two low-budget ZNE cells outside. It used the same repetitions to fit the Gaussian score and estimate failure.
+ 
+-Analytic primitive means agree with the shot data at $B_{\max}=8192$, with maximum $z$-scores below 2.76 across P001--P004. A learned uniform two-parameter depolarizing channel recovers the simulated global channel with relative weighted error $e_C=0.0096$. This diagnostic addresses global depolarization; spatially resolved sparse Pauli--Lindblad learning is assessed separately in the hardware experiment.
++Analytic primitive means agree with the shot data at $B_{\max}=8192$, with maximum $z$-scores below 2.76 across P001--P004. A learned uniform two-parameter depolarizing channel recovers the simulated global channel with relative weighted error $e_C=0.0096$. This diagnostic addresses two global rates; the hardware experiment separately fits local rates on a specified support.
+ 
+ \FloatBarrier
+ \section{Numerical methods}
+@@ -1424,9 +1424,9 @@
+ For the full-cost comparison, the Raw baseline uses $(t/2,8t]$ at scale one. Fixed Accuracy-ZNE combines disjoint blocks $(t/2,t]$ and $(2t,4t]$ at each scale, giving $2.5t$ shots per scale. Fixed Decision-ZNE uses $2t$ per scale. These blocks lie within the archived prefixes.
+ 
+ \paragraph{Risk calculation and exact decisions.}
+-The coefficient solver normalizes each covariance form by its squared positive margin and then applies one common scale before optimization. It retains zero eigenvalues without an absolute variance floor. Primal and dual residuals and the duality gap determine numerical acceptance. Gaussian scores use standardized coordinates and stable tail calculations. Covariance derivatives use Cholesky conditioning and an analytic bivariate density; the supported double-precision regime requires correlation condition number at most $10^{14}$.
+-
+-For integer-valued MaxCut records, empirical ZNE decisions reconstruct shot sums and compare rational weighted sums exactly. Accuracy-ZNE uses weights $(4,1,-2)/3$. Fitted three-scale Richardson coefficients are stored through one parameter $\tau$, with $c=(2+\tau,-1-2\tau,\tau)$; rational evaluation of that binary parameter preserves the affine constraints. Any nonpositive gap, including an exact tie, counts as failure.
++The coefficient solver normalizes each covariance form by its squared positive margin and then applies one common scale before optimization. It retains zero eigenvalues without an absolute variance floor. Primal and dual residuals and the duality gap determine numerical acceptance. Gaussian scores use standardized coordinates and stable tail calculations. General covariance derivatives use Cholesky conditioning and an analytic bivariate density; the supported double-precision regime requires correlation condition number at most $10^{14}$. For gaps sharing one incumbent, the implementation instead evaluates the full analytic gradient by one-dimensional conditional-normal integration. Symmetric off-diagonal derivatives contribute half to each matrix entry, so Frobenius contraction gives the first-order risk change.
++
++For integer-valued MaxCut records, empirical ZNE decisions reconstruct shot sums and compare rational weighted sums exactly. Accuracy-ZNE uses weights $(4,1,-2)/3$. Fitted three-scale Richardson coefficients are stored through one parameter $\tau$, with $c=(2+\tau,-1-2\tau,\tau)$; rational evaluation of that binary parameter preserves the affine constraints. For a strict single-selection decision, any nonpositive gap, including an exact tie, counts as failure. In the dynamic search, exact estimator ties retain the first candidate within a batch and the earlier incumbent across rounds. Its success criterion is ideal regret at most $\epsilon$ relative to the best candidate visited along that trajectory; $\epsilon$ is fixed from the archived ideal landscape.
+ 
+ The 48 fixed-block device-noise instances use fixed streams for local probability calculations and sampling.
+ 

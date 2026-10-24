@@ -1,0 +1,20 @@
+{
+  "before": {
+    "target_exact": 0.03417916633211415,
+    "target_raw": 0.06036458333333333,
+    "target_pec": 0.037613674426651963,
+    "gamma": 1.1235823399326608,
+    "gamma_squared": 1.2624372746085533,
+    "n_samples": 1200,
+    "shots_per_sample": 128
+  },
+  "after": {
+    "target_exact": 0.03417916633211415,
+    "target_raw": 0.06036458333333333,
+    "target_pec": 0.037613674426651963,
+    "gamma": 1.1235823399326608,
+    "gamma_squared": 1.2624372746085533,
+    "n_samples": 1200,
+    "shots_per_sample": 128
+  }
+}

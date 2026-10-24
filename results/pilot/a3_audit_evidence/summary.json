@@ -1,0 +1,13 @@
+{
+  "schema": "a3_full_gradient_joint_bootstrap_v1",
+  "gaussianity_rows": 72,
+  "calibration_rows": 72,
+  "within_tolerance": 70,
+  "audit_cases": 24,
+  "pair_verdicts": {
+    "inactive_pair": 38,
+    "interval_below_threshold": 30,
+    "interval_crosses_threshold": 4,
+    "interval_above_threshold": 0
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "jobs": [
+    {
+      "job": "d92mef8oamcc73db82v0",
+      "shots": 32768,
+      "source": "summary_only"
+    },
+    {
+      "job": "d92pbgfd07jc73dvkveg",
+      "shots": 831488,
+      "source": "raw_counts"
+    },
+    {
+      "job": "d92plml958jc73bs50f0",
+      "shots": 831488,
+      "source": "raw_counts"
+    },
+    {
+      "job": "d92pnjnd07jc73dvld50",
+      "shots": 294864,
+      "source": "raw_counts"
+    },
+    {
+      "job": "d92poffd07jc73dvle10",
+      "shots": 294864,
+      "source": "raw_counts"
+    },
+    {
+      "job": "d92pp60oamcc73dbcdm0",
+      "shots": 294864,
+      "source": "raw_counts"
+    },
+    {
+      "job": "d92ppsooamcc73dbcec0",
+      "shots": 294864,
+      "source": "raw_counts"
+    },
+    {
+      "job": "d92pqji47v0s73814ppg",
+      "shots": 294864,
+      "source": "raw_counts"
+    },
+    {
+      "job": "d92prad958jc73bs56p0",
+      "shots": 294864,
+      "source": "raw_counts"
+    },
+    {
+      "job": "d92ps1247v0s73814r4g",
+      "shots": 294864,
+      "source": "raw_counts"
+    },
+    {
+      "job": "d92psnvd07jc73dvli70",
+      "shots": 294864,
+      "source": "raw_counts"
+    },
+    {
+      "job": "d92ptevd07jc73dvlj00",
+      "shots": 294864,
+      "source": "raw_counts"
+    },
+    {
+      "job": "d92pu5goamcc73dbcii0",
+      "shots": 294864,
+      "source": "raw_counts"
+    }
+  ],
+  "archived_campaign_total_shots": 4644384,
+  "attempt2_main_shots": 3780128,
+  "scope": "Includes failed characterization and feasibility summaries; no missing raw feasibility counts reconstructed"
+}

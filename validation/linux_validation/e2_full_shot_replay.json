@@ -1,0 +1,781 @@
+{
+  "decisions": 15360,
+  "instances": [
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C001",
+      "outputs": {
+        "corrected_results.csv": "ab5bb5fb3a13f592947a6eea5b31cde0805fac82e9a35715a533a98976aeeb25",
+        "corrected_trace.csv": "71ff17c73bf6adc6631e6fc49f0256152b107e37db94c05b4ea62e974dd9a386"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 60.447276429999874,
+      "source_round_identity": "eaf946f20a5a75c8c20bcf9998de4a7f450bd98032b4b61a59efa05230599b7a",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C002",
+      "outputs": {
+        "corrected_results.csv": "0338deadc75d5c1edc82bda492180e636f907c4e91b1b129393a210d102a7440",
+        "corrected_trace.csv": "aa8d26fbc5965bd7b1bc30bf80e88b40dd3639a3e3d15c248a47a7cefd371b27"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 60.405022146999954,
+      "source_round_identity": "1dc453700836ff8436c3cf2a5b1ad420fa8573a6d1f81f3208724e774efdd689",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C003",
+      "outputs": {
+        "corrected_results.csv": "45c70eda53585cb08b5e6b56bdb3bcdf199f5152bc98cb75f6d7d0a23f032446",
+        "corrected_trace.csv": "636ad9ad214a542e5ac2ef8dd37b7a46f117d63aea091240d9989048b185f089"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 60.63835810499995,
+      "source_round_identity": "dffb5033cf53f3bc84c24b95c6503690f1a5fe76fab26a46d42e57dc41021f86",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C004",
+      "outputs": {
+        "corrected_results.csv": "257421a91e2ee3bc5e73f7b593a11969c3be11f23dfc40bfba941dff5e9708d8",
+        "corrected_trace.csv": "db2aeaa3afa618db0f68425a84bd4b0b3e299f40b7a9fa36cdede77c5beb54c9"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 60.57896473400001,
+      "source_round_identity": "1cd7e3a654680a92bfe77105d42848dd59714d1aaa770744c5b4f76cf10f84ab",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C005",
+      "outputs": {
+        "corrected_results.csv": "014cfb42253332e7729cfa4e631c89c8468bf509ce214ca3bc24648564d281ba",
+        "corrected_trace.csv": "f3c79ef75f01503e9642f30a1b97d2a7e9d44c4131f3b8a3dc27f2bb661340fa"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 60.431423172999985,
+      "source_round_identity": "f59472ad36d98a406ccf016e9be26dc1a8580e5a292ad65b0311da6c5fc01d8a",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C006",
+      "outputs": {
+        "corrected_results.csv": "f3a69f2118b3f900260a76bce130e17e872aa605ebbf64ffa86ff4ddd668e332",
+        "corrected_trace.csv": "af72d798054173ba90e6fae93d7f1c93f97d8c35192d89f8d16ac8a46e29feb0"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 60.57386676300007,
+      "source_round_identity": "dc52617a74a0733040cde31b71d9be72879024ee5d5a168ecc1b400704a6a3fc",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C007",
+      "outputs": {
+        "corrected_results.csv": "24c64056b8aa91c719c41f25e14a14fe2560d3bba71cbf339181657379d712fc",
+        "corrected_trace.csv": "b1549ff69a0082553880d20552e1ec9d7aff68227ea7fc1ce8cf1ea5589f7d6b"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 60.29268682099996,
+      "source_round_identity": "e5f3c8700ce428eccfa767165fb800c558b895d1c89001b2c638f0ea0636cdc3",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C008",
+      "outputs": {
+        "corrected_results.csv": "c6fba33bdcc95e0ac4b565b69c240611988e68c5b8e46b19d1b816f4ff736cb3",
+        "corrected_trace.csv": "dc392f52487f3a9c457be065c9af567925fa045a6ff1bee9829a1f3ab11b3a1b"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 60.91511813899979,
+      "source_round_identity": "7a4b8eacd1ed74088b2920a3793b27c7e08322a51fca39ba846b62cc97b62a9b",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C009",
+      "outputs": {
+        "corrected_results.csv": "76c98875a98288091637b52fb55a57dc61cc4a4fd4bec4f29f18dac610e1bb31",
+        "corrected_trace.csv": "67cda536b6716b53f9052c71c71e2a788c3855c66edb562b88635935030b9c79"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 59.81682690499997,
+      "source_round_identity": "cadc00b51a14a6e6c742a0bfd50a83b8b276f2bc454bd44ea26bfae0ee1cc87c",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C010",
+      "outputs": {
+        "corrected_results.csv": "bf4f4ff721ac5fa718927b0f5c56556d4579969286d8102605510aa091c19202",
+        "corrected_trace.csv": "5e0eb1eea1e7563136d8d721d76536c8f611d7697cb12dc607ff06828778641b"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 59.76556292300006,
+      "source_round_identity": "781fca14632033e1527c6c8c6abe7e72aa1c86116009c91f67baa4283653ca3b",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C011",
+      "outputs": {
+        "corrected_results.csv": "515f1848062687bd25de23d65e86dd9b01cafa7785fbb64f9fce862ec3b69990",
+        "corrected_trace.csv": "8a564e3cc553200d8a3b161f01f272ce9d65502464dd347d89b1758eb6696b5d"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 60.01192763699987,
+      "source_round_identity": "88aefc41f4fdd93a19f63644576d2e8a90dbc333ac682c6fe6d5c216e1261099",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C012",
+      "outputs": {
+        "corrected_results.csv": "fe8f276258e0dbda423e1bca903f33dfa773128281e757b161388d0b049baaea",
+        "corrected_trace.csv": "f2cc69c46138b5f9b3a2ae01b15be214dd050b667a89ef8c2de6f0bb0e1e092f"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 59.731548603999954,
+      "source_round_identity": "30dd961553064ef724b1a46ebb67751561152445dffc9cc5d305fcd4f7761678",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C013",
+      "outputs": {
+        "corrected_results.csv": "d4bda576d89312b446c9b9ecf9fd171a371a8f68f105a44380b1c8133260c91b",
+        "corrected_trace.csv": "fb60758bc58f0c25915730303814c41ba28da62b70639b0c53a14629239ffff2"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 60.09736434599995,
+      "source_round_identity": "17ddb6bf0aa154c0646d03599e6e4543437723ea6b4a6ec0cb0659bc5403ea0a",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C014",
+      "outputs": {
+        "corrected_results.csv": "9f7de4e2693b0b7e282d85847e6d8d5ba610b884936d38f09621d120a5466213",
+        "corrected_trace.csv": "985377f398fd7951abb59ab42c536acfd271c7e7011aa97ad3a8bffad079f54b"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 60.40692829699992,
+      "source_round_identity": "8cf21e69a58f7f06525068bf5027f1e75900440b7a43d957f9bc794db81c33d1",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C015",
+      "outputs": {
+        "corrected_results.csv": "316c347be233942513916cdb85d7d497e31e1af7ca42615a4fc415ed4dccee0a",
+        "corrected_trace.csv": "101f4aa47e24541512bebb29bd5bd6fbc9229837843f262f9f514b709932ecbf"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 59.70436227599998,
+      "source_round_identity": "0f14b4acd050264abf4b161bd20515b9d4022fbd153cda29bdd8eaad2f17fa75",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C016",
+      "outputs": {
+        "corrected_results.csv": "33c273276143696395e5e11ec360f4719d2891c2eb8cec03b3680e1ee2dcfb77",
+        "corrected_trace.csv": "75303ea67aede1fc3dba104232e33ebd43895a49bcb82e24795948f2cfc10316"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 59.78112152500012,
+      "source_round_identity": "5cd71ece0c978463a368c81f3961f52c361ee69db21f27cf8bd9324942b40291",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C017",
+      "outputs": {
+        "corrected_results.csv": "010225cae3fec890c60fbe724607be773a9cda007d885ea12871e55b75a13b5c",
+        "corrected_trace.csv": "957dcabc6ea5842a56c7411d82ddc7aad5eaebdbf26517b9e200e86560408835"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 58.08269914499988,
+      "source_round_identity": "52ddfa6cfb94ea47550832da2b63c4e2915a7b7ce5be88bca1483d5bcb11ce7e",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C018",
+      "outputs": {
+        "corrected_results.csv": "6d14ead9f8a177872d909d0222fa7a74f35c280b356ac639f70bcae400dea1db",
+        "corrected_trace.csv": "fdadf5325675d888f8b5f3b0ca443a87cf51111dd83662170369be6af452b7d2"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 57.94938656999989,
+      "source_round_identity": "f5c6eb4ddf3c974cd291d93584a4766cd3e75e84134a46cc6e56777fda614b7c",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C019",
+      "outputs": {
+        "corrected_results.csv": "1ffaeaa1319fed9e7ae38992147e3b0a9ee9654094ed7dee61deb0822e93b3f9",
+        "corrected_trace.csv": "1b5603e2ff36ee8fd3b4a5b6147cfa2e00e7d4908bf439c4cd931f281bffbffa"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 57.99549528300008,
+      "source_round_identity": "a76af19b6930a57c904e39c3cd04122a49f1586ec95dddb2f9c03cb8723344a9",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C020",
+      "outputs": {
+        "corrected_results.csv": "b335ae9475bdf758445ad02c396f8cbf6cdb0165563af0a8491ff35c41de7a8f",
+        "corrected_trace.csv": "3aa203d1ab267cae0d432cdd8aa284ee26e794eb632e5c3464fbeb9585bca296"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 57.9652308499999,
+      "source_round_identity": "994ba0c4bd271d7c3529f2ea7ae9a6ef44b08b44f4b17ec76a3c318157fd348d",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C021",
+      "outputs": {
+        "corrected_results.csv": "23970c474d85424002c2ba81b7180dc291b06a5d8894da1ed43ff96a5917d9c3",
+        "corrected_trace.csv": "e6ef72afcb9bed578b65c5d97d409bf666e0f66c23a44e65869ac8e0697c8a61"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 58.05326153400006,
+      "source_round_identity": "27193d7cb0835565c170065ce47f78488ed0ca9de4864769a34a20440569dcfb",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C022",
+      "outputs": {
+        "corrected_results.csv": "a4de4e024e361aa4a9c2b6b5f4fae20c00014f34558833f4dc672599b03ce049",
+        "corrected_trace.csv": "6cee7dad9b280826cc8ca3cfb4ff651545193205834b7014b62a2595eb99dfc1"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 57.88306196999997,
+      "source_round_identity": "0bb21028ca721982c1b2f0ea00a7a7a9d72ba682bcf92fd954098981e9232988",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C023",
+      "outputs": {
+        "corrected_results.csv": "79f97c0784ffa28d6976a574ed59994fb73a01cbfad7373395b7c71c89944210",
+        "corrected_trace.csv": "d0c59de58b44c3427028cc9b419557ce1c98656d9891059ddd4588b846111fe4"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 58.068462856,
+      "source_round_identity": "e195fc4264e5d434015fe35a636aa7b308de1c348ca5f4bd588e84be4bda4690",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C024",
+      "outputs": {
+        "corrected_results.csv": "6846ccc7037c7b481678af7027c1ffcd1fda271ba721cb19d45c27913ec3ad58",
+        "corrected_trace.csv": "7226a83627e00ed095c6ac3dad82e95510bba892a5e87d51b0b931e569ae8d51"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 58.04959122599985,
+      "source_round_identity": "f6e83f487cbaf5f6fa971a8f3010b51862916f0dada6cb5d690ed1c996da099a",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C025",
+      "outputs": {
+        "corrected_results.csv": "42b38ea3817d61414df7d51f4fd3eca4b28aee0bfb4476c7c0b05c0c611de46a",
+        "corrected_trace.csv": "215e1a7a7a58eca42b724edd02e862ecea053c8655c6a84990cb0a1d3a2ca113"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 49.40893931699998,
+      "source_round_identity": "2600c831e62a9392d1168c281b5e2b17017b951d57ada572da3928a0d07a2627",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C026",
+      "outputs": {
+        "corrected_results.csv": "113ca35c3a752302a7dff5d890818e383bd4acd5d45e605cb40efaefa4dbe440",
+        "corrected_trace.csv": "3bf02692f4b34155800b81308479f2b7019549117ca0f3bef78010f2c5997f3e"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 49.27419770400002,
+      "source_round_identity": "73ddf718c8c5c3bd3156e6a811666ff39ceca0756d079a91c7c7cba052dadd31",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C027",
+      "outputs": {
+        "corrected_results.csv": "f7aca0ad2f38b5609b2e3540fbb839589df37094acc77d82e2b4add3b5533bdc",
+        "corrected_trace.csv": "5b25c4f7b7ff5ec278795afb4801ea06d055c8784858b2691424e9c89c9c2f56"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 48.75456236199989,
+      "source_round_identity": "dd61fa6abc49ad5eff7d4a6c8c0c317c185001058508a44c4dc838ee8f72a055",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C028",
+      "outputs": {
+        "corrected_results.csv": "5429860a098f42e0ae602beb7ef4a6b61215a897eb1b44418a909b4cacaa0311",
+        "corrected_trace.csv": "9585f905ddacc8b7dd2f9a8f153acf15434b3ca804a3d6e5a3ee463039ecb0a5"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 48.71363363700016,
+      "source_round_identity": "318c7106f41178a758c65f27c89562b785ff9f8dfa82a5a8d85fca31fd8fe862",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C029",
+      "outputs": {
+        "corrected_results.csv": "9e73b066bbafc00efea12693957bad0b244c8651d1cb3c58da2df0e927f73711",
+        "corrected_trace.csv": "3c92f065bbc12e8e8fb5055d2b7f4eeb5e7015b7ce36274ec7e12d0434b223ce"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 48.78667873099994,
+      "source_round_identity": "054f838e40c845cfebd531fe5084025506467e2d10468e546273e25c7df7cd05",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C030",
+      "outputs": {
+        "corrected_results.csv": "98de023096f83566d11261cbb40b6911f6a1f5693c3da33d2cb70c3406a0e6aa",
+        "corrected_trace.csv": "9267b01792b6d008ee2cb94978924337bd08e81c012b4946746d7f6f4a385df1"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 48.83803504799994,
+      "source_round_identity": "aafde4bc3a6a63528dfe7d23247a115d1b3d4711693c9abfe0e4fe0342b748b8",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C031",
+      "outputs": {
+        "corrected_results.csv": "0f82c412e85824237a95f3f1b552c281c16200340deeb3d3a30d48f3dea8495a",
+        "corrected_trace.csv": "d579b325cd4e218767fd045b950ce161367356ed0ef040a455d9fb0cd8138dba"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 49.164728665999974,
+      "source_round_identity": "70e91d857c4dc4feed1ca6aeea60c63d220dc51249ac0bb0bae18870e4f4fba5",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "decisions_match_corrected_reference": true,
+      "fresh_rounds": 0,
+      "instance": "C032",
+      "outputs": {
+        "corrected_results.csv": "7e95a403a33e1b2be670744c2cd3fb8d7fa543c737b58d907a427e7f2ed42d72",
+        "corrected_trace.csv": "69359f657522763f6403bf3a13667b7da63e2c14217b83c747f3e7b745852da1"
+      },
+      "readonly_replay": true,
+      "reused_rounds": 800,
+      "scope": "full instance; full campaign requires all 32",
+      "seconds": 48.75827540500018,
+      "source_round_identity": "ed6428816551343761de4d9583a153a63eccf86f52f623ce5e4e8e032368e5c3",
+      "status": "complete",
+      "trajectories": 40,
+      "versions": {
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "qiskit": "2.4.2",
+        "qiskit-aer": "0.17.2",
+        "scipy": "1.18.1"
+      }
+    }
+  ],
+  "new_simulated_rounds": 0,
+  "original_round_files_verified": 25600,
+  "per_instance_runner_sha256": "7cb0b8b35c66ece1207cdc05a48a22b29a7e6a6cdeaa7996756b2543704e6c51",
+  "runner_sha256": "5d7c2d948f3901e39a64fdc211466ae70c39e96af57c620194a0974bd0c28928",
+  "scope": "All saved shot states validated against moments; exact candidate-angle and decision replay. No new quantum simulation.",
+  "seconds": 567.8929394080001,
+  "status": "complete",
+  "trajectories": 1280
+}

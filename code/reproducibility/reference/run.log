@@ -1,0 +1,12 @@
+2026-10-23T13:27:49Z | INFO | preflight | preflight complete
+2026-10-23T13:27:49Z | INFO | run_all | preflight checkpoint_preexisting=False restart_requested=False level=1 stage=level1 continue_on_error=False
+2026-10-23T13:27:49Z | INFO | run_all.block | block=level1/gate0_mini start
+2026-10-23T13:27:49Z | INFO | run_all.block | block=level1/gate0_mini output=level1/gate0_mini.csv hash=sha256:E8C07B51CFBA7B786C504F3967B4CBD3C69E7376305484A6082D561654DDB218
+2026-10-23T13:27:49Z | INFO | run_all.block | block=level1/gate0_mini finish duration_seconds=0.027682
+2026-10-23T13:27:50Z | INFO | run_all.block | block=level1/pullback_mini start
+2026-10-23T13:27:50Z | INFO | run_all.block | block=level1/pullback_mini output=pilot/pullback_frontier.csv hash=sha256:84F7AC16B56E0DB36EA5F755663B6D1337DE231EE9A6546F8B3CB887D2C22406
+2026-10-23T13:27:50Z | INFO | run_all.block | block=level1/pullback_mini finish duration_seconds=0.013769
+2026-10-23T13:27:50Z | INFO | run_all.block | block=level1/budget_ledger start
+2026-10-23T13:27:50Z | INFO | run_all.block | block=level1/budget_ledger output=frozen/budget_ledger.csv hash=sha256:7A0851C526C8D17FB5D4A30F27A229610A560444CC9482D7F19B0DE7639A8D82
+2026-10-23T13:27:50Z | INFO | run_all.block | block=level1/budget_ledger finish duration_seconds=0.013755
+2026-10-23T13:27:50Z | INFO | run_all | completed deterministic Level 1 fast path execution_mode=clean reused_blocks=0

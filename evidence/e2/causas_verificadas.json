@@ -1,0 +1,3276 @@
+[
+  {
+    "instance": "C008",
+    "trajectory": 19,
+    "selector": "MSE",
+    "budget": 4096,
+    "selected_method": "Accuracy-ZNE",
+    "epsilon": 0.015877522703408146,
+    "best_seen_ideal": -10.57526963155841,
+    "legacy_final": {
+      "round": 8,
+      "candidate": 1,
+      "exact": "-126401/12288",
+      "float": -10.286539713541657,
+      "ideal": -10.544462557530188,
+      "shot_sums": [
+        -39879,
+        -37017,
+        -35066
+      ]
+    },
+    "corrected_final": {
+      "round": 6,
+      "candidate": 4,
+      "exact": "-126401/12288",
+      "float": -10.286539713541654,
+      "ideal": -10.57526963155841,
+      "shot_sums": [
+        -39985,
+        -37085,
+        -35312
+      ]
+    },
+    "exact_final_tie": true,
+    "earliest_candidate_retained": true,
+    "candidates": [
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 0,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -36093,
+          -34558,
+          -33466
+        ],
+        "exact_score": "-55999/6144",
+        "floating_score": -9.114420572916657,
+        "ideal": -9.302067854631211
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 0,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38733,
+          -35995,
+          -34413
+        ],
+        "exact_score": "-122101/12288",
+        "floating_score": -9.936604817708325,
+        "ideal": -10.262855022659856
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 0,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -34971,
+          -33800,
+          -32747
+        ],
+        "exact_score": "-54095/6144",
+        "floating_score": -8.804524739583325,
+        "ideal": -8.808743149720936
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 0,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37968,
+          -36101,
+          -34259
+        ],
+        "exact_score": "-119455/12288",
+        "floating_score": -9.721272786458321,
+        "ideal": -9.956000272753961
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 0,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -32721,
+          -32228,
+          -31786
+        ],
+        "exact_score": "-8295/1024",
+        "floating_score": -8.100585937499993,
+        "ideal": -8.187130482467957
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 1,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38662,
+          -36301,
+          -34431
+        ],
+        "exact_score": "-122087/12288",
+        "floating_score": -9.935465494791657,
+        "ideal": -10.262855022659856
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 1,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -36442,
+          -34668,
+          -33373
+        ],
+        "exact_score": "-56845/6144",
+        "floating_score": -9.252115885416657,
+        "ideal": -9.53135444848623
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 1,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39602,
+          -36935,
+          -35125
+        ],
+        "exact_score": "-125093/12288",
+        "floating_score": -10.180094401041657,
+        "ideal": -10.510297703118468
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 1,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39595,
+          -37005,
+          -35101
+        ],
+        "exact_score": "-125183/12288",
+        "floating_score": -10.187418619791655,
+        "ideal": -10.546527704631572
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 1,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38252,
+          -35985,
+          -34681
+        ],
+        "exact_score": "-39877/4096",
+        "floating_score": -9.73559570312499,
+        "ideal": -10.046412985261348
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 2,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39616,
+          -36956,
+          -35227
+        ],
+        "exact_score": "-62483/6144",
+        "floating_score": -10.169759114583321,
+        "ideal": -10.546527704631572
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 2,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39215,
+          -36770,
+          -35075
+        ],
+        "exact_score": "-5145/512",
+        "floating_score": -10.04882812499999,
+        "ideal": -10.36778409646806
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 2,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37764,
+          -35924,
+          -34407
+        ],
+        "exact_score": "-59083/6144",
+        "floating_score": -9.616373697916657,
+        "ideal": -9.945506500070493
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 2,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39112,
+          -36769,
+          -34645
+        ],
+        "exact_score": "-41309/4096",
+        "floating_score": -10.08520507812499,
+        "ideal": -10.444140698227894
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 2,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -36049,
+          -34638,
+          -33227
+        ],
+        "exact_score": "-9365/1024",
+        "floating_score": -9.14550781249999,
+        "ideal": -9.479041910582549
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 3,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39473,
+          -37210,
+          -35312
+        ],
+        "exact_score": "-62239/6144",
+        "floating_score": -10.130045572916657,
+        "ideal": -10.546527704631572
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 3,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38997,
+          -36456,
+          -34708
+        ],
+        "exact_score": "-30757/3072",
+        "floating_score": -10.012044270833323,
+        "ideal": -10.29313260169311
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 3,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38901,
+          -36523,
+          -34861
+        ],
+        "exact_score": "-122405/12288",
+        "floating_score": -9.961344401041657,
+        "ideal": -10.361966059217256
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 3,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39167,
+          -36767,
+          -34719
+        ],
+        "exact_score": "-123997/12288",
+        "floating_score": -10.090901692708325,
+        "ideal": -10.394766521986039
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 3,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37774,
+          -35746,
+          -34256
+        ],
+        "exact_score": "-59165/6144",
+        "floating_score": -9.629720052083325,
+        "ideal": -9.888137896858135
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 4,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39704,
+          -37294,
+          -34900
+        ],
+        "exact_score": "-63155/6144",
+        "floating_score": -10.279134114583323,
+        "ideal": -10.546527704631572
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 4,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39146,
+          -37100,
+          -35400
+        ],
+        "exact_score": "-30721/3072",
+        "floating_score": -10.000325520833325,
+        "ideal": -10.206355625268884
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 4,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37476,
+          -35666,
+          -33981
+        ],
+        "exact_score": "-14701/1536",
+        "floating_score": -9.570963541666657,
+        "ideal": -9.896895205044697
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 4,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -36923,
+          -35433,
+          -34032
+        ],
+        "exact_score": "-115061/12288",
+        "floating_score": -9.363688151041657,
+        "ideal": -9.63263387197531
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 4,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37681,
+          -35592,
+          -34061
+        ],
+        "exact_score": "-19699/2048",
+        "floating_score": -9.61865234374999,
+        "ideal": -9.852329643249732
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 5,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39621,
+          -36713,
+          -35248
+        ],
+        "exact_score": "-41567/4096",
+        "floating_score": -10.14819335937499,
+        "ideal": -10.546527704631572
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 5,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39590,
+          -37227,
+          -35323
+        ],
+        "exact_score": "-41647/4096",
+        "floating_score": -10.16772460937499,
+        "ideal": -10.554935918755735
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 5,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37579,
+          -35950,
+          -34364
+        ],
+        "exact_score": "-58769/6144",
+        "floating_score": -9.565266927083325,
+        "ideal": -9.799990179288312
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 5,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -35954,
+          -34551,
+          -33871
+        ],
+        "exact_score": "-36875/4096",
+        "floating_score": -9.00268554687499,
+        "ideal": -9.176977337725393
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 5,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38664,
+          -36411,
+          -35051
+        ],
+        "exact_score": "-120965/12288",
+        "floating_score": -9.844156901041657,
+        "ideal": -10.180619730257895
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 6,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39814,
+          -37351,
+          -35233
+        ],
+        "exact_score": "-42047/4096",
+        "floating_score": -10.26538085937499,
+        "ideal": -10.554935918755735
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 6,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -36917,
+          -35103,
+          -34058
+        ],
+        "exact_score": "-114655/12288",
+        "floating_score": -9.330647786458321,
+        "ideal": -9.643062043921491
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 6,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38956,
+          -36512,
+          -34748
+        ],
+        "exact_score": "-15355/1536",
+        "floating_score": -9.996744791666654,
+        "ideal": -10.327451461695912
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 6,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39676,
+          -37266,
+          -35405
+        ],
+        "exact_score": "-5215/512",
+        "floating_score": -10.18554687499999,
+        "ideal": -10.522327756669032
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 6,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39985,
+          -37085,
+          -35312
+        ],
+        "exact_score": "-126401/12288",
+        "floating_score": -10.286539713541654,
+        "ideal": -10.57526963155841
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 7,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39821,
+          -37160,
+          -35231
+        ],
+        "exact_score": "-20997/2048",
+        "floating_score": -10.25244140624999,
+        "ideal": -10.57526963155841
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 7,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37933,
+          -35738,
+          -33903
+        ],
+        "exact_score": "-2493/256",
+        "floating_score": -9.73828124999999,
+        "ideal": -9.916630435715602
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 7,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39022,
+          -36637,
+          -34897
+        ],
+        "exact_score": "-40977/4096",
+        "floating_score": -10.00415039062499,
+        "ideal": -10.266927122387969
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 7,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38900,
+          -36656,
+          -34765
+        ],
+        "exact_score": "-61363/6144",
+        "floating_score": -9.987467447916657,
+        "ideal": -10.301700369290709
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 7,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39018,
+          -36498,
+          -34896
+        ],
+        "exact_score": "-20463/2048",
+        "floating_score": -9.99169921874999,
+        "ideal": -10.355585042395477
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 8,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39889,
+          -37308,
+          -35505
+        ],
+        "exact_score": "-62927/6144",
+        "floating_score": -10.242024739583321,
+        "ideal": -10.57526963155841
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 8,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39879,
+          -37017,
+          -35066
+        ],
+        "exact_score": "-126401/12288",
+        "floating_score": -10.286539713541657,
+        "ideal": -10.544462557530188
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 8,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38371,
+          -35985,
+          -34470
+        ],
+        "exact_score": "-120529/12288",
+        "floating_score": -9.808675130208321,
+        "ideal": -10.105234739706038
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 8,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38824,
+          -36571,
+          -34657
+        ],
+        "exact_score": "-40851/4096",
+        "floating_score": -9.97338867187499,
+        "ideal": -10.277749939186675
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 8,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39190,
+          -37015,
+          -35055
+        ],
+        "exact_score": "-123665/12288",
+        "floating_score": -10.063883463541657,
+        "ideal": -10.405199680471586
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 9,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39605,
+          -37119,
+          -35315
+        ],
+        "exact_score": "-124909/12288",
+        "floating_score": -10.165120442708321,
+        "ideal": -10.57526963155841
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 9,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39053,
+          -36637,
+          -34580
+        ],
+        "exact_score": "-123689/12288",
+        "floating_score": -10.065836588541657,
+        "ideal": -10.302434384997554
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 9,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38291,
+          -35763,
+          -34193
+        ],
+        "exact_score": "-120541/12288",
+        "floating_score": -9.809651692708321,
+        "ideal": -10.06230261474712
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 9,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39806,
+          -37303,
+          -35545
+        ],
+        "exact_score": "-125437/12288",
+        "floating_score": -10.208089192708323,
+        "ideal": -10.527158392289062
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 9,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38836,
+          -36424,
+          -34927
+        ],
+        "exact_score": "-20319/2048",
+        "floating_score": -9.92138671874999,
+        "ideal": -10.168100436835005
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 10,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39789,
+          -37238,
+          -35404
+        ],
+        "exact_score": "-20931/2048",
+        "floating_score": -10.22021484374999,
+        "ideal": -10.527158392289062
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 10,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39042,
+          -36760,
+          -35067
+        ],
+        "exact_score": "-61397/6144",
+        "floating_score": -9.993001302083325,
+        "ideal": -10.285247575834155
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 10,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39127,
+          -36867,
+          -34977
+        ],
+        "exact_score": "-123421/12288",
+        "floating_score": -10.044026692708321,
+        "ideal": -10.27639846179138
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 10,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39305,
+          -36964,
+          -34990
+        ],
+        "exact_score": "-31051/3072",
+        "floating_score": -10.107747395833323,
+        "ideal": -10.408542481131818
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 10,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39194,
+          -36873,
+          -34843
+        ],
+        "exact_score": "-41321/4096",
+        "floating_score": -10.08813476562499,
+        "ideal": -10.399196211697884
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 11,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39960,
+          -37311,
+          -35454
+        ],
+        "exact_score": "-42081/4096",
+        "floating_score": -10.27368164062499,
+        "ideal": -10.527158392289062
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 11,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39470,
+          -37240,
+          -35383
+        ],
+        "exact_score": "-62177/6144",
+        "floating_score": -10.119954427083323,
+        "ideal": -10.433920252066343
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 11,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38938,
+          -36965,
+          -35010
+        ],
+        "exact_score": "-40899/4096",
+        "floating_score": -9.98510742187499,
+        "ideal": -10.313850391417564
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 11,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38958,
+          -36795,
+          -35162
+        ],
+        "exact_score": "-122303/12288",
+        "floating_score": -9.953043619791657,
+        "ideal": -10.210920794401154
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 11,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39394,
+          -37240,
+          -35404
+        ],
+        "exact_score": "-5167/512",
+        "floating_score": -10.09179687499999,
+        "ideal": -10.407239863349856
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 12,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39870,
+          -37283,
+          -35328
+        ],
+        "exact_score": "-126107/12288",
+        "floating_score": -10.262613932291657,
+        "ideal": -10.527158392289062
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 12,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37242,
+          -35603,
+          -34256
+        ],
+        "exact_score": "-116059/12288",
+        "floating_score": -9.444905598958321,
+        "ideal": -9.539496512257294
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 12,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38361,
+          -36462,
+          -34543
+        ],
+        "exact_score": "-30205/3072",
+        "floating_score": -9.832356770833323,
+        "ideal": -10.014638591245124
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 12,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39393,
+          -37088,
+          -35251
+        ],
+        "exact_score": "-20693/2048",
+        "floating_score": -10.10400390624999,
+        "ideal": -10.364064921612192
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 12,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39466,
+          -36831,
+          -35210
+        ],
+        "exact_score": "-41425/4096",
+        "floating_score": -10.11352539062499,
+        "ideal": -10.439735147067982
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 13,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39908,
+          -37242,
+          -35503
+        ],
+        "exact_score": "-10489/1024",
+        "floating_score": -10.24316406249999,
+        "ideal": -10.527158392289062
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 13,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39581,
+          -36976,
+          -35287
+        ],
+        "exact_score": "-62363/6144",
+        "floating_score": -10.150227864583323,
+        "ideal": -10.405229998423115
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 13,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37060,
+          -35293,
+          -34141
+        ],
+        "exact_score": "-38417/4096",
+        "floating_score": -9.379150390624991,
+        "ideal": -9.683054607904115
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 13,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38515,
+          -36279,
+          -34479
+        ],
+        "exact_score": "-121381/12288",
+        "floating_score": -9.878011067708321,
+        "ideal": -10.075812946106897
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 13,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38165,
+          -35928,
+          -34340
+        ],
+        "exact_score": "-29977/3072",
+        "floating_score": -9.758138020833321,
+        "ideal": -10.074143577638354
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 14,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39821,
+          -37286,
+          -35325
+        ],
+        "exact_score": "-3935/384",
+        "floating_score": -10.247395833333325,
+        "ideal": -10.527158392289062
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 14,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37559,
+          -35973,
+          -34496
+        ],
+        "exact_score": "-117217/12288",
+        "floating_score": -9.539143880208321,
+        "ideal": -9.763458928389026
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 14,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39157,
+          -36780,
+          -35020
+        ],
+        "exact_score": "-15421/1536",
+        "floating_score": -10.039713541666655,
+        "ideal": -10.285762703481645
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 14,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38136,
+          -36436,
+          -34742
+        ],
+        "exact_score": "-4979/512",
+        "floating_score": -9.72460937499999,
+        "ideal": -9.927421383710271
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 14,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -36214,
+          -34778,
+          -33629
+        ],
+        "exact_score": "-14047/1536",
+        "floating_score": -9.145182291666657,
+        "ideal": -9.347654913351565
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 15,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39744,
+          -37178,
+          -35408
+        ],
+        "exact_score": "-62669/6144",
+        "floating_score": -10.200032552083323,
+        "ideal": -10.527158392289062
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 15,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38025,
+          -35868,
+          -34155
+        ],
+        "exact_score": "-19943/2048",
+        "floating_score": -9.73779296874999,
+        "ideal": -9.883431268895578
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 15,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39417,
+          -36853,
+          -35350
+        ],
+        "exact_score": "-123821/12288",
+        "floating_score": -10.076578776041657,
+        "ideal": -10.404439635706709
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 15,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37868,
+          -35946,
+          -34316
+        ],
+        "exact_score": "-59393/6144",
+        "floating_score": -9.666829427083321,
+        "ideal": -9.913506488452134
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 15,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39004,
+          -36280,
+          -34670
+        ],
+        "exact_score": "-30739/3072",
+        "floating_score": -10.006184895833321,
+        "ideal": -10.280565949954138
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 16,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39742,
+          -37262,
+          -35229
+        ],
+        "exact_score": "-10481/1024",
+        "floating_score": -10.23535156249999,
+        "ideal": -10.527158392289062
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 16,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38871,
+          -36933,
+          -35044
+        ],
+        "exact_score": "-122329/12288",
+        "floating_score": -9.955159505208323,
+        "ideal": -10.212223017961222
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 16,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -36995,
+          -35094,
+          -33876
+        ],
+        "exact_score": "-57661/6144",
+        "floating_score": -9.384928385416657,
+        "ideal": -9.545246688083122
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 16,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37580,
+          -35902,
+          -34449
+        ],
+        "exact_score": "-9777/1024",
+        "floating_score": -9.54785156249999,
+        "ideal": -9.723039834407263
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 16,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38232,
+          -36286,
+          -34646
+        ],
+        "exact_score": "-19987/2048",
+        "floating_score": -9.75927734374999,
+        "ideal": -9.942549381046142
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 17,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39646,
+          -37227,
+          -35578
+        ],
+        "exact_score": "-124655/12288",
+        "floating_score": -10.144449869791655,
+        "ideal": -10.527158392289062
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 17,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38248,
+          -36260,
+          -34729
+        ],
+        "exact_score": "-59897/6144",
+        "floating_score": -9.748860677083321,
+        "ideal": -9.892527595543145
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 17,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38787,
+          -36861,
+          -35052
+        ],
+        "exact_score": "-40635/4096",
+        "floating_score": -9.92065429687499,
+        "ideal": -10.129736703717192
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 17,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37429,
+          -35926,
+          -34487
+        ],
+        "exact_score": "-29167/3072",
+        "floating_score": -9.494466145833325,
+        "ideal": -9.664097358952779
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 17,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39377,
+          -36896,
+          -35072
+        ],
+        "exact_score": "-10355/1024",
+        "floating_score": -10.11230468749999,
+        "ideal": -10.399087351916492
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 18,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39818,
+          -37214,
+          -35407
+        ],
+        "exact_score": "-15709/1536",
+        "floating_score": -10.227213541666657,
+        "ideal": -10.527158392289062
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 18,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39544,
+          -37210,
+          -35536
+        ],
+        "exact_score": "-20719/2048",
+        "floating_score": -10.11669921874999,
+        "ideal": -10.303290554681546
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 18,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39648,
+          -36985,
+          -35022
+        ],
+        "exact_score": "-125533/12288",
+        "floating_score": -10.215901692708325,
+        "ideal": -10.542262640958592
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 18,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38531,
+          -36526,
+          -34959
+        ],
+        "exact_score": "-10061/1024",
+        "floating_score": -9.82519531249999,
+        "ideal": -10.10330188344503
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 18,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39008,
+          -36940,
+          -34882
+        ],
+        "exact_score": "-15401/1536",
+        "floating_score": -10.026692708333323,
+        "ideal": -10.29572342465254
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 19,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39746,
+          -37385,
+          -35540
+        ],
+        "exact_score": "-41763/4096",
+        "floating_score": -10.196044921874991,
+        "ideal": -10.527158392289062
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 19,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -39602,
+          -37127,
+          -35518
+        ],
+        "exact_score": "-124499/12288",
+        "floating_score": -10.131754557291657,
+        "ideal": -10.44752698596292
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 19,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -37676,
+          -35895,
+          -34401
+        ],
+        "exact_score": "-117797/12288",
+        "floating_score": -9.586344401041657,
+        "ideal": -9.764346330723793
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 19,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -35786,
+          -34276,
+          -33474
+        ],
+        "exact_score": "-4603/512",
+        "floating_score": -8.990234374999991,
+        "ideal": -9.227252678600996
+      },
+      {
+        "instance": "C008",
+        "trajectory": 19,
+        "round": 19,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 4096,
+        "shot_sums": [
+          -38990,
+          -36537,
+          -34924
+        ],
+        "exact_score": "-40883/4096",
+        "floating_score": -9.98120117187499,
+        "ideal": -10.304677445353807
+      }
+    ]
+  },
+  {
+    "instance": "C028",
+    "trajectory": 11,
+    "selector": "MSE",
+    "budget": 2048,
+    "selected_method": "Accuracy-ZNE",
+    "epsilon": 0.029304062738489307,
+    "best_seen_ideal": -11.012344760077228,
+    "legacy_final": {
+      "round": 15,
+      "candidate": 2,
+      "exact": "-65495/6144",
+      "float": -10.659993489583323,
+      "ideal": -10.996486304858566,
+      "shot_sums": [
+        -20549,
+        -18869,
+        -17785
+      ]
+    },
+    "corrected_final": {
+      "round": 15,
+      "candidate": 0,
+      "exact": "-65495/6144",
+      "float": -10.659993489583321,
+      "ideal": -11.012344760077228,
+      "shot_sums": [
+        -20487,
+        -19031,
+        -17742
+      ]
+    },
+    "exact_final_tie": true,
+    "earliest_candidate_retained": true,
+    "candidates": [
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 0,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19626,
+          -18370,
+          -17469
+        ],
+        "exact_score": "-3871/384",
+        "floating_score": -10.080729166666657,
+        "ideal": -10.331777319886047
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 0,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18874,
+          -17822,
+          -17246
+        ],
+        "exact_score": "-29413/3072",
+        "floating_score": -9.574544270833323,
+        "ideal": -9.868633124323622
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 0,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18764,
+          -17749,
+          -17120
+        ],
+        "exact_score": "-58565/6144",
+        "floating_score": -9.532063802083325,
+        "ideal": -9.845735697549827
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 0,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17503,
+          -17001,
+          -16433
+        ],
+        "exact_score": "-18049/2048",
+        "floating_score": -8.812988281249991,
+        "ideal": -8.864746410109028
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 0,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18927,
+          -17966,
+          -17134
+        ],
+        "exact_score": "-9901/1024",
+        "floating_score": -9.66894531249999,
+        "ideal": -9.881457994094308
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 1,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19619,
+          -18284,
+          -17398
+        ],
+        "exact_score": "-15491/1536",
+        "floating_score": -10.085286458333321,
+        "ideal": -10.331777319886047
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 1,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17490,
+          -16974,
+          -16494
+        ],
+        "exact_score": "-8991/1024",
+        "floating_score": -8.78027343749999,
+        "ideal": -8.86858654638499
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 1,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18850,
+          -17977,
+          -17180
+        ],
+        "exact_score": "-59017/6144",
+        "floating_score": -9.605631510416657,
+        "ideal": -9.935706797717849
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 1,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19686,
+          -18318,
+          -17441
+        ],
+        "exact_score": "-15545/1536",
+        "floating_score": -10.120442708333323,
+        "ideal": -10.380456492875945
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 1,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19029,
+          -17813,
+          -17229
+        ],
+        "exact_score": "-59471/6144",
+        "floating_score": -9.679524739583325,
+        "ideal": -9.9742005331528
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 2,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19568,
+          -18344,
+          -17759
+        ],
+        "exact_score": "-10183/1024",
+        "floating_score": -9.94433593749999,
+        "ideal": -10.380456492875945
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 2,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17150,
+          -16595,
+          -16423
+        ],
+        "exact_score": "-52349/6144",
+        "floating_score": -8.520345052083325,
+        "ideal": -8.575214519024211
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 2,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18264,
+          -17377,
+          -16975
+        ],
+        "exact_score": "-56483/6144",
+        "floating_score": -9.193196614583321,
+        "ideal": -9.456094820736057
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 2,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17012,
+          -16475,
+          -16130
+        ],
+        "exact_score": "-17421/2048",
+        "floating_score": -8.506347656249991,
+        "ideal": -8.393351315968562
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 2,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20214,
+          -18870,
+          -17762
+        ],
+        "exact_score": "-32101/3072",
+        "floating_score": -10.449544270833321,
+        "ideal": -10.819187877660902
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 3,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20239,
+          -18878,
+          -17847
+        ],
+        "exact_score": "-5345/512",
+        "floating_score": -10.43945312499999,
+        "ideal": -10.819187877660902
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 3,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19959,
+          -18638,
+          -17557
+        ],
+        "exact_score": "-165/16",
+        "floating_score": -10.31249999999999,
+        "ideal": -10.609984651777495
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 3,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19660,
+          -18245,
+          -17561
+        ],
+        "exact_score": "-61763/6144",
+        "floating_score": -10.052571614583323,
+        "ideal": -10.407387896123197
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 3,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18397,
+          -17428,
+          -16877
+        ],
+        "exact_score": "-28631/3072",
+        "floating_score": -9.319986979166657,
+        "ideal": -9.46822749988425
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 3,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17356,
+          -16783,
+          -16395
+        ],
+        "exact_score": "-53417/6144",
+        "floating_score": -8.694173177083325,
+        "ideal": -8.755688703519603
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 4,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20125,
+          -18763,
+          -17837
+        ],
+        "exact_score": "-63589/6144",
+        "floating_score": -10.349772135416657,
+        "ideal": -10.819187877660902
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 4,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -16341,
+          -16065,
+          -15810
+        ],
+        "exact_score": "-16603/2048",
+        "floating_score": -8.106933593749991,
+        "ideal": -8.210364639976628
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 4,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -16611,
+          -16142,
+          -15873
+        ],
+        "exact_score": "-6355/768",
+        "floating_score": -8.274739583333325,
+        "ideal": -8.404330255999433
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 4,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19244,
+          -18266,
+          -17410
+        ],
+        "exact_score": "-30211/3072",
+        "floating_score": -9.834309895833321,
+        "ideal": -10.281563238222105
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 4,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20314,
+          -18773,
+          -17808
+        ],
+        "exact_score": "-21471/2048",
+        "floating_score": -10.48388671874999,
+        "ideal": -10.71036130050123
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 5,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20170,
+          -18983,
+          -17657
+        ],
+        "exact_score": "-64349/6144",
+        "floating_score": -10.473470052083321,
+        "ideal": -10.819187877660902
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 5,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19135,
+          -18075,
+          -17168
+        ],
+        "exact_score": "-20093/2048",
+        "floating_score": -9.81103515624999,
+        "ideal": -10.072789297209152
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 5,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19196,
+          -18176,
+          -17258
+        ],
+        "exact_score": "-5037/512",
+        "floating_score": -9.83789062499999,
+        "ideal": -10.200983328307782
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 5,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19627,
+          -18369,
+          -17219
+        ],
+        "exact_score": "-20813/2048",
+        "floating_score": -10.16259765624999,
+        "ideal": -10.573398312063695
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 5,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18459,
+          -17540,
+          -16906
+        ],
+        "exact_score": "-4797/512",
+        "floating_score": -9.36914062499999,
+        "ideal": -9.475286355358353
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 6,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20247,
+          -18786,
+          -17941
+        ],
+        "exact_score": "-15973/1536",
+        "floating_score": -10.399088541666655,
+        "ideal": -10.819187877660902
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 6,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17676,
+          -17158,
+          -16586
+        ],
+        "exact_score": "-9115/1024",
+        "floating_score": -8.901367187499991,
+        "ideal": -9.13679190561685
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 6,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19238,
+          -18038,
+          -17272
+        ],
+        "exact_score": "-30223/3072",
+        "floating_score": -9.838216145833321,
+        "ideal": -10.046409027918232
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 6,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19827,
+          -18776,
+          -17667
+        ],
+        "exact_score": "-31375/3072",
+        "floating_score": -10.213216145833325,
+        "ideal": -10.476753128059329
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 6,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19459,
+          -18105,
+          -17105
+        ],
+        "exact_score": "-20577/2048",
+        "floating_score": -10.04736328124999,
+        "ideal": -10.23720754618645
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 7,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20283,
+          -18871,
+          -17701
+        ],
+        "exact_score": "-64601/6144",
+        "floating_score": -10.514485677083323,
+        "ideal": -10.819187877660902
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 7,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19190,
+          -18115,
+          -17293
+        ],
+        "exact_score": "-60289/6144",
+        "floating_score": -9.812662760416654,
+        "ideal": -10.146973078913504
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 7,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19749,
+          -18345,
+          -17424
+        ],
+        "exact_score": "-20831/2048",
+        "floating_score": -10.17138671874999,
+        "ideal": -10.497313649958972
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 7,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18372,
+          -17782,
+          -17045
+        ],
+        "exact_score": "-4765/512",
+        "floating_score": -9.30664062499999,
+        "ideal": -9.485825000478709
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 7,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17256,
+          -16615,
+          -16295
+        ],
+        "exact_score": "-17683/2048",
+        "floating_score": -8.634277343749991,
+        "ideal": -8.923147840006799
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 8,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20305,
+          -18904,
+          -17865
+        ],
+        "exact_score": "-32197/3072",
+        "floating_score": -10.480794270833325,
+        "ideal": -10.819187877660902
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 8,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20019,
+          -18647,
+          -17801
+        ],
+        "exact_score": "-63121/6144",
+        "floating_score": -10.273600260416654,
+        "ideal": -10.622769059880643
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 8,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19650,
+          -18531,
+          -17513
+        ],
+        "exact_score": "-62105/6144",
+        "floating_score": -10.108235677083323,
+        "ideal": -10.473932779891996
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 8,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17043,
+          -16784,
+          -16239
+        ],
+        "exact_score": "-26239/3072",
+        "floating_score": -8.541341145833323,
+        "ideal": -8.688420037815856
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 8,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19194,
+          -18131,
+          -17333
+        ],
+        "exact_score": "-60241/6144",
+        "floating_score": -9.804850260416657,
+        "ideal": -10.050400543008628
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 9,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20240,
+          -18844,
+          -17673
+        ],
+        "exact_score": "-10743/1024",
+        "floating_score": -10.49121093749999,
+        "ideal": -10.819187877660902
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 9,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19868,
+          -18596,
+          -17591
+        ],
+        "exact_score": "-10481/1024",
+        "floating_score": -10.23535156249999,
+        "ideal": -10.619964443128694
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 9,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18883,
+          -17798,
+          -17142
+        ],
+        "exact_score": "-9841/1024",
+        "floating_score": -9.61035156249999,
+        "ideal": -9.852867438818883
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 9,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19976,
+          -18728,
+          -17604
+        ],
+        "exact_score": "-991/96",
+        "floating_score": -10.322916666666657,
+        "ideal": -10.619666047528185
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 9,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19579,
+          -18555,
+          -17643
+        ],
+        "exact_score": "-61585/6144",
+        "floating_score": -10.023600260416657,
+        "ideal": -10.304978829102097
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 10,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20216,
+          -18809,
+          -17715
+        ],
+        "exact_score": "-64243/6144",
+        "floating_score": -10.456217447916657,
+        "ideal": -10.819187877660902
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 10,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19900,
+          -18629,
+          -17614
+        ],
+        "exact_score": "-63001/6144",
+        "floating_score": -10.254069010416657,
+        "ideal": -10.654530540862208
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 10,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -16894,
+          -16346,
+          -16261
+        ],
+        "exact_score": "-6425/768",
+        "floating_score": -8.365885416666657,
+        "ideal": -8.462379841493679
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 10,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17010,
+          -16366,
+          -16137
+        ],
+        "exact_score": "-13033/1536",
+        "floating_score": -8.485026041666657,
+        "ideal": -8.68378412368389
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 10,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19161,
+          -18032,
+          -17311
+        ],
+        "exact_score": "-10009/1024",
+        "floating_score": -9.77441406249999,
+        "ideal": -10.057419419953103
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 11,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20196,
+          -18985,
+          -17827
+        ],
+        "exact_score": "-64115/6144",
+        "floating_score": -10.435384114583323,
+        "ideal": -10.819187877660902
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 11,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19429,
+          -18333,
+          -17528
+        ],
+        "exact_score": "-20331/2048",
+        "floating_score": -9.92724609374999,
+        "ideal": -10.221530004899403
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 11,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18504,
+          -17771,
+          -17009
+        ],
+        "exact_score": "-57769/6144",
+        "floating_score": -9.402506510416657,
+        "ideal": -9.671645891844598
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 11,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19314,
+          -18161,
+          -17336
+        ],
+        "exact_score": "-60745/6144",
+        "floating_score": -9.886881510416657,
+        "ideal": -10.338736327733745
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 11,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17401,
+          -16730,
+          -16356
+        ],
+        "exact_score": "-8937/1024",
+        "floating_score": -8.727539062499991,
+        "ideal": -8.967296720316106
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 12,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20203,
+          -18718,
+          -17847
+        ],
+        "exact_score": "-15959/1536",
+        "floating_score": -10.389973958333325,
+        "ideal": -10.819187877660902
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 12,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20267,
+          -18663,
+          -17730
+        ],
+        "exact_score": "-64271/6144",
+        "floating_score": -10.460774739583321,
+        "ideal": -10.851146993711525
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 12,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19283,
+          -18160,
+          -17351
+        ],
+        "exact_score": "-30295/3072",
+        "floating_score": -9.861653645833321,
+        "ideal": -10.152362048359489
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 12,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19817,
+          -18505,
+          -17397
+        ],
+        "exact_score": "-20993/2048",
+        "floating_score": -10.25048828124999,
+        "ideal": -10.704868423670995
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 12,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20514,
+          -18870,
+          -17969
+        ],
+        "exact_score": "-16247/1536",
+        "floating_score": -10.577473958333321,
+        "ideal": -11.012344760077228
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 13,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20554,
+          -18808,
+          -17965
+        ],
+        "exact_score": "-10849/1024",
+        "floating_score": -10.594726562499991,
+        "ideal": -11.012344760077228
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 13,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20432,
+          -18874,
+          -17987
+        ],
+        "exact_score": "-16157/1536",
+        "floating_score": -10.518880208333321,
+        "ideal": -10.902450975419725
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 13,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20016,
+          -18724,
+          -17669
+        ],
+        "exact_score": "-10575/1024",
+        "floating_score": -10.32714843749999,
+        "ideal": -10.707020333078503
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 13,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19346,
+          -18132,
+          -17297
+        ],
+        "exact_score": "-30461/3072",
+        "floating_score": -9.915690104166655,
+        "ideal": -10.235044944340512
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 13,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19640,
+          -18429,
+          -17607
+        ],
+        "exact_score": "-61775/6144",
+        "floating_score": -10.054524739583321,
+        "ideal": -10.345004851299748
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 14,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20455,
+          -19085,
+          -17856
+        ],
+        "exact_score": "-21731/2048",
+        "floating_score": -10.61083984374999,
+        "ideal": -11.012344760077228
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 14,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19176,
+          -17923,
+          -17169
+        ],
+        "exact_score": "-60289/6144",
+        "floating_score": -9.812662760416657,
+        "ideal": -10.01985529533435
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 14,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19134,
+          -17971,
+          -17203
+        ],
+        "exact_score": "-60101/6144",
+        "floating_score": -9.782063802083321,
+        "ideal": -10.113469141179866
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 14,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17499,
+          -16870,
+          -16615
+        ],
+        "exact_score": "-13409/1536",
+        "floating_score": -8.729817708333325,
+        "ideal": -8.820010771079115
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 14,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17781,
+          -17097,
+          -16578
+        ],
+        "exact_score": "-18355/2048",
+        "floating_score": -8.96240234374999,
+        "ideal": -9.188145931971361
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 15,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20487,
+          -19031,
+          -17742
+        ],
+        "exact_score": "-65495/6144",
+        "floating_score": -10.659993489583321,
+        "ideal": -11.012344760077228
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 15,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20071,
+          -18808,
+          -17652
+        ],
+        "exact_score": "-15947/1536",
+        "floating_score": -10.382161458333325,
+        "ideal": -10.770822270727347
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 15,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20549,
+          -18869,
+          -17785
+        ],
+        "exact_score": "-65495/6144",
+        "floating_score": -10.659993489583323,
+        "ideal": -10.996486304858566
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 15,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18779,
+          -17781,
+          -17094
+        ],
+        "exact_score": "-58709/6144",
+        "floating_score": -9.555501302083325,
+        "ideal": -9.819553204901336
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 15,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20337,
+          -18853,
+          -17695
+        ],
+        "exact_score": "-64811/6144",
+        "floating_score": -10.548665364583323,
+        "ideal": -10.859995176804777
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 16,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20451,
+          -18805,
+          -17896
+        ],
+        "exact_score": "-64817/6144",
+        "floating_score": -10.549641927083323,
+        "ideal": -10.996486304858566
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 16,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19131,
+          -17954,
+          -17277
+        ],
+        "exact_score": "-14981/1536",
+        "floating_score": -9.753255208333325,
+        "ideal": -10.009535787201292
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 16,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17957,
+          -17181,
+          -16901
+        ],
+        "exact_score": "-55207/6144",
+        "floating_score": -8.985514322916657,
+        "ideal": -9.189206018133033
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 16,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -17960,
+          -17335,
+          -16801
+        ],
+        "exact_score": "-55573/6144",
+        "floating_score": -9.045084635416657,
+        "ideal": -9.31174656241303
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 16,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20352,
+          -18653,
+          -17679
+        ],
+        "exact_score": "-64703/6144",
+        "floating_score": -10.531087239583321,
+        "ideal": -10.932700560995244
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 17,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20245,
+          -18851,
+          -17653
+        ],
+        "exact_score": "-64525/6144",
+        "floating_score": -10.502115885416654,
+        "ideal": -10.996486304858566
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 17,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18433,
+          -17488,
+          -16704
+        ],
+        "exact_score": "-14453/1536",
+        "floating_score": -9.409505208333323,
+        "ideal": -9.556769635728669
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 17,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18067,
+          -17096,
+          -16709
+        ],
+        "exact_score": "-27973/3072",
+        "floating_score": -9.105794270833323,
+        "ideal": -9.34630160028648
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 17,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18747,
+          -17865,
+          -17003
+        ],
+        "exact_score": "-58847/6144",
+        "floating_score": -9.577962239583323,
+        "ideal": -9.873595052882564
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 17,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20245,
+          -18885,
+          -17781
+        ],
+        "exact_score": "-64303/6144",
+        "floating_score": -10.465983072916657,
+        "ideal": -10.984992757574194
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 18,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20318,
+          -18951,
+          -17670
+        ],
+        "exact_score": "-64883/6144",
+        "floating_score": -10.560384114583321,
+        "ideal": -10.996486304858566
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 18,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20076,
+          -18522,
+          -17654
+        ],
+        "exact_score": "-31759/3072",
+        "floating_score": -10.338216145833321,
+        "ideal": -10.866953005947584
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 18,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20451,
+          -18846,
+          -17873
+        ],
+        "exact_score": "-8113/768",
+        "floating_score": -10.563802083333321,
+        "ideal": -10.883802469931798
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 18,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19027,
+          -17927,
+          -16884
+        ],
+        "exact_score": "-20089/2048",
+        "floating_score": -9.80908203124999,
+        "ideal": -10.097485507448773
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 18,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19815,
+          -18356,
+          -17444
+        ],
+        "exact_score": "-7841/768",
+        "floating_score": -10.209635416666657,
+        "ideal": -10.64443598833747
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 19,
+        "candidate": 0,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -20397,
+          -18950,
+          -17833
+        ],
+        "exact_score": "-2703/256",
+        "floating_score": -10.558593749999988,
+        "ideal": -10.996486304858566
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 19,
+        "candidate": 1,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19800,
+          -18546,
+          -17423
+        ],
+        "exact_score": "-15725/1536",
+        "floating_score": -10.237630208333323,
+        "ideal": -10.741822574779324
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 19,
+        "candidate": 2,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18868,
+          -17910,
+          -16935
+        ],
+        "exact_score": "-7439/768",
+        "floating_score": -9.686197916666657,
+        "ideal": -9.922845763234564
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 19,
+        "candidate": 3,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -19637,
+          -18292,
+          -17461
+        ],
+        "exact_score": "-30959/3072",
+        "floating_score": -10.077799479166654,
+        "ideal": -10.532756864575601
+      },
+      {
+        "instance": "C028",
+        "trajectory": 11,
+        "round": 19,
+        "candidate": 4,
+        "method": "Accuracy-ZNE",
+        "budget": 2048,
+        "shot_sums": [
+          -18948,
+          -18003,
+          -17043
+        ],
+        "exact_score": "-19903/2048",
+        "floating_score": -9.71826171874999,
+        "ideal": -10.05311077716767
+      }
+    ]
+  }
+]

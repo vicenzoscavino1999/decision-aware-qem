@@ -1,0 +1,19 @@
+from pathlib import Path
+import os,subprocess,sys,json
+root=Path(__file__).resolve().parents[2];out=root/'outputs/integracion_reproduccion_parte4_v2'
+env=os.environ.copy();env['PYTHONPATH']=str(out/'code/src')+';'+str(out/'code')
+for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS'):env[key]='1'
+names=['test_e0_executability.py','test_generation_corrections.py','test_a3_pullback_frontier.py',
+    'test_e3_confirmatory_b45.py','test_e3_budget_alignment.py','test_learned_ablation_corrections.py',
+    'test_cdev_learning.py','test_a3_audit_corrections.py','test_a3_gaussianity_sigmahat_audit.py',
+    'test_freeze_configs_b3.py::test_pullback_prediction_spec_fields_match_a3_config',
+    'test_integrated_reproduction.py','test_e3_plot_regression.py','test_e3_summary_ties.py',
+    'test_v21_corrections.py','test_v20_regressions.py','test_gri_risk.py','test_selector_logic.py','test_consolidated_entrypoint.py',
+ 'test_hardware_corrections.py','test_fakekolkata_scoped_runtime.py','test_aux_controls_corrections.py',
+ 'test_aux_cdr_pec_corrections.py','test_aux_noise_corrections.py','test_part1_exact_dynamic.py',
+ 'test_cdr.py','test_pec.py','test_dynamic_optimizer.py','test_e2_confirmatory_b44.py']
+command=[sys.executable,'-m','pytest',*[str(out/'code/tests'/name) for name in names],'-q']
+r=subprocess.run(command,env=env,capture_output=True,text=True,encoding='utf-8',errors='replace')
+(out/'validation/consolidated/tests.txt').write_text('COMMAND\n'+' '.join(command)+'\n\n'+r.stdout+r.stderr,encoding='utf-8')
+(out/'validation/consolidated/test_execution.json').write_text(json.dumps(dict(command=command,exit_code=r.returncode),indent=2),encoding='utf-8')
+print(r.stdout[-3500:]);raise SystemExit(r.returncode)

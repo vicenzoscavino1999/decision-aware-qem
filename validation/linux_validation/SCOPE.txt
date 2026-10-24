@@ -1,0 +1,2 @@
+These are completed pre-release diagnostic runs. Their source identities are retained.
+The exact final archive execution certificate is delivered separately. Local audit source copies contain historical paths and are not entry points.

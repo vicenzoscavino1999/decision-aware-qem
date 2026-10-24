@@ -1,0 +1,120 @@
+verified C001
+verified C002
+verified C003
+verified C004
+verified C005
+verified C006
+verified C007
+verified C008
+verified C009
+verified C010
+verified C011
+verified C012
+verified C013
+verified C014
+verified C015
+verified C016
+verified C017
+verified C018
+verified C019
+verified C020
+verified C021
+verified C022
+verified C023
+verified C024
+verified C025
+verified C026
+verified C027
+verified C028
+verified C029
+verified C030
+verified C031
+verified C032
+verified C033
+verified C034
+verified C035
+verified C036
+verified C037
+verified C038
+verified C039
+verified C040
+verified C041
+verified C042
+verified C043
+verified C044
+verified C045
+verified C046
+verified C047
+verified C048
+{
+  "e0": {
+    "schema_version": 2,
+    "rows_checked": 5,
+    "benchmark": "reused from generation/executability correction, no new timing measurement"
+  },
+  "e1": {
+    "outcomes.csv": {
+      "rows": 19200,
+      "changes": {
+        "failure": 0
+      }
+    },
+    "summary.csv": {
+      "rows": 36,
+      "changes": {
+        "estimate": 0,
+        "ci_low": 0,
+        "ci_high": 0
+      }
+    },
+    "budget_ledger_identical": true
+  },
+  "e3": {
+    "instances": 48,
+    "primitive_distributions": 3600,
+    "covariances": 864,
+    "strict_decisions": 34560,
+    "derivative_directions": 1728,
+    "max_errors": {
+      "primitive_mean": 3.552713678800501e-15,
+      "primitive_variance": 1.7763568394002505e-15,
+      "covariance": 7.216449660063518e-16,
+      "risk": 2.413523184641164e-07,
+      "derivative": 1.4601722608809098e-12,
+      "projected_error": 3.3029134982598407e-15
+    },
+    "difference_from_archived_prediction": {
+      "primitive_mean_unit": 1.1013412404281553e-13,
+      "primitive_variance_unit": 1.198152688175469e-12,
+      "method_coefficients": 7.261371547234718e-05,
+      "risks_pred": 6.081052560391598e-06,
+      "gradients": 25.573533768697935
+    },
+    "decision_changes": [],
+    "gradients_with_entries_outside_old_mask": 723,
+    "comparison_changes": {
+      "old_covariance_order": 0,
+      "old_all40_failure_order": 0,
+      "method_mean_train_order": 0,
+      "test_failure_order": 0,
+      "left_test_failure": 0,
+      "right_test_failure": 0,
+      "left_predicted_risk": 0,
+      "right_predicted_risk": 251,
+      "test_paired_difference": 0
+    },
+    "frontier_changes": {
+      "active_pair": 0,
+      "delta_rank_projected": 864,
+      "tau_flip_projected": 864,
+      "projected_error_over_tolerance": 864,
+      "frobenius_error_over_tolerance": 864,
+      "predicted_order": 4,
+      "empirical_order": 0,
+      "endpoint_scope": 0,
+      "ordering_match": 3,
+      "a3_status": 0,
+      "pass_label": 0
+    }
+  }
+}

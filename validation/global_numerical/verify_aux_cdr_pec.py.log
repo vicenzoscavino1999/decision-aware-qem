@@ -1,0 +1,19 @@
+{
+  "cdr_p0_training_fits_verified": 6,
+  "coexistence_counts": {
+    "1536": 7,
+    "3072": 7,
+    "6144": 7,
+    "768": 5
+  },
+  "conditional_bootstrap_intervals_verified": 40,
+  "decisions_verified": 4800,
+  "gaussian_integrals": 160,
+  "max_cdr_fit_error": 4.884981308350689e-15,
+  "max_gap_covariance_error": 5.051514762044462e-14,
+  "max_gaussian_error": 5.138774569202198e-07,
+  "max_mse_error": 1.474514954580286e-16,
+  "max_probability_moment_error": 2.446931546273845e-13,
+  "min_PEC_Raw_gaussian_order_margin": 0.03449306786237605
+}
+

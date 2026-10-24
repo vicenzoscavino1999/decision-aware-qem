@@ -1,0 +1,17 @@
+{
+  "characterization_records": 1000,
+  "shots_verified": 4096000,
+  "primitive_moments": 300,
+  "directional_derivatives": 72,
+  "channel_covariance_max_error": 4.718447854656915e-16,
+  "gradient_contraction_max_error": 1.4198305075055484e-16,
+  "channel_gaussian_max_error": 6.198363379228411e-07,
+  "gate0_method_rows": 72,
+  "gate0_selectors": 24,
+  "gate0_covariance_max_error": 3.3306690738754696e-16,
+  "diagonal_max_error": 7.216449660063518e-16,
+  "full_cdf_crosscheck_max_error": 5.098585240670417e-07,
+  "minimax_relative_excess": 2.3767329009101925e-12,
+  "e_C_replicates": 0.009575596197854423,
+  "e_C_aggregated": 0.002527210769361264
+}

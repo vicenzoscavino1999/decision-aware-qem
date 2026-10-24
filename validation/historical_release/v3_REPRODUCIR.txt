@@ -1,0 +1,105 @@
+REPRODUCCIÓN DE LA CONSOLIDACIÓN CORREGIDA V3
+
+ALCANCE
+Reproducción de análisis a partir de evidencia guardada. El flujo regenera E3,
+E1, bootstrap A3, propagación C3, tablas E2, muestreo/ajuste/selección FakeKolkata
+y predicción/contraste de hardware. Reutiliza los registros o probabilidades
+que se identifican en cada etapa. Los controles auxiliares se verifican sobre
+sus archivos, sin volver a adquirir sus campañas. No se envían trabajos IBM,
+no se repite la campaña larga E2 y no se necesita una credencial de IBM.
+
+ENTORNO COMPROBADO
+Windows 11 x64, Python 3.12.10, dependencias fijadas en requirements_this_run.txt.
+Las 85 versiones se comprobaron tras instalar en un entorno virtual nuevo,
+sin acceso a los paquetes del entorno habitual. pip check no encontró conflictos.
+La instalación puede utilizar ruedas de la caché de pip; no reutiliza un venv.
+La compilación emplea una distribución TeX existente, MiKTeX con pdflatex.
+No se ha verificado esta entrega en Linux, macOS ni otra versión de Python.
+
+Los ejemplos siguientes son para PowerShell, desde la raíz del ZIP extraído.
+Instalar Python 3.12.10 si hace falta; comprobar que py -3.12 --version muestra
+esa versión antes de crear el entorno. Usar destinos nuevos para cada ejecución.
+
+  py -3.12 -m venv ..\entorno_qem
+  & ..\entorno_qem\Scripts\python.exe -m pip install -r requirements_this_run.txt
+  & ..\entorno_qem\Scripts\python.exe -m pip check
+
+1. INTEGRIDAD Y CACHÉS
+  & ..\entorno_qem\Scripts\python.exe code/scripts/reproduce_all.py
+
+Comprueba versiones, manifiesto, fuentes, archivos importados y siete etapas
+completas. Las rutas absolutas en algunos registros son procedencia histórica;
+los comandos documentados resuelven sus archivos dentro del paquete extraído.
+
+2. REANÁLISIS COMPLETO EN UN DESTINO NUEVO
+  & ..\entorno_qem\Scripts\python.exe code/scripts/reproduce_all.py --new-run ..\reanalisis_qem --workers 8
+
+Ejecuta siete etapas, diez verificaciones numéricas y genera cinco figuras PNG.
+El directorio nuevo contiene su propia evidencia y sus registros de ejecución.
+Una etapa sin registro de finalización no se certifica ni se reanuda de forma
+automática: ante una interrupción usar otro destino. Es un directorio de
+reproducción numérica; no crea una nueva edición del manuscrito ni un depósito.
+La ejecución de control en entorno limpio usó este mismo código de análisis
+y comparó los archivos de resultado con los incluidos en esta entrega.
+
+3. SOLO VERIFICACIONES NUMÉRICAS INDEPENDIENTES
+  & ..\entorno_qem\Scripts\python.exe code/scripts/reproduce_all.py --numerical ..\verificacion_qem
+
+El alcance detallado consta en cada informe: E2 se reconstruye desde resultados
+por trayectoria; FakeKolkata reutiliza probabilidades físicas y hardware reutiliza
+cuentas archivadas. Algunos verificadores consumen gradientes de producción,
+contrastados por comprobaciones separadas. Esto no es una adquisición nueva.
+
+4. REGRESIONES DE LA VERSIÓN CORREGIDA (311 CASOS)
+  & ..\entorno_qem\Scripts\python.exe code/scripts/run_regression_tests.py --output-dir ..\pruebas_qem
+
+El lanzador prepara las rutas de importación y los hilos. La selección conserva
+exactamente los 311 casos de la consolidación v2. code/tests/ incluye también
+pruebas históricas del ejecutor run_all.py y del antiguo results/frozen; esos
+archivos no forman parte del flujo vigente. Por ello no se prescribe ejecutar
+indiscriminadamente todo ese árbol. Véase code/tests/README.txt.
+
+5. MANUSCRITO, TABLAS Y FIGURAS
+  & ..\entorno_qem\Scripts\python.exe code/scripts/verify_manuscript.py --output ..\correspondencia_qem.json
+  & ..\entorno_qem\Scripts\python.exe code/scripts/generate_manuscript_figures.py --output-dir ..\figuras_pdf_qem
+  & ..\entorno_qem\Scripts\python.exe code/scripts/compile_manuscript.py --output-dir ..\latex_qem --figures ..\figuras_pdf_qem
+
+El último comando requiere pdflatex en PATH. Si hace falta, añadir
+--pdflatex "RUTA_COMPLETA/pdflatex.exe". El paquete incluye quantumarticle.cls;
+la distribución TeX debe disponer de los paquetes declarados en main.tex.
+Se compila tres veces. El resultado queda en ..\latex_qem\main.pdf.
+Las fechas internas pueden cambiar el hash PDF sin alterar páginas o resultados.
+En la comprobación realizada, el texto y los píxeles a 90 dpi de las 30 páginas
+coincidieron con el PDF suministrado.
+
+Para generar solo las figuras PNG y sus series:
+  & ..\entorno_qem\Scripts\python.exe code/scripts/generate_all_figures.py --output-dir ..\figuras_png_qem
+
+6. DATOS PESADOS E2
+Extraer datos_E2_v3.zip junto al paquete principal. Incluye 25.600 NPZ y sus
+metadatos, entradas, trazas y reportes: 51.555 archivos originales en total.
+El ZIP pesa aproximadamente 4.76 GB y usa ZIP64. Para comprobar las rondas:
+
+  & ..\entorno_qem\Scripts\python.exe code/scripts/reproduce_all.py --e2-raw ..\datos_E2_v3\e2_full_pc_v2
+
+El manifiesto dentro del archivo de datos cubre también los archivos auxiliares.
+Todos sus miembros se leyeron tras comprimir y se comprobaron por SHA-256.
+La reproducción global de análisis no necesita este ZIP: usa los resultados
+por trayectoria que ya se incluyen en evidence/e2/corrected/.
+
+ESTRUCTURA Y PROCEDENCIA
+results_index.json selecciona las fuentes vigentes. Para C2/C3, usar
+results/pilot/c3_reanalysis.json; el C3 dentro de evidence/learned_ablation es
+histórico. evidence/ conserva los datos de los bloques previamente corregidos.
+manuscript/ y decision_residual_fields_theory_v39.pdf son la versión actual.
+manuscript_review/ contiene la comparación con v38 y su lista de precisiones.
+validation/clean_environment/ documenta la nueva reproducción y comparación.
+Los registros bajo validation/prior_consolidation_v2/ conservan el estado v2,
+incluida su lista de pendientes anterior; no describen el estado de v3.
+code/legacy/ y algunas pruebas son antecedentes, no comandos de reproducción.
+
+ESTADO DE PUBLICACIÓN
+Esta entrega es local. No se ha subido a GitHub o Zenodo ni se ha creado un DOI.
+Antes del depósito, decidir la publicación, adjuntar los dos ZIP y actualizar
+la sección de disponibilidad con la URL/DOI de la nueva versión realmente creada.
+La entrega no acredita portabilidad universal ni ausencia absoluta de errores.

@@ -1,0 +1,21 @@
+{
+  "title": "Decision Kernels for Quantum Error Mitigation: Why Accuracy Gains Need Not Improve Downstream Decisions",
+  "upload_type": "software",
+  "description": "Reproduction package for finite-shot quantum error mitigation experiments centered on downstream decision risk and residual gap geometry.",
+  "creators": [
+    {
+      "name": "Scavino, Vicenzo",
+      "affiliation": "Independent Researcher",
+      "orcid": "0009-0000-2472-9785"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "quantum error mitigation",
+    "finite-shot estimation",
+    "decision risk",
+    "QAOA",
+    "reproducibility"
+  ],
+  "notes": "Code is MIT licensed. Archived numerical outputs, figures, counts, and related data are CC-BY-4.0 under LICENSE-DATA. Version and DOI will be added for the tagged release deposit."
+}

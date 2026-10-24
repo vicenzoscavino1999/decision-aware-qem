@@ -1,0 +1,9 @@
+{
+  "old": "validation\\historical_release\\level1_before_corrections",
+  "new": "code/reproducibility/reference_level1",
+  "reason": "Corrected Gate 0 schema and current numerical core; B times risk difference is descriptive, not a sample-complexity estimate.",
+  "linux_runs": 3,
+  "exact_output_comparisons": 2,
+  "paper_results_changed_by_this_infrastructure_step": false,
+  "preregistration": "Original PAP remains immutable; corrected reference is retrospective."
+}

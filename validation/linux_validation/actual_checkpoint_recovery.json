@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "real_instances": [
+    "C001",
+    "C002"
+  ],
+  "intact_block_reused": true,
+  "damaged_block_regenerated": true,
+  "unaffected_block_unchanged": true,
+  "restored_output_sha256": "5b1e91b135083ff70d2f4589b13c5f29eefd6274ac19693c9e78265c09d47173",
+  "source_identity": "5a8259b429a6f2d95540eb4d1ee86668820ef9ccb82b19a2e655ea820f065871"
+}

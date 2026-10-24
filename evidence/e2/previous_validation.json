@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "instances": 32,
+  "trajectories": 1280,
+  "selector_budget_outcomes": 15360,
+  "changed_columns": {
+    "final_ideal_value": 2,
+    "regret": 2,
+    "regret_decision": 2,
+    "success": 1,
+    "success_decision": 1
+  },
+  "ledger_rows": 384,
+  "changed_instance_rates": 1,
+  "crossings_identical": true,
+  "main_summaries_identical": true,
+  "raw_rounds_checked": 40,
+  "raw_shots_reused_in_audit": 4915200,
+  "new_shots": 0,
+  "new_simulator_calls": 0,
+  "final_results_checked_independently": 48,
+  "max_independent_error": 3.907985046680551e-14,
+  "protected_package_files": 1903,
+  "manuscript_unchanged": {
+    "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v38\\manuscript\\main.tex": true,
+    "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v38\\manuscript\\figures\\F8_dynamic_full_cost.pdf": true,
+    "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v38\\decision_residual_fields_theory_v38.pdf": true
+  },
+  "scope": "All final results/provenance and summaries; independent raw/rational/amplitude reconstruction of both changed trajectories (40 rounds).",
+  "elapsed_seconds": 3.017631299997447
+}

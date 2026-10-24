@@ -1,0 +1,34 @@
+from pathlib import Path
+import numpy as np,json,hashlib
+base=Path(__file__).resolve().parent
+old=base/'release_v4/results/fakekolkata_fixed10';new=base/'v4_container_all/run/analysis/results/fakekolkata_fixed10'
+maxima={};changes={};exact_decisions=True
+def walk(a,b,path):
+    global exact_decisions
+    if isinstance(a,dict):
+        for k in a:
+            if k not in ('cache_identity','samples_sha256'):walk(a[k],b[k],path+'/'+k)
+    elif isinstance(a,list):
+        for i,(x,y) in enumerate(zip(a,b)):walk(x,y,path+f'/{i}')
+    elif isinstance(a,float):maxima[path]=max(maxima.get(path,0),abs(a-b))
+    elif a!=b:changes[path]=[a,b];exact_decisions=False
+arrays={};array_equal={}
+for i in range(1,49):
+    name=f'C{i:03}'
+    walk(json.loads((old/f'{name}_analysis.json').read_text()),json.loads((new/f'{name}_analysis.json').read_text()),'record')
+    with np.load(old/f'{name}_samples.npz') as a,np.load(new/f'{name}_samples.npz') as b:
+        for key in a.files:
+            arrays[key]=max(arrays.get(key,0),float(np.max(abs(a[key]-b[key]))))
+            array_equal[key]=array_equal.get(key,True) and np.array_equal(a[key],b[key])
+original=base/'e2_full_pc_v2/C001/rounds';generated=base/'v4_e2_linux/generated_prefix/rounds'
+round_arrays={};round_hashes=0
+for r in range(20):
+    a=original/f't000_r{r:03}.npz';b=generated/a.name
+    round_hashes+=hashlib.sha256(a.read_bytes()).digest()==hashlib.sha256(b.read_bytes()).digest()
+    with np.load(a) as x,np.load(b) as y:
+        for key in x.files:round_arrays[key]=round_arrays.get(key,True) and np.array_equal(x[key],y[key])
+report=dict(fake=dict(instances=48,max_record_numeric_drift=max(maxima.values()),record_discrete_changes=changes,
+    differing_numeric_fields={k:v for k,v in maxima.items() if v},max_sample_drift=arrays,samples_exact=array_equal),
+    e2_new_generation_prefix=dict(rounds=20,array_values_exact=round_arrays,byte_identical_round_files=round_hashes))
+(base/'v4_linux_drift.json').write_text(json.dumps(report,indent=2)+'\n')
+print(json.dumps(report,indent=2))

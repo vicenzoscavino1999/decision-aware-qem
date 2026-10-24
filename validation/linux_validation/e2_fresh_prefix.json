@@ -1,0 +1,24 @@
+{
+  "decisions_match_corrected_reference": true,
+  "fresh_rounds": 20,
+  "instance": "C001",
+  "outputs": {
+    "corrected_results.csv": "850d3392b5ea3784fd800aef0ee315ee0985e1659ac0e61487970eb20c9787c2",
+    "corrected_trace.csv": "71ff17c73bf6adc6631e6fc49f0256152b107e37db94c05b4ea62e974dd9a386"
+  },
+  "readonly_replay": false,
+  "reused_rounds": 0,
+  "scope": "trajectory prefix",
+  "seconds": 258.25619274400015,
+  "source_round_identity": "eaf946f20a5a75c8c20bcf9998de4a7f450bd98032b4b61a59efa05230599b7a",
+  "status": "complete",
+  "trajectories": 1,
+  "versions": {
+    "networkx": "3.7",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "qiskit": "2.4.2",
+    "qiskit-aer": "0.17.2",
+    "scipy": "1.18.1"
+  }
+}

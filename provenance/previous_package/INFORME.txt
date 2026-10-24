@@ -1,0 +1,20 @@
+REPRODUCCIÓN V4 — ALCANCE DE ESTA ENTREGA
+
+Se integró el código corregido con la infraestructura original de reproducción:
+Docker, dependencias con hashes, pruebas completas, referencias, checkpoints,
+verificadores, documentación y CI preparada. Los resultados científicos de v39
+siguen siendo la referencia; esta intervención no amplía las hipótesis del paper.
+
+La comparación cruzada Linux/Windows verifica 305 archivos científicos. Permite
+únicamente las tolerancias documentadas en METHODS.md, con coincidencia exacta
+de decisiones, conteos y etiquetas. La mayor diferencia observada corresponde
+a una probabilidad GRI aproximada: 6,48863744e-7.
+
+Los informes internos conservan la prueba completa de E2 desde shots originales,
+la generación de una trayectoria nueva, calibración de tolerancias y recuperación
+real de un bloque. El informe externo de validación identifica el paquete final
+exacto y certifica el resultado de su ejecución limpia.
+
+ESTADO_DEL_PLAN.txt enumera lo completado y lo pendiente. --mode all ejecuta
+todos los análisis incluidos; no significa generar nuevamente todos los datos
+físicos de simulación. El cierre editorial de GitHub/Zenodo sigue pendiente.

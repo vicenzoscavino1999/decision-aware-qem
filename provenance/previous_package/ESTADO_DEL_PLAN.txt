@@ -1,0 +1,39 @@
+ESTADO FRENTE AL PLAN ORIGINAL — REPRODUCCIÓN V4
+
+Esta entrega avanza la parte 4 del plan de revisión del código. No equivale todavía
+al cierre de toda la Fase B del REPRODUCIBILITY_PLAN_v13_PRXQ.md.
+
+IMPLEMENTADO Y SOMETIDO A LA VALIDACIÓN LOCAL
+- Docker Linux amd64 de varias etapas, base por digest y dependencias con hashes.
+- Preflight de inventario, archivos, entorno, PAP y destino de salida.
+- Suite completa, referencias del nivel 1 y tres repeticiones exactas.
+- Cambio de referencias documentado, conservando el PAP y el freeze anteriores.
+- Siete análisis integrados, diez verificadores y cinco figuras del manuscrito.
+- Reproducción del análisis de hardware desde conteos archivados.
+- Reanudación por bloques, recibos atómicos, recuperación y reinicio explícito.
+- Comparación numérica por tipo de variable; decisiones y etiquetas exactas.
+- README, METHODS, CONTRIBUTING, pre-commit y flujo Docker de GitHub Actions.
+- Comprobación de dependencias configurada como informativa, no bloqueante.
+
+COMPROBACIONES ESPECÍFICAS REALIZADAS EN LINUX
+- E2: 25.600 hashes y 1.280 trayectorias originales; 15.360 decisiones coinciden.
+- E2 nuevo: 20 rondas de una trayectoria; todos los valores de las matrices,
+  incluidos los estados de cada shot, coinciden con el archivo original.
+- Recuperación real: un bloque E1 dañado se regeneró; otro se conservó intacto.
+- Calibración GRI: tres repeticiones Linux idénticas; diferencia máxima frente
+  a Windows 6,48863744e-7, sin cambios de decisiones.
+
+La certificación del paquete definitivo, cantidad de pruebas, duración y hashes
+figuran en el informe final de validación que se entrega junto al ZIP. Los
+informes internos identifican la revisión concreta que produjo cada prueba.
+
+PENDIENTE PARA DECLARAR TODA LA FASE B CERRADA
+1. Una ruta integral y validada que regenere desde cero todas las campañas de
+   simulación utilizadas en v39. La ruta actual reutiliza muestras o probabilidades
+   originales en varios bloques. No basta renombrarla como reproducción completa.
+2. Ejecución del flujo en GitHub y publicación final: tag, archivo Zenodo, DOI de
+   esa versión y actualización coherente de los enlaces del manuscrito.
+
+No se han repetido las 25.600 rondas E2 como nueva adquisición Linux; el replay
+completo y la generación parcial son comprobaciones distintas. El hardware se
+reproduce desde los conteos: volver a usar el dispositivo sería otro experimento.

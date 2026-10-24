@@ -1,0 +1,29 @@
+{
+  "blocks": {
+    "level1/budget_ledger": {
+      "duration_seconds": 0.013755,
+      "input_fingerprint": "sha256:1B3719CCC8280DA6778D4BC31A959980EA832A6F974EA9DCEE400818D5DFE7CB",
+      "outputs": {
+        "frozen/budget_ledger.csv": "sha256:7A0851C526C8D17FB5D4A30F27A229610A560444CC9482D7F19B0DE7639A8D82"
+      },
+      "status": "complete"
+    },
+    "level1/gate0_mini": {
+      "duration_seconds": 0.027682,
+      "input_fingerprint": "sha256:0F1CDC685C74DBF8A5E8A64FEE2B2965D0B8E100FF2C535E7538CE45CD328B5F",
+      "outputs": {
+        "level1/gate0_mini.csv": "sha256:E8C07B51CFBA7B786C504F3967B4CBD3C69E7376305484A6082D561654DDB218"
+      },
+      "status": "complete"
+    },
+    "level1/pullback_mini": {
+      "duration_seconds": 0.013769,
+      "input_fingerprint": "sha256:133294EB7B11D846CA3097E85D1A020AD51ED47E470EEB080705523A7E7D91B3",
+      "outputs": {
+        "pilot/pullback_frontier.csv": "sha256:84F7AC16B56E0DB36EA5F755663B6D1337DE231EE9A6546F8B3CB887D2C22406"
+      },
+      "status": "complete"
+    }
+  },
+  "version": 1
+}

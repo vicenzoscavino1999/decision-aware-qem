@@ -1,0 +1,81 @@
+REPRODUCCIÓN CORREGIDA — V4 / MANUSCRITO V39
+
+Entorno canónico: Linux amd64, Python 3.12.10. Dockerfile fija la imagen por
+digest; requirements-lock.linux.txt fija versiones y hashes de las ruedas Linux.
+Windows es una comprobación adicional, no sustituye el entorno canónico.
+La instalación requiere red; las ejecuciones siguientes funcionan sin red.
+
+Desde la raíz del paquete:
+  docker build --platform linux/amd64 -t daqem:review .
+
+Pruebas completas, tres repeticiones exactas del nivel 1, referencia congelada,
+consistencia del manuscrito, siete análisis y cinco figuras:
+  docker run --name daqem-review --network none daqem:review --mode all --output /tmp/run --workers 8
+  docker cp daqem-review:/tmp/run ./run-output
+
+Conservar el contenedor permite recuperar sus informes aunque falle. Para
+guardar resultados durante la ejecución, montar un directorio externo en /reports
+y usar --output /reports/run. No ejecutar dos escritores sobre el mismo destino.
+
+Modos separados:
+  --mode fast       pruebas completas, referencia y tres repeticiones del nivel 1
+  --mode analysis   siete análisis, verificadores independientes y cinco figuras
+  --mode all        ambos pasos anteriores
+
+Una ejecución completa termina con REPRODUCE_PASS y execution.json: complete.
+Un resultado científico negativo (p. ej. hardware inconcluso) no es un error de
+ejecución. Las decisiones y etiquetas deben coincidir exactamente; las pequeñas
+diferencias de coma flotante se comparan por separado, con tolerancias explícitas.
+
+Reanudación:
+Repetir el comando con el mismo destino, código y entorno. Los recibos validan
+fuentes y salidas antes de reutilizar cada bloque. Un bloque dañado se recalcula.
+--restart conserva los archivos anteriores en history/ y comienza de nuevo.
+Si cambian las fuentes o dependencias, usar un destino nuevo o --restart.
+
+ALCANCE DE LA REPRODUCCIÓN INTEGRADA
+E1: datos originales, división 10/10/20, ajuste, selección, evaluación y costos.
+E3: probabilidades físicas y predicciones regeneradas, covarianzas y contrastes.
+A3: bootstrap y diagnósticos calculados de nuevo desde las muestras originales.
+C3: propagación de varianzas aprendidas mediante los mapas actuales.
+E2: tablas y costos desde trayectorias; también existe repetición desde cada shot.
+FakeKolkata: muestreo, ajuste, selección y evaluación desde probabilidades archivadas.
+Hardware: análisis de conteos archivados y nuevas predicciones clásicas del modelo.
+Controles auxiliares: verificación numérica independiente de la evidencia guardada.
+
+REPETICIÓN COMPLETA DE E2 DESDE LOS SHOTS ORIGINALES
+Descomprimir datos_E2_v3.zip, entregado por separado. Montar e2_full_pc_v2 en
+/original con readonly, y un directorio nuevo de salida en /reports. Ejecutar:
+  python /app/code/scripts/replay_e2_archive.py --raw-root /original --output /reports/e2 --workers 8
+En Docker se sustituye el ENTRYPOINT con --entrypoint python y se indica la ruta
+del script y sus argumentos después del nombre de imagen. El comando verifica
+25.600 hashes, reconstruye medias/varianzas de los estados, y repite 1.280
+trayectorias (15.360 resultados selector-presupuesto), sin nuevas simulaciones.
+
+GENERACIÓN E2 NUEVA
+  python code/scripts/regenerate_e2.py --instance C001 --trajectories 40 --output NUEVO_DESTINO
+Repetir C001..C032 para una campaña completa. Sin --rounds-readonly se simulan
+las rondas faltantes y se guardan estados y hashes. Repetir el comando reanuda.
+Con --rounds-readonly RUTA_ROUNDS cualquier ronda ausente produce un error.
+La ejecución predeterminada de una trayectoria es una prueba parcial explícita.
+
+La reproducción integrada no vuelve a generar todas las campañas de simulación
+desde cero. ESTADO_DEL_PLAN.txt distingue esa comprobación del análisis desde
+datos archivados. Tampoco envía trabajos IBM ni publica archivos en GitHub/Zenodo.
+
+El PDF v39 y sus fuentes se conservan. verify_manuscript.py comprueba 30 datos y
+descripciones, cinco figuras y las series correspondientes. Compilar el TeX
+requiere una instalación TeX; la imagen científica no contiene TeX Live.
+
+ARCHIVOS PRINCIPALES
+  reproduce.py                       entrada canónica
+  .github/workflows/reproduce.yml     misma verificación automatizada en GitHub
+  release_manifest.json              integridad de esta entrega
+  validation/reference_transition.json  cambio documentado de referencias
+  validation/historical_release/     anclas y documentos de las versiones previas
+  validation/linux_validation/       comprobaciones realizadas en esta PC
+  results_index.json                 vínculo entre resultados y figuras del paper
+
+El flujo de GitHub está preparado; su ejecución remota y el DOI de la nueva
+versión requieren publicar una versión revisada. El DOI anterior identifica
+únicamente la publicación v1.1.0.

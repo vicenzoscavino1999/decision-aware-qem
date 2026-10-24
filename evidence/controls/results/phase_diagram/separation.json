@@ -1,0 +1,393 @@
+{
+  "scope": "retrospective_analytic_single_instance_noise_sweep",
+  "pec_model": "ideal_multinomial_floor_B_over_gamma_squared",
+  "gri_numerical_tolerance": 2e-06,
+  "mse_relative_tolerance": 1e-12,
+  "infeasible_rows": 11,
+  "cells": [
+    {
+      "budget": 768,
+      "p1": 0.0025,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 768,
+      "p1": 0.005,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 768,
+      "p1": 0.0075,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 768,
+      "p1": 0.01,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 768,
+      "p1": 0.015,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 768,
+      "p1": 0.02,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 768,
+      "p1": 0.03,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 768,
+      "p1": 0.04,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 1536,
+      "p1": 0.0025,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 1536,
+      "p1": 0.005,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 1536,
+      "p1": 0.0075,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 1536,
+      "p1": 0.01,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 1536,
+      "p1": 0.015,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 1536,
+      "p1": 0.02,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 1536,
+      "p1": 0.03,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 1536,
+      "p1": 0.04,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 3072,
+      "p1": 0.0025,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 3072,
+      "p1": 0.005,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 3072,
+      "p1": 0.0075,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 3072,
+      "p1": 0.01,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 3072,
+      "p1": 0.015,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 3072,
+      "p1": 0.02,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 3072,
+      "p1": 0.03,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 3072,
+      "p1": 0.04,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 6144,
+      "p1": 0.0025,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 6144,
+      "p1": 0.005,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 6144,
+      "p1": 0.0075,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 6144,
+      "p1": 0.01,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 6144,
+      "p1": 0.015,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 6144,
+      "p1": 0.02,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 6144,
+      "p1": 0.03,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    },
+    {
+      "budget": 6144,
+      "p1": 0.04,
+      "mse_minimizers": [
+        "CDR"
+      ],
+      "gri_minimizers": [
+        "CDR",
+        "Raw"
+      ],
+      "forced_separation": false
+    }
+  ]
+}

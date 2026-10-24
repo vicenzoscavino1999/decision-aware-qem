@@ -1,0 +1,102 @@
+{
+  "base": "v38",
+  "base_source_sha256": "b546cada2b95d5ec790a3c17da327ea3e3d5ae7e842250ed528c5f70343a3b7b",
+  "base_pdf_sha256": "43c12fbad5c99cf8958a0562a7a74d95243618f34f1b9af7a3a78eb292a27265",
+  "analysis_package": "integracion_reproduccion_parte4_v2",
+  "analysis_manifest_sha256": "9c61841a2d00e2406d8f2ab470dcc59cb2497a9c89725aeec8daf9c1397649a0",
+  "source_sha256": "c29127c51d34c2e750c5fbad708b6ae1a0ab5e1970bbe06b8e73a905707ed28d",
+  "formal_blocks_unchanged": {
+    "theorem": 5,
+    "proposition": 4,
+    "corollary": 2,
+    "lemma": 0,
+    "example": 2,
+    "proof": 12,
+    "equation": 46,
+    "algorithm": 1
+  },
+  "all_displayed_equations_unchanged": true,
+  "theory_before_experiments_byte_identical": true,
+  "edits": [
+    {
+      "topic": "cdr_slopes",
+      "before": "The CDR control in Fig.~\\ref{fig:accuracy_decision_separation} isolates the effect of a positive affine correction $x\\mapsto ax+b$, with slopes $a\\in[1.068,1.155]$. It reduces MSE by factors of $43$--$180$ over the reported budgets while preserving every ranking and tie. Its gap mean and covariance satisfy $\\mu_{\\CDR}=a\\mu_{\\Raw}$ and $\\Sigma_{\\CDR}=a^2\\Sigma_{\\Raw}$, so $\\GRI_{\\CDR}=\\GRI_{\\Raw}$.",
+      "after": "The CDR control in Fig.~\\ref{fig:accuracy_decision_separation} isolates the effect of a positive affine correction $x\\mapsto ax+b$, with slopes $a\\in[1.292,1.478]$. This oracle control fits exact noisy means to ideal values on the same candidates. It reduces MSE by factors of $43$--$180$ over the reported evaluation budgets while preserving every ranking and tie. Its gap mean and covariance satisfy $\\mu_{\\CDR}=a\\mu_{\\Raw}$ and $\\Sigma_{\\CDR}=a^2\\Sigma_{\\Raw}$, so $\\GRI_{\\CDR}=\\GRI_{\\Raw}$."
+    },
+    {
+      "topic": "pec_effective_shots",
+      "before": "PEC illustrates the competing effect of sampling overhead in Section~\\ref{sec:pec_signature}. Under the scalar-overhead model, the aggregate inequalities $\\MSE_{\\PEC}<\\MSE_{\\Raw}$ and $\\GRI_{\\PEC}>\\GRI_{\\Raw}$ hold at budgets $768,1536,3072,6144$. Both inequalities hold on $5/8,7/8,7/8,7/8$ instances, respectively. For POM\\_004, Raw already has low MSE at small budgets, while PEC becomes decision-better at high budgets; the two inequalities never hold together on that instance. The observed separation therefore depends on both the landscape and the overhead.",
+      "after": "PEC illustrates the competing effect of sampling overhead in Section~\\ref{sec:pec_signature}. Here an effective-shot proxy samples the ideal multinomial distribution with $n_{\\rm eff}=\\lfloor B/\\gamma^2\\rfloor$ shots per candidate, giving covariance $\\Sigma_{\\rm ideal}/n_{\\rm eff}$ for ideal single-shot covariance $\\Sigma_{\\rm ideal}$. This calculation models the overhead without sampling signed circuit contributions. The aggregate inequalities $\\MSE_{\\PEC}<\\MSE_{\\Raw}$ and $\\GRI_{\\PEC}>\\GRI_{\\Raw}$ hold at budgets $768,1536,3072,6144$. Both inequalities hold on $5/8,7/8,7/8,7/8$ instances, respectively. For POM\\_004, Raw already has low MSE at small budgets, while the PEC proxy becomes decision-better at high budgets; the two inequalities never hold together on that instance. The observed separation therefore depends on both the landscape and the overhead. These budgets cover evaluation; they exclude the cost of learning a physical correction."
+    },
+    {
+      "topic": "f1_caption",
+      "before": "\\caption{Accuracy--decision separation. CDR lowers MSE while preserving GRI; its GRI curve overlays Raw's. PEC has lower MSE and higher GRI than Raw over the reported budgets.}",
+      "after": "\\caption{Accuracy--decision separation at the reported evaluation budgets. The oracle affine CDR control lowers MSE while preserving GRI; its GRI curve overlays Raw's. The PEC effective-shot proxy has lower MSE and higher GRI than Raw.}"
+    },
+    {
+      "topic": "dynamic_selector_scope",
+      "before": "The dynamic experiment applies the fixed static method choices to repeated decisions along a shared trajectory.",
+      "after": "The dynamic experiment applies the archived static method choices to repeated decisions along a shared trajectory. These choices retain the original training procedure; they are separate from the retrospective static split in Section~\\ref{sec:e1_reanalysis}."
+    },
+    {
+      "topic": "noise_controls",
+      "before": "To examine sensitivity to the noise model, a heterogeneous-PEC calculation propagates covariance through the known heterogeneous channel. PEC has higher GRI than Raw throughout the evaluated budgets, with overhead $\\gamma^2=88.94$. Under amplitude damping plus phase damping, the analytic decision-aware prediction beats Raw on $0/16$ instances at every budget. These controls identify regimes in which the available correction and its sampling cost provide no decision gain.",
+      "after": "To examine sensitivity to the noise model, a heterogeneous-PEC Gaussian proxy uses the ideal mean and covariance $\\gamma^2\\Sigma_{\\Raw}$, with overhead $\\gamma^2=88.94$. Its GRI exceeds Raw's throughout the evaluated budgets. This proxy scales noisy covariance, whereas Fig.~\\ref{fig:accuracy_decision_separation} uses ideal multinomial samples. Under amplitude damping plus phase damping, a separate calculation uses known moments and $B$ shots per candidate and scale: Raw costs $B$ and ZNE costs $3B$. The analytic decision-aware prediction beats Raw on $0/16$ instances at every budget, so the planned empirical stage was not triggered. These controls identify regimes in which the available correction and its sampling cost provide no decision gain."
+    },
+    {
+      "topic": "hardware_initial",
+      "before": "held-out generalization error $0.74$",
+      "after": "held-out generalization error $0.75$"
+    },
+    {
+      "topic": "hardware_validation",
+      "before": "On the selected path, the learned sparse Pauli--Lindblad channel \\cite{vandenBerg2023} had held-out error $0.095$ and support stability $1.0$, meeting the characterization criterion; rates on the two shared edges reproduced within calibration noise. For $R=60$ independent repetitions over 10 epochs, the relative Frobenius errors between $LMC_{\\rm dev}M^\\top L^\\top$ and the directly estimated covariance were $0.126$ for Accuracy-ZNE, $0.173$ for Raw and $0.209$ for DA-ZNE. The first two lie within the specified $0.20$ band. The predicted ZNE-to-Raw variance amplification of approximately $7.4\\times$ also appeared in the measured kernels.",
+      "after": "On the selected path, a local depolarizing model estimates rates on the specified qubits and edges, using $p=1-e^{-r}$ to map each fitted rate to its depolarizing parameter. A retrospective fit on 162 characterization records gives held-out error $0.097$ on 41 reserved records, meeting the characterization criterion. The final model is then refitted to all 203 records. The support-stability score is $1.0$ within the specified support; it does not assess recovery of an unknown support. Covariance predictions retain the mitigation coefficients used in the executed circuits. For $R=60$ independent repetitions over 10 epochs, the relative Frobenius errors between $LMC_{\\rm dev}M^\\top L^\\top$ and the directly estimated covariance were $0.126$ for Accuracy-ZNE, $0.173$ for Raw and $0.209$ for DA-ZNE. The first two lie within the specified $0.20$ band. The predicted ZNE-to-Raw variance amplification of approximately $7.4\\times$ also appeared in the measured kernels."
+    },
+    {
+      "topic": "hardware_table_Accuracy-ZNE_DA-ZNE",
+      "before": "$0.0060206$ & $0.0139547$ & $0.00000009$",
+      "after": "$0.0060209$ & $0.0139553$ & $0.00000009$"
+    },
+    {
+      "topic": "hardware_table_Accuracy-ZNE_Raw",
+      "before": "$0.0022542$ & $0.0062907$ & $0.00279585$",
+      "after": "$0.0022532$ & $0.0062904$ & $0.00279613$"
+    },
+    {
+      "topic": "hardware_table_DA-ZNE_Raw",
+      "before": "$0.0037665$ & $0.0112263$ & $0.00279576$",
+      "after": "$0.0037677$ & $0.0112278$ & $0.00279604$"
+    },
+    {
+      "topic": "gate0",
+      "before": "The selected method is nevertheless identical in all 72 method-budget rows",
+      "after": "The selected method is nevertheless identical in all 24 instance--budget cells, represented by 72 method rows"
+    },
+    {
+      "topic": "gate0_caption",
+      "before": "the minimizing method is unchanged across all 72 method-budget rows.",
+      "after": "the minimizing method is unchanged in all 24 instance--budget cells. The 72 plotted points represent the three methods in each cell."
+    },
+    {
+      "topic": "channel_scope",
+      "before": "This diagnostic addresses global depolarization; spatially resolved sparse Pauli--Lindblad learning is assessed separately in the hardware experiment.",
+      "after": "This diagnostic addresses two global rates; the hardware experiment separately fits local rates on a specified support."
+    },
+    {
+      "topic": "availability",
+      "before": "The numerical results reported here use the separate \\texttt{revision\\_v21/} package, including archived inputs, split IDs, shot ledgers, fixed simulation streams, code and a hash manifest. It has not been deposited under that DOI or published as a new release.",
+      "after": "The corrected numerical results reported here use a separate consolidated analysis package, including archived inputs, split IDs, shot ledgers, fixed simulation streams, code, numerical checks and hash manifests. Its analysis workflow regenerates the reported summaries from stored evidence; the original dynamic-experiment shot records form a separate data archive. The corrected package and revised manuscript have not yet been deposited under that DOI or published as a new release."
+    },
+    {
+      "topic": "derivative_method",
+      "before": "Covariance derivatives use Cholesky conditioning and an analytic bivariate density; the supported double-precision regime requires correlation condition number at most $10^{14}$.",
+      "after": "General covariance derivatives use Cholesky conditioning and an analytic bivariate density; the supported double-precision regime requires correlation condition number at most $10^{14}$. For gaps sharing one incumbent, the implementation instead evaluates the full analytic gradient by one-dimensional conditional-normal integration. Symmetric off-diagonal derivatives contribute half to each matrix entry, so Frobenius contraction gives the first-order risk change."
+    },
+    {
+      "topic": "tie_convention",
+      "before": "Any nonpositive gap, including an exact tie, counts as failure.",
+      "after": "For a strict single-selection decision, any nonpositive gap, including an exact tie, counts as failure. In the dynamic search, exact estimator ties retain the first candidate within a batch and the earlier incumbent across rounds. Its success criterion is ideal regret at most $\\epsilon$ relative to the best candidate visited along that trajectory; $\\epsilon$ is fixed from the archived ideal landscape."
+    }
+  ]
+}

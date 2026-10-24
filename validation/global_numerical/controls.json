@@ -1,0 +1,17 @@
+{
+  "probability_distributions": 800,
+  "grid_rows": 85,
+  "infeasible_rows": 11,
+  "pilot_cells": 24,
+  "strict_decisions": 14400,
+  "exact_iid_power_independent": 0.9999999999991853,
+  "max_errors": {
+    "probability_normalization": 4.440892098500626e-16,
+    "moment_mean": 1.4210854715202004e-14,
+    "moment_variance": 3.779199175824033e-13,
+    "gamma_relative": 3.9968028886505635e-14,
+    "grid_mse": 2.7977620220553945e-14,
+    "grid_gri": 1.2285464746630836e-06,
+    "pilot_mse": 0.0
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "E1": {
+    "current": "results/e1/summary.csv",
+    "figure": "figures/F7_e1_reanalysis.png",
+    "current_sha256": "7933504f6f6c8f1df48f40f7bffc7ecfb3bccd2bb57b7cd34164bed54bc4ffe1",
+    "figure_sha256": "5b16ee1bf01c4df49f3f2640ea662324db44c8847f41da37532f7f56da51d569",
+    "manuscript_figure": "manuscript/figures/F7_e1_reanalysis.pdf",
+    "manuscript_figure_sha256": "099e76dc8f12349ff903ea6d9fb3b56dca1721a2f6c43e8ed902b74ddf4d7766"
+  },
+  "E2": {
+    "current": "results/e2/e2_summary.json",
+    "figure": "figures/F8_dynamic_full_cost.png",
+    "scope": "Outcome-level reanalysis; original shot archive separate",
+    "current_sha256": "136b30dee3f291a382698c34eb94592e26548b35f7764efe2eb5666196449374",
+    "figure_sha256": "2ce5c2214befb5fd16b5547d877c87b8400b99fc78c81723ed40e7fce475612f",
+    "manuscript_figure": "manuscript/figures/F8_dynamic_full_cost.pdf",
+    "manuscript_figure_sha256": "41b9d3ccea751596e6a8249ab59cf1ec8466f0f7475ed3d8705b8d159ab460f7"
+  },
+  "E3": {
+    "current": "results/confirmatory/e3_summary.json",
+    "figure": "figures/F9_e3_comparisons.png",
+    "current_sha256": "cc490e49364eb7278622394622b2c3e0a1642e6e7158924d8793cd7aa101c62e",
+    "figure_sha256": "62caf9254c84567536dc14de9337deaf57dbab10376a00db23ec0e71bfbc07a6",
+    "manuscript_figure": "manuscript/figures/F9_e3_comparisons.pdf",
+    "manuscript_figure_sha256": "ee629ef8d3f0457f8da4da4f6b89b334a5d806fc0ee23160ef311cbab9d47fae"
+  },
+  "FakeKolkata": {
+    "current": "results/fakekolkata_fixed10/summary.json",
+    "current_sha256": "5585f312e56e5e43a14e2e536fc2097f2a77e95ba978d3fff061d9597fc69865"
+  },
+  "Hardware": {
+    "current": "results/hardware/hardware.json",
+    "current_sha256": "a8a7e26b5ef242d37c5b455332fdfabe06bf06de83d56d28cd4cf067eed21c1f"
+  },
+  "CDR_PEC": {
+    "current": "evidence/cdr_pec/results/proof_of_mechanism/result.json",
+    "figure": "figures/F1_accuracy_decision_separation.png",
+    "current_sha256": "4cab33d8e85696d20cb784fc6dc9bd3b53ccc4301d3b565df6757cd6be3fe6c7",
+    "figure_sha256": "1113b453e6286ff3bad4acb334e9b1619dd722935cecd34f1b3114b06bcd0134",
+    "manuscript_figure": "manuscript/figures/F1_accuracy_decision_separation.pdf",
+    "manuscript_figure_sha256": "8aa82cbe019608abe4bf1af78029726aa09528b1b114c67292ee24ab1a928d7e"
+  },
+  "Ablation": {
+    "current": "evidence/learned_ablation/results/pilot/gate0_full_vs_diagonal.csv",
+    "figure": "figures/F6_gate0_full_vs_diagonal.png",
+    "current_sha256": "795eab9c40de32c8732002973092665fed30eab7f82ffe2c4a2fc9ac4143dd73",
+    "figure_sha256": "91888c2c53787a3aa18fe8ab02c19e891bddb3b507b2f8cb5f1897527ad43aa9",
+    "manuscript_figure": "manuscript/figures/F6_gate0_full_vs_diagonal.pdf",
+    "manuscript_figure_sha256": "bf5d0e6b2db4aac308892b9490ed543cc87b732f66acf08521952f57168d221d"
+  },
+  "Learned_C1": {
+    "current": "evidence/learned_ablation/results/pilot/cdev_evidence/diagnostics.json",
+    "scope": "Only C1 here; C2/C3 in current root results",
+    "current_sha256": "dff1c9e3c05861a335fd8edeb8a9b53fe224dab57c12d1f4080c335e5da0082b"
+  },
+  "Learned_C2_C3": {
+    "current": "results/pilot/c3_reanalysis.json",
+    "scope": "Current maps and bootstrap; older C3 text in evidence is historical",
+    "current_sha256": "656da4edc5d79b9d45d852fc27427fd85b473e743b413d776505da3beaea1432"
+  },
+  "A3": {
+    "current": "results/pilot/a3_audit_evidence/audit_index.json",
+    "current_sha256": "deef459735e47b46692abd134404f7636e172bd8b7ff7ab65bf83f4d18b8dd97"
+  },
+  "Noise": {
+    "current": "evidence/noise/results/r1_full/r1_full_result.json",
+    "heterogeneous_PEC": "evidence/noise/results/het_pec_derisk/derisk_result.json",
+    "current_sha256": "2b579f64721c0340095e9f65d68174fc4849735189815f04c8bfb2e48e02b590",
+    "heterogeneous_PEC_sha256": "92647b17315be4eccf89491dfc1349300f8314526a5cbe293afb31a2a7e1ccf4"
+  },
+  "Controls": {
+    "current": "evidence/controls/results/phase_diagram/grid.csv",
+    "pilot": "evidence/controls/results/pilot/power_summary.json",
+    "current_sha256": "3273cedc2f31a40d149267f610d49627942e5d79cff7eefa828c8d814e153337",
+    "pilot_sha256": "cc03526f04bd366467e7badf299b6a6ffcba079f7a5da09142841cf97f3dad75"
+  },
+  "E0": {
+    "current": "results/pilot/executability_diagnostic.json",
+    "scope": "Reused benchmark, version 2, unknowns retained",
+    "current_sha256": "0fd32ffd6a066d02f1c269cb6c208500adcb99e412bcc94946d7cb2716354690"
+  },
+  "Signed_PEC": {
+    "archive": "evidence/pec_decisiones_v2.zip",
+    "figure_or_table": "Table 1; Section 10.1; Appendix H.1"
+  },
+  "E1_partitions": {
+    "archive": "evidence/e1_particiones_v1.zip",
+    "figure_or_table": "Section 10.3; Appendix H"
+  },
+  "Overview": {
+    "source": "manuscript/figures/F0_estimation_decision_cost.tex",
+    "pdf": "manuscript/figures/F0_estimation_decision_cost.pdf",
+    "figure_or_table": "Figure 1"
+  }
+}

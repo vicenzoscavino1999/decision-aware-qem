@@ -1,0 +1,119 @@
+{
+  "bootstrap_repetitions": 1000,
+  "budget_grid": [
+    768,
+    1536,
+    3072,
+    6144
+  ],
+  "budget_policy": {
+    "Accuracy-ZNE": {
+      "per_scale_shots": "total_budget / 3"
+    },
+    "CDR": {
+      "C_train_measured": false,
+      "correction": "global_positive_affine_control",
+      "eval_shots": "total_budget",
+      "fit_information": "exact_noisy_and_ideal_means_of_the_evaluated_candidate_set",
+      "note": "CDR is used as the common-mode/affine negative control. The decision comparison uses the same Raw evaluation shots to isolate affine invariance. This oracle affine control is distinct from finite-shot CDR P0 training. No measured training-shot cost or end-to-end matched-cost CDR advantage is claimed for this control.\n"
+    },
+    "Decision-ZNE": {
+      "per_scale_shots": "total_budget / 3"
+    },
+    "PEC": {
+      "effective_samples": "floor(total_budget / gamma_squared)",
+      "note": "This is the finite-shot PEC cost-equivalent proxy: an unbiased ideal estimator with covariance Sigma_ideal / floor(B/gamma^2). Flooring makes the variance inflation B/floor(B/gamma^2), generally above gamma^2. Budgets yielding zero effective samples are rejected. This is not signed PEC circuit sampling.\n",
+      "variance_proxy": "ideal_multinomial_with_effective_samples"
+    },
+    "Raw": {
+      "eval_shots": "total_budget"
+    }
+  },
+  "cell": {
+    "candidate_count": 25,
+    "degree": 3,
+    "depth": 2,
+    "depth_reason": "reuse_validated_QAOA_depth2_stack_and_PEC_lambda_gamma_mechanism",
+    "local_radius": 0.16,
+    "num_qubits": 10,
+    "problem": "QAOA-MaxCut",
+    "search_count": 64,
+    "search_radius": 0.55
+  },
+  "ci_alpha": 0.05,
+  "ci_scope": "paired_stratified_replicate_bootstrap_conditional_on_fixed_instances",
+  "death_criteria": {
+    "affine_control_is_not_the_effect_required": true,
+    "cdr_decision_flat_tolerance": 0.0,
+    "gap_kernel_explains_required": true,
+    "margin_nondegenerate_min_epsilon": 0.0001,
+    "pec_matched_budget_effect_required": true,
+    "physical_execution_order_test": "not_applicable_to_stationary_multinomial_sampling"
+  },
+  "decision_rule": "strict_optimum_with_all_exact_ties_counted_as_failures",
+  "freeze_status": "retrospective_code_correction_of_locked_proof_of_mechanism",
+  "instance_selection": {
+    "epsilon_opt_quantile": 0.01,
+    "min_epsilon_opt": 0.0001,
+    "pool_ids": [
+      "POM_001",
+      "POM_002",
+      "POM_003",
+      "POM_004",
+      "POM_005",
+      "POM_006",
+      "POM_007",
+      "POM_008",
+      "POM_009",
+      "POM_010",
+      "POM_011",
+      "POM_012",
+      "POM_013",
+      "POM_014",
+      "POM_015",
+      "POM_016",
+      "POM_017",
+      "POM_018",
+      "POM_019",
+      "POM_020",
+      "POM_021",
+      "POM_022",
+      "POM_023",
+      "POM_024"
+    ],
+    "selected_count": 8,
+    "selection_rule": "outcome_blind_smallest_positive_epsilon_then_lexicographic_id"
+  },
+  "matched_total_shot_budget": true,
+  "methods": [
+    "Raw",
+    "Accuracy-ZNE",
+    "Decision-ZNE",
+    "CDR",
+    "PEC"
+  ],
+  "noise": {
+    "family": "depolarizing_known_channel",
+    "p1": 0.04,
+    "p2": 0.12,
+    "zne_order": 1,
+    "zne_scales": [
+      1.0,
+      2.0,
+      3.0
+    ]
+  },
+  "original_protocol": "inputs/protocol_original/proof_of_mechanism.yaml",
+  "record_randomized_method_order": true,
+  "replicates": 30,
+  "sampling_scope": "stationary_multinomial_streams_not_physical_randomized_execution",
+  "scope": {
+    "analysis": "retrospective_noise_sweep",
+    "no_confirmatory_instance_ids": true,
+    "no_rate_sweep": false,
+    "pec_model": "ideal_multinomial_floor_B_over_gamma_squared",
+    "purpose": "demonstrate_MSE_decision_coexistence_and_gap_kernel_mechanism",
+    "report_not_select": true
+  },
+  "zne_freeze_hash_reference": "sha256:C25B4F0243F41C12F8AC685ADAF150E79E066D9910B4EEEF1707E0F9BA5A66EA"
+}

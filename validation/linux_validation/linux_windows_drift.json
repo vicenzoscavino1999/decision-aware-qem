@@ -1,0 +1,36 @@
+{
+  "fake": {
+    "instances": 48,
+    "max_record_numeric_drift": 6.488637439572287e-07,
+    "record_discrete_changes": {},
+    "differing_numeric_fields": {
+      "record/scores/Raw/gri": 3.7069123981492424e-07,
+      "record/scores/Raw+REM/gri": 4.5808669213442954e-07,
+      "record/scores/Accuracy-ZNE/gri": 5.506931062271292e-07,
+      "record/scores/Decision-ZNE/gri": 6.488637439572287e-07
+    },
+    "max_sample_drift": {
+      "raw": 0,
+      "primitive": 0,
+      "rem": 0
+    },
+    "samples_exact": {
+      "raw": true,
+      "primitive": true,
+      "rem": true
+    }
+  },
+  "e2_new_generation_prefix": {
+    "rounds": 20,
+    "array_values_exact": {
+      "trajectory": true,
+      "round": true,
+      "angles": true,
+      "means": true,
+      "variances": true,
+      "cost": true,
+      "shot_states": true
+    },
+    "byte_identical_round_files": 0
+  }
+}

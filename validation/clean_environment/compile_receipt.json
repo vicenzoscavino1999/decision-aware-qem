@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "passes": 3,
+  "compiler": "C:/Users/ASROCK/AppData/Local/Programs/MiKTeX/miktex/bin/x64\\pdflatex.exe",
+  "source_sha256": "c29127c51d34c2e750c5fbad708b6ae1a0ab5e1970bbe06b8e73a905707ed28d",
+  "pdf_sha256": "bda66ab70d248572a25e4e47febc479acc306c99b26442e7def734e784310f06"
+}

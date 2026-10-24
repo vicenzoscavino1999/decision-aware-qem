@@ -1,0 +1,10 @@
+problem_cell,budget,pair_id,field,old,new,active_pair
+C011,4096,Accuracy-ZNE_vs_Decision-ZNE,predicted_order,Accuracy-ZNE<Decision-ZNE,tie,False
+C011,8192,Accuracy-ZNE_vs_Decision-ZNE,predicted_order,Accuracy-ZNE<Decision-ZNE,tie,False
+C011,8192,Raw_vs_Accuracy-ZNE,predicted_order,Raw<Accuracy-ZNE,tie,False
+C011,8192,Raw_vs_Decision-ZNE,predicted_order,Raw<Decision-ZNE,tie,False
+C011,8192,Accuracy-ZNE_vs_Decision-ZNE,empirical_order,Accuracy-ZNE<Decision-ZNE,Decision-ZNE<Accuracy-ZNE,False
+C011,4096,Accuracy-ZNE_vs_Decision-ZNE,ordering_match,True,False,False
+C011,8192,Accuracy-ZNE_vs_Decision-ZNE,ordering_match,True,False,False
+C011,8192,Raw_vs_Accuracy-ZNE,ordering_match,True,False,False
+C011,8192,Raw_vs_Decision-ZNE,ordering_match,True,False,False

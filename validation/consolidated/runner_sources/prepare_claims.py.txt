@@ -1,0 +1,107 @@
+from pathlib import Path
+import hashlib,json,csv
+import numpy as np
+import pandas as pd
+ROOT=Path(__file__).resolve().parents[2];P=ROOT/'outputs/integracion_reproduccion_parte4_v2'
+def read(rel):return json.loads((P/rel).read_text())
+def dump(rel,data):(P/rel).write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+source=P/'manuscript_review/source_v38.tex';lines=source.read_text().splitlines()
+def line(fragment):
+    matches=[i+1 for i,s in enumerate(lines) if fragment in s];assert len(matches)==1,(fragment,matches);return matches[0]
+hardware=read('results/hardware/hardware.json');fake=read('results/fakekolkata_fixed10/summary.json');e2=read('results/e2/e2_summary.json')
+analytics=read('evidence/cdr_pec/results/proof_of_mechanism/instance_analytics.json')
+slopes=[r['cdr_fit']['a'] for r in analytics]
+assert min(slopes)>1.29 and max(slopes)<1.48
+assert fake['failure_rates']['GRI-selector']==.503125
+assert e2['both_cross_instances']==13 and e2['median_full_cost_ratio_MSE_over_DA']==1.3
+assert hardware['label']=='failed_or_inconclusive' and len(hardware['gate_c1']['fit_indices'])==162 and len(hardware['gate_c1']['heldout_indices'])==41
+rows=[]
+def add(identifier,anchor,status,action,refs):
+    rows.append(dict(id=identifier,line_v38=line(anchor),status=status,action=action,sources=refs))
+add('cdr_slopes','with slopes $a\\in[1.068,1.155]$','corregir',
+    f'Cambiar el rango de pendientes de F1 a [{min(slopes):.3f},{max(slopes):.3f}]. Se ajustÃ³ el control afÃ­n a medias ruidosas exactas y valores ideales del mismo conjunto de candidatos; describirlo como control orÃ¡culo de invariancia. El rango anterior corresponde al entrenamiento CDR P0. Conservar la reducciÃ³n MSE 43--180.',
+    ['evidence/cdr_pec/results/proof_of_mechanism/instance_analytics.json','evidence/cdr_pec/results/cdr_p0'])
+add('pec_effective_shots','PEC illustrates the competing effect','precisar',
+    'F1 emplea muestras multinomiales ideales n_eff=floor(B/gamma^2), no circuitos firmados. Su covarianza es Sigma_ideal/n_eff, con el redondeo incluido. Mantener coexistencias 5/8,7/8,7/8,7/8 y distinguir los costos de evaluaciÃ³n del aprendizaje.',
+    ['evidence/cdr_pec/results/proof_of_mechanism/result.json','validation/consolidated/cdr_pec.json'])
+add('f1_source','figures/F1_accuracy_decision_separation.pdf','sustituir_figura',
+    'Regenerar F1 desde el resultado corregido, con leyenda de proxy PEC y control afÃ­n. Las tasas empÃ­ricas y el MSE PEC archivados antiguos no son la referencia vigente.',
+    ['figures/F1_accuracy_decision_separation.png','figures/F1_series.csv'])
+add('e3_counts','all 502 selected active pairs','conservar',
+    'Se conservan 502 pares activos, 487 pases y 15 no pases; orden de fallos a 40 repeticiones 302/133/67 y a prueba separada 310/94/98. Usar predicciones regeneradas y mantener el carÃ¡cter retrospectivo y la dependencia por instancia.',
+    ['results/confirmatory/e3_summary.json','results/confirmatory/e3_independent_mean_and_failure.csv'])
+add('e1','At $t=512$, evaluation-matched failure','conservar',
+    'Se conservan las tasas, diferencias e intervalos de E1, incluidos los costos completos. Las 19.200 decisiones no cambian.',
+    ['results/e1/summary.csv','results/e1/outcomes.csv'])
+add('f8','figures/F8_dynamic_full_cost.pdf','sustituir_figura',
+    'Actualizar MSE/B4096 a 971/1280=0.75859375. Los restantes once puntos son iguales; mÃ¡ximos 0.7758 y 0.7883, 13 cruces comunes y mediana 1.30 se conservan. Mantener entrenamiento histÃ³rico fijo de E2, no sustituirlo por el nuevo selector E1.',
+    ['results/e2/e2_full_ledger.csv','figures/F8_dynamic_full_cost.png','validation/consolidated/e2.json'])
+add('noise_controls','a heterogeneous-PEC calculation','precisar',
+    'Identificar PEC heterogÃ©neo como proxy gaussiano gamma^2*Sigma_Raw, diferente del proxy multinomial de F1. R1 usa momentos conocidos y B por candidato y escala: Raw B, ZNE 3B. No se ejecutÃ³ su fase empÃ­rica B porque no se cumpliÃ³ la regla de avance. Mantener 0/16 por presupuesto.',
+    ['evidence/noise/results/het_pec_derisk/derisk_result.json','evidence/noise/results/r1_full/r1_full_result.json'])
+add('fakekolkata','On the 960 test decisions','conservar',
+    'Las tasas 0.6708/0.5031/0.5042 y los intervalos coinciden. Mantener presupuesto de evaluaciÃ³n, costos de aprendizaje adicionales y un solo bloque fÃ­sico; no afirmar ventaja sobre Raw.',
+    ['results/fakekolkata_fixed10/summary.json','validation/consolidated/independent_fakekolkata.json'])
+add('hardware_initial','An initial path, with held-out','corregir',
+    'El error inicial corregido 0.7460292238 redondea a 0.75, no a 0.74. Su fallo frente al umbral se mantiene.',
+    ['evidence/hardware/results/characterization_comparison.json'])
+add('hardware_validation','had held-out error $0.095$','corregir',
+    'Cambiar 0.095 por 0.097. El diagnÃ³stico ajusta 162 registros y evalÃºa 41 reservados; el canal final usa 203 tras validar. Describir un modelo depolarizante local en soporte especificado, con p=1-exp(-r), conservando los coeficientes ejecutados. El reanÃ¡lisis es retrospectivo. Los errores Frobenius 0.126,0.173,0.209 y la amplificaciÃ³n 7.4x se mantienen.',
+    ['results/hardware/hardware.json','validation/consolidated/independent_hardware.json'])
+for pair in hardware['corrected_endpoint']['pairs']:
+    order={'Raw':2,'Accuracy-ZNE':0,'DA-ZNE':1}
+    a,b=sorted(pair['pair'],key=lambda m:order[m]);label=f'{a} / {b}'
+    add('hardware_table_'+a+'_'+b,label+' &','corregir',
+        f"Reemplazar fila por error {pair['delta_rank']:.7f}, lÃ­mite superior {pair['ucb95']:.7f}, umbral {pair['threshold']:.8f}. El par sigue sin pasar.",
+        ['results/hardware/hardware.json'])
+add('gate0','The selected method is nevertheless identical','precisar',
+    'Informar acuerdo de selector en 24/24 celdas instancia-presupuesto, representadas por 72 filas de mÃ©todo. Conservar diferencia mÃ­nima -0.2865. Retirar de documentaciÃ³n secundaria el falso disparador B*delta como ganancia de presupuesto.',
+    ['evidence/learned_ablation/results/pilot/gate0_full_vs_diagonal.csv','figures/F6_gate0_full_vs_diagonal.png'])
+add('gate0_caption','the minimizing method is unchanged across all 72','precisar',
+    'En el pie de F6 decir 24 celdas, con 72 puntos de mÃ©todo; actualizar figura desde datos corregidos.',
+    ['figures/F6_series.csv'])
+add('calibration','A preliminary sample-mean calibration check','conservar',
+    'Mantener 70/72 dentro de tolerancia 0.05 y describir el uso de las mismas repeticiones para ajustar y evaluar. Los nuevos bootstrap A3/C3 son diagnÃ³sticos de covarianza, no certificados de fallo fÃ­sico; no es necesario aÃ±adir una nueva secciÃ³n.',
+    ['results/pilot/a3_audit_evidence/audit_index.json','results/pilot/c3_summary.json'])
+add('channel_scope','A learned uniform two-parameter depolarizing channel','precisar',
+    'Conservar e_C=0.0096 para el control uniforme de dos tasas. No presentar 25 etiquetas repetidas como soporte espacial aprendido. El hardware estima tasas individuales en un soporte local especificado; su estabilidad no demuestra recuperaciÃ³n de un soporte desconocido.',
+    ['evidence/learned_ablation/results/pilot/cdev_evidence/diagnostics.json','results/hardware/hardware.json'])
+add('availability','The public reproduction package','actualizar',
+    'La referencia local revision_v21 ya no reÃºne los resultados vigentes. Indicar el paquete corregido consolidado, sus fuentes y que aÃºn no es un nuevo depÃ³sito bajo el DOI citado. El archivo de rondas E2 (4.745 GB) debe adjuntarse por separado para la publicaciÃ³n; no anunciar disponibilidad pÃºblica de archivos no subidos.',
+    ['results_index.json','validation/consolidated/external_E2_raw_manifest.json'])
+add('derivative_method','Covariance derivatives use Cholesky conditioning','precisar',
+    'Distinguir las derivadas normales generales de la integraciÃ³n condicional unidimensional usada por la estructura de incumbente compartido. Mantener el factor 1/2 fuera de la diagonal y el alcance de primera aproximaciÃ³n.',
+    ['code/src/daqem/risk.py','code/experiments/a3_pullback_frontier.py','validation/independent_integration.json'])
+add('tie_convention','Any nonpositive gap, including an exact tie','precisar',
+    'La regla de fallo de decisiÃ³n estricta se mantiene. Para la bÃºsqueda dinÃ¡mica E2, los empates del estimador conservan el primer candidato y la decisiÃ³n previa; su Ã©xito usa arrepentimiento <= epsilon frente al mejor valor visitado. No confundir ese criterio epsilon con una decisiÃ³n estricta de una sola selecciÃ³n.',
+    ['code/experiments/e2_dynamic_batch_candidate_optimizer.py','evidence/e2/causas_verificadas.json'])
+dump('manuscript_review/claim_audit.json',dict(source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),changes=rows,manuscript_modified=False))
+with (P/'manuscript_review/claim_audit.csv').open('w',newline='',encoding='utf-8') as f:
+    w=csv.DictWriter(f,fieldnames=['id','line_v38','status','action','sources']);w.writeheader();w.writerows([{**r,'sources':' | '.join(r['sources'])} for r in rows])
+text=['CORRESPONDENCIA DEL MANUSCRITO V38 CON LA EVIDENCIA CONSOLIDADA','',
+      'El manuscrito y PDF v38 permanecen intactos. Estas son las actualizaciones concretas para la siguiente versiÃ³n; no se propone ampliar la teorÃ­a ni reabrir Fisher.','']
+for r in rows:text += [f"LÃ­nea {r['line_v38']} â€” {r['id']} [{r['status']}]",r['action'],'Fuentes: '+'; '.join(r['sources']),'']
+text += ['DocumentaciÃ³n auxiliar del paquete: conservar la correcciÃ³n piloto P001/B2048 (fallo MSE 0.25 y b=18), siete reducciones relativas indefinidas, once celdas PEC no factibles y ausencia de separaciones forzadas en el barrido de una instancia. La potencia iid del piloto no es potencia confirmatoria por instancias. Estas tablas no requieren aÃ±adirse al cuerpo del paper.']
+(P/'ACTUALIZACIONES_MANUSCRITO.txt').write_text('\n'.join(text)+'\n',encoding='utf-8')
+registry={
+ 'E1':{'current':'results/e1/summary.csv','figure':'figures/F7_e1_reanalysis.png'},
+ 'E2':{'current':'results/e2/e2_summary.json','figure':'figures/F8_dynamic_full_cost.png','scope':'Outcome-level reanalysis; original shot archive separate'},
+ 'E3':{'current':'results/confirmatory/e3_summary.json','figure':'figures/F9_e3_comparisons.png'},
+ 'FakeKolkata':{'current':'results/fakekolkata_fixed10/summary.json'},
+ 'Hardware':{'current':'results/hardware/hardware.json'},
+ 'CDR_PEC':{'current':'evidence/cdr_pec/results/proof_of_mechanism/result.json','figure':'figures/F1_accuracy_decision_separation.png'},
+ 'Ablation':{'current':'evidence/learned_ablation/results/pilot/gate0_full_vs_diagonal.csv','figure':'figures/F6_gate0_full_vs_diagonal.png'},
+ 'Learned_C1':{'current':'evidence/learned_ablation/results/pilot/cdev_evidence/diagnostics.json','scope':'Only C1 here; C2/C3 in current root results'},
+ 'Learned_C2_C3':{'current':'results/pilot/c3_reanalysis.json','scope':'Current maps and bootstrap; older C3 text in evidence is historical'},
+ 'A3':{'current':'results/pilot/a3_audit_evidence/audit_index.json'},
+ 'Noise':{'current':'evidence/noise/results/r1_full/r1_full_result.json','heterogeneous_PEC':'evidence/noise/results/het_pec_derisk/derisk_result.json'},
+ 'Controls':{'current':'evidence/controls/results/phase_diagram/grid.csv','pilot':'evidence/controls/results/pilot/power_summary.json'},
+ 'E0':{'current':'results/pilot/executability_diagnostic.json','scope':'Reused benchmark, version 2, unknowns retained'}
+}
+for entry in registry.values():
+    for key in ('current','figure','heterogeneous_PEC','pilot'):
+        if key in entry:
+            path=P/entry[key];assert path.is_file(),path
+            entry[key+'_sha256']=hashlib.sha256(path.read_bytes()).hexdigest()
+dump('results_index.json',registry)
+print('Claim rows:',len(rows),'Canonical blocks:',len(registry))

@@ -1,0 +1,150 @@
+import difflib,hashlib,json,zipfile
+from datetime import datetime,timezone
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'outputs/integracion_reproduccion_parte4_v2';BASE=ROOT/'outputs/integracion_reproduccion_parte4_v1'
+def save(rel,text):
+ p=OUT/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text.strip()+'\n',encoding='utf-8')
+def dump(rel,data):save(rel,json.dumps(data,indent=2,sort_keys=True,ensure_ascii=False,allow_nan=False))
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def include(p):return p.is_file() and p.suffix!='.pyc' and not any(x in {'__pycache__','.pytest_cache'} for x in p.parts)
+
+protected={}
+names=list(json.loads((BASE/'validation/protected_files.json').read_text()))+[BASE.name]
+for name in names:
+ folder=ROOT/'outputs'/name;manifest=json.loads((folder/'SHA256SUMS.json').read_text(encoding='utf-8-sig'))
+ changes=[r for r,h in manifest.items() if not (folder/r).is_file() or sha(folder/r)!=h]
+ assert not changes,(name,changes);protected[name]=dict(files_verified=len(manifest),changed=changes)
+dump('validation/consolidated/protected_files.json',protected)
+changed=[];diff=[]
+for p in sorted((OUT/'code').rglob('*')):
+ if not include(p):continue
+ rel=p.relative_to(OUT/'code');old=BASE/'code'/rel
+ if old.exists() and old.read_bytes()==p.read_bytes():continue
+ changed.append(rel.as_posix())
+ before=old.read_text(encoding='utf-8-sig').splitlines(keepends=True) if old.is_file() else []
+ diff.extend(difflib.unified_diff(before,p.read_text(encoding='utf-8-sig').splitlines(keepends=True),fromfile='before/'+rel.as_posix(),tofile='after/'+rel.as_posix()))
+save('CAMBIOS_DESDE_INTEGRACION_V1.diff',''.join(diff));dump('validation/consolidated/changed_sources.json',changed)
+for name in ('run_tests.py','index_e2_raw.py','prepare_claims.py','finish_package.py'):
+ save('validation/consolidated/runner_sources/'+name+'.txt',(Path(__file__).parent/name).read_text())
+assert json.loads((OUT/'validation/consolidated/test_execution.json').read_text())['exit_code']==0
+numerical=json.loads((OUT/'validation/global_numerical/verification_summary.json').read_text());assert numerical['status']=='complete'
+for name,digest in numerical['verifiers'].items():assert sha(OUT/'code/scripts'/name)==digest,name
+for name,digest in numerical['reports'].items():assert sha(OUT/'validation/global_numerical'/name)==digest,name
+fake=json.loads((OUT/'validation/consolidated/independent_fakekolkata.json').read_text())
+assert fake['summary_equal'] and fake['outcomes_csv_byte_identical'] and fake['selector_choices_equal']==96
+raw=json.loads((OUT/'validation/consolidated/external_E2_raw_manifest.json').read_text());assert raw['round_files']==25600
+for item in json.loads((OUT/'validation/consolidated/import_provenance.json').read_text()):assert sha(OUT/item['destination'])==item['sha256']
+registry=json.loads((OUT/'results_index.json').read_text())
+for block in registry.values():
+ for key,value in block.items():
+  if key.endswith('_sha256'):assert sha(OUT/block[key[:-7]])==value
+assert sha(ROOT/'outputs/revision_v38/decision_residual_fields_theory_v38.pdf')=='43c12fbad5c99cf8958a0562a7a74d95243618f34f1b9af7a3a78eb292a27265'
+dump('VERSION.json',dict(revision='part4_consolidation_v2',date_utc=datetime.now(timezone.utc).isoformat(),
+ entrypoint='code/scripts/reproduce_all.py',analysis_stages=['E1','E2','E3','FakeKolkata','Hardware','A3','C3'],
+ independent_auxiliary_blocks=['CDR_PEC','Noise','Controls','Learned_channel_and_ablation'],
+ phase4_status='Numeric consolidation complete; manuscript/PDF and final publication archive pending',
+ new_E2_acquisition=False,new_hardware_jobs=0,manuscript_modified=False))
+save('INFORME.txt',f'''
+PARTE 4 â€” CONSOLIDACIÃ“N DE RESULTADOS, VERIFICADORES Y FIGURAS
+
+RESULTADO
+Se consolidaron E2, FakeKolkata, hardware, CDR/PEC, ruido estructurado, controles, canal aprendido y ablaciones con la integraciÃ³n E1/E3/A3/C3 anterior. El paquete tiene una entrada global que verifica las fuentes corregidas y admite reanÃ¡lisis en una carpeta nueva. Sus comprobaciones numÃ©ricas completas pasan. Las 311 pruebas seleccionadas pasan.
+La consolidaciÃ³n no cambia los resultados corregidos previos. SÃ­ elimina rutas antiguas y separa las referencias histÃ³ricas de las fuentes que deben usarse para el paper. Se prepararon las cinco figuras empÃ­ricas y un registro de 20 comprobaciones del manuscrito. El LaTeX y PDF v38 permanecen intactos; la siguiente etapa es aplicar las actualizaciones documentales y generar un PDF nuevo.
+
+E2
+Se volvieron a generar el ledger y los cruces desde los 15.360 resultados corregidos de las 32 instancias, sin simulaciÃ³n. Un verificador separado reconstruye las 384 filas de costo, Ã©xitos y cruces. Todo coincide con el cierre E2 v3: Ã©xito mÃ¡ximo DA=0.77578125, MSE=0.78828125, ambos inferiores a 0.80; 13 instancias cruzan con ambos y su mediana de cociente de costos MSE/DA es 1.30.
+La figura F8 usa MSE/B4096=971/1280=0.75859375. La versiÃ³n del PDF v38 conserva 970/1280. Este cambio ya estaba identificado en el cierre anterior; esta entrega conecta la figura al resultado correcto. Se preserva el selector estÃ¡tico histÃ³rico de E2 y la trayectoria compartida guiada por Raw_Bmax; no se reemplaza ese protocolo por la separaciÃ³n de E1.
+AdemÃ¡s se leyeron los 25.600 archivos originales de ronda y se comprobaron sus hashes y su identidad de checkpoint. Son {raw['total_bytes']:,} bytes (4.745 GB decimales). No se alterÃ³ ninguno ni se repitiÃ³ la corrida. Esta comprobaciÃ³n de integridad no constituye otra derivaciÃ³n independiente de todas las decisiones desde los disparos.
+El paquete compacto incluye los resultados por trayectoria y el manifiesto de todas las rondas. Los archivos pesados siguen en work/e2_full_pc_v2 y deben archivarse/depositarse como recurso de datos separado al preparar la publicaciÃ³n. El comando --e2-raw permite verificar una copia ubicada en otra ruta.
+
+FAKEKOLKATA
+Se validaron las 48 identidades del modelo de probabilidad contra el cÃ³digo y entorno actuales. Se repitieron muestreo, ajuste, selecciÃ³n y evaluaciÃ³n desde esas probabilidades, con Aer y la generaciÃ³n de probabilidades bloqueados. La fase tardÃ³ 174.61 segundos con ocho procesos, compartiendo mÃ¡quina con otros verificadores; no es un benchmark aislado.
+Las 240.000 estimaciones, 96 elecciones de mÃ©todo, 5.760 etiquetas de fallo y el resumen coinciden exactamente con la correcciÃ³n anterior. El CSV de resultados es idÃ©ntico. GRI conserva 50.3125% de fallo, MSE 67.0833% y Raw 50.4167%. El intervalo GRI--Raw sigue incluyendo cero.
+La comprobaciÃ³n independiente verifica decisiones con fracciones, 48 soluciones minimax, 3.600 distribuciones de lectura, 576 expectativas REM, 288 filas de costos y 10.000 remuestreos por instancia. No afirma regenerar independientemente las matrices de densidad fÃ­sicas.
+
+HARDWARE
+Se ejecutÃ³ la ruta comÃºn de reanÃ¡lisis con Runtime bloqueado y las 1.883 observaciones archivadas, manteniendo los coeficientes utilizados fÃ­sicamente. Se recalcularon doce distribuciones del modelo; la fase durÃ³ 31.99 segundos. El resultado sigue failed_or_inconclusive, con error held-out 0.0970105190 y errores Frobenius 0.1731112, 0.1259020 y 0.2092786 para Raw, Accuracy-ZNE y DA-ZNE.
+El verificador independiente reconstruye 180 vectores de gaps, covarianzas, doce distribuciones por mezclas de Pauli, tres integrales de riesgo y 10.000 remuestreos por Ã©pocas. Ninguno de los tres pares pasa el umbral de error proyectado. El intento final conserva 3.780.128 disparos; 4.644.384 es el total de campaÃ±a que incluye el intento fallido y factibilidad. Los conteos completos de aquella factibilidad no fueron archivados y no se inventan.
+
+AUXILIARES
+Se incluyeron sus datos y se volvieron a ejecutar los verificadores separados:
+- CDR/PEC: 4.800 decisiones, 40 intervalos y 160 integrales; coexistencias por presupuesto 5/8,7/8,7/8,7/8. Se conserva el control afÃ­n orÃ¡culo y el proxy de muestras efectivas.
+- Ruido: 1.350 momentos, 222 riesgos y 76 Ã³rdenes. Se conserva PEC heterogÃ©neo desfavorable y R1 0/16 por presupuesto; su fase empÃ­rica B no fue ejecutada.
+- Controles: 800 distribuciones del barrido, 85 filas factibles y 11 no factibles, mÃ¡s 14.400 decisiones del piloto. Se conserva la planificaciÃ³n de potencia como cÃ¡lculo iid condicionado al piloto.
+- Canal/ablaciÃ³n: 1.000 registros de caracterizaciÃ³n, 4.096.000 disparos simulados ya guardados, 300 momentos, 72 derivadas direccionales y 24 decisiones de selector. Acuerdo completa/diagonal 24/24, representado por 72 filas.
+La evidencia histÃ³rica del canal contiene un C3 anterior; results_index.json seÃ±ala que el C2/C3 vigente es results/pilot/c3_reanalysis.json de la integraciÃ³n anterior. No se promueve el informe viejo como diagnÃ³stico actual.
+
+REPRODUCCIÃ“N
+code/scripts/reproduce_all.py es ahora la entrada canÃ³nica del paquete. Por defecto comprueba los siete registros de etapa, sus salidas, las versiones y las 491 evidencias importadas. Con --numerical genera un nuevo directorio de comprobaciones independientes, preservando los informes existentes. Con --new-run prepara una carpeta nueva y ejecuta las etapas sobre los datos archivados. Los antiguos scripts globales quedan guardados bajo code/legacy/ como referencia.
+Se corrigiÃ³ el verificador CDR/PEC para importar el paquete desde una ruta explÃ­cita y las pruebas de hardware para localizar la factibilidad dentro de evidence/. El generador de figuras global apunta a las tablas corregidas. Se comprobÃ³ la preparaciÃ³n de una carpeta nueva: conserva las seis identidades de entrada verificables antes del bootstrap y no copia registros de etapas completadas.
+El comando global --numerical se ejecutÃ³ de principio a fin y produjo diez comprobaciones exitosas (A3 y C3 comparten script). Sus informes estÃ¡n en validation/global_numerical. Los cambios de rutas y de exportaciÃ³n no modificaron el nÃºcleo matemÃ¡tico ni los protocolos cientÃ­ficos.
+Pasan 311 pruebas. Los 323 avisos son de la misma deprecaciÃ³n del complemento de Qiskit; no son fallos. No se afirma que esta selecciÃ³n ejecute todos los ensayos histÃ³ricos de un repositorio que aÃºn contiene utilidades de desarrollo y entradas reservadas.
+
+FIGURAS Y DOCUMENTO
+Se regeneraron F1, F6, F7, F8 y F9 como PNG, junto con fuentes y hashes. Se inspeccionaron visualmente las figuras; se corrigiÃ³ una superposiciÃ³n de etiquetas logarÃ­tmicas en F1. Los datos para futura exportaciÃ³n vectorial se conservan.
+ACTUALIZACIONES_MANUSCRITO.txt y manuscript_review/claim_audit.json registran 20 comprobaciones con lÃ­nea de origen y evidencia. Entre las correcciones: pendientes CDR 1.292--1.478, error inicial hardware 0.746->0.75 a dos decimales, error final 0.097, tres filas de la tabla hardware, F8 corregida y distinciÃ³n entre 24 celdas y 72 filas en F6. TambiÃ©n se precisa el alcance de los modelos de ruido y se actualiza la referencia al paquete de datos vigente.
+No se propone una ampliaciÃ³n del paper ni se retoma la cuestiÃ³n Fisher aplazada. Las conclusiones principales conservan su direcciÃ³n. La siguiente entrega debe aplicar estas modificaciones al LaTeX, compilar y revisar el PDF, y despuÃ©s cerrar el archivo de publicaciÃ³n con los datos pesados de E2. No se ha publicado nada en GitHub o Zenodo.
+
+CONSERVACIÃ“N
+Se verificaron {sum(v['files_verified'] for v in protected.values()):,} archivos de trece entregas anteriores, incluido el PDF v38; todos conservaron sus hashes. Las 491 evidencias importadas coinciden con sus fuentes. Los datos de rondas E2 fueron leÃ­dos sin modificaciÃ³n.
+''')
+save('REPRODUCIR.txt',r'''
+ENTRADA GLOBAL DE LA CONSOLIDACIÃ“N CORREGIDA
+
+Python 3.12.10, entorno registrado en requirements_this_run.txt. Los ejemplos siguientes se ejecutan desde la raÃ­z de este paquete con ese entorno activado. No se necesita acceder a IBM ni ejecutar de nuevo la campaÃ±a larga E2.
+
+1. Verificar integridad, entorno, fuentes y cachÃ©s completas:
+
+    python code/scripts/reproduce_all.py
+
+2. Repetir las comprobaciones numÃ©ricas independientes en una carpeta nueva:
+
+    python code/scripts/reproduce_all.py --numerical "C:/ruta/nueva/verificacion"
+
+Se reconstruyen las cantidades indicadas por cada verificador. Los lÃ­mites de alcance se conservan: E2 parte de resultados por trayectoria; FakeKolkata reutiliza probabilidades fÃ­sicas; algunos verificadores usan gradientes de producciÃ³n ya contrastados por pruebas separadas. Los informes existentes no se sobrescriben.
+
+3. Reanalizar las siete etapas en una carpeta nueva, fuera del paquete:
+
+    python code/scripts/reproduce_all.py --new-run "C:/ruta/nueva/reanalisis" --workers 8
+
+Se regeneran E3, E1, bootstrap A3, propagaciÃ³n C3, tablas E2, ajuste/selecciÃ³n/evaluaciÃ³n FakeKolkata y predicciÃ³n/contraste de hardware. DespuÃ©s se ejecutan los verificadores y se generan las cinco figuras. Este comando no vuelve a adquirir E2, no reenvÃ­a trabajos de hardware, no regenera las probabilidades FakeKolkata y no repite las campaÃ±as auxiliares de caracterizaciÃ³n. Reutiliza sus registros explÃ­citamente. Es reproducciÃ³n de anÃ¡lisis con evidencia guardada.
+Los datos auxiliares se comprueban, no se cambian por resultados de campaÃ±as nuevas. Los cuatro modelos piloto y el benchmark E0 se reutilizan desde la validaciÃ³n anterior. El Ã­ndice results_index.json identifica las fuentes vigentes en el paquete entregado.
+El destino no puede existir ni estar dentro del paquete fuente. Una etapa sin registro de finalizaciÃ³n no se certifica ni se reanuda automÃ¡ticamente; tras una interrupciÃ³n debe usarse otro destino. El directorio de una nueva ejecuciÃ³n conserva los datos de entrada y crea sus propios registros de etapa. TodavÃ­a no es un archivo final para publicaciÃ³n.
+
+4. Verificar una copia de los datos pesados E2:
+
+    python code/scripts/reproduce_all.py --e2-raw "C:/ruta/de/e2_full_pc_v2"
+
+El archivo validation/consolidated/external_E2_raw_manifest.json enumera las 25.600 rondas, sus tamaÃ±os y SHA-256. La raÃ­z debe contener C001/rounds/... hasta C032/rounds/.... Son 4.745 GB, conservados por separado. Este comando solo lee; no simula. Los resultados por trayectoria usados para las tablas sÃ­ estÃ¡n incluidos en evidence/e2/corrected/.
+
+5. Generar figuras desde las fuentes corregidas:
+
+    python code/scripts/generate_all_figures.py --output-dir "C:/ruta/nueva/figuras"
+
+La salida incluye F1, F6, F7, F8 y F9 como PNG, series y figure_sources.json. El PDF v38 aÃºn conserva las figuras anteriores; esta entrega no crea un manuscrito nuevo.
+
+ESTRUCTURA
+code/: cÃ³digo acumulado y verificadores. code/legacy/: entradas previas conservadas, sin uso en el comando canÃ³nico.
+results/: resultados principales vigentes y registros de siete etapas.
+evidence/: datos y salidas de los bloques ya corregidos, separados por experimento.
+results_index.json: selecciÃ³n explÃ­cita de las fuentes vigentes. El C2/C3 actual estÃ¡ en results/pilot/c3_reanalysis.json; el C3 viejo dentro de evidence/learned_ablation es contexto histÃ³rico.
+validation/consolidated/: comprobaciones de esta consolidaciÃ³n y manifiesto externo E2.
+validation/global_numerical/: ejecuciÃ³n conjunta comprobada de los diez verificadores.
+manuscript_review/: copia de referencia v38 y correspondencia de afirmaciones; no es una nueva versiÃ³n compilada.
+
+Falta aplicar las actualizaciones documentales, producir/revisar el nuevo PDF y preparar el archivo final y su depÃ³sito pÃºblico. Los resultados y cÃ³digos de esta carpeta no se han publicado automÃ¡ticamente.
+''')
+dump('validation/consolidated/figure_checks.json',dict(figures=5,visual_inspection='F1/F6/F8 inspected after regeneration; F7/F9 retain previously verified series; F1 logarithmic tick overlap fixed and rechecked',manuscript_modified=False))
+save('ESTADO_DEL_PLAN.txt','''1. NÃºcleo numÃ©rico: revisado y corregido en las entregas previas.
+2. Experimentos principales: corregidos; E1/E3/E2/FakeKolkata/hardware consolidados.
+3. Auxiliares: bloques revisados, evidencias incorporadas y verificadores ejecutados.
+4. IntegraciÃ³n: consolidaciÃ³n numÃ©rica y entrada global completadas. Quedan aplicaciÃ³n al LaTeX, compilaciÃ³n/revisiÃ³n del PDF y archivo final de publicaciÃ³n (incluido el recurso de rondas E2).''')
+manifest={p.relative_to(OUT).as_posix():sha(p) for p in sorted(OUT.rglob('*')) if include(p) and p!=OUT/'SHA256SUMS.json'}
+dump('SHA256SUMS.json',manifest)
+archive=OUT.with_suffix('.zip')
+with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+ for rel in [*manifest,'SHA256SUMS.json']:z.write(OUT/rel,arcname=OUT.name+'/'+rel)
+with zipfile.ZipFile(archive) as z:
+ assert z.testzip() is None
+ for rel,h in manifest.items():assert hashlib.sha256(z.read(OUT.name+'/'+rel)).hexdigest()==h
+print(json.dumps(dict(files=len(manifest),changed_source_files=len(changed),protected_files=sum(v['files_verified'] for v in protected.values()),zip_bytes=archive.stat().st_size,zip_sha256=sha(archive)),indent=2))

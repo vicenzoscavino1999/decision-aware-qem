@@ -1,0 +1,203 @@
+{
+  "source_sha256": "b546cada2b95d5ec790a3c17da327ea3e3d5ae7e842250ed528c5f70343a3b7b",
+  "changes": [
+    {
+      "id": "cdr_slopes",
+      "line_v38": 520,
+      "status": "corregir",
+      "action": "Cambiar el rango de pendientes de F1 a [1.292,1.478]. Se ajustó el control afín a medias ruidosas exactas y valores ideales del mismo conjunto de candidatos; describirlo como control oráculo de invariancia. El rango anterior corresponde al entrenamiento CDR P0. Conservar la reducción MSE 43--180.",
+      "sources": [
+        "evidence/cdr_pec/results/proof_of_mechanism/instance_analytics.json",
+        "evidence/cdr_pec/results/cdr_p0"
+      ]
+    },
+    {
+      "id": "pec_effective_shots",
+      "line_v38": 522,
+      "status": "precisar",
+      "action": "F1 emplea muestras multinomiales ideales n_eff=floor(B/gamma^2), no circuitos firmados. Su covarianza es Sigma_ideal/n_eff, con el redondeo incluido. Mantener coexistencias 5/8,7/8,7/8,7/8 y distinguir los costos de evaluación del aprendizaje.",
+      "sources": [
+        "evidence/cdr_pec/results/proof_of_mechanism/result.json",
+        "validation/consolidated/cdr_pec.json"
+      ]
+    },
+    {
+      "id": "f1_source",
+      "line_v38": 526,
+      "status": "sustituir_figura",
+      "action": "Regenerar F1 desde el resultado corregido, con leyenda de proxy PEC y control afín. Las tasas empíricas y el MSE PEC archivados antiguos no son la referencia vigente.",
+      "sources": [
+        "figures/F1_accuracy_decision_separation.png",
+        "figures/F1_series.csv"
+      ]
+    },
+    {
+      "id": "e3_counts",
+      "line_v38": 534,
+      "status": "conservar",
+      "action": "Se conservan 502 pares activos, 487 pases y 15 no pases; orden de fallos a 40 repeticiones 302/133/67 y a prueba separada 310/94/98. Usar predicciones regeneradas y mantener el carácter retrospectivo y la dependencia por instancia.",
+      "sources": [
+        "results/confirmatory/e3_summary.json",
+        "results/confirmatory/e3_independent_mean_and_failure.csv"
+      ]
+    },
+    {
+      "id": "e1",
+      "line_v38": 575,
+      "status": "conservar",
+      "action": "Se conservan las tasas, diferencias e intervalos de E1, incluidos los costos completos. Las 19.200 decisiones no cambian.",
+      "sources": [
+        "results/e1/summary.csv",
+        "results/e1/outcomes.csv"
+      ]
+    },
+    {
+      "id": "f8",
+      "line_v38": 594,
+      "status": "sustituir_figura",
+      "action": "Actualizar MSE/B4096 a 971/1280=0.75859375. Los restantes once puntos son iguales; máximos 0.7758 y 0.7883, 13 cruces comunes y mediana 1.30 se conservan. Mantener entrenamiento histórico fijo de E2, no sustituirlo por el nuevo selector E1.",
+      "sources": [
+        "results/e2/e2_full_ledger.csv",
+        "figures/F8_dynamic_full_cost.png",
+        "validation/consolidated/e2.json"
+      ]
+    },
+    {
+      "id": "noise_controls",
+      "line_v38": 602,
+      "status": "precisar",
+      "action": "Identificar PEC heterogéneo como proxy gaussiano gamma^2*Sigma_Raw, diferente del proxy multinomial de F1. R1 usa momentos conocidos y B por candidato y escala: Raw B, ZNE 3B. No se ejecutó su fase empírica B porque no se cumplió la regla de avance. Mantener 0/16 por presupuesto.",
+      "sources": [
+        "evidence/noise/results/het_pec_derisk/derisk_result.json",
+        "evidence/noise/results/r1_full/r1_full_result.json"
+      ]
+    },
+    {
+      "id": "fakekolkata",
+      "line_v38": 607,
+      "status": "conservar",
+      "action": "Las tasas 0.6708/0.5031/0.5042 y los intervalos coinciden. Mantener presupuesto de evaluación, costos de aprendizaje adicionales y un solo bloque físico; no afirmar ventaja sobre Raw.",
+      "sources": [
+        "results/fakekolkata_fixed10/summary.json",
+        "validation/consolidated/independent_fakekolkata.json"
+      ]
+    },
+    {
+      "id": "hardware_initial",
+      "line_v38": 1382,
+      "status": "corregir",
+      "action": "El error inicial corregido 0.7460292238 redondea a 0.75, no a 0.74. Su fallo frente al umbral se mantiene.",
+      "sources": [
+        "evidence/hardware/results/characterization_comparison.json"
+      ]
+    },
+    {
+      "id": "hardware_validation",
+      "line_v38": 1384,
+      "status": "corregir",
+      "action": "Cambiar 0.095 por 0.097. El diagnóstico ajusta 162 registros y evalúa 41 reservados; el canal final usa 203 tras validar. Describir un modelo depolarizante local en soporte especificado, con p=1-exp(-r), conservando los coeficientes ejecutados. El reanálisis es retrospectivo. Los errores Frobenius 0.126,0.173,0.209 y la amplificación 7.4x se mantienen.",
+      "sources": [
+        "results/hardware/hardware.json",
+        "validation/consolidated/independent_hardware.json"
+      ]
+    },
+    {
+      "id": "hardware_table_Accuracy-ZNE_Raw",
+      "line_v38": 1392,
+      "status": "corregir",
+      "action": "Reemplazar fila por error 0.0022532, límite superior 0.0062904, umbral 0.00279613. El par sigue sin pasar.",
+      "sources": [
+        "results/hardware/hardware.json"
+      ]
+    },
+    {
+      "id": "hardware_table_DA-ZNE_Raw",
+      "line_v38": 1393,
+      "status": "corregir",
+      "action": "Reemplazar fila por error 0.0037677, límite superior 0.0112278, umbral 0.00279604. El par sigue sin pasar.",
+      "sources": [
+        "results/hardware/hardware.json"
+      ]
+    },
+    {
+      "id": "hardware_table_Accuracy-ZNE_DA-ZNE",
+      "line_v38": 1391,
+      "status": "corregir",
+      "action": "Reemplazar fila por error 0.0060209, límite superior 0.0139553, umbral 0.00000009. El par sigue sin pasar.",
+      "sources": [
+        "results/hardware/hardware.json"
+      ]
+    },
+    {
+      "id": "gate0",
+      "line_v38": 1401,
+      "status": "precisar",
+      "action": "Informar acuerdo de selector en 24/24 celdas instancia-presupuesto, representadas por 72 filas de método. Conservar diferencia mínima -0.2865. Retirar de documentación secundaria el falso disparador B*delta como ganancia de presupuesto.",
+      "sources": [
+        "evidence/learned_ablation/results/pilot/gate0_full_vs_diagonal.csv",
+        "figures/F6_gate0_full_vs_diagonal.png"
+      ]
+    },
+    {
+      "id": "gate0_caption",
+      "line_v38": 1406,
+      "status": "precisar",
+      "action": "En el pie de F6 decir 24 celdas, con 72 puntos de método; actualizar figura desde datos corregidos.",
+      "sources": [
+        "figures/F6_series.csv"
+      ]
+    },
+    {
+      "id": "calibration",
+      "line_v38": 1410,
+      "status": "conservar",
+      "action": "Mantener 70/72 dentro de tolerancia 0.05 y describir el uso de las mismas repeticiones para ajustar y evaluar. Los nuevos bootstrap A3/C3 son diagnósticos de covarianza, no certificados de fallo físico; no es necesario añadir una nueva sección.",
+      "sources": [
+        "results/pilot/a3_audit_evidence/audit_index.json",
+        "results/pilot/c3_summary.json"
+      ]
+    },
+    {
+      "id": "channel_scope",
+      "line_v38": 1412,
+      "status": "precisar",
+      "action": "Conservar e_C=0.0096 para el control uniforme de dos tasas. No presentar 25 etiquetas repetidas como soporte espacial aprendido. El hardware estima tasas individuales en un soporte local especificado; su estabilidad no demuestra recuperación de un soporte desconocido.",
+      "sources": [
+        "evidence/learned_ablation/results/pilot/cdev_evidence/diagnostics.json",
+        "results/hardware/hardware.json"
+      ]
+    },
+    {
+      "id": "availability",
+      "line_v38": 642,
+      "status": "actualizar",
+      "action": "La referencia local revision_v21 ya no reúne los resultados vigentes. Indicar el paquete corregido consolidado, sus fuentes y que aún no es un nuevo depósito bajo el DOI citado. El archivo de rondas E2 (4.745 GB) debe adjuntarse por separado para la publicación; no anunciar disponibilidad pública de archivos no subidos.",
+      "sources": [
+        "results_index.json",
+        "validation/consolidated/external_E2_raw_manifest.json"
+      ]
+    },
+    {
+      "id": "derivative_method",
+      "line_v38": 1427,
+      "status": "precisar",
+      "action": "Distinguir las derivadas normales generales de la integración condicional unidimensional usada por la estructura de incumbente compartido. Mantener el factor 1/2 fuera de la diagonal y el alcance de primera aproximación.",
+      "sources": [
+        "code/src/daqem/risk.py",
+        "code/experiments/a3_pullback_frontier.py",
+        "validation/independent_integration.json"
+      ]
+    },
+    {
+      "id": "tie_convention",
+      "line_v38": 1429,
+      "status": "precisar",
+      "action": "La regla de fallo de decisión estricta se mantiene. Para la búsqueda dinámica E2, los empates del estimador conservan el primer candidato y la decisión previa; su éxito usa arrepentimiento <= epsilon frente al mejor valor visitado. No confundir ese criterio epsilon con una decisión estricta de una sola selección.",
+      "sources": [
+        "code/experiments/e2_dynamic_batch_candidate_optimizer.py",
+        "evidence/e2/causas_verificadas.json"
+      ]
+    }
+  ],
+  "manuscript_modified": false
+}

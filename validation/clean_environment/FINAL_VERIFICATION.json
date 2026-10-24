@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "manuscript_revision": "v39",
+  "replayed_stages": 7,
+  "independent_numerical_jobs": 10,
+  "regression_tests": 311,
+  "replayed_output_files_byte_identical": 653,
+  "previous_code_files_modified": [
+    "code/plot_corrected_e1.py"
+  ],
+  "code_files_added": [
+    "code/scripts/compile_manuscript.py",
+    "code/scripts/generate_manuscript_figures.py",
+    "code/scripts/run_regression_tests.py",
+    "code/scripts/verify_manuscript.py",
+    "code/tests/README.txt"
+  ],
+  "source_packages_preserved": {
+    "revision_v38": 31,
+    "revision_v39": 25,
+    "integracion_reproduccion_parte4_v2": 1619
+  },
+  "python_environment_fresh": true,
+  "tex_installation_existing": true,
+  "physical_acquisition_repeated": false,
+  "remote_publication": false
+}

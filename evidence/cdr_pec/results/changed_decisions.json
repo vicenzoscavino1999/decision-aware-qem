@@ -1,0 +1,418 @@
+[
+  {
+    "budget": 768,
+    "decision_failure": 1,
+    "instance_id": "POM_001",
+    "method": "PEC",
+    "method_order": [
+      "Accuracy-ZNE",
+      "PEC",
+      "Decision-ZNE",
+      "Raw",
+      "CDR"
+    ],
+    "mse": 0.208834709816,
+    "old_decision_failure": 0,
+    "replicate": 5
+  },
+  {
+    "budget": 768,
+    "decision_failure": 1,
+    "instance_id": "POM_001",
+    "method": "PEC",
+    "method_order": [
+      "Decision-ZNE",
+      "CDR",
+      "PEC",
+      "Raw",
+      "Accuracy-ZNE"
+    ],
+    "mse": 0.24155301738892576,
+    "old_decision_failure": 0,
+    "replicate": 17
+  },
+  {
+    "budget": 1536,
+    "decision_failure": 1,
+    "instance_id": "POM_001",
+    "method": "PEC",
+    "method_order": [
+      "CDR",
+      "Accuracy-ZNE",
+      "PEC",
+      "Decision-ZNE",
+      "Raw"
+    ],
+    "mse": 0.11835660215256878,
+    "old_decision_failure": 0,
+    "replicate": 13
+  },
+  {
+    "budget": 1536,
+    "decision_failure": 1,
+    "instance_id": "POM_001",
+    "method": "PEC",
+    "method_order": [
+      "Accuracy-ZNE",
+      "Raw",
+      "PEC",
+      "Decision-ZNE",
+      "CDR"
+    ],
+    "mse": 0.1368817547855045,
+    "old_decision_failure": 0,
+    "replicate": 16
+  },
+  {
+    "budget": 1536,
+    "decision_failure": 1,
+    "instance_id": "POM_001",
+    "method": "PEC",
+    "method_order": [
+      "PEC",
+      "Raw",
+      "CDR",
+      "Decision-ZNE",
+      "Accuracy-ZNE"
+    ],
+    "mse": 0.1826858945252805,
+    "old_decision_failure": 0,
+    "replicate": 18
+  },
+  {
+    "budget": 768,
+    "decision_failure": 1,
+    "instance_id": "POM_003",
+    "method": "Raw",
+    "method_order": [
+      "Raw",
+      "CDR",
+      "PEC",
+      "Accuracy-ZNE",
+      "Decision-ZNE"
+    ],
+    "mse": 0.33087477023559553,
+    "old_decision_failure": 0,
+    "replicate": 9
+  },
+  {
+    "budget": 768,
+    "decision_failure": 1,
+    "instance_id": "POM_003",
+    "method": "CDR",
+    "method_order": [
+      "Raw",
+      "CDR",
+      "PEC",
+      "Accuracy-ZNE",
+      "Decision-ZNE"
+    ],
+    "mse": 0.009703630907111573,
+    "old_decision_failure": 0,
+    "replicate": 9
+  },
+  {
+    "budget": 1536,
+    "decision_failure": 1,
+    "instance_id": "POM_003",
+    "method": "PEC",
+    "method_order": [
+      "Raw",
+      "PEC",
+      "Decision-ZNE",
+      "CDR",
+      "Accuracy-ZNE"
+    ],
+    "mse": 0.14423153735185185,
+    "old_decision_failure": 0,
+    "replicate": 18
+  },
+  {
+    "budget": 3072,
+    "decision_failure": 1,
+    "instance_id": "POM_003",
+    "method": "PEC",
+    "method_order": [
+      "PEC",
+      "Raw",
+      "Accuracy-ZNE",
+      "Decision-ZNE",
+      "CDR"
+    ],
+    "mse": 0.04193404909505864,
+    "old_decision_failure": 0,
+    "replicate": 20
+  },
+  {
+    "budget": 3072,
+    "decision_failure": 1,
+    "instance_id": "POM_004",
+    "method": "PEC",
+    "method_order": [
+      "Decision-ZNE",
+      "Raw",
+      "CDR",
+      "PEC",
+      "Accuracy-ZNE"
+    ],
+    "mse": 0.086682143860751,
+    "old_decision_failure": 0,
+    "replicate": 6
+  },
+  {
+    "budget": 6144,
+    "decision_failure": 1,
+    "instance_id": "POM_012",
+    "method": "PEC",
+    "method_order": [
+      "Accuracy-ZNE",
+      "Raw",
+      "PEC",
+      "Decision-ZNE",
+      "CDR"
+    ],
+    "mse": 0.07435505384336412,
+    "old_decision_failure": 0,
+    "replicate": 26
+  },
+  {
+    "budget": 768,
+    "decision_failure": 1,
+    "instance_id": "POM_015",
+    "method": "PEC",
+    "method_order": [
+      "Raw",
+      "CDR",
+      "Decision-ZNE",
+      "PEC",
+      "Accuracy-ZNE"
+    ],
+    "mse": 0.5260937462982385,
+    "old_decision_failure": 0,
+    "replicate": 4
+  },
+  {
+    "budget": 1536,
+    "decision_failure": 1,
+    "instance_id": "POM_015",
+    "method": "PEC",
+    "method_order": [
+      "Decision-ZNE",
+      "PEC",
+      "CDR",
+      "Raw",
+      "Accuracy-ZNE"
+    ],
+    "mse": 0.1309455510921906,
+    "old_decision_failure": 0,
+    "replicate": 15
+  },
+  {
+    "budget": 1536,
+    "decision_failure": 1,
+    "instance_id": "POM_015",
+    "method": "PEC",
+    "method_order": [
+      "CDR",
+      "Accuracy-ZNE",
+      "Raw",
+      "Decision-ZNE",
+      "PEC"
+    ],
+    "mse": 0.2386209561112277,
+    "old_decision_failure": 0,
+    "replicate": 26
+  },
+  {
+    "budget": 1536,
+    "decision_failure": 1,
+    "instance_id": "POM_017",
+    "method": "PEC",
+    "method_order": [
+      "CDR",
+      "Raw",
+      "Decision-ZNE",
+      "PEC",
+      "Accuracy-ZNE"
+    ],
+    "mse": 0.25560984064414227,
+    "old_decision_failure": 0,
+    "replicate": 7
+  },
+  {
+    "budget": 1536,
+    "decision_failure": 1,
+    "instance_id": "POM_017",
+    "method": "Raw",
+    "method_order": [
+      "PEC",
+      "CDR",
+      "Accuracy-ZNE",
+      "Raw",
+      "Decision-ZNE"
+    ],
+    "mse": 0.7073640294516452,
+    "old_decision_failure": 0,
+    "replicate": 23
+  },
+  {
+    "budget": 1536,
+    "decision_failure": 1,
+    "instance_id": "POM_017",
+    "method": "CDR",
+    "method_order": [
+      "PEC",
+      "CDR",
+      "Accuracy-ZNE",
+      "Raw",
+      "Decision-ZNE"
+    ],
+    "mse": 0.0075204838416918895,
+    "old_decision_failure": 0,
+    "replicate": 23
+  },
+  {
+    "budget": 3072,
+    "decision_failure": 1,
+    "instance_id": "POM_017",
+    "method": "PEC",
+    "method_order": [
+      "Raw",
+      "CDR",
+      "Decision-ZNE",
+      "Accuracy-ZNE",
+      "PEC"
+    ],
+    "mse": 0.09247573574352055,
+    "old_decision_failure": 0,
+    "replicate": 11
+  },
+  {
+    "budget": 3072,
+    "decision_failure": 1,
+    "instance_id": "POM_017",
+    "method": "PEC",
+    "method_order": [
+      "CDR",
+      "PEC",
+      "Raw",
+      "Decision-ZNE",
+      "Accuracy-ZNE"
+    ],
+    "mse": 0.08375274343938602,
+    "old_decision_failure": 0,
+    "replicate": 28
+  },
+  {
+    "budget": 768,
+    "decision_failure": 1,
+    "instance_id": "POM_018",
+    "method": "PEC",
+    "method_order": [
+      "Decision-ZNE",
+      "Raw",
+      "CDR",
+      "Accuracy-ZNE",
+      "PEC"
+    ],
+    "mse": 0.3178920351557851,
+    "old_decision_failure": 0,
+    "replicate": 25
+  },
+  {
+    "budget": 768,
+    "decision_failure": 1,
+    "instance_id": "POM_022",
+    "method": "Raw",
+    "method_order": [
+      "Accuracy-ZNE",
+      "Raw",
+      "PEC",
+      "CDR",
+      "Decision-ZNE"
+    ],
+    "mse": 0.5656997675532164,
+    "old_decision_failure": 0,
+    "replicate": 11
+  },
+  {
+    "budget": 768,
+    "decision_failure": 1,
+    "instance_id": "POM_022",
+    "method": "CDR",
+    "method_order": [
+      "Accuracy-ZNE",
+      "Raw",
+      "PEC",
+      "CDR",
+      "Decision-ZNE"
+    ],
+    "mse": 0.005890300171785603,
+    "old_decision_failure": 0,
+    "replicate": 11
+  },
+  {
+    "budget": 768,
+    "decision_failure": 1,
+    "instance_id": "POM_022",
+    "method": "PEC",
+    "method_order": [
+      "Accuracy-ZNE",
+      "Raw",
+      "PEC",
+      "Decision-ZNE",
+      "CDR"
+    ],
+    "mse": 0.22951529382149405,
+    "old_decision_failure": 0,
+    "replicate": 26
+  },
+  {
+    "budget": 3072,
+    "decision_failure": 1,
+    "instance_id": "POM_022",
+    "method": "PEC",
+    "method_order": [
+      "Decision-ZNE",
+      "Raw",
+      "CDR",
+      "PEC",
+      "Accuracy-ZNE"
+    ],
+    "mse": 0.06724895447085671,
+    "old_decision_failure": 0,
+    "replicate": 5
+  },
+  {
+    "budget": 3072,
+    "decision_failure": 1,
+    "instance_id": "POM_022",
+    "method": "Raw",
+    "method_order": [
+      "Decision-ZNE",
+      "PEC",
+      "CDR",
+      "Accuracy-ZNE",
+      "Raw"
+    ],
+    "mse": 0.5451390216265498,
+    "old_decision_failure": 0,
+    "replicate": 24
+  },
+  {
+    "budget": 3072,
+    "decision_failure": 1,
+    "instance_id": "POM_022",
+    "method": "CDR",
+    "method_order": [
+      "Decision-ZNE",
+      "PEC",
+      "CDR",
+      "Accuracy-ZNE",
+      "Raw"
+    ],
+    "mse": 0.00279748637513369,
+    "old_decision_failure": 0,
+    "replicate": 24
+  }
+]

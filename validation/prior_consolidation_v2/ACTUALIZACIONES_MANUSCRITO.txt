@@ -1,0 +1,85 @@
+CORRESPONDENCIA DEL MANUSCRITO V38 CON LA EVIDENCIA CONSOLIDADA
+
+El manuscrito y PDF v38 permanecen intactos. Estas son las actualizaciones concretas para la siguiente versión; no se propone ampliar la teoría ni reabrir Fisher.
+
+Línea 520 — cdr_slopes [corregir]
+Cambiar el rango de pendientes de F1 a [1.292,1.478]. Se ajustó el control afín a medias ruidosas exactas y valores ideales del mismo conjunto de candidatos; describirlo como control oráculo de invariancia. El rango anterior corresponde al entrenamiento CDR P0. Conservar la reducción MSE 43--180.
+Fuentes: evidence/cdr_pec/results/proof_of_mechanism/instance_analytics.json; evidence/cdr_pec/results/cdr_p0
+
+Línea 522 — pec_effective_shots [precisar]
+F1 emplea muestras multinomiales ideales n_eff=floor(B/gamma^2), no circuitos firmados. Su covarianza es Sigma_ideal/n_eff, con el redondeo incluido. Mantener coexistencias 5/8,7/8,7/8,7/8 y distinguir los costos de evaluación del aprendizaje.
+Fuentes: evidence/cdr_pec/results/proof_of_mechanism/result.json; validation/consolidated/cdr_pec.json
+
+Línea 526 — f1_source [sustituir_figura]
+Regenerar F1 desde el resultado corregido, con leyenda de proxy PEC y control afín. Las tasas empíricas y el MSE PEC archivados antiguos no son la referencia vigente.
+Fuentes: figures/F1_accuracy_decision_separation.png; figures/F1_series.csv
+
+Línea 534 — e3_counts [conservar]
+Se conservan 502 pares activos, 487 pases y 15 no pases; orden de fallos a 40 repeticiones 302/133/67 y a prueba separada 310/94/98. Usar predicciones regeneradas y mantener el carácter retrospectivo y la dependencia por instancia.
+Fuentes: results/confirmatory/e3_summary.json; results/confirmatory/e3_independent_mean_and_failure.csv
+
+Línea 575 — e1 [conservar]
+Se conservan las tasas, diferencias e intervalos de E1, incluidos los costos completos. Las 19.200 decisiones no cambian.
+Fuentes: results/e1/summary.csv; results/e1/outcomes.csv
+
+Línea 594 — f8 [sustituir_figura]
+Actualizar MSE/B4096 a 971/1280=0.75859375. Los restantes once puntos son iguales; máximos 0.7758 y 0.7883, 13 cruces comunes y mediana 1.30 se conservan. Mantener entrenamiento histórico fijo de E2, no sustituirlo por el nuevo selector E1.
+Fuentes: results/e2/e2_full_ledger.csv; figures/F8_dynamic_full_cost.png; validation/consolidated/e2.json
+
+Línea 602 — noise_controls [precisar]
+Identificar PEC heterogéneo como proxy gaussiano gamma^2*Sigma_Raw, diferente del proxy multinomial de F1. R1 usa momentos conocidos y B por candidato y escala: Raw B, ZNE 3B. No se ejecutó su fase empírica B porque no se cumplió la regla de avance. Mantener 0/16 por presupuesto.
+Fuentes: evidence/noise/results/het_pec_derisk/derisk_result.json; evidence/noise/results/r1_full/r1_full_result.json
+
+Línea 607 — fakekolkata [conservar]
+Las tasas 0.6708/0.5031/0.5042 y los intervalos coinciden. Mantener presupuesto de evaluación, costos de aprendizaje adicionales y un solo bloque físico; no afirmar ventaja sobre Raw.
+Fuentes: results/fakekolkata_fixed10/summary.json; validation/consolidated/independent_fakekolkata.json
+
+Línea 1382 — hardware_initial [corregir]
+El error inicial corregido 0.7460292238 redondea a 0.75, no a 0.74. Su fallo frente al umbral se mantiene.
+Fuentes: evidence/hardware/results/characterization_comparison.json
+
+Línea 1384 — hardware_validation [corregir]
+Cambiar 0.095 por 0.097. El diagnóstico ajusta 162 registros y evalúa 41 reservados; el canal final usa 203 tras validar. Describir un modelo depolarizante local en soporte especificado, con p=1-exp(-r), conservando los coeficientes ejecutados. El reanálisis es retrospectivo. Los errores Frobenius 0.126,0.173,0.209 y la amplificación 7.4x se mantienen.
+Fuentes: results/hardware/hardware.json; validation/consolidated/independent_hardware.json
+
+Línea 1392 — hardware_table_Accuracy-ZNE_Raw [corregir]
+Reemplazar fila por error 0.0022532, límite superior 0.0062904, umbral 0.00279613. El par sigue sin pasar.
+Fuentes: results/hardware/hardware.json
+
+Línea 1393 — hardware_table_DA-ZNE_Raw [corregir]
+Reemplazar fila por error 0.0037677, límite superior 0.0112278, umbral 0.00279604. El par sigue sin pasar.
+Fuentes: results/hardware/hardware.json
+
+Línea 1391 — hardware_table_Accuracy-ZNE_DA-ZNE [corregir]
+Reemplazar fila por error 0.0060209, límite superior 0.0139553, umbral 0.00000009. El par sigue sin pasar.
+Fuentes: results/hardware/hardware.json
+
+Línea 1401 — gate0 [precisar]
+Informar acuerdo de selector en 24/24 celdas instancia-presupuesto, representadas por 72 filas de método. Conservar diferencia mínima -0.2865. Retirar de documentación secundaria el falso disparador B*delta como ganancia de presupuesto.
+Fuentes: evidence/learned_ablation/results/pilot/gate0_full_vs_diagonal.csv; figures/F6_gate0_full_vs_diagonal.png
+
+Línea 1406 — gate0_caption [precisar]
+En el pie de F6 decir 24 celdas, con 72 puntos de método; actualizar figura desde datos corregidos.
+Fuentes: figures/F6_series.csv
+
+Línea 1410 — calibration [conservar]
+Mantener 70/72 dentro de tolerancia 0.05 y describir el uso de las mismas repeticiones para ajustar y evaluar. Los nuevos bootstrap A3/C3 son diagnósticos de covarianza, no certificados de fallo físico; no es necesario añadir una nueva sección.
+Fuentes: results/pilot/a3_audit_evidence/audit_index.json; results/pilot/c3_summary.json
+
+Línea 1412 — channel_scope [precisar]
+Conservar e_C=0.0096 para el control uniforme de dos tasas. No presentar 25 etiquetas repetidas como soporte espacial aprendido. El hardware estima tasas individuales en un soporte local especificado; su estabilidad no demuestra recuperación de un soporte desconocido.
+Fuentes: evidence/learned_ablation/results/pilot/cdev_evidence/diagnostics.json; results/hardware/hardware.json
+
+Línea 642 — availability [actualizar]
+La referencia local revision_v21 ya no reúne los resultados vigentes. Indicar el paquete corregido consolidado, sus fuentes y que aún no es un nuevo depósito bajo el DOI citado. El archivo de rondas E2 (4.745 GB) debe adjuntarse por separado para la publicación; no anunciar disponibilidad pública de archivos no subidos.
+Fuentes: results_index.json; validation/consolidated/external_E2_raw_manifest.json
+
+Línea 1427 — derivative_method [precisar]
+Distinguir las derivadas normales generales de la integración condicional unidimensional usada por la estructura de incumbente compartido. Mantener el factor 1/2 fuera de la diagonal y el alcance de primera aproximación.
+Fuentes: code/src/daqem/risk.py; code/experiments/a3_pullback_frontier.py; validation/independent_integration.json
+
+Línea 1429 — tie_convention [precisar]
+La regla de fallo de decisión estricta se mantiene. Para la búsqueda dinámica E2, los empates del estimador conservan el primer candidato y la decisión previa; su éxito usa arrepentimiento <= epsilon frente al mejor valor visitado. No confundir ese criterio epsilon con una decisión estricta de una sola selección.
+Fuentes: code/experiments/e2_dynamic_batch_candidate_optimizer.py; evidence/e2/causas_verificadas.json
+
+Documentación auxiliar del paquete: conservar la corrección piloto P001/B2048 (fallo MSE 0.25 y b=18), siete reducciones relativas indefinidas, once celdas PEC no factibles y ausencia de separaciones forzadas en el barrido de una instancia. La potencia iid del piloto no es potencia confirmatoria por instancias. Estas tablas no requieren añadirse al cuerpo del paper.

@@ -1,0 +1,2457 @@
+[
+  {
+    "destination": "evidence/fakekolkata/results/comparacion_por_instancia.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\comparacion_por_instancia.csv",
+    "sha256": "1ec2a48b7b0f88f0826c2d055a6858f939ad41670c7f5c8e75eaf26ca09dedce"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C001_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C001_analysis.json",
+    "sha256": "3939d1b00e6f4eac0bce14f6cb31603637ff3beb491639a7e6521f7a82ce09c5"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C001_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C001_probabilities.json",
+    "sha256": "028281feb087f3e90ccb493194b9b14ca45572d3af5c333458d4d155a114f2c0"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C001_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C001_probabilities.npz",
+    "sha256": "823258204a04b4f40bcc0d54be9ab24f854ffa2c55d3d082a7992f6278ca550e"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C001_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C001_samples.npz",
+    "sha256": "1ca20afd7c44249c219c310c2a87b88ec75b8e9149674e16c37d6a9f91ce4139"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C002_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C002_analysis.json",
+    "sha256": "b592e6c0376822c16fa682ad951b7c6d1c776e77a72115828343f5476bdb02ef"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C002_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C002_probabilities.json",
+    "sha256": "744ba560e9afdc2349b71b4dee8ecd8eb2224b863ded3d7b24cedb44dbdcc134"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C002_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C002_probabilities.npz",
+    "sha256": "56d79c49c2d2b129760e727b2d58e499f92fcb164e9da1352fa5fc568f370d34"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C002_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C002_samples.npz",
+    "sha256": "40098122fcd5392229b10263671bcbaf45f7506fdfb64dff345c8d7218f0d9ad"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C003_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C003_analysis.json",
+    "sha256": "69cd5ea801910d8e33216c1c45b1236b1b04d25a5f75e8d6c512a8f0f975a9cc"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C003_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C003_probabilities.json",
+    "sha256": "ebb6ff9d024d0483ce6a31aabd372fd465826a7aa21d845ddda4ff1cc4cfc9b0"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C003_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C003_probabilities.npz",
+    "sha256": "f3c05b0b140d5bc20abc756a04fcf1081987c6de2e09013271093701eaa6fcbc"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C003_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C003_samples.npz",
+    "sha256": "49d77284631ad687af4e7df4f5b4a9e4397a7b97cda81eebe7557a40dcbd1746"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C004_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C004_analysis.json",
+    "sha256": "4af0488216a8314ecbaff92dbf66d5196c3d478553509b79e50d02e3f4ea4b9f"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C004_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C004_probabilities.json",
+    "sha256": "39a3d352867fd451223a54afb34e08524a0afb94da031909ca9e5a11f29c5420"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C004_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C004_probabilities.npz",
+    "sha256": "58384cff55995fe73548cfeac2ec49ead50cc6831e34387a2bfc6b5e80c55333"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C004_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C004_samples.npz",
+    "sha256": "31100df752e8b6635617ceec7afaa0f84f3723b400f5d97cbca8ba8e7da18ad0"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C005_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C005_analysis.json",
+    "sha256": "4d0dfbb924b230697d28815814686167a60dc155d13c895b8f9f974aa93ef64a"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C005_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C005_probabilities.json",
+    "sha256": "328f9b43f28cb0e853a37fd26efc33de4776c3a402abbd95c9c78ff4c1c829fd"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C005_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C005_probabilities.npz",
+    "sha256": "f36c6466861666290d2585f94944badd719400933fc27b0e155857175051f9a8"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C005_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C005_samples.npz",
+    "sha256": "cc4be457901e01f40a7373d9c6554735234bf42aa03ebaf40c3ecac469d3daba"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C006_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C006_analysis.json",
+    "sha256": "0085f62b891dc0593f244fb14df92fc6e0d54534023ac232117c4716bb617611"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C006_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C006_probabilities.json",
+    "sha256": "ef1650af8a6b204643336312acaab703123cf02e59e396d7cfabb91c539b368d"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C006_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C006_probabilities.npz",
+    "sha256": "f09d2d858c0da4adc4509b2c92042bec87959f39b61e68a37c74c85fb7eec649"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C006_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C006_samples.npz",
+    "sha256": "994b893958b1d1d47f375443dbd39e315c3c4535d6efd92f4caa5327aec63314"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C007_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C007_analysis.json",
+    "sha256": "e71b22bb90454fcd7ae771cc1eeff653569ec1c955f1fe4ca38e06dc1b14221a"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C007_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C007_probabilities.json",
+    "sha256": "6842e43ae030288db2d40ed17250e18e638962efdddd221a469487c57765734f"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C007_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C007_probabilities.npz",
+    "sha256": "51571e28407ba7107e11fd24511df0681072800198afcd86c751fe68116b05c6"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C007_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C007_samples.npz",
+    "sha256": "462fef2b560bd71f0ee05a2779640509c485118b7b849a17769335b09d626531"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C008_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C008_analysis.json",
+    "sha256": "82ab4f104a827fd5edb661643a65797beee1c08ccf59118e2540dfd5b52e6b48"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C008_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C008_probabilities.json",
+    "sha256": "dde8387c639475495dfa9eef2871209ee3335ed63229df5e69fb7fe26648dfc2"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C008_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C008_probabilities.npz",
+    "sha256": "a49a3a058702add31c95e32eef87aa912ed6f05607466cceb9349c60c74a9e7c"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C008_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C008_samples.npz",
+    "sha256": "6607d0889b57c249b4edae95b283d149cb9d283c7aaa371cbe3a47f36339e102"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C009_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C009_analysis.json",
+    "sha256": "f4fb07ce873d964ac1b197e86badd7686510c76a52f31be3b8fd5dd4eba66443"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C009_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C009_probabilities.json",
+    "sha256": "94bde44392ad22526ddb03d650df383317693b1934b621ad87f8b891c9b95c1d"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C009_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C009_probabilities.npz",
+    "sha256": "68ac3847d4860ed557b75144c14744e1d2f4348198d183177b0f977c9a212118"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C009_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C009_samples.npz",
+    "sha256": "408a7aedf53d9d8a52915bef87dbd2435c39e61a878b35d08f5e1b9b9d781b43"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C010_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C010_analysis.json",
+    "sha256": "5d9779f6f188fa07f144dee9a3d2ec625e9a1ce07fa01a6f16b33b4d647744d2"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C010_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C010_probabilities.json",
+    "sha256": "cdf0b9e924fb356dbe2637ea7b8aad14cdefc97de450b1b193617f92ede1171e"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C010_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C010_probabilities.npz",
+    "sha256": "449ca80f401e990e4fd23296abd5a49839184b91af3940fc52ed429126908e8a"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C010_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C010_samples.npz",
+    "sha256": "879583a3208a8ff794a772e5cb0aaf1486c8cb908598c2e064e15f44d8ed3099"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C011_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C011_analysis.json",
+    "sha256": "d8f53bd7067c50ec2efd835064cee88dad49d070d65d25c4795f9f378fa805aa"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C011_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C011_probabilities.json",
+    "sha256": "a6a9db0951bd301d03ec4125ce74e8e0f3640b8a82b90673a066ebcc80218bf2"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C011_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C011_probabilities.npz",
+    "sha256": "10492de60e9257a28ecc349544f991c4c11ce7fa177de2f14358e0829f9e994f"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C011_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C011_samples.npz",
+    "sha256": "38890199eaa4530c9c2217ab3592ba9b2f0fd273e81c0e8ee04d431477e20135"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C012_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C012_analysis.json",
+    "sha256": "63249e119cb5c0923b33021fcdfada988836b6e8ff883de51ba3a2848d0a44a6"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C012_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C012_probabilities.json",
+    "sha256": "aa6fe716175ea80d4e1303a09c00ca315e58060f97305975d37eaf6b9f4d589d"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C012_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C012_probabilities.npz",
+    "sha256": "7d9199fd62c96847cf8a0e357d1be033cc0f0c66cbd849fcb2369985fc565ed2"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C012_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C012_samples.npz",
+    "sha256": "cfc3338b364656c6f6fabb8868bcd5868ec7e1cb8974e906e3b92bda27613d61"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C013_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C013_analysis.json",
+    "sha256": "1384e204165021b984388b1cd9eb4d848765d95a4ba29b460a2eb57c98a5db39"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C013_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C013_probabilities.json",
+    "sha256": "e737136d998f716e7061b92b1cafb8b37f921cdbb32c3b311e57f7917f84a0f3"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C013_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C013_probabilities.npz",
+    "sha256": "4e098a0af8b3630d2645737ff1bfbe923cc64e8ed06ff6d79f57ccd6f0263475"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C013_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C013_samples.npz",
+    "sha256": "416ab8e29ff20a5876ff1d8a2b7e31dadaaf2e537cb707c1357239d49aa3a662"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C014_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C014_analysis.json",
+    "sha256": "3230bc795b69ebee6159379b98ed2b59833027666b08c21731810d6d152dc99a"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C014_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C014_probabilities.json",
+    "sha256": "ac7f1f0b9a2442f2f222fc4d4173e41ed22cc512652ca7cf9acc969f05bd78a9"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C014_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C014_probabilities.npz",
+    "sha256": "0973bb19f276e58772a389565914a217a4534f14df3532367f02353b35e1f150"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C014_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C014_samples.npz",
+    "sha256": "6b806acd4e3080f3dfa4d2192bc60b10e2dbf432e5f8b0e27cff003d3f18aed5"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C015_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C015_analysis.json",
+    "sha256": "28152fab3694c7c8914d0f99605808cf25f7031275860d0db3b3e3d2d0b5cf30"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C015_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C015_probabilities.json",
+    "sha256": "73d34314bfbce7fa7e13f92191e2691cdfe4df0b1e0ce4b2949e40b21f8fca8b"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C015_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C015_probabilities.npz",
+    "sha256": "0dd9d06e3fcbc6363da550a64b0bc5c993f4c8fe7a233a471025a9119e27c876"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C015_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C015_samples.npz",
+    "sha256": "c1a5db9f4e2130bb22248dfb4e390e3759cb2cd57dd0f9442a5a858519e39a75"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C016_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C016_analysis.json",
+    "sha256": "05f0afd576d375611f4ab41f0d582e0b37993e5a610aea9b0c77d886b70fb61e"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C016_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C016_probabilities.json",
+    "sha256": "8971c57c90520a3438e8fac72c5317a3d0abbc448ca2d1ceb2c9b20e04cb6382"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C016_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C016_probabilities.npz",
+    "sha256": "7e43bd443bce6e2fa2ea4ac1e010a9f4e041a3a604476b160b24cf883023bc31"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C016_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C016_samples.npz",
+    "sha256": "199ea85a325639c96580413faeae686273519e5032d753dd1e5879f92a2bfbd4"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C017_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C017_analysis.json",
+    "sha256": "ae4f776a13f1f230067d853f4643d1728dc4b19f08ab4a1e5970554f0f467649"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C017_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C017_probabilities.json",
+    "sha256": "85036c6eeefb174acbe9a356eed3625f2c49513af2c4d4688ac6626cbd7551aa"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C017_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C017_probabilities.npz",
+    "sha256": "8d5e4892741de0d7c71ce4ef098b49d0fc79a19db229ce0f903bccc666bff439"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C017_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C017_samples.npz",
+    "sha256": "ef5a7527fbb99d3f22766a8e752dc3a733ebd21307c1e1eece4d8fbba3decf1e"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C018_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C018_analysis.json",
+    "sha256": "fdc8455a99302e26252f2f71a6391afaf7b75c766c24f4463857e126428c3f85"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C018_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C018_probabilities.json",
+    "sha256": "766bbdc84a49711d1ba395d081265fe0ea06096145b364e596934ab9905bfd45"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C018_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C018_probabilities.npz",
+    "sha256": "2eebcb99af32d194c0b7c3ff2e80cadb4bcf56625f434d324c7e9d671a1d04b5"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C018_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C018_samples.npz",
+    "sha256": "ef02938148ab495ec0429b0ac95ce286868773b8f747d2f55067649deda394bd"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C019_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C019_analysis.json",
+    "sha256": "bc9753c9378618dc5d5a36d913d82563df80a59705f3b4fb6d76a75822fa2db5"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C019_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C019_probabilities.json",
+    "sha256": "82a7e074734d13cacca1b544d783534709fcd6feab04d7dcdc65a37c437ab470"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C019_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C019_probabilities.npz",
+    "sha256": "70f16e862280d332efc1b10d782e8d0f834d02b164707ac21e29f1bf193f5364"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C019_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C019_samples.npz",
+    "sha256": "478f1de1c44751aa220ca295ee95a22db283de8c2bb6b9ae153a6df0441c142b"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C020_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C020_analysis.json",
+    "sha256": "ec32bd44791d585fb6d6b9b6c01aa8e2e90026b7e3ffe934c70e4a6d1f52a3e9"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C020_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C020_probabilities.json",
+    "sha256": "d6056852b7f81f2871a8b44b248c698c90aea8bc4b5337fae3ff9a3750ef3ebb"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C020_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C020_probabilities.npz",
+    "sha256": "fbf11aeaf05d207be6f5ef6deb001a52793159273baf3754b833f66828895001"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C020_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C020_samples.npz",
+    "sha256": "211a3a7565dedb64289e7ff17cc82959b2f5946612f48f14f2dd8ab1464e953f"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C021_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C021_analysis.json",
+    "sha256": "0c1d552f87b6de9a90883a624efd9abb830309203272ea01996a802ed41189be"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C021_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C021_probabilities.json",
+    "sha256": "73b8da05d1573c078369e2543b245eb92d30a153b2e3ddb9e90f25159eb7c99f"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C021_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C021_probabilities.npz",
+    "sha256": "3dc14097fafae9e1b1231389a31157496cdac4003a6f9c9d6d3c5316b412ea71"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C021_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C021_samples.npz",
+    "sha256": "e5a6cea877ca7908cdc4cbc2869fb3c4fa845df3745a8ace6e9a3662217161a9"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C022_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C022_analysis.json",
+    "sha256": "d58ce902116aed2cbfff1c60fb2dc5ffa3b46e8a658c29f63d6ca3eb291c4136"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C022_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C022_probabilities.json",
+    "sha256": "bec2d10665db779893d4bcd686e67a965aef202492e3c1f81ea571caa5cf6c98"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C022_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C022_probabilities.npz",
+    "sha256": "9ff8a455fe0f87b83728adaa70a938c7175f3c387b722ee62bb411f864059566"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C022_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C022_samples.npz",
+    "sha256": "eb5d6b7caf1daf45c354def4b8c43db6de8375881be84f0f68d50b8e312e4cd9"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C023_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C023_analysis.json",
+    "sha256": "83ab64e3b71a6845fa10fd6cf8cc7d7d090057da35c0bd67dcad4042df418bb1"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C023_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C023_probabilities.json",
+    "sha256": "85d80dbf3c2ba6406fd1239659b671030282109bdf615e75317b3f3e64ded388"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C023_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C023_probabilities.npz",
+    "sha256": "f9242f0ffc8c8f9c3934b59f7934dc6af82f95b32572caf8a449e372bb4f7887"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C023_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C023_samples.npz",
+    "sha256": "c6a5986703010b9d7198464f7b003366f3da856e601156a24b33d79e7be8213a"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C024_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C024_analysis.json",
+    "sha256": "44163d1e5263b75f7e4728095febbaadc9e07a1e8e7ce304de4ce6262c43c68e"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C024_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C024_probabilities.json",
+    "sha256": "cc78bc4febe3db579702ee74582c7a57371c47f3cea6a2764d3d94edb9ca6205"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C024_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C024_probabilities.npz",
+    "sha256": "671cabb0b6ca093a82f1bf18b2264b5510e103f499cd72b40bfe14a58461d781"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C024_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C024_samples.npz",
+    "sha256": "b74dd29ce0fe409121f0cf13887d79a7367708f0e0b2196e9325091be5babc99"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C025_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C025_analysis.json",
+    "sha256": "aa03045a4c555128e4c6e581e1f4473776fecbdec25e2c57bce670189fbac8b5"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C025_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C025_probabilities.json",
+    "sha256": "9767ff4b8a63208b72d8fa2e114f1754399de3dd7de16c5e3d8774d08208821c"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C025_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C025_probabilities.npz",
+    "sha256": "4ef4b03319f74d940bacde24a76eeeeafdd3f87dfd9b11b873e3891838bee50a"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C025_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C025_samples.npz",
+    "sha256": "0ffbbfc54ffc44befac5350b254c7fbff497d0b27a75e3c03eab3da8e6bd2efb"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C026_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C026_analysis.json",
+    "sha256": "51c35d618605eb5099e0285b51b491e66ccb5140407a3d41fcb51842e75076cc"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C026_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C026_probabilities.json",
+    "sha256": "7b2ed34c7f43db3d0ddbdbcd37351dc3b8993e359796dc5c8e5af62b24d0a7f2"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C026_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C026_probabilities.npz",
+    "sha256": "6a80d64c9babc00830cebacb4477324f6812cdf90f81cc2baff023b29e8f45ad"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C026_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C026_samples.npz",
+    "sha256": "9dcd4022bdc3b981af0e0a5f9f350248711ed754dbe7f6111d13b765ae9fc8fa"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C027_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C027_analysis.json",
+    "sha256": "f41f9995803af9646a3a48b1a6f52b99b2ac4fde145b5ebc11d951a40681d69c"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C027_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C027_probabilities.json",
+    "sha256": "b3676663762fce35590392c6d0adc617bc951da199385152121b42eda399f600"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C027_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C027_probabilities.npz",
+    "sha256": "021dab4e1537290929b36706715b38b375ea37e3950ab211f5222e165073b5f0"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C027_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C027_samples.npz",
+    "sha256": "098137e5260ba34f03b00f4bc092cfe75f80f30d796ba34a56a9552919b926b3"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C028_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C028_analysis.json",
+    "sha256": "bfe4cf3c5f45aaf2f8cae3f008fd24f6799ccd4d7cd605ab027b839c98552a68"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C028_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C028_probabilities.json",
+    "sha256": "3e615b56f91c6c3cacb9c7e125c04eb6c471fc3760d4fef9d24975ca1e326c22"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C028_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C028_probabilities.npz",
+    "sha256": "092ab4b45c0f0a24f00c96fd60f06b7b4da3a6fe08bd315e207135cb3dd2e1fb"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C028_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C028_samples.npz",
+    "sha256": "e0f9a6c9c2b8f62c3c65a1eb460e3dc4af0da5c45add8e5bcef68fc90ea943a2"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C029_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C029_analysis.json",
+    "sha256": "c9733c05c9986a1a7a9372f82f35988f2156302318af4d78749be6ba3286e5fa"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C029_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C029_probabilities.json",
+    "sha256": "34126928ea7b7c14fb71befb0bf1bd51262f38ac4d6b59617bc6368e8cfb0b2b"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C029_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C029_probabilities.npz",
+    "sha256": "ef5b2116c5a27ec250b01fe56f675daabdb0c7c6583292fbcf0a60c09fc220a3"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C029_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C029_samples.npz",
+    "sha256": "bd627e4db0030421a364b825aa0cda7f97622ac1a175924a0d14330f647d44da"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C030_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C030_analysis.json",
+    "sha256": "727695fdfff4f1e9bc24851aa0179b3b2c442d15c9f658a7cfc3922479c8515b"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C030_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C030_probabilities.json",
+    "sha256": "4df1c6b339de213aa451f036d06f3022869db3e050bea33fbbf7ae281158b242"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C030_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C030_probabilities.npz",
+    "sha256": "15da15ce9064edaa6f9f8a87404854bd597d922799261a0bbff8c825315ed11d"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C030_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C030_samples.npz",
+    "sha256": "6f35eb4a7e47c753c696d68b973652961c4e3cae8dcd34f620113cf9ebae1289"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C031_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C031_analysis.json",
+    "sha256": "e48c2a5029b646df47ef7045eb7a7dc0f91c4f53ebe0faa60d8c985f57a950ba"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C031_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C031_probabilities.json",
+    "sha256": "44363e4983efc3dc5eb1ce4f3843e79611095ad527f9da62fa0d683fa26a2111"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C031_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C031_probabilities.npz",
+    "sha256": "aa97cbb54ec76917dddaab8d6b59f5c6e34c53e59c018d4327f71de89e0d85c7"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C031_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C031_samples.npz",
+    "sha256": "5778ab7850b10e7497a26f9c6ae4fc635490dd3f11eb620f76cb657f55e1ea1e"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C032_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C032_analysis.json",
+    "sha256": "97ee372ccdd374b9e98e658654e9032ccf85fcd3ef9f7b088b6963483a3d003e"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C032_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C032_probabilities.json",
+    "sha256": "ae69e11cbd89e61f4eb0d7c613506f0620c80068c668ac5619bb8d47ae35afaf"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C032_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C032_probabilities.npz",
+    "sha256": "05032e487334d71f48ec131150c1039d7b3198064643396a32fd947684fbf076"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C032_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C032_samples.npz",
+    "sha256": "be5dc062020a56df9863536a763e40dc842a067ec825aa2e4c587e83a727ab30"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C033_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C033_analysis.json",
+    "sha256": "da0c2586c147ffc7c0e901d09fb6f2564dd53813e897a2d0c7482295ca17b54a"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C033_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C033_probabilities.json",
+    "sha256": "bc058db40b55d6849ef520493be9137ce51452615fb47c40b1849ff96eccb063"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C033_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C033_probabilities.npz",
+    "sha256": "3eac52b520979a9ae469df95dbab9f39e6216386597f4ffea8fd9f3ea40118de"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C033_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C033_samples.npz",
+    "sha256": "b24d377eb90832617abd53608f24a586b0010adc84081067195c1de36df89283"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C034_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C034_analysis.json",
+    "sha256": "19e08691ef8fe9f97d06848680a76f3fd75a8512bbd9e316c12562b3c3f54fe4"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C034_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C034_probabilities.json",
+    "sha256": "2c69cc9804d603bbcd7d1857685e2193c0daf6afae12a0e1e117134c9e067b07"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C034_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C034_probabilities.npz",
+    "sha256": "99e207607984b7ddf5cbf96c89913cf086549f1497326f6e4730e1b5785389e4"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C034_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C034_samples.npz",
+    "sha256": "03085e42d7f371c9e32b66876e2398a505f49de4052a3e41ddfafebed8e59871"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C035_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C035_analysis.json",
+    "sha256": "7e5fb94db41c27398a1aa096171a4a174fde1cd034035ea6c566b1b4d295f5a4"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C035_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C035_probabilities.json",
+    "sha256": "e58c075744cebe4cc62f1d846a4bde8460c4090b3a865ecce7420043bb994d60"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C035_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C035_probabilities.npz",
+    "sha256": "7a8fa86a3090f38059583ae25240fc099e0c1f92dc70a63552acedca544fcb1f"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C035_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C035_samples.npz",
+    "sha256": "5cd9fad5b9bf903b074ae647237c98c1eb03b161925de3a5baa1460f2e352599"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C036_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C036_analysis.json",
+    "sha256": "c0ece55600dd19482315177d61d7f49871e3ec758cd58467ae090c6b3487256b"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C036_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C036_probabilities.json",
+    "sha256": "52704a9236a0b5e13410594e469bf352cdf583919e588a63cf7b8a2e1a1c2a5f"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C036_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C036_probabilities.npz",
+    "sha256": "9c3e3c5517c300491d0005e2f78a50ae6d89052548074a10570cd85005d2924f"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C036_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C036_samples.npz",
+    "sha256": "141cff4a9c8ff3a8d3618958dc6586fcaf298ac18b39bb8c227ed8bda5cd79b5"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C037_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C037_analysis.json",
+    "sha256": "180bcc28755deb98d8895dea2b483437fafd737a11dc8dea860010475e5e3624"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C037_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C037_probabilities.json",
+    "sha256": "2316bb7cb5cbb76dd6e7914fa8794b23d9fb12cc41b92b0473a480a700fb6b66"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C037_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C037_probabilities.npz",
+    "sha256": "707d7ef34eee183eebf3a137e518c1c0d968fa67c0eacf7aedc481bbe73cab84"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C037_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C037_samples.npz",
+    "sha256": "8c7e0028eeb4a15ed75d6e4283deef00f7c4780f0eaddb8002b579141102028e"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C038_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C038_analysis.json",
+    "sha256": "e699a21d2863999035b277077d81cd2b657c40a9c659b6417a827e96f1d788f1"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C038_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C038_probabilities.json",
+    "sha256": "c8f0bd90ea461d7befca47dabc4a51757ffa770d81dce68d405eac9e0d7a13fd"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C038_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C038_probabilities.npz",
+    "sha256": "ee7f5f76485cc06b62f2f2cadd16207bc02e2d733762486c4395dd1ed7fc3ed8"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C038_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C038_samples.npz",
+    "sha256": "b578de2be6345969031eaa69766a469afd1ecbe0b49d3b5da226f06a9a3b97c8"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C039_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C039_analysis.json",
+    "sha256": "fe762f4188f821157bfcdf352a0a217b3d63230bb1d54386125d3700db398681"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C039_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C039_probabilities.json",
+    "sha256": "d8b149735a6b14b7f6f481950d01af2a856a4316459ee3451b474decafa5b812"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C039_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C039_probabilities.npz",
+    "sha256": "d1ea839f22c65f16a51128907b50a5bfbb60768ea4cdecf22af79d4b53a26538"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C039_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C039_samples.npz",
+    "sha256": "390d6aabd1e72cd083b79eee53d6707e6f3940761212a5e51584c245afbeda3b"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C040_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C040_analysis.json",
+    "sha256": "ca712c325b795d3c1dd98843e0599ca8aecb1f3d82f6dc48b517a7038164bce1"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C040_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C040_probabilities.json",
+    "sha256": "b627a9eca3d7a439ef7544399f868f7b021152f48b1b595cc041c5a255f69287"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C040_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C040_probabilities.npz",
+    "sha256": "0ebb687ba0c3cc2ba584e98d6b331218976b6286755332a2aef769f7bfefc896"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C040_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C040_samples.npz",
+    "sha256": "8a183f9da3a0c27d0af327240f59b6f5670a45db43da1eeb4dd978e8b482fdef"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C041_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C041_analysis.json",
+    "sha256": "e795b58264a3b35270f38f1319b6224d36bad396907d018397b6b98df169c0b3"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C041_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C041_probabilities.json",
+    "sha256": "e59e14109c5c5d3992006d9a25e528969f79c264df9e252f6ad83a2460f8286b"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C041_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C041_probabilities.npz",
+    "sha256": "3ca560a21bd022583da0d4586cc304abb9bf4601c50854d63cb56b6a5641e170"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C041_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C041_samples.npz",
+    "sha256": "745ac3238667fa43c989da3c8bf1b3054e7a38304e75e2d5dda838aeb27c160c"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C042_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C042_analysis.json",
+    "sha256": "6f5980c232503a3eb2978a36f6269975868d70489e7ef5bc1f6d730c8e2c7c54"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C042_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C042_probabilities.json",
+    "sha256": "99de9fd638726539b2d0391719b88e3fd30ebc12f2703afdc2dc517aae91221e"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C042_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C042_probabilities.npz",
+    "sha256": "da921ae72ca9b8f4021349b03dc57ca601a51dc841ddb7991d322a6080267daa"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C042_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C042_samples.npz",
+    "sha256": "0cea9454c5700708835c73e0d223a10facd1fb4d51a8921c620243f51f653ec6"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C043_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C043_analysis.json",
+    "sha256": "3d5df928a9ff595594bd2585cdf14d9b9138a69feef3a26dc3799efb2094a192"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C043_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C043_probabilities.json",
+    "sha256": "07eec90bb60a2801745ddd7c68da9e36113531d8ec5aefa9abfd5f8213526d33"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C043_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C043_probabilities.npz",
+    "sha256": "2042b66598a7987cf18d13cc7c766caa20f8e31800d60501b9d35c1130af3f65"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C043_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C043_samples.npz",
+    "sha256": "130667f29ef3f216125fa4fa20cd98a72c430f16d2745bc19e3063df7961752e"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C044_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C044_analysis.json",
+    "sha256": "9223fd644621f481511b099cf63ece57d825211768046746115ef4e3f3c8d1d6"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C044_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C044_probabilities.json",
+    "sha256": "9129ffe523e56cbd508f79d469e59c230a4143f0f62927ddba4a4ba9ab443bac"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C044_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C044_probabilities.npz",
+    "sha256": "b9c7cb2398a0adf608fc87f6f3c5013fca46109665ce6314986c31f4042b8fad"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C044_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C044_samples.npz",
+    "sha256": "e7c0ac7c0d43b126cdf2cd8a1aa2442065efe249e221b26d5854371becdfc38c"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C045_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C045_analysis.json",
+    "sha256": "2d8fb4d4dcec09d9cf28a1f6bdae47ee1967ec50faa9f6b32eca7d4f3f0aafcb"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C045_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C045_probabilities.json",
+    "sha256": "fc93bf85f3eb0c3132a92ec8e2acc1751246ac18627bb9d602944fd9c56f0364"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C045_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C045_probabilities.npz",
+    "sha256": "ba6d4737ac11ed76c2533ce2c79f9be3099b42df8a0fd298e53bbff1599eb264"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C045_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C045_samples.npz",
+    "sha256": "29324e873acfbe1f40d6c4f0c5dd39cd9bb38de16642395ed53d21cbb733f556"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C046_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C046_analysis.json",
+    "sha256": "44bb5d4e6a6947d3b0ebbdfe4cb76f4ae455708b832d09025e33fe8f34f871e5"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C046_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C046_probabilities.json",
+    "sha256": "7e2449285bd5c49578ab35ead5dbe7c93311d72c610b9b3cfa602ee04a8f3a85"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C046_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C046_probabilities.npz",
+    "sha256": "4b5a2f26f1ebefb5c35c8ab233960cfd9bab750c950e8f74995cc7b928dec2f0"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C046_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C046_samples.npz",
+    "sha256": "ba803958061440c2e5f09a1cac74555d9cc35c6e64449e7b8dfca57900d67f6e"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C047_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C047_analysis.json",
+    "sha256": "b4c61a4088c46556b021e2bb5720f60d78f7c6d690a2d7f17f5abb3c6b356802"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C047_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C047_probabilities.json",
+    "sha256": "ff4e12f51a55ca3df592d4c81098c904d389710711ff8a6e9dc387610044af96"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C047_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C047_probabilities.npz",
+    "sha256": "11f50bbc3044c375e265493a89f5c8fbe5ad30d62cf04661a0fa62d9a0541351"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C047_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C047_samples.npz",
+    "sha256": "ea9b9cfa97d3c4f3f257f362a50599a522ee899f307fecee4324b7b670c10086"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C048_analysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C048_analysis.json",
+    "sha256": "52af1f9c495beab278247502c63e31083757d7fad738526088f4ac7232bf8c5e"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C048_probabilities.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C048_probabilities.json",
+    "sha256": "8e7977b73958bea0bfb344a4113b3baf0d2777f65a1a6cd9a12aa170db640321"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C048_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C048_probabilities.npz",
+    "sha256": "68a1ef783da2389826294da389996c8db96057a813fcef4cc0a629f1633bcc13"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/C048_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\C048_samples.npz",
+    "sha256": "fc571cb3959d64820ff605e38d772527026e3a15adfe6ff78c21b40d9349274b"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/outcomes.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\outcomes.csv",
+    "sha256": "2d7e833444aa89689be288b80e7e88764c3e1131f2fa46f3f4e112b634ef9e01"
+  },
+  {
+    "destination": "evidence/fakekolkata/results/fakekolkata_fixed10/summary.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\results\\fakekolkata_fixed10\\summary.json",
+    "sha256": "5585f312e56e5e43a14e2e536fc2097f2a77e95ba978d3fff061d9597fc69865"
+  },
+  {
+    "destination": "evidence/fakekolkata/protocol.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\protocol.json",
+    "sha256": "6b6160a5a920630a5f690db6fc614f14c1ef2e472ae5a3ecaf531cb46598874d"
+  },
+  {
+    "destination": "evidence/fakekolkata/source_manifest.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_fakekolkata_v1\\SHA256SUMS.json",
+    "sha256": "ddc4ce9a828f80f4ef703aa7d1257b21eea0540d7b32b36b4787c1399d7d9bca"
+  },
+  {
+    "destination": "evidence/hardware/results/characterization_comparison.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\results\\characterization_comparison.json",
+    "sha256": "2bef4b4fdb9ab18fc82a04542c48445e0ddd75f3d0e7df86339ba334ca8c7d60"
+  },
+  {
+    "destination": "evidence/hardware/results/hardware.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\results\\hardware.json",
+    "sha256": "8ff73c4b4cbb698cfd1e1ebc1c767e26fdf59e3ce5dc61d166b34833040e4abc"
+  },
+  {
+    "destination": "evidence/hardware/results/numerical_changes.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\results\\numerical_changes.csv",
+    "sha256": "fb9c6a9ac1fb2fe884aabe616ec2866a65e8d36e1f51da385631048a6cbf90ad"
+  },
+  {
+    "destination": "evidence/hardware/results/prediction_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\results\\prediction_probabilities.npz",
+    "sha256": "fe2de1ad6e5946731a7c0c5d20e6110e88fa364874495d66d475378a6b7e21bd"
+  },
+  {
+    "destination": "evidence/hardware/results/shot_accounting.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\results\\shot_accounting.json",
+    "sha256": "c3b72a5fa4be091c2bc56a7f36e363ae423030b0b14962797d063a761e147e04"
+  },
+  {
+    "destination": "evidence/hardware/inputs/experiments/hardware_sigma/feasibility_result.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\experiments\\hardware_sigma\\feasibility_result.json",
+    "sha256": "6f1426248790020b4a8e8e866a324c1dcc48fc2eed2036847544acc3c090f2ff"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92mef8oamcc73db82v0.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92mef8oamcc73db82v0.json",
+    "sha256": "508301d817a05877884fbbcd55f7dc319a9987a4e0b7d3b39a099d65e7a8d61e"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92pbgfd07jc73dvkveg.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92pbgfd07jc73dvkveg.json",
+    "sha256": "05d5a199563b989dd82a9118f88ff35eb2337934ea123efe6eca98fa80e26c92"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92plml958jc73bs50f0.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92plml958jc73bs50f0.json",
+    "sha256": "2a31b06de360e4a0c0f519ee3f6b74cd010d131281c1b7f50029651f83408d8c"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92pnjnd07jc73dvld50.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92pnjnd07jc73dvld50.json",
+    "sha256": "cd0a34e1b9cb9f15f551228c5f606f463f6e27159106f8bc9b3bcf91490461c5"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92poffd07jc73dvle10.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92poffd07jc73dvle10.json",
+    "sha256": "4ec5b50c20fe7028ea72829f0ecf273e0a5e95fa0c6f7ce99d7172301c6efe21"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92pp60oamcc73dbcdm0.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92pp60oamcc73dbcdm0.json",
+    "sha256": "8813f5421917a6b7d2305be72271236de3b718d3719cdfac30df86b2e7d957f2"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92ppsooamcc73dbcec0.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92ppsooamcc73dbcec0.json",
+    "sha256": "c2c2399a15dc3963f60a9aec92f045cd111edeb70be73077da228e83d66999f9"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92pqji47v0s73814ppg.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92pqji47v0s73814ppg.json",
+    "sha256": "63f25f2d9b1fbe1379619f0f41e0ec55b6cf803b740b6c81c65f6753877347c4"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92prad958jc73bs56p0.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92prad958jc73bs56p0.json",
+    "sha256": "a7b2d934ba736d4898d0a531d9779aed0d879ba544823fd0c9ec2f2f4d3a4a20"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92ps1247v0s73814r4g.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92ps1247v0s73814r4g.json",
+    "sha256": "d2c392bb79b411ea5859785293dd8b8d5acd234bef2ee1dea99585c07682ec64"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92psnvd07jc73dvli70.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92psnvd07jc73dvli70.json",
+    "sha256": "69f08635ab123789cadc06ea167968a3d03ced3471ea07ac888c5952feebfa2a"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92ptevd07jc73dvlj00.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92ptevd07jc73dvlj00.json",
+    "sha256": "35d26a2ccefcdddcf848e68005485f465068a9c071440a41845f7e4ec2927823"
+  },
+  {
+    "destination": "evidence/hardware/inputs/reproducibility/hardware/raw_counts/d92pu5goamcc73dbcii0.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\reproducibility\\hardware\\raw_counts\\d92pu5goamcc73dbcii0.json",
+    "sha256": "e55bc82dc9858abe8e055b6dcf3883abcd9e654ef7428d1e985b312a5b461ec3"
+  },
+  {
+    "destination": "evidence/hardware/inputs/results/hardware_sigma_attempt2/hsmc_result.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\inputs\\results\\hardware_sigma_attempt2\\hsmc_result.json",
+    "sha256": "f3615ab280b62a460f77629e9ef0bb92159a1ea87b9c91f4b94f60a3b771bc58"
+  },
+  {
+    "destination": "evidence/hardware/protocol.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\protocol.json",
+    "sha256": "6b6160a5a920630a5f690db6fc614f14c1ef2e472ae5a3ecaf531cb46598874d"
+  },
+  {
+    "destination": "evidence/hardware/source_manifest.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_hardware_v1\\SHA256SUMS.json",
+    "sha256": "1f780d4562de3cbe95fcb91edc9095836d802f47cdc30dbd2cf6f0fc1073eee9"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/grid.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\grid.csv",
+    "sha256": "3273cedc2f31a40d149267f610d49627942e5d79cff7eefa828c8d814e153337"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/separation.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\separation.json",
+    "sha256": "9a3c37bc3f31bcf84ce63f657ff5f9906735a15d3faa26543863607891831680"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/pilot_power_report.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\pilot_power_report.md",
+    "sha256": "8b78e00dda5b1a5a2a40bf81a90cda00cdb6bd6f31d65de382119054ec3066bb"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_config_used.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_config_used.json",
+    "sha256": "f38028effd9c31a23ab5b53833e130b3db6eb45c053210cda85a4436ae021882"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_summary.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_summary.json",
+    "sha256": "cc03526f04bd366467e7badf299b6a6ffcba079f7a5da09142841cf97f3dad75"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_table.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_table.json",
+    "sha256": "b36e2eeff0a1a25b766a53a4cb2b361524b6ae90480807015d8263dcdfbed393"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.0025/config_used.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.0025\\config_used.json",
+    "sha256": "b7bd2f8cd6cc7a43fc9118c7f4f29f492a50b4c30c2e1b291460ad2343fb562f"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.0025/instance_analytics.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.0025\\instance_analytics.json",
+    "sha256": "ceb71ebfab0f0bebf4949ced0ae3be381c66a879d49067993d1e15c4abb7b0dd"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.0025/observations.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.0025\\observations.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.005/config_used.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.005\\config_used.json",
+    "sha256": "d72b92164039958ba3dbbb94777726fa6083743e5d6ddbf4c79a846015bdf0cb"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.005/instance_analytics.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.005\\instance_analytics.json",
+    "sha256": "2595372093e3eaed758267fcf34ed8dbe7701b1ac2d8b62f501ddad2cd48d28a"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.005/observations.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.005\\observations.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.0075/config_used.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.0075\\config_used.json",
+    "sha256": "9f68bb093872f14bb6cdd33086f958de5da3735f0fe904078d200f195d959771"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.0075/instance_analytics.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.0075\\instance_analytics.json",
+    "sha256": "fdaff3097c7ef557815c624c9cf8ff0e11e0d8ee3035bcc49cb3ed0e0f9e2235"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.0075/observations.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.0075\\observations.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.01/config_used.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.01\\config_used.json",
+    "sha256": "c20c5bbf58920dae4d0723025047352b050cfb06d9943454ba54bcc434699d9b"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.01/instance_analytics.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.01\\instance_analytics.json",
+    "sha256": "086c1ab719fe0b22ffb0014f3b7fa40a904e1d2ea5eb62753237e7a23e1f6dfc"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.01/observations.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.01\\observations.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.015/config_used.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.015\\config_used.json",
+    "sha256": "ceb9a06cfa56db4dc4c1b6b02d26b8571cae1eae470e17f2aad0b82598d7fed6"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.015/instance_analytics.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.015\\instance_analytics.json",
+    "sha256": "e6d4afa6127fe35d57758c421a8e70ae47d0af4153ca6f261df442e84d6db9dd"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.015/observations.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.015\\observations.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.02/config_used.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.02\\config_used.json",
+    "sha256": "f7adffdf334975345f97c4e687486c53d3e1a62e9a9b113ca5f6df31dc0d14a6"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.02/instance_analytics.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.02\\instance_analytics.json",
+    "sha256": "ccb8573048e087c6c841b4fd9579ad8754848792a1f569cfd7f6f801cf758e12"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.02/observations.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.02\\observations.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.03/config_used.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.03\\config_used.json",
+    "sha256": "0e1c7403a98cf70fef66b5f3e4bab6c9bfcb0dfc2b724a814122747597d03e18"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.03/instance_analytics.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.03\\instance_analytics.json",
+    "sha256": "1d69364241407127fb062161287a7cdd0e0540f79044b6684dc67239c46b7915"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.03/observations.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.03\\observations.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.04/config_used.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.04\\config_used.json",
+    "sha256": "c5ad7f95b5c62c13f52acb90985cec1eb4854effea37051bc09be3ec0d28812e"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.04/instance_analytics.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.04\\instance_analytics.json",
+    "sha256": "3a38e2d99da0d9bdabd4ad99dc6549e39752d42256605f612c3e18f5a6fc9142"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.04/observations.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.04\\observations.json",
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.0025/probabilities/POM_001_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.0025\\probabilities\\POM_001_probabilities.npz",
+    "sha256": "63c9699988f7204d43186e975a81bc18b583bc58c249663dbe325258e54504cc"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.005/probabilities/POM_001_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.005\\probabilities\\POM_001_probabilities.npz",
+    "sha256": "bb1d9a478b73fcdf4c7327749a8b63af6c177d8309088f24064f5c63739b7d6b"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.0075/probabilities/POM_001_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.0075\\probabilities\\POM_001_probabilities.npz",
+    "sha256": "1cefb251ba36ac6115c3c61c552879cded0368910413f838388558dc61f4ab36"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.01/probabilities/POM_001_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.01\\probabilities\\POM_001_probabilities.npz",
+    "sha256": "6afa99879da69cb78aa333e0ea18ecb972abb5f27c77bb544116dbd219c5c6a0"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.015/probabilities/POM_001_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.015\\probabilities\\POM_001_probabilities.npz",
+    "sha256": "e2eff8c550bc8f6dc7e1c2d99781271a85e2cef2088ed88f9c24648b3bc300d2"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.02/probabilities/POM_001_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.02\\probabilities\\POM_001_probabilities.npz",
+    "sha256": "ff8ec3af9e4f659cc021103900f6125401f5b1de93fde6a569761a27d9689ff2"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.03/probabilities/POM_001_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.03\\probabilities\\POM_001_probabilities.npz",
+    "sha256": "7d8652254f48ab122bb835e6099b6336a51dddccbb9be008cb8de087e0286acc"
+  },
+  {
+    "destination": "evidence/controls/results/phase_diagram/evidence/p1_0.04/probabilities/POM_001_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\phase_diagram\\evidence\\p1_0.04\\probabilities\\POM_001_probabilities.npz",
+    "sha256": "20884c250f1a3895dc1f2896fdfc343583f01652e2d4ebc983cd35c268be3556"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P001_B1024.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P001_B1024.npz",
+    "sha256": "7c38ba66d212e8f3322002fc139edc5db7d4b4d148c998e15e4fbe2fa4cd3c0b"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P001_B2048.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P001_B2048.npz",
+    "sha256": "0b8c916a0586faf5b2a5b529f2a6e665d8c342a28ca47aa69031bc2c7a434a82"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P001_B256.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P001_B256.npz",
+    "sha256": "aabd312c347b4a71518b553df7df0a40e5febfae0b62b244f40d845eccf76772"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P001_B4096.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P001_B4096.npz",
+    "sha256": "607fe04ef558ae4e5fb9767c2a9e3bfe07799c97d79a08bed374778c488508ba"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P001_B512.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P001_B512.npz",
+    "sha256": "589098d4e8b6eb1b1259ba044ab0a224218f401b3541641550b968c8fea2da31"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P001_B8192.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P001_B8192.npz",
+    "sha256": "21b430f05dbb7d940dab9eedf2d79b1a41a3e7d8b60e81d403b72396c4c90d40"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P002_B1024.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P002_B1024.npz",
+    "sha256": "03f4192052c20b621ae8f84949336d5dc40576c167d10794d9967032bc683338"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P002_B2048.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P002_B2048.npz",
+    "sha256": "6e01875179e5d08c232487720ffea44c00c36048326496ef4eec92a58c1e6546"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P002_B256.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P002_B256.npz",
+    "sha256": "47bbb48fb08122aa924ddb0862b0c90e4ceae378003cc26dd05f3edab07d137a"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P002_B4096.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P002_B4096.npz",
+    "sha256": "6749f0553ef64561364a75f41cc9f5d16082d9fde7d968e5ff2d8d6ddf2896e6"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P002_B512.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P002_B512.npz",
+    "sha256": "9ef64eb7e50b118f1125daf418915f670a7e6097ae6f5b73020960a7d8fda5dc"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P002_B8192.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P002_B8192.npz",
+    "sha256": "51e406d00f870984bdcdb714dd45fcdb5c51ccda11772bfc82e51448aa49e4be"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P003_B1024.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P003_B1024.npz",
+    "sha256": "df359ba3106c9b0194ff5399350aea7f6ccd13c301ac4e2c7cf47ec0a44e34b7"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P003_B2048.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P003_B2048.npz",
+    "sha256": "ddaec403f99c90105fb3434572bb29fffb712eac4aabc84ded0fb2b1f803925f"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P003_B256.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P003_B256.npz",
+    "sha256": "22598977c0003add24a67b1aa859c31239ade38652d1260a6efc8c8f8c2388e4"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P003_B4096.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P003_B4096.npz",
+    "sha256": "20970a881fa9e07f1a9ed1a3073f3b98c70995999a60d14137d30fdf245cce06"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P003_B512.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P003_B512.npz",
+    "sha256": "06b2620e83d413460be3f5638d8f4885080d73f39561fd6703b2b2ac62690047"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P003_B8192.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P003_B8192.npz",
+    "sha256": "fa7c7604b6dac243ffd1c0798ca35d74917218f2bef109d10b3b7f2ac56fca29"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P004_B1024.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P004_B1024.npz",
+    "sha256": "96cf79e0bae03f706108227bafe09ac73602e87be0ce67b730d0f90674bc53dd"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P004_B2048.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P004_B2048.npz",
+    "sha256": "025671274d47abf8ddf092b410ef82217fd4d203cbd0cff64e81537377df5dd7"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P004_B256.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P004_B256.npz",
+    "sha256": "8e766c11b5860ba5170b5e56faba2ec0502636ac985dbaeba730dae91217f709"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P004_B4096.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P004_B4096.npz",
+    "sha256": "204ea11e5275741e3eef2b4a52e0c69ddb67665858e53d3453ba5c9cf401ea3e"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P004_B512.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P004_B512.npz",
+    "sha256": "70c78321f090de62184df6bf154a12cf6d9f670b82d2825850506a69cfe2d96e"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/power_evidence/P004_B8192.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\power_evidence\\P004_B8192.npz",
+    "sha256": "fe235412a4870bc15bef9a05965c1f3c3813acea7d23a98d4c19fc47e16dca3a"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/raw/P001.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\raw\\P001.npz",
+    "sha256": "006782fbd2a70906380b12c367c1792210f3221a4ca270247a820bde782e0f71"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/raw/P002.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\raw\\P002.npz",
+    "sha256": "c87955ddea5a29eccf2be5bf2018e1ec2aae1c9609ad5bf4bbc1d4672ebfee49"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/raw/P003.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\raw\\P003.npz",
+    "sha256": "c7ce1e3b1dd0902af3369d073f293c3c818ceca6dfa767189d067d4577effb6c"
+  },
+  {
+    "destination": "evidence/controls/results/pilot/raw/P004.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\results\\pilot\\raw\\P004.npz",
+    "sha256": "1b7eac238abe3e77bb87e598d59faec9a45fe93fd5ef8527fb5904e8e6c2fbb4"
+  },
+  {
+    "destination": "evidence/controls/inputs/baseline_current_environment/pilot_power_report.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\inputs\\baseline_current_environment\\pilot_power_report.md",
+    "sha256": "8df8ff8e3bc75f8d1f829560504ee3dd572a76be68d438b10b02e0735be9bb90"
+  },
+  {
+    "destination": "evidence/controls/inputs/baseline_current_environment/summary.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\inputs\\baseline_current_environment\\summary.json",
+    "sha256": "2fcd591b7f984c79324ef6098dc07ec0a9d584b4f55eeb19028e50861a3bfdbd"
+  },
+  {
+    "destination": "evidence/controls/inputs/baseline_current_environment/table.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\inputs\\baseline_current_environment\\table.json",
+    "sha256": "637bf0956509c1fc35447b827184cb00c69592d8d89246c354f09019357612f8"
+  },
+  {
+    "destination": "evidence/controls/inputs/protocol_original/gate0_pilot.yaml",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\inputs\\protocol_original\\gate0_pilot.yaml",
+    "sha256": "13bb9be0fc8de5709c671a1e474dd59054e8e2db68b626f174b0bab19f12aefc"
+  },
+  {
+    "destination": "evidence/controls/inputs/protocol_original/proof_of_mechanism.yaml",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\inputs\\protocol_original\\proof_of_mechanism.yaml",
+    "sha256": "17edf328198d9584463f6e673a4ea68cb298b3817c8853579a6befbe209dd543"
+  },
+  {
+    "destination": "evidence/controls/inputs/historical/phase_diagram/grid.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\inputs\\historical\\phase_diagram\\grid.csv",
+    "sha256": "dea40526a4a479d1df8ba80f11529fe365d0634cdc253e5c350b1c59ff9a7cf5"
+  },
+  {
+    "destination": "evidence/controls/inputs/historical/pilot/pilot_power_report.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\inputs\\historical\\pilot\\pilot_power_report.md",
+    "sha256": "a352177776244f8881272039b7d88e6b1caa9859a6269eaa93a9ecc0200edda6"
+  },
+  {
+    "destination": "evidence/controls/inputs/pilot/raw/P001.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\inputs\\pilot\\raw\\P001.npz",
+    "sha256": "006782fbd2a70906380b12c367c1792210f3221a4ca270247a820bde782e0f71"
+  },
+  {
+    "destination": "evidence/controls/inputs/pilot/raw/P002.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\inputs\\pilot\\raw\\P002.npz",
+    "sha256": "c87955ddea5a29eccf2be5bf2018e1ec2aae1c9609ad5bf4bbc1d4672ebfee49"
+  },
+  {
+    "destination": "evidence/controls/inputs/pilot/raw/P003.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\inputs\\pilot\\raw\\P003.npz",
+    "sha256": "c7ce1e3b1dd0902af3369d073f293c3c818ceca6dfa767189d067d4577effb6c"
+  },
+  {
+    "destination": "evidence/controls/inputs/pilot/raw/P004.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\inputs\\pilot\\raw\\P004.npz",
+    "sha256": "1b7eac238abe3e77bb87e598d59faec9a45fe93fd5ef8527fb5904e8e6c2fbb4"
+  },
+  {
+    "destination": "evidence/controls/protocol.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\protocol.json",
+    "sha256": "6b6160a5a920630a5f690db6fc614f14c1ef2e472ae5a3ecaf531cb46598874d"
+  },
+  {
+    "destination": "evidence/controls/source_manifest.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_controles_v1\\SHA256SUMS.json",
+    "sha256": "904e6e115f9a3a6522b8cc968bbdd2b8ddbf3da87400b64249a41ae24599571f"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/changed_decisions.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\changed_decisions.json",
+    "sha256": "b8b960c9f78261d4250ea59e3280226979dd2dedb80b67d3398b20013a5e3dbf"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/coexistence_summary.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\coexistence_summary.json",
+    "sha256": "7eda755f28691f16052d72a91a96af0c2bf42ee450a5ce8546867ce4f1d07126"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/numerical_changes.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\numerical_changes.json",
+    "sha256": "d36a85475554d547e74f05aa68a21a887e9818ddbe9a2c0458f7e3768e1e9b46"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/pec_p0_comparison.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\pec_p0_comparison.json",
+    "sha256": "c0d71bc6891b53531af4e32526d41a0d37b9d6c29a4b73b82b06c4ceee75f698"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/cdr_p0/p0_validity_evidence.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\cdr_p0\\p0_validity_evidence.json",
+    "sha256": "80365cfa0ac593a79205034f08ecc6438059fa7b0fcd4d31aadb935ed0cb9b8c"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/cdr_p0/p0_validity_evidence.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\cdr_p0\\p0_validity_evidence.md",
+    "sha256": "6f14e2814380fc0e6b1954ce256760dc03b4175f4dc6a5d72a41d34e400d56ad"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/figures/F1_accuracy_decision_separation.pdf",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\figures\\F1_accuracy_decision_separation.pdf",
+    "sha256": "74f4168eda62cb23b99f8309106fcc059ebfe6bfaa9bf3b0f790032c01e459bf"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/figures/F1_accuracy_decision_separation.png",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\figures\\F1_accuracy_decision_separation.png",
+    "sha256": "92b8244ab85b12938fafe405ac2d23e98c9542fd0981eb2f68f26ce28e5d791c"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/coexistence_by_instance.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\coexistence_by_instance.csv",
+    "sha256": "742ce2974156659b51f5c7ef04c081c628c41bd3ea49c3552d312c554f0a49c1"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/config_used.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\config_used.json",
+    "sha256": "10450cbe38baa2fde1b9aeeeac747c569c570e832cd04dc2c756bf493d7fd822"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/instance_analytics.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\instance_analytics.json",
+    "sha256": "f115ea3292af1ddb7fec822ce4ce37ec86dc2374b2c7ea450daccb5c4e229e6d"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/observations.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\observations.json",
+    "sha256": "3b74c31b4715e92df9c79add8a2d2af2ae7df2836e9fdd47ae6e6d24e0d5b30f"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/result.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\result.json",
+    "sha256": "4cab33d8e85696d20cb784fc6dc9bd3b53ccc4301d3b565df6757cd6be3fe6c7"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/result.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\result.md",
+    "sha256": "82f6b3f393c02967f8a579e593d5ec56acd94b1ad33360f337f78d1f49924606"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/probabilities/POM_001_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\probabilities\\POM_001_probabilities.npz",
+    "sha256": "6afa99879da69cb78aa333e0ea18ecb972abb5f27c77bb544116dbd219c5c6a0"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/probabilities/POM_003_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\probabilities\\POM_003_probabilities.npz",
+    "sha256": "6a93b6a4f57c8985965e65875b36850768b7bae2c3d4799cb6ecdb295dac1e94"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/probabilities/POM_004_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\probabilities\\POM_004_probabilities.npz",
+    "sha256": "7db121ad772864200b68b542fcc2ecc81d896fcdb869267db04e74a8a1e7bbd4"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/probabilities/POM_012_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\probabilities\\POM_012_probabilities.npz",
+    "sha256": "ac4184ab128619feef27c2e8201301807dbcf5f0c9d7495bb84e29264c1343da"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/probabilities/POM_015_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\probabilities\\POM_015_probabilities.npz",
+    "sha256": "d37d18d6ba6b2e2ca167da9552117e63bd9e68771acd19d22e8213cc33742964"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/probabilities/POM_017_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\probabilities\\POM_017_probabilities.npz",
+    "sha256": "bfbcaadfe0fd88816999de681fd119713a223c579d6d6297fe7e25a7110fee75"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/probabilities/POM_018_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\probabilities\\POM_018_probabilities.npz",
+    "sha256": "a2cd7ef3ccbe3cb5db51108de139fa6b64b289bf3d8029829dd05ea9ab8751b8"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/probabilities/POM_022_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\probabilities\\POM_022_probabilities.npz",
+    "sha256": "0d395f10f7e01d51b2560755ce9aad6aa33e1d6e980665952889c0bdadff3860"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/samples/POM_001_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\samples\\POM_001_samples.npz",
+    "sha256": "6322c1beb48f58a5955336667e36f8e58793c67e52ec3163e7455d85ea705fe7"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/samples/POM_003_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\samples\\POM_003_samples.npz",
+    "sha256": "b62e6994753c3f8220085b1b51da9308a671a1d9162c0c2764464f8c80e7e4a0"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/samples/POM_004_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\samples\\POM_004_samples.npz",
+    "sha256": "d927a0a81f1d4f6990fda3a087aebccea5bf4926b7848af8068b8d64ebf4c77a"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/samples/POM_012_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\samples\\POM_012_samples.npz",
+    "sha256": "e28e5d22d71bf674891182cadc8ef8e0a4815b9c62d19bf3d433db6d2aa9d63e"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/samples/POM_015_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\samples\\POM_015_samples.npz",
+    "sha256": "e93a28afb38486a135974aad49327864f3cb9c601b1c0c5ccce8c092be28622e"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/samples/POM_017_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\samples\\POM_017_samples.npz",
+    "sha256": "3e57722bb945e56153dcdf97a297e493ac79b77b6b4dade74594098eac262229"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/samples/POM_018_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\samples\\POM_018_samples.npz",
+    "sha256": "105cb5134555aad2eb4a42930a28eb85a09ef2f86070437051426516715fd69d"
+  },
+  {
+    "destination": "evidence/cdr_pec/results/proof_of_mechanism/samples/POM_022_samples.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\results\\proof_of_mechanism\\samples\\POM_022_samples.npz",
+    "sha256": "dc2aa9fbed23d04277af68df9e5187d1bca6e1586ede5b132d8850705c0312f3"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/before_probability_precision/POM_001_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\before_probability_precision\\POM_001_probabilities.npz",
+    "sha256": "6afa99879da69cb78aa333e0ea18ecb972abb5f27c77bb544116dbd219c5c6a0"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/before_probability_precision/POM_003_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\before_probability_precision\\POM_003_probabilities.npz",
+    "sha256": "6a93b6a4f57c8985965e65875b36850768b7bae2c3d4799cb6ecdb295dac1e94"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/before_probability_precision/POM_004_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\before_probability_precision\\POM_004_probabilities.npz",
+    "sha256": "7db121ad772864200b68b542fcc2ecc81d896fcdb869267db04e74a8a1e7bbd4"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/before_probability_precision/POM_012_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\before_probability_precision\\POM_012_probabilities.npz",
+    "sha256": "ac4184ab128619feef27c2e8201301807dbcf5f0c9d7495bb84e29264c1343da"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/before_probability_precision/POM_015_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\before_probability_precision\\POM_015_probabilities.npz",
+    "sha256": "7e97e98ddf3b9cdf941c192fb968ea6d3ee33bb01a3526a6208f722418136954"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/before_probability_precision/POM_017_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\before_probability_precision\\POM_017_probabilities.npz",
+    "sha256": "bfbcaadfe0fd88816999de681fd119713a223c579d6d6297fe7e25a7110fee75"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/before_probability_precision/POM_018_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\before_probability_precision\\POM_018_probabilities.npz",
+    "sha256": "a2cd7ef3ccbe3cb5db51108de139fa6b64b289bf3d8029829dd05ea9ab8751b8"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/before_probability_precision/POM_022_probabilities.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\before_probability_precision\\POM_022_probabilities.npz",
+    "sha256": "0d395f10f7e01d51b2560755ce9aad6aa33e1d6e980665952889c0bdadff3860"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/protocol_original/pec_method.yaml",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\protocol_original\\pec_method.yaml",
+    "sha256": "770616115531b9272296f75fec5077af3d093273566abf148d06f59414a8165f"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/protocol_original/proof_of_mechanism.yaml",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\protocol_original\\proof_of_mechanism.yaml",
+    "sha256": "17edf328198d9584463f6e673a4ea68cb298b3817c8853579a6befbe209dd543"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/source_before_correction/proof_of_mechanism_run.py",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\source_before_correction\\proof_of_mechanism_run.py",
+    "sha256": "f9d9dc2d04bec2c3f43f267acdc792828b15bf3c7d55792285355f56140de26e"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/historical/cdr_p0/p0_validity_evidence.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\historical\\cdr_p0\\p0_validity_evidence.json",
+    "sha256": "6fb20d56fdb9ccdb59f8c50431ae6ba2f2b4e1b83df576ed84c9aeb72d2652ff"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/historical/proof_of_mechanism/coexistence_by_instance.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\historical\\proof_of_mechanism\\coexistence_by_instance.csv",
+    "sha256": "e73969ec6c92f2e6ab3f9928c48098f3ffe0dfce82d5986c7fe3b4cf8ef3acee"
+  },
+  {
+    "destination": "evidence/cdr_pec/inputs/historical/proof_of_mechanism/result.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\inputs\\historical\\proof_of_mechanism\\result.json",
+    "sha256": "a0155763947a4f40a2781b6ea816739009f2a3f195ccc5a22ae195ef9a1eccf4"
+  },
+  {
+    "destination": "evidence/cdr_pec/protocol.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\protocol.json",
+    "sha256": "6b6160a5a920630a5f690db6fc614f14c1ef2e472ae5a3ecaf531cb46598874d"
+  },
+  {
+    "destination": "evidence/cdr_pec/source_manifest.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_cdr_pec_v1\\SHA256SUMS.json",
+    "sha256": "4e4f259d4a3bef0f2a58a9fd973a9eb4bd30c562c994a6c4ddd6cb9674d42a2b"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/a3_gaussianity.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\a3_gaussianity.md",
+    "sha256": "c5df865330ce53970d0343f611d5c4e1d1b0bbafe7c7635db6abaf869d200d88"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/a3_sigmahat_audit.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\a3_sigmahat_audit.md",
+    "sha256": "8638ba7ea19737a3e66a42ade30103082085b3e296fa5c40593b4382da61243e"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_learned_arm.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_learned_arm.md",
+    "sha256": "a463f191bddf3495b175a0fc8c8a7d21590b4933cb3cbb6f0429d03426ba9115"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_example_sigma.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_example_sigma.csv",
+    "sha256": "0c3dbdeb34735c227052bd238dcf794e7bf791ce2dd98fb50d58802d96f9341b"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_full_vs_diagonal.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_full_vs_diagonal.csv",
+    "sha256": "795eab9c40de32c8732002973092665fed30eab7f82ffe2c4a2fc9ac4143dd73"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/pullback_frontier.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\pullback_frontier.csv",
+    "sha256": "008a32ec06eb341a051a9771b356ce1d3ee4eead11bbd856ffa0be5a9a442d95"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/a3_frozen_prediction/P001.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\a3_frozen_prediction\\P001.npz",
+    "sha256": "7990dda15fbb200b719902c80ceac04a9692971d68eef2cf6bad2dc1b42ef11e"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/a3_frozen_prediction/P002.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\a3_frozen_prediction\\P002.npz",
+    "sha256": "d771e6ae5636fdaf49fbc78942e9d64324c87e636c2eb9159055d6db4ce9ad6a"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/a3_frozen_prediction/P003.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\a3_frozen_prediction\\P003.npz",
+    "sha256": "4d51f77fce7febed7a049c933effb40377831c8420a5bbf1b61541dc8f6db327"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/a3_frozen_prediction/P004.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\a3_frozen_prediction\\P004.npz",
+    "sha256": "d3e0c30e9c5e31116244c4f65a87f7f7f3d5c15d16916e5de912321f66434e4f"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_evidence/characterization.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_evidence\\characterization.json",
+    "sha256": "90685934b08a995b5d8800a0104278d9af38b650ff9d4aa27fe3069163125ad0"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_evidence/diagnostics.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_evidence\\diagnostics.json",
+    "sha256": "dff1c9e3c05861a335fd8edeb8a9b53fe224dab57c12d1f4080c335e5da0082b"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_evidence/P001_propagation.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_evidence\\P001_propagation.npz",
+    "sha256": "8b024ca305c0e6067e865fd72268f7685da176f361210441bea0e2e2d27d5d5c"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_evidence/P002_propagation.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_evidence\\P002_propagation.npz",
+    "sha256": "6a2c53322c5c658bad60e202f58cf511acf17bf587c29efe33a6f8010fe840cc"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_evidence/P003_propagation.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_evidence\\P003_propagation.npz",
+    "sha256": "42c58376ec8e1f24d7d08f6b110f4c837833e21a79f21cefedb2c856f78a5438"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_evidence/P004_propagation.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_evidence\\P004_propagation.npz",
+    "sha256": "bf54eba1800bbd57a1a1df2f447d6e5db353be6cc27fa87c15a290e689336fad"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_evidence/summary.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_evidence\\summary.json",
+    "sha256": "7f8a4f15db83a31362c69381dbaddf4710d628f82aca377000bc1eb790ad186e"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_evidence/weights_before_learning.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_evidence\\weights_before_learning.json",
+    "sha256": "ecad905fd3031aaf50fd90c44a2d12749dd3f56c34d9ff38ba34a980a6c5ba1b"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_primitives/P001.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_primitives\\P001.npz",
+    "sha256": "1bcf875a5f06b264aad50d58b7cea798f78857e83f2318092840af621086170d"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_primitives/P002.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_primitives\\P002.npz",
+    "sha256": "f5223703f0cc75a1891e2cab0079bd6588304c609d217828bcce364f748dfca4"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_primitives/P003.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_primitives\\P003.npz",
+    "sha256": "107a9f93946963c6e9216ab3b23e1b87cdc6d48050c98da12fb59de7532fc488"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/cdev_primitives/P004.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_primitives\\P004.npz",
+    "sha256": "9b301c8116adfea7efe340ad30d7864cefab43cadedee4cdeb24b9849fa0ba7e"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P001_B1024.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P001_B1024.npz",
+    "sha256": "b8062d0c7779f67fb390929c234dcbbd5d62a69033ea6c32b5883effb4df5ec4"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P001_B2048.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P001_B2048.npz",
+    "sha256": "98b6ba6fa921a1b7eff79a0149ba0dd7c25c761332f1e0f06d9f04acdaf58b20"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P001_B256.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P001_B256.npz",
+    "sha256": "71bab5eb271527e29087af2761b5cb45eadc6026633c4856d245747e3f8bd32e"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P001_B4096.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P001_B4096.npz",
+    "sha256": "d70908df98308ade06c199aab4bb1b9b2beec606fa06205dd67671c8bae9cb35"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P001_B512.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P001_B512.npz",
+    "sha256": "0c428b172a18c0227ff824f2831a33c78c1bac27d8971a28f9cb2026ebdec34a"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P001_B8192.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P001_B8192.npz",
+    "sha256": "c8b331b48c22ee15d8c14faeeb57dcb8dbde6a664058adb09ecab3ce5876f926"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P002_B1024.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P002_B1024.npz",
+    "sha256": "0e86f2d0e6f4fe18333413c1ced857c7cd3bcba087f9df60317186df8f67e0f3"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P002_B2048.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P002_B2048.npz",
+    "sha256": "6a461233a5c14e015501de0db7599fc46b87f52659fa02bb9515e58d13b628b5"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P002_B256.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P002_B256.npz",
+    "sha256": "8cd153e4fe98385f3385ce0ff67c93f646a0b0ece3b9531ec211fb6c1a062629"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P002_B4096.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P002_B4096.npz",
+    "sha256": "03f9d8bf5a6bbeaf6103035aa2d23136201ee281f44f99bbc176779f833556bc"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P002_B512.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P002_B512.npz",
+    "sha256": "04317f02f620d2288a7a224c6d1eaea971e4dfd2f2969aa873a5c60c048d8713"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P002_B8192.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P002_B8192.npz",
+    "sha256": "0c819fd0c0e7a04131ad8dbc1f21eaa509eeb3010394f03e881eda609fc712cf"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P003_B1024.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P003_B1024.npz",
+    "sha256": "fbc8b147ddf2dd9a7e61c5c41fb2300d518729dc82e43be560c65480a9b9e60a"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P003_B2048.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P003_B2048.npz",
+    "sha256": "99a2def879dd73c962081d6e4c746533108877b59467a64aaf3f3e0362368e6a"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P003_B256.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P003_B256.npz",
+    "sha256": "43d522f25b291ab4cfb4e4c127b2fce2b7b4391b76d15b64388ce29ffd9cc1b9"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P003_B4096.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P003_B4096.npz",
+    "sha256": "a4de96173588baede2d5382bb80444e5250c33691a55de89ccc1492e446dca47"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P003_B512.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P003_B512.npz",
+    "sha256": "dd55204ab6f8a47834a10e0315a87227eb55f1d992c07482b3d33f3396b09815"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P003_B8192.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P003_B8192.npz",
+    "sha256": "8ea15d45b280fc6dc69dcde6d92741f97ecaa212e016d974dff1cfb9b8fdaa40"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P004_B1024.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P004_B1024.npz",
+    "sha256": "508bf56bde56f371281245541cb9379f8e7cfef8403d13387e40e8aab5661f8f"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P004_B2048.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P004_B2048.npz",
+    "sha256": "e4881ef0a529d56fbcbeb955324d24dadff1eb45e0125e5323f47a672ad1a383"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P004_B256.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P004_B256.npz",
+    "sha256": "809bc7e611f323ad6fa604ad8762e1586992254d3dd0e69e4d14ab3b54393b9a"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P004_B4096.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P004_B4096.npz",
+    "sha256": "ac819711b35221278b90baaa3482bff8176bd4b0d56e7b94a7e632a693ca971a"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P004_B512.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P004_B512.npz",
+    "sha256": "8782be8f4b251bd8348e25672defeb6f15f599ea9496ccadb3c57f77baf50735"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/gate0_evidence/P004_B8192.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\gate0_evidence\\P004_B8192.npz",
+    "sha256": "e10e9cb5bff3bcbd9dac1d2f8cb32944f77837097c9082e07fbf8fb5119b3dd8"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/raw/P001.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\raw\\P001.npz",
+    "sha256": "006782fbd2a70906380b12c367c1792210f3221a4ca270247a820bde782e0f71"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/raw/P002.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\raw\\P002.npz",
+    "sha256": "c87955ddea5a29eccf2be5bf2018e1ec2aae1c9609ad5bf4bbc1d4672ebfee49"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/raw/P003.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\raw\\P003.npz",
+    "sha256": "c7ce1e3b1dd0902af3369d073f293c3c818ceca6dfa767189d067d4577effb6c"
+  },
+  {
+    "destination": "evidence/learned_ablation/results/pilot/raw/P004.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\raw\\P004.npz",
+    "sha256": "1b7eac238abe3e77bb87e598d59faec9a45fe93fd5ef8527fb5904e8e6c2fbb4"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/baseline_same_environment/learning.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\baseline_same_environment\\learning.json",
+    "sha256": "a3797ff8a5f19943d5066351afd1daa26e84fbafb22972bbfbaa232c751a17f1"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/baseline_same_environment/summary.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\baseline_same_environment\\summary.json",
+    "sha256": "75cfcf3aa8584d7698361b1923d63450ca14a54cedf5781f4ba6dae56c4d3177"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/a3_gaussianity.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\a3_gaussianity.md",
+    "sha256": "c5df865330ce53970d0343f611d5c4e1d1b0bbafe7c7635db6abaf869d200d88"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/a3_sigmahat_audit.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\a3_sigmahat_audit.md",
+    "sha256": "8638ba7ea19737a3e66a42ade30103082085b3e296fa5c40593b4382da61243e"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/cdev_learned_arm.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\cdev_learned_arm.md",
+    "sha256": "f57c3af8309faaa183055bf087fb9d242f32fa405dd90e890ff7aac7a01b9cfc"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/gate0_full_vs_diagonal.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\gate0_full_vs_diagonal.csv",
+    "sha256": "1228c2ca610f55cbe14c44bc325482b37b8f535b6e07cbde135d8b3b3dbe4011"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/pullback_frontier.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\pullback_frontier.csv",
+    "sha256": "008a32ec06eb341a051a9771b356ce1d3ee4eead11bbd856ffa0be5a9a442d95"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/protocol_original/cdev_learning.yaml",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\protocol_original\\cdev_learning.yaml",
+    "sha256": "2e55611626a0498c3f5feafd1743370ef2b84091827b615f3be7943cddef3a65"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/protocol_original/gate0_pilot.yaml",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\protocol_original\\gate0_pilot.yaml",
+    "sha256": "13bb9be0fc8de5709c671a1e474dd59054e8e2db68b626f174b0bab19f12aefc"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/baseline_same_environment/pilot/cdev_learned_arm.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\baseline_same_environment\\pilot\\cdev_learned_arm.md",
+    "sha256": "27ab27eb6f3cfe9e899f799613b2ed43cb5d64e5ffee5e8d44b1ceaf8157fd13"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/baseline_same_environment/pilot/gate0_full_vs_diagonal.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\baseline_same_environment\\pilot\\gate0_full_vs_diagonal.csv",
+    "sha256": "c7f387cad4146111745fe3c925769a65b9a02bfbe0971a43964c62b36fc5817e"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/a3_frozen_prediction/P001.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\a3_frozen_prediction\\P001.npz",
+    "sha256": "7990dda15fbb200b719902c80ceac04a9692971d68eef2cf6bad2dc1b42ef11e"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/a3_frozen_prediction/P002.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\a3_frozen_prediction\\P002.npz",
+    "sha256": "d771e6ae5636fdaf49fbc78942e9d64324c87e636c2eb9159055d6db4ce9ad6a"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/a3_frozen_prediction/P003.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\a3_frozen_prediction\\P003.npz",
+    "sha256": "4d51f77fce7febed7a049c933effb40377831c8420a5bbf1b61541dc8f6db327"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/a3_frozen_prediction/P004.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\a3_frozen_prediction\\P004.npz",
+    "sha256": "d3e0c30e9c5e31116244c4f65a87f7f7f3d5c15d16916e5de912321f66434e4f"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/raw/P001.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\raw\\P001.npz",
+    "sha256": "006782fbd2a70906380b12c367c1792210f3221a4ca270247a820bde782e0f71"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/raw/P002.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\raw\\P002.npz",
+    "sha256": "c87955ddea5a29eccf2be5bf2018e1ec2aae1c9609ad5bf4bbc1d4672ebfee49"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/raw/P003.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\raw\\P003.npz",
+    "sha256": "c7ce1e3b1dd0902af3369d073f293c3c818ceca6dfa767189d067d4577effb6c"
+  },
+  {
+    "destination": "evidence/learned_ablation/inputs/pilot/raw/P004.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\inputs\\pilot\\raw\\P004.npz",
+    "sha256": "1b7eac238abe3e77bb87e598d59faec9a45fe93fd5ef8527fb5904e8e6c2fbb4"
+  },
+  {
+    "destination": "evidence/learned_ablation/protocol.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\protocol.json",
+    "sha256": "6b6160a5a920630a5f690db6fc614f14c1ef2e472ae5a3ecaf531cb46598874d"
+  },
+  {
+    "destination": "evidence/learned_ablation/source_manifest.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\SHA256SUMS.json",
+    "sha256": "f0306b49bf28ba1ec3cd87a17d0303a3d9d61cbfc0454112b78f093ba1163d92"
+  },
+  {
+    "destination": "evidence/noise/results/het_pec_derisk/derisk_result.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\het_pec_derisk\\derisk_result.json",
+    "sha256": "92647b17315be4eccf89491dfc1349300f8314526a5cbe293afb31a2a7e1ccf4"
+  },
+  {
+    "destination": "evidence/noise/results/het_pec_derisk/derisk_result.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\het_pec_derisk\\derisk_result.md",
+    "sha256": "475a85e3523e27cb69987b2374ddb66186a90a2cd4e36c4c8b9e7795753e4230"
+  },
+  {
+    "destination": "evidence/noise/results/r1_derisk/derisk_result.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_derisk\\derisk_result.json",
+    "sha256": "2aa33435de8e372a63c5573dfe640ee21accac14475bbea338cd7eb913b081f9"
+  },
+  {
+    "destination": "evidence/noise/results/r1_derisk/derisk_result.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_derisk\\derisk_result.md",
+    "sha256": "6ce3c6da597616ef1862eb2b1eb9ab81e4fabf3055265b784381734f0a9588ef"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/epsilon_opt_manifest.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\epsilon_opt_manifest.json",
+    "sha256": "7b4cfc15db20a4b560e383179d0ab2ccf38c189bc3a9e92aa20b8fa2dcf59ffa"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/r1_full_result.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\r1_full_result.json",
+    "sha256": "2b579f64721c0340095e9f65d68174fc4849735189815f04c8bfb2e48e02b590"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/r1_full_result.md",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\r1_full_result.md",
+    "sha256": "0091e7a7e86e4d15801c74244122f735cd659008a46e32887abdf95e58e6859a"
+  },
+  {
+    "destination": "evidence/noise/results/het_pec_derisk/primitives/HET_PEC_DERISK_P0.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\het_pec_derisk\\primitives\\HET_PEC_DERISK_P0.npz",
+    "sha256": "ac2d04e1e6a1c969dbc0d9c7321105f4fa682a7f0f0a14014770f7af4d0057d6"
+  },
+  {
+    "destination": "evidence/noise/results/r1_derisk/primitives/R1_STRUCTURED_DERISK_P0.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_derisk\\primitives\\R1_STRUCTURED_DERISK_P0.npz",
+    "sha256": "51912db9b6a79501ce4b2841297da609ffed5015de8f678ead068ab951290817"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_001.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_001.npz",
+    "sha256": "a5cb37cd5838c5212783c2b9088d658049bfc561dd381288cfb2f8906a8f765e"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_002.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_002.npz",
+    "sha256": "edc90ec767ff44eee88bf01021bf2c4f0c0c41a5c31de1f1dc25fcfb406a5215"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_003.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_003.npz",
+    "sha256": "8464b41490294c9a30b823ed019ec34d62f0ec2213804345143435d0c5740832"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_004.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_004.npz",
+    "sha256": "aa26c3c605896243014a96c655687b80d4aee3c97abf0c9a366a4b7adc9dac24"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_005.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_005.npz",
+    "sha256": "281e5cb7aa9ccd4c31ae08e81f8f8095f4ecf86fc4d08ee46d42c5cb31c81860"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_006.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_006.npz",
+    "sha256": "c067110c7825b38289b5e2d074fc0ccf48a9a1c021ea575adeb78ffe08dab408"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_007.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_007.npz",
+    "sha256": "57b10bb017b7d70fca70f182fe3f56b077acf2ceb58f8b232cecd5dd3df9621c"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_008.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_008.npz",
+    "sha256": "6882dffad41604634e1a6fb579c5af993e4a67436c6d70fe44cf902c85579084"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_009.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_009.npz",
+    "sha256": "25e7000998101a5a9ff7b34154d015b7f94c37015b0e5aadb6dc07c27feeffec"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_010.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_010.npz",
+    "sha256": "4570caacb1c5ac7d76c39c6f6919500f83eadb27c4c8f3d1f6f1757cb4a5e0d8"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_011.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_011.npz",
+    "sha256": "964fb14a39c497edd5c947951599e248380a2fd765abc311a079e7a7893e8077"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_012.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_012.npz",
+    "sha256": "5dbc1e0f466fbacec36bab4470c07628d4c99768f94d11bfc9c6492fa1270be6"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_013.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_013.npz",
+    "sha256": "9d45383c2325d769c7b366ce3806c021ce510ee841f8a5bd436a9ba6532395b5"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_014.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_014.npz",
+    "sha256": "9c5d5964338570b61580fb8543533a99f7e99b801eb682d27586e98c21b36847"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_015.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_015.npz",
+    "sha256": "3c89615d554863595b501ebe1ffa05df086065549d79ee09c39bb7debbbc1c69"
+  },
+  {
+    "destination": "evidence/noise/results/r1_full/primitives/R1_016.npz",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\results\\r1_full\\primitives\\R1_016.npz",
+    "sha256": "d07d13f16ed11bf52fd1e1010250b936b7fe6de0f490f5d39dfeeb1e883e7d0b"
+  },
+  {
+    "destination": "evidence/noise/inputs/baseline_same_environment.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\inputs\\baseline_same_environment.json",
+    "sha256": "f048848e1120649bd834ba28a8cf1f5aa0d3ba00f175d536640a026ecd6ace42"
+  },
+  {
+    "destination": "evidence/noise/inputs/protocol_original/het_pec_derisk.yaml",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\inputs\\protocol_original\\het_pec_derisk.yaml",
+    "sha256": "f099df8d4533ba8525ed15abf062b0d1c78ae156ac305902d918f00038040a22"
+  },
+  {
+    "destination": "evidence/noise/inputs/protocol_original/r1_full.yaml",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\inputs\\protocol_original\\r1_full.yaml",
+    "sha256": "94d090308a3b51fbf90cc9249232cfdd794f71a0c531c6a301349797eb82e3d2"
+  },
+  {
+    "destination": "evidence/noise/inputs/protocol_original/r1_structured_noise_derisk.yaml",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\inputs\\protocol_original\\r1_structured_noise_derisk.yaml",
+    "sha256": "9a790c3947802159460dbe45e40e351bd3f99519cfe5f925d1d07b4bbe14b1f6"
+  },
+  {
+    "destination": "evidence/noise/inputs/historical/het_pec_derisk/derisk_result.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\inputs\\historical\\het_pec_derisk\\derisk_result.json",
+    "sha256": "c771a6564635d42448fd75d7256f475467459773b6251e6f7b0bd32a90704dc2"
+  },
+  {
+    "destination": "evidence/noise/inputs/historical/r1_derisk/derisk_result.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\inputs\\historical\\r1_derisk\\derisk_result.json",
+    "sha256": "41cee5e2899018ac05b41773f48675c142d021c478cceb93c6abf4d274b2fd15"
+  },
+  {
+    "destination": "evidence/noise/inputs/historical/r1_full/epsilon_opt_manifest.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\inputs\\historical\\r1_full\\epsilon_opt_manifest.json",
+    "sha256": "7b4cfc15db20a4b560e383179d0ab2ccf38c189bc3a9e92aa20b8fa2dcf59ffa"
+  },
+  {
+    "destination": "evidence/noise/inputs/historical/r1_full/r1_full_result.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\inputs\\historical\\r1_full\\r1_full_result.json",
+    "sha256": "8de40d437ce655e6944d7a0233e4b3afc5f7ba45019cfbe7629ef4ab686ccb96"
+  },
+  {
+    "destination": "evidence/noise/protocol.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\protocol.json",
+    "sha256": "6b6160a5a920630a5f690db6fc614f14c1ef2e472ae5a3ecaf531cb46598874d"
+  },
+  {
+    "destination": "evidence/noise/source_manifest.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_ruido_v1\\SHA256SUMS.json",
+    "sha256": "b340542f6b2e8c29feb0265ddcf6dd02c7cd7db603d9e6b61554191287de5e97"
+  },
+  {
+    "destination": "evidence/e2/corrected/e2_corrected_crossings.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\e2_corrected_crossings.csv",
+    "sha256": "535c997d73ccbc3748aa00c0b7ee8f9d63a093e7925560acbe8c321b310dccbf"
+  },
+  {
+    "destination": "evidence/e2/corrected/e2_full_ledger.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\e2_full_ledger.csv",
+    "sha256": "8f5d0a4b955b01de4d8a21cd3aadd614cdbdd9e3cbc27e302fc9bf704e5c75eb"
+  },
+  {
+    "destination": "evidence/e2/corrected/e2_summary.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\e2_summary.json",
+    "sha256": "136b30dee3f291a382698c34eb94592e26548b35f7764efe2eb5666196449374"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C001_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C001_results.csv",
+    "sha256": "f5213c21954fc40e1ae105f0d99f1642dbabbb685e647c0dd5f5576671afc26a"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C002_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C002_results.csv",
+    "sha256": "601232a3aa6a1fe47e10355e7961bca6a65c9eb4774e998ed899c5a63ebb7d08"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C003_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C003_results.csv",
+    "sha256": "41c4ab3c9d7bc862bde25b315b444cfcf5579f6f33a6ce03cb49383103392bac"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C004_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C004_results.csv",
+    "sha256": "b4d0c71b74475537691ce14f79758f4f1c789e25f6b043b5ebd3341ddf1a3370"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C005_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C005_results.csv",
+    "sha256": "21418c1060a13b47501fa67f09ca542e58554044ff7578352862459b101e6e15"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C006_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C006_results.csv",
+    "sha256": "fead7a6e3df241980cae8eff355a76f137063f1ad0a8a469f1ff86793c4ac435"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C007_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C007_results.csv",
+    "sha256": "9b85cf4a9700df393742af0cfd8e5739c81ac5e8bf9f8a15f09476ba5b549e72"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C008_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C008_results.csv",
+    "sha256": "e8344d35a0ebc79cb4fcc45613f09ca33fcd3beca8d7344982b58b2df1a018d1"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C009_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C009_results.csv",
+    "sha256": "6672fefc60ebdafd07eb898793a37a5decfcd79c74c0dccfa42c5b5475529228"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C010_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C010_results.csv",
+    "sha256": "6b96e8cb516d4f7c939b0ea64d87dd856e03e62e8d6f0198db0033d61135420c"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C011_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C011_results.csv",
+    "sha256": "2d9f4ab3653be0f7795b9fc2b9bbbdc1e9b8a4ae46b05649bde8fa3b9c10de6e"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C012_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C012_results.csv",
+    "sha256": "6eb5c8d681edeb7ccf805d5185f341e4628d73de67dd3585e74695a8da3cc5d8"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C013_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C013_results.csv",
+    "sha256": "29c2aa70d66a227aea93761f15f521e08f1ed293cb7aeb0ee8d999ee8a08bfda"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C014_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C014_results.csv",
+    "sha256": "0643b9661bb1ed48c361fd053c074d043070a05ac4a15be837bececab7564590"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C015_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C015_results.csv",
+    "sha256": "2882f0b5a8f76c5342241af2c15eef17d9868625dbeaa6c520f97b17f3737515"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C016_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C016_results.csv",
+    "sha256": "d15e83219299a3b0d25abe7fe083e5352be367b940d3f8c5a203eecdcbc73913"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C017_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C017_results.csv",
+    "sha256": "df36a2a5f9bcbe7d0da8a8f395d2f21c73e7284dd9653f2c35eceb8e1e589778"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C018_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C018_results.csv",
+    "sha256": "ad87cd172d8eab782caac85c217f62d96e317f865cb785c9a4db7bccc25305c9"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C019_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C019_results.csv",
+    "sha256": "00de10b1a5cb3130548a246db98f3427290347e2b4ec6dfbb149c3404166a590"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C020_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C020_results.csv",
+    "sha256": "d1ab0c855b36287f8ccdbd5cff2498ec34b50bf59d0baea94978f2a27e8fc922"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C021_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C021_results.csv",
+    "sha256": "3818efcb95c12d2184951d9f06ff602f23916f7156d3d98d070c81c50abf8dd9"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C022_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C022_results.csv",
+    "sha256": "a663f85221649932d49e533a17446a041fea755f8eea3604b969f334a679f87a"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C023_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C023_results.csv",
+    "sha256": "d0bf2d20af622ead54846953d172444ca458095d9f344eca82e4c0ada3501d0a"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C024_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C024_results.csv",
+    "sha256": "73aed1287f8bec8df5c0f6b2f3d9db39f9f85dbfb69f60cbb4979b3576a5be03"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C025_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C025_results.csv",
+    "sha256": "1133a8655a62b8e7a9636949c5cf865800a633439bca8966df075a97b339a1a7"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C026_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C026_results.csv",
+    "sha256": "6c35319bdddb05e3d01c69336fa31ba6ae82e6f18a28c75d8cb12550ac4723f1"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C027_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C027_results.csv",
+    "sha256": "b11df48a74ae52c9ec5728d811fb5f430c52460d8111196cba95316b0cadf04b"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C028_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C028_results.csv",
+    "sha256": "880392c5acf637d2610ad9d942b36753bcaaafcccd835de0a98f373cb0d0409e"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C029_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C029_results.csv",
+    "sha256": "22e8d507d70f17816ecab916810a77e33b04cc854111d932667ee56aaa8e5ab8"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C030_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C030_results.csv",
+    "sha256": "0634c4718706e2e4b846a981a1567ed9560a596530fda8c40ad4d80b90f6d886"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C031_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C031_results.csv",
+    "sha256": "50bb6d3fa460d9edacee5fb5548e13a161ca47cdae50792fc0d87f8379d45f16"
+  },
+  {
+    "destination": "evidence/e2/corrected/inputs/reproducibility/reference_confirmatory/e2/instances/C032_results.csv",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\e2_impacto_completo_v3\\corrected\\inputs\\reproducibility\\reference_confirmatory\\e2\\instances\\C032_results.csv",
+    "sha256": "60ed20e6dbc264c851642f5bd8d27a0d2eca5a34ca210de3e7ef0afdfda39107"
+  },
+  {
+    "destination": "evidence/e2/causas_verificadas.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\cierre_E2_v3\\causas_verificadas.json",
+    "sha256": "2c2dab8ec6a5947e2026b7260d73f73e48e1e84e27560c1b77702fcae1abad53"
+  },
+  {
+    "destination": "evidence/e2/previous_validation.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\cierre_E2_v3\\VALIDACION.json",
+    "sha256": "d0fb3a480191d09ad2eea1b6f24c56ffa3bf1f971e661dcf6484231a8da554cc"
+  },
+  {
+    "destination": "evidence/e2/previous_provenance.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\cierre_E2_v3\\procedencia_sha256.json",
+    "sha256": "72405cab66102aeb8287ea678499d582a751a92398905cb93832f261308bf731"
+  },
+  {
+    "destination": "evidence/e2/source_manifest.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\cierre_E2_v3\\SHA256SUMS.json",
+    "sha256": "8cf1c183462d8e00e627d860ba428778c0fdbcf732472b5cdb1b642ee71aa7c4"
+  },
+  {
+    "destination": "evidence/hardware/inputs/previous_reanalysis.json",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\results\\hardware.json",
+    "sha256": "7f139ab103dfe952554477c787819789ba09e03d176d22ef62dda145d0dd79fe"
+  },
+  {
+    "destination": "manuscript_review/source_v38.tex",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v38\\manuscript\\main.tex",
+    "sha256": "b546cada2b95d5ec790a3c17da327ea3e3d5ae7e842250ed528c5f70343a3b7b"
+  }
+]

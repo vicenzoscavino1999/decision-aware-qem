@@ -1,0 +1,113 @@
+{
+  "source": "all archived physical measurement counts, 10 epochs, 60 repetitions",
+  "executed_coefficients": [
+    1.4629228031672752,
+    0.11123159049815799,
+    -0.5741543936654359
+  ],
+  "prediction": "frozen historical covariance prediction retained",
+  "old_endpoint": {
+    "pairs": [
+      {
+        "delta_pred": -0.011183401775058943,
+        "delta_rank": 0.002253195104856799,
+        "pair": [
+          "Raw",
+          "Accuracy-ZNE"
+        ],
+        "passed": false,
+        "threshold": 0.002795850443764736,
+        "ucb95": 0.006287446670537962
+      },
+      {
+        "delta_pred": -0.011183055313394363,
+        "delta_rank": 0.003764840741952424,
+        "pair": [
+          "Raw",
+          "DA-ZNE"
+        ],
+        "passed": false,
+        "threshold": 0.002795763828348591,
+        "ucb95": 0.01122013188053722
+      },
+      {
+        "delta_pred": 3.464616645798557e-07,
+        "delta_rank": 0.006018035846809223,
+        "pair": [
+          "Accuracy-ZNE",
+          "DA-ZNE"
+        ],
+        "passed": false,
+        "threshold": 8.661541614496393e-08,
+        "ucb95": 0.013948376632736695
+      }
+    ],
+    "primary_pass": false,
+    "risks": {
+      "Accuracy-ZNE": 0.011183402011430976,
+      "DA-ZNE": 0.011183055549766396,
+      "Raw": 2.3637203305781895e-10
+    }
+  },
+  "corrected_endpoint": {
+    "risks": {
+      "Accuracy-ZNE": 0.011183401905922263,
+      "DA-ZNE": 0.011183055444244028,
+      "Raw": 2.3637212837538435e-10
+    },
+    "pairs": [
+      {
+        "pair": [
+          "Accuracy-ZNE",
+          "DA-ZNE"
+        ],
+        "delta_pred": 3.464616782355989e-07,
+        "delta_rank": 0.006020649168730077,
+        "ucb95": 0.013954746175168167,
+        "threshold": 8.661541955889973e-08,
+        "passed": false
+      },
+      {
+        "pair": [
+          "Accuracy-ZNE",
+          "Raw"
+        ],
+        "delta_pred": 0.011183401669550135,
+        "delta_rank": 0.002254198714344869,
+        "ucb95": 0.006290724615956574,
+        "threshold": 0.0027958504173875337,
+        "passed": false
+      },
+      {
+        "pair": [
+          "DA-ZNE",
+          "Raw"
+        ],
+        "delta_pred": 0.0111830552078719,
+        "delta_rank": 0.003766450454385208,
+        "ucb95": 0.011226257791838183,
+        "threshold": 0.002795763801967975,
+        "passed": false
+      }
+    ],
+    "primary_pass": false
+  },
+  "secondary": {
+    "methods": {
+      "Accuracy-ZNE": {
+        "relative_frobenius_error": 0.12588622188845267,
+        "passed": true
+      },
+      "DA-ZNE": {
+        "relative_frobenius_error": 0.20928696234530866,
+        "passed": false
+      },
+      "Raw": {
+        "relative_frobenius_error": 0.1730958032986159,
+        "passed": true
+      }
+    },
+    "secondary_pass": false
+  },
+  "label": "failed_or_inconclusive"
+}

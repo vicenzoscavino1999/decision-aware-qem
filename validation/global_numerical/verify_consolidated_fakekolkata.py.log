@@ -1,0 +1,35 @@
+{
+  "instances": 48,
+  "samples_compared_exactly": 240000,
+  "failure_labels_checked": 5760,
+  "analysis_records_equal_excluding_provenance": 48,
+  "selector_choices_equal": 96,
+  "outcomes_csv_byte_identical": true,
+  "summary_equal": true,
+  "readout_probability_vectors_checked": 3600,
+  "readout_max_abs_error": 3.469446951953614e-17,
+  "independent_REM_expectations_checked": 576,
+  "REM_max_abs_error": 5.329070518200751e-15,
+  "independent_scalar_minimax_fits_checked": 48,
+  "minimax_max_scaled_objective_excess": 7.740203980444234e-12,
+  "MSE_max_abs_error": 0.0,
+  "ledger_rows_checked": 288,
+  "independent_bootstrap_resamples": 10000,
+  "independent_cluster_intervals": {
+    "relative_reduction_cluster_ci": [
+      0.17160686427457097,
+      0.3333333333333333
+    ],
+    "paired_difference_cluster_ci": [
+      -0.21979166666666666,
+      -0.11666666666666667
+    ],
+    "paired_difference_GRI_minus_Raw_cluster_ci": [
+      -0.023958333333333335,
+      0.019791666666666666
+    ]
+  },
+  "new_physical_simulations": 0,
+  "elapsed_seconds": 8.09399999998277,
+  "scope": "Full cached-probability reanalysis; no independent regeneration of the physical density matrices."
+}

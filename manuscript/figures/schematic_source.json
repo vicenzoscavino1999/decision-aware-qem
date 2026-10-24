@@ -1,0 +1,17 @@
+{
+  "figure_label": "fig:pipeline",
+  "kind": "original conceptual schematic",
+  "source": "F0_estimation_decision_cost.tex",
+  "pdf": "F0_estimation_decision_cost.pdf",
+  "source_sha256": "8c31035e91e0cdd61e0f3f19c99dc4c38506cea6a43575a90529e45cba2890e5",
+  "pdf_sha256": "7668eb7a9405de7e23e157563c00b16c3f86f97c5f38e8d557c64bf76ea464be",
+  "static_E1_shots": {
+    "fitting": "30nt",
+    "selection": "60nt",
+    "evaluation": "60nt",
+    "total": "150nt",
+    "decisions": 20
+  },
+  "reference_section": "sec:e1_reanalysis",
+  "new_experimental_data": false
+}

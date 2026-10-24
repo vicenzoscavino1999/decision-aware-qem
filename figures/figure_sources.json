@@ -1,0 +1,43 @@
+[
+  {
+    "figure": "F1_accuracy_decision_separation.png",
+    "sha256": "1113b453e6286ff3bad4acb334e9b1619dd722935cecd34f1b3114b06bcd0134",
+    "sources": {
+      "evidence/cdr_pec/results/proof_of_mechanism/result.json": "4cab33d8e85696d20cb784fc6dc9bd3b53ccc4301d3b565df6757cd6be3fe6c7"
+    },
+    "series": "F1_series.csv"
+  },
+  {
+    "figure": "F6_gate0_full_vs_diagonal.png",
+    "sha256": "91888c2c53787a3aa18fe8ab02c19e891bddb3b507b2f8cb5f1897527ad43aa9",
+    "sources": {
+      "evidence/learned_ablation/results/pilot/gate0_full_vs_diagonal.csv": "795eab9c40de32c8732002973092665fed30eab7f82ffe2c4a2fc9ac4143dd73"
+    },
+    "series": "F6_series.csv"
+  },
+  {
+    "figure": "F7_e1_reanalysis.png",
+    "sha256": "5b16ee1bf01c4df49f3f2640ea662324db44c8847f41da37532f7f56da51d569",
+    "sources": {
+      "results/e1/summary.csv": "7933504f6f6c8f1df48f40f7bffc7ecfb3bccd2bb57b7cd34164bed54bc4ffe1"
+    },
+    "series": null
+  },
+  {
+    "figure": "F8_dynamic_full_cost.png",
+    "sha256": "2ce5c2214befb5fd16b5547d877c87b8400b99fc78c81723ed40e7fce475612f",
+    "sources": {
+      "results/e2/e2_full_ledger.csv": "8f5d0a4b955b01de4d8a21cd3aadd614cdbdd9e3cbc27e302fc9bf704e5c75eb"
+    },
+    "series": null
+  },
+  {
+    "figure": "F9_e3_comparisons.png",
+    "sha256": "62caf9254c84567536dc14de9337deaf57dbab10376a00db23ec0e71bfbc07a6",
+    "sources": {
+      "results/confirmatory/e3_independent_mean_and_failure.csv": "364309c537215e61b51ffb48d213605f09967bc12af5c9f2599977457d2d1e9c",
+      "results/confirmatory/e3_pullback_frontier.csv": "de6ed3273e35f53bc009ede05d729490247587590768a13aaf213d9ae78d6f13"
+    },
+    "series": "F9_e3_series.csv"
+  }
+]

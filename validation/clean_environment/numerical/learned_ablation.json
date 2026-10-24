@@ -1,0 +1,99 @@
+{
+  "characterization_records": 1000,
+  "shots_verified": 4096000,
+  "primitive_moments": 300,
+  "directional_derivatives": 72,
+  "channel_covariance_max_error": 4.718447854656915e-16,
+  "gradient_contraction_max_error": 1.4198305075055484e-16,
+  "channel_gaussian_max_error": 6.198363379228411e-07,
+  "gate0_method_rows": 72,
+  "gate0_selectors": 24,
+  "gate0_covariance_max_error": 3.3306690738754696e-16,
+  "diagonal_max_error": 7.216449660063518e-16,
+  "full_cdf_crosscheck_max_error": 5.098585240670417e-07,
+  "minimax_relative_excess": 2.3767329009101925e-12,
+  "rare_tail_bounds": [
+    {
+      "cell": "P002",
+      "method": "Raw",
+      "budget": 8192,
+      "value": 2.089533069316272e-09,
+      "lower": 2.082415214467419e-09,
+      "upper": 2.0895477058436433e-09
+    },
+    {
+      "cell": "P003",
+      "method": "Raw",
+      "budget": 2048,
+      "value": 8.549717531203475e-11,
+      "lower": 8.549716606773952e-11,
+      "upper": 8.549717545251182e-11
+    },
+    {
+      "cell": "P003",
+      "method": "Accuracy-ZNE",
+      "budget": 2048,
+      "value": 6.76055643270503e-08,
+      "lower": 6.760227542142566e-08,
+      "upper": 6.76056793137455e-08
+    },
+    {
+      "cell": "P003",
+      "method": "Decision-ZNE",
+      "budget": 2048,
+      "value": 4.5007116379208324e-08,
+      "lower": 4.5004401892394846e-08,
+      "upper": 4.500719338508452e-08
+    },
+    {
+      "cell": "P003",
+      "method": "Raw",
+      "budget": 4096,
+      "value": 2.777549884834152e-17,
+      "lower": 2.7775498848340715e-17,
+      "upper": 2.7775498848340715e-17
+    },
+    {
+      "cell": "P003",
+      "method": "Accuracy-ZNE",
+      "budget": 4096,
+      "value": 2.6474061130072417e-13,
+      "lower": 2.6474061130069827e-13,
+      "upper": 2.647406113006992e-13
+    },
+    {
+      "cell": "P003",
+      "method": "Decision-ZNE",
+      "budget": 4096,
+      "value": 1.369250527511629e-13,
+      "lower": 1.3692505275117018e-13,
+      "upper": 1.369250527511708e-13
+    },
+    {
+      "cell": "P003",
+      "method": "Raw",
+      "budget": 8192,
+      "value": 4.802608468602117e-37,
+      "lower": 4.802608468601841e-37,
+      "upper": 4.802608468601841e-37
+    },
+    {
+      "cell": "P003",
+      "method": "Accuracy-ZNE",
+      "budget": 8192,
+      "value": 2.867730738036999e-27,
+      "lower": 2.8677307380372463e-27,
+      "upper": 2.8677307380372463e-27
+    },
+    {
+      "cell": "P003",
+      "method": "Decision-ZNE",
+      "budget": 8192,
+      "value": 6.168036538150492e-28,
+      "lower": 6.168036538150093e-28,
+      "upper": 6.168036538150093e-28
+    }
+  ],
+  "e_C_replicates": 0.009575596197854423,
+  "e_C_aggregated": 0.002527210769361264
+}

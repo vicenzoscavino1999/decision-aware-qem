@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "claim_checks": {
+    "partition_design": "20 balanced $10/10/20$ partitions of the same 48 instances",
+    "balanced_counts": "five times in fitting, five in selection and ten in testing",
+    "retrospective": "after the original E1 outcomes were known",
+    "original_kept": "The original split remains the primary analysis and is excluded from the alternative-partition average.",
+    "unchanged_costs": "original methods, ideal references, shot blocks and costs",
+    "dependent_ranges": "ranges across dependent partitions, not confidence intervals",
+    "full_cost_range_Raw": "$6.35$ to $10.21$",
+    "full_cost_range_MSE-selector": "$-18.13$ to $-12.60$",
+    "directions_both_budgets": "preserves both full-cost directions in every partition at both budgets",
+    "averaged_difference_Raw": "$0.0843$",
+    "averaged_interval_Raw": "$[0.0578,0.1110]$",
+    "averaged_difference_MSE-selector": "$-0.1535$",
+    "averaged_interval_MSE-selector": "$[-0.1956,-0.1119]$",
+    "evaluation_difference": "$0.0067$",
+    "evaluation_interval": "$[-0.0037,0.0157]$",
+    "cluster_method": "rates are first averaged over partitions within each instance, followed by 10,000 paired bootstrap resamples of the 48 complete instance clusters",
+    "inference_scope": "without adding independent observations or testing transfer to new landscapes"
+  },
+  "archived_files_verified": 1097,
+  "balanced_split_assignments_rechecked": true,
+  "both_primary_directions_hold_in_all_20_partitions_at_both_budgets": true,
+  "averages_checked_against_instance_records": true,
+  "new_experiments_run": false,
+  "source_sha256": "4d0b70cea6da3742245f3e477c968d33b7e86e7a3ae2ee108d0dc35f9c50427d",
+  "pdf_sha256": "51a23a507d271ea2dafbc906b537451dfa2f2ed68e692b6c6fab8306e291b03a"
+}

@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational (fractions.Fraction)",
+  "complete_target_laws_identical": true,
+  "opposite_unique_ideal_minimizers": true,
+  "calibration_reference_laws_distinguishable": true,
+  "worst_model_error_lower_bound": "1/2",
+  "bound_reason": "Identical record laws give one common output probability q for x0; errors are 1-q and q.",
+  "models": {
+    "A": {
+      "attenuations": [
+        "4/5",
+        "1",
+        "1/2"
+      ],
+      "candidates": [
+        {
+          "ideal_energy_exact": "19/40",
+          "ideal_energy_decimal": 0.475,
+          "target_record_law": {
+            "(-1, -1, -1)": "0",
+            "(-1, -1, 1)": "0",
+            "(-1, 1, -1)": "133/800",
+            "(-1, 1, 1)": "147/800",
+            "(1, -1, -1)": "0",
+            "(1, -1, 1)": "0",
+            "(1, 1, -1)": "247/800",
+            "(1, 1, 1)": "273/800"
+          }
+        },
+        {
+          "ideal_energy_exact": "29/40",
+          "ideal_energy_decimal": 0.725,
+          "target_record_law": {
+            "(-1, -1, -1)": "0",
+            "(-1, -1, 1)": "0",
+            "(-1, 1, -1)": "63/400",
+            "(-1, 1, 1)": "117/400",
+            "(1, -1, -1)": "0",
+            "(1, -1, 1)": "0",
+            "(1, 1, -1)": "77/400",
+            "(1, 1, 1)": "143/400"
+          }
+        }
+      ],
+      "unique_argmin": 0,
+      "ideal_gap_exact": "1/4",
+      "calibration_parity_means": [
+        "4/5",
+        "1/2"
+      ],
+      "relative_weight_eta": "8/5"
+    },
+    "B": {
+      "attenuations": [
+        "2/5",
+        "1",
+        "4/5"
+      ],
+      "candidates": [
+        {
+          "ideal_energy_exact": "13/16",
+          "ideal_energy_decimal": 0.8125,
+          "target_record_law": {
+            "(-1, -1, -1)": "0",
+            "(-1, -1, 1)": "0",
+            "(-1, 1, -1)": "133/800",
+            "(-1, 1, 1)": "147/800",
+            "(1, -1, -1)": "0",
+            "(1, -1, 1)": "0",
+            "(1, 1, -1)": "247/800",
+            "(1, 1, 1)": "273/800"
+          }
+        },
+        {
+          "ideal_energy_exact": "5/8",
+          "ideal_energy_decimal": 0.625,
+          "target_record_law": {
+            "(-1, -1, -1)": "0",
+            "(-1, -1, 1)": "0",
+            "(-1, 1, -1)": "63/400",
+            "(-1, 1, 1)": "117/400",
+            "(1, -1, -1)": "0",
+            "(1, -1, 1)": "0",
+            "(1, 1, -1)": "77/400",
+            "(1, 1, 1)": "143/400"
+          }
+        }
+      ],
+      "unique_argmin": 1,
+      "ideal_gap_exact": "-3/16",
+      "calibration_parity_means": [
+        "2/5",
+        "4/5"
+      ],
+      "relative_weight_eta": "1/2"
+    }
+  }
+}

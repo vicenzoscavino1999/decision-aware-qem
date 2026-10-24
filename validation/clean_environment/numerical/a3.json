@@ -1,0 +1,16 @@
+{
+  "cases": 24,
+  "bootstrap_covariances": 14400,
+  "gradient_direction_checks": 72,
+  "strict_decisions": 14400,
+  "max_errors": {
+    "bootstrap_covariance": 6.522560269672795e-16,
+    "prediction_covariance": 3.608224830031759e-16,
+    "signed_projection": 1.4710455076283324e-15,
+    "interval_endpoint": 1.73749903353837e-14,
+    "structured_risk": 6.198363377563076e-07,
+    "gradient_direction": 3.1543673922884707e-12,
+    "common_risk_crosscheck": 1.4291838490443354e-07,
+    "calibration_covariance": 3.2612801348363973e-16
+  }
+}

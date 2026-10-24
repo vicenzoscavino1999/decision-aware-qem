@@ -1,0 +1,29 @@
+{
+  "analysis_stages": [
+    "E1",
+    "E2",
+    "E3",
+    "FakeKolkata",
+    "Hardware",
+    "A3",
+    "C3"
+  ],
+  "date_utc": "2026-10-23T12:58:29.392220+00:00",
+  "entrypoint": "reproduce.py",
+  "independent_auxiliary_blocks": [
+    "CDR_PEC",
+    "Noise",
+    "Controls",
+    "Learned_channel_and_ablation"
+  ],
+  "manuscript_modified": false,
+  "new_E2_acquisition": "one Linux trajectory validation only; full campaign replayed from original shots",
+  "new_hardware_jobs": 0,
+  "phase4_status": "offline reproduction candidate; final execution certificate delivered separately",
+  "revision": "part4_reproduction_v4",
+  "manuscript_revision": "v39",
+  "clean_python_environment": true,
+  "remote_publication": false,
+  "canonical_environment": "Linux amd64 / Python 3.12.10 / pinned Docker",
+  "full_fresh_level2_certified": false
+}

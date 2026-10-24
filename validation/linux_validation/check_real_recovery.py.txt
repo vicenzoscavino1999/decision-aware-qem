@@ -1,0 +1,25 @@
+"""Fault injection on a separate two-instance E1 replay; never touches production outputs."""
+from pathlib import Path
+import shutil,json,sys
+ROOT=Path('/app');dest=Path('/reports/case')
+if dest.exists():raise FileExistsError(dest)
+shutil.copytree(ROOT/'code',dest/'code',ignore=shutil.ignore_patterns('__pycache__','*.pyc','reference','reference_level1','reference_confirmatory','reference_extension'))
+folder=dest/'inputs/reproducibility/reference_confirmatory/raw';folder.mkdir(parents=True)
+for name in ('C001','C002'):shutil.copy2(ROOT/f'inputs/reproducibility/reference_confirmatory/raw/{name}.npz',folder/f'{name}.npz')
+sys.path[:0]=[str(dest/'code/src'),str(dest/'code')]
+from scripts.reproduce_integrated import cached_job,fingerprint,sha
+finger,_=fingerprint(dest,'e1')
+first=[cached_job(('e1',str(dest),name),finger) for name in ('C001','C002')]
+one=dest/'results/e1/_parts/C001.json';two=dest/'results/e1/_parts/C002.json'
+original=sha(one);second_time=two.stat().st_mtime_ns
+reused=cached_job(('e1',str(dest),'C001'),finger)
+one.write_text('damaged output')
+repaired=cached_job(('e1',str(dest),'C001'),finger)
+other=cached_job(('e1',str(dest),'C002'),finger)
+assert all(not r['checkpoint_reused'] for r in first)
+assert reused['checkpoint_reused'] and not repaired['checkpoint_reused'] and other['checkpoint_reused']
+assert sha(one)==original and two.stat().st_mtime_ns==second_time
+report=dict(status='complete',real_instances=['C001','C002'],intact_block_reused=True,damaged_block_regenerated=True,
+    unaffected_block_unchanged=True,restored_output_sha256=original,source_identity=finger)
+Path('/reports/report.json').write_text(json.dumps(report,indent=2)+'\n')
+print('REAL_CHECKPOINT_RECOVERY_PASS')

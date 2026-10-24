@@ -1,0 +1,8 @@
+INTEGRACIÓN Y REPRODUCCIÓN V3
+
+Documento actual: decision_residual_fields_theory_v39.pdf (30 páginas).
+Empezar por REPRODUCIR.txt para instalar el entorno y ejecutar las verificaciones.
+INFORME.txt resume esta entrega; results_index.json identifica resultados vigentes.
+Los datos pesados originales de E2 se distribuyen aparte en datos_E2_v3.zip.
+No hace falta repetir la campaña E2 para reconstruir los análisis suministrados.
+El paquete y el manuscrito todavía no están publicados como una nueva versión.

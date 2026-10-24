@@ -1,0 +1,28 @@
+{
+  "instances": 32,
+  "target": 0.8,
+  "pooled_max_success": {
+    "DA": 0.77578125,
+    "MSE": 0.78828125
+  },
+  "both_cross_instances": 13,
+  "median_full_cost_ratio_MSE_over_DA": 1.3,
+  "ratios": {
+    "C001": 1.1538461538461537,
+    "C003": 1.434782608695652,
+    "C004": 1.5714285714285714,
+    "C009": 1.3,
+    "C010": 2.0434782608695654,
+    "C011": 1.1538461538461537,
+    "C015": 1.5714285714285714,
+    "C016": 1.3,
+    "C019": 1.3,
+    "C022": 1.2380952380952381,
+    "C023": 1.5714285714285714,
+    "C025": 1.434782608695652,
+    "C032": 1.0
+  },
+  "scope": "shared Raw_Bmax assisted trajectory; full shot ledger, conditional crossings, no end-to-end dynamic superiority claim",
+  "training": "historical fixed static selector (40 repetitions x 3 scales x 25 candidates) amortized over 40 trajectories",
+  "oracle": "analytic A3 coefficient computation and noiseless reference values excluded from shot ledger; not a deployment cost claim"
+}

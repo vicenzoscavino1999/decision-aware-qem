@@ -1,0 +1,44 @@
+ENTRADA GLOBAL DE LA CONSOLIDACIÓN CORREGIDA
+
+Python 3.12.10, entorno registrado en requirements_this_run.txt. Los ejemplos siguientes se ejecutan desde la raíz de este paquete con ese entorno activado. No se necesita acceder a IBM ni ejecutar de nuevo la campaña larga E2.
+
+1. Verificar integridad, entorno, fuentes y cachés completas:
+
+    python code/scripts/reproduce_all.py
+
+2. Repetir las comprobaciones numéricas independientes en una carpeta nueva:
+
+    python code/scripts/reproduce_all.py --numerical "C:/ruta/nueva/verificacion"
+
+Se reconstruyen las cantidades indicadas por cada verificador. Los límites de alcance se conservan: E2 parte de resultados por trayectoria; FakeKolkata reutiliza probabilidades físicas; algunos verificadores usan gradientes de producción ya contrastados por pruebas separadas. Los informes existentes no se sobrescriben.
+
+3. Reanalizar las siete etapas en una carpeta nueva, fuera del paquete:
+
+    python code/scripts/reproduce_all.py --new-run "C:/ruta/nueva/reanalisis" --workers 8
+
+Se regeneran E3, E1, bootstrap A3, propagación C3, tablas E2, ajuste/selección/evaluación FakeKolkata y predicción/contraste de hardware. Después se ejecutan los verificadores y se generan las cinco figuras. Este comando no vuelve a adquirir E2, no reenvía trabajos de hardware, no regenera las probabilidades FakeKolkata y no repite las campañas auxiliares de caracterización. Reutiliza sus registros explícitamente. Es reproducción de análisis con evidencia guardada.
+Los datos auxiliares se comprueban, no se cambian por resultados de campañas nuevas. Los cuatro modelos piloto y el benchmark E0 se reutilizan desde la validación anterior. El índice results_index.json identifica las fuentes vigentes en el paquete entregado.
+El destino no puede existir ni estar dentro del paquete fuente. Una etapa sin registro de finalización no se certifica ni se reanuda automáticamente; tras una interrupción debe usarse otro destino. El directorio de una nueva ejecución conserva los datos de entrada y crea sus propios registros de etapa. Todavía no es un archivo final para publicación.
+
+4. Verificar una copia de los datos pesados E2:
+
+    python code/scripts/reproduce_all.py --e2-raw "C:/ruta/de/e2_full_pc_v2"
+
+El archivo validation/consolidated/external_E2_raw_manifest.json enumera las 25.600 rondas, sus tamaños y SHA-256. La raíz debe contener C001/rounds/... hasta C032/rounds/.... Son 4.745 GB, conservados por separado. Este comando solo lee; no simula. Los resultados por trayectoria usados para las tablas sí están incluidos en evidence/e2/corrected/.
+
+5. Generar figuras desde las fuentes corregidas:
+
+    python code/scripts/generate_all_figures.py --output-dir "C:/ruta/nueva/figuras"
+
+La salida incluye F1, F6, F7, F8 y F9 como PNG, series y figure_sources.json. El PDF v38 aún conserva las figuras anteriores; esta entrega no crea un manuscrito nuevo.
+
+ESTRUCTURA
+code/: código acumulado y verificadores. code/legacy/: entradas previas conservadas, sin uso en el comando canónico.
+results/: resultados principales vigentes y registros de siete etapas.
+evidence/: datos y salidas de los bloques ya corregidos, separados por experimento.
+results_index.json: selección explícita de las fuentes vigentes. El C2/C3 actual está en results/pilot/c3_reanalysis.json; el C3 viejo dentro de evidence/learned_ablation es contexto histórico.
+validation/consolidated/: comprobaciones de esta consolidación y manifiesto externo E2.
+validation/global_numerical/: ejecución conjunta comprobada de los diez verificadores.
+manuscript_review/: copia de referencia v38 y correspondencia de afirmaciones; no es una nueva versión compilada.
+
+Falta aplicar las actualizaciones documentales, producir/revisar el nuevo PDF y preparar el archivo final y su depósito público. Los resultados y códigos de esta carpeta no se han publicado automáticamente.

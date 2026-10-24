@@ -1,0 +1,231 @@
+{
+  "schema": "a3_full_gradient_joint_bootstrap_v1",
+  "instance_id": "P001",
+  "budget": 8192,
+  "raw_sha256": "006782fbd2a70906380b12c367c1792210f3221a4ca270247a820bde782e0f71",
+  "frozen_sha256": "d678e4d4b09e80d2001a4bf9a7608cd6c204495235d5edc22fafdc034e88bae0",
+  "evidence_sha256": "0635af5459f69bee8dc20e151c08417e16f421f805fa046b851a3e74be89473c",
+  "bootstrap_ci": 0.95,
+  "bootstrap_replicates": 200,
+  "rho_flip": 0.5,
+  "mde_absolute": 0.005,
+  "original_frozen_derivative": "full analytic common-incumbent conditional-normal Frobenius gradient",
+  "corrected_derivative": "full_common_incumbent_Frobenius",
+  "ci_rows": [
+    {
+      "problem_cell": "P001",
+      "method": "Raw",
+      "budget": 8192,
+      "active_dim": 3,
+      "max_cov_ci_width": 0.00030566725815944036,
+      "max_diag_ci_width": 0.00030566725815944036,
+      "max_offdiag_ci_width": 0.0002488916284608875,
+      "estimator": "full_LedoitWolf_then_submatrix",
+      "scope": "pointwise_percentile_width_not_simultaneous_band"
+    },
+    {
+      "problem_cell": "P001",
+      "method": "Accuracy-ZNE",
+      "budget": 8192,
+      "active_dim": 3,
+      "max_cov_ci_width": 0.0007049700440403307,
+      "max_diag_ci_width": 0.0007049700440403307,
+      "max_offdiag_ci_width": 0.00047800312630108424,
+      "estimator": "full_LedoitWolf_then_submatrix",
+      "scope": "pointwise_percentile_width_not_simultaneous_band"
+    },
+    {
+      "problem_cell": "P001",
+      "method": "Decision-ZNE",
+      "budget": 8192,
+      "active_dim": 3,
+      "max_cov_ci_width": 0.000686643018742948,
+      "max_diag_ci_width": 0.000686643018742948,
+      "max_offdiag_ci_width": 0.0004811823315587604,
+      "estimator": "full_LedoitWolf_then_submatrix",
+      "scope": "pointwise_percentile_width_not_simultaneous_band"
+    }
+  ],
+  "shrinkage_rows": [
+    {
+      "problem_cell": "P001",
+      "method": "Raw",
+      "budget": 8192,
+      "risk_ledoit_wolf": 0.0034134924284280332,
+      "risk_sample_cov": 0.0034368886239665164,
+      "abs_risk_shift": 2.3396195538483155e-05
+    },
+    {
+      "problem_cell": "P001",
+      "method": "Accuracy-ZNE",
+      "budget": 8192,
+      "risk_ledoit_wolf": 0.04028495281415445,
+      "risk_sample_cov": 0.04049656590621076,
+      "abs_risk_shift": 0.0002116130920563064
+    },
+    {
+      "problem_cell": "P001",
+      "method": "Decision-ZNE",
+      "budget": 8192,
+      "risk_ledoit_wolf": 0.04042362169176761,
+      "risk_sample_cov": 0.04063294744771839,
+      "abs_risk_shift": 0.0002093257559507844
+    }
+  ],
+  "sensitivity_rows": [
+    {
+      "problem_cell": "P001",
+      "method": "Raw",
+      "budget": 8192,
+      "subsample_R": 50,
+      "risk_subsample": 0.003377095072847003,
+      "risk_full_R": 0.0034134924284280332,
+      "abs_risk_shift_from_full": 3.639735558103041e-05,
+      "scope": "one_subsample_sensitivity_not_sample_size_sufficiency"
+    },
+    {
+      "problem_cell": "P001",
+      "method": "Raw",
+      "budget": 8192,
+      "subsample_R": 100,
+      "risk_subsample": 0.0019412832359488874,
+      "risk_full_R": 0.0034134924284280332,
+      "abs_risk_shift_from_full": 0.0014722091924791458,
+      "scope": "one_subsample_sensitivity_not_sample_size_sufficiency"
+    },
+    {
+      "problem_cell": "P001",
+      "method": "Raw",
+      "budget": 8192,
+      "subsample_R": 200,
+      "risk_subsample": 0.0034134924284280332,
+      "risk_full_R": 0.0034134924284280332,
+      "abs_risk_shift_from_full": 0.0,
+      "scope": "one_subsample_sensitivity_not_sample_size_sufficiency"
+    },
+    {
+      "problem_cell": "P001",
+      "method": "Accuracy-ZNE",
+      "budget": 8192,
+      "subsample_R": 50,
+      "risk_subsample": 0.04055866172134426,
+      "risk_full_R": 0.04028495281415445,
+      "abs_risk_shift_from_full": 0.0002737089071898069,
+      "scope": "one_subsample_sensitivity_not_sample_size_sufficiency"
+    },
+    {
+      "problem_cell": "P001",
+      "method": "Accuracy-ZNE",
+      "budget": 8192,
+      "subsample_R": 100,
+      "risk_subsample": 0.04420970277825087,
+      "risk_full_R": 0.04028495281415445,
+      "abs_risk_shift_from_full": 0.003924749964096419,
+      "scope": "one_subsample_sensitivity_not_sample_size_sufficiency"
+    },
+    {
+      "problem_cell": "P001",
+      "method": "Accuracy-ZNE",
+      "budget": 8192,
+      "subsample_R": 200,
+      "risk_subsample": 0.04028495281415467,
+      "risk_full_R": 0.04028495281415445,
+      "abs_risk_shift_from_full": 2.220446049250313e-16,
+      "scope": "one_subsample_sensitivity_not_sample_size_sufficiency"
+    },
+    {
+      "problem_cell": "P001",
+      "method": "Decision-ZNE",
+      "budget": 8192,
+      "subsample_R": 50,
+      "risk_subsample": 0.03055370456055928,
+      "risk_full_R": 0.04042362169176761,
+      "abs_risk_shift_from_full": 0.009869917131208328,
+      "scope": "one_subsample_sensitivity_not_sample_size_sufficiency"
+    },
+    {
+      "problem_cell": "P001",
+      "method": "Decision-ZNE",
+      "budget": 8192,
+      "subsample_R": 100,
+      "risk_subsample": 0.03524826080470367,
+      "risk_full_R": 0.04042362169176761,
+      "abs_risk_shift_from_full": 0.00517536088706394,
+      "scope": "one_subsample_sensitivity_not_sample_size_sufficiency"
+    },
+    {
+      "problem_cell": "P001",
+      "method": "Decision-ZNE",
+      "budget": 8192,
+      "subsample_R": 200,
+      "risk_subsample": 0.04042362169176783,
+      "risk_full_R": 0.04042362169176761,
+      "abs_risk_shift_from_full": 2.220446049250313e-16,
+      "scope": "one_subsample_sensitivity_not_sample_size_sufficiency"
+    }
+  ],
+  "stability_rows": [
+    {
+      "problem_cell": "P001",
+      "budget": 8192,
+      "ordering_ledoit_wolf": "Raw<Accuracy-ZNE;Raw<Decision-ZNE;Accuracy-ZNE<Decision-ZNE",
+      "ordering_sample_cov": "Raw<Accuracy-ZNE;Raw<Decision-ZNE;Accuracy-ZNE<Decision-ZNE",
+      "common_subset": [
+        0,
+        1,
+        2
+      ],
+      "restricted_ordering_ledoit_wolf": "Raw<Accuracy-ZNE;Raw<Decision-ZNE;Accuracy-ZNE<Decision-ZNE",
+      "restricted_ordering_sample_cov": "Raw<Accuracy-ZNE;Raw<Decision-ZNE;Accuracy-ZNE<Decision-ZNE",
+      "bootstrap_relation_pattern_frequency": 0.71,
+      "all_baseline_relations_resolved": true,
+      "bootstrap_scope": "common_subset_same_fixed_ideal_mean_not_full_risk",
+      "numerical_tolerance": 2e-06
+    },
+    {
+      "problem_cell": "P001",
+      "budget": 8192,
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "active_pair": true,
+      "predicted_delta": -0.045065090352762294,
+      "tau": 0.022532545176381147,
+      "signed_projected_error": 0.00792945697386905,
+      "baseline_projected_ratio": 0.3519112870649335,
+      "bootstrap_ratio_ci_low": 0.021242145572804662,
+      "bootstrap_ratio_ci_high": 0.8069518903709059,
+      "bootstrap_fail_fraction": 0.0,
+      "verdict": "interval_below_threshold",
+      "scope": "fixed_ideal_mean_full_gradient_linearized_covariance_error"
+    },
+    {
+      "problem_cell": "P001",
+      "budget": 8192,
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "active_pair": true,
+      "predicted_delta": -0.04501497458857162,
+      "tau": 0.02250748729428581,
+      "signed_projected_error": 0.007744199248509515,
+      "baseline_projected_ratio": 0.3440721368517937,
+      "bootstrap_ratio_ci_low": 0.02599974153529038,
+      "bootstrap_ratio_ci_high": 0.7932047729031273,
+      "bootstrap_fail_fraction": 0.0,
+      "verdict": "interval_below_threshold",
+      "scope": "fixed_ideal_mean_full_gradient_linearized_covariance_error"
+    },
+    {
+      "problem_cell": "P001",
+      "budget": 8192,
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "active_pair": false,
+      "predicted_delta": 5.011576419067243e-05,
+      "tau": 2.5057882095336215e-05,
+      "signed_projected_error": -0.00018525772535953403,
+      "baseline_projected_ratio": null,
+      "bootstrap_ratio_ci_low": null,
+      "bootstrap_ratio_ci_high": null,
+      "bootstrap_fail_fraction": null,
+      "verdict": "inactive_pair",
+      "scope": "fixed_ideal_mean_full_gradient_linearized_covariance_error"
+    }
+  ]
+}

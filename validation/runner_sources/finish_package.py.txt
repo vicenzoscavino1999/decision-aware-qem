@@ -1,0 +1,164 @@
+import difflib,hashlib,importlib.metadata,json,platform,sys,zipfile
+from datetime import datetime,timezone
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[2]
+OUT=ROOT/'outputs/integracion_reproduccion_parte4_v1'
+BASE=ROOT/'outputs/correccion_codigo_parte3_generacion_ejecutabilidad_v1'
+
+def save(name,text):
+ p=OUT/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text.strip()+'\n',encoding='utf-8')
+def dump(name,data):save(name,json.dumps(data,ensure_ascii=False,indent=2,sort_keys=True,allow_nan=False))
+def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def include(p):return p.is_file() and p.suffix!='.pyc' and not any(x in {'__pycache__','.pytest_cache'} for x in p.parts)
+
+protected={}
+for name in ['correccion_codigo_parte3_generacion_ejecutabilidad_v1','correccion_codigo_parte3_a3_auditoria_v1',
+ 'correccion_codigo_parte3_controles_v1','correccion_codigo_parte3_canal_ablaciones_v1','correccion_codigo_parte3_ruido_v1',
+ 'correccion_codigo_parte3_cdr_pec_v1','correccion_codigo_parte2_hardware_v1','correccion_codigo_parte2_fakekolkata_v1',
+ 'correccion_codigo_parte2_e3_v2','correccion_codigo_parte1_v3','cierre_E2_v3','revision_v38']:
+ folder=ROOT/'outputs'/name;manifest=json.loads((folder/'SHA256SUMS.json').read_text(encoding='utf-8-sig'))
+ changed=[r for r,h in manifest.items() if not (folder/r).exists() or digest(folder/r)!=h]
+ assert not changed,(name,changed)
+ protected[name]=dict(files_verified=len(manifest),changed=changed)
+dump('validation/protected_files.json',protected)
+
+mapping={
+ 'reproducibility':ROOT/'outputs/revision_v21/inputs/reproducibility',
+ 'pilot':BASE/'inputs/pilot',
+ 'learned_evidence':ROOT/'outputs/correccion_codigo_parte3_a3_auditoria_v1/inputs/learned_evidence',
+ 'learned_primitives':ROOT/'outputs/correccion_codigo_parte3_canal_ablaciones_v1/results/pilot/cdev_primitives',
+ 'previous_e3':ROOT/'outputs/correccion_codigo_parte2_e3_v2/results',
+ 'previous_e1':ROOT/'outputs/revision_v21/results/e1'}
+provenance={}
+for p in (OUT/'inputs').rglob('*'):
+ if not include(p):continue
+ rel=p.relative_to(OUT/'inputs')
+ source=BASE/'code/revision_v19/protocol.json' if rel.parts[0]=='protocol_previous' else mapping[rel.parts[0]]/Path(*rel.parts[1:])
+ assert digest(p)==digest(source),(p,source)
+ provenance[p.relative_to(OUT).as_posix()]=dict(source=str(source),sha256=digest(p))
+for p in (OUT/'results/pilot').rglob('*'):
+ if not include(p):continue
+ rel=p.relative_to(OUT/'results/pilot')
+ if rel.parts[0] in ('raw','a3_frozen_prediction','a3_primitive_evidence') or rel.as_posix() in ['pullback_frontier.csv','executability_diagnostic.csv','executability_diagnostic.json','executability_diagnostic.md']:
+  source=BASE/'results/pilot'/rel;assert digest(p)==digest(source)
+  provenance[p.relative_to(OUT).as_posix()]=dict(source=str(source),sha256=digest(p))
+for p in (OUT/'results/confirmatory/raw').glob('*.npz'):
+ source=OUT/'inputs/reproducibility/reference_confirmatory/raw'/p.name;assert digest(p)==digest(source)
+ provenance[p.relative_to(OUT).as_posix()]=dict(source=source.relative_to(OUT).as_posix(),sha256=digest(p))
+dump('validation/input_provenance.json',provenance)
+
+versions={d.metadata['Name']:d.version for d in importlib.metadata.distributions()}
+dump('validation/environment.json',dict(python=sys.version,platform=platform.platform(),packages=versions,
+ stage_workers={'confirmatory':8,'e1':4,'pilot':4,'c3':1},threads_per_worker=1))
+save('requirements_this_run.txt','\n'.join(f'{k}=={v}' for k,v in sorted(versions.items(),key=lambda x:x[0].lower())))
+old_protocol=json.loads((OUT/'protocol.json').read_text())
+old_protocol['integration']={'revision':'part4_v1','status':'retrospective numerical integration; full paper release pending',
+ 'entrypoint':'code/scripts/reproduce_integration.py','regenerated_stages':['E1','E3_confirmatory','A3_pilot_bootstrap','C3_current_maps'],
+ 'reused':'archived shot records; validated four pilot predictions; E0 timing measurement',
+ 'long_acquisition_repeated':False,'hardware_jobs_submitted':False,'manuscript_modified':False}
+dump('protocol.json',old_protocol)
+changed=[];diff=[]
+for p in sorted((OUT/'code').rglob('*')):
+ if not include(p):continue
+ rel=p.relative_to(OUT/'code');old=BASE/'code'/rel
+ if old.exists() and old.read_bytes()==p.read_bytes():continue
+ changed.append(rel.as_posix())
+ before=old.read_text(encoding='utf-8-sig').splitlines(keepends=True) if old.exists() else []
+ diff.extend(difflib.unified_diff(before,p.read_text(encoding='utf-8-sig').splitlines(keepends=True),fromfile='before/'+rel.as_posix(),tofile='after/'+rel.as_posix()))
+save('CAMBIOS_DESDE_GENERACION_V1.diff',''.join(diff))
+dump('validation/changed_sources.json',changed)
+for name in ('run_tests.py','finish_package.py'):save('validation/runner_sources/'+name+'.txt',(Path(__file__).parent/name).read_text(encoding='utf-8-sig'))
+assert json.loads((OUT/'validation/test_execution.json').read_text())['exit_code']==0
+v=json.loads((OUT/'validation/independent_integration.json').read_text())
+assert v['e1']['outcomes.csv']['changes']['failure']==0 and not v['e3']['decision_changes']
+assert all(v['e3']['comparison_changes'][c]==0 for c in ('old_covariance_order','old_all40_failure_order','method_mean_train_order','test_failure_order','left_test_failure','right_test_failure'))
+pdf=ROOT/'outputs/revision_v38/decision_residual_fields_theory_v38.pdf'
+assert digest(pdf)=='43c12fbad5c99cf8958a0562a7a74d95243618f34f1b9af7a3a78eb292a27265'
+
+save('INFORME.txt',f'''
+PARTE 4 — PRIMERA INTEGRACIÓN NUMÉRICA Y REPRODUCCIÓN
+
+RESULTADO
+Se ejecutaron con el código acumulado corregido E1, las 48 predicciones confirmatorias de E3, el bootstrap A3 sobre las cuatro predicciones piloto actuales y la propagación C3 del canal aprendido. Las decisiones y los recuentos principales se mantienen. Se completó la conexión del diagnóstico E0 con su esquema versión 2 y se regeneraron las figuras de E1 y E3.
+Esta entrega cierra la propagación numérica de las correcciones a estos bloques. La parte 4 completa sigue abierta: todavía hay que consolidar las restantes evidencias y entradas del repositorio, conciliar todas las tablas/figuras con el manuscrito y preparar la entrega final. No es un paquete final listo para publicar en GitHub/Zenodo.
+
+CORRECCIONES DE INTEGRACIÓN
+1. La generación de E3 identifica el modelo físico con gate0_profile=full, mientras que sus datos de 48 instancias se validan con profile=confirmatory_full. El lector comparaba esos dos identificadores diferentes como si fueran el mismo, impidiendo ejecutar la ruta completa. Ahora compara cada identificador con su campo correspondiente y sigue rechazando perfiles de datos incorrectos.
+2. El análisis E3 con medias estimadas admite una ruta explícita a las nuevas predicciones. Así usa los coeficientes recién generados en lugar de volver silenciosamente a las predicciones históricas. Se conserva la separación fija por hashes: 20 repeticiones para medias y 20 para evaluación; no se sustituyó por las primeras/últimas 20 filas.
+3. C3 reconstruye las covarianzas aprendidas con las varianzas primitivas archivadas y los mapas de las predicciones actuales. Reutilizar sin más las covarianzas antiguas habría dejado una mezcla de coeficientes. La variación máxima de covarianza por esta actualización es 1.92e-8; las interpretaciones no cambian. No se repite la caracterización del canal.
+4. Cada etapa produce un registro de fuentes, datos, versiones numéricas, archivos de salida y hashes. La caché completa se verifica antes de reutilizarse; una etapa incompleta, un archivo faltante o un hash distinto impiden certificarla. Una ejecución parcial no se anuncia como reanudable automáticamente: debe usarse un directorio nuevo. El lanzador de integración protege contra sobrescritura y contra destinos dentro del paquete fuente.
+5. E0 se verifica con un esquema JSON versión 2 y con una comprobación independiente de circuitos, disparos y correspondencia CSV/JSON. Se reutiliza la medición de tiempo ya realizada, no se presenta como un nuevo benchmark. Los desconocidos siguen siendo null; los tiempos de un solo proceso son aproximaciones de adquisición, no la duración de esta integración.
+6. El texto del protocolo de E1 describe las tolerancias y ramas numéricas que ya utiliza el núcleo. No se cambian presupuestos, separación de muestras ni reglas científicas. Dos pruebas antiguas de empates recibieron metadatos, tres escalas y hashes reales compatibles con la validación actual; se mantuvieron las aserciones de empates.
+
+IMPACTO EN E1
+Las 19.200 decisiones coinciden exactamente con la entrega anterior. Son 48 instancias, dos presupuestos base, dos comparaciones de costo, cinco políticas y 20 evaluaciones. Las 36 filas del resumen, incluidos todos los intervalos, coinciden; el ledger de presupuesto es idéntico byte por byte.
+A t=512 y costo de evaluación igual: GRI 30.83% de fallos y Raw 31.25%; diferencia -0.42 puntos porcentuales, IC95% [-1.98, 1.15]. A costo completo igual: GRI 30.83% y Raw 23.33%; diferencia +7.50 puntos, IC95% [4.17, 10.94]. Se conserva la ventaja frente al selector MSE, sin atribuir una ventaja frente a Raw a costo completo.
+
+IMPACTO EN E3
+Se regeneraron 48 modelos, 3.600 distribuciones primitivas y 864 covarianzas/gradientes. Permanecen 502 comparaciones activas: 487 satisfacen el criterio direccional y 15 no. La coincidencia de órdenes entre los dos puntajes de covarianza es 502/502; esto no significa 502 aciertos de fallo físico.
+Predicción de covarianza frente al fallo observado en 40 repeticiones: 302 coincidencias estrictas, 133 inversiones y 67 empates. Media específica del método estimada en entrenamiento frente al fallo en prueba independiente: 310 coincidencias, 94 inversiones y 98 empates. Los recuentos y la serie completa de la figura F9 son idénticos a la corrección anterior.
+Las 34.560 decisiones estrictas tampoco cambian al pasar de los coeficientes archivados a los nuevos. Los valores intermedios sí cambian: diferencia máxima en coeficientes 7.26e-5 y en riesgos de predicción 6.08e-6. La diferencia máxima frente a los gradientes históricos recortados es 25.57; 723 de las 864 matrices tienen entradas mayores de 1e-12 fuera de la máscara antigua. Es una corrección de derivadas, no una medida de mejora del rendimiento.
+Cambian cuatro etiquetas de predicción y tres etiquetas de coincidencia en C011, B=4096/8192, todas correspondientes a pares inactivos. No cambia ninguna etiqueta de pase/fallo. Los riesgos con medias estimadas cambian hasta 6.53e-6, sin cambiar órdenes ni decisiones. Se conserva la condición retrospectiva y la dependencia entre pares de una misma instancia.
+
+PILOTO A3 Y CANAL APRENDIDO C3
+El bootstrap se recalculó contra los hashes nuevos: 24 casos, 200 remuestreos por caso, 14.400 covarianzas bootstrap y 14.400 decisiones estrictas comprobadas. Se mantienen 70/72 celdas dentro de la tolerancia descriptiva de calibración. De 34 pares activos, 30 intervalos quedan bajo el umbral y cuatro lo cruzan; 38 pares son inactivos. Esto es diferente del diagnóstico puntual 32/34 favorable de la entrega anterior.
+C3 conserva 22 casos sin discrepancia proyectada detectada bajo sus condiciones, 10 inconclusos por variabilidad muestral y dos limitados por calibración; 38 son inactivos. Sus 68 intervalos se reconstruyeron independientemente. No se convierte ninguno de estos resultados en un certificado del riesgo físico ni en un control del resto de Taylor.
+
+EJECUCIÓN Y COMPROBACIONES
+E3 tardó 449.09 s con ocho procesos; E1 96.10 s con cuatro; bootstrap piloto 376.85 s con cuatro; C3 34.78 s con un proceso. Hubo solapamiento entre tareas: esos tiempos no se suman como duración total. Son reanálisis y predicciones a partir de datos guardados. No se repitió la adquisición larga E2 ni se enviaron trabajos de hardware.
+Pasan 167 pruebas relevantes, con siete avisos de deprecación de Qiskit. La integración no afirma que toda la batería histórica del repositorio ya esté migrada. El verificador independiente de E3 reconstruye momentos por sumas precisas, covarianzas, 1.728 derivadas direccionales y decisiones racionales estrictas. Errores máximos: media 3.55e-15, varianza 1.78e-15, covarianza 7.22e-16, riesgo 2.42e-7, derivada 1.47e-12 y proyección 3.31e-15.
+El verificador A3 reconstruye las 14.400 covarianzas bootstrap y las 14.400 decisiones; error máximo de intervalo 1.74e-14. El error máximo de los intervalos C3 es 4.45e-16. Se validó la reutilización de las cuatro etapas completas y sus 454 salidas. Se comprobó que preparar una carpeta nueva conserva las huellas de E1, E3 y piloto sin copiar los registros de etapas completadas; no se hizo otra corrida completa redundante.
+Las figuras PNG de E1 y E3 se inspeccionaron visualmente. Las series proceden de las tablas integradas. Se verificaron {sum(x['files_verified'] for x in protected.values()):,} archivos protegidos de doce entregas anteriores; el manuscrito y PDF v38 siguen intactos.
+
+SIGUIENTE PASO DEL PLAN
+Continuar dentro de la parte 4: consolidar E2/FakeKolkata/hardware y el resto de auxiliares con sus evidencias ya revisadas, migrar las entradas y verificadores globales que aún apuntan a referencias antiguas, y conciliar tablas, figuras y texto. Después se podrá producir un nuevo PDF y un paquete final de reproducción. No hay razón derivada de esta integración para repetir la corrida larga de E2.
+''')
+save('REPRODUCIR.txt',r'''
+REPRODUCIR ESTA INTEGRACIÓN — ALCANCE PARCIAL DE LA PARTE 4
+
+Requiere Python 3.12.10. requirements_this_run.txt conserva las versiones instaladas de esta ejecución, incluidas las dependencias transitivas y jsonschema. Se recomienda un entorno virtual separado. El archivo code/pyproject.toml conserva las dependencias declaradas del proyecto.
+
+Desde la raíz de este paquete, con el entorno activado:
+
+    python code/scripts/reproduce_integration.py
+
+Este comando verifica hashes del paquete (si hay manifiesto), versiones instaladas registradas, cuatro registros de etapas y diagnóstico E0. No calcula otra vez E1/E3/A3/C3.
+
+Para recalcular las cuatro etapas en un directorio nuevo externo al paquete:
+
+    python code/scripts/reproduce_integration.py --new-run "C:/ruta/nueva/integracion_repetida" --workers 8
+
+La carpeta de destino no debe existir. Se copian código, entradas y las cuatro predicciones piloto ya validadas; se regeneran E3, E1, bootstrap A3 y propagación C3, y se ejecutan los verificadores numéricos. El orden fijo de las semillas, la división por hashes y los presupuestos se conservan. No se adquieren nuevos disparos de E2 ni hardware. Los tiempos pueden cambiar con la máquina. Cada proceso usa un hilo BLAS; Aer conserva su configuración controlada de generación.
+El piloto se condiciona a las cuatro predicciones nuevas de la entrega anterior, cuya regeneración doble ya resultó idéntica. Este lanzador no vuelve a generarlas ni repite el benchmark E0. Las entradas históricas se incluyen para comparación y trazabilidad; sus resultados no sustituyen las salidas integradas.
+
+Para comprobar numéricamente el paquete entregado, sin recalcular las etapas:
+
+    python code/scripts/verify_integrated.py --package . --output comprobacion_integracion.json
+    python code/scripts/verify_a3_audit.py --package . --output comprobacion_a3.json
+    python code/scripts/verify_a3_audit.py --package . --output comprobacion_c3.json --c3-only
+
+Los archivos comprobacion_*.json son informes nuevos y no reemplazan validation/. El manifiesto comprueba archivos enumerados; no prohíbe crear informes adicionales.
+
+Figuras, a partir de las tablas integradas:
+
+    python code/plot_corrected_e1.py --input results/e1/summary.csv --output F7_e1.png
+    python code/plot_corrected_e3.py --input results/confirmatory/e3_independent_mean_and_failure.csv --frontier results/confirmatory/e3_pullback_frontier.csv --output F9_e3.png --series-output F9_series.csv
+
+Una vez terminada una etapa, cambiar sus fuentes, entradas o versiones numéricas invalida su caché. No se deben editar los registros de etapa para forzar un pase. Si una ejecución queda interrumpida antes de su registro completo, use un destino nuevo. El lanzador comprueba cachés completas; no implementa recuperación automática de ejecuciones parciales.
+
+El nombre heredado old_covariance_order de la tabla E3 identifica el tipo de comparación; en esta integración contiene la predicción regenerada, como registra results/integration/confirmatory.json. El sufijo historical_failure de la serie F9 también se conserva por compatibilidad; su fuente es la tabla integrada explícita. La figura usa una etiqueta neutral que describe el puntaje de covarianza.
+
+Los scripts heredados code/scripts/reproduce_all.py y los verificadores de referencias antiguas todavía no son la entrada canónica de esta integración. Su migración global queda pendiente. No interpretar un pase de una demostración sintética Level 1 como reproducción de las cifras del paper. Las diez reservas de experimentos sin implementar siguen terminando con un error explícito.
+
+Esta entrega no contiene un manuscrito nuevo ni consolida todavía todos los datos E2/FakeKolkata/hardware/auxiliares de sus paquetes anteriores. El cierre de la parte 4 y la preparación de GitHub/Zenodo continúan pendientes.
+''')
+dump('validation/figure_checks.json',dict(e1_source='results/e1/summary.csv',e3_sources=['results/confirmatory/e3_independent_mean_and_failure.csv','results/confirmatory/e3_pullback_frontier.csv'],e3_series_identical_to_previous=True,visual_inspection='Both PNG figures inspected; labels and intervals visible, no clipping'))
+manifest={p.relative_to(OUT).as_posix():digest(p) for p in sorted(OUT.rglob('*')) if include(p) and p.name!='SHA256SUMS.json'}
+dump('SHA256SUMS.json',manifest)
+archive=OUT.with_suffix('.zip')
+with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+ for rel in [*manifest,'SHA256SUMS.json']:z.write(OUT/rel,arcname=OUT.name+'/'+rel)
+with zipfile.ZipFile(archive) as z:
+ assert z.testzip() is None
+ for rel,h in manifest.items():assert hashlib.sha256(z.read(OUT.name+'/'+rel)).hexdigest()==h
+print(json.dumps(dict(manifest_files=len(manifest),source_changes=len(changed),protected_files=sum(v['files_verified'] for v in protected.values()),provenance_files=len(provenance),zip_bytes=archive.stat().st_size,zip_sha256=digest(archive)),indent=2))

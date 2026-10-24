@@ -1,0 +1,17 @@
+[
+  "experiments/a3_pullback_frontier.py",
+  "LICENSE",
+  "LICENSE-DATA",
+  "plot_corrected_e3.py",
+  "pyproject.toml",
+  "reproducibility/config/executability_diagnostic.schema.json",
+  "revision_v19/protocol.json",
+  "run_archive_corrections.py",
+  "scripts/replay_c3_audit.py",
+  "scripts/reproduce_integrated.py",
+  "scripts/reproduce_integration.py",
+  "scripts/verify_a3_audit.py",
+  "scripts/verify_integrated.py",
+  "tests/test_e3_plot_regression.py",
+  "tests/test_integrated_reproduction.py"
+]

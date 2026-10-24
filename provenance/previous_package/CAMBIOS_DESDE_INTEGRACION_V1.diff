@@ -1,0 +1,1729 @@
+--- before/legacy/generate_all_figures_preintegration.py
++++ after/legacy/generate_all_figures_preintegration.py
+@@ -0,0 +1,248 @@
++from __future__ import annotations
++
++import csv
++import json
++from collections import defaultdict
++from pathlib import Path
++
++import matplotlib
++
++matplotlib.use("Agg")
++import matplotlib.pyplot as plt
++
++
++REPO_ROOT = Path(__file__).resolve().parents[1]
++FIGURE_DIR = REPO_ROOT / "figures"
++
++PROOF_JSON = REPO_ROOT / "reproducibility/reference_extension/proof_of_mechanism/result.json"
++CLAIMS_JSON = REPO_ROOT / "reproducibility/reference_confirmatory/confirmatory_claims_summary.json"
++E1_CSV = REPO_ROOT / "reproducibility/reference_confirmatory/e1/e1_static_decision_failure.csv"
++E3_CSV = REPO_ROOT / "reproducibility/reference_confirmatory/e3/e3_pullback_frontier.csv"
++GATE0_CSV = REPO_ROOT / "results/pilot/gate0_full_vs_diagonal.csv"
++
++PDFS = [
++    "F1_accuracy_decision_separation.pdf",
++    "F3_dynamic_success.pdf",
++    "F4_e1_epsilon_terciles.pdf",
++    "F5_e3_directional_ordering.pdf",
++    "F6_gate0_full_vs_diagonal.pdf",
++]
++
++
++def require_file(path: Path) -> None:
++    if not path.exists():
++        raise FileNotFoundError(f"required figure source is missing: {path}")
++
++
++def load_json(path: Path) -> dict:
++    require_file(path)
++    return json.loads(path.read_text(encoding="utf-8"))
++
++
++def load_csv(path: Path) -> list[dict[str, str]]:
++    require_file(path)
++    with path.open(newline="", encoding="utf-8") as handle:
++        return list(csv.DictReader(handle))
++
++
++def as_float(value: str | int | float) -> float:
++    return float(value)
++
++
++def as_bool(value: str | bool) -> bool:
++    if isinstance(value, bool):
++        return value
++    lowered = value.strip().lower()
++    if lowered == "true":
++        return True
++    if lowered == "false":
++        return False
++    raise ValueError(f"not a boolean value: {value!r}")
++
++
++def savefig(name: str) -> Path:
++    FIGURE_DIR.mkdir(parents=True, exist_ok=True)
++    path = FIGURE_DIR / name
++    plt.tight_layout()
++    plt.savefig(path, format="pdf", bbox_inches="tight")
++    plt.close()
++    return path
++
++
++def figure_f1() -> Path:
++    data = load_json(PROOF_JSON)
++    rows = data["aggregate"]["table"]
++    methods = ["Raw", "CDR", "PEC"]
++    by_method = {method: [] for method in methods}
++    for row in rows:
++        method = row["method"]
++        if method in by_method:
++            by_method[method].append(row)
++    for method, method_rows in by_method.items():
++        if not method_rows:
++            raise ValueError(f"F1 missing method in proof-of-mechanism aggregate: {method}")
++        method_rows.sort(key=lambda r: r["budget"])
++
++    fig, axes = plt.subplots(1, 2, figsize=(8.8, 3.4), sharex=True)
++    markers = {"Raw": "o", "CDR": "s", "PEC": "^"}
++    labels = {"Raw": "Raw", "CDR": "CDR affine control", "PEC": "PEC proxy"}
++    for method in methods:
++        budgets = [row["budget"] for row in by_method[method]]
++        mse = [row["MSE_mean"] for row in by_method[method]]
++        gri = [row["GRI_mean"] for row in by_method[method]]
++        axes[0].plot(budgets, mse, marker=markers[method], label=labels[method])
++        axes[1].plot(budgets, gri, marker=markers[method], label=labels[method])
++
++    axes[0].set_title("Estimator accuracy")
++    axes[0].set_ylabel("MSE")
++    axes[0].set_xscale("log", base=2)
++    axes[0].grid(True, alpha=0.25)
++    axes[1].set_title("Decision risk")
++    axes[1].set_ylabel("GRI")
++    axes[1].set_xscale("log", base=2)
++    axes[1].grid(True, alpha=0.25)
++    for axis in axes:
++        axis.set_xlabel("Evaluation budget per candidate")
++    axes[1].legend(frameon=False, loc="best")
++    fig.suptitle("Accuracy-decision separation", y=1.02)
++    return savefig("F1_accuracy_decision_separation.pdf")
++
++
++def figure_f3() -> Path:
++    data = load_json(CLAIMS_JSON)
++    success = data["e2"]["aggregate_success_decision"]
++    threshold = 0.80
++    budgets = sorted(int(value) for value in success["DA"].keys())
++
++    plt.figure(figsize=(5.5, 3.5))
++    for selector, marker in [("DA", "o"), ("MSE", "s")]:
++        values = [success[selector][str(budget)] for budget in budgets]
++        plt.plot(budgets, values, marker=marker, label=selector)
++    plt.axhline(threshold, color="black", linestyle="--", linewidth=1, label="0.80 target")
++    plt.xscale("log", base=2)
++    plt.ylim(0.4, 0.86)
++    plt.xlabel("Nominal budget")
++    plt.ylabel("P(success)")
++    plt.title("Dynamic success-to-budget endpoint")
++    plt.grid(True, alpha=0.25)
++    plt.legend(frameon=False)
++    return savefig("F3_dynamic_success.pdf")
++
++
++def figure_f4() -> Path:
++    rows = load_csv(E1_CSV)
++    grouped: dict[str, dict[str, float]] = defaultdict(lambda: {"mse_fail": 0.0, "da_fail": 0.0})
++    for row in rows:
++        if int(row["budget"]) != 512:
++            continue
++        tercile = row["epsilon_opt_tercile"]
++        both_fail = as_float(row["both_fail"])
++        b_da_better = as_float(row["b"])
++        c_da_worse = as_float(row["c"])
++        grouped[tercile]["mse_fail"] += both_fail + b_da_better
++        grouped[tercile]["da_fail"] += both_fail + c_da_worse
++
++    order = ["easy", "medium", "hard"]
++    reductions = []
++    for tercile in order:
++        if tercile not in grouped:
++            raise ValueError(f"F4 missing epsilon tercile at B*=512: {tercile}")
++        mse_fail = grouped[tercile]["mse_fail"]
++        da_fail = grouped[tercile]["da_fail"]
++        reductions.append((mse_fail - da_fail) / mse_fail if mse_fail else 0.0)
++
++    plt.figure(figsize=(5.5, 3.5))
++    plt.bar(order, reductions, color=["#4C78A8", "#F58518", "#54A24B"])
++    plt.axhline(0.15, color="black", linestyle="--", linewidth=1, label="Practical threshold")
++    plt.ylabel("Relative failure reduction")
++    plt.xlabel("epsilon_opt tercile")
++    plt.title("Static decision improvement by difficulty")
++    plt.ylim(0, max(0.35, max(reductions) * 1.2))
++    plt.grid(True, axis="y", alpha=0.25)
++    plt.legend(frameon=False)
++    return savefig("F4_e1_epsilon_terciles.pdf")
++
++
++def figure_f5() -> Path:
++    rows = load_csv(E3_CSV)
++    grouped: dict[int, dict[str, float]] = defaultdict(lambda: {"active": 0.0, "match": 0.0})
++    for row in rows:
++        if not as_bool(row["active_pair"]):
++            continue
++        budget = int(row["budget"])
++        grouped[budget]["active"] += 1.0
++        grouped[budget]["match"] += 1.0 if as_bool(row["ordering_match"]) else 0.0
++    if not grouped:
++        raise ValueError("F5 has no active E3 pairs")
++
++    budgets = sorted(grouped)
++    fractions = [grouped[budget]["match"] / grouped[budget]["active"] for budget in budgets]
++    counts = [int(grouped[budget]["active"]) for budget in budgets]
++
++    plt.figure(figsize=(5.5, 3.5))
++    plt.plot(budgets, fractions, marker="o", color="#4C78A8")
++    for budget, fraction, count in zip(budgets, fractions, counts):
++        plt.text(budget, min(1.02, fraction + 0.015), f"n={count}", ha="center", fontsize=8)
++    plt.xscale("log", base=2)
++    plt.ylim(0, 1.08)
++    plt.xlabel("Budget")
++    plt.ylabel("Predicted/observed ordering match")
++    plt.title("A3 directional ordering validation")
++    plt.grid(True, alpha=0.25)
++    return savefig("F5_e3_directional_ordering.pdf")
++
++
++def figure_f6() -> Path:
++    rows = load_csv(GATE0_CSV)
++    if not rows:
++        raise ValueError("F6 Gate0 CSV is empty")
++
++    changed = [row for row in rows if as_bool(row["selector_changed"])]
++    unchanged = [row for row in rows if not as_bool(row["selector_changed"])]
++
++    plt.figure(figsize=(4.8, 4.4))
++    for label, group, marker, color in [
++        ("selector unchanged", unchanged, "o", "#4C78A8"),
++        ("selector changed", changed, "x", "#E45756"),
++    ]:
++        if not group:
++            continue
++        x = [as_float(row["gri_diagonal"]) for row in group]
++        y = [as_float(row["gri_full"]) for row in group]
++        plt.scatter(x, y, marker=marker, color=color, label=label, alpha=0.8)
++    all_values = [as_float(row["gri_diagonal"]) for row in rows] + [as_float(row["gri_full"]) for row in rows]
++    low = max(0.0, min(all_values) - 0.03)
++    high = min(1.0, max(all_values) + 0.03)
++    plt.plot([low, high], [low, high], color="black", linewidth=1, linestyle="--", label="full = diagonal")
++    plt.xlim(low, high)
++    plt.ylim(low, high)
++    plt.xlabel("GRI diagonal")
++    plt.ylabel("GRI full")
++    plt.title("Gate 0 full-vs-diagonal risk")
++    plt.grid(True, alpha=0.25)
++    plt.legend(frameon=False, fontsize=8)
++    return savefig("F6_gate0_full_vs_diagonal.pdf")
++
++
++def main() -> int:
++    FIGURE_DIR.mkdir(parents=True, exist_ok=True)
++    generated = [
++        figure_f1(),
++        figure_f3(),
++        figure_f4(),
++        figure_f5(),
++        figure_f6(),
++    ]
++
++    missing = [name for name in PDFS if not (FIGURE_DIR / name).exists()]
++    if missing:
++        raise RuntimeError(f"missing generated figures: {missing}")
++
++    print(f"FIGURES PASS: generated={len(generated)}")
++    for path in generated:
++        print(f"wrote={path.relative_to(REPO_ROOT).as_posix()}")
++    return 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+--- before/legacy/reproduce_all_preintegration.py
++++ after/legacy/reproduce_all_preintegration.py
+@@ -0,0 +1,224 @@
++from __future__ import annotations
++
++import filecmp
++import json
++import shutil
++import subprocess
++import sys
++import tempfile
++from pathlib import Path
++
++
++REPO_ROOT = Path(__file__).resolve().parents[1]
++PYTHON = sys.executable
++FINAL_PASS = (
++    "REPRODUCE_ALL_PASS: Level 1 exact, determinism, tests, freeze audit, "
++    "confirmatory verification, extension verification, hardware archive, "
++    "hardware analysis, and figures completed"
++)
++
++
++class StepError(RuntimeError):
++    pass
++
++
++def run_command(step: str, args: list[str]) -> subprocess.CompletedProcess[str]:
++    print(f"[{step}] $ {' '.join(args)}", flush=True)
++    proc = subprocess.run(
++        args,
++        cwd=REPO_ROOT,
++        text=True,
++        stdout=subprocess.PIPE,
++        stderr=subprocess.STDOUT,
++    )
++    if proc.stdout:
++        print(proc.stdout, end="", flush=True)
++    if proc.returncode != 0:
++        raise StepError(f"{step}: command failed with exit {proc.returncode}")
++    return proc
++
++
++def require_output(step: str, proc: subprocess.CompletedProcess[str], marker: str) -> None:
++    if marker not in proc.stdout:
++        raise StepError(f"{step}: expected marker not found: {marker}")
++
++
++def run_level1_exact() -> None:
++    temp_root = Path(tempfile.mkdtemp(prefix="daqem_level1_exact_"))
++    try:
++        generated = temp_root / "generated"
++        run_command(
++            "level1-run",
++            [
++                PYTHON,
++                "reproducibility/run_all.py",
++                "--mode",
++                "fast",
++                "--level",
++                "1",
++                "--output",
++                str(generated),
++            ],
++        )
++        proc = run_command(
++            "level1-verify",
++            [
++                PYTHON,
++                "reproducibility/verify.py",
++                "--reference",
++                "reproducibility/reference_level1/",
++                "--generated",
++                str(generated),
++            ],
++        )
++        require_output("level1-verify", proc, "VERIFY PASS")
++    finally:
++        shutil.rmtree(temp_root, ignore_errors=True)
++
++
++def output_files_from_manifest(output_root: Path) -> list[Path]:
++    manifest_path = output_root / "manifest.json"
++    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
++    outputs = manifest.get("outputs")
++    if not isinstance(outputs, dict):
++        raise StepError(f"determinism: invalid outputs in {manifest_path}")
++    return sorted(Path(relpath) for relpath in outputs)
++
++
++def compare_canonical_outputs(lhs: Path, rhs: Path) -> list[str]:
++    relpaths = output_files_from_manifest(lhs)
++    rhs_relpaths = output_files_from_manifest(rhs)
++    if relpaths != rhs_relpaths:
++        return [f"manifest output set differs: {relpaths} != {rhs_relpaths}"]
++
++    mismatches = []
++    for relpath in relpaths:
++        left = lhs / relpath
++        right = rhs / relpath
++        if not left.exists() or not right.exists():
++            mismatches.append(f"missing {relpath}")
++            continue
++        if not filecmp.cmp(left, right, shallow=False):
++            mismatches.append(relpath.as_posix())
++    return mismatches
++
++
++def run_determinism() -> None:
++    temp_root = Path(tempfile.mkdtemp(prefix="daqem_level1_determinism_"))
++    try:
++        first = temp_root / "run_a"
++        second = temp_root / "run_b"
++        third = temp_root / "run_c"
++        run_command(
++            "determinism-run-a",
++            [
++                PYTHON,
++                "reproducibility/run_all.py",
++                "--mode",
++                "fast",
++                "--level",
++                "1",
++                "--output",
++                str(first),
++            ],
++        )
++        run_command(
++            "determinism-run-b",
++            [
++                PYTHON,
++                "reproducibility/run_all.py",
++                "--mode",
++                "fast",
++                "--level",
++                "1",
++                "--output",
++                str(second),
++            ],
++        )
++        run_command(
++            "determinism-run-c",
++            [
++                PYTHON,
++                "reproducibility/run_all.py",
++                "--mode",
++                "fast",
++                "--level",
++                "1",
++                "--output",
++                str(third),
++            ],
++        )
++        mismatches_ab = compare_canonical_outputs(first, second)
++        mismatches_ac = compare_canonical_outputs(first, third)
++        mismatches = [f"run_a vs run_b: {item}" for item in mismatches_ab]
++        mismatches.extend(f"run_a vs run_c: {item}" for item in mismatches_ac)
++        print(
++            f"DETERMINISM CHECK: files={len(output_files_from_manifest(first))} "
++            f"runs=3 comparisons=2 mismatches={len(mismatches)}",
++            flush=True,
++        )
++        if mismatches:
++            raise StepError("determinism: " + ", ".join(mismatches))
++    finally:
++        shutil.rmtree(temp_root, ignore_errors=True)
++
++
++def run_pytest() -> None:
++    run_command("tests", [PYTHON, "-m", "pytest", "tests/", "-q"])
++
++
++def run_freeze_audit() -> None:
++    proc = run_command("freeze-audit", [PYTHON, "scripts/verify_freeze.py"])
++    require_output("freeze-audit", proc, "FREEZE AUDIT PASS")
++
++
++def run_confirmatory() -> None:
++    proc = run_command("confirmatory", [PYTHON, "scripts/verify_confirmatory.py"])
++    require_output("confirmatory", proc, "CONFIRMATORY VERIFY PASS")
++
++
++def run_extension() -> None:
++    proc = run_command("extension", [PYTHON, "scripts/verify_extension.py"])
++    require_output("extension", proc, "EXTENSION VERIFY PASS")
++
++
++def run_hardware_archive() -> None:
++    proc = run_command("hardware-archive", [PYTHON, "scripts/verify_hardware_archive.py"])
++    require_output("hardware-archive", proc, "HARDWARE ARCHIVE VERIFY PASS")
++
++
++def run_hardware_analysis() -> None:
++    proc = run_command("hardware-analysis", [PYTHON, "scripts/analysis_from_hardware.py"])
++    require_output("hardware-analysis", proc, "HARDWARE ANALYSIS PASS")
++
++
++def run_figures() -> None:
++    proc = run_command("figures", [PYTHON, "scripts/generate_all_figures.py"])
++    require_output("figures", proc, "FIGURES PASS")
++
++
++def main() -> int:
++    steps = [
++        ("Level 1 exact", run_level1_exact),
++        ("determinism", run_determinism),
++        ("tests", run_pytest),
++        ("freeze audit", run_freeze_audit),
++        ("confirmatory verification", run_confirmatory),
++        ("extension verification", run_extension),
++        ("hardware archive", run_hardware_archive),
++        ("hardware analysis", run_hardware_analysis),
++        ("figures", run_figures),
++    ]
++    for label, func in steps:
++        try:
++            func()
++        except Exception as exc:
++            print(f"REPRODUCE_ALL_FAIL: {label}")
++            print(str(exc))
++            return 1
++    print(FINAL_PASS)
++    return 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+--- before/scripts/generate_all_figures.py
++++ after/scripts/generate_all_figures.py
+@@ -1,248 +1,9 @@
+-from __future__ import annotations
++"""Compatibility entry point for the corrected empirical figure sources."""
++from pathlib import Path
++import argparse
++from plot_integrated_figures import render
+ 
+-import csv
+-import json
+-from collections import defaultdict
+-from pathlib import Path
+-
+-import matplotlib
+-
+-matplotlib.use("Agg")
+-import matplotlib.pyplot as plt
+-
+-
+-REPO_ROOT = Path(__file__).resolve().parents[1]
+-FIGURE_DIR = REPO_ROOT / "figures"
+-
+-PROOF_JSON = REPO_ROOT / "reproducibility/reference_extension/proof_of_mechanism/result.json"
+-CLAIMS_JSON = REPO_ROOT / "reproducibility/reference_confirmatory/confirmatory_claims_summary.json"
+-E1_CSV = REPO_ROOT / "reproducibility/reference_confirmatory/e1/e1_static_decision_failure.csv"
+-E3_CSV = REPO_ROOT / "reproducibility/reference_confirmatory/e3/e3_pullback_frontier.csv"
+-GATE0_CSV = REPO_ROOT / "results/pilot/gate0_full_vs_diagonal.csv"
+-
+-PDFS = [
+-    "F1_accuracy_decision_separation.pdf",
+-    "F3_dynamic_success.pdf",
+-    "F4_e1_epsilon_terciles.pdf",
+-    "F5_e3_directional_ordering.pdf",
+-    "F6_gate0_full_vs_diagonal.pdf",
+-]
+-
+-
+-def require_file(path: Path) -> None:
+-    if not path.exists():
+-        raise FileNotFoundError(f"required figure source is missing: {path}")
+-
+-
+-def load_json(path: Path) -> dict:
+-    require_file(path)
+-    return json.loads(path.read_text(encoding="utf-8"))
+-
+-
+-def load_csv(path: Path) -> list[dict[str, str]]:
+-    require_file(path)
+-    with path.open(newline="", encoding="utf-8") as handle:
+-        return list(csv.DictReader(handle))
+-
+-
+-def as_float(value: str | int | float) -> float:
+-    return float(value)
+-
+-
+-def as_bool(value: str | bool) -> bool:
+-    if isinstance(value, bool):
+-        return value
+-    lowered = value.strip().lower()
+-    if lowered == "true":
+-        return True
+-    if lowered == "false":
+-        return False
+-    raise ValueError(f"not a boolean value: {value!r}")
+-
+-
+-def savefig(name: str) -> Path:
+-    FIGURE_DIR.mkdir(parents=True, exist_ok=True)
+-    path = FIGURE_DIR / name
+-    plt.tight_layout()
+-    plt.savefig(path, format="pdf", bbox_inches="tight")
+-    plt.close()
+-    return path
+-
+-
+-def figure_f1() -> Path:
+-    data = load_json(PROOF_JSON)
+-    rows = data["aggregate"]["table"]
+-    methods = ["Raw", "CDR", "PEC"]
+-    by_method = {method: [] for method in methods}
+-    for row in rows:
+-        method = row["method"]
+-        if method in by_method:
+-            by_method[method].append(row)
+-    for method, method_rows in by_method.items():
+-        if not method_rows:
+-            raise ValueError(f"F1 missing method in proof-of-mechanism aggregate: {method}")
+-        method_rows.sort(key=lambda r: r["budget"])
+-
+-    fig, axes = plt.subplots(1, 2, figsize=(8.8, 3.4), sharex=True)
+-    markers = {"Raw": "o", "CDR": "s", "PEC": "^"}
+-    labels = {"Raw": "Raw", "CDR": "CDR affine control", "PEC": "PEC proxy"}
+-    for method in methods:
+-        budgets = [row["budget"] for row in by_method[method]]
+-        mse = [row["MSE_mean"] for row in by_method[method]]
+-        gri = [row["GRI_mean"] for row in by_method[method]]
+-        axes[0].plot(budgets, mse, marker=markers[method], label=labels[method])
+-        axes[1].plot(budgets, gri, marker=markers[method], label=labels[method])
+-
+-    axes[0].set_title("Estimator accuracy")
+-    axes[0].set_ylabel("MSE")
+-    axes[0].set_xscale("log", base=2)
+-    axes[0].grid(True, alpha=0.25)
+-    axes[1].set_title("Decision risk")
+-    axes[1].set_ylabel("GRI")
+-    axes[1].set_xscale("log", base=2)
+-    axes[1].grid(True, alpha=0.25)
+-    for axis in axes:
+-        axis.set_xlabel("Evaluation budget per candidate")
+-    axes[1].legend(frameon=False, loc="best")
+-    fig.suptitle("Accuracy-decision separation", y=1.02)
+-    return savefig("F1_accuracy_decision_separation.pdf")
+-
+-
+-def figure_f3() -> Path:
+-    data = load_json(CLAIMS_JSON)
+-    success = data["e2"]["aggregate_success_decision"]
+-    threshold = 0.80
+-    budgets = sorted(int(value) for value in success["DA"].keys())
+-
+-    plt.figure(figsize=(5.5, 3.5))
+-    for selector, marker in [("DA", "o"), ("MSE", "s")]:
+-        values = [success[selector][str(budget)] for budget in budgets]
+-        plt.plot(budgets, values, marker=marker, label=selector)
+-    plt.axhline(threshold, color="black", linestyle="--", linewidth=1, label="0.80 target")
+-    plt.xscale("log", base=2)
+-    plt.ylim(0.4, 0.86)
+-    plt.xlabel("Nominal budget")
+-    plt.ylabel("P(success)")
+-    plt.title("Dynamic success-to-budget endpoint")
+-    plt.grid(True, alpha=0.25)
+-    plt.legend(frameon=False)
+-    return savefig("F3_dynamic_success.pdf")
+-
+-
+-def figure_f4() -> Path:
+-    rows = load_csv(E1_CSV)
+-    grouped: dict[str, dict[str, float]] = defaultdict(lambda: {"mse_fail": 0.0, "da_fail": 0.0})
+-    for row in rows:
+-        if int(row["budget"]) != 512:
+-            continue
+-        tercile = row["epsilon_opt_tercile"]
+-        both_fail = as_float(row["both_fail"])
+-        b_da_better = as_float(row["b"])
+-        c_da_worse = as_float(row["c"])
+-        grouped[tercile]["mse_fail"] += both_fail + b_da_better
+-        grouped[tercile]["da_fail"] += both_fail + c_da_worse
+-
+-    order = ["easy", "medium", "hard"]
+-    reductions = []
+-    for tercile in order:
+-        if tercile not in grouped:
+-            raise ValueError(f"F4 missing epsilon tercile at B*=512: {tercile}")
+-        mse_fail = grouped[tercile]["mse_fail"]
+-        da_fail = grouped[tercile]["da_fail"]
+-        reductions.append((mse_fail - da_fail) / mse_fail if mse_fail else 0.0)
+-
+-    plt.figure(figsize=(5.5, 3.5))
+-    plt.bar(order, reductions, color=["#4C78A8", "#F58518", "#54A24B"])
+-    plt.axhline(0.15, color="black", linestyle="--", linewidth=1, label="Practical threshold")
+-    plt.ylabel("Relative failure reduction")
+-    plt.xlabel("epsilon_opt tercile")
+-    plt.title("Static decision improvement by difficulty")
+-    plt.ylim(0, max(0.35, max(reductions) * 1.2))
+-    plt.grid(True, axis="y", alpha=0.25)
+-    plt.legend(frameon=False)
+-    return savefig("F4_e1_epsilon_terciles.pdf")
+-
+-
+-def figure_f5() -> Path:
+-    rows = load_csv(E3_CSV)
+-    grouped: dict[int, dict[str, float]] = defaultdict(lambda: {"active": 0.0, "match": 0.0})
+-    for row in rows:
+-        if not as_bool(row["active_pair"]):
+-            continue
+-        budget = int(row["budget"])
+-        grouped[budget]["active"] += 1.0
+-        grouped[budget]["match"] += 1.0 if as_bool(row["ordering_match"]) else 0.0
+-    if not grouped:
+-        raise ValueError("F5 has no active E3 pairs")
+-
+-    budgets = sorted(grouped)
+-    fractions = [grouped[budget]["match"] / grouped[budget]["active"] for budget in budgets]
+-    counts = [int(grouped[budget]["active"]) for budget in budgets]
+-
+-    plt.figure(figsize=(5.5, 3.5))
+-    plt.plot(budgets, fractions, marker="o", color="#4C78A8")
+-    for budget, fraction, count in zip(budgets, fractions, counts):
+-        plt.text(budget, min(1.02, fraction + 0.015), f"n={count}", ha="center", fontsize=8)
+-    plt.xscale("log", base=2)
+-    plt.ylim(0, 1.08)
+-    plt.xlabel("Budget")
+-    plt.ylabel("Predicted/observed ordering match")
+-    plt.title("A3 directional ordering validation")
+-    plt.grid(True, alpha=0.25)
+-    return savefig("F5_e3_directional_ordering.pdf")
+-
+-
+-def figure_f6() -> Path:
+-    rows = load_csv(GATE0_CSV)
+-    if not rows:
+-        raise ValueError("F6 Gate0 CSV is empty")
+-
+-    changed = [row for row in rows if as_bool(row["selector_changed"])]
+-    unchanged = [row for row in rows if not as_bool(row["selector_changed"])]
+-
+-    plt.figure(figsize=(4.8, 4.4))
+-    for label, group, marker, color in [
+-        ("selector unchanged", unchanged, "o", "#4C78A8"),
+-        ("selector changed", changed, "x", "#E45756"),
+-    ]:
+-        if not group:
+-            continue
+-        x = [as_float(row["gri_diagonal"]) for row in group]
+-        y = [as_float(row["gri_full"]) for row in group]
+-        plt.scatter(x, y, marker=marker, color=color, label=label, alpha=0.8)
+-    all_values = [as_float(row["gri_diagonal"]) for row in rows] + [as_float(row["gri_full"]) for row in rows]
+-    low = max(0.0, min(all_values) - 0.03)
+-    high = min(1.0, max(all_values) + 0.03)
+-    plt.plot([low, high], [low, high], color="black", linewidth=1, linestyle="--", label="full = diagonal")
+-    plt.xlim(low, high)
+-    plt.ylim(low, high)
+-    plt.xlabel("GRI diagonal")
+-    plt.ylabel("GRI full")
+-    plt.title("Gate 0 full-vs-diagonal risk")
+-    plt.grid(True, alpha=0.25)
+-    plt.legend(frameon=False, fontsize=8)
+-    return savefig("F6_gate0_full_vs_diagonal.pdf")
+-
+-
+-def main() -> int:
+-    FIGURE_DIR.mkdir(parents=True, exist_ok=True)
+-    generated = [
+-        figure_f1(),
+-        figure_f3(),
+-        figure_f4(),
+-        figure_f5(),
+-        figure_f6(),
+-    ]
+-
+-    missing = [name for name in PDFS if not (FIGURE_DIR / name).exists()]
+-    if missing:
+-        raise RuntimeError(f"missing generated figures: {missing}")
+-
+-    print(f"FIGURES PASS: generated={len(generated)}")
+-    for path in generated:
+-        print(f"wrote={path.relative_to(REPO_ROOT).as_posix()}")
+-    return 0
+-
+-
+-if __name__ == "__main__":
+-    raise SystemExit(main())
++if __name__=='__main__':
++    package=Path(__file__).resolve().parents[2]
++    p=argparse.ArgumentParser();p.add_argument('--output-dir',type=Path,required=True);a=p.parse_args()
++    render(package,a.output_dir.resolve())
+--- before/scripts/plot_integrated_figures.py
++++ after/scripts/plot_integrated_figures.py
+@@ -0,0 +1,53 @@
++"""Render the five empirical manuscript figures from the corrected sources."""
++import argparse,hashlib,json,subprocess,sys
++from pathlib import Path
++import matplotlib
++matplotlib.use('Agg')
++import matplotlib.pyplot as plt
++import pandas as pd
++CODE=Path(__file__).resolve().parents[1]
++
++
++def render(package,output):
++    output.mkdir(parents=True,exist_ok=True);records=[]
++    def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
++    def register(name,sources,series=None):
++        records.append(dict(figure=name,sha256=sha(output/name),sources={p.relative_to(package).as_posix():sha(p) for p in sources},series=series))
++    proof=package/'evidence/cdr_pec/results/proof_of_mechanism/result.json'
++    table=pd.DataFrame(json.loads(proof.read_text())['aggregate']['table'])
++    series=table[table.method.isin(['Raw','CDR','PEC'])].sort_values(['method','budget'])
++    series.to_csv(output/'F1_series.csv',index=False)
++    fig,axes=plt.subplots(1,2,figsize=(8.8,3.4),sharex=True)
++    for method,marker,label in [('Raw','o','Raw'),('CDR','s','CDR affine control'),('PEC','^','PEC effective-shot proxy')]:
++        sub=series[series.method==method]
++        axes[0].plot(sub.budget,sub.MSE_mean,marker=marker,label=label)
++        axes[1].plot(sub.budget,sub.GRI_mean,marker=marker,label=label)
++    for ax,title,ylabel in zip(axes,['Estimator accuracy','Gaussian decision risk'],['Empirical MSE','GRI']):
++        ax.set(title=title,xlabel='Evaluation budget per candidate',ylabel=ylabel);ax.set_xscale('log',base=2);ax.minorticks_off();ax.grid(alpha=.25)
++        ax.set_xticks([768,1536,3072,6144],labels=[768,1536,3072,6144])
++    axes[1].legend(frameon=False,fontsize=8);fig.tight_layout();fig.savefig(output/'F1_accuracy_decision_separation.png',dpi=160,bbox_inches='tight');plt.close(fig)
++    register('F1_accuracy_decision_separation.png',[proof],'F1_series.csv')
++    source=package/'evidence/learned_ablation/results/pilot/gate0_full_vs_diagonal.csv'
++    table=pd.read_csv(source);table.to_csv(output/'F6_series.csv',index=False)
++    fig,ax=plt.subplots(figsize=(5,4.5))
++    for changed,label,marker,color in [(False,'Selector unchanged','o','#4C78A8'),(True,'Selector changed','x','#E45756')]:
++        group=table[table.selector_changed==changed]
++        if len(group):ax.scatter(group.gri_diagonal,group.gri_full,label=label,marker=marker,color=color,alpha=.8)
++    ax.plot([0,1],[0,1],'k--',lw=1,label='Full = diagonal');ax.set(xlim=(0,1),ylim=(0,1),xlabel='GRI diagonal',ylabel='GRI full',title='Covariance diagnostic: 24 cells, 72 method rows')
++    ax.legend(frameon=False,fontsize=8);ax.grid(alpha=.25);fig.tight_layout();fig.savefig(output/'F6_gate0_full_vs_diagonal.png',dpi=160);plt.close(fig)
++    register('F6_gate0_full_vs_diagonal.png',[source],'F6_series.csv')
++    for script,source,name in [('plot_corrected_e1.py','results/e1/summary.csv','F7_e1_reanalysis.png'),
++                               ('plot_corrected_e2.py','results/e2/e2_full_ledger.csv','F8_dynamic_full_cost.png')]:
++        subprocess.run([sys.executable,str(CODE/script),'--input',str(package/source),'--output',str(output/name)],check=True)
++        register(name,[package/source])
++    source=package/'results/confirmatory/e3_independent_mean_and_failure.csv';frontier=package/'results/confirmatory/e3_pullback_frontier.csv'
++    subprocess.run([sys.executable,str(CODE/'plot_corrected_e3.py'),'--input',str(source),'--frontier',str(frontier),
++                    '--output',str(output/'F9_e3_comparisons.png'),'--series-output',str(output/'F9_e3_series.csv')],check=True)
++    register('F9_e3_comparisons.png',[source,frontier],'F9_e3_series.csv')
++    (output/'figure_sources.json').write_text(json.dumps(records,indent=2)+'\n')
++    return records
++
++
++if __name__=='__main__':
++    p=argparse.ArgumentParser();p.add_argument('--package',type=Path,default=CODE.parent);p.add_argument('--output-dir',type=Path,required=True);a=p.parse_args()
++    render(a.package.resolve(),a.output_dir.resolve())
+--- before/scripts/replay_consolidated.py
++++ after/scripts/replay_consolidated.py
+@@ -0,0 +1,99 @@
++"""Offline reanalysis of E2, FakeKolkata and archived hardware measurements."""
++from __future__ import annotations
++import argparse,hashlib,importlib.metadata,json,os,sys,time
++from pathlib import Path
++from concurrent.futures import ProcessPoolExecutor,as_completed
++CODE=Path(__file__).resolve().parents[1]
++sys.path[:0]=[str(CODE/'src'),str(CODE)]
++for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS'):os.environ[key]='1'
++import numpy as np
++import pandas as pd
++from scripts.reproduce_integrated import dump,sha,files,check_receipt
++
++
++def identity(package,stage):
++    dependencies=files([CODE/'src',CODE/'experiments',CODE/'revision_v19',CODE/'run_archive_corrections.py',
++                        CODE/'run_fakekolkata_v21.py',CODE/'scripts/analysis_from_hardware.py',Path(__file__),package/'protocol.json',
++                        package/f'evidence/{stage}'])
++    data=dict(stage=stage,files={p.relative_to(package).as_posix():sha(p) for p in dependencies},
++              versions={p:importlib.metadata.version(p) for p in ('numpy','scipy','qiskit','qiskit-aer','qiskit-ibm-runtime','cvxpy','clarabel','scikit-learn','pandas','networkx')},python=sys.version)
++    return hashlib.sha256(json.dumps(data,sort_keys=True).encode()).hexdigest(),data
++
++
++def forbidden(*args,**kwargs):raise RuntimeError('New physical sampling is forbidden by this offline entry point')
++
++
++def fake_worker(package,name):
++    import run_fakekolkata_v21 as fk
++    from qiskit_aer import AerSimulator
++    package=Path(package);source=package/'evidence/fakekolkata/results/fakekolkata_fixed10'
++    destination=package/'results/fakekolkata_fixed10'
++    AerSimulator.run=forbidden;fk.old._probability_array_for_cell=forbidden
++    sys.argv=['run_fakekolkata_v21.py','--instances',name,'--bounded-10-qubits','--probability-inputs',str(source),'--output',str(destination)]
++    # Each worker writes only its own instance; aggregation is done once below.
++    original_json=fk.atomic_json;original_csv=pd.DataFrame.to_csv
++    def json_without_summary(path,value):
++        if Path(path).name!='summary.json':original_json(path,value)
++    def csv_without_summary(frame,path,*args,**kwargs):
++        if Path(path).name!='outcomes.csv':return original_csv(frame,path,*args,**kwargs)
++    fk.atomic_json=json_without_summary;pd.DataFrame.to_csv=csv_without_summary
++    try:fk.main()
++    finally:fk.atomic_json=original_json;pd.DataFrame.to_csv=original_csv
++    return name
++
++
++def run(package,stage,workers):
++    package=Path(package).resolve();finger,source=identity(package,stage);start=time.perf_counter()
++    receipt=package/f'results/integration/{stage}.json'
++    if receipt.exists():return check_receipt(package,receipt,finger)
++    if stage=='fakekolkata':
++        import run_fakekolkata_v21 as fk
++        from qiskit_aer import AerSimulator
++        source_dir=package/'evidence/fakekolkata/results/fakekolkata_fixed10'
++        fk._validate_protocol();backend=fk.FakeKolkataV2();noise=fk.NoiseModel.from_backend(backend)
++        backend,noise,physical=fk.bounded_backend(backend,noise)
++        for name in (f'C{i:03}' for i in range(1,49)):
++            if not fk.valid_probability(source_dir/f'{name}_probabilities.npz',fk.probability_identity(name,backend,noise,physical)):
++                raise ValueError(f'Probability source is incompatible with current physical model: {name}')
++        folder=package/'results/fakekolkata_fixed10';folder.mkdir(parents=True,exist_ok=True)
++        with ProcessPoolExecutor(max_workers=workers) as pool:
++            futures=[pool.submit(fake_worker,str(package),f'C{i:03}') for i in range(1,49)]
++            for future in as_completed(futures):print('replayed '+future.result(),flush=True)
++        AerSimulator.run=forbidden;fk.old._probability_array_for_cell=forbidden;fk.analyze=forbidden
++        sys.argv=['run_fakekolkata_v21.py','--bounded-10-qubits','--output',str(folder)]
++        fk.main()
++        summary=json.loads((folder/'summary.json').read_text())
++    elif stage=='hardware':
++        from experiments.hardware_sigma import run_main as h
++        from run_archive_corrections import hardware
++        h.load_ibm_service_phase_b_only=forbidden;h.RuntimeSamplerAdapter.__init__=forbidden
++        folder=package/'results/hardware';folder.mkdir(parents=True,exist_ok=True)
++        probabilities=[];original=h.noisy_probabilities
++        def capture(circuit,noise):
++            result=original(circuit,noise);probabilities.append(result.copy());return result
++        h.noisy_probabilities=capture
++        try:hardware(package/'evidence/hardware/inputs',folder)
++        finally:h.noisy_probabilities=original
++        assert len(probabilities)==12
++        np.savez_compressed(folder/'prediction_probabilities.npz',probabilities=np.array(probabilities))
++        summary=json.loads((folder/'hardware.json').read_text())
++    elif stage=='e2':
++        from run_archive_corrections import e2
++        folder=package/'results/e2';folder.mkdir(parents=True,exist_ok=True)
++        e2(package/'evidence/e2/corrected/inputs',folder)
++        summary=json.loads((folder/'e2_summary.json').read_text())
++    else:raise ValueError(stage)
++    assert identity(package,stage)[0]==finger,'Inputs or producer code changed during reanalysis'
++    result=dict(status='complete',stage=stage,fingerprint=finger,source=source,
++                outputs={p.relative_to(package).as_posix():sha(p) for p in files([folder])},summary=summary,
++                seconds=time.perf_counter()-start,workers=workers,
++                scope='offline reanalysis; no new shots, E2 starts from saved trajectory outcomes, hardware retains executed coefficients')
++    dump(receipt,result);print(f'{stage} complete: {result["seconds"]:.2f}s',flush=True)
++    return result
++
++
++if __name__=='__main__':
++    p=argparse.ArgumentParser();p.add_argument('--stage',choices=['e2','fakekolkata','hardware'],required=True)
++    p.add_argument('--workers',type=int,default=8);args=p.parse_args()
++    if args.workers<1:p.error('--workers must be positive')
++    run(CODE.parent,args.stage,args.workers)
+--- before/scripts/reproduce_all.py
++++ after/scripts/reproduce_all.py
+@@ -1,224 +1,98 @@
++"""Verify the consolidated corrected evidence, or replay it into a new directory.
++
++No hardware submission or long E2 simulation is performed. E2 reanalysis starts
++from saved trajectory outcomes; original shot files have a separate manifest.
++"""
+ from __future__ import annotations
+-
+-import filecmp
+-import json
+-import shutil
+-import subprocess
+-import sys
+-import tempfile
++import argparse,hashlib,json,os,shutil,subprocess,sys
+ from pathlib import Path
++CODE=Path(__file__).resolve().parents[1]
++sys.path[:0]=[str(CODE/'src'),str(CODE)]
++for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS'):os.environ[key]='1'
++from scripts.reproduce_integration import verify_cached,prepare
++from scripts.replay_consolidated import identity
++from scripts.reproduce_integrated import check_receipt,sha
+ 
+ 
+-REPO_ROOT = Path(__file__).resolve().parents[1]
+-PYTHON = sys.executable
+-FINAL_PASS = (
+-    "REPRODUCE_ALL_PASS: Level 1 exact, determinism, tests, freeze audit, "
+-    "confirmatory verification, extension verification, hardware archive, "
+-    "hardware analysis, and figures completed"
+-)
++def checks(package):
++    result={'core':verify_cached(package)}
++    for stage in ('e2','fakekolkata','hardware'):
++        finger,_=identity(package,stage)
++        receipt=check_receipt(package,package/f'results/integration/{stage}.json',finger)
++        result[stage]={'outputs_verified':len(receipt['outputs']),'fingerprint':finger}
++    provenance=package/'validation/consolidated/import_provenance.json'
++    if not provenance.is_file():raise FileNotFoundError('Missing consolidated input provenance')
++    items=json.loads(provenance.read_text())
++    for item in items:
++        if sha(package/item['destination'])!=item['sha256']:raise ValueError(f"Changed imported evidence: {item['destination']}")
++    result['imported_files_verified']=len(items)
++    result['scope']='Corrected analysis records and code; not a new physical acquisition or publication release'
++    return result
+ 
+ 
+-class StepError(RuntimeError):
+-    pass
++def numerical(package,destination):
++    if destination.exists():raise FileExistsError('Use a new report directory to preserve existing verification records')
++    destination.mkdir(parents=True)
++    jobs=[
++      ('verify_integrated.py',['--package',str(package),'--output',str(destination/'core.json')]),
++      ('verify_a3_audit.py',['--package',str(package),'--output',str(destination/'a3.json')]),
++      ('verify_a3_audit.py',['--package',str(package),'--output',str(destination/'c3.json'),'--c3-only']),
++      ('verify_e2_integrated.py',['--package',str(package),'--output',str(destination/'e2.json')]),
++      ('verify_consolidated_fakekolkata.py',['--package',str(package),'--report-dir',str(destination)]),
++      ('verify_consolidated_hardware.py',['--package',str(package),'--report-dir',str(destination)]),
++      ('verify_aux_cdr_pec.py',['--results',str(package/'evidence/cdr_pec/results'),'--output',str(destination/'cdr_pec.json')]),
++      ('verify_aux_noise.py',['--results',str(package/'evidence/noise/results'),'--output',str(destination/'noise.json')]),
++      ('verify_aux_controls.py',['--package',str(package/'evidence/controls'),'--output',str(destination/'controls.json')]),
++      ('verify_learned_ablation.py',['--package',str(package/'evidence/learned_ablation'),'--output',str(destination/'learned_ablation.json')])]
++    for script,args in jobs:
++        with (destination/(script+'.log')).open('w',encoding='utf-8') as log:
++            subprocess.run([sys.executable,str(CODE/'scripts'/script),*args],stdout=log,stderr=subprocess.STDOUT,check=True)
++        print('Verified '+script,flush=True)
++    result={'status':'complete','scope':'Independent numerical checks on saved evidence; see individual reports for their limits',
++            'verifiers':{script:sha(CODE/'scripts'/script) for script,_ in jobs},
++            'reports':{p.name:sha(p) for p in destination.glob('*.json')}}
++    (destination/'verification_summary.json').write_text(json.dumps(result,indent=2)+'\n')
++    return result
+ 
+ 
+-def run_command(step: str, args: list[str]) -> subprocess.CompletedProcess[str]:
+-    print(f"[{step}] $ {' '.join(args)}", flush=True)
+-    proc = subprocess.run(
+-        args,
+-        cwd=REPO_ROOT,
+-        text=True,
+-        stdout=subprocess.PIPE,
+-        stderr=subprocess.STDOUT,
+-    )
+-    if proc.stdout:
+-        print(proc.stdout, end="", flush=True)
+-    if proc.returncode != 0:
+-        raise StepError(f"{step}: command failed with exit {proc.returncode}")
+-    return proc
++def prepare_consolidated(package,destination):
++    destination=prepare(package,destination)
++    shutil.copytree(package/'evidence',destination/'evidence')
++    shutil.copy2(package/'protocol.json',destination/'protocol.json')
++    shutil.copy2(package/'requirements_this_run.txt',destination/'requirements_this_run.txt')
++    shutil.copytree(package/'manuscript_review',destination/'manuscript_review')
++    shutil.copy2(package/'validation/environment.json',destination/'validation/environment.json')
++    reports=destination/'validation/consolidated';reports.mkdir(parents=True)
++    for name in ('import_provenance.json','external_E2_raw_manifest.json'):
++        shutil.copy2(package/'validation/consolidated'/name,reports/name)
++    return destination
+ 
+ 
+-def require_output(step: str, proc: subprocess.CompletedProcess[str], marker: str) -> None:
+-    if marker not in proc.stdout:
+-        raise StepError(f"{step}: expected marker not found: {marker}")
++def main():
++    p=argparse.ArgumentParser(description=__doc__)
++    group=p.add_mutually_exclusive_group()
++    group.add_argument('--numerical',type=Path,metavar='NEW_REPORT_DIR')
++    group.add_argument('--new-run',type=Path,metavar='NEW_PACKAGE_DIR')
++    p.add_argument('--workers',type=int,default=8)
++    p.add_argument('--e2-raw',type=Path,help='Optional original E2 root to validate against the external manifest')
++    a=p.parse_args();package=CODE.parent
++    if a.workers<1:p.error('--workers must be positive')
++    if a.new_run:
++        destination=prepare_consolidated(package,a.new_run.resolve())
++        for script,stages in [('reproduce_integrated.py',('confirmatory','e1','pilot','c3')),('replay_consolidated.py',('e2','fakekolkata','hardware'))]:
++            for stage in stages:
++                subprocess.run([sys.executable,str(destination/'code/scripts'/script),'--stage',stage,'--workers',str(a.workers)],check=True)
++        subprocess.run([sys.executable,str(destination/'code/scripts/reproduce_all.py'),'--numerical',str(destination/'verification_run')],check=True)
++        subprocess.run([sys.executable,str(destination/'code/scripts/plot_integrated_figures.py'),'--package',str(destination),'--output-dir',str(destination/'figures')],check=True)
++        print(f'CONSOLIDATED_ANALYSIS_COMPLETE: {destination}');return
++    result=checks(package)
++    if a.e2_raw:
++        metadata=json.loads((package/'validation/consolidated/external_E2_raw_manifest.json').read_text())
++        for rel,entry in metadata['files'].items():
++            if sha(a.e2_raw/rel)!=entry['sha256']:raise ValueError(f'E2 raw file mismatch: {rel}')
++        result['external_E2_round_files_verified']=len(metadata['files'])
++    if a.numerical:result['numerical']=numerical(package,a.numerical.resolve())
++    print(json.dumps(result,indent=2))
+ 
+ 
+-def run_level1_exact() -> None:
+-    temp_root = Path(tempfile.mkdtemp(prefix="daqem_level1_exact_"))
+-    try:
+-        generated = temp_root / "generated"
+-        run_command(
+-            "level1-run",
+-            [
+-                PYTHON,
+-                "reproducibility/run_all.py",
+-                "--mode",
+-                "fast",
+-                "--level",
+-                "1",
+-                "--output",
+-                str(generated),
+-            ],
+-        )
+-        proc = run_command(
+-            "level1-verify",
+-            [
+-                PYTHON,
+-                "reproducibility/verify.py",
+-                "--reference",
+-                "reproducibility/reference_level1/",
+-                "--generated",
+-                str(generated),
+-            ],
+-        )
+-        require_output("level1-verify", proc, "VERIFY PASS")
+-    finally:
+-        shutil.rmtree(temp_root, ignore_errors=True)
+-
+-
+-def output_files_from_manifest(output_root: Path) -> list[Path]:
+-    manifest_path = output_root / "manifest.json"
+-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+-    outputs = manifest.get("outputs")
+-    if not isinstance(outputs, dict):
+-        raise StepError(f"determinism: invalid outputs in {manifest_path}")
+-    return sorted(Path(relpath) for relpath in outputs)
+-
+-
+-def compare_canonical_outputs(lhs: Path, rhs: Path) -> list[str]:
+-    relpaths = output_files_from_manifest(lhs)
+-    rhs_relpaths = output_files_from_manifest(rhs)
+-    if relpaths != rhs_relpaths:
+-        return [f"manifest output set differs: {relpaths} != {rhs_relpaths}"]
+-
+-    mismatches = []
+-    for relpath in relpaths:
+-        left = lhs / relpath
+-        right = rhs / relpath
+-        if not left.exists() or not right.exists():
+-            mismatches.append(f"missing {relpath}")
+-            continue
+-        if not filecmp.cmp(left, right, shallow=False):
+-            mismatches.append(relpath.as_posix())
+-    return mismatches
+-
+-
+-def run_determinism() -> None:
+-    temp_root = Path(tempfile.mkdtemp(prefix="daqem_level1_determinism_"))
+-    try:
+-        first = temp_root / "run_a"
+-        second = temp_root / "run_b"
+-        third = temp_root / "run_c"
+-        run_command(
+-            "determinism-run-a",
+-            [
+-                PYTHON,
+-                "reproducibility/run_all.py",
+-                "--mode",
+-                "fast",
+-                "--level",
+-                "1",
+-                "--output",
+-                str(first),
+-            ],
+-        )
+-        run_command(
+-            "determinism-run-b",
+-            [
+-                PYTHON,
+-                "reproducibility/run_all.py",
+-                "--mode",
+-                "fast",
+-                "--level",
+-                "1",
+-                "--output",
+-                str(second),
+-            ],
+-        )
+-        run_command(
+-            "determinism-run-c",
+-            [
+-                PYTHON,
+-                "reproducibility/run_all.py",
+-                "--mode",
+-                "fast",
+-                "--level",
+-                "1",
+-                "--output",
+-                str(third),
+-            ],
+-        )
+-        mismatches_ab = compare_canonical_outputs(first, second)
+-        mismatches_ac = compare_canonical_outputs(first, third)
+-        mismatches = [f"run_a vs run_b: {item}" for item in mismatches_ab]
+-        mismatches.extend(f"run_a vs run_c: {item}" for item in mismatches_ac)
+-        print(
+-            f"DETERMINISM CHECK: files={len(output_files_from_manifest(first))} "
+-            f"runs=3 comparisons=2 mismatches={len(mismatches)}",
+-            flush=True,
+-        )
+-        if mismatches:
+-            raise StepError("determinism: " + ", ".join(mismatches))
+-    finally:
+-        shutil.rmtree(temp_root, ignore_errors=True)
+-
+-
+-def run_pytest() -> None:
+-    run_command("tests", [PYTHON, "-m", "pytest", "tests/", "-q"])
+-
+-
+-def run_freeze_audit() -> None:
+-    proc = run_command("freeze-audit", [PYTHON, "scripts/verify_freeze.py"])
+-    require_output("freeze-audit", proc, "FREEZE AUDIT PASS")
+-
+-
+-def run_confirmatory() -> None:
+-    proc = run_command("confirmatory", [PYTHON, "scripts/verify_confirmatory.py"])
+-    require_output("confirmatory", proc, "CONFIRMATORY VERIFY PASS")
+-
+-
+-def run_extension() -> None:
+-    proc = run_command("extension", [PYTHON, "scripts/verify_extension.py"])
+-    require_output("extension", proc, "EXTENSION VERIFY PASS")
+-
+-
+-def run_hardware_archive() -> None:
+-    proc = run_command("hardware-archive", [PYTHON, "scripts/verify_hardware_archive.py"])
+-    require_output("hardware-archive", proc, "HARDWARE ARCHIVE VERIFY PASS")
+-
+-
+-def run_hardware_analysis() -> None:
+-    proc = run_command("hardware-analysis", [PYTHON, "scripts/analysis_from_hardware.py"])
+-    require_output("hardware-analysis", proc, "HARDWARE ANALYSIS PASS")
+-
+-
+-def run_figures() -> None:
+-    proc = run_command("figures", [PYTHON, "scripts/generate_all_figures.py"])
+-    require_output("figures", proc, "FIGURES PASS")
+-
+-
+-def main() -> int:
+-    steps = [
+-        ("Level 1 exact", run_level1_exact),
+-        ("determinism", run_determinism),
+-        ("tests", run_pytest),
+-        ("freeze audit", run_freeze_audit),
+-        ("confirmatory verification", run_confirmatory),
+-        ("extension verification", run_extension),
+-        ("hardware archive", run_hardware_archive),
+-        ("hardware analysis", run_hardware_analysis),
+-        ("figures", run_figures),
+-    ]
+-    for label, func in steps:
+-        try:
+-            func()
+-        except Exception as exc:
+-            print(f"REPRODUCE_ALL_FAIL: {label}")
+-            print(str(exc))
+-            return 1
+-    print(FINAL_PASS)
+-    return 0
+-
+-
+-if __name__ == "__main__":
+-    raise SystemExit(main())
++if __name__=='__main__':main()
+--- before/scripts/verify_aux_cdr_pec.py
++++ after/scripts/verify_aux_cdr_pec.py
+@@ -9,6 +9,9 @@
+ import json
+ from fractions import Fraction
+ from pathlib import Path
++import sys
++CODE = Path(__file__).resolve().parents[1]
++sys.path[:0] = [str(CODE / 'src'), str(CODE)]
+ 
+ import numpy as np
+ from scipy.integrate import quad
+--- before/scripts/verify_consolidated_fakekolkata.py
++++ after/scripts/verify_consolidated_fakekolkata.py
+@@ -0,0 +1,208 @@
++"""Independent numerical checks of the completed cached FakeKolkata analysis.
++
++Does not import the production sampling, decision, REM, optimization or summary
++functions. Does not simulate quantum circuits. Fractions, explicit Kronecker
++matrices, scalar quadratic intersections and integer bootstrap totals provide
++alternative calculations.
++"""
++from pathlib import Path
++from fractions import Fraction
++import csv
++import hashlib
++import json
++import os
++import time
++for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS'):
++    os.environ[key] = '1'
++import numpy as np
++
++PACKAGE = None
++ARCHIVE = None
++RESULTS = None
++REPORT_DIR = None
++NAMES = [f'C{i:03}' for i in range(1,49)]
++METHODS = ('Raw','Raw+REM','Accuracy-ZNE','Decision-ZNE')
++POLICIES = (*METHODS,'MSE-selector','GRI-selector')
++NAMESPACE = 'v20-independent-fakekolkata-20261022'
++
++def read(path):
++    return json.loads(path.read_text(encoding='utf-8'))
++
++def write(path, obj):
++    path.write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
++
++def seed_rng(name, method, rep, stream):
++    payload = f'260616|{name}|{method}|512|{rep}|{NAMESPACE}|{stream}'
++    seed = int.from_bytes(hashlib.sha256(payload.encode()).digest()[:8], 'big')
++    return np.random.Generator(np.random.PCG64DXSM(seed))
++
++def kron_channel(matrices):
++    channel = np.ones((1,1))
++    for matrix in reversed(matrices):
++        channel = np.kron(channel, matrix)
++    return channel
++
++def independent_rem(cell, name, rep, candidate):
++    rid = 25*rep+candidate
++    counts = seed_rng(name,'Raw+REM',rid,'rem_eval_counts').multinomial(
++        410, cell['noisy_observed_probs'][0,candidate])
++    rng = seed_rng(name,'Raw+REM',rid,'rem_calibration')
++    estimated = np.empty((10,2,2))
++    for prepared in (0,1):
++        for q in range(10):
++            p = cell['readout_matrices'][q,:,prepared]
++            estimated[q,:,prepared] = rng.multinomial(51,p/p.sum())/51
++    estimated = np.maximum(estimated,1e-12)
++    estimated /= estimated.sum(axis=1,keepdims=True)
++    inverses=[]
++    for m in estimated:
++        determinant = m[0,0]*m[1,1]-m[0,1]*m[1,0]
++        assert abs(determinant)>1e-8
++        inverses.append(np.array([[m[1,1],-m[0,1]],[-m[1,0],m[0,0]]])/determinant)
++    unprojected = kron_channel(inverses) @ (counts/410)
++    lo, hi = float(unprojected.min()-1), float(unprojected.max())
++    for _ in range(80):
++        mid = (lo+hi)/2
++        if np.maximum(unprojected-mid,0).sum()>1:
++            lo=mid
++        else:
++            hi=mid
++    projected=np.maximum(unprojected-(lo+hi)/2,0)
++    projected/=projected.sum()
++    return float(projected @ cell['values_by_state'])
++
++def minimax_by_scalar_intersections(primitive, ideal, optimum, coefficients):
++    keep=[j for j in range(25) if j!=optimum]
++    g=primitive[:10][:,:,keep]-primitive[:10][:,:,[optimum]]
++    centered=g-g.mean(axis=0)
++    q=np.einsum('rsj,rtj->jst',centered,centered)/9
++    ref=ideal[keep]-ideal[optimum]
++    q/=ref[:,None,None]**2
++    c0=np.array([2.,-1.,0.]);direction=np.array([1.,-2.,1.])
++    a=np.einsum('s,jst,t->j',direction,q,direction)
++    b=2*np.einsum('s,jst,t->j',c0,q,direction)
++    c=np.einsum('s,jst,t->j',c0,q,c0)
++    candidates=[-bb/(2*aa) for aa,bb in zip(a,b) if aa>0]
++    for j in range(24):
++        for k in range(j):
++            polynomial=np.array([a[j]-a[k],b[j]-b[k],c[j]-c[k]])
++            for root in np.roots(np.trim_zeros(polynomial,'f')):
++                if abs(root.imag)<1e-9:
++                    candidates.append(float(root.real))
++    def objective(t):
++        return float(np.max((a*t+b)*t+c))
++    optimum_t=min(candidates,key=objective)
++    reference=objective(optimum_t)
++    found=objective(float(coefficients[2]))
++    excess=(found-reference)/max(1.,abs(reference))
++    assert -1e-9 <= excess <= 1e-7, (found,reference,coefficients)
++    return float(excess)
++
++def exact_failures(samples,optimum,coefficients):
++    raw=np.rint(samples['raw'][20:]*512).astype(np.int64)
++    prim=np.rint(samples['primitive'][20:]*170).astype(np.int64)
++    assert np.max(abs(samples['raw']*512-np.rint(samples['raw']*512)))<1e-8
++    assert np.max(abs(samples['primitive']*170-np.rint(samples['primitive']*170)))<1e-8
++    keep=[j for j in range(25) if j!=optimum]
++    answer={'Raw':np.any(raw[:,keep]<=raw[:,[optimum]],axis=1).astype(int).tolist(),
++            'Raw+REM':np.any(samples['rem'][20:,keep]<=samples['rem'][20:,[optimum]],axis=1).astype(int).tolist()}
++    t=Fraction(float(coefficients['Decision-ZNE'][2]))
++    weights={'Accuracy-ZNE':(Fraction(4,3),Fraction(1,3),Fraction(-2,3)),
++             'Decision-ZNE':(2+t,-1-2*t,t)}
++    for method,w in weights.items():
++        failures=[]
++        for rep in prim:
++            values=[sum((Fraction(int(rep[s,j]),170)*w[s] for s in range(3)),Fraction(0)) for j in range(25)]
++            failures.append(int(any(values[j]<=values[optimum] for j in keep)))
++        answer[method]=failures
++    return answer
++
++def main():
++    start=time.monotonic()
++    rows=[]; totals=[]; samples_checked=0; rem_checked=0; labels_checked=0
++    max_readout_error=0.;max_rem_error=0.;max_qp_excess=0.;max_mse_error=0.
++    for name in NAMES:
++        record=read(RESULTS/f'{name}_analysis.json'); old=read(ARCHIVE/f'{name}_analysis.json')
++        scientific_changes=[key for key in record if key not in ('cache_identity','samples_sha256') and record[key]!=old[key]]
++        assert not scientific_changes,(name,scientific_changes)
++        with np.load(RESULTS/f'{name}_samples.npz',allow_pickle=False) as z:
++            samples={k:z[k] for k in z.files}
++        with np.load(ARCHIVE/f'{name}_samples.npz',allow_pickle=False) as z:
++            for key,array in samples.items():
++                np.testing.assert_array_equal(array,z[key]);samples_checked+=array.size
++        with np.load(RESULTS/f'{name}_probabilities.npz',allow_pickle=False) as z:
++            cell={k:z[k] for k in z.files}
++        opt=int(cell['x_star']);ideal=cell['ideal_values'];coeff=record['coefficients']
++        failure=exact_failures(samples,opt,coeff)
++        for policy,method in record['choices'].items():
++            failure[policy]=failure[method]
++            criterion='mse' if policy=='MSE-selector' else 'gri'
++            assert method==sorted(METHODS,key=lambda m:(record['scores'][m][criterion],m))[0]
++        assert failure==record['failures'],name
++        labels_checked+=sum(map(len,failure.values()))
++        totals.append([sum(failure[p]) for p in POLICIES])
++        methods={'Raw':samples['raw'],'Raw+REM':samples['rem']}
++        for method in ('Accuracy-ZNE','Decision-ZNE'):
++            methods[method]=sum(coeff[method][s]*samples['primitive'][:,s,:] for s in range(3))
++            np.testing.assert_allclose([sum(coeff[method]),sum((s+1)*coeff[method][s] for s in range(3))], [1.,0.],atol=1e-14,rtol=0)
++        for method,values in methods.items():
++            mse=float(np.mean((values[10:20]-ideal)**2))
++            delta=abs(mse-record['scores'][method]['mse']);max_mse_error=max(max_mse_error,delta)
++            assert delta<1e-12
++        excess=minimax_by_scalar_intersections(samples['primitive'],ideal,opt,coeff['Decision-ZNE'])
++        max_qp_excess=max(max_qp_excess,excess)
++        readout=kron_channel(cell['readout_matrices'])
++        predicted=cell['raw_gate_probs'].reshape(-1,1024) @ readout.T
++        error=float(np.max(abs(predicted.reshape(3,25,1024)-cell['noisy_observed_probs'])))
++        max_readout_error=max(max_readout_error,error);assert error<1e-14
++        for rep in (0,9,10,19,20,39):
++            for candidate in sorted({0,opt,24}):
++                expectation=independent_rem(cell,name,rep,candidate)
++                delta=abs(expectation-float(samples['rem'][rep,candidate]))
++                max_rem_error=max(max_rem_error,delta);rem_checked+=1
++                assert delta<1e-10,(name,rep,candidate,delta)
++        for policy in POLICIES:
++            method=record['choices'].get(policy,policy)
++            fit=25*10*(170+170+170) if policy in ('Decision-ZNE','MSE-selector','GRI-selector') else 0
++            selection=25*10*(512+(410+51+51)+(170+170+170)) if policy.endswith('selector') else 0
++            evaluation=25*20*(510 if method in ('Accuracy-ZNE','Decision-ZNE') else 512)
++            assert record['ledger'][policy]=={'fit':fit,'selection':selection,'evaluation':evaluation,
++                'total':fit+selection+evaluation,'amortized_per_decision':(fit+selection+evaluation)/20}
++        rows.append({'instance':name,'samples_equal':True,'scientific_record_equal':True,
++                     'failures_checked':120,'readout_max_error':error,'qp_scaled_objective_excess':excess,
++                     'GRI_choice':record['choices']['GRI-selector'],'MSE_choice':record['choices']['MSE-selector']})
++    summary=read(RESULTS/'summary.json');old_summary=read(ARCHIVE/'summary.json')
++    assert summary==old_summary
++    assert (RESULTS/'outcomes.csv').read_bytes()==(ARCHIVE/'outcomes.csv').read_bytes()
++    counts=np.asarray(totals,dtype=np.int64)
++    for j,policy in enumerate(POLICIES):
++        np.testing.assert_allclose(summary['failure_rates'][policy],counts[:,j].sum()/960,atol=1e-15,rtol=0)
++    draws=np.random.default_rng(20261022).integers(0,48,size=(10000,48))
++    boot=counts[draws].sum(axis=1)
++    m=boot[:,POLICIES.index('MSE-selector')];d=boot[:,POLICIES.index('GRI-selector')];r=boot[:,POLICIES.index('Raw')]
++    independent_cis={'relative_reduction_cluster_ci':np.quantile((m-d)/m,[.025,.975]).tolist(),
++        'paired_difference_cluster_ci':np.quantile((d-m)/960,[.025,.975]).tolist(),
++        'paired_difference_GRI_minus_Raw_cluster_ci':np.quantile((d-r)/960,[.025,.975]).tolist()}
++    for key,value in independent_cis.items():
++        np.testing.assert_allclose(value,summary[key],atol=2e-15,rtol=0)
++    report={'instances':48,'samples_compared_exactly':samples_checked,'failure_labels_checked':labels_checked,
++            'analysis_records_equal_excluding_provenance':48,'selector_choices_equal':96,
++            'outcomes_csv_byte_identical':True,'summary_equal':True,
++            'readout_probability_vectors_checked':48*3*25,'readout_max_abs_error':max_readout_error,
++            'independent_REM_expectations_checked':rem_checked,'REM_max_abs_error':max_rem_error,
++            'independent_scalar_minimax_fits_checked':48,'minimax_max_scaled_objective_excess':max_qp_excess,
++            'MSE_max_abs_error':max_mse_error,'ledger_rows_checked':48*6,
++            'independent_bootstrap_resamples':10000,'independent_cluster_intervals':independent_cis,
++            'new_physical_simulations':0,'elapsed_seconds':time.monotonic()-start,
++            'scope':'Full cached-probability reanalysis; no independent regeneration of the physical density matrices.'}
++    write(REPORT_DIR/'independent_fakekolkata.json',report)
++    with (REPORT_DIR/'fakekolkata_instance_comparison.csv').open('w',newline='',encoding='utf-8') as f:
++        writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
++    print(json.dumps(report,indent=2),flush=True)
++
++if __name__=='__main__':
++    import argparse
++    p=argparse.ArgumentParser();p.add_argument('--package',type=Path,required=True);p.add_argument('--report-dir',type=Path,required=True);args=p.parse_args()
++    PACKAGE=args.package.resolve();ARCHIVE=PACKAGE/'evidence/fakekolkata/results/fakekolkata_fixed10'
++    RESULTS=PACKAGE/'results/fakekolkata_fixed10';REPORT_DIR=args.report_dir
++    REPORT_DIR.mkdir(parents=True,exist_ok=True);main()
+--- before/scripts/verify_consolidated_hardware.py
++++ after/scripts/verify_consolidated_hardware.py
+@@ -0,0 +1,173 @@
++"""Independent count, covariance, channel and bootstrap checks of hardware."""
++from pathlib import Path
++from itertools import product
++import csv,hashlib,json,os,sys
++for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS'):os.environ[key]='1'
++CODE=Path(__file__).resolve().parents[1]
++sys.path[:0]=[str(CODE),str(CODE/'src')]
++import numpy as np
++from scipy.integrate import quad
++from scipy.special import log_ndtr
++from scipy.stats import norm
++from qiskit.quantum_info import DensityMatrix,Statevector
++from experiments.hardware_sigma import run_main as h
++from scripts import analysis_from_hardware as a
++
++def read(path):return json.loads(path.read_text())
++def write(path,z):path.write_text(json.dumps(z,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
++def covariance(x):
++    x=np.asarray(x);c=x-x.mean(axis=0);return c.T@c/(len(x)-1)
++def main(P, report_dir):
++    result=read(P/'results/hardware/hardware.json')
++    reference=read(P/'evidence/hardware/inputs/results/hardware_sigma_attempt2/hsmc_result.json')
++    old=read(P/'evidence/hardware/inputs/previous_reanalysis.json')
++    coeff={'Raw':[1,0,0], 'Accuracy-ZNE':result['config']['accuracy_zne_coefficients'],
++           'DA-ZNE':result['executed_coefficients']}
++    rawroot=P/'evidence/hardware/inputs/reproducibility/hardware/raw_counts'
++    def objective(bits):return -sum(bits[j]!=bits[j+1] for j in range(3))
++    outcomes=np.array([objective(format(i,'04b')[::-1]) for i in range(16)],dtype=float)
++    epochs=[];shot_total=0;row_count=0;gap_error=0.
++    for epoch,job in enumerate(a.ATTEMPT2_EPOCH_JOBS):
++        payload=read(rawroot/(job+'.json'));primitives={}
++        for meta,counts in zip(payload['tasks'],payload['raw_counts'],strict=True):
++            shots=sum(counts.values());assert shots==meta['shots']
++            shot_total+=shots;row_count+=1
++            value=sum(outcomes[int(bits,2)]*n for bits,n in counts.items())/shots
++            key=(meta['method'],meta['replicate'],meta['candidate'])
++            scale=int(meta['scale_nominal'])-1
++            if key not in primitives:primitives[key]=np.zeros(3)
++            primitives[key][scale]=value
++        vectors={}
++        for method in h.METHODS:
++            vectors[method]=[]
++            for rep in range(epoch*6,epoch*6+6):
++                values=np.array([np.dot(coeff[method],primitives[(method,rep,c)]) for c in range(4)])
++                vectors[method].append(values[1:]-values[0])
++            gap_error=max(gap_error,float(np.max(np.abs(np.array(vectors[method])-payload['archived_gap_vectors'][method]))))
++        epochs.append(vectors)
++    hat={m:covariance([v for ep in epochs for v in ep[m]]) for m in h.METHODS}
++    hat_error=max(float(np.max(abs(hat[m]-result['sigma_hat'][m]))) for m in h.METHODS)
++    assert hat_error<1e-15 and gap_error<1e-14
++    assert result['executed_coefficients']==reference['config']['decision_zne_coefficients']
++    assert result['ledger']==reference['ledger'] and shot_total==result['ledger']['C_Sigmahat']
++
++    # Independent explicit Pauli-twirl channel propagation, without Aer/noise helpers.
++    I=np.eye(2,dtype=complex);X=np.array([[0,1],[1,0]],complex)
++    Y=np.array([[0,-1j],[1j,0]],complex);Z=np.diag([1,-1]).astype(complex)
++    paulis=(I,X,Y,Z)
++    def embed(local,targets):
++        matrices=[I]*4
++        for q,op in zip(targets,local,strict=True):matrices[q]=op
++        full=np.ones((1,1),complex)
++        for op in matrices[::-1]:full=np.kron(full,op)
++        return full
++    twirls={qs:[embed(ps,qs) for ps in product(paulis,repeat=len(qs))]
++            for qs in [(0,),(1,),(2,),(3,),(0,1),(1,2),(2,3)]}
++    rates=np.array(result['characterization']['learned_rates'])
++    physical_error=0.;ideal_error=0.;variances=[]
++    saved=np.load(P/'results/hardware/prediction_probabilities.npz')['probabilities']
++    with a.archive_context(P/'evidence/hardware/inputs'):
++        landscape=h.microcell_landscape();mu=landscape.ideal_values[1:]-landscape.ideal_values[0]
++        for c,base in enumerate(h.build_candidate_circuits()):
++            for scale in (1.,2.,3.):
++                isa,_=h.isa_for_candidate_scale(base,scale)
++                qc=h.compact_isa_circuit(isa).remove_final_measurements(inplace=False)
++                ideal=Statevector.from_instruction(qc).probabilities()
++                ideal_error=max(ideal_error,abs(float(ideal@outcomes)-landscape.ideal_values[c]))
++                rho=DensityMatrix.from_label('0000')
++                for inst in qc.data:
++                    qs=tuple(qc.find_bit(q).index for q in inst.qubits)
++                    rho=rho.evolve(inst.operation,qargs=list(qs))
++                    rate=None
++                    if inst.operation.name in ('x','sx'):rate=rates[qs[0]]
++                    if inst.operation.name=='cz':
++                        qs=tuple(sorted(qs));rate=rates[4+((0,1),(1,2),(2,3)).index(qs)]
++                    if rate is not None:
++                        twirl=sum((op@rho.data@op.conj().T for op in twirls[qs]),np.zeros((16,16),complex))/len(twirls[qs])
++                        rho=DensityMatrix(np.exp(-rate)*rho.data+(1-np.exp(-rate))*twirl)
++                p=rho.probabilities();p/=p.sum()
++                physical_error=max(physical_error,float(np.max(abs(p-saved[len(variances)]))))
++                variances.append(float(p@(outcomes**2)-(p@outcomes)**2))
++    assert physical_error<1e-13 and ideal_error<1e-13
++    pred={};pullback_error=0.
++    for method in h.METHODS:
++        weights=np.asarray(coeff[method]);shots=4096 if method=='Raw' else 1365
++        v=np.array(variances).reshape(4,3)@(weights**2)/shots
++        sigma=np.diag(v[1:])+v[0]*np.ones((3,3));pred[method]=sigma
++        pullback_error=max(pullback_error,float(np.max(abs(sigma-result['sigma_pred'][method]))))
++    assert pullback_error<1e-15
++
++    # Orthant probabilities from a deterministic one-dimensional reference integral.
++    risks={}
++    for method,sigma in pred.items():
++        vr=sigma[0,1];sd=np.sqrt(np.diag(sigma)-vr)
++        def integrand(z):return norm.pdf(z)*(-np.expm1(log_ndtr((mu-np.sqrt(vr)*z)/sd).sum()))
++        risk,err=quad(integrand,-np.inf,np.inf,epsabs=1e-14,epsrel=1e-12,limit=300)
++        discrepancy=abs(risk-result['corrected_endpoint']['risks'][method])
++        # Production CDF requests absolute tolerance 1e-7. The independent check
++        # enforces 1e-9 and also verifies every pair threshold below.
++        assert discrepancy<1e-9
++        risks[method]={'quadrature':risk,'reported':result['corrected_endpoint']['risks'][method],
++                       'absolute_difference':discrepancy,'quadrature_error':err}
++
++    # Rebuild all epoch-cluster covariance draws with a separate covariance routine.
++    payload='260616|HSMC001|hardware_sigma|4096|0|hardware_sigma_epoch_bootstrap'
++    seed=int.from_bytes(hashlib.sha256(payload.encode()).digest()[:8],'big')
++    rng=np.random.Generator(np.random.PCG64DXSM(seed))
++    selected=rng.integers(0,10,size=(10000,10))
++    boot={}
++    for method in h.METHODS:
++        x=np.array([ep[method] for ep in epochs])[selected].reshape(10000,60,3)
++        centered=x-x.mean(axis=1,keepdims=True)
++        boot[method]=np.einsum('nri,nrj->nij',centered,centered)/59
++    grad={m:h.gri_sigma_gradient(mu,np.array(result['sigma_pred'][m])) for m in h.METHODS}
++    projected_checks=[]
++    for pair in result['corrected_endpoint']['pairs']:
++        m,n=pair['pair']
++        prediction_m=np.array(result['sigma_pred'][m]);prediction_n=np.array(result['sigma_pred'][n])
++        delta=abs(np.trace(grad[m]@(prediction_m-hat[m]))-np.trace(grad[n]@(prediction_n-hat[n])))
++        z=np.abs(np.einsum('ij,nji->n',grad[m],prediction_m-boot[m])-np.einsum('ij,nji->n',grad[n],prediction_n-boot[n]))
++        ucb=float(np.quantile(z,.95))
++        assert abs(delta-pair['delta_rank'])<1e-14 and abs(ucb-pair['ucb95'])<1e-14
++        assert not pair['passed'] and ucb>pair['threshold']
++        independent_threshold=.25*abs(risks[m]['quadrature']-risks[n]['quadrature'])
++        assert ucb>independent_threshold
++        projected_checks.append({'pair':pair['pair'],'independent_projected_error':delta,'independent_ucb95':ucb})
++
++    accounting=[]
++    for path in sorted(rawroot.glob('*.json')):
++        z=read(path);raw=z.get('raw_counts')
++        if isinstance(raw,list):
++            accounting.append({'job':z['job_id'],'shots':sum(sum(c.values()) for c in raw),'source':'raw_counts'})
++        else:
++            # Feasibility only retained summaries, not per-bitstring counts.
++            feasibility=read(P/'evidence/hardware/inputs/experiments/hardware_sigma/feasibility_result.json')
++            summaries=feasibility['feasibility']['counts_summary']
++            accounting.append({'job':z['job_id'],'shots':sum(s['shots'] for s in summaries),'source':'summary_only'})
++    write(report_dir/'hardware_shot_accounting.json',{'jobs':accounting,'archived_campaign_total_shots':sum(r['shots'] for r in accounting),
++        'attempt2_main_shots':result['ledger']['C_total'],'scope':'Includes failed characterization and feasibility summaries; no missing raw feasibility counts reconstructed'})
++    changes=[]
++    for m in h.METHODS:
++        before=old['secondary']['methods'][m]['relative_frobenius_error'];after=result['secondary']['methods'][m]['relative_frobenius_error']
++        changes.append({'metric':'relative_frobenius_error','method_or_pair':m,'before':before,'after':after,'difference':after-before})
++    for pair in result['corrected_endpoint']['pairs']:
++        previous=next(p for p in old['corrected_endpoint']['pairs'] if set(p['pair'])==set(pair['pair']))
++        for metric in ('delta_rank','ucb95','threshold'):
++            changes.append({'metric':metric,'method_or_pair':' / '.join(pair['pair']),
++                            'before':previous[metric],'after':pair[metric],'difference':pair[metric]-previous[metric]})
++    with (report_dir/'hardware_numerical_changes.csv').open('w',newline='',encoding='utf-8') as f:
++        writer=csv.DictWriter(f,fieldnames=list(changes[0]));writer.writeheader();writer.writerows(changes)
++    report={'counts_records_checked':row_count,'gap_vectors_checked':180,'gap_max_abs_error':gap_error,
++        'measured_covariance_max_abs_error':hat_error,'executed_coefficients_preserved':True,
++        'independent_Pauli_twirl_probability_vectors':12,'probability_max_abs_error':physical_error,
++        'ideal_folded_objective_max_abs_error':ideal_error,'covariance_pullback_max_abs_error':pullback_error,
++        'deterministic_risk_integrals':risks,'independent_bootstrap_draws':10000,'projected_checks':projected_checks,
++        'gradient_scope':'Analytic production gradients already regression-tested; independent contraction/bootstrap and risk integral here',
++        'main_shots':shot_total+203*4096,'label_unchanged':result['label']==old['label'],
++        'feasibility_raw_counts_available':False,'new_hardware_jobs':0}
++    write(report_dir/'independent_hardware.json',report)
++    print(json.dumps(report,indent=2),flush=True)
++
++if __name__=='__main__':
++    import argparse
++    p=argparse.ArgumentParser();p.add_argument('--package',type=Path,required=True);p.add_argument('--report-dir',type=Path,required=True);args=p.parse_args();args.report_dir.mkdir(parents=True,exist_ok=True);main(args.package.resolve(),args.report_dir)
+--- before/scripts/verify_e2_integrated.py
++++ after/scripts/verify_e2_integrated.py
+@@ -0,0 +1,60 @@
++"""Rebuild E2 aggregation and costs from saved outcomes, without new trajectories."""
++import argparse,json
++from pathlib import Path
++import numpy as np
++import pandas as pd
++
++
++def verify(package):
++    source=package/'evidence/e2/corrected'
++    frames=[pd.read_csv(p,float_precision='round_trip') for p in sorted((source/'inputs/reproducibility/reference_confirmatory/e2/instances').glob('*_results.csv'))]
++    assert len(frames)==32
++    data=pd.concat(frames,ignore_index=True)
++    keys=['instance','trajectory','selector','budget']
++    assert len(data)==15360 and not data.duplicated(keys).any()
++    assert set(data.instance)=={f'C{i:03}' for i in range(1,33)}
++    assert set(data.selector)=={'DA','MSE'} and set(data.budget)=={256,512,1024,2048,4096,8192}
++    assert (data.success==data.success_decision).all()
++    rows=[]
++    for (instance,selector,budget),group in data.groupby(['instance','selector','budget'],sort=True):
++        assert len(group)==40 and set(group.trajectory)==set(range(40))
++        for c in ('selected_method','active_scales','selector_source_budget'):assert group[c].nunique()==1
++        row=group.iloc[0];scales=int(row.active_scales);train=40*3*25*int(row.selector_source_budget)
++        proposal=19*5*8192;incremental=(19*(scales-1)+scales)*5*int(budget)
++        rows.append(dict(instance=instance,selector=selector,budget=int(budget),method=row.selected_method,
++                         success_rate=int(group.success_decision.sum())/40,reported_shots_per_trajectory=100*scales*int(budget),
++                         proposal_shots_per_trajectory=proposal,incremental_selection_shots_per_trajectory=incremental,
++                         static_training_shots_per_instance=train,amortized_static_training_shots=train/40,
++                         total_shots_per_trajectory=proposal+incremental+train/40,
++                         executed_union_shots_per_trajectory=20*5*(8192+(scales-1)*int(budget))+train/40))
++    expected=pd.DataFrame(rows)
++    root=package/'results/e2'
++    actual=pd.read_csv(root/'e2_full_ledger.csv',float_precision='round_trip')
++    pd.testing.assert_frame_equal(expected[actual.columns],actual,check_exact=True,check_dtype=False)
++    crossings=[]
++    for _,group in expected.groupby(['instance','selector'],sort=True):
++        good=group[group.success_rate>=.8]
++        if len(good):crossings.append(good.sort_values(['total_shots_per_trajectory','budget']).iloc[0])
++    cross=pd.DataFrame(crossings).reset_index(drop=True)
++    pd.testing.assert_frame_equal(cross,pd.read_csv(root/'e2_corrected_crossings.csv',float_precision='round_trip'),check_exact=True,check_dtype=False)
++    summary=json.loads((root/'e2_summary.json').read_text())
++    paired=cross.pivot(index='instance',columns='selector',values='total_shots_per_trajectory').dropna()
++    assert summary['both_cross_instances']==len(paired)==13
++    assert summary['median_full_cost_ratio_MSE_over_DA']==float(np.median(paired.MSE/paired.DA))==1.3
++    series=[]
++    for (selector,budget),group in expected.groupby(['selector','budget'],sort=True):
++        selected=data[(data.selector==selector)&(data.budget==budget)]
++        series.append(dict(selector=selector,budget=int(budget),mean_full_shots=float(group.total_shots_per_trajectory.mean()),
++                           successful_trajectories=int(selected.success.sum()),trajectories=1280,success_rate=int(selected.success.sum())/1280))
++    for selector in ('DA','MSE'):
++        assert summary['pooled_max_success'][selector]==max(r['success_rate'] for r in series if r['selector']==selector)
++    for name in ('e2_full_ledger.csv','e2_corrected_crossings.csv'):
++        pd.testing.assert_frame_equal(pd.read_csv(source/name),pd.read_csv(root/name),check_exact=True,check_dtype=False)
++    assert summary==json.loads((source/'e2_summary.json').read_text())
++    return dict(outcomes_verified=len(data),ledger_rows=len(actual),both_cross_instances=len(paired),series=series,
++                scope='Outcome-level aggregation and costs; does not independently reconstruct all raw trajectories')
++
++
++if __name__=='__main__':
++    p=argparse.ArgumentParser();p.add_argument('--package',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
++    result=verify(a.package);a.output.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
+--- before/tests/test_consolidated_entrypoint.py
++++ after/tests/test_consolidated_entrypoint.py
+@@ -0,0 +1,40 @@
++import hashlib,json,subprocess
++from pathlib import Path
++import pytest
++from scripts import reproduce_all as runner
++
++
++def fixture_package(tmp_path,monkeypatch):
++    monkeypatch.setattr(runner,'verify_cached',lambda p:{'core_verified':True})
++    monkeypatch.setattr(runner,'identity',lambda p,s:('fixed',{}))
++    monkeypatch.setattr(runner,'check_receipt',lambda *a:{'outputs':{}})
++    data=tmp_path/'evidence/controls/result.json';data.parent.mkdir(parents=True);data.write_text('{"value":1}')
++    report=tmp_path/'validation/consolidated/import_provenance.json';report.parent.mkdir(parents=True)
++    report.write_text(json.dumps([{'destination':data.relative_to(tmp_path).as_posix(),'sha256':hashlib.sha256(data.read_bytes()).hexdigest()}]))
++    return data,report
++
++
++def test_global_check_rejects_changed_auxiliary_even_when_main_caches_pass(tmp_path,monkeypatch):
++    data,_=fixture_package(tmp_path,monkeypatch)
++    assert runner.checks(tmp_path)['imported_files_verified']==1
++    data.write_text('{"value":2}')
++    with pytest.raises(ValueError,match='Changed imported evidence'):runner.checks(tmp_path)
++
++
++def test_global_check_requires_auxiliary_provenance(tmp_path,monkeypatch):
++    _,report=fixture_package(tmp_path,monkeypatch);report.unlink()
++    with pytest.raises(FileNotFoundError,match='Missing consolidated'):runner.checks(tmp_path)
++
++
++def test_numerical_reports_preserve_existing_directory(tmp_path):
++    report=tmp_path/'reports';report.mkdir();record=report/'old.json';record.write_text('old')
++    with pytest.raises(FileExistsError):runner.numerical(tmp_path,report)
++    assert record.read_text()=='old'
++
++
++def test_failed_verifier_cannot_write_global_completion(tmp_path,monkeypatch):
++    def fail(*args,**kwargs):raise subprocess.CalledProcessError(1,args[0])
++    monkeypatch.setattr(runner.subprocess,'run',fail)
++    output=tmp_path/'reports'
++    with pytest.raises(subprocess.CalledProcessError):runner.numerical(tmp_path,output)
++    assert not (output/'verification_summary.json').exists()
+--- before/tests/test_hardware_corrections.py
++++ after/tests/test_hardware_corrections.py
+@@ -8,6 +8,13 @@
+ from qiskit.quantum_info import DensityMatrix
+ from experiments.hardware_sigma import run_main as h
+ from scripts import analysis_from_hardware as a
++
++@pytest.fixture(autouse=True)
++def archived_feasibility_record(monkeypatch):
++    # The integrated layout stores experimental inputs separately from code.
++    source=Path(__file__).resolve().parents[2]/'evidence/hardware/inputs/experiments/hardware_sigma/feasibility_result.json'
++    assert source.is_file()
++    monkeypatch.setattr(h,'FEASIBILITY_RECORD',source)
+ 
+ def design():
+     x=np.zeros((203,14))

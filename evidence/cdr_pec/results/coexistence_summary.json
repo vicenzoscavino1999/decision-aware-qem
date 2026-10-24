@@ -1,0 +1,36 @@
+{
+  "1536": {
+    "coexist": 7,
+    "decision_worse": 8,
+    "mse_better": 7,
+    "without": [
+      "POM_004"
+    ]
+  },
+  "3072": {
+    "coexist": 7,
+    "decision_worse": 7,
+    "mse_better": 8,
+    "without": [
+      "POM_004"
+    ]
+  },
+  "6144": {
+    "coexist": 7,
+    "decision_worse": 7,
+    "mse_better": 8,
+    "without": [
+      "POM_004"
+    ]
+  },
+  "768": {
+    "coexist": 5,
+    "decision_worse": 8,
+    "mse_better": 5,
+    "without": [
+      "POM_004",
+      "POM_015",
+      "POM_018"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "scope": "same_sample_oracle_pilot_planning",
+  "independent_pairs_assumed": true,
+  "cluster_power_established": false,
+  "minimum_detectable_effect_established": false,
+  "primary_cell": "P004",
+  "primary_budget": 512,
+  "planned_pairs": 1920,
+  "alpha": 0.05,
+  "effect_target": 0.15,
+  "pooled": {
+    "budget": 512,
+    "pilot_instances": 3,
+    "paired_n_pilot": 600,
+    "both_fail": 154,
+    "both_ok": 339,
+    "b": 78,
+    "c": 29,
+    "failure_rate_MSE_pooled": 0.38666666666666666,
+    "failure_rate_DA_pooled": 0.305,
+    "observed_rel_reduction_pooled": 0.21120689655172414,
+    "observed_effect_meets_target": true
+  },
+  "exact_iid_plugin_power": 0.9999999999991854,
+  "monte_carlo_iid_plugin_power": 1.0,
+  "monte_carlo_repetitions": 10000
+}

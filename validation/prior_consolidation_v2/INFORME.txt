@@ -1,0 +1,42 @@
+PARTE 4 — CONSOLIDACIÓN DE RESULTADOS, VERIFICADORES Y FIGURAS
+
+RESULTADO
+Se consolidaron E2, FakeKolkata, hardware, CDR/PEC, ruido estructurado, controles, canal aprendido y ablaciones con la integración E1/E3/A3/C3 anterior. El paquete tiene una entrada global que verifica las fuentes corregidas y admite reanálisis en una carpeta nueva. Sus comprobaciones numéricas completas pasan. Las 311 pruebas seleccionadas pasan.
+La consolidación no cambia los resultados corregidos previos. Sí elimina rutas antiguas y separa las referencias históricas de las fuentes que deben usarse para el paper. Se prepararon las cinco figuras empíricas y un registro de 20 comprobaciones del manuscrito. El LaTeX y PDF v38 permanecen intactos; la siguiente etapa es aplicar las actualizaciones documentales y generar un PDF nuevo.
+
+E2
+Se volvieron a generar el ledger y los cruces desde los 15.360 resultados corregidos de las 32 instancias, sin simulación. Un verificador separado reconstruye las 384 filas de costo, éxitos y cruces. Todo coincide con el cierre E2 v3: éxito máximo DA=0.77578125, MSE=0.78828125, ambos inferiores a 0.80; 13 instancias cruzan con ambos y su mediana de cociente de costos MSE/DA es 1.30.
+La figura F8 usa MSE/B4096=971/1280=0.75859375. La versión del PDF v38 conserva 970/1280. Este cambio ya estaba identificado en el cierre anterior; esta entrega conecta la figura al resultado correcto. Se preserva el selector estático histórico de E2 y la trayectoria compartida guiada por Raw_Bmax; no se reemplaza ese protocolo por la separación de E1.
+Además se leyeron los 25.600 archivos originales de ronda y se comprobaron sus hashes y su identidad de checkpoint. Son 4,745,103,595 bytes (4.745 GB decimales). No se alteró ninguno ni se repitió la corrida. Esta comprobación de integridad no constituye otra derivación independiente de todas las decisiones desde los disparos.
+El paquete compacto incluye los resultados por trayectoria y el manifiesto de todas las rondas. Los archivos pesados siguen en work/e2_full_pc_v2 y deben archivarse/depositarse como recurso de datos separado al preparar la publicación. El comando --e2-raw permite verificar una copia ubicada en otra ruta.
+
+FAKEKOLKATA
+Se validaron las 48 identidades del modelo de probabilidad contra el código y entorno actuales. Se repitieron muestreo, ajuste, selección y evaluación desde esas probabilidades, con Aer y la generación de probabilidades bloqueados. La fase tardó 174.61 segundos con ocho procesos, compartiendo máquina con otros verificadores; no es un benchmark aislado.
+Las 240.000 estimaciones, 96 elecciones de método, 5.760 etiquetas de fallo y el resumen coinciden exactamente con la corrección anterior. El CSV de resultados es idéntico. GRI conserva 50.3125% de fallo, MSE 67.0833% y Raw 50.4167%. El intervalo GRI--Raw sigue incluyendo cero.
+La comprobación independiente verifica decisiones con fracciones, 48 soluciones minimax, 3.600 distribuciones de lectura, 576 expectativas REM, 288 filas de costos y 10.000 remuestreos por instancia. No afirma regenerar independientemente las matrices de densidad físicas.
+
+HARDWARE
+Se ejecutó la ruta común de reanálisis con Runtime bloqueado y las 1.883 observaciones archivadas, manteniendo los coeficientes utilizados físicamente. Se recalcularon doce distribuciones del modelo; la fase duró 31.99 segundos. El resultado sigue failed_or_inconclusive, con error held-out 0.0970105190 y errores Frobenius 0.1731112, 0.1259020 y 0.2092786 para Raw, Accuracy-ZNE y DA-ZNE.
+El verificador independiente reconstruye 180 vectores de gaps, covarianzas, doce distribuciones por mezclas de Pauli, tres integrales de riesgo y 10.000 remuestreos por épocas. Ninguno de los tres pares pasa el umbral de error proyectado. El intento final conserva 3.780.128 disparos; 4.644.384 es el total de campaña que incluye el intento fallido y factibilidad. Los conteos completos de aquella factibilidad no fueron archivados y no se inventan.
+
+AUXILIARES
+Se incluyeron sus datos y se volvieron a ejecutar los verificadores separados:
+- CDR/PEC: 4.800 decisiones, 40 intervalos y 160 integrales; coexistencias por presupuesto 5/8,7/8,7/8,7/8. Se conserva el control afín oráculo y el proxy de muestras efectivas.
+- Ruido: 1.350 momentos, 222 riesgos y 76 órdenes. Se conserva PEC heterogéneo desfavorable y R1 0/16 por presupuesto; su fase empírica B no fue ejecutada.
+- Controles: 800 distribuciones del barrido, 85 filas factibles y 11 no factibles, más 14.400 decisiones del piloto. Se conserva la planificación de potencia como cálculo iid condicionado al piloto.
+- Canal/ablación: 1.000 registros de caracterización, 4.096.000 disparos simulados ya guardados, 300 momentos, 72 derivadas direccionales y 24 decisiones de selector. Acuerdo completa/diagonal 24/24, representado por 72 filas.
+La evidencia histórica del canal contiene un C3 anterior; results_index.json señala que el C2/C3 vigente es results/pilot/c3_reanalysis.json de la integración anterior. No se promueve el informe viejo como diagnóstico actual.
+
+REPRODUCCIÓN
+code/scripts/reproduce_all.py es ahora la entrada canónica del paquete. Por defecto comprueba los siete registros de etapa, sus salidas, las versiones y las 491 evidencias importadas. Con --numerical genera un nuevo directorio de comprobaciones independientes, preservando los informes existentes. Con --new-run prepara una carpeta nueva y ejecuta las etapas sobre los datos archivados. Los antiguos scripts globales quedan guardados bajo code/legacy/ como referencia.
+Se corrigió el verificador CDR/PEC para importar el paquete desde una ruta explícita y las pruebas de hardware para localizar la factibilidad dentro de evidence/. El generador de figuras global apunta a las tablas corregidas. Se comprobó la preparación de una carpeta nueva: conserva las seis identidades de entrada verificables antes del bootstrap y no copia registros de etapas completadas.
+El comando global --numerical se ejecutó de principio a fin y produjo diez comprobaciones exitosas (A3 y C3 comparten script). Sus informes están en validation/global_numerical. Los cambios de rutas y de exportación no modificaron el núcleo matemático ni los protocolos científicos.
+Pasan 311 pruebas. Los 323 avisos son de la misma deprecación del complemento de Qiskit; no son fallos. No se afirma que esta selección ejecute todos los ensayos históricos de un repositorio que aún contiene utilidades de desarrollo y entradas reservadas.
+
+FIGURAS Y DOCUMENTO
+Se regeneraron F1, F6, F7, F8 y F9 como PNG, junto con fuentes y hashes. Se inspeccionaron visualmente las figuras; se corrigió una superposición de etiquetas logarítmicas en F1. Los datos para futura exportación vectorial se conservan.
+ACTUALIZACIONES_MANUSCRITO.txt y manuscript_review/claim_audit.json registran 20 comprobaciones con línea de origen y evidencia. Entre las correcciones: pendientes CDR 1.292--1.478, error inicial hardware 0.746->0.75 a dos decimales, error final 0.097, tres filas de la tabla hardware, F8 corregida y distinción entre 24 celdas y 72 filas en F6. También se precisa el alcance de los modelos de ruido y se actualiza la referencia al paquete de datos vigente.
+No se propone una ampliación del paper ni se retoma la cuestión Fisher aplazada. Las conclusiones principales conservan su dirección. La siguiente entrega debe aplicar estas modificaciones al LaTeX, compilar y revisar el PDF, y después cerrar el archivo de publicación con los datos pesados de E2. No se ha publicado nada en GitHub o Zenodo.
+
+CONSERVACIÓN
+Se verificaron 5,185 archivos de trece entregas anteriores, incluido el PDF v38; todos conservaron sus hashes. Las 491 evidencias importadas coinciden con sus fuentes. Los datos de rondas E2 fueron leídos sin modificación.

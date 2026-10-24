@@ -1,0 +1,30 @@
+from pathlib import Path
+import sys,json,os
+for k in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS'):os.environ[k]='1'
+sys.path[:0]=['/app/code/src','/app/code']
+import numpy as np
+from concurrent.futures import ProcessPoolExecutor
+from revision_v19.e1_reanalysis import risk_score
+
+def job(i):
+    name=f'C{i:03}';folder=Path('/app/results/fakekolkata_fixed10')
+    record=json.loads((folder/f'{name}_analysis.json').read_text())
+    with np.load(folder/f'{name}_samples.npz') as d:raw,primitive,rem=(d[k] for k in ('raw','primitive','rem'))
+    with np.load(folder/f'{name}_probabilities.npz') as d:opt=int(d['x_star'])
+    values={'Raw':raw,'Raw+REM':rem,**{m:np.einsum('s,rsc->rc',np.array(c),primitive) for m,c in record['coefficients'].items()}}
+    observed=[{m:risk_score(v[10:20],opt,20261022) for m,v in values.items()} for _ in range(3)]
+    choices=[min(values,key=lambda m:(r[m],m)) for r in observed]
+    assert all(choice==record['choices']['GRI-selector'] for choice in choices),(name,choices)
+    return dict(instance=name,within_linux_max=max(abs(observed[0][m]-r[m]) for r in observed for m in values),
+        windows_linux_max=max(abs(record['scores'][m]['gri']-r[m]) for r in observed for m in values),
+        minimum_winner_margin=min(sorted(r.values())[1]-min(r.values()) for r in observed),
+        exact_selector_match=True,observed=observed)
+
+if __name__=='__main__':
+    with ProcessPoolExecutor(max_workers=8) as pool:rows=list(pool.map(job,range(1,49)))
+    report=dict(runs_per_instance=3,instances=48,probability_values=48*4*3,
+        max_within_linux_drift=max(r['within_linux_max'] for r in rows),
+        max_windows_linux_drift=max(r['windows_linux_max'] for r in rows),
+        exact_selection_match=all(r['exact_selector_match'] for r in rows),rows=rows)
+    Path('/reports/calibration.json').write_text(json.dumps(report,indent=2)+'\n')
+    print(json.dumps({k:v for k,v in report.items() if k!='rows'}))

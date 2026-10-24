@@ -1,0 +1,14 @@
+[
+  "legacy/generate_all_figures_preintegration.py",
+  "legacy/reproduce_all_preintegration.py",
+  "scripts/generate_all_figures.py",
+  "scripts/plot_integrated_figures.py",
+  "scripts/replay_consolidated.py",
+  "scripts/reproduce_all.py",
+  "scripts/verify_aux_cdr_pec.py",
+  "scripts/verify_consolidated_fakekolkata.py",
+  "scripts/verify_consolidated_hardware.py",
+  "scripts/verify_e2_integrated.py",
+  "tests/test_consolidated_entrypoint.py",
+  "tests/test_hardware_corrections.py"
+]

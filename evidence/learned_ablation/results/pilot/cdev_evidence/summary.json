@@ -1,0 +1,21 @@
+{
+  "profile": "full",
+  "instances": [
+    "P001",
+    "P002",
+    "P003",
+    "P004"
+  ],
+  "generators": 25,
+  "weights_sha256": "sha256:235F628A64087A19DABF4521677E42B5278E3B251B393D5E6BEE1B0DE4FA9ED5",
+  "learned_p1": 0.010008605472512056,
+  "learned_p2": 0.02990751704173255,
+  "e_C": 0.009575596197854426,
+  "e_C_aggregated": 0.002527210769361264,
+  "model_scope": "two global depolarizing rates; identical circuit repeats; conditional covariance diagnostic",
+  "support_F1": 1.0,
+  "characterization_circuits": 1000,
+  "characterization_shots": 4096000,
+  "duration_seconds": 103.08283719999599,
+  "output": "pilot/cdev_learned_arm.md"
+}

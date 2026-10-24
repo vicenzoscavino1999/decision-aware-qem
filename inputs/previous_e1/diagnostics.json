@@ -1,0 +1,8930 @@
+[
+  {
+    "instance": "C001",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.13703360136980383,
+      "normalized_primal_objective": 1.4213292870758025,
+      "normalized_dual_objective": 1.4213292870773142,
+      "normalized_gap": -1.5116796703296131e-12,
+      "affine_residual": 1.6653345369377348e-15,
+      "cone_residual": 2.7209345887513336e-12,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.440892098500626e-16,
+      "dual_balance_residual": 8.630494250235652e-11
+    },
+    "fit_ids": [
+      7,
+      11,
+      21,
+      9,
+      2,
+      10,
+      24,
+      32,
+      13,
+      33
+    ],
+    "select_ids": [
+      34,
+      17,
+      38,
+      15,
+      16,
+      18,
+      6,
+      30,
+      8,
+      22
+    ],
+    "test_ids": [
+      36,
+      39,
+      20,
+      23,
+      1,
+      12,
+      14,
+      31,
+      3,
+      37,
+      5,
+      29,
+      28,
+      35,
+      27,
+      0,
+      4,
+      25,
+      19,
+      26
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.016141114863196,
+        0.9677177702736077,
+        -0.9838588851368039
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.4316077773460529,
+        "gri": 0.0012833305441117826
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.10278478923909587,
+        "gri": 0.04668317589544557
+      },
+      "Decision-ZNE": {
+        "mse": 0.13708731105928945,
+        "gri": 0.11778143380688855
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C001",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.07536078641259364,
+      "normalized_primal_objective": 1.3821211406155927,
+      "normalized_dual_objective": 1.3821211406220832,
+      "normalized_gap": -6.49058584656359e-12,
+      "affine_residual": 2.4424906541753444e-15,
+      "cone_residual": 8.983924715266767e-13,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.049160758270773e-14,
+      "dual_balance_residual": 1.6151196939630547e-10
+    },
+    "fit_ids": [
+      7,
+      11,
+      21,
+      9,
+      2,
+      10,
+      24,
+      32,
+      13,
+      33
+    ],
+    "select_ids": [
+      34,
+      17,
+      38,
+      15,
+      16,
+      18,
+      6,
+      30,
+      8,
+      22
+    ],
+    "test_ids": [
+      36,
+      39,
+      20,
+      23,
+      1,
+      12,
+      14,
+      31,
+      3,
+      37,
+      5,
+      29,
+      28,
+      35,
+      27,
+      0,
+      4,
+      25,
+      19,
+      26
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.9868485859022254,
+        -0.9736971718044507,
+        -0.013151414097774624
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.4255817728343703,
+        "gri": 4.409925654247644e-11
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.09346830714414094,
+        "gri": 0.03755150678015684
+      },
+      "Decision-ZNE": {
+        "mse": 0.06295963821712926,
+        "gri": 0.1672496888016698
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C002",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 2.846558326443351,
+      "normalized_primal_objective": 1.7053232042963224,
+      "normalized_dual_objective": 1.7053232043177502,
+      "normalized_gap": -2.142774846447537e-11,
+      "affine_residual": 1.3322676295501878e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 7.23199278240827e-13,
+      "dual_balance_residual": 2.9423881972151665e-10
+    },
+    "fit_ids": [
+      33,
+      32,
+      5,
+      38,
+      19,
+      28,
+      7,
+      30,
+      16,
+      22
+    ],
+    "select_ids": [
+      17,
+      34,
+      25,
+      24,
+      3,
+      6,
+      31,
+      18,
+      26,
+      12
+    ],
+    "test_ids": [
+      37,
+      15,
+      2,
+      36,
+      20,
+      13,
+      1,
+      21,
+      11,
+      9,
+      39,
+      0,
+      8,
+      35,
+      4,
+      23,
+      14,
+      27,
+      10,
+      29
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.503046325053574,
+        -0.006092650107147879,
+        -0.49695367494642606
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.3000484678548515,
+        "gri": 0.5365749510312119
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.05335968034476015,
+        "gri": 0.7086942554210225
+      },
+      "Decision-ZNE": {
+        "mse": 0.04787512620672502,
+        "gri": 0.7265030041868681
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C002",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 2.3348532951501517,
+      "normalized_primal_objective": 1.451565324466003,
+      "normalized_dual_objective": 1.4515653245251503,
+      "normalized_gap": -5.914735368151014e-11,
+      "affine_residual": 5.551115123125783e-17,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 8.681388941056412e-13,
+      "dual_balance_residual": 2.9148092991757023e-10
+    },
+    "fit_ids": [
+      33,
+      32,
+      5,
+      38,
+      19,
+      28,
+      7,
+      30,
+      16,
+      22
+    ],
+    "select_ids": [
+      17,
+      34,
+      25,
+      24,
+      3,
+      6,
+      31,
+      18,
+      26,
+      12
+    ],
+    "test_ids": [
+      37,
+      15,
+      2,
+      36,
+      20,
+      13,
+      1,
+      21,
+      11,
+      9,
+      39,
+      0,
+      8,
+      35,
+      4,
+      23,
+      14,
+      27,
+      10,
+      29
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5468416480136562,
+        -0.09368329602731251,
+        -0.45315835198634374
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.29480373415339145,
+        "gri": 0.44874366527924026
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.04536791096667654,
+        "gri": 0.6121819543473649
+      },
+      "Decision-ZNE": {
+        "mse": 0.038926138101314935,
+        "gri": 0.6091051904888538
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C003",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 1.1062145561777528,
+      "normalized_primal_objective": 1.0390499763323997,
+      "normalized_dual_objective": 1.0390499763519514,
+      "normalized_gap": -1.9551693597463782e-11,
+      "affine_residual": 4.440892098500626e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.37698749572246e-13,
+      "dual_balance_residual": 1.0190635412847855e-10
+    },
+    "fit_ids": [
+      27,
+      31,
+      29,
+      17,
+      20,
+      22,
+      32,
+      2,
+      24,
+      18
+    ],
+    "select_ids": [
+      19,
+      35,
+      34,
+      37,
+      12,
+      23,
+      33,
+      11,
+      5,
+      15
+    ],
+    "test_ids": [
+      21,
+      8,
+      1,
+      0,
+      7,
+      10,
+      26,
+      4,
+      16,
+      9,
+      36,
+      25,
+      14,
+      6,
+      3,
+      28,
+      30,
+      13,
+      38,
+      39
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.3280619373464595,
+        0.343876125307081,
+        -0.6719380626535405
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.40451432188197695,
+        "gri": 0.018774990877257758
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.11067324083141607,
+        "gri": 0.2793500929444209
+      },
+      "Decision-ZNE": {
+        "mse": 0.11117847742409584,
+        "gri": 0.2786267850760644
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C003",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.5702040161288905,
+      "normalized_primal_objective": 1.4865115450096622,
+      "normalized_dual_objective": 1.4865115450133637,
+      "normalized_gap": -3.701483564100272e-12,
+      "affine_residual": 1.2212453270876722e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.2223555501122974e-13,
+      "dual_balance_residual": 2.075108445600536e-11
+    },
+    "fit_ids": [
+      27,
+      31,
+      29,
+      17,
+      20,
+      22,
+      32,
+      2,
+      24,
+      18
+    ],
+    "select_ids": [
+      19,
+      35,
+      34,
+      37,
+      12,
+      23,
+      33,
+      11,
+      5,
+      15
+    ],
+    "test_ids": [
+      21,
+      8,
+      1,
+      0,
+      7,
+      10,
+      26,
+      4,
+      16,
+      9,
+      36,
+      25,
+      14,
+      6,
+      3,
+      28,
+      30,
+      13,
+      38,
+      39
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.0843442848346108,
+        0.8313114303307783,
+        -0.9156557151653891
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.4060337262041057,
+        "gri": 0.00015008521920389928
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.09684811921032797,
+        "gri": 0.09031283115128363
+      },
+      "Decision-ZNE": {
+        "mse": 0.1235547147657102,
+        "gri": 0.10135291672101465
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C004",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.7176617376886709,
+      "normalized_primal_objective": 0.8996285837817004,
+      "normalized_dual_objective": 0.8996285837821663,
+      "normalized_gap": -4.658495811327157e-13,
+      "affine_residual": 5.551115123125783e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.6193270602780103e-14,
+      "dual_balance_residual": 7.556145580897214e-12
+    },
+    "fit_ids": [
+      33,
+      16,
+      5,
+      0,
+      21,
+      8,
+      27,
+      38,
+      10,
+      11
+    ],
+    "select_ids": [
+      34,
+      14,
+      26,
+      6,
+      30,
+      39,
+      29,
+      12,
+      2,
+      9
+    ],
+    "test_ids": [
+      1,
+      35,
+      31,
+      18,
+      36,
+      13,
+      23,
+      17,
+      20,
+      7,
+      24,
+      25,
+      19,
+      37,
+      4,
+      15,
+      32,
+      3,
+      28,
+      22
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.3487106348809519,
+        0.302578730238096,
+        -0.651289365119048
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.23406132643351812,
+        "gri": 0.0019858631835512064
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.0419597559725385,
+        "gri": 0.29574605097719664
+      },
+      "Decision-ZNE": {
+        "mse": 0.04157847454687381,
+        "gri": 0.29769858997981113
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C004",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.23977895805830673,
+      "normalized_primal_objective": 1.5503650367495554,
+      "normalized_dual_objective": 1.550365036687844,
+      "normalized_gap": 6.171130273457948e-11,
+      "affine_residual": 7.216449660063518e-15,
+      "cone_residual": 6.284306408588236e-11,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 7.605027718682322e-15,
+      "dual_balance_residual": 2.0373670700930726e-11
+    },
+    "fit_ids": [
+      33,
+      16,
+      5,
+      0,
+      21,
+      8,
+      27,
+      38,
+      10,
+      11
+    ],
+    "select_ids": [
+      34,
+      14,
+      26,
+      6,
+      30,
+      39,
+      29,
+      12,
+      2,
+      9
+    ],
+    "test_ids": [
+      1,
+      35,
+      31,
+      18,
+      36,
+      13,
+      23,
+      17,
+      20,
+      7,
+      24,
+      25,
+      19,
+      37,
+      4,
+      15,
+      32,
+      3,
+      28,
+      22
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2747080932423018,
+        0.4505838135153961,
+        -0.7252919067576981
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.2350286181925387,
+        "gri": 4.600520631226068e-06
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.033730542455195744,
+        "gri": 0.24757321113556796
+      },
+      "Decision-ZNE": {
+        "mse": 0.0352736839102634,
+        "gri": 0.24730105646860745
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C005",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 4.257023733462958,
+      "normalized_primal_objective": 1.3177346023863417,
+      "normalized_dual_objective": 1.3177346024123577,
+      "normalized_gap": -2.6016078180646218e-11,
+      "affine_residual": 8.881784197001252e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.872491299323656e-13,
+      "dual_balance_residual": 1.539101653772349e-10
+    },
+    "fit_ids": [
+      1,
+      26,
+      21,
+      25,
+      32,
+      31,
+      0,
+      22,
+      4,
+      28
+    ],
+    "select_ids": [
+      2,
+      5,
+      11,
+      3,
+      27,
+      13,
+      39,
+      12,
+      10,
+      8
+    ],
+    "test_ids": [
+      38,
+      33,
+      23,
+      15,
+      6,
+      36,
+      14,
+      37,
+      9,
+      20,
+      24,
+      34,
+      35,
+      29,
+      17,
+      16,
+      18,
+      19,
+      30,
+      7
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.3674533452445723,
+        0.2650933095108554,
+        -0.6325466547554277
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.3150475651720591,
+        "gri": 0.19688785455272972
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.056388974024220516,
+        "gri": 0.4929547178106908
+      },
+      "Decision-ZNE": {
+        "mse": 0.05498377503869328,
+        "gri": 0.4913974625224472
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C005",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 1.879693215739866,
+      "normalized_primal_objective": 1.0364342026483973,
+      "normalized_dual_objective": 1.0364342026882816,
+      "normalized_gap": -3.98843180704489e-11,
+      "affine_residual": 1.2567724638756772e-13,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.6544543512964083e-12,
+      "dual_balance_residual": 4.2506705747885285e-10
+    },
+    "fit_ids": [
+      1,
+      26,
+      21,
+      25,
+      32,
+      31,
+      0,
+      22,
+      4,
+      28
+    ],
+    "select_ids": [
+      2,
+      5,
+      11,
+      3,
+      27,
+      13,
+      39,
+      12,
+      10,
+      8
+    ],
+    "test_ids": [
+      38,
+      33,
+      23,
+      15,
+      6,
+      36,
+      14,
+      37,
+      9,
+      20,
+      24,
+      34,
+      35,
+      29,
+      17,
+      16,
+      18,
+      19,
+      30,
+      7
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.300912610723266,
+        0.39817477855346795,
+        -0.699087389276734
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.32109387041836596,
+        "gri": 0.07766663001237206
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.04912090594676056,
+        "gri": 0.31740632061895
+      },
+      "Decision-ZNE": {
+        "mse": 0.05067236996432068,
+        "gri": 0.32060786195425317
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C006",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 6.526478283100029,
+      "normalized_primal_objective": 1.3309158544750346,
+      "normalized_dual_objective": 1.3309158544774202,
+      "normalized_gap": -2.3856472353145364e-12,
+      "affine_residual": 3.8746783559417963e-14,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.0294660049713364e-13,
+      "dual_balance_residual": 4.8191563444484877e-11
+    },
+    "fit_ids": [
+      32,
+      28,
+      23,
+      26,
+      19,
+      15,
+      2,
+      36,
+      6,
+      20
+    ],
+    "select_ids": [
+      12,
+      37,
+      34,
+      8,
+      31,
+      33,
+      9,
+      0,
+      35,
+      18
+    ],
+    "test_ids": [
+      21,
+      25,
+      1,
+      17,
+      29,
+      14,
+      24,
+      38,
+      3,
+      7,
+      22,
+      10,
+      30,
+      11,
+      13,
+      4,
+      39,
+      16,
+      5,
+      27
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.706052468766972,
+        -0.41210493753394384,
+        -0.2939475312330281
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.27720702568310696,
+        "gri": 0.3159151470987357
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.04290577752815368,
+        "gri": 0.8042783042243056
+      },
+      "Decision-ZNE": {
+        "mse": 0.040211308889800915,
+        "gri": 0.8018832195239295
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C006",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 3.9233732578823624,
+      "normalized_primal_objective": 1.2668889071505283,
+      "normalized_dual_objective": 1.2668889071734193,
+      "normalized_gap": -2.2891022410931328e-11,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 7.13096248716738e-13,
+      "dual_balance_residual": 1.8050667182867034e-10
+    },
+    "fit_ids": [
+      32,
+      28,
+      23,
+      26,
+      19,
+      15,
+      2,
+      36,
+      6,
+      20
+    ],
+    "select_ids": [
+      12,
+      37,
+      34,
+      8,
+      31,
+      33,
+      9,
+      0,
+      35,
+      18
+    ],
+    "test_ids": [
+      21,
+      25,
+      1,
+      17,
+      29,
+      14,
+      24,
+      38,
+      3,
+      7,
+      22,
+      10,
+      30,
+      11,
+      13,
+      4,
+      39,
+      16,
+      5,
+      27
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5710316288486221,
+        -0.14206325769724415,
+        -0.4289683711513779
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.27681346879494123,
+        "gri": 0.13086338664898745
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.03725283586448204,
+        "gri": 0.5946639381651675
+      },
+      "Decision-ZNE": {
+        "mse": 0.032514507901380864,
+        "gri": 0.6424536856336224
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C007",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 2.480121002943554,
+      "normalized_primal_objective": 1.5457311543242196,
+      "normalized_dual_objective": 1.5457311543272307,
+      "normalized_gap": -3.0111468873883496e-12,
+      "affine_residual": 1.3322676295501878e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.4493961586481419e-13,
+      "dual_balance_residual": 1.1686399040689993e-11
+    },
+    "fit_ids": [
+      32,
+      16,
+      30,
+      36,
+      37,
+      15,
+      20,
+      38,
+      22,
+      18
+    ],
+    "select_ids": [
+      25,
+      2,
+      3,
+      23,
+      5,
+      28,
+      0,
+      7,
+      13,
+      1
+    ],
+    "test_ids": [
+      26,
+      24,
+      6,
+      17,
+      27,
+      29,
+      9,
+      11,
+      19,
+      14,
+      21,
+      10,
+      35,
+      4,
+      33,
+      34,
+      31,
+      39,
+      12,
+      8
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2941217428813547,
+        0.41175651423729054,
+        -0.7058782571186453
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.5867363454874784,
+        "gri": 0.37837667083937676
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.10783376375936225,
+        "gri": 0.5170796917392865
+      },
+      "Decision-ZNE": {
+        "mse": 0.11166870249532315,
+        "gri": 0.5220781565496615
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C007",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 1.8497884211869828,
+      "normalized_primal_objective": 1.563125201121067,
+      "normalized_dual_objective": 1.5631252012035157,
+      "normalized_gap": -8.244871452234293e-11,
+      "affine_residual": 8.64863736182997e-14,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.4702574975019616e-12,
+      "dual_balance_residual": 4.935845983316679e-10
+    },
+    "fit_ids": [
+      32,
+      16,
+      30,
+      36,
+      37,
+      15,
+      20,
+      38,
+      22,
+      18
+    ],
+    "select_ids": [
+      25,
+      2,
+      3,
+      23,
+      5,
+      28,
+      0,
+      7,
+      13,
+      1
+    ],
+    "test_ids": [
+      26,
+      24,
+      6,
+      17,
+      27,
+      29,
+      9,
+      11,
+      19,
+      14,
+      21,
+      10,
+      35,
+      4,
+      33,
+      34,
+      31,
+      39,
+      12,
+      8
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.0103576533652943,
+        0.9792846932694113,
+        -0.9896423466347056
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.5832524030045391,
+        "gri": 0.26834667592497663
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.0951508293663357,
+        "gri": 0.33720912601332886
+      },
+      "Decision-ZNE": {
+        "mse": 0.12732420452047677,
+        "gri": 0.4056213915363466
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C008",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 6.261853159241864,
+      "normalized_primal_objective": 1.0813419081014386,
+      "normalized_dual_objective": 1.0813419081263853,
+      "normalized_gap": -2.4946711363327267e-11,
+      "affine_residual": 3.1086244689504383e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.952083022478291e-13,
+      "dual_balance_residual": 2.766440195329417e-10
+    },
+    "fit_ids": [
+      29,
+      35,
+      25,
+      21,
+      36,
+      33,
+      15,
+      30,
+      32,
+      7
+    ],
+    "select_ids": [
+      26,
+      4,
+      5,
+      18,
+      8,
+      9,
+      24,
+      28,
+      39,
+      13
+    ],
+    "test_ids": [
+      14,
+      38,
+      20,
+      0,
+      19,
+      12,
+      37,
+      11,
+      23,
+      22,
+      17,
+      16,
+      6,
+      3,
+      31,
+      10,
+      2,
+      27,
+      1,
+      34
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.292796687674281,
+        0.4144066246514382,
+        -0.7072033123257191
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.4355590836755901,
+        "gri": 0.43947052975058254
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.08468343300362673,
+        "gri": 0.4712459723999751
+      },
+      "Decision-ZNE": {
+        "mse": 0.08755887082236595,
+        "gri": 0.48193308719501327
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C008",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 1.8369060714493437,
+      "normalized_primal_objective": 1.2263692316213766,
+      "normalized_dual_objective": 1.22636923164057,
+      "normalized_gap": -1.9193535649719706e-11,
+      "affine_residual": 3.3306690738754696e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.3959280660033073e-13,
+      "dual_balance_residual": 1.6942847354250213e-10
+    },
+    "fit_ids": [
+      29,
+      35,
+      25,
+      21,
+      36,
+      33,
+      15,
+      30,
+      32,
+      7
+    ],
+    "select_ids": [
+      26,
+      4,
+      5,
+      18,
+      8,
+      9,
+      24,
+      28,
+      39,
+      13
+    ],
+    "test_ids": [
+      14,
+      38,
+      20,
+      0,
+      19,
+      12,
+      37,
+      11,
+      23,
+      22,
+      17,
+      16,
+      6,
+      3,
+      31,
+      10,
+      2,
+      27,
+      1,
+      34
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.462178785492895,
+        0.07564242901421037,
+        -0.5378212145071052
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.43817612247285537,
+        "gri": 0.4037907473875977
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.07589183420387084,
+        "gri": 0.33164271581770277
+      },
+      "Decision-ZNE": {
+        "mse": 0.06706748640485746,
+        "gri": 0.3594124370047804
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Accuracy-ZNE"
+    }
+  },
+  {
+    "instance": "C009",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.27474536325043125,
+      "normalized_primal_objective": 0.8957247692750707,
+      "normalized_dual_objective": 0.8957247692789498,
+      "normalized_gap": -3.879119248040297e-12,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.218847493575595e-15,
+      "dual_balance_residual": 4.5800593059060146e-11
+    },
+    "fit_ids": [
+      10,
+      24,
+      7,
+      32,
+      3,
+      26,
+      23,
+      16,
+      33,
+      9
+    ],
+    "select_ids": [
+      6,
+      34,
+      31,
+      1,
+      12,
+      17,
+      18,
+      22,
+      30,
+      39
+    ],
+    "test_ids": [
+      5,
+      35,
+      4,
+      28,
+      38,
+      20,
+      2,
+      11,
+      36,
+      15,
+      37,
+      19,
+      21,
+      8,
+      14,
+      0,
+      25,
+      27,
+      13,
+      29
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5937285955299767,
+        -0.1874571910599534,
+        -0.4062714044700233
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.2290562127281877,
+        "gri": 0.015457789719513282
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.04810916126773154,
+        "gri": 0.1865453110116302
+      },
+      "Decision-ZNE": {
+        "mse": 0.04174025681034586,
+        "gri": 0.14888348911810367
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C009",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.1675136810441855,
+      "normalized_primal_objective": 0.734567669194646,
+      "normalized_dual_objective": 0.7345676692019633,
+      "normalized_gap": -7.317257910699482e-12,
+      "affine_residual": 8.881784197001252e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.3264389586709058e-13,
+      "dual_balance_residual": 1.1771352306817452e-10
+    },
+    "fit_ids": [
+      10,
+      24,
+      7,
+      32,
+      3,
+      26,
+      23,
+      16,
+      33,
+      9
+    ],
+    "select_ids": [
+      6,
+      34,
+      31,
+      1,
+      12,
+      17,
+      18,
+      22,
+      30,
+      39
+    ],
+    "test_ids": [
+      5,
+      35,
+      4,
+      28,
+      38,
+      20,
+      2,
+      11,
+      36,
+      15,
+      37,
+      19,
+      21,
+      8,
+      14,
+      0,
+      25,
+      27,
+      13,
+      29
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.476247559643709,
+        0.04750488071258174,
+        -0.5237524403562909
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.22687753465312133,
+        "gri": 6.303736004742433e-06
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.038625971828655875,
+        "gri": 0.04185173559991995
+      },
+      "Decision-ZNE": {
+        "mse": 0.034599580159757795,
+        "gri": 0.03547723579835216
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C010",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 1.2789039321862563,
+      "normalized_primal_objective": 1.2181768451852222,
+      "normalized_dual_objective": 1.2181768451914823,
+      "normalized_gap": -6.260103546651408e-12,
+      "affine_residual": 4.440892098500626e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 5.88418203051333e-14,
+      "dual_balance_residual": 6.95463104906977e-11
+    },
+    "fit_ids": [
+      16,
+      6,
+      8,
+      32,
+      20,
+      5,
+      21,
+      27,
+      1,
+      18
+    ],
+    "select_ids": [
+      26,
+      9,
+      24,
+      23,
+      13,
+      19,
+      30,
+      25,
+      35,
+      10
+    ],
+    "test_ids": [
+      7,
+      29,
+      36,
+      38,
+      22,
+      4,
+      34,
+      15,
+      37,
+      2,
+      3,
+      33,
+      31,
+      12,
+      11,
+      39,
+      14,
+      17,
+      0,
+      28
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.301314163091507,
+        0.3973716738169859,
+        -0.698685836908493
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.40862911163217563,
+        "gri": 0.050281635392810164
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.11862191329833922,
+        "gri": 0.276156909109999
+      },
+      "Decision-ZNE": {
+        "mse": 0.12199267655522755,
+        "gri": 0.26473111485415735
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C010",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.8661964570453907,
+      "normalized_primal_objective": 0.7880111135974393,
+      "normalized_dual_objective": 0.7880111135976756,
+      "normalized_gap": -2.3636648194269583e-13,
+      "affine_residual": 3.3306690738754696e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.1657341758564144e-14,
+      "dual_balance_residual": 4.863583378627025e-12
+    },
+    "fit_ids": [
+      16,
+      6,
+      8,
+      32,
+      20,
+      5,
+      21,
+      27,
+      1,
+      18
+    ],
+    "select_ids": [
+      26,
+      9,
+      24,
+      23,
+      13,
+      19,
+      30,
+      25,
+      35,
+      10
+    ],
+    "test_ids": [
+      7,
+      29,
+      36,
+      38,
+      22,
+      4,
+      34,
+      15,
+      37,
+      2,
+      3,
+      33,
+      31,
+      12,
+      11,
+      39,
+      14,
+      17,
+      0,
+      28
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.444072594543797,
+        0.11185481091240601,
+        -0.555927405456203
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.4056250709806066,
+        "gri": 0.009912605231137572
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.10473624835404723,
+        "gri": 0.07934069795029375
+      },
+      "Decision-ZNE": {
+        "mse": 0.09403759075919729,
+        "gri": 0.08922057606571865
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C011",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.06638156342128224,
+      "normalized_primal_objective": 1.005134997064503,
+      "normalized_dual_objective": 1.0051349970597465,
+      "normalized_gap": 4.756417482099096e-12,
+      "affine_residual": 6.195044477408373e-14,
+      "cone_residual": 1.1709078151511676e-11,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.028688411177427e-13,
+      "dual_balance_residual": 2.3567178606481716e-10
+    },
+    "fit_ids": [
+      24,
+      30,
+      21,
+      32,
+      35,
+      31,
+      17,
+      1,
+      9,
+      25
+    ],
+    "select_ids": [
+      12,
+      36,
+      0,
+      28,
+      23,
+      13,
+      5,
+      33,
+      11,
+      26
+    ],
+    "test_ids": [
+      4,
+      10,
+      14,
+      34,
+      29,
+      8,
+      39,
+      7,
+      27,
+      37,
+      15,
+      6,
+      16,
+      2,
+      3,
+      38,
+      22,
+      20,
+      19,
+      18
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5295019931825775,
+        -0.059003986365155026,
+        -0.4704980068174225
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.36635418532973046,
+        "gri": 1.5392982735615374e-09
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.07289267495974443,
+        "gri": 0.0002789820456381431
+      },
+      "Decision-ZNE": {
+        "mse": 0.06476687341891614,
+        "gri": 0.0025084331976937824
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C011",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.035732311430376903,
+      "normalized_primal_objective": 1.2710497305726647,
+      "normalized_dual_objective": 1.2710497301257682,
+      "normalized_gap": 4.468965197901298e-10,
+      "affine_residual": 1.2161827100953815e-11,
+      "cone_residual": 4.4921422137633726e-10,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.6399007979627243e-11,
+      "dual_balance_residual": 1.4475096134477014e-10
+    },
+    "fit_ids": [
+      24,
+      30,
+      21,
+      32,
+      35,
+      31,
+      17,
+      1,
+      9,
+      25
+    ],
+    "select_ids": [
+      12,
+      36,
+      0,
+      28,
+      23,
+      13,
+      5,
+      33,
+      11,
+      26
+    ],
+    "test_ids": [
+      4,
+      10,
+      14,
+      34,
+      29,
+      8,
+      39,
+      7,
+      27,
+      37,
+      15,
+      6,
+      16,
+      2,
+      3,
+      38,
+      22,
+      20,
+      19,
+      18
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.32389031097087,
+        0.3522193780582601,
+        -0.67610968902913
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.361832158467863,
+        "gri": 1.2905008906912906e-15
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.06463179041618565,
+        "gri": 1.4669387279342416e-06
+      },
+      "Decision-ZNE": {
+        "mse": 0.06511476817611386,
+        "gri": 1.3522875996763162e-06
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C012",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 5.795238864467206,
+      "normalized_primal_objective": 0.6998239830236872,
+      "normalized_dual_objective": 0.6998239830294751,
+      "normalized_gap": -5.7879256942783286e-12,
+      "affine_residual": 1.6653345369377348e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.039514390705932e-14,
+      "dual_balance_residual": 6.114694581264979e-11
+    },
+    "fit_ids": [
+      23,
+      6,
+      28,
+      20,
+      38,
+      16,
+      22,
+      0,
+      15,
+      39
+    ],
+    "select_ids": [
+      12,
+      25,
+      17,
+      32,
+      3,
+      9,
+      30,
+      26,
+      29,
+      21
+    ],
+    "test_ids": [
+      34,
+      36,
+      1,
+      24,
+      10,
+      8,
+      7,
+      27,
+      35,
+      37,
+      31,
+      13,
+      11,
+      4,
+      18,
+      33,
+      5,
+      2,
+      19,
+      14
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5580575288932406,
+        -0.11611505778648101,
+        -0.4419424711067595
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.5462029729463032,
+        "gri": 0.29511435030393796
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.11113139871104026,
+        "gri": 0.4325045900945742
+      },
+      "Decision-ZNE": {
+        "mse": 0.09191371657683516,
+        "gri": 0.5067062065346511
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C012",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 2.065905449951415,
+      "normalized_primal_objective": 0.8695265582939773,
+      "normalized_dual_objective": 0.8695265583156546,
+      "normalized_gap": -2.1677326600411106e-11,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.2998937743732313e-13,
+      "dual_balance_residual": 2.9903095445739967e-10
+    },
+    "fit_ids": [
+      23,
+      6,
+      28,
+      20,
+      38,
+      16,
+      22,
+      0,
+      15,
+      39
+    ],
+    "select_ids": [
+      12,
+      25,
+      17,
+      32,
+      3,
+      9,
+      30,
+      26,
+      29,
+      21
+    ],
+    "test_ids": [
+      34,
+      36,
+      1,
+      24,
+      10,
+      8,
+      7,
+      27,
+      35,
+      37,
+      31,
+      13,
+      11,
+      4,
+      18,
+      33,
+      5,
+      2,
+      19,
+      14
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5185680836403643,
+        -0.03713616728072855,
+        -0.4814319163596357
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.5441510754820893,
+        "gri": 0.15934760556301708
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.10028566673856143,
+        "gri": 0.3166609537297619
+      },
+      "Decision-ZNE": {
+        "mse": 0.08394483852594092,
+        "gri": 0.3743348932579583
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C013",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 2.2683463142965588,
+      "normalized_primal_objective": 0.8479436919734048,
+      "normalized_dual_objective": 0.847943691979635,
+      "normalized_gap": -6.230238547288991e-12,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.8318679906315083e-14,
+      "dual_balance_residual": 7.424519397290845e-11
+    },
+    "fit_ids": [
+      28,
+      8,
+      16,
+      36,
+      29,
+      33,
+      19,
+      25,
+      1,
+      38
+    ],
+    "select_ids": [
+      7,
+      31,
+      6,
+      9,
+      0,
+      18,
+      5,
+      3,
+      13,
+      34
+    ],
+    "test_ids": [
+      23,
+      32,
+      39,
+      2,
+      27,
+      11,
+      22,
+      37,
+      26,
+      30,
+      17,
+      12,
+      14,
+      15,
+      21,
+      20,
+      35,
+      10,
+      4,
+      24
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.361601087050628,
+        0.2767978258987438,
+        -0.6383989129493719
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.1770794821867412,
+        "gri": 0.16487450290466787
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.03568334321541599,
+        "gri": 0.5681430730531731
+      },
+      "Decision-ZNE": {
+        "mse": 0.03504386565667045,
+        "gri": 0.570718795401298
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C013",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 1.2415066808340303,
+      "normalized_primal_objective": 1.3674437887148119,
+      "normalized_dual_objective": 1.367443788717653,
+      "normalized_gap": -2.8410607200157756e-12,
+      "affine_residual": 3.3306690738754696e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.78617145915905e-13,
+      "dual_balance_residual": 5.892268984310024e-11
+    },
+    "fit_ids": [
+      28,
+      8,
+      16,
+      36,
+      29,
+      33,
+      19,
+      25,
+      1,
+      38
+    ],
+    "select_ids": [
+      7,
+      31,
+      6,
+      9,
+      0,
+      18,
+      5,
+      3,
+      13,
+      34
+    ],
+    "test_ids": [
+      23,
+      32,
+      39,
+      2,
+      27,
+      11,
+      22,
+      37,
+      26,
+      30,
+      17,
+      12,
+      14,
+      15,
+      21,
+      20,
+      35,
+      10,
+      4,
+      24
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2338173808010158,
+        0.5323652383979687,
+        -0.7661826191989843
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.1755764040311268,
+        "gri": 0.1687929572126029
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.026100256859454548,
+        "gri": 0.5028872859521696
+      },
+      "Decision-ZNE": {
+        "mse": 0.02858583782312345,
+        "gri": 0.5097020208344825
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C014",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 16.46207064016782,
+      "normalized_primal_objective": 1.1042095307854265,
+      "normalized_dual_objective": 1.1042095307934714,
+      "normalized_gap": -8.04489808103881e-12,
+      "affine_residual": 5.551115123125783e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.8144153674247718e-14,
+      "dual_balance_residual": 5.296125279388411e-11
+    },
+    "fit_ids": [
+      3,
+      28,
+      34,
+      11,
+      6,
+      2,
+      17,
+      10,
+      26,
+      39
+    ],
+    "select_ids": [
+      4,
+      33,
+      32,
+      23,
+      16,
+      25,
+      37,
+      13,
+      7,
+      18
+    ],
+    "test_ids": [
+      14,
+      8,
+      36,
+      0,
+      15,
+      22,
+      12,
+      29,
+      27,
+      21,
+      30,
+      35,
+      38,
+      31,
+      20,
+      9,
+      5,
+      1,
+      24,
+      19
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2886436222477826,
+        0.42271275550443455,
+        -0.7113563777522173
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.1930976835232414,
+        "gri": 0.4546926020193931
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.05596455745977484,
+        "gri": 0.5558330939047462
+      },
+      "Decision-ZNE": {
+        "mse": 0.05819328786818292,
+        "gri": 0.5684041208059682
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C014",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 7.706064860448385,
+      "normalized_primal_objective": 0.8033047808001594,
+      "normalized_dual_objective": 0.8033047808107349,
+      "normalized_gap": -1.0575429421066929e-11,
+      "affine_residual": 1.1102230246251565e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.7613688285678109e-13,
+      "dual_balance_residual": 1.0821279016552846e-10
+    },
+    "fit_ids": [
+      3,
+      28,
+      34,
+      11,
+      6,
+      2,
+      17,
+      10,
+      26,
+      39
+    ],
+    "select_ids": [
+      4,
+      33,
+      32,
+      23,
+      16,
+      25,
+      37,
+      13,
+      7,
+      18
+    ],
+    "test_ids": [
+      14,
+      8,
+      36,
+      0,
+      15,
+      22,
+      12,
+      29,
+      27,
+      21,
+      30,
+      35,
+      38,
+      31,
+      20,
+      9,
+      5,
+      1,
+      24,
+      19
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.0802460247961374,
+        0.8395079504077254,
+        -0.9197539752038627
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.19290288435163971,
+        "gri": 0.32761570335023604
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.04421559397486247,
+        "gri": 0.533708847058715
+      },
+      "Decision-ZNE": {
+        "mse": 0.05724269803450325,
+        "gri": 0.6309132046167921
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C015",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.3921237223916663,
+      "normalized_primal_objective": 1.1777254624860445,
+      "normalized_dual_objective": 1.1777254625002498,
+      "normalized_gap": -1.4205303600078878e-11,
+      "affine_residual": 6.661338147750939e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.696731726814505e-13,
+      "dual_balance_residual": 1.7498109632165454e-10
+    },
+    "fit_ids": [
+      27,
+      23,
+      21,
+      4,
+      24,
+      30,
+      31,
+      11,
+      29,
+      37
+    ],
+    "select_ids": [
+      28,
+      14,
+      22,
+      33,
+      5,
+      36,
+      2,
+      3,
+      7,
+      15
+    ],
+    "test_ids": [
+      38,
+      17,
+      1,
+      26,
+      35,
+      10,
+      9,
+      6,
+      12,
+      16,
+      34,
+      25,
+      18,
+      8,
+      19,
+      20,
+      39,
+      13,
+      0,
+      32
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4597494997281895,
+        0.08050100054362108,
+        -0.5402505002718105
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.28981762846960224,
+        "gri": 0.00012706140884044537
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.06454339212818191,
+        "gri": 0.32192569500568136
+      },
+      "Decision-ZNE": {
+        "mse": 0.06019489358455428,
+        "gri": 0.3261968109138289
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C015",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.1812442270570383,
+      "normalized_primal_objective": 1.5505497631769392,
+      "normalized_dual_objective": 1.5505497631772422,
+      "normalized_gap": -3.0309088572266774e-13,
+      "affine_residual": 3.3306690738754696e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 5.345723863570129e-14,
+      "dual_balance_residual": 9.383059372341766e-12
+    },
+    "fit_ids": [
+      27,
+      23,
+      21,
+      4,
+      24,
+      30,
+      31,
+      11,
+      29,
+      37
+    ],
+    "select_ids": [
+      28,
+      14,
+      22,
+      33,
+      5,
+      36,
+      2,
+      3,
+      7,
+      15
+    ],
+    "test_ids": [
+      38,
+      17,
+      1,
+      26,
+      35,
+      10,
+      9,
+      6,
+      12,
+      16,
+      34,
+      25,
+      18,
+      8,
+      19,
+      20,
+      39,
+      13,
+      0,
+      32
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4844099975212437,
+        0.031180004957512386,
+        -0.5155900024787562
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.28628270203678696,
+        "gri": 6.447372942502672e-08
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.05523626191796425,
+        "gri": 0.1643791339276791
+      },
+      "Decision-ZNE": {
+        "mse": 0.04990186175620072,
+        "gri": 0.18484166551791392
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C016",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.46842829265201946,
+      "normalized_primal_objective": 1.0032986936197774,
+      "normalized_dual_objective": 1.0032986936318251,
+      "normalized_gap": -1.2047696174022349e-11,
+      "affine_residual": 4.996003610813204e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 7.993952721996322e-14,
+      "dual_balance_residual": 1.3006168963280263e-10
+    },
+    "fit_ids": [
+      33,
+      32,
+      21,
+      23,
+      5,
+      31,
+      36,
+      30,
+      18,
+      16
+    ],
+    "select_ids": [
+      34,
+      8,
+      19,
+      15,
+      13,
+      6,
+      1,
+      38,
+      26,
+      10
+    ],
+    "test_ids": [
+      12,
+      9,
+      0,
+      37,
+      39,
+      22,
+      25,
+      24,
+      29,
+      4,
+      2,
+      17,
+      3,
+      28,
+      27,
+      20,
+      7,
+      14,
+      35,
+      11
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.6131447163589738,
+        -0.22628943271794755,
+        -0.3868552836410262
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.31719490059076544,
+        "gri": 0.0012295214918415232
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.06515478635989791,
+        "gri": 0.09354827036795632
+      },
+      "Decision-ZNE": {
+        "mse": 0.05930579748993619,
+        "gri": 0.0807959102222503
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C016",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.15587095552008132,
+      "normalized_primal_objective": 1.5330057997030457,
+      "normalized_dual_objective": 1.5330057997043007,
+      "normalized_gap": -1.254996107036277e-12,
+      "affine_residual": 0.0,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.736699755701011e-14,
+      "dual_balance_residual": 8.094965495244723e-12
+    },
+    "fit_ids": [
+      33,
+      32,
+      21,
+      23,
+      5,
+      31,
+      36,
+      30,
+      18,
+      16
+    ],
+    "select_ids": [
+      34,
+      8,
+      19,
+      15,
+      13,
+      6,
+      1,
+      38,
+      26,
+      10
+    ],
+    "test_ids": [
+      12,
+      9,
+      0,
+      37,
+      39,
+      22,
+      25,
+      24,
+      29,
+      4,
+      2,
+      17,
+      3,
+      28,
+      27,
+      20,
+      7,
+      14,
+      35,
+      11
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4151728186470127,
+        0.16965436270597456,
+        -0.5848271813529873
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.3154316111718073,
+        "gri": 0.0002086946821703295
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.05757805987936934,
+        "gri": 0.013294791033101938
+      },
+      "Decision-ZNE": {
+        "mse": 0.05425551209766759,
+        "gri": 0.010949534725971377
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C017",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 491.7120863948004,
+      "normalized_primal_objective": 1.4577036651386774,
+      "normalized_dual_objective": 1.4577036651527226,
+      "normalized_gap": -1.404520943992793e-11,
+      "affine_residual": 3.774758283725532e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.668837373320798e-13,
+      "dual_balance_residual": 6.054537565211549e-11
+    },
+    "fit_ids": [
+      25,
+      32,
+      30,
+      12,
+      2,
+      23,
+      13,
+      35,
+      37,
+      11
+    ],
+    "select_ids": [
+      33,
+      31,
+      10,
+      6,
+      29,
+      21,
+      14,
+      20,
+      18,
+      36
+    ],
+    "test_ids": [
+      4,
+      28,
+      0,
+      17,
+      15,
+      16,
+      3,
+      22,
+      8,
+      5,
+      19,
+      27,
+      26,
+      24,
+      38,
+      7,
+      1,
+      34,
+      39,
+      9
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2434118352303891,
+        0.5131763295392218,
+        -0.7565881647696109
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.7057595240897931,
+        "gri": 0.694914338374399
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.1250315244290285,
+        "gri": 0.774517761906182
+      },
+      "Decision-ZNE": {
+        "mse": 0.13451500770423558,
+        "gri": 0.7589643856337461
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C017",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 368.386997388564,
+      "normalized_primal_objective": 1.0211514599327915,
+      "normalized_dual_objective": 1.0211514599560847,
+      "normalized_gap": -2.329314519045056e-11,
+      "affine_residual": 1.5543122344752192e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.949063298591682e-13,
+      "dual_balance_residual": 1.071519535889889e-10
+    },
+    "fit_ids": [
+      25,
+      32,
+      30,
+      12,
+      2,
+      23,
+      13,
+      35,
+      37,
+      11
+    ],
+    "select_ids": [
+      33,
+      31,
+      10,
+      6,
+      29,
+      21,
+      14,
+      20,
+      18,
+      36
+    ],
+    "test_ids": [
+      4,
+      28,
+      0,
+      17,
+      15,
+      16,
+      3,
+      22,
+      8,
+      5,
+      19,
+      27,
+      26,
+      24,
+      38,
+      7,
+      1,
+      34,
+      39,
+      9
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2943682591463743,
+        0.41126348170725135,
+        -0.7056317408536257
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.7106978838805964,
+        "gri": 0.7092506774274419
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.12398828604221301,
+        "gri": 0.7910132548609556
+      },
+      "Decision-ZNE": {
+        "mse": 0.12813495642542427,
+        "gri": 0.7890544504639578
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C018",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 170.53475837256732,
+      "normalized_primal_objective": 1.0111524519278074,
+      "normalized_dual_objective": 1.0111524519396704,
+      "normalized_gap": -1.1862955062724723e-11,
+      "affine_residual": 1.1102230246251565e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.801714581503802e-14,
+      "dual_balance_residual": 5.963955833230284e-11
+    },
+    "fit_ids": [
+      39,
+      29,
+      6,
+      19,
+      10,
+      5,
+      31,
+      16,
+      37,
+      38
+    ],
+    "select_ids": [
+      15,
+      17,
+      30,
+      33,
+      13,
+      34,
+      27,
+      35,
+      28,
+      20
+    ],
+    "test_ids": [
+      32,
+      22,
+      36,
+      1,
+      9,
+      7,
+      23,
+      0,
+      24,
+      25,
+      11,
+      14,
+      21,
+      4,
+      8,
+      3,
+      2,
+      18,
+      12,
+      26
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.601424759746168,
+        -0.20284951949233565,
+        -0.3985752402538322
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.504496853343537,
+        "gri": 0.415770260278407
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.11357814597661038,
+        "gri": 0.8748829892111629
+      },
+      "Decision-ZNE": {
+        "mse": 0.09237093040215376,
+        "gri": 0.8647592840545437
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C018",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 141.04802010436327,
+      "normalized_primal_objective": 1.3929563991610463,
+      "normalized_dual_objective": 1.3929563991631935,
+      "normalized_gap": -2.1471713296250527e-12,
+      "affine_residual": 0.0,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 9.531264666406969e-14,
+      "dual_balance_residual": 1.0264937461614334e-11
+    },
+    "fit_ids": [
+      39,
+      29,
+      6,
+      19,
+      10,
+      5,
+      31,
+      16,
+      37,
+      38
+    ],
+    "select_ids": [
+      15,
+      17,
+      30,
+      33,
+      13,
+      34,
+      27,
+      35,
+      28,
+      20
+    ],
+    "test_ids": [
+      32,
+      22,
+      36,
+      1,
+      9,
+      7,
+      23,
+      0,
+      24,
+      25,
+      11,
+      14,
+      21,
+      4,
+      8,
+      3,
+      2,
+      18,
+      12,
+      26
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.3362619241142433,
+        0.32747615177151346,
+        -0.6637380758857567
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.5037091639082889,
+        "gri": 0.31049976390299594
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.10083401492681884,
+        "gri": 0.8268675109643749
+      },
+      "Decision-ZNE": {
+        "mse": 0.10057693482263277,
+        "gri": 0.8264139061928619
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C019",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.3171328093651536,
+      "normalized_primal_objective": 1.0226502627256093,
+      "normalized_dual_objective": 1.0226502627574385,
+      "normalized_gap": -3.182920593758354e-11,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.0236256287043943e-13,
+      "dual_balance_residual": 4.599601486529519e-10
+    },
+    "fit_ids": [
+      3,
+      14,
+      35,
+      10,
+      5,
+      16,
+      26,
+      12,
+      23,
+      6
+    ],
+    "select_ids": [
+      32,
+      13,
+      33,
+      2,
+      15,
+      1,
+      36,
+      4,
+      22,
+      17
+    ],
+    "test_ids": [
+      31,
+      29,
+      30,
+      24,
+      34,
+      0,
+      19,
+      21,
+      9,
+      25,
+      39,
+      37,
+      38,
+      8,
+      18,
+      28,
+      20,
+      11,
+      27,
+      7
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2557986183744114,
+        0.48840276325117715,
+        -0.7442013816255886
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.16622886299599587,
+        "gri": 0.019391064694186277
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.04734354843101461,
+        "gri": 0.11400530609537929
+      },
+      "Decision-ZNE": {
+        "mse": 0.05062790882966111,
+        "gri": 0.11766680157344256
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C019",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.27621045570519104,
+      "normalized_primal_objective": 0.7389165537810204,
+      "normalized_dual_objective": 0.738916553798293,
+      "normalized_gap": -1.727262777251326e-11,
+      "affine_residual": 1.1102230246251565e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 5.861977570020827e-14,
+      "dual_balance_residual": 3.921618492154815e-10
+    },
+    "fit_ids": [
+      3,
+      14,
+      35,
+      10,
+      5,
+      16,
+      26,
+      12,
+      23,
+      6
+    ],
+    "select_ids": [
+      32,
+      13,
+      33,
+      2,
+      15,
+      1,
+      36,
+      4,
+      22,
+      17
+    ],
+    "test_ids": [
+      31,
+      29,
+      30,
+      24,
+      34,
+      0,
+      19,
+      21,
+      9,
+      25,
+      39,
+      37,
+      38,
+      8,
+      18,
+      28,
+      20,
+      11,
+      27,
+      7
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4653138189244084,
+        0.06937236215118348,
+        -0.5346861810755917
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.16650104824045941,
+        "gri": 2.0267016099584367e-05
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.03875915211835773,
+        "gri": 0.09560972579226035
+      },
+      "Decision-ZNE": {
+        "mse": 0.03550607493600085,
+        "gri": 0.07878530759152558
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C020",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 6.810776719724686,
+      "normalized_primal_objective": 0.9185036251563601,
+      "normalized_dual_objective": 0.9185036250865576,
+      "normalized_gap": 6.980249711574515e-11,
+      "affine_residual": 2.3314683517128287e-14,
+      "cone_residual": 7.583966787905183e-11,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 8.540390616929017e-14,
+      "dual_balance_residual": 1.804456494704063e-10
+    },
+    "fit_ids": [
+      19,
+      17,
+      1,
+      23,
+      35,
+      10,
+      12,
+      4,
+      18,
+      15
+    ],
+    "select_ids": [
+      7,
+      8,
+      27,
+      32,
+      38,
+      3,
+      5,
+      21,
+      26,
+      39
+    ],
+    "test_ids": [
+      24,
+      22,
+      13,
+      31,
+      2,
+      34,
+      0,
+      6,
+      16,
+      33,
+      28,
+      36,
+      29,
+      37,
+      30,
+      14,
+      25,
+      20,
+      11,
+      9
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5023378430950516,
+        -0.004675686190103168,
+        -0.4976621569049484
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.5538002235938475,
+        "gri": 0.3615596912752178
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.10607289247694393,
+        "gri": 0.6753806131975926
+      },
+      "Decision-ZNE": {
+        "mse": 0.09157565533045718,
+        "gri": 0.7143905010955223
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C020",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 2.6809365112661663,
+      "normalized_primal_objective": 1.022375862004587,
+      "normalized_dual_objective": 1.0223758620203012,
+      "normalized_gap": -1.5714096690544466e-11,
+      "affine_residual": 4.218847493575595e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 9.894862706971708e-14,
+      "dual_balance_residual": 2.832595068370834e-10
+    },
+    "fit_ids": [
+      19,
+      17,
+      1,
+      23,
+      35,
+      10,
+      12,
+      4,
+      18,
+      15
+    ],
+    "select_ids": [
+      7,
+      8,
+      27,
+      32,
+      38,
+      3,
+      5,
+      21,
+      26,
+      39
+    ],
+    "test_ids": [
+      24,
+      22,
+      13,
+      31,
+      2,
+      34,
+      0,
+      6,
+      16,
+      33,
+      28,
+      36,
+      29,
+      37,
+      30,
+      14,
+      25,
+      20,
+      11,
+      9
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2276457609432103,
+        0.5447084781135794,
+        -0.7723542390567897
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.5511976857809009,
+        "gri": 0.4895468219026379
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.09883873936338936,
+        "gri": 0.3476808669771462
+      },
+      "Decision-ZNE": {
+        "mse": 0.10943071301142124,
+        "gri": 0.3539382773633941
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Accuracy-ZNE"
+    }
+  },
+  {
+    "instance": "C021",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 1.4539008717002817,
+      "normalized_primal_objective": 1.0120811273821462,
+      "normalized_dual_objective": 1.0120811274160992,
+      "normalized_gap": -3.395306258369146e-11,
+      "affine_residual": 4.440892098500626e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.9573899712763705e-13,
+      "dual_balance_residual": 3.4054131026525515e-10
+    },
+    "fit_ids": [
+      8,
+      17,
+      15,
+      34,
+      27,
+      0,
+      23,
+      37,
+      10,
+      30
+    ],
+    "select_ids": [
+      35,
+      7,
+      28,
+      12,
+      20,
+      31,
+      18,
+      36,
+      13,
+      1
+    ],
+    "test_ids": [
+      3,
+      24,
+      2,
+      21,
+      9,
+      25,
+      4,
+      33,
+      39,
+      11,
+      38,
+      16,
+      32,
+      6,
+      29,
+      26,
+      14,
+      19,
+      5,
+      22
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2907870462609452,
+        0.4184259074781098,
+        -0.7092129537390549
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.36066962091826454,
+        "gri": 0.014317022450547334
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.07083978124321903,
+        "gri": 0.34815240713588025
+      },
+      "Decision-ZNE": {
+        "mse": 0.07304424253403709,
+        "gri": 0.3459698941068594
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C021",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.543261715969802,
+      "normalized_primal_objective": 0.643464575457718,
+      "normalized_dual_objective": 0.643464575458254,
+      "normalized_gap": -5.360156762890256e-13,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 1.6653345369377348e-14,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.3306690738754696e-16,
+      "dual_balance_residual": 2.5771621983868503e-11
+    },
+    "fit_ids": [
+      8,
+      17,
+      15,
+      34,
+      27,
+      0,
+      23,
+      37,
+      10,
+      30
+    ],
+    "select_ids": [
+      35,
+      7,
+      28,
+      12,
+      20,
+      31,
+      18,
+      36,
+      13,
+      1
+    ],
+    "test_ids": [
+      3,
+      24,
+      2,
+      21,
+      9,
+      25,
+      4,
+      33,
+      39,
+      11,
+      38,
+      16,
+      32,
+      6,
+      29,
+      26,
+      14,
+      19,
+      5,
+      22
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.239786304786828,
+        0.5204273904263439,
+        -0.760213695213172
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.36117955369390914,
+        "gri": 0.06451276459227018
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.06397556374569179,
+        "gri": 0.08590213629823795
+      },
+      "Decision-ZNE": {
+        "mse": 0.06914232348042089,
+        "gri": 0.08696828314078697
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C022",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.44590488107190257,
+      "normalized_primal_objective": 1.219141339315016,
+      "normalized_dual_objective": 1.2191413393227466,
+      "normalized_gap": -7.73070496506989e-12,
+      "affine_residual": 1.1102230246251565e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.5168977185453514e-12,
+      "dual_balance_residual": 1.205080430287045e-10
+    },
+    "fit_ids": [
+      36,
+      25,
+      27,
+      31,
+      37,
+      32,
+      17,
+      6,
+      21,
+      7
+    ],
+    "select_ids": [
+      5,
+      33,
+      18,
+      4,
+      34,
+      1,
+      29,
+      13,
+      28,
+      20
+    ],
+    "test_ids": [
+      38,
+      11,
+      23,
+      10,
+      16,
+      8,
+      22,
+      2,
+      30,
+      3,
+      0,
+      14,
+      35,
+      19,
+      9,
+      24,
+      26,
+      15,
+      12,
+      39
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2737719498246953,
+        0.4524561003506091,
+        -0.7262280501753046
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.3927058473188475,
+        "gri": 1.5556921905357513e-05
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.07495743145985602,
+        "gri": 0.4248960009870023
+      },
+      "Decision-ZNE": {
+        "mse": 0.07940178943492865,
+        "gri": 0.4546591887663194
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C022",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.25106849003898396,
+      "normalized_primal_objective": 1.39575326077185,
+      "normalized_dual_objective": 1.3957532607736818,
+      "normalized_gap": -1.8318679906315083e-12,
+      "affine_residual": 4.440892098500626e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.3203661214665772e-14,
+      "dual_balance_residual": 1.4080458739387549e-11
+    },
+    "fit_ids": [
+      36,
+      25,
+      27,
+      31,
+      37,
+      32,
+      17,
+      6,
+      21,
+      7
+    ],
+    "select_ids": [
+      5,
+      33,
+      18,
+      4,
+      34,
+      1,
+      29,
+      13,
+      28,
+      20
+    ],
+    "test_ids": [
+      38,
+      11,
+      23,
+      10,
+      16,
+      8,
+      22,
+      2,
+      30,
+      3,
+      0,
+      14,
+      35,
+      19,
+      9,
+      24,
+      26,
+      15,
+      12,
+      39
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        0.8690618902028597,
+        1.2618762195942805,
+        -1.1309381097971403
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.39522131598028276,
+        "gri": 1.201564188813009e-06
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.06467316048026019,
+        "gri": 0.03478931072071567
+      },
+      "Decision-ZNE": {
+        "mse": 0.10344723629044998,
+        "gri": 0.21331938759381863
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C023",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.1629323933743062,
+      "normalized_primal_objective": 1.1686974264739363,
+      "normalized_dual_objective": 1.1686974264912084,
+      "normalized_gap": -1.727218368330341e-11,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.4804824033376462e-13,
+      "dual_balance_residual": 1.6009669382696169e-10
+    },
+    "fit_ids": [
+      33,
+      4,
+      16,
+      0,
+      10,
+      30,
+      31,
+      11,
+      24,
+      29
+    ],
+    "select_ids": [
+      18,
+      9,
+      39,
+      26,
+      6,
+      1,
+      3,
+      2,
+      27,
+      19
+    ],
+    "test_ids": [
+      35,
+      34,
+      28,
+      37,
+      23,
+      12,
+      13,
+      36,
+      22,
+      20,
+      5,
+      7,
+      17,
+      25,
+      38,
+      32,
+      8,
+      14,
+      21,
+      15
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.330614694270453,
+        0.3387706114590938,
+        -0.6693853057295469
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.37604612067784654,
+        "gri": 2.567775585804455e-05
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.07970436257622687,
+        "gri": 0.3188386374006672
+      },
+      "Decision-ZNE": {
+        "mse": 0.07983941093091866,
+        "gri": 0.31915607214988073
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C023",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.10594030881098858,
+      "normalized_primal_objective": 1.5478704832465042,
+      "normalized_dual_objective": 1.5478704832483563,
+      "normalized_gap": -1.852074049679686e-12,
+      "affine_residual": 3.1086244689504383e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.08530978543331e-13,
+      "dual_balance_residual": 1.5038486556094096e-11
+    },
+    "fit_ids": [
+      33,
+      4,
+      16,
+      0,
+      10,
+      30,
+      31,
+      11,
+      24,
+      29
+    ],
+    "select_ids": [
+      18,
+      9,
+      39,
+      26,
+      6,
+      1,
+      3,
+      2,
+      27,
+      19
+    ],
+    "test_ids": [
+      35,
+      34,
+      28,
+      37,
+      23,
+      12,
+      13,
+      36,
+      22,
+      20,
+      5,
+      7,
+      17,
+      25,
+      38,
+      32,
+      8,
+      14,
+      21,
+      15
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2608678393791979,
+        0.47826432124160423,
+        -0.7391321606208021
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.3759582292135129,
+        "gri": 3.251239880030426e-08
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.06848339110819078,
+        "gri": 0.04622724027848457
+      },
+      "Decision-ZNE": {
+        "mse": 0.07256731273152144,
+        "gri": 0.04491989059046442
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C024",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 5.180299221535927,
+      "normalized_primal_objective": 1.1952873225306446,
+      "normalized_dual_objective": 1.195287322543891,
+      "normalized_gap": -1.3246292951407668e-11,
+      "affine_residual": 1.6431300764452317e-14,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 7.839562332634387e-14,
+      "dual_balance_residual": 2.450882870105903e-10
+    },
+    "fit_ids": [
+      14,
+      27,
+      23,
+      10,
+      39,
+      18,
+      8,
+      7,
+      24,
+      3
+    ],
+    "select_ids": [
+      36,
+      30,
+      12,
+      19,
+      26,
+      15,
+      5,
+      11,
+      4,
+      17
+    ],
+    "test_ids": [
+      38,
+      28,
+      32,
+      22,
+      33,
+      1,
+      13,
+      2,
+      31,
+      0,
+      35,
+      9,
+      29,
+      34,
+      25,
+      20,
+      16,
+      37,
+      6,
+      21
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.0164877677260775,
+        0.967024464547845,
+        -0.9835122322739225
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.264107171959893,
+        "gri": 0.3377782954661869
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.044106007709970425,
+        "gri": 0.35557533723282986
+      },
+      "Decision-ZNE": {
+        "mse": 0.0591382918400573,
+        "gri": 0.4194758487157364
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C024",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 3.9306859692371563,
+      "normalized_primal_objective": 1.3607687075893018,
+      "normalized_dual_objective": 1.3607687075982384,
+      "normalized_gap": -8.936629214417735e-12,
+      "affine_residual": 4.241051954068098e-14,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.038613639536834e-13,
+      "dual_balance_residual": 1.1436810531356128e-10
+    },
+    "fit_ids": [
+      14,
+      27,
+      23,
+      10,
+      39,
+      18,
+      8,
+      7,
+      24,
+      3
+    ],
+    "select_ids": [
+      36,
+      30,
+      12,
+      19,
+      26,
+      15,
+      5,
+      11,
+      4,
+      17
+    ],
+    "test_ids": [
+      38,
+      28,
+      32,
+      22,
+      33,
+      1,
+      13,
+      2,
+      31,
+      0,
+      35,
+      9,
+      29,
+      34,
+      25,
+      20,
+      16,
+      37,
+      6,
+      21
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        0.9604109383324275,
+        1.079178123335145,
+        -1.0395890616675725
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.26665095594978677,
+        "gri": 0.306990082715101
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.0379105177144414,
+        "gri": 0.3405712031017867
+      },
+      "Decision-ZNE": {
+        "mse": 0.05335254906032627,
+        "gri": 0.4627949120645741
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C025",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.6547128162094028,
+      "normalized_primal_objective": 1.0243454694333234,
+      "normalized_dual_objective": 1.0243454694345386,
+      "normalized_gap": -1.2152501227546963e-12,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 5.98063265577764e-14,
+      "dual_balance_residual": 1.303587442314878e-11
+    },
+    "fit_ids": [
+      3,
+      29,
+      38,
+      26,
+      31,
+      18,
+      14,
+      2,
+      32,
+      39
+    ],
+    "select_ids": [
+      19,
+      6,
+      28,
+      25,
+      20,
+      10,
+      33,
+      7,
+      11,
+      27
+    ],
+    "test_ids": [
+      9,
+      12,
+      15,
+      1,
+      17,
+      35,
+      5,
+      24,
+      37,
+      16,
+      0,
+      34,
+      21,
+      36,
+      4,
+      8,
+      22,
+      30,
+      13,
+      23
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4565236010825366,
+        0.08695279783492671,
+        -0.5434763989174634
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.26930775296507503,
+        "gri": 0.017728203531614417
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.05307373018856814,
+        "gri": 0.23241157161283188
+      },
+      "Decision-ZNE": {
+        "mse": 0.04874429954105852,
+        "gri": 0.23539227481447966
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C025",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.3078139804359226,
+      "normalized_primal_objective": 0.9092458305285406,
+      "normalized_dual_objective": 0.9092458305317358,
+      "normalized_gap": -3.1952218648712005e-12,
+      "affine_residual": 0.0,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 9.835188219398106e-14,
+      "dual_balance_residual": 3.1575060121696034e-11
+    },
+    "fit_ids": [
+      3,
+      29,
+      38,
+      26,
+      31,
+      18,
+      14,
+      2,
+      32,
+      39
+    ],
+    "select_ids": [
+      19,
+      6,
+      28,
+      25,
+      20,
+      10,
+      33,
+      7,
+      11,
+      27
+    ],
+    "test_ids": [
+      9,
+      12,
+      15,
+      1,
+      17,
+      35,
+      5,
+      24,
+      37,
+      16,
+      0,
+      34,
+      21,
+      36,
+      4,
+      8,
+      22,
+      30,
+      13,
+      23
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4144325928905006,
+        0.1711348142189988,
+        -0.5855674071094994
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.264915622236393,
+        "gri": 0.03798349855860883
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.04532572310564762,
+        "gri": 0.03497490012126536
+      },
+      "Decision-ZNE": {
+        "mse": 0.04229658980086192,
+        "gri": 0.03610473086664223
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Accuracy-ZNE"
+    }
+  },
+  {
+    "instance": "C026",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 9.034339552977528,
+      "normalized_primal_objective": 1.5169051602307178,
+      "normalized_dual_objective": 1.516905160268679,
+      "normalized_gap": -3.79611897471932e-11,
+      "affine_residual": 8.881784197001252e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.9554136915521667e-13,
+      "dual_balance_residual": 1.389186543356136e-10
+    },
+    "fit_ids": [
+      12,
+      4,
+      3,
+      24,
+      13,
+      37,
+      34,
+      9,
+      21,
+      20
+    ],
+    "select_ids": [
+      29,
+      35,
+      6,
+      38,
+      19,
+      5,
+      17,
+      2,
+      33,
+      23
+    ],
+    "test_ids": [
+      36,
+      30,
+      27,
+      15,
+      7,
+      16,
+      0,
+      11,
+      31,
+      14,
+      25,
+      8,
+      10,
+      39,
+      32,
+      28,
+      26,
+      1,
+      18,
+      22
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4125472702401782,
+        0.17490545951964354,
+        -0.5874527297598218
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.2618232278273926,
+        "gri": 0.5350663407043712
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.06407047145513463,
+        "gri": 0.5227882361158078
+      },
+      "Decision-ZNE": {
+        "mse": 0.061989347919052216,
+        "gri": 0.5203542433263948
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Decision-ZNE"
+    }
+  },
+  {
+    "instance": "C026",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 5.018160134755839,
+      "normalized_primal_objective": 1.3293041711049203,
+      "normalized_dual_objective": 1.3293041711106885,
+      "normalized_gap": -5.768274746742463e-12,
+      "affine_residual": 6.661338147750939e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.657385588302532e-14,
+      "dual_balance_residual": 2.944777973277592e-11
+    },
+    "fit_ids": [
+      12,
+      4,
+      3,
+      24,
+      13,
+      37,
+      34,
+      9,
+      21,
+      20
+    ],
+    "select_ids": [
+      29,
+      35,
+      6,
+      38,
+      19,
+      5,
+      17,
+      2,
+      33,
+      23
+    ],
+    "test_ids": [
+      36,
+      30,
+      27,
+      15,
+      7,
+      16,
+      0,
+      11,
+      31,
+      14,
+      25,
+      8,
+      10,
+      39,
+      32,
+      28,
+      26,
+      1,
+      18,
+      22
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2078159247369393,
+        0.5843681505261213,
+        -0.7921840752630607
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.2550187150179526,
+        "gri": 0.55994070427341
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.05302012955779215,
+        "gri": 0.48461964944991953
+      },
+      "Decision-ZNE": {
+        "mse": 0.05831876077280716,
+        "gri": 0.4953998043739999
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Accuracy-ZNE"
+    }
+  },
+  {
+    "instance": "C027",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 38.84407407244589,
+      "normalized_primal_objective": 1.4387414985921056,
+      "normalized_dual_objective": 1.4387414985958757,
+      "normalized_gap": -3.7700953470221066e-12,
+      "affine_residual": 5.551115123125783e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.3988810110276972e-14,
+      "dual_balance_residual": 2.6055745335998204e-11
+    },
+    "fit_ids": [
+      38,
+      21,
+      28,
+      0,
+      9,
+      23,
+      3,
+      31,
+      22,
+      17
+    ],
+    "select_ids": [
+      1,
+      13,
+      4,
+      12,
+      14,
+      15,
+      26,
+      32,
+      36,
+      11
+    ],
+    "test_ids": [
+      20,
+      8,
+      10,
+      37,
+      5,
+      18,
+      34,
+      6,
+      2,
+      16,
+      29,
+      19,
+      30,
+      33,
+      25,
+      39,
+      7,
+      27,
+      35,
+      24
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.1147139211822479,
+        0.7705721576355045,
+        -0.8852860788177522
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.2445868556362327,
+        "gri": 0.6168433655345906
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.08453124251381251,
+        "gri": 0.7195409599592182
+      },
+      "Decision-ZNE": {
+        "mse": 0.10100368477555333,
+        "gri": 0.7320812340137337
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C027",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 20.05639146310059,
+      "normalized_primal_objective": 1.3323797355680356,
+      "normalized_dual_objective": 1.3323797355777212,
+      "normalized_gap": -9.685585666829866e-12,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.4710455076283324e-15,
+      "dual_balance_residual": 7.023512944994834e-11
+    },
+    "fit_ids": [
+      38,
+      21,
+      28,
+      0,
+      9,
+      23,
+      3,
+      31,
+      22,
+      17
+    ],
+    "select_ids": [
+      1,
+      13,
+      4,
+      12,
+      14,
+      15,
+      26,
+      32,
+      36,
+      11
+    ],
+    "test_ids": [
+      20,
+      8,
+      10,
+      37,
+      5,
+      18,
+      34,
+      6,
+      2,
+      16,
+      29,
+      19,
+      30,
+      33,
+      25,
+      39,
+      7,
+      27,
+      35,
+      24
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2771511231792838,
+        0.4456977536414324,
+        -0.7228488768207162
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.23788306458974662,
+        "gri": 0.7701662741066998
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.08198883437222125,
+        "gri": 0.6447941414586266
+      },
+      "Decision-ZNE": {
+        "mse": 0.08541726619786298,
+        "gri": 0.6332946460106292
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Decision-ZNE"
+    }
+  },
+  {
+    "instance": "C028",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 1.4022793973611742,
+      "normalized_primal_objective": 0.9312583360109584,
+      "normalized_dual_objective": 0.9312583360117134,
+      "normalized_gap": -7.549516567451064e-13,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.066191827689636e-15,
+      "dual_balance_residual": 1.166885190578056e-11
+    },
+    "fit_ids": [
+      35,
+      11,
+      5,
+      1,
+      12,
+      30,
+      25,
+      24,
+      7,
+      34
+    ],
+    "select_ids": [
+      14,
+      28,
+      17,
+      18,
+      32,
+      37,
+      9,
+      16,
+      33,
+      19
+    ],
+    "test_ids": [
+      31,
+      36,
+      6,
+      27,
+      38,
+      3,
+      20,
+      4,
+      23,
+      39,
+      8,
+      29,
+      2,
+      13,
+      10,
+      0,
+      21,
+      15,
+      26,
+      22
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.3872059826402021,
+        0.22558803471959576,
+        -0.6127940173597979
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.6347779799229172,
+        "gri": 0.35889642199961114
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.11599695249259855,
+        "gri": 0.7697512986422093
+      },
+      "Decision-ZNE": {
+        "mse": 0.11085770702223259,
+        "gri": 0.7779383136116269
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C028",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.7941837708740447,
+      "normalized_primal_objective": 1.2190903422264077,
+      "normalized_dual_objective": 1.2190903422401973,
+      "normalized_gap": -1.378963609965922e-11,
+      "affine_residual": 1.887379141862766e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.8427260545527133e-13,
+      "dual_balance_residual": 2.897584388415128e-10
+    },
+    "fit_ids": [
+      35,
+      11,
+      5,
+      1,
+      12,
+      30,
+      25,
+      24,
+      7,
+      34
+    ],
+    "select_ids": [
+      14,
+      28,
+      17,
+      18,
+      32,
+      37,
+      9,
+      16,
+      33,
+      19
+    ],
+    "test_ids": [
+      31,
+      36,
+      6,
+      27,
+      38,
+      3,
+      20,
+      4,
+      23,
+      39,
+      8,
+      29,
+      2,
+      13,
+      10,
+      0,
+      21,
+      15,
+      26,
+      22
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.1815875661962951,
+        0.6368248676074095,
+        -0.8184124338037048
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.6401603117402518,
+        "gri": 0.020591408274848844
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.10463275469454887,
+        "gri": 0.5816728402660956
+      },
+      "Decision-ZNE": {
+        "mse": 0.11860044261592412,
+        "gri": 0.5811405667638496
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C029",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 1.2180497264173238,
+      "normalized_primal_objective": 1.165115092738891,
+      "normalized_dual_objective": 1.1651150927384535,
+      "normalized_gap": 4.374278717023117e-13,
+      "affine_residual": 1.5432100042289676e-14,
+      "cone_residual": 7.37854222165879e-13,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.883005028626485e-14,
+      "dual_balance_residual": 7.989151799097494e-12
+    },
+    "fit_ids": [
+      30,
+      18,
+      6,
+      15,
+      4,
+      17,
+      35,
+      25,
+      36,
+      5
+    ],
+    "select_ids": [
+      14,
+      24,
+      21,
+      2,
+      31,
+      11,
+      12,
+      26,
+      3,
+      13
+    ],
+    "test_ids": [
+      29,
+      19,
+      8,
+      9,
+      32,
+      37,
+      10,
+      28,
+      0,
+      20,
+      39,
+      16,
+      1,
+      7,
+      23,
+      33,
+      22,
+      27,
+      34,
+      38
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.3326866921733593,
+        0.33462661565328156,
+        -0.6673133078266408
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.47420604296958807,
+        "gri": 0.22435262876413686
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.10626257552665232,
+        "gri": 0.31025040874891374
+      },
+      "Decision-ZNE": {
+        "mse": 0.10631603044101129,
+        "gri": 0.3104917578897678
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C029",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.7156479436323158,
+      "normalized_primal_objective": 1.0694841211386883,
+      "normalized_dual_objective": 1.069484121165817,
+      "normalized_gap": -2.712874369592555e-11,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.8849145294884693e-13,
+      "dual_balance_residual": 2.760540090435515e-10
+    },
+    "fit_ids": [
+      30,
+      18,
+      6,
+      15,
+      4,
+      17,
+      35,
+      25,
+      36,
+      5
+    ],
+    "select_ids": [
+      14,
+      24,
+      21,
+      2,
+      31,
+      11,
+      12,
+      26,
+      3,
+      13
+    ],
+    "test_ids": [
+      29,
+      19,
+      8,
+      9,
+      32,
+      37,
+      10,
+      28,
+      0,
+      20,
+      39,
+      16,
+      1,
+      7,
+      23,
+      33,
+      22,
+      27,
+      34,
+      38
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2763050766170176,
+        0.4473898467659647,
+        -0.7236949233829824
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.47437559939305757,
+        "gri": 0.024659565274697703
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.09836906959608024,
+        "gri": 0.4648816439707636
+      },
+      "Decision-ZNE": {
+        "mse": 0.10362294190004907,
+        "gri": 0.4746129132332244
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C030",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 5.3797960732708505,
+      "normalized_primal_objective": 1.7131479779455205,
+      "normalized_dual_objective": 1.7131479779733505,
+      "normalized_gap": -2.78299605582788e-11,
+      "affine_residual": 7.827072323607354e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.216027278871934e-12,
+      "dual_balance_residual": 1.7675384597361808e-10
+    },
+    "fit_ids": [
+      33,
+      24,
+      30,
+      21,
+      11,
+      6,
+      29,
+      38,
+      26,
+      23
+    ],
+    "select_ids": [
+      35,
+      7,
+      22,
+      36,
+      19,
+      1,
+      34,
+      5,
+      12,
+      25
+    ],
+    "test_ids": [
+      31,
+      37,
+      39,
+      13,
+      3,
+      4,
+      15,
+      28,
+      8,
+      27,
+      20,
+      16,
+      32,
+      9,
+      17,
+      0,
+      10,
+      18,
+      2,
+      14
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5932155542470547,
+        -0.1864311084941096,
+        -0.4067844457529452
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.3567119883149503,
+        "gri": 0.8388179089053927
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.08737181240340189,
+        "gri": 0.6383771965049023
+      },
+      "Decision-ZNE": {
+        "mse": 0.07676349406295818,
+        "gri": 0.7351575688427213
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Accuracy-ZNE"
+    }
+  },
+  {
+    "instance": "C030",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 2.380703511457318,
+      "normalized_primal_objective": 1.0966385770323475,
+      "normalized_dual_objective": 1.0966385770334004,
+      "normalized_gap": -1.0529355165544985e-12,
+      "affine_residual": 2.4424906541753444e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.4155343563970746e-15,
+      "dual_balance_residual": 3.523923356759967e-11
+    },
+    "fit_ids": [
+      33,
+      24,
+      30,
+      21,
+      11,
+      6,
+      29,
+      38,
+      26,
+      23
+    ],
+    "select_ids": [
+      35,
+      7,
+      22,
+      36,
+      19,
+      1,
+      34,
+      5,
+      12,
+      25
+    ],
+    "test_ids": [
+      31,
+      37,
+      39,
+      13,
+      3,
+      4,
+      15,
+      28,
+      8,
+      27,
+      20,
+      16,
+      32,
+      9,
+      17,
+      0,
+      10,
+      18,
+      2,
+      14
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4455955862181695,
+        0.10880882756366095,
+        -0.5544044137818305
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.36085638115174357,
+        "gri": 0.5292696917917432
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.0747425198577392,
+        "gri": 0.7279311477182759
+      },
+      "Decision-ZNE": {
+        "mse": 0.06887063452010547,
+        "gri": 0.7492952993605035
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C031",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 38.64732055966214,
+      "normalized_primal_objective": 1.3624567574508442,
+      "normalized_dual_objective": 1.3624567574613446,
+      "normalized_gap": -1.050048936690473e-11,
+      "affine_residual": 4.996003610813204e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.251776460264864e-14,
+      "dual_balance_residual": 4.6717582212928485e-11
+    },
+    "fit_ids": [
+      27,
+      20,
+      2,
+      26,
+      8,
+      28,
+      35,
+      14,
+      13,
+      10
+    ],
+    "select_ids": [
+      6,
+      39,
+      32,
+      7,
+      33,
+      34,
+      15,
+      31,
+      3,
+      22
+    ],
+    "test_ids": [
+      11,
+      21,
+      37,
+      36,
+      16,
+      9,
+      23,
+      19,
+      4,
+      25,
+      29,
+      12,
+      18,
+      1,
+      30,
+      0,
+      5,
+      17,
+      24,
+      38
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5661059620831914,
+        -0.13221192416638294,
+        -0.43389403791680853
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.5937638551538857,
+        "gri": 0.4066929407507548
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.1152299741432806,
+        "gri": 0.4875648056844907
+      },
+      "Decision-ZNE": {
+        "mse": 0.09898706130010977,
+        "gri": 0.48461372913417855
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C031",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 20.604824456227263,
+      "normalized_primal_objective": 1.2980185881388635,
+      "normalized_dual_objective": 1.298018588144279,
+      "normalized_gap": -5.4154458695165886e-12,
+      "affine_residual": 1.1102230246251565e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 8.820721930646869e-14,
+      "dual_balance_residual": 2.2625703704941808e-11
+    },
+    "fit_ids": [
+      27,
+      20,
+      2,
+      26,
+      8,
+      28,
+      35,
+      14,
+      13,
+      10
+    ],
+    "select_ids": [
+      6,
+      39,
+      32,
+      7,
+      33,
+      34,
+      15,
+      31,
+      3,
+      22
+    ],
+    "test_ids": [
+      11,
+      21,
+      37,
+      36,
+      16,
+      9,
+      23,
+      19,
+      4,
+      25,
+      29,
+      12,
+      18,
+      1,
+      30,
+      0,
+      5,
+      17,
+      24,
+      38
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.3911475035675624,
+        0.21770499286487488,
+        -0.6088524964324374
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.6017366552396336,
+        "gri": 0.20589325950164605
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.09713379301197717,
+        "gri": 0.41653720660291604
+      },
+      "Decision-ZNE": {
+        "mse": 0.0920357319270765,
+        "gri": 0.42093164977792796
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C032",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 7.157687178452916,
+      "normalized_primal_objective": 1.0844620710989834,
+      "normalized_dual_objective": 1.0844620711007438,
+      "normalized_gap": -1.7603696278456482e-12,
+      "affine_residual": 1.1102230246251565e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.49442697000768e-14,
+      "dual_balance_residual": 8.85837852462379e-12
+    },
+    "fit_ids": [
+      17,
+      36,
+      8,
+      1,
+      13,
+      5,
+      34,
+      21,
+      39,
+      37
+    ],
+    "select_ids": [
+      0,
+      19,
+      23,
+      4,
+      24,
+      22,
+      2,
+      38,
+      12,
+      30
+    ],
+    "test_ids": [
+      33,
+      29,
+      3,
+      20,
+      11,
+      6,
+      31,
+      15,
+      32,
+      9,
+      14,
+      25,
+      35,
+      27,
+      28,
+      16,
+      26,
+      10,
+      18,
+      7
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4639922321960976,
+        0.07201553560780494,
+        -0.5360077678039025
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.2545567206246154,
+        "gri": 0.43428406365288397
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.04430790998519783,
+        "gri": 0.6522507336340335
+      },
+      "Decision-ZNE": {
+        "mse": 0.04123562220307838,
+        "gri": 0.6251608394843193
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C032",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 3.7789325087821544,
+      "normalized_primal_objective": 0.9995722961085454,
+      "normalized_dual_objective": 0.9995722961104219,
+      "normalized_gap": -1.8764989562214396e-12,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.9182879990894435e-14,
+      "dual_balance_residual": 1.5709338279039388e-11
+    },
+    "fit_ids": [
+      17,
+      36,
+      8,
+      1,
+      13,
+      5,
+      34,
+      21,
+      39,
+      37
+    ],
+    "select_ids": [
+      0,
+      19,
+      23,
+      4,
+      24,
+      22,
+      2,
+      38,
+      12,
+      30
+    ],
+    "test_ids": [
+      33,
+      29,
+      3,
+      20,
+      11,
+      6,
+      31,
+      15,
+      32,
+      9,
+      14,
+      25,
+      35,
+      27,
+      28,
+      16,
+      26,
+      10,
+      18,
+      7
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5477531008385315,
+        -0.09550620167706303,
+        -0.4522468991614685
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.25336370747523046,
+        "gri": 0.4453199757550643
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.038712222618451315,
+        "gri": 0.5011489857412561
+      },
+      "Decision-ZNE": {
+        "mse": 0.0337752544341438,
+        "gri": 0.4869144365967347
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C033",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 131.75760158945985,
+      "normalized_primal_objective": 0.9197426866166971,
+      "normalized_dual_objective": 0.919742686622005,
+      "normalized_gap": -5.307865258430411e-12,
+      "affine_residual": 1.1102230246251565e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.198030811863873e-14,
+      "dual_balance_residual": 2.960811356889482e-11
+    },
+    "fit_ids": [
+      27,
+      4,
+      26,
+      39,
+      11,
+      33,
+      36,
+      6,
+      37,
+      35
+    ],
+    "select_ids": [
+      19,
+      13,
+      12,
+      21,
+      20,
+      8,
+      34,
+      17,
+      31,
+      24
+    ],
+    "test_ids": [
+      14,
+      7,
+      38,
+      10,
+      25,
+      9,
+      1,
+      32,
+      3,
+      5,
+      30,
+      28,
+      29,
+      0,
+      22,
+      16,
+      18,
+      15,
+      23,
+      2
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.22118019786183,
+        0.5576396042763403,
+        -0.7788198021381701
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.4347879148971904,
+        "gri": 0.0766347717620991
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.08754198570712754,
+        "gri": 0.36147598282548055
+      },
+      "Decision-ZNE": {
+        "mse": 0.09669917502916092,
+        "gri": 0.33728238891813256
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C033",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 65.67668573906698,
+      "normalized_primal_objective": 0.8378089032213865,
+      "normalized_dual_objective": 0.8378089032225032,
+      "normalized_gap": -1.116773340470445e-12,
+      "affine_residual": 4.440892098500626e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.8270107648987732e-14,
+      "dual_balance_residual": 8.49182237487777e-12
+    },
+    "fit_ids": [
+      27,
+      4,
+      26,
+      39,
+      11,
+      33,
+      36,
+      6,
+      37,
+      35
+    ],
+    "select_ids": [
+      19,
+      13,
+      12,
+      21,
+      20,
+      8,
+      34,
+      17,
+      31,
+      24
+    ],
+    "test_ids": [
+      14,
+      7,
+      38,
+      10,
+      25,
+      9,
+      1,
+      32,
+      3,
+      5,
+      30,
+      28,
+      29,
+      0,
+      22,
+      16,
+      18,
+      15,
+      23,
+      2
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.1428578876039062,
+        0.7142842247921877,
+        -0.8571421123960938
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.43385987955159144,
+        "gri": 0.06181315487825467
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.08895342587648213,
+        "gri": 0.4084962764229071
+      },
+      "Decision-ZNE": {
+        "mse": 0.10717740983626879,
+        "gri": 0.43651944478329396
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C034",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 17.667556216417086,
+      "normalized_primal_objective": 1.5770151415588662,
+      "normalized_dual_objective": 1.5770151416217715,
+      "normalized_gap": -6.290523657526137e-11,
+      "affine_residual": 2.5091040356528538e-14,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.1863400806741993e-13,
+      "dual_balance_residual": 5.433148278167794e-10
+    },
+    "fit_ids": [
+      16,
+      13,
+      12,
+      18,
+      34,
+      33,
+      10,
+      23,
+      7,
+      8
+    ],
+    "select_ids": [
+      4,
+      11,
+      9,
+      2,
+      20,
+      36,
+      32,
+      19,
+      25,
+      24
+    ],
+    "test_ids": [
+      27,
+      5,
+      29,
+      26,
+      37,
+      21,
+      31,
+      35,
+      0,
+      17,
+      30,
+      6,
+      3,
+      14,
+      39,
+      22,
+      15,
+      28,
+      38,
+      1
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.1297110351071236,
+        0.7405779297857529,
+        -0.8702889648928764
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.4722245756750072,
+        "gri": 0.8717073021579128
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.12670519741921576,
+        "gri": 0.8463382680078099
+      },
+      "Decision-ZNE": {
+        "mse": 0.15078368844250525,
+        "gri": 0.9072898140379897
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Accuracy-ZNE"
+    }
+  },
+  {
+    "instance": "C034",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 13.908524857622506,
+      "normalized_primal_objective": 1.0244988984183274,
+      "normalized_dual_objective": 1.0244988984188017,
+      "normalized_gap": -4.742872761198669e-13,
+      "affine_residual": 4.440892098500626e-15,
+      "cone_residual": 6.683542608243442e-14,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.142730437526552e-14,
+      "dual_balance_residual": 1.3717441184689945e-11
+    },
+    "fit_ids": [
+      16,
+      13,
+      12,
+      18,
+      34,
+      33,
+      10,
+      23,
+      7,
+      8
+    ],
+    "select_ids": [
+      4,
+      11,
+      9,
+      2,
+      20,
+      36,
+      32,
+      19,
+      25,
+      24
+    ],
+    "test_ids": [
+      27,
+      5,
+      29,
+      26,
+      37,
+      21,
+      31,
+      35,
+      0,
+      17,
+      30,
+      6,
+      3,
+      14,
+      39,
+      22,
+      15,
+      28,
+      38,
+      1
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.226929363881486,
+        0.546141272237028,
+        -0.773070636118514
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.4682496098728553,
+        "gri": 0.8734004335557559
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.12137926111583382,
+        "gri": 0.9372955314982924
+      },
+      "Decision-ZNE": {
+        "mse": 0.132752654561007,
+        "gri": 0.952384645241382
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C035",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.8356877899790154,
+      "normalized_primal_objective": 1.0870174976951459,
+      "normalized_dual_objective": 1.0870174976979776,
+      "normalized_gap": -2.8317348466089243e-12,
+      "affine_residual": 1.4432899320127035e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.0509371151101732e-12,
+      "dual_balance_residual": 4.7103717458009644e-11
+    },
+    "fit_ids": [
+      18,
+      22,
+      3,
+      10,
+      25,
+      37,
+      36,
+      31,
+      32,
+      38
+    ],
+    "select_ids": [
+      14,
+      4,
+      19,
+      0,
+      17,
+      16,
+      34,
+      21,
+      8,
+      12
+    ],
+    "test_ids": [
+      1,
+      33,
+      2,
+      5,
+      23,
+      6,
+      26,
+      35,
+      30,
+      15,
+      24,
+      28,
+      13,
+      27,
+      9,
+      11,
+      7,
+      29,
+      39,
+      20
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4919158796663319,
+        0.016168240667336464,
+        -0.5080841203336682
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.35863946218744797,
+        "gri": 0.016440861703158283
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.09653943363310248,
+        "gri": 0.30995079385559654
+      },
+      "Decision-ZNE": {
+        "mse": 0.08473418652704717,
+        "gri": 0.27196952355601
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C035",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.42519817829487383,
+      "normalized_primal_objective": 1.102664337684795,
+      "normalized_dual_objective": 1.1026643376862437,
+      "normalized_gap": -1.4486190025309043e-12,
+      "affine_residual": 1.6653345369377348e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 6.615541447985152e-14,
+      "dual_balance_residual": 1.3783949702637396e-11
+    },
+    "fit_ids": [
+      18,
+      22,
+      3,
+      10,
+      25,
+      37,
+      36,
+      31,
+      32,
+      38
+    ],
+    "select_ids": [
+      14,
+      4,
+      19,
+      0,
+      17,
+      16,
+      34,
+      21,
+      8,
+      12
+    ],
+    "test_ids": [
+      1,
+      33,
+      2,
+      5,
+      23,
+      6,
+      26,
+      35,
+      30,
+      15,
+      24,
+      28,
+      13,
+      27,
+      9,
+      11,
+      7,
+      29,
+      39,
+      20
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5561778701286262,
+        -0.11235574025725226,
+        -0.44382212987137387
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.35630133491824256,
+        "gri": 0.0010629392496662726
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.09084039143736374,
+        "gri": 0.20558838776375743
+      },
+      "Decision-ZNE": {
+        "mse": 0.0742339814969577,
+        "gri": 0.17352858577096864
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C036",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.4385135582291109,
+      "normalized_primal_objective": 1.5133668708043302,
+      "normalized_dual_objective": 1.513366870815356,
+      "normalized_gap": -1.1025846902157355e-11,
+      "affine_residual": 0.0,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.0161650127192843e-13,
+      "dual_balance_residual": 1.3218241668329586e-10
+    },
+    "fit_ids": [
+      38,
+      12,
+      29,
+      33,
+      14,
+      19,
+      23,
+      9,
+      32,
+      16
+    ],
+    "select_ids": [
+      4,
+      21,
+      7,
+      10,
+      20,
+      15,
+      39,
+      22,
+      2,
+      28
+    ],
+    "test_ids": [
+      8,
+      6,
+      37,
+      34,
+      13,
+      18,
+      5,
+      26,
+      36,
+      0,
+      11,
+      31,
+      30,
+      27,
+      17,
+      24,
+      35,
+      3,
+      1,
+      25
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2406543220495716,
+        0.5186913559008568,
+        -0.7593456779504284
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.1751090675800221,
+        "gri": 0.11082263599549602
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.038646635697682986,
+        "gri": 0.37371052310158015
+      },
+      "Decision-ZNE": {
+        "mse": 0.04215348479923866,
+        "gri": 0.3744070096832087
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C036",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.3932692191981111,
+      "normalized_primal_objective": 1.4707156532689771,
+      "normalized_dual_objective": 1.4707156532697552,
+      "normalized_gap": -7.780442956573097e-13,
+      "affine_residual": 9.325873406851315e-15,
+      "cone_residual": 3.496092304544618e-12,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.4988010832439613e-14,
+      "dual_balance_residual": 8.117758385761914e-11
+    },
+    "fit_ids": [
+      38,
+      12,
+      29,
+      33,
+      14,
+      19,
+      23,
+      9,
+      32,
+      16
+    ],
+    "select_ids": [
+      4,
+      21,
+      7,
+      10,
+      20,
+      15,
+      39,
+      22,
+      2,
+      28
+    ],
+    "test_ids": [
+      8,
+      6,
+      37,
+      34,
+      13,
+      18,
+      5,
+      26,
+      36,
+      0,
+      11,
+      31,
+      30,
+      27,
+      17,
+      24,
+      35,
+      3,
+      1,
+      25
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        0.8103775199978593,
+        1.3792449600042813,
+        -1.1896224800021407
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.17387060832913578,
+        "gri": 0.03295387569366637
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.03285785818932105,
+        "gri": 0.3053625216874605
+      },
+      "Decision-ZNE": {
+        "mse": 0.055953132485845186,
+        "gri": 0.3541770248074796
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C037",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 5.246175227932551,
+      "normalized_primal_objective": 0.9283529145182344,
+      "normalized_dual_objective": 0.9283529145196584,
+      "normalized_gap": -1.4239720513842258e-12,
+      "affine_residual": 0.0,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.546121729591789e-14,
+      "dual_balance_residual": 1.123407993522263e-11
+    },
+    "fit_ids": [
+      26,
+      16,
+      35,
+      25,
+      7,
+      34,
+      8,
+      14,
+      15,
+      20
+    ],
+    "select_ids": [
+      39,
+      37,
+      0,
+      18,
+      21,
+      22,
+      10,
+      9,
+      29,
+      13
+    ],
+    "test_ids": [
+      28,
+      36,
+      23,
+      6,
+      31,
+      30,
+      33,
+      32,
+      17,
+      19,
+      5,
+      2,
+      24,
+      27,
+      1,
+      3,
+      11,
+      4,
+      12,
+      38
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.6615555864130234,
+        -0.32311117282604673,
+        -0.33844441358697663
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.1336866537160205,
+        "gri": 0.3782878935264866
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.044516961514433226,
+        "gri": 0.269256660871966
+      },
+      "Decision-ZNE": {
+        "mse": 0.04186499940138902,
+        "gri": 0.3146083044481661
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Accuracy-ZNE"
+    }
+  },
+  {
+    "instance": "C037",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 2.918702804600053,
+      "normalized_primal_objective": 0.7945858715747859,
+      "normalized_dual_objective": 0.7945858715907073,
+      "normalized_gap": -1.5921375329241982e-11,
+      "affine_residual": 9.43689570931383e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 5.839773109528323e-14,
+      "dual_balance_residual": 8.582591367953317e-11
+    },
+    "fit_ids": [
+      26,
+      16,
+      35,
+      25,
+      7,
+      34,
+      8,
+      14,
+      15,
+      20
+    ],
+    "select_ids": [
+      39,
+      37,
+      0,
+      18,
+      21,
+      22,
+      10,
+      9,
+      29,
+      13
+    ],
+    "test_ids": [
+      28,
+      36,
+      23,
+      6,
+      31,
+      30,
+      33,
+      32,
+      17,
+      19,
+      5,
+      2,
+      24,
+      27,
+      1,
+      3,
+      11,
+      4,
+      12,
+      38
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5971556671426013,
+        -0.19431133428520242,
+        -0.4028443328573988
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.13062027305809312,
+        "gri": 0.3506149430940627
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.03532006770042793,
+        "gri": 0.32174706240307005
+      },
+      "Decision-ZNE": {
+        "mse": 0.03209029224088745,
+        "gri": 0.32845305761439125
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Accuracy-ZNE"
+    }
+  },
+  {
+    "instance": "C038",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 7.169669138973541,
+      "normalized_primal_objective": 1.6882061788277174,
+      "normalized_dual_objective": 1.6882061788295422,
+      "normalized_gap": -1.8247625632739073e-12,
+      "affine_residual": 6.661338147750939e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 7.366329768387914e-14,
+      "dual_balance_residual": 1.3167196207055448e-11
+    },
+    "fit_ids": [
+      27,
+      26,
+      9,
+      10,
+      17,
+      23,
+      24,
+      30,
+      38,
+      14
+    ],
+    "select_ids": [
+      28,
+      1,
+      18,
+      4,
+      2,
+      32,
+      3,
+      31,
+      34,
+      5
+    ],
+    "test_ids": [
+      16,
+      25,
+      12,
+      19,
+      39,
+      15,
+      36,
+      7,
+      6,
+      35,
+      22,
+      21,
+      37,
+      0,
+      33,
+      13,
+      11,
+      8,
+      20,
+      29
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4800011447506276,
+        0.03999771049874479,
+        -0.5199988552493724
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.5217601446312018,
+        "gri": 0.6108689878942011
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.10010910893784374,
+        "gri": 0.7056176477196321
+      },
+      "Decision-ZNE": {
+        "mse": 0.0904745786080056,
+        "gri": 0.700608326357518
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C038",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 3.8887360208179085,
+      "normalized_primal_objective": 1.3203043227625735,
+      "normalized_dual_objective": 1.320304322769891,
+      "normalized_gap": -7.317479955304407e-12,
+      "affine_residual": 2.886579864025407e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 8.415490526658687e-14,
+      "dual_balance_residual": 9.989286300180696e-11
+    },
+    "fit_ids": [
+      27,
+      26,
+      9,
+      10,
+      17,
+      23,
+      24,
+      30,
+      38,
+      14
+    ],
+    "select_ids": [
+      28,
+      1,
+      18,
+      4,
+      2,
+      32,
+      3,
+      31,
+      34,
+      5
+    ],
+    "test_ids": [
+      16,
+      25,
+      12,
+      19,
+      39,
+      15,
+      36,
+      7,
+      6,
+      35,
+      22,
+      21,
+      37,
+      0,
+      33,
+      13,
+      11,
+      8,
+      20,
+      29
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        0.8578116732644532,
+        1.2843766534710936,
+        -1.1421883267355468
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.5185198107233073,
+        "gri": 0.4569841120981717
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.08884415512676883,
+        "gri": 0.6646028257065297
+      },
+      "Decision-ZNE": {
+        "mse": 0.13667378532839775,
+        "gri": 0.7183415719382373
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C039",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 3.2083124219832757,
+      "normalized_primal_objective": 1.3840862596218215,
+      "normalized_dual_objective": 1.3840862596312113,
+      "normalized_gap": -9.389822253069724e-12,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 5.999714614013385e-14,
+      "dual_balance_residual": 8.307952318617812e-11
+    },
+    "fit_ids": [
+      32,
+      10,
+      29,
+      26,
+      25,
+      20,
+      15,
+      3,
+      13,
+      5
+    ],
+    "select_ids": [
+      36,
+      16,
+      8,
+      14,
+      4,
+      28,
+      1,
+      7,
+      35,
+      6
+    ],
+    "test_ids": [
+      23,
+      24,
+      12,
+      27,
+      39,
+      34,
+      33,
+      37,
+      9,
+      21,
+      22,
+      19,
+      18,
+      38,
+      30,
+      0,
+      11,
+      2,
+      17,
+      31
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.124515394835822,
+        0.7509692103283561,
+        -0.875484605164178
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.3877854848679684,
+        "gri": 0.2164102917967392
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.0726564570335742,
+        "gri": 0.490394420362829
+      },
+      "Decision-ZNE": {
+        "mse": 0.08683648110368442,
+        "gri": 0.5533646457180452
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C039",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 1.3075232460679602,
+      "normalized_primal_objective": 1.5410090305125514,
+      "normalized_dual_objective": 1.541009030536665,
+      "normalized_gap": -2.411360000564855e-11,
+      "affine_residual": 5.551115123125783e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.1710411246544936e-13,
+      "dual_balance_residual": 1.4859116870764883e-10
+    },
+    "fit_ids": [
+      32,
+      10,
+      29,
+      26,
+      25,
+      20,
+      15,
+      3,
+      13,
+      5
+    ],
+    "select_ids": [
+      36,
+      16,
+      8,
+      14,
+      4,
+      28,
+      1,
+      7,
+      35,
+      6
+    ],
+    "test_ids": [
+      23,
+      24,
+      12,
+      27,
+      39,
+      34,
+      33,
+      37,
+      9,
+      21,
+      22,
+      19,
+      18,
+      38,
+      30,
+      0,
+      11,
+      2,
+      17,
+      31
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4698034671667117,
+        0.06039306566657632,
+        -0.5301965328332882
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.38263773509108956,
+        "gri": 0.13257592554054387
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.06631412248487531,
+        "gri": 0.35094688778242233
+      },
+      "Decision-ZNE": {
+        "mse": 0.05890837517454923,
+        "gri": 0.3475335513810017
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C040",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 658513.202299501,
+      "normalized_primal_objective": 0.90955277128285,
+      "normalized_dual_objective": 0.9095527713260577,
+      "normalized_gap": -4.3207770694664305e-11,
+      "affine_residual": 4.718447854656915e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.6579073103837345e-13,
+      "dual_balance_residual": 3.0536059489535564e-10
+    },
+    "fit_ids": [
+      34,
+      16,
+      37,
+      3,
+      29,
+      1,
+      7,
+      10,
+      25,
+      21
+    ],
+    "select_ids": [
+      28,
+      15,
+      38,
+      27,
+      11,
+      23,
+      2,
+      24,
+      14,
+      19
+    ],
+    "test_ids": [
+      8,
+      30,
+      33,
+      18,
+      0,
+      32,
+      26,
+      22,
+      31,
+      9,
+      5,
+      39,
+      17,
+      6,
+      36,
+      20,
+      4,
+      13,
+      12,
+      35
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.8696276820205997,
+        -0.7392553640411995,
+        -0.13037231797940024
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.2293549404904191,
+        "gri": 0.5981263390779108
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.04744670296917812,
+        "gri": 0.640855546721459
+      },
+      "Decision-ZNE": {
+        "mse": 0.047653148100940255,
+        "gri": 0.8068613998196649
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C040",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 197507.46370740078,
+      "normalized_primal_objective": 1.3130717351761063,
+      "normalized_dual_objective": 1.3130717352673664,
+      "normalized_gap": -9.126011057958294e-11,
+      "affine_residual": 8.881784197001252e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.933658954125008e-14,
+      "dual_balance_residual": 3.902288725098719e-10
+    },
+    "fit_ids": [
+      34,
+      16,
+      37,
+      3,
+      29,
+      1,
+      7,
+      10,
+      25,
+      21
+    ],
+    "select_ids": [
+      28,
+      15,
+      38,
+      27,
+      11,
+      23,
+      2,
+      24,
+      14,
+      19
+    ],
+    "test_ids": [
+      8,
+      30,
+      33,
+      18,
+      0,
+      32,
+      26,
+      22,
+      31,
+      9,
+      5,
+      39,
+      17,
+      6,
+      36,
+      20,
+      4,
+      13,
+      12,
+      35
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.1942912195656556,
+        0.6114175608686887,
+        -0.8057087804343444
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.22572986186221508,
+        "gri": 0.33481741009228305
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.036419862226894834,
+        "gri": 0.768950937264321
+      },
+      "Decision-ZNE": {
+        "mse": 0.03984453199636407,
+        "gri": 0.7369830212564276
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C041",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 112.06919146307986,
+      "normalized_primal_objective": 1.4601928253936978,
+      "normalized_dual_objective": 1.460192825395173,
+      "normalized_gap": -1.475264355121908e-12,
+      "affine_residual": 1.6653345369377348e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 6.63358257213531e-15,
+      "dual_balance_residual": 7.218260830063049e-12
+    },
+    "fit_ids": [
+      21,
+      15,
+      34,
+      36,
+      19,
+      38,
+      4,
+      14,
+      8,
+      12
+    ],
+    "select_ids": [
+      16,
+      35,
+      1,
+      9,
+      25,
+      30,
+      17,
+      26,
+      20,
+      22
+    ],
+    "test_ids": [
+      11,
+      27,
+      28,
+      29,
+      24,
+      6,
+      33,
+      0,
+      23,
+      10,
+      39,
+      31,
+      3,
+      13,
+      32,
+      37,
+      2,
+      7,
+      5,
+      18
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5407137188027333,
+        -0.08142743760546656,
+        -0.4592862811972667
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.6322097275888227,
+        "gri": 0.16587511560420531
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.11782747430765804,
+        "gri": 0.6591631553910179
+      },
+      "Decision-ZNE": {
+        "mse": 0.09959797737279882,
+        "gri": 0.6014600398962731
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C041",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 49.1934879982255,
+      "normalized_primal_objective": 1.5233852481901438,
+      "normalized_dual_objective": 1.5233852481913668,
+      "normalized_gap": -1.2230216839270724e-12,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.469446951953614e-14,
+      "dual_balance_residual": 6.109858184051358e-12
+    },
+    "fit_ids": [
+      21,
+      15,
+      34,
+      36,
+      19,
+      38,
+      4,
+      14,
+      8,
+      12
+    ],
+    "select_ids": [
+      16,
+      35,
+      1,
+      9,
+      25,
+      30,
+      17,
+      26,
+      20,
+      22
+    ],
+    "test_ids": [
+      11,
+      27,
+      28,
+      29,
+      24,
+      6,
+      33,
+      0,
+      23,
+      10,
+      39,
+      31,
+      3,
+      13,
+      32,
+      37,
+      2,
+      7,
+      5,
+      18
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5396716613080688,
+        -0.07934332261613741,
+        -0.4603283386919313
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.6325427969050051,
+        "gri": 0.16668635576401403
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.10807774033544805,
+        "gri": 0.49007261039478667
+      },
+      "Decision-ZNE": {
+        "mse": 0.08964215689444995,
+        "gri": 0.4617702488659743
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C042",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 87.46517254566969,
+      "normalized_primal_objective": 1.4744216269423065,
+      "normalized_dual_objective": 1.474421626984037,
+      "normalized_gap": -4.173039691579561e-11,
+      "affine_residual": 4.440892098500626e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 8.099944326378505e-14,
+      "dual_balance_residual": 1.8986553288377775e-10
+    },
+    "fit_ids": [
+      9,
+      22,
+      0,
+      31,
+      26,
+      6,
+      19,
+      28,
+      23,
+      17
+    ],
+    "select_ids": [
+      35,
+      34,
+      5,
+      37,
+      11,
+      1,
+      8,
+      15,
+      4,
+      18
+    ],
+    "test_ids": [
+      3,
+      39,
+      29,
+      14,
+      32,
+      25,
+      13,
+      20,
+      16,
+      24,
+      2,
+      38,
+      27,
+      7,
+      33,
+      36,
+      30,
+      10,
+      12,
+      21
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.4391728296162651,
+        0.1216543407674695,
+        -0.5608271703837348
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.5776474673645855,
+        "gri": 0.7547689448903581
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.12235886116484954,
+        "gri": 0.95491357553403
+      },
+      "Decision-ZNE": {
+        "mse": 0.11202818046617775,
+        "gri": 0.9540120690995798
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C042",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 44.10386503392393,
+      "normalized_primal_objective": 1.6132580427779706,
+      "normalized_dual_objective": 1.6132580427995302,
+      "normalized_gap": -2.155964295980084e-11,
+      "affine_residual": 6.106226635438361e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.3424816813767393e-12,
+      "dual_balance_residual": 1.0752293646138933e-10
+    },
+    "fit_ids": [
+      9,
+      22,
+      0,
+      31,
+      26,
+      6,
+      19,
+      28,
+      23,
+      17
+    ],
+    "select_ids": [
+      35,
+      34,
+      5,
+      37,
+      11,
+      1,
+      8,
+      15,
+      4,
+      18
+    ],
+    "test_ids": [
+      3,
+      39,
+      29,
+      14,
+      32,
+      25,
+      13,
+      20,
+      16,
+      24,
+      2,
+      38,
+      27,
+      7,
+      33,
+      36,
+      30,
+      10,
+      12,
+      21
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5825316587060767,
+        -0.1650633174121533,
+        -0.41746834129392335
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.57967388938815,
+        "gri": 0.7705170337034972
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.10858322671215671,
+        "gri": 0.8160198643318213
+      },
+      "Decision-ZNE": {
+        "mse": 0.08702372696906727,
+        "gri": 0.8630017054994312
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C043",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 2.2551849881823127,
+      "normalized_primal_objective": 1.4384085816116743,
+      "normalized_dual_objective": 1.438408581622327,
+      "normalized_gap": -1.0652811965883302e-11,
+      "affine_residual": 5.551115123125783e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.1386004906153175e-13,
+      "dual_balance_residual": 3.972290818107603e-11
+    },
+    "fit_ids": [
+      26,
+      34,
+      9,
+      7,
+      31,
+      39,
+      38,
+      12,
+      33,
+      19
+    ],
+    "select_ids": [
+      4,
+      10,
+      36,
+      1,
+      0,
+      28,
+      20,
+      18,
+      5,
+      32
+    ],
+    "test_ids": [
+      14,
+      24,
+      6,
+      8,
+      3,
+      2,
+      37,
+      27,
+      25,
+      15,
+      16,
+      30,
+      17,
+      29,
+      13,
+      22,
+      35,
+      23,
+      11,
+      21
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2865244400978755,
+        0.4269511198042488,
+        -0.7134755599021244
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.1951841930357453,
+        "gri": 0.3498108606707515
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.04346606233224853,
+        "gri": 0.5630202022766411
+      },
+      "Decision-ZNE": {
+        "mse": 0.04483373306361727,
+        "gri": 0.5514812760760677
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C043",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.9285081387832163,
+      "normalized_primal_objective": 1.2764705644305396,
+      "normalized_dual_objective": 1.2764705644393568,
+      "normalized_gap": -8.817169216968068e-12,
+      "affine_residual": 3.3306690738754696e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.690692279041286e-15,
+      "dual_balance_residual": 5.099986779595871e-11
+    },
+    "fit_ids": [
+      26,
+      34,
+      9,
+      7,
+      31,
+      39,
+      38,
+      12,
+      33,
+      19
+    ],
+    "select_ids": [
+      4,
+      10,
+      36,
+      1,
+      0,
+      28,
+      20,
+      18,
+      5,
+      32
+    ],
+    "test_ids": [
+      14,
+      24,
+      6,
+      8,
+      3,
+      2,
+      37,
+      27,
+      25,
+      15,
+      16,
+      30,
+      17,
+      29,
+      13,
+      22,
+      35,
+      23,
+      11,
+      21
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2058777410636048,
+        0.5882445178727902,
+        -0.7941222589363951
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.1902631033200715,
+        "gri": 0.5006744660887509
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.0345272775303175,
+        "gri": 0.48463732801405845
+      },
+      "Decision-ZNE": {
+        "mse": 0.0381400226595114,
+        "gri": 0.49192121941572586
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Accuracy-ZNE"
+    }
+  },
+  {
+    "instance": "C044",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 1044.0630429096757,
+      "normalized_primal_objective": 1.3917668363240159,
+      "normalized_dual_objective": 1.3917668363285927,
+      "normalized_gap": -4.576783396714745e-12,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.172462292866385e-14,
+      "dual_balance_residual": 1.8399938482053834e-11
+    },
+    "fit_ids": [
+      9,
+      15,
+      25,
+      33,
+      11,
+      4,
+      29,
+      17,
+      28,
+      0
+    ],
+    "select_ids": [
+      38,
+      30,
+      7,
+      32,
+      12,
+      21,
+      6,
+      1,
+      19,
+      10
+    ],
+    "test_ids": [
+      24,
+      18,
+      20,
+      36,
+      31,
+      35,
+      22,
+      16,
+      23,
+      39,
+      5,
+      14,
+      2,
+      8,
+      13,
+      3,
+      26,
+      37,
+      34,
+      27
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.7945362926456776,
+        -0.5890725852913552,
+        -0.2054637073543224
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.24930712468583835,
+        "gri": 0.9915335323048967
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.03802733373051552,
+        "gri": 0.9641884870438453
+      },
+      "Decision-ZNE": {
+        "mse": 0.032632904922368665,
+        "gri": 0.9524673347616295
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Decision-ZNE"
+    }
+  },
+  {
+    "instance": "C044",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 347.022591816926,
+      "normalized_primal_objective": 1.5246352582106542,
+      "normalized_dual_objective": 1.5246352582246179,
+      "normalized_gap": -1.3963719069920444e-11,
+      "affine_residual": 4.218847493575595e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.2467804566540508e-12,
+      "dual_balance_residual": 6.174324036362121e-11
+    },
+    "fit_ids": [
+      9,
+      15,
+      25,
+      33,
+      11,
+      4,
+      29,
+      17,
+      28,
+      0
+    ],
+    "select_ids": [
+      38,
+      30,
+      7,
+      32,
+      12,
+      21,
+      6,
+      1,
+      19,
+      10
+    ],
+    "test_ids": [
+      24,
+      18,
+      20,
+      36,
+      31,
+      35,
+      22,
+      16,
+      23,
+      39,
+      5,
+      14,
+      2,
+      8,
+      13,
+      3,
+      26,
+      37,
+      34,
+      27
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.3501478479479185,
+        0.29970430410416293,
+        -0.6498521520520815
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.2499391408754183,
+        "gri": 0.9866899559507673
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.03206032902084722,
+        "gri": 0.9141249320694727
+      },
+      "Decision-ZNE": {
+        "mse": 0.03157393275986532,
+        "gri": 0.913035962456852
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Decision-ZNE"
+    }
+  },
+  {
+    "instance": "C045",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 4.869978103279251,
+      "normalized_primal_objective": 1.6535552865611316,
+      "normalized_dual_objective": 1.6535552865705014,
+      "normalized_gap": -9.369838238626471e-12,
+      "affine_residual": 1.417754802446325e-13,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.64628335805628e-13,
+      "dual_balance_residual": 3.842402230658375e-11
+    },
+    "fit_ids": [
+      16,
+      3,
+      21,
+      11,
+      19,
+      27,
+      2,
+      10,
+      33,
+      0
+    ],
+    "select_ids": [
+      35,
+      14,
+      31,
+      12,
+      9,
+      25,
+      32,
+      4,
+      7,
+      6
+    ],
+    "test_ids": [
+      39,
+      26,
+      36,
+      34,
+      37,
+      8,
+      1,
+      18,
+      15,
+      20,
+      22,
+      5,
+      29,
+      28,
+      13,
+      38,
+      17,
+      23,
+      30,
+      24
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.35533104803666,
+        0.28933790392668013,
+        -0.6446689519633401
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.4856132862611678,
+        "gri": 0.6586052230268111
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.09340056304408355,
+        "gri": 0.9176568706684309
+      },
+      "Decision-ZNE": {
+        "mse": 0.09185816033002805,
+        "gri": 0.917074814571541
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C045",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 3.6138372329243738,
+      "normalized_primal_objective": 1.1547338899536033,
+      "normalized_dual_objective": 1.1547338899791153,
+      "normalized_gap": -2.5512036927466397e-11,
+      "affine_residual": 3.9968028886505635e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 4.2212067175029233e-13,
+      "dual_balance_residual": 3.2231432626913714e-10
+    },
+    "fit_ids": [
+      16,
+      3,
+      21,
+      11,
+      19,
+      27,
+      2,
+      10,
+      33,
+      0
+    ],
+    "select_ids": [
+      35,
+      14,
+      31,
+      12,
+      9,
+      25,
+      32,
+      4,
+      7,
+      6
+    ],
+    "test_ids": [
+      39,
+      26,
+      36,
+      34,
+      37,
+      8,
+      1,
+      18,
+      15,
+      20,
+      22,
+      5,
+      29,
+      28,
+      13,
+      38,
+      17,
+      23,
+      30,
+      24
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.3523612847292346,
+        0.2952774305415311,
+        -0.6476387152707656
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.49027977045020354,
+        "gri": 0.42650069088911713
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.0809390290452439,
+        "gri": 0.8287003399626168
+      },
+      "Decision-ZNE": {
+        "mse": 0.0795233051542433,
+        "gri": 0.8311492547761128
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C046",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 1.3634662196303795,
+      "normalized_primal_objective": 1.2153046460052483,
+      "normalized_dual_objective": 1.2153046460084496,
+      "normalized_gap": -3.2012170692041764e-12,
+      "affine_residual": 1.6653345369377348e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.9040324872321435e-14,
+      "dual_balance_residual": 1.6584403047271195e-11
+    },
+    "fit_ids": [
+      9,
+      35,
+      14,
+      15,
+      32,
+      36,
+      30,
+      7,
+      28,
+      4
+    ],
+    "select_ids": [
+      5,
+      29,
+      10,
+      0,
+      17,
+      19,
+      31,
+      13,
+      23,
+      25
+    ],
+    "test_ids": [
+      6,
+      3,
+      24,
+      38,
+      34,
+      33,
+      39,
+      1,
+      2,
+      20,
+      37,
+      12,
+      11,
+      26,
+      22,
+      18,
+      8,
+      27,
+      21,
+      16
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5906432979238412,
+        -0.18128659584768225,
+        -0.4093567020761589
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.40402144966004394,
+        "gri": 0.043632042507232405
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.09380584857845285,
+        "gri": 0.1934040419072095
+      },
+      "Decision-ZNE": {
+        "mse": 0.07704829423429622,
+        "gri": 0.23923386884291142
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C046",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 0.8781345061375377,
+      "normalized_primal_objective": 1.5849009363372797,
+      "normalized_dual_objective": 1.5849009363410724,
+      "normalized_gap": -3.79274389672446e-12,
+      "affine_residual": 2.886579864025407e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 2.180811087271195e-12,
+      "dual_balance_residual": 1.4863820162207074e-11
+    },
+    "fit_ids": [
+      9,
+      35,
+      14,
+      15,
+      32,
+      36,
+      30,
+      7,
+      28,
+      4
+    ],
+    "select_ids": [
+      5,
+      29,
+      10,
+      0,
+      17,
+      19,
+      31,
+      13,
+      23,
+      25
+    ],
+    "test_ids": [
+      6,
+      3,
+      24,
+      38,
+      34,
+      33,
+      39,
+      1,
+      2,
+      20,
+      37,
+      12,
+      11,
+      26,
+      22,
+      18,
+      8,
+      27,
+      21,
+      16
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.302701874465092,
+        0.394596251069816,
+        -0.697298125534908
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.4049695019810374,
+        "gri": 0.007030710683424757
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.08289407516203003,
+        "gri": 0.07716675392786376
+      },
+      "Decision-ZNE": {
+        "mse": 0.08534801621864775,
+        "gri": 0.07604759578628151
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C047",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 64.14507635675946,
+      "normalized_primal_objective": 1.0836543860962193,
+      "normalized_dual_objective": 1.0836543860970522,
+      "normalized_gap": -8.328893130737924e-13,
+      "affine_residual": 2.220446049250313e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 1.504352198367087e-14,
+      "dual_balance_residual": 6.457186378942029e-12
+    },
+    "fit_ids": [
+      12,
+      8,
+      15,
+      21,
+      30,
+      31,
+      22,
+      13,
+      39,
+      27
+    ],
+    "select_ids": [
+      34,
+      7,
+      28,
+      25,
+      9,
+      14,
+      37,
+      36,
+      18,
+      6
+    ],
+    "test_ids": [
+      4,
+      20,
+      29,
+      33,
+      0,
+      26,
+      19,
+      38,
+      3,
+      2,
+      35,
+      17,
+      11,
+      1,
+      5,
+      10,
+      23,
+      32,
+      24,
+      16
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.245199044902079,
+        0.5096019101958418,
+        -0.7548009550979209
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.2456048677181689,
+        "gri": 0.7567796449650247
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.0580421795010351,
+        "gri": 0.9531526564861139
+      },
+      "Decision-ZNE": {
+        "mse": 0.06238675997831521,
+        "gri": 0.9576587951093742
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C047",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 26.578544708066463,
+      "normalized_primal_objective": 0.8768314171655994,
+      "normalized_dual_objective": 0.8768314171806678,
+      "normalized_gap": -1.5068390979422475e-11,
+      "affine_residual": 1.1102230246251565e-15,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 3.700789674709881e-13,
+      "dual_balance_residual": 1.6963751572462235e-10
+    },
+    "fit_ids": [
+      12,
+      8,
+      15,
+      21,
+      30,
+      31,
+      22,
+      13,
+      39,
+      27
+    ],
+    "select_ids": [
+      34,
+      7,
+      28,
+      25,
+      9,
+      14,
+      37,
+      36,
+      18,
+      6
+    ],
+    "test_ids": [
+      4,
+      20,
+      29,
+      33,
+      0,
+      26,
+      19,
+      38,
+      3,
+      2,
+      35,
+      17,
+      11,
+      1,
+      5,
+      10,
+      23,
+      32,
+      24,
+      16
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.2063400496977132,
+        0.5873199006045735,
+        -0.7936599503022868
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.2501127438206971,
+        "gri": 0.8385775733145913
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.043729951005111616,
+        "gri": 0.8290221674042189
+      },
+      "Decision-ZNE": {
+        "mse": 0.04880378957524919,
+        "gri": 0.839706936886909
+      }
+    },
+    "choices": {
+      "MSE-selector": "Accuracy-ZNE",
+      "GRI-selector": "Accuracy-ZNE"
+    }
+  },
+  {
+    "instance": "C048",
+    "base_t": 512,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 5.640379974469913,
+      "normalized_primal_objective": 1.0312295932920872,
+      "normalized_dual_objective": 1.0312295932991578,
+      "normalized_gap": -7.070566354627772e-12,
+      "affine_residual": 4.996003610813204e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 7.51620987671231e-14,
+      "dual_balance_residual": 5.2197684991379705e-11
+    },
+    "fit_ids": [
+      5,
+      27,
+      11,
+      34,
+      32,
+      17,
+      37,
+      19,
+      23,
+      2
+    ],
+    "select_ids": [
+      9,
+      28,
+      14,
+      7,
+      21,
+      30,
+      4,
+      35,
+      33,
+      22
+    ],
+    "test_ids": [
+      38,
+      25,
+      20,
+      18,
+      13,
+      15,
+      10,
+      8,
+      39,
+      24,
+      3,
+      1,
+      29,
+      31,
+      12,
+      6,
+      16,
+      26,
+      36,
+      0
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.6572911087604945,
+        -0.314582217520989,
+        -0.3427088912395055
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.33516233828104813,
+        "gri": 0.4225532807745367
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.09630800527009868,
+        "gri": 0.6092608443675246
+      },
+      "Decision-ZNE": {
+        "mse": 0.07967948155018496,
+        "gri": 0.5631172943777327
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  },
+  {
+    "instance": "C048",
+    "base_t": 1024,
+    "solver_status": {
+      "solver": "CLARABEL",
+      "status": "optimal",
+      "common_scale": 2.261023525669947,
+      "normalized_primal_objective": 0.9648869279378008,
+      "normalized_dual_objective": 0.9648869279420346,
+      "normalized_gap": -4.233724482105572e-12,
+      "affine_residual": 1.6653345369377348e-16,
+      "cone_residual": 0.0,
+      "dual_cone_residual": 0.0,
+      "stationarity_residual": 9.686695889854491e-14,
+      "dual_balance_residual": 5.846751520373837e-11
+    },
+    "fit_ids": [
+      5,
+      27,
+      11,
+      34,
+      32,
+      17,
+      37,
+      19,
+      23,
+      2
+    ],
+    "select_ids": [
+      9,
+      28,
+      14,
+      7,
+      21,
+      30,
+      4,
+      35,
+      33,
+      22
+    ],
+    "test_ids": [
+      38,
+      25,
+      20,
+      18,
+      13,
+      15,
+      10,
+      8,
+      39,
+      24,
+      3,
+      1,
+      29,
+      31,
+      12,
+      6,
+      16,
+      26,
+      36,
+      0
+    ],
+    "coefficients": {
+      "Accuracy-ZNE": [
+        1.3333333333333333,
+        0.3333333333333333,
+        -0.6666666666666666
+      ],
+      "Decision-ZNE": [
+        1.5682752829965285,
+        -0.13655056599305693,
+        -0.43172471700347154
+      ]
+    },
+    "scores": {
+      "Raw": {
+        "mse": 0.33586290606387315,
+        "gri": 0.32851027223991536
+      },
+      "Accuracy-ZNE": {
+        "mse": 0.07806354583986362,
+        "gri": 0.53275091203555
+      },
+      "Decision-ZNE": {
+        "mse": 0.06329798108715154,
+        "gri": 0.4811537696815821
+      }
+    },
+    "choices": {
+      "MSE-selector": "Decision-ZNE",
+      "GRI-selector": "Raw"
+    }
+  }
+]

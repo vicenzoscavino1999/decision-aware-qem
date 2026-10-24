@@ -1,32 +1,11 @@
 # Contributing
 
-This repository is a research reproduction artifact. The primary goal is to
-preserve the frozen numerical record while making reproduction failures easy to
-diagnose.
+Use the pinned Docker environment in the README. Native development requires Python 3.12.10 and the operating-system dependency lock. Keep generated results outside the package.
 
-## Reporting Reproduction Failures
+After changing numerical code, run relevant tests and the full reproduction. Compare exact decisions and counts, applying documented field-specific tolerances to floating values. Do not change expected outputs merely to make a failing test pass.
 
-Please include:
+Original protocols, scientific freeze and archived inputs retain their hashes. Scientific-reference changes require a documented transition and new verification. Packaging, documentation or orchestration changes require a refreshed `release_manifest.json` and validation of the resulting package.
 
-- Git tag or archive identifier used for the run.
-- Docker image id or digest, if Docker was used.
-- Operating system and architecture.
-- Python version and whether the run was Docker or native.
-- `results/manifest.json` or the relevant generated manifest.
-- Complete command log, especially the first failing command and traceback.
-- Whether `python scripts/verify_freeze.py` reports the frozen files intact.
+For a reproduction issue, include the software version, operating system, Docker image identifier, command, `execution.json` and the failed-step log. Omit credentials and unrelated local files.
 
-## Pull Requests
-
-Pull requests should be narrowly scoped to reproduction infrastructure:
-
-- verifier fixes,
-- schema fixes,
-- packaging or Docker fixes,
-- documentation clarifications for reproducibility,
-- tests that cover reproduction behavior.
-
-Scientific design changes, frozen-file edits, or output-changing changes require
-an explicit documented re-freeze. Do not edit files listed in
-`results/frozen/freeze_manifest.json` unless the change is part of such a
-documented re-freeze.
+The optional pre-commit hook parses Python, JSON and YAML. Dependency auditing in CI is informative; the scientific environment remains pinned for numerical reproduction.

@@ -1,0 +1,22 @@
+{
+  "instances": 48,
+  "active_pairs": 502,
+  "ordering_matches": 502,
+  "directional_match_fraction": 1.0,
+  "directionally_sensitive_pass": 487,
+  "frobenius_proxy_only": 0,
+  "fail": 15,
+  "covariance_score_vs_all40_failure": {
+    "match": 302,
+    "ties": 67,
+    "reversal": 133,
+    "prediction_only_ties": 0
+  },
+  "method_mean_train_vs_independent_test": {
+    "match": 310,
+    "ties": 98,
+    "reversal": 94,
+    "prediction_only_ties": 0
+  },
+  "scope": "retrospective regenerated covariance predictions; 20 train/20 test for effective means; dependent pairs, no prospective claim"
+}

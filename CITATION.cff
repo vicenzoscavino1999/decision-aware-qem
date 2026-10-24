@@ -1,17 +1,16 @@
 cff-version: 1.2.0
-message: "If you use this reproduction package, please cite the accompanying manuscript and software archive."
-title: "Decision Kernels for Quantum Error Mitigation: Why Accuracy Gains Need Not Improve Downstream Decisions"
+message: "Please cite the manuscript and the version of this reproduction package that you use."
+type: software
+title: "Code and data for: Accuracy, Decision Risk, and Sampling Cost in Quantum Error Mitigation"
 authors:
   - family-names: Scavino
     given-names: Vicenzo
     affiliation: Independent Researcher
     orcid: "https://orcid.org/0009-0000-2472-9785"
 repository-code: "https://github.com/vicenzoscavino1999/decision-aware-qem"
-doi: 10.5281/zenodo.21146260
-version: v1.1.0
-date-released: 2026-07-02
+version: "1.2.0"
 license: MIT
-abstract: "Reproduction package for finite-shot quantum error mitigation experiments centered on downstream decision risk and residual gap geometry."
+abstract: "Code, archived measurement records and reproducible analyses relating estimation accuracy, candidate-selection risk and sampling cost in quantum error mitigation. Includes the v45 manuscript, signed-PEC controls and E1 partition sensitivity."
 keywords:
   - quantum error mitigation
   - finite-shot estimation

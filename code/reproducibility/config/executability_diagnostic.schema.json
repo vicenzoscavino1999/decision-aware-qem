@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Corrected executability diagnostic, version 2",
+  "type": "object",
+  "required": ["schema_version", "global_gate", "workloads", "rows", "batch_timing", "resolved_config", "resolved_cdev_config", "unresolved_blocks", "journal_recommendation"],
+  "properties": {
+    "schema_version": {"const": 2},
+    "global_gate": {"const": "conditional"},
+    "journal_recommendation": {"type": "null"},
+    "workloads": {"type": "object", "required": ["E1_static", "E2_dynamic", "Pilot_shared", "Uniform_Cdev"]},
+    "rows": {"type": "array", "minItems": 5, "maxItems": 5, "items": {
+      "type": "object", "required": ["block", "acquisition_circuits", "estimated_shots", "wall_hours_proxy", "timing_status", "decision"],
+      "properties": {
+        "block": {"enum": ["E1_static", "E2_dynamic", "Pilot_shared", "Uniform_Cdev", "E3_pullback"]},
+        "acquisition_circuits": {"type": "integer", "minimum": 0},
+        "estimated_shots": {"type": "integer", "minimum": 0},
+        "wall_hours_proxy": {"type": ["number", "null"], "minimum": 0},
+        "timing_status": {"type": "string"}, "decision": {"const": "conditional"}
+      }
+    }},
+    "unresolved_blocks": {"type": "object", "additionalProperties": {
+      "type": "object", "required": ["estimated_shots", "wall_hours"],
+      "properties": {"estimated_shots": {"type": "null"}, "wall_hours": {"type": "null"}}
+    }}
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "schema_version": 1,
+  "stage": "e1",
+  "status": "complete",
+  "fingerprint": "da8c1174af4eec9fc9bc0760d9e62f69d3f6710730cb955da16c502591085e46",
+  "source": {
+    "stage": "e1",
+    "inputs_and_code": {
+      "code\\revision_v19\\e1_reanalysis.py": "d7f993dafdca6a117f54456ea776b0e27c3d20fcb605bab81f9444853b46cfef",
+      "code\\revision_v19\\protocol.json": "a93c6edb3036020702f0b58d1586130face87d72512de80c615fc0bc6dee4396",
+      "code\\scripts\\reproduce_integrated.py": "2a47817fc80f669d625afeab1659921bdc30cc3550765048ff2a702c76b6f2f4",
+      "code\\src\\daqem\\__init__.py": "2a600aaed23a2da82846387b5b92538a9ebf59e3210f738005ca8b3a749e5722",
+      "code\\src\\daqem\\auxiliary_noise.py": "53d79eff6072238033fed85940db88e46954d2b3cd74fd8267146adc22ad6800",
+      "code\\src\\daqem\\budget.py": "d23885e4915757a49f690428f425881b67c24113a0c3a105c36b2bbb43bf45bc",
+      "code\\src\\daqem\\cache.py": "9e4af00f4d76f65c5a68d9698d0ca5efb595007d57689a4ffa4497fbd372a183",
+      "code\\src\\daqem\\candidates.py": "2c3f5c2cc594afb67c0c546093ed153900e2dd9c8822120eb5f6327ff715af4f",
+      "code\\src\\daqem\\cdev.py": "7438b0afbb2417209964c3f4328c45797c2de8cf005c4e174d13650c579ded35",
+      "code\\src\\daqem\\cdr.py": "845abac8baeb9c560bd28f76e4f3f8aff6a89cab26c98204f456f96d8921f676",
+      "code\\src\\daqem\\decisions.py": "035e301da62b4471b36ffa7a83512f13d6c579f888d0b39006b2f182f81edf34",
+      "code\\src\\daqem\\dynamic.py": "c70483139b77e23a249e87c2a09c606f1c8349a9ef2577cc820a8485a0b39fb8",
+      "code\\src\\daqem\\gap_kernel.py": "bf57d03296f8bc08efd276791bf7130d6d21b0e6e5daa05c678687cf6494f6cc",
+      "code\\src\\daqem\\hardware.py": "0367f31503226cffc59da3966e5a0015ca8074751562e8e7761b455e3c3483ae",
+      "code\\src\\daqem\\inference.py": "9247ec2f674f6d302d71848da76d7055a9443e7d69c9cb91a2f78980a2159338",
+      "code\\src\\daqem\\learned_control.py": "c6cdd377d66b5cf687a85901214afb367ab5c9b4724b8eed11174eaaf65c44af",
+      "code\\src\\daqem\\noise.py": "4654171919fa0fd713ccc88e2d44849eec96783964d7f9093c0361282247411c",
+      "code\\src\\daqem\\pec.py": "520462cf88596f61221a50bf78c6858ab96ae277832c0c01f57769411265bfe9",
+      "code\\src\\daqem\\plotting.py": "52adec53afe53dbb56db7061fc20b45852007d26834130d6b3ae0ac0ecb225e5",
+      "code\\src\\daqem\\qaoa.py": "94977b33539b3c41b0fe80b2c44585097b83ef758b016bcf2dfe47c09baf22ee",
+      "code\\src\\daqem\\qem_methods.py": "90374268735fc2927d471f318c16631f7c3a8ef2e4f4435d7ae909112c9a49c6",
+      "code\\src\\daqem\\risk.py": "7ef5de4afc97c71cf973872b19457ce30e5a3eabc40af95014919c06cb1af80b",
+      "code\\src\\daqem\\rng.py": "2e1caf311c48a29d0c4d3c46bdcfbf4e1504f1b7443ea72abfc7d56cf5888c77",
+      "code\\src\\daqem\\selectors.py": "5bd5b32c15b8dfacbab1059810fb6abe2be87b1caeca502964f868619d7618c4",
+      "code\\src\\daqem\\structured_noise.py": "a78f9292aba787396624b740ef30304ebb934496a72a6af09227e47ddaa7bfdb",
+      "code\\src\\daqem\\vqe.py": "37ff06c71945c2195151a3055a669027151f1cf61d094257b74b011153b74f7d",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C001.npz": "5939beedff52b009a82ff18f5e62dd017d3239aabebfe8207a6308fc3c748634",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C002.npz": "299f06d598366ced0d6d26adc23b65a9d8aacf01c436c6cba9abba31b7ab04ad",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C003.npz": "f22c76a644577728628286184f34480058c70b484184e7b812da6bba5745bcf4",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C004.npz": "c3f47642870ff92e33c3ca169a766f7594765c4a9f24360072b75543952f2057",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C005.npz": "966b913c4a8d6e7385924cd813b0a7fe9f711cb78b7358008bc148ca1afa0981",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C006.npz": "31ca3f17db1d47d12c9d1643a62682f32120d11c521ced0659f58388400f9224",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C007.npz": "5b535747c8a073b71be5ce92d7fa515e1d585b05bf87344dfeefc10296af7123",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C008.npz": "68aabbd3fb228c2281621bb8418ab1786a8036a69d372b2fa54c6b04384acda3",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C009.npz": "a3f7b124170eb1c0798d7797ca037a3368d27d049eee8f2f32cf2bf113b0a62d",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C010.npz": "4c5cb0035a2c777d99e761e73e3e9ae7f1f7e418b0bc71af9f75aa4080285cee",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C011.npz": "f89239874f64f2175bccc5005085175234c3295e59d13f5ea20f6565abb9cecc",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C012.npz": "1751e18c894eaf1a876dc5845c2dc811414541005749f35f1c3efa1b94c62364",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C013.npz": "58d81bd17619d8453872f367d7c8532e658a44ec375f5def5e8b629a08c9b910",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C014.npz": "ff569d64b6cc3f0d3df419678e7cfc0ed562b617a996d5ae65f87025e2704a20",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C015.npz": "bfee3d042b72b9b1f16d03c185766270fbae88a2ed50417175a52f82099cfb48",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C016.npz": "82466ffdcd9a3fd87b67486a506b09fcab72ce18419d5d2c88b6cec989bd3235",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C017.npz": "3649d3b5ba070831380c65fb0bf925e64dd54adb06df16540c9b58873babca2b",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C018.npz": "c37b3e3389d748d53237ee1258d9f0a7bf52dc77b9f5f39a559b10240b497280",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C019.npz": "33a93cf69716f32d96ce56d5eedcb07cf20e95a31e3456b105d10389620f3c20",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C020.npz": "49bb91c58a76d2153c97f6d3ac7b79d3fac167a65954950d24d5dfdb241574a7",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C021.npz": "64ed5136d31ac4a446fa22b0540023a8c31a8fd9e0593ccf062c22dbeb1b78e4",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C022.npz": "2e8bac49302166c964730af8bb991befe4a6e00feb05d9b7d386fd4cd2120500",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C023.npz": "4db03bb4fe0ec4a084271bf5825a36ad8484e574dc7f7c335003ecd1958f1282",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C024.npz": "bd603716827905578460894d4ea431e5b42791bbefe5583515c37bf79aa8f105",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C025.npz": "de8945cf16efccb2a10e78617e4adf45e073816d5b8d6cd476f05e42ba6740f7",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C026.npz": "055d299e862092d75f46bb5de94ac309e2b2abfb5116f11adef23245e482a322",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C027.npz": "c642d13d33d30f22968bbd809c0a89171d72cbd9f52e78a69d080f0fffe5db4e",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C028.npz": "802aebd8490d35dd00b58b25b2af7800022a92385a6c1421a7e11c7a56352fa5",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C029.npz": "3c0137dd309ca5bbaca1b6907abe2fc9d89f2a91e86fa919d2e37ef3b854b0fe",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C030.npz": "364504ab6a4760e68ab93708a4910a4a0f0606b1cb8a320d9182f276ca78612c",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C031.npz": "66ac6ae0b14cb9f40b8c4310af492f36c96e0bdedb50c9b2dbf1561319dd8e63",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C032.npz": "0a69163f59de24ae8a0441f190c7687ba3012b2a9e0c00a6f712dc35c620799f",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C033.npz": "99704e0a40cc4d7d183ee9a28aec271b4a5f55f8cfbcce10ab78497455510a4f",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C034.npz": "e4561742c28c355f09d58e453d5959031de1c12a6d485e97a4adba85a90ff76c",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C035.npz": "9cddbb997843c2f835e25bdb36e34ce68ab5a2fa711da947c091a49e314ca32f",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C036.npz": "1225a0f2afae95137791053d6bd0b46fdf1490b6740a1c764d6944f873252948",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C037.npz": "baaa7754f50912175b8c1f192f3b01bc8d81788f585170a2e73c9f10187ffaea",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C038.npz": "3071909b595daef0cf2c67c211bf1898c6870797e4cb33f14c8c8aae8b3c1e20",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C039.npz": "d21b90e2cea5d0325202c40ea2558002b22c4190dd127e5f061fc8176a3971d9",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C040.npz": "232b88738cb01809c9f93a501c0d5174bb6f404ccb29e348aa8a774b60918068",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C041.npz": "a5c8f1d5978c05182d9875134613781013f75a2ba82de4b529050ad5be61dd78",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C042.npz": "38e251867de9245efb47754eb32291bcbd3677eef6c7aa758c0bad3f3472ad31",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C043.npz": "01a4da8ca5f11cadde2d6402151982c3100cdeeb359584b9d2e3923c33531899",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C044.npz": "1939c6f36920b1acb1b34fb85919f2c27916f82e2160b895d78185dd993a512b",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C045.npz": "23f6132f00f57ab64b9de6679aec4c615d2646fb54a8edbfb62d5a0890470916",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C046.npz": "23c07cf82feb21a792f84edffd87bc3d2cfc4ebffd5cfb4c2ca9462abb812471",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C047.npz": "7cbe3137663374d3465e1bb347c277659df680614056c592cd8ae84e2b47bc4c",
+      "inputs\\reproducibility\\reference_confirmatory\\raw\\C048.npz": "01605908a28df6a98307efe951eadcdc5d3059ed47535bb62154220b8725005b"
+    },
+    "versions": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "qiskit": "2.4.2",
+      "qiskit-aer": "0.17.2",
+      "cvxpy": "1.9.3",
+      "pandas": "3.1.0",
+      "scikit-learn": "1.9.1",
+      "networkx": "3.7",
+      "PyYAML": "6.0.3"
+    },
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
+  },
+  "outputs": {
+    "results/e1/_parts/C001.json": "764f67df13f7a0b3a5ec501e2daeaba73f982866dac51ddbfcdc93c2c9f8d1a0",
+    "results/e1/_parts/C002.json": "5343f12b4616862de5260785b821c8fb3ce2a051f06d6ef4f6d494ea522a9972",
+    "results/e1/_parts/C003.json": "10d12347f418ed2824cb1624dcd522eb4dcc0f508bec7de1bd9d6bc66e71255b",
+    "results/e1/_parts/C004.json": "39a0f2e5359bb74a041252728073a33cc964803e36914147a225de68ea5ca52a",
+    "results/e1/_parts/C005.json": "87db1219a67b94a2d44cafdd779581c9cd4bc19546a6b561fcc8e2409ffb6462",
+    "results/e1/_parts/C006.json": "e01f47de05c7a78d1168ee44fdc088eb8f7d15edfe02af2a03ce22a882d520e7",
+    "results/e1/_parts/C007.json": "705811fa186896556184088049fb1eda4ee668ed65e6ea1b354b9ff2cd59d39f",
+    "results/e1/_parts/C008.json": "c9e1627046dc4e0460ce8044916c6870ade5b2f15955922caefb3b240e27d7bd",
+    "results/e1/_parts/C009.json": "d93542cdc071f7abd0586547770e249c733648c2d4296c808b08ed066dbae230",
+    "results/e1/_parts/C010.json": "a713c07570c420af5975e5865a87ad3bc765f78fb596f78a6af65964351cd496",
+    "results/e1/_parts/C011.json": "ad3e77e83020cec6d8ab19ab62b90eb6aed7b864753221c59c46f8289f2cebce",
+    "results/e1/_parts/C012.json": "ec30ff05c9d28d511ba3b282cb90db4ab6d08ad3a637c03186f695a1a4b381d5",
+    "results/e1/_parts/C013.json": "ba948b0e14f78b9955ad3cc9324a3fd49a32abfc513fae899e9b5905a5d0ffe5",
+    "results/e1/_parts/C014.json": "733355ded0554258cd3d0b05173d23f60663297a11e4a67fd6d3b756f16e4630",
+    "results/e1/_parts/C015.json": "113ad0dfdc9290c0a223c8de7fdc8f2a8ed5276af4d595ab28cb1e1dafabc557",
+    "results/e1/_parts/C016.json": "4ed82beeadded46fffd5a59f71f25d1784b6d736a052ef9a9a3cd657e1645646",
+    "results/e1/_parts/C017.json": "dedb262a538fd225c2a06af7b19fad157d1c071a96004ab928d5112b50a01f89",
+    "results/e1/_parts/C018.json": "969b7fade274eedd28930a7c80c4954044fc1eb0d6787f7b4954062e951404a9",
+    "results/e1/_parts/C019.json": "98a109ad617d5e849b2f5f97338aea8e82a7dc7669a0c876666ce0d1b52f703b",
+    "results/e1/_parts/C020.json": "323b7a397cd87f95d7e3006b4951cb33ea2f0494525db0fe54c2086faddb0f20",
+    "results/e1/_parts/C021.json": "f1739af88889661bc1c05a2c0f02a9f7d0ef30eb2e38630309aaeb09c96e5f2a",
+    "results/e1/_parts/C022.json": "c2ccf71e564d0a85c1e74014f8d544edcf604be306a83338e0c0799c13838501",
+    "results/e1/_parts/C023.json": "dc8d1151ec96944e0c68afa843f994c7294fa0457a637cf353bf3e69f1e2e57a",
+    "results/e1/_parts/C024.json": "57377b13c69238a964b6f59a675f9cd1e5dbb39c57c438409836310ba033a952",
+    "results/e1/_parts/C025.json": "5a6cb4f103223dd254cbbb5b5369268670b86616c750b501cdfc956aa4e8927e",
+    "results/e1/_parts/C026.json": "6a59289adf34a89f30dbfd3d945d076ceeb9465179c3d8cdb4ea2bff8580312a",
+    "results/e1/_parts/C027.json": "07152785442a789ec6c360287e14d5acbb48c68e56d8b877aee8bd73db153b5f",
+    "results/e1/_parts/C028.json": "616d981569ee6577f18fe5638e6de2947469f1f786d4376e4e809aa2bbd878a9",
+    "results/e1/_parts/C029.json": "75548b614a7c6bba270088817732cbbe06543602de36df07860ce489d64fdee1",
+    "results/e1/_parts/C030.json": "0fcf7faea6ccacf0e6718763685bd38bc765fd704aca060729679fbe075c019a",
+    "results/e1/_parts/C031.json": "c9121aada6e306487aac64b1b7a82aa4b6248b664f0dc068eae296b03a0bf4fd",
+    "results/e1/_parts/C032.json": "8b1fed0c6d185ce8f7df30c2f4d5c030aad18264a0697a7734cff5bbe6eba9bb",
+    "results/e1/_parts/C033.json": "735580b9de21e16a970e2323c5802714648aa4b9e8526e70184384922b0b666a",
+    "results/e1/_parts/C034.json": "e8b72eee915b88e37dfe5d9712ad0374735e1cf185526aae2e9fc241fa7a5215",
+    "results/e1/_parts/C035.json": "ae8541327cdfc9ff2412d54b14eae3103ef417a6c90ab026ada8688f8694ddd0",
+    "results/e1/_parts/C036.json": "346e5111f82faf19d63113721a6505b82579dc949b2bf6c79d9b34c084cfaaf0",
+    "results/e1/_parts/C037.json": "91519ca6123e1cec8e6f8c35d3559c8e2d6d4dc3bfdd0d0b7d2bc047bd7b06af",
+    "results/e1/_parts/C038.json": "1a134478c2b4885bfba57727179e1f71c82dfd276c65d750695e499495a7b68b",
+    "results/e1/_parts/C039.json": "b055ea4ee7bcffe98ea9b2034dec12fcd60740d5b18a8e9fc7afbfd635e9ec4d",
+    "results/e1/_parts/C040.json": "a3c15f0c25085b2a61157211f6e56048df8b172d356e3954f88c57b2d3bc7079",
+    "results/e1/_parts/C041.json": "85d279a393e3965630e8c2a2452f85bb1342b8544136565912659e256bc58f27",
+    "results/e1/_parts/C042.json": "026363abea5c7bda4f23d0146c866cfff46868ec7a6a9eab816ded64028a891c",
+    "results/e1/_parts/C043.json": "5c2480383d1cb33d21194403eadb04c7fe024b5dec8bd73877feca03cf224cf9",
+    "results/e1/_parts/C044.json": "a447e2698bb53adee024448b9156fea7b066b19c630f4d8b9948223f990019c7",
+    "results/e1/_parts/C045.json": "b3b1f80d9a13c58bae9dd3883952386d3bdbfc63d50fbec665d357a462cfc1fa",
+    "results/e1/_parts/C046.json": "5e6a194ecb0834fce04dd4043f1a6999b591f91af8252f4a8ef6303f67cce6ae",
+    "results/e1/_parts/C047.json": "aeb67a696ccd2fd0adf94b990ff019085c0105662b85a94360ce50599b0fc968",
+    "results/e1/_parts/C048.json": "b20920611e15d9c9c774c5576fdcaf5395c0e846718ded5c243b93c2ab892930",
+    "results/e1/budget_ledger.csv": "7e1c9f00495c8a63ccf322d204d65e4fbb36838e5f4fe6e502623d7bf9d1ea95",
+    "results/e1/diagnostics.json": "2e8f5e6d6bbe099079b4ad42a7f22f666edf34b5def346fdfd68ee1d44a64ae6",
+    "results/e1/outcomes.csv": "f8b8aeb86d58e0afb20f8d610c74e0bd0a919a7af1d3150b1e877c5a3da4d6b7",
+    "results/e1/summary.csv": "7933504f6f6c8f1df48f40f7bffc7ecfb3bccd2bb57b7cd34164bed54bc4ffe1"
+  },
+  "summary": {
+    "instances": 48,
+    "decisions": 19200,
+    "scope": "fixed 10/10/20 split and shot intervals; current numerical core"
+  },
+  "seconds": 44.05001330000232,
+  "workers": 8,
+  "jobs": [
+    {
+      "kind": "e1",
+      "item": "C003",
+      "seconds": 2.2654200000106357
+    },
+    {
+      "kind": "e1",
+      "item": "C001",
+      "seconds": 2.351738999976078
+    },
+    {
+      "kind": "e1",
+      "item": "C004",
+      "seconds": 4.319977700011805
+    },
+    {
+      "kind": "e1",
+      "item": "C005",
+      "seconds": 6.454857800010359
+    },
+    {
+      "kind": "e1",
+      "item": "C009",
+      "seconds": 4.361791000002995
+    },
+    {
+      "kind": "e1",
+      "item": "C011",
+      "seconds": 4.165067300025839
+    },
+    {
+      "kind": "e1",
+      "item": "C002",
+      "seconds": 10.225245100009488
+    },
+    {
+      "kind": "e1",
+      "item": "C008",
+      "seconds": 10.294086399982916
+    },
+    {
+      "kind": "e1",
+      "item": "C007",
+      "seconds": 10.375632999988738
+    },
+    {
+      "kind": "e1",
+      "item": "C006",
+      "seconds": 11.159476000000723
+    },
+    {
+      "kind": "e1",
+      "item": "C010",
+      "seconds": 9.361361199989915
+    },
+    {
+      "kind": "e1",
+      "item": "C014",
+      "seconds": 4.149857299984433
+    },
+    {
+      "kind": "e1",
+      "item": "C015",
+      "seconds": 3.7879258999892045
+    },
+    {
+      "kind": "e1",
+      "item": "C016",
+      "seconds": 3.7953070999938063
+    },
+    {
+      "kind": "e1",
+      "item": "C012",
+      "seconds": 8.135033400001703
+    },
+    {
+      "kind": "e1",
+      "item": "C023",
+      "seconds": 1.0773434999864548
+    },
+    {
+      "kind": "e1",
+      "item": "C013",
+      "seconds": 9.689602900005411
+    },
+    {
+      "kind": "e1",
+      "item": "C022",
+      "seconds": 2.4650448999891523
+    },
+    {
+      "kind": "e1",
+      "item": "C026",
+      "seconds": 1.9861128999909852
+    },
+    {
+      "kind": "e1",
+      "item": "C019",
+      "seconds": 7.6374275000125635
+    },
+    {
+      "kind": "e1",
+      "item": "C021",
+      "seconds": 6.154224800004158
+    },
+    {
+      "kind": "e1",
+      "item": "C018",
+      "seconds": 9.250638700003037
+    },
+    {
+      "kind": "e1",
+      "item": "C017",
+      "seconds": 10.137518600007752
+    },
+    {
+      "kind": "e1",
+      "item": "C027",
+      "seconds": 2.580384700006107
+    },
+    {
+      "kind": "e1",
+      "item": "C025",
+      "seconds": 5.4077058999973815
+    },
+    {
+      "kind": "e1",
+      "item": "C020",
+      "seconds": 9.204191700002411
+    },
+    {
+      "kind": "e1",
+      "item": "C024",
+      "seconds": 8.085863600019366
+    },
+    {
+      "kind": "e1",
+      "item": "C029",
+      "seconds": 3.672760199988261
+    },
+    {
+      "kind": "e1",
+      "item": "C033",
+      "seconds": 3.4252026999893133
+    },
+    {
+      "kind": "e1",
+      "item": "C037",
+      "seconds": 0.445223899994744
+    },
+    {
+      "kind": "e1",
+      "item": "C032",
+      "seconds": 5.161120700009633
+    },
+    {
+      "kind": "e1",
+      "item": "C031",
+      "seconds": 6.248374899994815
+    },
+    {
+      "kind": "e1",
+      "item": "C036",
+      "seconds": 4.90164100000402
+    },
+    {
+      "kind": "e1",
+      "item": "C034",
+      "seconds": 6.9205988999747206
+    },
+    {
+      "kind": "e1",
+      "item": "C028",
+      "seconds": 9.65784200001508
+    },
+    {
+      "kind": "e1",
+      "item": "C030",
+      "seconds": 9.260232300002826
+    },
+    {
+      "kind": "e1",
+      "item": "C035",
+      "seconds": 7.938281599985203
+    },
+    {
+      "kind": "e1",
+      "item": "C038",
+      "seconds": 7.502539600012824
+    },
+    {
+      "kind": "e1",
+      "item": "C039",
+      "seconds": 6.980402499990305
+    },
+    {
+      "kind": "e1",
+      "item": "C040",
+      "seconds": 6.93699870002456
+    },
+    {
+      "kind": "e1",
+      "item": "C046",
+      "seconds": 0.7221253000025172
+    },
+    {
+      "kind": "e1",
+      "item": "C043",
+      "seconds": 4.980103299982147
+    },
+    {
+      "kind": "e1",
+      "item": "C041",
+      "seconds": 7.625690399989253
+    },
+    {
+      "kind": "e1",
+      "item": "C044",
+      "seconds": 7.26782480001566
+    },
+    {
+      "kind": "e1",
+      "item": "C042",
+      "seconds": 9.3403418000089
+    },
+    {
+      "kind": "e1",
+      "item": "C045",
+      "seconds": 8.014842500007944
+    },
+    {
+      "kind": "e1",
+      "item": "C047",
+      "seconds": 8.308185900008539
+    },
+    {
+      "kind": "e1",
+      "item": "C048",
+      "seconds": 8.623684799997136
+    }
+  ]
+}

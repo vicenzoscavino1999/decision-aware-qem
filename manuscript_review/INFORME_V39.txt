@@ -1,0 +1,42 @@
+REVISIÓN V39 - MANUSCRITO ALINEADO CON EL CÓDIGO Y LOS RESULTADOS CORREGIDOS
+23 de octubre de 2026. Base documental: v38. Evidencia: integración numérica v2.
+
+Se aplican las precisiones identificadas en los veinte puntos de correspondencia:
+- CDR: pendientes 1.292--1.478 y ajuste oráculo sobre los mismos candidatos.
+- PEC: proxy multinomial ideal con n_eff=floor(B/gamma²); se distingue del
+  proxy gaussiano heterogéneo. Se explicitan los presupuestos de evaluación.
+- E2: se conserva el entrenamiento histórico y se precisa su regla de empates
+  y éxito epsilon. La curva incorpora 971/1280 éxitos MSE a B=4096.
+- Hardware: error inicial 0.75, validación reservada 0.097; tabla de errores
+  proyectados actualizada. Se describe el soporte local especificado y la
+  separación de 162 registros de ajuste y 41 de prueba.
+- Ablación: 24 celdas instancia-presupuesto, representadas por 72 filas.
+- Se precisan las derivadas usadas y el alcance de los controles de ruido.
+- La disponibilidad distingue el depósito anterior de esta versión local.
+
+Se sustituyen cinco figuras por versiones vectoriales basadas en las tablas
+corregidas. Los archivos F1, F9, F7, F8 y F6 corresponden respectivamente a
+las figuras numeradas 3, 4, 5, 6 y 7 en el artículo. La figura estática usa
+la etiqueta comparison en lugar de audit. F3/F4/F5 son recursos históricos
+sin referencia en el documento, conservados por procedencia.
+
+Se conservan las conclusiones, la sección teórica, los teoremas,
+demostraciones, ecuaciones desplegadas y el algoritmo. No se amplía Fisher.
+Los resultados principales de E1, E3 y FakeKolkata permanecen iguales.
+Hardware sigue sin resolver el orden de decisión al umbral especificado.
+
+VALIDACIÓN
+16 sustituciones textuales reconstruyen exactamente la fuente v39 desde v38.
+Se verifican 30 cifras/descripciones contra resultados y las fuentes de las
+cinco figuras. Tres compilaciones finales sin errores, desbordamientos ni
+referencias sin resolver. Permanecen avisos de clase/caption y justificación.
+PDF de 30 páginas: inspección visual general de todas las páginas y ampliada
+de las páginas 10, 11, 13, 14, 15, 28, 29 y 30.
+En un entorno Python recién instalado se regeneraron los gráficos y se
+compiló nuevamente con MiKTeX existente: texto y píxeles a 90 dpi coinciden
+en las 30 páginas. Los hashes PDF pueden diferir por metadatos de creación.
+Las versiones v38 y la integración v2 se verificaron sin modificaciones.
+
+La comprobación del flujo numérico completo y las instrucciones de ejecución
+se entregan en integracion_reproduccion_parte4_v3. Los datos pesados E2 se
+entregan en datos_E2_v3.zip. No se han publicado archivos en GitHub o Zenodo.

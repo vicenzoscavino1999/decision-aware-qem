@@ -1,0 +1,26 @@
+{
+  "base_package": "reproduction v4",
+  "manuscript": "v45",
+  "version": "1.2.0",
+  "changed_existing_code": [
+    "scripts/release_pipeline.py",
+    "scripts/verify_manuscript.py"
+  ],
+  "added_code": [
+    "scripts/release_supplements.py",
+    "scripts/verify_e1_sensitivity.py",
+    "scripts/verify_readout_identifiability.py",
+    "scripts/verify_signed_pec.py",
+    "tests/test_release_supplements.py"
+  ],
+  "scientific_inputs_results_existing_evidence_unchanged": true,
+  "scientific_model_and_experiment_code_unchanged": true,
+  "runtime_and_dependency_lock_unchanged": true,
+  "original_manuscript_source_and_pdf_unchanged": true,
+  "documentation_links_checked": 20,
+  "excluded_temporary_test_caches": [
+    "code/work/publicacion_v45_test_cache",
+    "validation/clean_environment/regressions/cache"
+  ],
+  "original_package_manifest_sha256": "1d982f2266846e376b2e85b361a088bc0b1d2a6c06e815da5e38064790f95631"
+}

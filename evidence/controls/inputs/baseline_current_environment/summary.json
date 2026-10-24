@@ -1,0 +1,18 @@
+{
+  "primary_cell": "P004",
+  "budget": 512,
+  "pooled": {
+    "budget": 512,
+    "pilot_instances": 3,
+    "paired_n_pilot": 600,
+    "both_fail": 154,
+    "both_ok": 339,
+    "b": 78,
+    "c": 29,
+    "failure_rate_MSE_pooled": 0.38666666666666666,
+    "failure_rate_DA_pooled": 0.305,
+    "observed_rel_reduction_pooled": 0.21120689655172414,
+    "mde_reached": true
+  },
+  "power": 1.0
+}

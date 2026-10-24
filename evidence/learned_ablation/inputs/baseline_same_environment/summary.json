@@ -1,0 +1,19 @@
+{
+  "profile": "full",
+  "instances": [
+    "P001",
+    "P002",
+    "P003",
+    "P004"
+  ],
+  "generators": 25,
+  "weights_sha256": "sha256:807BBE1EE8D627DEC21D326C604F18572621901E7AE473F0C99EB5137054FE28",
+  "learned_p1": 0.010008605472512056,
+  "learned_p2": 0.02990751704173255,
+  "e_C": 0.009575596197854426,
+  "support_F1": 1.0,
+  "characterization_circuits": 1000,
+  "characterization_shots": 4096000,
+  "duration_seconds": 70.11758280001231,
+  "output": "pilot/cdev_learned_arm.md"
+}

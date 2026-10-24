@@ -1,0 +1,56 @@
+{
+  "e1/budget_ledger.csv": {},
+  "e1/outcomes.csv": {},
+  "e1/summary.csv": {},
+  "confirmatory/e3_by_instance.csv": {},
+  "confirmatory/e3_independent_mean_and_failure.csv": {
+    "left_predicted_risk": 3.6863766705863554e-07,
+    "right_predicted_risk": 5.495784227704803e-07
+  },
+  "confirmatory/e3_pullback_frontier.csv": {
+    "delta_rank_projected": 1.0108341247372366e-11,
+    "tau_flip_projected": 5.190253166142966e-08,
+    "projected_error_over_tolerance": 0.031589665532465006,
+    "frobenius_error_over_tolerance": 1235.851848013699
+  },
+  "e2/e2_corrected_crossings.csv": {},
+  "e2/e2_full_ledger.csv": {},
+  "fakekolkata_fixed10/outcomes.csv": {},
+  "confirmatory/a3_frozen_prediction": {
+    "cdev_true_diag_unit": 2.6645352591003757e-15,
+    "delta_pred": 1.0380506332285933e-07,
+    "gap_maps": 2.4086987959748285e-10,
+    "gradients": 1.6997603324853117e-10,
+    "ideal_values": 5.1514348342607263e-14,
+    "method_coefficients": 2.4086987959748285e-10,
+    "mu": 5.1514348342607263e-14,
+    "primitive_mean_unit": 7.105427357601002e-15,
+    "primitive_variance_unit": 2.6645352591003757e-15,
+    "risks_pred": 1.038051162804976e-07,
+    "sigma_pred": 1.172187347187048e-12,
+    "tau_flip_projected": 5.190253166142966e-08
+  },
+  "confirmatory/a3_primitive_evidence": {
+    "ideal_values": 5.1514348342607263e-14,
+    "means": 7.105427357601002e-15,
+    "probabilities": 4.163336342344337e-17,
+    "variances": 2.6645352591003757e-15
+  },
+  "pilot/a3_audit_evidence": {
+    "sigma": 7.216449660063518e-16,
+    "gradients": 4.440892098500626e-16,
+    "predicted_risks": 8.777082882716059e-08,
+    "sigma_hat": 3.885780586188048e-16,
+    "sigma_raw": 4.718447854656915e-16,
+    "full_risks": 1.0820832718749784e-07,
+    "raw_risks": 5.959957283252493e-08,
+    "common_risks": 4.996979141580482e-08,
+    "bootstrap_covariances": 9.298117831235686e-16,
+    "bootstrap_common_risks": 2.7900118337864654e-07,
+    "signed_projection_errors": 8.638922910364499e-16,
+    "bootstrap_signed_projection_errors": 1.863093013199091e-15
+  },
+  "hardware": {
+    "probabilities": 6.106226635438361e-16
+  }
+}

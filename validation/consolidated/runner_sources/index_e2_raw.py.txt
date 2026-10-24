@@ -1,0 +1,16 @@
+from pathlib import Path
+import hashlib,json,time
+root=Path(__file__).resolve().parents[2];run=root/'work/e2_full_pc_v2';out=root/'outputs/integracion_reproduccion_parte4_v2/validation/consolidated'
+start=time.monotonic();records={};size=0
+for i in range(1,33):
+    folder=run/f'C{i:03}';report=json.loads((folder/'report.json').read_text());assert report['complete'] and report['trajectories']==40
+    paths=list((folder/'rounds').glob('t*_r*.npz'));assert len(paths)==800
+    for path in paths:
+        metadata=json.loads(path.with_suffix('.json').read_text());content=path.read_bytes();digest=hashlib.sha256(content).hexdigest()
+        assert digest==metadata['sha256'] and metadata['identity']==report['checkpoint_identity']
+        records[path.relative_to(run).as_posix()]=dict(sha256=digest,bytes=len(content));size+=len(content)
+    print(f'raw hash audit C{i:03}',flush=True)
+result=dict(root_at_validation=str(run),scope='External original E2 shot archive; not included in this compact analysis bundle',
+            files=records,round_files=len(records),total_bytes=size,seconds=time.monotonic()-start,
+            next_release_action='Deposit these original files as a separate raw-data archive; no resimulation required')
+(out/'external_E2_raw_manifest.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k!='files'},indent=2))

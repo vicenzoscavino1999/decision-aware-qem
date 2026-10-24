@@ -1,0 +1,4 @@
+problem_cell,pair_id,budget,active_pair,delta_rank_projected,tau_flip_projected,projected_error_over_tolerance,frobenius_error_over_tolerance,predicted_order,empirical_order,ordering_match,a3_status,pass_label
+G001,Raw_vs_DA-ZNE,512,True,0.001199999999999779,0.05,0.023999999999995577,0.0011679697829448605,DA-ZNE<Raw,DA-ZNE<Raw,True,pass,directionally_sensitive_pass
+G002,Raw_vs_DA-ZNE,512,True,0.0023999999999997357,0.05,0.047999999999994714,0.0009786003609492597,DA-ZNE<Raw,DA-ZNE<Raw,True,pass,directionally_sensitive_pass
+G003,Raw_vs_DA-ZNE,512,True,0.0036000000000002245,0.05,0.07200000000000449,0.003133626979624268,DA-ZNE<Raw,DA-ZNE<Raw,True,pass,directionally_sensitive_pass

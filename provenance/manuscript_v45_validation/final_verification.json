@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "version": "v45",
+  "pdf_pages": 34,
+  "editorial_edits": 2,
+  "source_sha256": "4d0b70cea6da3742245f3e477c968d33b7e86e7a3ae2ee108d0dc35f9c50427d",
+  "pdf_sha256": "51a23a507d271ea2dafbc906b537451dfa2f2ed68e692b6c6fab8306e291b03a",
+  "formal_statements_proofs_equations_numerical_tables_and_appendices_unchanged": true,
+  "existing_empirical_figures_unchanged": true,
+  "scientific_code_unchanged": true,
+  "overview_replaces_previous_figure_1": true,
+  "overview_page": 2,
+  "overview_vector_only": true,
+  "empirical_checks": {
+    "main": 30,
+    "signed_pec": 24,
+    "e1_partitions": 17
+  },
+  "references_and_citations_resolved": true,
+  "visual_review": {
+    "all_pages_rendered": true,
+    "contact_sheets_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "individually_reviewed_pages": [
+      2,
+      16
+    ],
+    "overlapping_or_clipped_content_observed": false
+  },
+  "protected_files_unchanged": {
+    "outputs/revision_v44/manuscript/main.tex": "a0798cdb848cf8fb7f014022d9759e405a0fe0c6abfcea0e8914e5106b82b363",
+    "outputs/revision_v44/decision_residual_fields_theory_v44.pdf": "34ad75b135346db123769dcb6c8d646f924ba768c5c65a00291e282623a8981e",
+    "outputs/revision_v44_manuscrito.zip": "91d62bb2faade37160a546dc136c3bb676a3355efbaef35410be91325bbccf4c",
+    "outputs/reproduccion_plan_v4/paquete_reproduccion_v4.zip": "08d13bad4747d992e1c4315181c1ccc148652409ebf479c807eda2438390492b",
+    "outputs/guia_reproduccion_v42.zip": "70af471c3a3366072141244a3502e24da5f3fcbd3856f0905ff2f8f45992b6a0",
+    "outputs/propuesta_figura_v1/esquema_estimacion_decision_coste.pdf": "7668eb7a9405de7e23e157563c00b16c3f86f97c5f38e8d557c64bf76ea464be",
+    "outputs/propuesta_figura_v1/main.tex": "8c31035e91e0cdd61e0f3f19c99dc4c38506cea6a43575a90529e45cba2890e5"
+  },
+  "new_experiments_run": false,
+  "new_full_reproduction": false,
+  "publication_performed": false
+}

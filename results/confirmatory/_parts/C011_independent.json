@@ -1,0 +1,30 @@
+[
+  {
+    "instance": "C011",
+    "budget": 256,
+    "pair": "Raw_vs_Accuracy-ZNE",
+    "old_covariance_order": "Raw<Accuracy-ZNE",
+    "old_all40_failure_order": "Raw<Accuracy-ZNE",
+    "method_mean_train_order": "Raw<Accuracy-ZNE",
+    "test_failure_order": "Raw<Accuracy-ZNE",
+    "left_test_failure": 0.05,
+    "right_test_failure": 0.1,
+    "left_predicted_risk": 0.024087825692386877,
+    "right_predicted_risk": 0.03260287211735258,
+    "test_paired_difference": -0.05
+  },
+  {
+    "instance": "C011",
+    "budget": 256,
+    "pair": "Raw_vs_Decision-ZNE",
+    "old_covariance_order": "Raw<Decision-ZNE",
+    "old_all40_failure_order": "tie",
+    "method_mean_train_order": "Raw<Decision-ZNE",
+    "test_failure_order": "tie",
+    "left_test_failure": 0.05,
+    "right_test_failure": 0.05,
+    "left_predicted_risk": 0.024087825692386877,
+    "right_predicted_risk": 0.03191178867730726,
+    "test_paired_difference": 0.0
+  }
+]

@@ -1,0 +1,89 @@
+# Heterogeneous PEC de-risk P0 | PAP §16.1.1 regime-frontier preregistration
+freeze_status: retrospective_code_correction_of_locked_heterogeneous_proxy
+original_protocol: inputs/protocol_original/het_pec_derisk.yaml
+zne_freeze_hash_reference: sha256:C25B4F0243F41C12F8AC685ADAF150E79E066D9910B4EEEF1707E0F9BA5A66EA
+
+scope:
+  purpose: derisk_PEC_heterogeneous_path_before_building_full_arm
+  computes_decision_metric_in_this_step: true
+  decision_metric_step: 2b
+  no_confirmatory_effect_sizes: true
+
+primary_cell:
+  problem: QAOA-MaxCut
+  num_qubits: 10
+  degree: 3
+  graph_seed: 260616
+  depth: 2
+  candidate_count: 25
+  budget_grid: [256, 512, 1024, 2048, 4096, 8192]
+
+heterogeneous_channel:
+  status: locked_before_deriving_rho
+  family: independent_lognormal_per_qubit_and_per_edge
+  seed_policy:
+    rng_function: daqem.rng.make_rng
+    instance_id: HET_PEC_DERISK_P0
+    method: PEC
+    budget: 0
+    replicate_id: 0
+    stream: het_channel
+  clipping: [0.0, 0.95]
+  p1_per_qubit:
+    median: 0.01
+    sigma_log: 0.35
+    applies_to_gates: [h, rx, rz, sx, x, u, u1, u2, u3]
+  p2_per_edge:
+    median: 0.03
+    sigma_log: 0.35
+    applies_to_gates: [cx, cz, rzz]
+  justification: >
+    The medians match the uniform channel used in the ZNE/PEC P0 smoke, so this
+    is a heterogeneity perturbation rather than a different noise level. The
+    log-spread sigma_log=0.35 gives roughly 2-3x device-like variation across
+    qubits/edges without choosing rates to make PEC win.
+
+decision_metric:
+  status: analytic_scalar_overhead_proxy_not_signed_PEC_sampling
+  covariance_scope: Sigma_is_the_raw_heterogeneous_gap_covariance_per_primitive_shot
+  decisive_metric: direct_GRI_raw_vs_PEC
+  formulas:
+    GRI_raw: gri_risk(mu_raw_het, Sigma, B)
+    GRI_pec: gri_risk(mu_ideal, gamma_squared * Sigma, B)
+  go_signal: GRI_pec < GRI_raw at operative budget(s)
+  ranking_flip_diagnostic: argmin(raw_candidate_means) != argmin(ideal_candidate_values)
+  note: >
+    This evaluates the locked Gaussian proxy. The Raw covariance comes from the
+    heterogeneous channel; multiplying it by gamma^2 defines the PEC proxy and
+    does not compute the covariance of signed PEC circuit observations.
+
+regime_frontier:
+  status: secondary_formal_summary_PAP_16_1_1
+  rho_name: rho_gap_noise
+  rho_definition: predicted_relative_savings_from_A3_allowed_inputs / 0.20
+  rho_c: 1.0
+  rho_c_interpretation: rho >= 1 iff GRI-predicted Savings_DA >= 0.20
+  phi_components:
+    active_gap_dimension:
+      definition: number_of_active_decision_gaps_used_by_A3
+      monotonicity: larger_active_dimension_increases_decision_fragility
+    decision_correlation:
+      definition: mean_abs_offdiagonal_correlation_of_Sigma_equals_L_K_Lt
+      monotonicity: stronger_gap_correlation_changes_joint_orthant_risk
+    noise_induced_gap_correlation:
+      definition: mean_abs_offdiagonal_correlation_of_pullback_L_M_Cdev_Mt_Lt
+      monotonicity: stronger_heterogeneous_pullback_structure_increases_DA_opportunity
+  inputs_allowed: [C_dev, L_frozen, noise_params]
+  forbidden_inputs: [confirmatory_effect_sizes]
+  if_confirmed: PRXQ_9plus_support
+  if_posthoc_only: descriptive_3B_only
+
+discipline:
+  anti_phacking: >
+    The heterogeneous channel distribution, seed, Phi components, and rho_c are
+    locked before deriving rho. Do not tune heterogeneity, Phi, or rho_c until
+    rho crosses the threshold.
+  no_go: >
+    If rho < rho_c, stop honestly without constructing PEC-heterogeneous.
+  go: >
+    If rho >= rho_c, invest in PEC-heterogeneous P1/P2/P3 and report the outcome.

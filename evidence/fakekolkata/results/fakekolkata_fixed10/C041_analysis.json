@@ -1,0 +1,266 @@
+{
+  "instance": "C041",
+  "scores": {
+    "Raw": {
+      "mse": 1.0567954334203067,
+      "gri": 0.7062723787332549
+    },
+    "Raw+REM": {
+      "mse": 1.0114079179892104,
+      "gri": 0.7530797822001382
+    },
+    "Accuracy-ZNE": {
+      "mse": 0.35994408301879777,
+      "gri": 0.7303022578338222
+    },
+    "Decision-ZNE": {
+      "mse": 0.33274401826313427,
+      "gri": 0.7455149882745017
+    }
+  },
+  "choices": {
+    "MSE-selector": "Decision-ZNE",
+    "GRI-selector": "Raw"
+  },
+  "solver_status": {
+    "solver": "CLARABEL",
+    "status": "optimal",
+    "common_scale": 773.4555375189706,
+    "normalized_primal_objective": 1.3278562891680543,
+    "normalized_dual_objective": 1.3278562891696382,
+    "normalized_gap": -1.5838441669302483e-12,
+    "affine_residual": 1.1102230246251565e-16,
+    "cone_residual": 0.0,
+    "dual_cone_residual": 0.0,
+    "stationarity_residual": 3.7636560534792807e-14,
+    "dual_balance_residual": 5.393572392500736e-12
+  },
+  "coefficients": {
+    "Accuracy-ZNE": [
+      1.3333333333333333,
+      0.3333333333333333,
+      -0.6666666666666666
+    ],
+    "Decision-ZNE": [
+      1.4483363139399295,
+      0.10332737212014087,
+      -0.5516636860600704
+    ]
+  },
+  "ledger": {
+    "Raw": {
+      "fit": 0,
+      "selection": 0,
+      "evaluation": 256000,
+      "total": 256000,
+      "amortized_per_decision": 12800.0
+    },
+    "Raw+REM": {
+      "fit": 0,
+      "selection": 0,
+      "evaluation": 256000,
+      "total": 256000,
+      "amortized_per_decision": 12800.0
+    },
+    "Accuracy-ZNE": {
+      "fit": 0,
+      "selection": 0,
+      "evaluation": 255000,
+      "total": 255000,
+      "amortized_per_decision": 12750.0
+    },
+    "Decision-ZNE": {
+      "fit": 127500,
+      "selection": 0,
+      "evaluation": 255000,
+      "total": 382500,
+      "amortized_per_decision": 19125.0
+    },
+    "MSE-selector": {
+      "fit": 127500,
+      "selection": 383500,
+      "evaluation": 255000,
+      "total": 766000,
+      "amortized_per_decision": 38300.0
+    },
+    "GRI-selector": {
+      "fit": 127500,
+      "selection": 383500,
+      "evaluation": 256000,
+      "total": 767000,
+      "amortized_per_decision": 38350.0
+    }
+  },
+  "failures": {
+    "Raw": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "Raw+REM": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "Accuracy-ZNE": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "Decision-ZNE": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "MSE-selector": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "GRI-selector": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  "cache_identity": {
+    "schema": 1,
+    "instance": "C041",
+    "probability_sha256": "3ca560a21bd022583da0d4586cc304abb9bf4601c50854d63cb56b6a5641e170",
+    "namespace": "v20-independent-fakekolkata-20261022",
+    "source_hashes": {
+      "run_fakekolkata_v21.py": "cc3e6ff7b820ba281691a56afdbd0c8d55560cf1e35937f8c1aeb9fcbe1dea90",
+      "revision_v19/e1_reanalysis.py": "d7f993dafdca6a117f54456ea776b0e27c3d20fcb605bab81f9444853b46cfef",
+      "src/daqem/decisions.py": "035e301da62b4471b36ffa7a83512f13d6c579f888d0b39006b2f182f81edf34",
+      "src/daqem/risk.py": "ce306cd0d50b0cbd6a0355d7ca4537b62a7d4c2c4bb6b9d96c78a9b8ffb8a391",
+      "src/daqem/qem_methods.py": "90374268735fc2927d471f318c16631f7c3a8ef2e4f4435d7ae909112c9a49c6",
+      "src/daqem/cache.py": "9e4af00f4d76f65c5a68d9698d0ca5efb595007d57689a4ffa4497fbd372a183",
+      "experiments/derisk_fakebackend/run.py": "a149bbc4f156e82a951e1328662bc79f71e3b9f372d73e197b3d95ef12dfb970",
+      "experiments/derisk_fakebackend/rem.py": "79d3279b55fd6a983c6b24016789c0ae2cd50075d2b79369a12516d86e5b6852",
+      "src/daqem/rng.py": "2e1caf311c48a29d0c4d3c46bdcfbf4e1504f1b7443ea72abfc7d56cf5888c77",
+      "src/daqem/budget.py": "d23885e4915757a49f690428f425881b67c24113a0c3a105c36b2bbb43bf45bc"
+    },
+    "protocol_sha256": "6b6160a5a920630a5f690db6fc614f14c1ef2e472ae5a3ecaf531cb46598874d",
+    "versions": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "cvxpy": "1.9.3",
+      "clarabel": "0.11.1",
+      "scikit-learn": "1.9.1"
+    },
+    "budget": 512,
+    "fit": 10,
+    "select": 10,
+    "test": 20,
+    "menu": [
+      "Raw",
+      "Raw+REM",
+      "Accuracy-ZNE",
+      "Decision-ZNE"
+    ],
+    "probability_model_fingerprint": "767e04a556ef4641865df63dd140388b6f27f049f751bedbbceaf8fb95f1a68b"
+  },
+  "samples_sha256": "745ac3238667fa43c989da3c8bf1b3054e7a38304e75e2d5dda838aeb27c160c"
+}

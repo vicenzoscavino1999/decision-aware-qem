@@ -1,0 +1,13 @@
+REPRODUCCIÓN CORREGIDA V4 — MANUSCRITO V39
+
+Empezar por REPRODUCIR.txt. El código se ejecuta con root reproduce.py, usando
+la imagen Docker fijada. No ejecutar directamente los orquestadores históricos
+como si fueran la entrada de esta entrega.
+
+ESTADO_DEL_PLAN.txt distingue la validación local de los pendientes del plan.
+METHODS.md describe las semillas, cálculos, costos y tolerancias.
+results_index.json vincula los resultados con el manuscrito conservado.
+release_manifest.json sella los archivos; los informes finales de ejecución se
+entregan junto al ZIP para conservar inmutable el paquete evaluado.
+
+No es una nueva publicación de GitHub/Zenodo y no tiene un DOI nuevo.

@@ -1,0 +1,47 @@
+{
+  "identity": {
+    "schema": 2,
+    "instance": "C042",
+    "physical_block": [
+      16,
+      22,
+      25,
+      19,
+      20,
+      24,
+      23,
+      14,
+      26,
+      13
+    ],
+    "source_hashes": {
+      "experiments/derisk_fakebackend/run.py": "a149bbc4f156e82a951e1328662bc79f71e3b9f372d73e197b3d95ef12dfb970",
+      "experiments/derisk_fakebackend/rem.py": "79d3279b55fd6a983c6b24016789c0ae2cd50075d2b79369a12516d86e5b6852",
+      "src/daqem/candidates.py": "2c3f5c2cc594afb67c0c546093ed153900e2dd9c8822120eb5f6327ff715af4f",
+      "src/daqem/qaoa.py": "94977b33539b3c41b0fe80b2c44585097b83ef758b016bcf2dfe47c09baf22ee",
+      "src/daqem/rng.py": "2e1caf311c48a29d0c4d3c46bdcfbf4e1504f1b7443ea72abfc7d56cf5888c77"
+    },
+    "bounded_backend_source": "c153e83bf0658316fa54f58d3d953d77ce35677826460d8bbb4bd1348f76fe80",
+    "identity_source": "187e69b3022775bd2e37bc4da754e47ed7503ac11b97b509953ef6de27b7ee57",
+    "backend_target": "e4de56a827f4ed88e86b05d6968293dea83b74246039794a87fee8c299359bf9",
+    "noise_model": "1bfc0def5fc93fe511130f42d2ba333fb39844bae1e23155218ee59cdeb8203f",
+    "versions": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "networkx": "3.7",
+      "qiskit": "2.4.2",
+      "qiskit-aer": "0.17.2",
+      "qiskit-ibm-runtime": "0.47.0"
+    },
+    "scales": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "candidates": 25,
+    "depth": 2,
+    "transpiler_seed": 260616
+  },
+  "sha256": "da921ae72ca9b8f4021349b03dc57ca601a51dc841ddb7991d322a6080267daa",
+  "origin": "density_matrix_simulation"
+}

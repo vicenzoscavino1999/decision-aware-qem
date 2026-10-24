@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="4.844" timestamp="2026-10-23T07:46:28.438226-05:00" hostname="DESKTOP-HVLHKBJ"><testcase classname="" name="tests.test_checkpoint" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_checkpoint.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_checkpoint.py:7: in &lt;module&gt;
+    from reproducibility import run_all
+E   ImportError: cannot import name 'run_all' from 'reproducibility' (unknown location)</error></testcase></testsuite></testsuites>

@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "scope": "Independent numerical checks on saved evidence; see individual reports for their limits",
+  "verifiers": {
+    "verify_integrated.py": "bbdcedfa29da2ae48f6903605cdee98ed15e83368e45c994836d62004bc677e8",
+    "verify_a3_audit.py": "919a3523b7aa4d5d4d178373090847e2eca01405cb51ab0af54fda46ff38388d",
+    "verify_e2_integrated.py": "994538e1a0c695ebe5e286ffe43521fec80c0fa988a6f645d1edb7442600766f",
+    "verify_consolidated_fakekolkata.py": "8468cdcb6e3d6183a56155333edd546c5afd7f8d9f3ed94d7d79602994139fac",
+    "verify_consolidated_hardware.py": "dd477f53730ca810725c586fef57544f62e7ff4bc044740b73afec965360d5ee",
+    "verify_aux_cdr_pec.py": "870df3c39d578b44e6c1de11ec04fbd33e4020a8f9af24cdbb70f2f90176cd1c",
+    "verify_aux_noise.py": "7410aede933cb6a03c69deb2b00b4501dccc86f7ee772ac78133b45c05d16acc",
+    "verify_aux_controls.py": "d6f2f402b7e43dd14b8ff8c7724e39c79ccae971aef81752648048a681f970a2",
+    "verify_learned_ablation.py": "277f942ca8535cf0a7f49fefe67d385163ca42a89628175d56c994ff6f39c4e4"
+  },
+  "reports": {
+    "a3.json": "59cb3ef0b765ea3e5f7376e5f9e49134b3ecd36665274023290c9d20c30d7eb6",
+    "c3.json": "7ea253a1d270bc2f00bff6de6e218d4effb82745af03f386cce29fa4438ebe33",
+    "cdr_pec.json": "34ee029c4b458bea430c43d15f75f494fcbab538e210c8ef1ea71aaf7d8aac64",
+    "controls.json": "6493d6bbb0911dfed7de10c1a7227daaaefd0906863b8402b835de384db2f77f",
+    "core.json": "27b822d4526252245846d8492b8e1ca7d0aecb240bb31f2cc5178d72ac3888b8",
+    "e2.json": "2d121ce08305f7394dc7ab215c5f8ad62735cb2308e24cd0db2ab98f9f4ed52f",
+    "hardware_shot_accounting.json": "c3b72a5fa4be091c2bc56a7f36e363ae423030b0b14962797d063a761e147e04",
+    "independent_fakekolkata.json": "cfda7b4f0627d2f5ff8c2f73a5159ec7ac56e856b1d712664bedf1ae2286860c",
+    "independent_hardware.json": "5da239434e1f37ee4ebeff7957722b574e457a3bd70153ea4c6fa4a3a48e2674",
+    "learned_ablation.json": "afa09d3b95b165f28a752f4a4861c2a080406b5daddd4baa06c2ae24fbc42642",
+    "noise.json": "1a47bf837235ac016bae82b2a0ee7e7fc7802ed4e0810b534a1e0eda1a56107a"
+  }
+}

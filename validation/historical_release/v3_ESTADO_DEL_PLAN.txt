@@ -1,0 +1,8 @@
+1. Núcleo numérico: correcciones y pruebas de regresión completadas.
+2. Experimentos principales: E1, E2, E3, FakeKolkata y hardware corregidos y consolidados.
+3. Auxiliares: CDR/PEC, ruido, controles y canal/ablaciones corregidos y verificados.
+4. Integración local: manuscrito v39, figuras y tablas actualizados; PDF comprobado;
+   reproducción de análisis en entorno Python limpio y archivo de datos E2.
+
+La publicación en GitHub/Zenodo y la actualización del enlace/DOI son pasos
+posteriores a esta entrega. Fisher permanece con el alcance previamente acordado.

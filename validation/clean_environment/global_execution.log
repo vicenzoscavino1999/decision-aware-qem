@@ -1,0 +1,448 @@
+{
+  "core": {
+    "environment_packages_verified": 85,
+    "package_files_verified": 1619,
+    "confirmatory": {
+      "fingerprint": "3d02ad747fd41ac27316165f624055d1ed591bf12e5936e5643364d7e6435adb",
+      "outputs_verified": 244
+    },
+    "e1": {
+      "fingerprint": "da8c1174af4eec9fc9bc0760d9e62f69d3f6710730cb955da16c502591085e46",
+      "outputs_verified": 52
+    },
+    "pilot": {
+      "fingerprint": "982ca7ea2b08fd261bd49443f8585924badf072c14e138628bdfbb67b0d310fc",
+      "outputs_verified": 152
+    },
+    "c3": {
+      "fingerprint": "5a03988c8bd583b17ad63ba1c38f253df6968bafc90239fafe5d62e9f92c1f8d",
+      "outputs_verified": 6
+    },
+    "E0": {
+      "schema_version": 2,
+      "rows_checked": 5,
+      "benchmark": "reused from generation/executability correction, no new timing measurement"
+    }
+  },
+  "e2": {
+    "outputs_verified": 3,
+    "fingerprint": "5dfd9f6565dafbc899b2145562b72026b3a12505b9455c341fefab9459516033"
+  },
+  "fakekolkata": {
+    "outputs_verified": 194,
+    "fingerprint": "1e9265ea76c96c9a724101ff45fdc9064432732593f6451370554cbc8b4ece89"
+  },
+  "hardware": {
+    "outputs_verified": 2,
+    "fingerprint": "5f6d80911c6a52850502ad2d3381bcef2ab3e445bdd3137396daaff40e19e5f1"
+  },
+  "imported_files_verified": 491,
+  "scope": "Corrected analysis records and code; not a new physical acquisition or publication release"
+}
+{"kind": "confirmatory", "item": "C001", "seconds": 35.45197900000494}
+{"kind": "confirmatory", "item": "C003", "seconds": 42.38391470001079}
+{"kind": "confirmatory", "item": "C004", "seconds": 50.26044620000175}
+{"kind": "confirmatory", "item": "C005", "seconds": 59.652586699987296}
+{"kind": "confirmatory", "item": "C008", "seconds": 69.67309430000023}
+{"kind": "confirmatory", "item": "C007", "seconds": 74.03792299999623}
+{"kind": "confirmatory", "item": "C002", "seconds": 85.32358699999168}
+{"kind": "confirmatory", "item": "C009", "seconds": 59.35679499999969}
+{"kind": "confirmatory", "item": "C011", "seconds": 51.114722600003006}
+{"kind": "confirmatory", "item": "C006", "seconds": 105.7597668999806}
+{"kind": "confirmatory", "item": "C014", "seconds": 41.61855939999805}
+{"kind": "confirmatory", "item": "C010", "seconds": 78.16729899999336}
+{"kind": "confirmatory", "item": "C015", "seconds": 40.92834360001143}
+{"kind": "confirmatory", "item": "C016", "seconds": 37.894556199986255}
+{"kind": "confirmatory", "item": "C012", "seconds": 75.37655310000991}
+{"kind": "confirmatory", "item": "C013", "seconds": 83.89058480001404}
+{"kind": "confirmatory", "item": "C019", "seconds": 55.50829120000708}
+{"kind": "confirmatory", "item": "C021", "seconds": 46.3025512000022}
+{"kind": "confirmatory", "item": "C023", "seconds": 43.321631400001934}
+{"kind": "confirmatory", "item": "C022", "seconds": 52.133931499993196}
+{"kind": "confirmatory", "item": "C017", "seconds": 92.68802760000108}
+{"kind": "confirmatory", "item": "C018", "seconds": 90.08663869998418}
+{"kind": "confirmatory", "item": "C026", "seconds": 32.58639650000259}
+{"kind": "confirmatory", "item": "C020", "seconds": 86.19233309998526}
+{"kind": "confirmatory", "item": "C024", "seconds": 64.90802269999404}
+{"kind": "confirmatory", "item": "C029", "seconds": 42.762371100019664}
+{"kind": "confirmatory", "item": "C027", "seconds": 59.415885599999456}
+{"kind": "confirmatory", "item": "C025", "seconds": 73.68354440000257}
+{"kind": "confirmatory", "item": "C033", "seconds": 42.775608199997805}
+{"kind": "confirmatory", "item": "C032", "seconds": 54.578862099995604}
+{"kind": "confirmatory", "item": "C028", "seconds": 89.45273649998126}
+{"kind": "confirmatory", "item": "C031", "seconds": 82.9068544000038}
+{"kind": "confirmatory", "item": "C030", "seconds": 98.77954740001587}
+{"kind": "confirmatory", "item": "C037", "seconds": 34.45813720001024}
+{"kind": "confirmatory", "item": "C036", "seconds": 56.55331109999679}
+{"kind": "confirmatory", "item": "C035", "seconds": 77.27818449999904}
+{"kind": "confirmatory", "item": "C038", "seconds": 65.20270290001645}
+{"kind": "confirmatory", "item": "C034", "seconds": 105.06242369997199}
+{"kind": "confirmatory", "item": "C039", "seconds": 71.74454079999123}
+{"kind": "confirmatory", "item": "C043", "seconds": 45.70207629998913}
+{"kind": "confirmatory", "item": "C040", "seconds": 66.56484080001246}
+{"kind": "confirmatory", "item": "C046", "seconds": 38.240813400014304}
+{"kind": "confirmatory", "item": "C041", "seconds": 91.09228720000829}
+{"kind": "confirmatory", "item": "C042", "seconds": 109.1171372999961}
+{"kind": "confirmatory", "item": "C044", "seconds": 104.54871600001934}
+{"kind": "confirmatory", "item": "C045", "seconds": 97.31827280001016}
+{"kind": "confirmatory", "item": "C048", "seconds": 79.5335162000265}
+{"kind": "confirmatory", "item": "C047", "seconds": 91.02712650000467}
+{"stage": "confirmatory", "summary": {"instances": 48, "active_pairs": 502, "ordering_matches": 502, "directional_match_fraction": 1.0, "directionally_sensitive_pass": 487, "frobenius_proxy_only": 0, "fail": 15, "covariance_score_vs_all40_failure": {"match": 302, "ties": 67, "reversal": 133, "prediction_only_ties": 0}, "method_mean_train_vs_independent_test": {"match": 310, "ties": 98, "reversal": 94, "prediction_only_ties": 0}, "scope": "retrospective regenerated covariance predictions; 20 train/20 test for effective means; dependent pairs, no prospective claim"}, "seconds": 439.5710732000007}
+{"kind": "e1", "item": "C003", "seconds": 2.2654200000106357}
+{"kind": "e1", "item": "C001", "seconds": 2.351738999976078}
+{"kind": "e1", "item": "C004", "seconds": 4.319977700011805}
+{"kind": "e1", "item": "C005", "seconds": 6.454857800010359}
+{"kind": "e1", "item": "C009", "seconds": 4.361791000002995}
+{"kind": "e1", "item": "C011", "seconds": 4.165067300025839}
+{"kind": "e1", "item": "C002", "seconds": 10.225245100009488}
+{"kind": "e1", "item": "C008", "seconds": 10.294086399982916}
+{"kind": "e1", "item": "C007", "seconds": 10.375632999988738}
+{"kind": "e1", "item": "C006", "seconds": 11.159476000000723}
+{"kind": "e1", "item": "C010", "seconds": 9.361361199989915}
+{"kind": "e1", "item": "C014", "seconds": 4.149857299984433}
+{"kind": "e1", "item": "C015", "seconds": 3.7879258999892045}
+{"kind": "e1", "item": "C016", "seconds": 3.7953070999938063}
+{"kind": "e1", "item": "C012", "seconds": 8.135033400001703}
+{"kind": "e1", "item": "C023", "seconds": 1.0773434999864548}
+{"kind": "e1", "item": "C013", "seconds": 9.689602900005411}
+{"kind": "e1", "item": "C022", "seconds": 2.4650448999891523}
+{"kind": "e1", "item": "C026", "seconds": 1.9861128999909852}
+{"kind": "e1", "item": "C019", "seconds": 7.6374275000125635}
+{"kind": "e1", "item": "C021", "seconds": 6.154224800004158}
+{"kind": "e1", "item": "C018", "seconds": 9.250638700003037}
+{"kind": "e1", "item": "C017", "seconds": 10.137518600007752}
+{"kind": "e1", "item": "C027", "seconds": 2.580384700006107}
+{"kind": "e1", "item": "C025", "seconds": 5.4077058999973815}
+{"kind": "e1", "item": "C020", "seconds": 9.204191700002411}
+{"kind": "e1", "item": "C024", "seconds": 8.085863600019366}
+{"kind": "e1", "item": "C029", "seconds": 3.672760199988261}
+{"kind": "e1", "item": "C033", "seconds": 3.4252026999893133}
+{"kind": "e1", "item": "C037", "seconds": 0.445223899994744}
+{"kind": "e1", "item": "C032", "seconds": 5.161120700009633}
+{"kind": "e1", "item": "C031", "seconds": 6.248374899994815}
+{"kind": "e1", "item": "C036", "seconds": 4.90164100000402}
+{"kind": "e1", "item": "C034", "seconds": 6.9205988999747206}
+{"kind": "e1", "item": "C028", "seconds": 9.65784200001508}
+{"kind": "e1", "item": "C030", "seconds": 9.260232300002826}
+{"kind": "e1", "item": "C035", "seconds": 7.938281599985203}
+{"kind": "e1", "item": "C038", "seconds": 7.502539600012824}
+{"kind": "e1", "item": "C039", "seconds": 6.980402499990305}
+{"kind": "e1", "item": "C040", "seconds": 6.93699870002456}
+{"kind": "e1", "item": "C046", "seconds": 0.7221253000025172}
+{"kind": "e1", "item": "C043", "seconds": 4.980103299982147}
+{"kind": "e1", "item": "C041", "seconds": 7.625690399989253}
+{"kind": "e1", "item": "C044", "seconds": 7.26782480001566}
+{"kind": "e1", "item": "C042", "seconds": 9.3403418000089}
+{"kind": "e1", "item": "C045", "seconds": 8.014842500007944}
+{"kind": "e1", "item": "C047", "seconds": 8.308185900008539}
+{"kind": "e1", "item": "C048", "seconds": 8.623684799997136}
+{"stage": "e1", "summary": {"instances": 48, "decisions": 19200, "scope": "fixed 10/10/20 split and shot intervals; current numerical core"}, "seconds": 44.05001330000232}
+{"kind": "pilot_case", "item": ["P001", 8192], "seconds": 4.722478600015165}
+{"kind": "pilot_case", "item": ["P001", 4096], "seconds": 5.940817100025015}
+{"kind": "pilot_case", "item": ["P001", 2048], "seconds": 17.150294599996414}
+{"kind": "pilot_case", "item": ["P001", 1024], "seconds": 44.17817830000422}
+{"kind": "pilot_case", "item": ["P002", 8192], "seconds": 9.146068300004117}
+{"kind": "pilot_case", "item": ["P001", 512], "seconds": 59.308107899996685}
+{"kind": "pilot_case", "item": ["P003", 256], "seconds": 18.15161229998921}
+{"kind": "pilot_case", "item": ["P003", 512], "seconds": 16.4998057000048}
+{"kind": "pilot_case", "item": ["P003", 1024], "seconds": 6.0735896000114735}
+{"kind": "pilot_case", "item": ["P003", 4096], "seconds": 3.11543000000529}
+{"kind": "pilot_case", "item": ["P003", 8192], "seconds": 2.718714099988574}
+{"kind": "pilot_case", "item": ["P003", 2048], "seconds": 9.904649200005224}
+{"kind": "pilot_case", "item": ["P004", 512], "seconds": 2.6619789999967907}
+{"kind": "pilot_case", "item": ["P004", 256], "seconds": 5.595729199994821}
+{"kind": "pilot_case", "item": ["P004", 1024], "seconds": 2.2553643999854103}
+{"kind": "pilot_case", "item": ["P004", 2048], "seconds": 2.170777799998177}
+{"kind": "pilot_case", "item": ["P002", 4096], "seconds": 74.15154489999986}
+{"kind": "pilot_case", "item": ["P004", 4096], "seconds": 2.3428691999870352}
+{"kind": "pilot_case", "item": ["P004", 8192], "seconds": 2.291026699997019}
+{"kind": "pilot_calibration", "item": ["P003", 0], "seconds": 8.523348200018518}
+{"kind": "pilot_calibration", "item": ["P004", 0], "seconds": 2.7373693000117783}
+{"kind": "pilot_calibration", "item": ["P001", 0], "seconds": 29.15540580000379}
+{"kind": "pilot_calibration", "item": ["P002", 0], "seconds": 55.279324500006624}
+{"kind": "pilot_case", "item": ["P002", 2048], "seconds": 161.8719931000087}
+{"kind": "pilot_case", "item": ["P001", 256], "seconds": 174.29498930001864}
+{"kind": "pilot_case", "item": ["P002", 1024], "seconds": 190.298022700008}
+{"kind": "pilot_case", "item": ["P002", 256], "seconds": 263.7363875999872}
+{"kind": "pilot_case", "item": ["P002", 512], "seconds": 270.61093319999054}
+{"stage": "pilot", "summary": {"schema": "a3_full_gradient_joint_bootstrap_v1", "gaussianity_rows": 72, "calibration_rows": 72, "within_tolerance": 70, "audit_cases": 24, "pair_verdicts": {"inactive_pair": 38, "interval_below_threshold": 30, "interval_crosses_threshold": 4, "interval_above_threshold": 0}}, "seconds": 272.58181790000526}
+{"stage": "c3", "summary": {"active": 34, "interpretations": {"empirical_fallback_only": 2, "inactive_pair": 38, "inconclusive_sampling": 10, "no_projected_discrepancy_detected_conditional": 22}, "active_changes": 0}, "seconds": 34.75773429998662}
+E2: {'instances': 32, 'target': 0.8, 'pooled_max_success': {'DA': 0.77578125, 'MSE': 0.78828125}, 'both_cross_instances': 13, 'median_full_cost_ratio_MSE_over_DA': 1.3, 'ratios': {'C001': 1.1538461538461537, 'C003': 1.434782608695652, 'C004': 1.5714285714285714, 'C009': 1.3, 'C010': 2.0434782608695654, 'C011': 1.1538461538461537, 'C015': 1.5714285714285714, 'C016': 1.3, 'C019': 1.3, 'C022': 1.2380952380952381, 'C023': 1.5714285714285714, 'C025': 1.434782608695652, 'C032': 1.0}, 'scope': 'shared Raw_Bmax assisted trajectory; full shot ledger, conditional crossings, no end-to-end dynamic superiority claim', 'training': 'historical fixed static selector (40 repetitions x 3 scales x 25 candidates) amortized over 40 trajectories', 'oracle': 'analytic A3 coefficient computation and noiseless reference values excluded from shot ledger; not a deployment cost claim'}
+e2 complete: 1.22s
+C004: independent evaluation completed; elapsed=4.9s
+{"instances": 1, "instance_ids": ["C004"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.5, "Decision-ZNE": 0.55, "GRI-selector": 0.25, "MSE-selector": 0.55, "Raw": 0.25, "Raw+REM": 0.3}, "relative_reduction": 0.5454545454545455, "relative_reduction_cluster_ci": [0.5454545454545455, 0.5454545454545455], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.30000000000000004, "paired_difference_cluster_ci": [-0.30000000000000004, -0.30000000000000004], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C004
+C001: independent evaluation completed; elapsed=5.5s
+{"instances": 1, "instance_ids": ["C001"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.3, "Decision-ZNE": 0.3, "GRI-selector": 0.15, "MSE-selector": 0.3, "Raw": 0.1, "Raw+REM": 0.15}, "relative_reduction": 0.5, "relative_reduction_cluster_ci": [0.5, 0.5], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.15, "paired_difference_cluster_ci": [-0.15, -0.15], "paired_difference_GRI_minus_Raw": 0.04999999999999999, "paired_difference_GRI_minus_Raw_cluster_ci": [0.04999999999999999, 0.04999999999999999], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C001
+C003: independent evaluation completed; elapsed=5.4s
+{"instances": 1, "instance_ids": ["C003"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.5, "Decision-ZNE": 0.45, "GRI-selector": 0.3, "MSE-selector": 0.45, "Raw": 0.3, "Raw+REM": 0.3}, "relative_reduction": 0.33333333333333337, "relative_reduction_cluster_ci": [0.33333333333333337, 0.33333333333333337], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.15000000000000002, "paired_difference_cluster_ci": [-0.15000000000000002, -0.15000000000000002], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C003
+C008: independent evaluation completed; elapsed=6.7s
+{"instances": 1, "instance_ids": ["C008"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.75, "Decision-ZNE": 0.75, "GRI-selector": 0.75, "MSE-selector": 0.75, "Raw": 0.6, "Raw+REM": 0.4}, "relative_reduction": 0.0, "relative_reduction_cluster_ci": [0.0, 0.0], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.0, "paired_difference_cluster_ci": [0.0, 0.0], "paired_difference_GRI_minus_Raw": 0.15000000000000002, "paired_difference_GRI_minus_Raw_cluster_ci": [0.15000000000000002, 0.15000000000000002], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C008
+C002: independent evaluation completed; elapsed=8.0s
+{"instances": 1, "instance_ids": ["C002"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.85, "Decision-ZNE": 0.85, "GRI-selector": 0.95, "MSE-selector": 0.85, "Raw": 0.95, "Raw+REM": 0.9}, "relative_reduction": -0.11764705882352938, "relative_reduction_cluster_ci": [-0.11764705882352938, -0.11764705882352938], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.09999999999999998, "paired_difference_cluster_ci": [0.09999999999999998, 0.09999999999999998], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C002
+C006: independent evaluation completed; elapsed=8.2s
+{"instances": 1, "instance_ids": ["C006"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.75, "Decision-ZNE": 0.65, "GRI-selector": 0.75, "MSE-selector": 0.75, "Raw": 0.75, "Raw+REM": 0.7}, "relative_reduction": 0.0, "relative_reduction_cluster_ci": [0.0, 0.0], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.0, "paired_difference_cluster_ci": [0.0, 0.0], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C006
+C007: independent evaluation completed; elapsed=8.1s
+{"instances": 1, "instance_ids": ["C007"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.95, "Decision-ZNE": 0.95, "GRI-selector": 0.6, "MSE-selector": 0.95, "Raw": 0.55, "Raw+REM": 0.6}, "relative_reduction": 0.3684210526315789, "relative_reduction_cluster_ci": [0.3684210526315789, 0.3684210526315789], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.35, "paired_difference_cluster_ci": [-0.35, -0.35], "paired_difference_GRI_minus_Raw": 0.04999999999999993, "paired_difference_GRI_minus_Raw_cluster_ci": [0.04999999999999993, 0.04999999999999993], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C007
+C005: independent evaluation completed; elapsed=8.2s
+{"instances": 1, "instance_ids": ["C005"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.8, "Decision-ZNE": 0.8, "GRI-selector": 0.55, "MSE-selector": 0.8, "Raw": 0.55, "Raw+REM": 0.45}, "relative_reduction": 0.3125, "relative_reduction_cluster_ci": [0.3125, 0.3125], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.25, "paired_difference_cluster_ci": [-0.25, -0.25], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C005
+C011: independent evaluation completed; elapsed=7.5s
+{"instances": 1, "instance_ids": ["C011"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.15, "Decision-ZNE": 0.35, "GRI-selector": 0.0, "MSE-selector": 0.35, "Raw": 0.0, "Raw+REM": 0.1}, "relative_reduction": 1.0, "relative_reduction_cluster_ci": [1.0, 1.0], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.35, "paired_difference_cluster_ci": [-0.35, -0.35], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C011
+C009: independent evaluation completed; elapsed=8.5s
+{"instances": 1, "instance_ids": ["C009"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.7, "Decision-ZNE": 0.55, "GRI-selector": 0.3, "MSE-selector": 0.7, "Raw": 0.3, "Raw+REM": 0.35}, "relative_reduction": 0.5714285714285714, "relative_reduction_cluster_ci": [0.5714285714285714, 0.5714285714285714], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.39999999999999997, "paired_difference_cluster_ci": [-0.39999999999999997, -0.39999999999999997], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C009
+C012: independent evaluation completed; elapsed=6.7s
+{"instances": 1, "instance_ids": ["C012"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.8, "Decision-ZNE": 0.8, "GRI-selector": 0.4, "MSE-selector": 0.8, "Raw": 0.4, "Raw+REM": 0.6}, "relative_reduction": 0.5, "relative_reduction_cluster_ci": [0.5, 0.5], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.4, "paired_difference_cluster_ci": [-0.4, -0.4], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C012
+C010: independent evaluation completed; elapsed=8.4s
+{"instances": 1, "instance_ids": ["C010"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.65, "Decision-ZNE": 0.6, "GRI-selector": 0.45, "MSE-selector": 0.65, "Raw": 0.45, "Raw+REM": 0.55}, "relative_reduction": 0.3076923076923077, "relative_reduction_cluster_ci": [0.3076923076923077, 0.3076923076923077], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.2, "paired_difference_cluster_ci": [-0.2, -0.2], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C010
+C014: independent evaluation completed; elapsed=7.2s
+{"instances": 1, "instance_ids": ["C014"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.5, "Decision-ZNE": 0.5, "GRI-selector": 0.45, "MSE-selector": 0.5, "Raw": 0.45, "Raw+REM": 0.45}, "relative_reduction": 0.09999999999999998, "relative_reduction_cluster_ci": [0.09999999999999998, 0.09999999999999998], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.04999999999999999, "paired_difference_cluster_ci": [-0.04999999999999999, -0.04999999999999999], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C014
+C016: independent evaluation completed; elapsed=7.7s
+{"instances": 1, "instance_ids": ["C016"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.35, "Decision-ZNE": 0.3, "GRI-selector": 0.35, "MSE-selector": 0.3, "Raw": 0.35, "Raw+REM": 0.15}, "relative_reduction": -0.16666666666666663, "relative_reduction_cluster_ci": [-0.16666666666666663, -0.16666666666666663], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.04999999999999999, "paired_difference_cluster_ci": [0.04999999999999999, 0.04999999999999999], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C016
+C013: independent evaluation completed; elapsed=8.3s
+{"instances": 1, "instance_ids": ["C013"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.65, "Decision-ZNE": 0.55, "GRI-selector": 0.4, "MSE-selector": 0.55, "Raw": 0.4, "Raw+REM": 0.6}, "relative_reduction": 0.27272727272727276, "relative_reduction_cluster_ci": [0.27272727272727276, 0.27272727272727276], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.15000000000000002, "paired_difference_cluster_ci": [-0.15000000000000002, -0.15000000000000002], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C013
+C015: independent evaluation completed; elapsed=8.3s
+{"instances": 1, "instance_ids": ["C015"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.8, "Decision-ZNE": 0.75, "GRI-selector": 0.2, "MSE-selector": 0.75, "Raw": 0.2, "Raw+REM": 0.1}, "relative_reduction": 0.7333333333333334, "relative_reduction_cluster_ci": [0.7333333333333334, 0.7333333333333334], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.55, "paired_difference_cluster_ci": [-0.55, -0.55], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C015
+C018: independent evaluation completed; elapsed=7.1s
+{"instances": 1, "instance_ids": ["C018"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.75, "Decision-ZNE": 0.75, "GRI-selector": 0.8, "MSE-selector": 0.75, "Raw": 0.8, "Raw+REM": 0.6}, "relative_reduction": -0.06666666666666672, "relative_reduction_cluster_ci": [-0.06666666666666672, -0.06666666666666672], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.050000000000000044, "paired_difference_cluster_ci": [0.050000000000000044, 0.050000000000000044], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C018
+C021: independent evaluation completed; elapsed=5.3s
+{"instances": 1, "instance_ids": ["C021"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.6, "Decision-ZNE": 0.55, "GRI-selector": 0.3, "MSE-selector": 0.55, "Raw": 0.35, "Raw+REM": 0.3}, "relative_reduction": 0.4545454545454546, "relative_reduction_cluster_ci": [0.4545454545454546, 0.4545454545454546], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.25000000000000006, "paired_difference_cluster_ci": [-0.25000000000000006, -0.25000000000000006], "paired_difference_GRI_minus_Raw": -0.04999999999999999, "paired_difference_GRI_minus_Raw_cluster_ci": [-0.04999999999999999, -0.04999999999999999], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C021
+C020: independent evaluation completed; elapsed=7.3s
+{"instances": 1, "instance_ids": ["C020"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.85, "Decision-ZNE": 0.75, "GRI-selector": 0.55, "MSE-selector": 0.85, "Raw": 0.65, "Raw+REM": 0.55}, "relative_reduction": 0.35294117647058815, "relative_reduction_cluster_ci": [0.35294117647058815, 0.35294117647058815], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.29999999999999993, "paired_difference_cluster_ci": [-0.29999999999999993, -0.29999999999999993], "paired_difference_GRI_minus_Raw": -0.09999999999999998, "paired_difference_GRI_minus_Raw_cluster_ci": [-0.09999999999999998, -0.09999999999999998], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C020
+C017: independent evaluation completed; elapsed=8.4s
+{"instances": 1, "instance_ids": ["C017"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.7, "Decision-ZNE": 0.75, "GRI-selector": 0.8, "MSE-selector": 0.7, "Raw": 0.75, "Raw+REM": 0.8}, "relative_reduction": -0.142857142857143, "relative_reduction_cluster_ci": [-0.142857142857143, -0.142857142857143], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.10000000000000009, "paired_difference_cluster_ci": [0.10000000000000009, 0.10000000000000009], "paired_difference_GRI_minus_Raw": 0.050000000000000044, "paired_difference_GRI_minus_Raw_cluster_ci": [0.050000000000000044, 0.050000000000000044], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C017
+C019: independent evaluation completed; elapsed=8.8s
+{"instances": 1, "instance_ids": ["C019"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.7, "Decision-ZNE": 0.65, "GRI-selector": 0.15, "MSE-selector": 0.7, "Raw": 0.15, "Raw+REM": 0.3}, "relative_reduction": 0.7857142857142857, "relative_reduction_cluster_ci": [0.7857142857142857, 0.7857142857142857], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.5499999999999999, "paired_difference_cluster_ci": [-0.5499999999999999, -0.5499999999999999], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C019
+C022: independent evaluation completed; elapsed=7.4s
+{"instances": 1, "instance_ids": ["C022"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.55, "Decision-ZNE": 0.6, "GRI-selector": 0.2, "MSE-selector": 0.6, "Raw": 0.15, "Raw+REM": 0.2}, "relative_reduction": 0.6666666666666666, "relative_reduction_cluster_ci": [0.6666666666666666, 0.6666666666666666], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.39999999999999997, "paired_difference_cluster_ci": [-0.39999999999999997, -0.39999999999999997], "paired_difference_GRI_minus_Raw": 0.05000000000000002, "paired_difference_GRI_minus_Raw_cluster_ci": [0.05000000000000002, 0.05000000000000002], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C022
+C023: independent evaluation completed; elapsed=7.2s
+{"instances": 1, "instance_ids": ["C023"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.4, "Decision-ZNE": 0.4, "GRI-selector": 0.05, "MSE-selector": 0.4, "Raw": 0.05, "Raw+REM": 0.0}, "relative_reduction": 0.875, "relative_reduction_cluster_ci": [0.875, 0.875], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.35000000000000003, "paired_difference_cluster_ci": [-0.35000000000000003, -0.35000000000000003], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C023
+C024: independent evaluation completed; elapsed=8.6s
+{"instances": 1, "instance_ids": ["C024"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.55, "Decision-ZNE": 0.5, "GRI-selector": 0.5, "MSE-selector": 0.55, "Raw": 0.55, "Raw+REM": 0.55}, "relative_reduction": 0.09090909090909098, "relative_reduction_cluster_ci": [0.09090909090909098, 0.09090909090909098], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.050000000000000044, "paired_difference_cluster_ci": [-0.050000000000000044, -0.050000000000000044], "paired_difference_GRI_minus_Raw": -0.050000000000000044, "paired_difference_GRI_minus_Raw_cluster_ci": [-0.050000000000000044, -0.050000000000000044], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C024
+C026: independent evaluation completed; elapsed=5.3s
+{"instances": 1, "instance_ids": ["C026"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.7, "Decision-ZNE": 0.7, "GRI-selector": 0.7, "MSE-selector": 0.7, "Raw": 0.5, "Raw+REM": 0.65}, "relative_reduction": 0.0, "relative_reduction_cluster_ci": [0.0, 0.0], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.0, "paired_difference_cluster_ci": [0.0, 0.0], "paired_difference_GRI_minus_Raw": 0.19999999999999996, "paired_difference_GRI_minus_Raw_cluster_ci": [0.19999999999999996, 0.19999999999999996], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C026
+C027: independent evaluation completed; elapsed=6.9s
+{"instances": 1, "instance_ids": ["C027"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.7, "Decision-ZNE": 0.75, "GRI-selector": 0.7, "MSE-selector": 0.7, "Raw": 0.65, "Raw+REM": 0.7}, "relative_reduction": 0.0, "relative_reduction_cluster_ci": [0.0, 0.0], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.0, "paired_difference_cluster_ci": [0.0, 0.0], "paired_difference_GRI_minus_Raw": 0.04999999999999993, "paired_difference_GRI_minus_Raw_cluster_ci": [0.04999999999999993, 0.04999999999999993], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C027
+C025: independent evaluation completed; elapsed=8.3s
+{"instances": 1, "instance_ids": ["C025"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.55, "Decision-ZNE": 0.6, "GRI-selector": 0.2, "MSE-selector": 0.6, "Raw": 0.2, "Raw+REM": 0.25}, "relative_reduction": 0.6666666666666666, "relative_reduction_cluster_ci": [0.6666666666666666, 0.6666666666666666], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.39999999999999997, "paired_difference_cluster_ci": [-0.39999999999999997, -0.39999999999999997], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C025
+C028: independent evaluation completed; elapsed=8.2s
+{"instances": 1, "instance_ids": ["C028"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.85, "Decision-ZNE": 0.85, "GRI-selector": 0.65, "MSE-selector": 0.85, "Raw": 0.7, "Raw+REM": 0.65}, "relative_reduction": 0.23529411764705876, "relative_reduction_cluster_ci": [0.23529411764705876, 0.23529411764705876], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.19999999999999996, "paired_difference_cluster_ci": [-0.19999999999999996, -0.19999999999999996], "paired_difference_GRI_minus_Raw": -0.04999999999999993, "paired_difference_GRI_minus_Raw_cluster_ci": [-0.04999999999999993, -0.04999999999999993], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C028
+C029: independent evaluation completed; elapsed=8.7s
+{"instances": 1, "instance_ids": ["C029"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.6, "Decision-ZNE": 0.55, "GRI-selector": 0.25, "MSE-selector": 0.6, "Raw": 0.25, "Raw+REM": 0.45}, "relative_reduction": 0.5833333333333334, "relative_reduction_cluster_ci": [0.5833333333333334, 0.5833333333333334], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.35, "paired_difference_cluster_ci": [-0.35, -0.35], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C029
+C030: independent evaluation completed; elapsed=8.7s
+{"instances": 1, "instance_ids": ["C030"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.7, "Decision-ZNE": 0.7, "GRI-selector": 0.8, "MSE-selector": 0.7, "Raw": 0.8, "Raw+REM": 0.45}, "relative_reduction": -0.142857142857143, "relative_reduction_cluster_ci": [-0.142857142857143, -0.142857142857143], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.10000000000000009, "paired_difference_cluster_ci": [0.10000000000000009, 0.10000000000000009], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C030
+C031: independent evaluation completed; elapsed=8.7s
+{"instances": 1, "instance_ids": ["C031"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.75, "Decision-ZNE": 0.75, "GRI-selector": 0.6, "MSE-selector": 0.75, "Raw": 0.6, "Raw+REM": 0.6}, "relative_reduction": 0.20000000000000004, "relative_reduction_cluster_ci": [0.20000000000000004, 0.20000000000000004], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.15000000000000002, "paired_difference_cluster_ci": [-0.15000000000000002, -0.15000000000000002], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C031
+C032: independent evaluation completed; elapsed=8.0s
+{"instances": 1, "instance_ids": ["C032"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.6, "Decision-ZNE": 0.6, "GRI-selector": 0.45, "MSE-selector": 0.6, "Raw": 0.45, "Raw+REM": 0.5}, "relative_reduction": 0.24999999999999994, "relative_reduction_cluster_ci": [0.24999999999999994, 0.24999999999999994], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.14999999999999997, "paired_difference_cluster_ci": [-0.14999999999999997, -0.14999999999999997], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C032
+C033: independent evaluation completed; elapsed=7.5s
+{"instances": 1, "instance_ids": ["C033"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.5, "Decision-ZNE": 0.55, "GRI-selector": 0.15, "MSE-selector": 0.55, "Raw": 0.15, "Raw+REM": 0.2}, "relative_reduction": 0.7272727272727273, "relative_reduction_cluster_ci": [0.7272727272727273, 0.7272727272727273], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.4, "paired_difference_cluster_ci": [-0.4, -0.4], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C033
+C037: independent evaluation completed; elapsed=4.4s
+{"instances": 1, "instance_ids": ["C037"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.6, "Decision-ZNE": 0.65, "GRI-selector": 0.35, "MSE-selector": 0.65, "Raw": 0.5, "Raw+REM": 0.35}, "relative_reduction": 0.46153846153846156, "relative_reduction_cluster_ci": [0.46153846153846156, 0.46153846153846156], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.30000000000000004, "paired_difference_cluster_ci": [-0.30000000000000004, -0.30000000000000004], "paired_difference_GRI_minus_Raw": -0.15000000000000002, "paired_difference_GRI_minus_Raw_cluster_ci": [-0.15000000000000002, -0.15000000000000002], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C037
+C034: independent evaluation completed; elapsed=7.3s
+{"instances": 1, "instance_ids": ["C034"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.85, "Decision-ZNE": 0.8, "GRI-selector": 0.8, "MSE-selector": 0.85, "Raw": 0.8, "Raw+REM": 0.85}, "relative_reduction": 0.05882352941176463, "relative_reduction_cluster_ci": [0.05882352941176463, 0.05882352941176463], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.04999999999999993, "paired_difference_cluster_ci": [-0.04999999999999993, -0.04999999999999993], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C034
+C035: independent evaluation completed; elapsed=9.0s
+{"instances": 1, "instance_ids": ["C035"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.55, "Decision-ZNE": 0.55, "GRI-selector": 0.45, "MSE-selector": 0.55, "Raw": 0.45, "Raw+REM": 0.35}, "relative_reduction": 0.18181818181818185, "relative_reduction_cluster_ci": [0.18181818181818185, 0.18181818181818185], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.10000000000000003, "paired_difference_cluster_ci": [-0.10000000000000003, -0.10000000000000003], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C035
+C036: independent evaluation completed; elapsed=8.5s
+{"instances": 1, "instance_ids": ["C036"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.55, "Decision-ZNE": 0.55, "GRI-selector": 0.15, "MSE-selector": 0.55, "Raw": 0.5, "Raw+REM": 0.15}, "relative_reduction": 0.7272727272727273, "relative_reduction_cluster_ci": [0.7272727272727273, 0.7272727272727273], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.4, "paired_difference_cluster_ci": [-0.4, -0.4], "paired_difference_GRI_minus_Raw": -0.35, "paired_difference_GRI_minus_Raw_cluster_ci": [-0.35, -0.35], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C036
+C038: independent evaluation completed; elapsed=8.0s
+{"instances": 1, "instance_ids": ["C038"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.75, "Decision-ZNE": 0.8, "GRI-selector": 0.8, "MSE-selector": 0.75, "Raw": 0.8, "Raw+REM": 0.85}, "relative_reduction": -0.06666666666666672, "relative_reduction_cluster_ci": [-0.06666666666666672, -0.06666666666666672], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.050000000000000044, "paired_difference_cluster_ci": [0.050000000000000044, 0.050000000000000044], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C038
+C039: independent evaluation completed; elapsed=8.6s
+{"instances": 1, "instance_ids": ["C039"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.75, "Decision-ZNE": 0.75, "GRI-selector": 0.7, "MSE-selector": 0.75, "Raw": 0.7, "Raw+REM": 0.65}, "relative_reduction": 0.06666666666666672, "relative_reduction_cluster_ci": [0.06666666666666672, 0.06666666666666672], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.050000000000000044, "paired_difference_cluster_ci": [-0.050000000000000044, -0.050000000000000044], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C039
+C040: independent evaluation completed; elapsed=7.8s
+{"instances": 1, "instance_ids": ["C040"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.95, "Decision-ZNE": 0.95, "GRI-selector": 0.6, "MSE-selector": 0.95, "Raw": 0.6, "Raw+REM": 0.75}, "relative_reduction": 0.3684210526315789, "relative_reduction_cluster_ci": [0.3684210526315789, 0.3684210526315789], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.35, "paired_difference_cluster_ci": [-0.35, -0.35], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C040
+C043: independent evaluation completed; elapsed=5.0s
+{"instances": 1, "instance_ids": ["C043"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.55, "Decision-ZNE": 0.55, "GRI-selector": 0.55, "MSE-selector": 0.55, "Raw": 0.55, "Raw+REM": 0.4}, "relative_reduction": 0.0, "relative_reduction_cluster_ci": [0.0, 0.0], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.0, "paired_difference_cluster_ci": [0.0, 0.0], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C043
+C041: independent evaluation completed; elapsed=8.2s
+{"instances": 1, "instance_ids": ["C041"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 1.0, "Decision-ZNE": 0.95, "GRI-selector": 0.7, "MSE-selector": 0.95, "Raw": 0.7, "Raw+REM": 0.8}, "relative_reduction": 0.2631578947368421, "relative_reduction_cluster_ci": [0.2631578947368421, 0.2631578947368421], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.25, "paired_difference_cluster_ci": [-0.25, -0.25], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C041
+C042: independent evaluation completed; elapsed=7.2s
+{"instances": 1, "instance_ids": ["C042"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.75, "Decision-ZNE": 0.8, "GRI-selector": 0.75, "MSE-selector": 0.75, "Raw": 0.55, "Raw+REM": 0.95}, "relative_reduction": 0.0, "relative_reduction_cluster_ci": [0.0, 0.0], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.0, "paired_difference_cluster_ci": [0.0, 0.0], "paired_difference_GRI_minus_Raw": 0.19999999999999996, "paired_difference_GRI_minus_Raw_cluster_ci": [0.19999999999999996, 0.19999999999999996], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C042
+C044: independent evaluation completed; elapsed=7.8s
+{"instances": 1, "instance_ids": ["C044"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.9, "Decision-ZNE": 0.85, "GRI-selector": 0.85, "MSE-selector": 0.85, "Raw": 0.95, "Raw+REM": 0.85}, "relative_reduction": 0.0, "relative_reduction_cluster_ci": [0.0, 0.0], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.0, "paired_difference_cluster_ci": [0.0, 0.0], "paired_difference_GRI_minus_Raw": -0.09999999999999998, "paired_difference_GRI_minus_Raw_cluster_ci": [-0.09999999999999998, -0.09999999999999998], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C044
+C045: independent evaluation completed; elapsed=7.7s
+{"instances": 1, "instance_ids": ["C045"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.85, "Decision-ZNE": 0.8, "GRI-selector": 0.9, "MSE-selector": 0.8, "Raw": 0.9, "Raw+REM": 0.95}, "relative_reduction": -0.12499999999999997, "relative_reduction_cluster_ci": [-0.12499999999999997, -0.12499999999999997], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.09999999999999998, "paired_difference_cluster_ci": [0.09999999999999998, 0.09999999999999998], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C045
+C046: independent evaluation completed; elapsed=6.4s
+{"instances": 1, "instance_ids": ["C046"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.4, "Decision-ZNE": 0.55, "GRI-selector": 0.2, "MSE-selector": 0.4, "Raw": 0.2, "Raw+REM": 0.25}, "relative_reduction": 0.5, "relative_reduction_cluster_ci": [0.5, 0.5], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.2, "paired_difference_cluster_ci": [-0.2, -0.2], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C046
+C048: independent evaluation completed; elapsed=6.9s
+{"instances": 1, "instance_ids": ["C048"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.95, "Decision-ZNE": 1.0, "GRI-selector": 0.9, "MSE-selector": 0.95, "Raw": 0.9, "Raw+REM": 0.95}, "relative_reduction": 0.052631578947368356, "relative_reduction_cluster_ci": [0.052631578947368356, 0.052631578947368356], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.04999999999999993, "paired_difference_cluster_ci": [-0.04999999999999993, -0.04999999999999993], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C048
+C047: independent evaluation completed; elapsed=7.2s
+{"instances": 1, "instance_ids": ["C047"], "test_decisions": 20, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.7, "Decision-ZNE": 0.75, "GRI-selector": 0.75, "MSE-selector": 0.75, "Raw": 0.75, "Raw+REM": 0.75}, "relative_reduction": 0.0, "relative_reduction_cluster_ci": [0.0, 0.0], "bootstrap_zero_reference_replicates": 0, "paired_difference": 0.0, "paired_difference_cluster_ci": [0.0, 0.0], "paired_difference_GRI_minus_Raw": 0.0, "paired_difference_GRI_minus_Raw_cluster_ci": [0.0, 0.0], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+replayed C047
+C001: verified checkpoint reused
+C002: verified checkpoint reused
+C003: verified checkpoint reused
+C004: verified checkpoint reused
+C005: verified checkpoint reused
+C006: verified checkpoint reused
+C007: verified checkpoint reused
+C008: verified checkpoint reused
+C009: verified checkpoint reused
+C010: verified checkpoint reused
+C011: verified checkpoint reused
+C012: verified checkpoint reused
+C013: verified checkpoint reused
+C014: verified checkpoint reused
+C015: verified checkpoint reused
+C016: verified checkpoint reused
+C017: verified checkpoint reused
+C018: verified checkpoint reused
+C019: verified checkpoint reused
+C020: verified checkpoint reused
+C021: verified checkpoint reused
+C022: verified checkpoint reused
+C023: verified checkpoint reused
+C024: verified checkpoint reused
+C025: verified checkpoint reused
+C026: verified checkpoint reused
+C027: verified checkpoint reused
+C028: verified checkpoint reused
+C029: verified checkpoint reused
+C030: verified checkpoint reused
+C031: verified checkpoint reused
+C032: verified checkpoint reused
+C033: verified checkpoint reused
+C034: verified checkpoint reused
+C035: verified checkpoint reused
+C036: verified checkpoint reused
+C037: verified checkpoint reused
+C038: verified checkpoint reused
+C039: verified checkpoint reused
+C040: verified checkpoint reused
+C041: verified checkpoint reused
+C042: verified checkpoint reused
+C043: verified checkpoint reused
+C044: verified checkpoint reused
+C045: verified checkpoint reused
+C046: verified checkpoint reused
+C047: verified checkpoint reused
+C048: verified checkpoint reused
+{"instances": 48, "instance_ids": ["C001", "C002", "C003", "C004", "C005", "C006", "C007", "C008", "C009", "C010", "C011", "C012", "C013", "C014", "C015", "C016", "C017", "C018", "C019", "C020", "C021", "C022", "C023", "C024", "C025", "C026", "C027", "C028", "C029", "C030", "C031", "C032", "C033", "C034", "C035", "C036", "C037", "C038", "C039", "C040", "C041", "C042", "C043", "C044", "C045", "C046", "C047", "C048"], "test_decisions": 960, "scope": "retrospective landscapes, independent fit/select/test sampling, four-arm menu", "routing_design": "fixed 10-qubit calibrated block; new experiment", "physical_block": [16, 22, 25, 19, 20, 24, 23, 14, 26, 13], "failure_rates": {"Accuracy-ZNE": 0.6697916666666668, "Decision-ZNE": 0.6666666666666669, "GRI-selector": 0.503125, "MSE-selector": 0.6708333333333335, "Raw": 0.5041666666666667, "Raw+REM": 0.50625}, "relative_reduction": 0.25, "relative_reduction_cluster_ci": [0.1716068642745709, 0.3333333333333333], "bootstrap_zero_reference_replicates": 0, "paired_difference": -0.16770833333333335, "paired_difference_cluster_ci": [-0.21979166666666666, -0.11666666666666659], "paired_difference_GRI_minus_Raw": -0.0010416666666666682, "paired_difference_GRI_minus_Raw_cluster_ci": [-0.023958333333333335, 0.019791666666666666], "namespace": "v20-independent-fakekolkata-20261022", "target_ideal_labels": "oracle inputs; ideal computation cost not included", "not_equal_end_to_end_cost": "compare fixed arms using ledger; selector evaluation budgets only are matched"}
+fakekolkata complete: 63.31s
+Hardware: failed_or_inconclusive
+hardware complete: 7.88s
+Verified verify_integrated.py
+Verified verify_a3_audit.py
+Verified verify_a3_audit.py
+Verified verify_e2_integrated.py
+Verified verify_consolidated_fakekolkata.py
+Verified verify_consolidated_hardware.py
+Verified verify_aux_cdr_pec.py
+Verified verify_aux_noise.py
+Verified verify_aux_controls.py
+Verified verify_learned_ablation.py
+{
+  "core": {
+    "environment_packages_verified": 85,
+    "confirmatory": {
+      "fingerprint": "3d02ad747fd41ac27316165f624055d1ed591bf12e5936e5643364d7e6435adb",
+      "outputs_verified": 244
+    },
+    "e1": {
+      "fingerprint": "da8c1174af4eec9fc9bc0760d9e62f69d3f6710730cb955da16c502591085e46",
+      "outputs_verified": 52
+    },
+    "pilot": {
+      "fingerprint": "982ca7ea2b08fd261bd49443f8585924badf072c14e138628bdfbb67b0d310fc",
+      "outputs_verified": 152
+    },
+    "c3": {
+      "fingerprint": "5a03988c8bd583b17ad63ba1c38f253df6968bafc90239fafe5d62e9f92c1f8d",
+      "outputs_verified": 6
+    },
+    "E0": {
+      "schema_version": 2,
+      "rows_checked": 5,
+      "benchmark": "reused from generation/executability correction, no new timing measurement"
+    }
+  },
+  "e2": {
+    "outputs_verified": 3,
+    "fingerprint": "5dfd9f6565dafbc899b2145562b72026b3a12505b9455c341fefab9459516033"
+  },
+  "fakekolkata": {
+    "outputs_verified": 194,
+    "fingerprint": "1e9265ea76c96c9a724101ff45fdc9064432732593f6451370554cbc8b4ece89"
+  },
+  "hardware": {
+    "outputs_verified": 2,
+    "fingerprint": "5f6d80911c6a52850502ad2d3381bcef2ab3e445bdd3137396daaff40e19e5f1"
+  },
+  "imported_files_verified": 491,
+  "scope": "Corrected analysis records and code; not a new physical acquisition or publication release",
+  "numerical": {
+    "status": "complete",
+    "scope": "Independent numerical checks on saved evidence; see individual reports for their limits",
+    "verifiers": {
+      "verify_integrated.py": "bbdcedfa29da2ae48f6903605cdee98ed15e83368e45c994836d62004bc677e8",
+      "verify_a3_audit.py": "919a3523b7aa4d5d4d178373090847e2eca01405cb51ab0af54fda46ff38388d",
+      "verify_e2_integrated.py": "994538e1a0c695ebe5e286ffe43521fec80c0fa988a6f645d1edb7442600766f",
+      "verify_consolidated_fakekolkata.py": "8468cdcb6e3d6183a56155333edd546c5afd7f8d9f3ed94d7d79602994139fac",
+      "verify_consolidated_hardware.py": "dd477f53730ca810725c586fef57544f62e7ff4bc044740b73afec965360d5ee",
+      "verify_aux_cdr_pec.py": "870df3c39d578b44e6c1de11ec04fbd33e4020a8f9af24cdbb70f2f90176cd1c",
+      "verify_aux_noise.py": "7410aede933cb6a03c69deb2b00b4501dccc86f7ee772ac78133b45c05d16acc",
+      "verify_aux_controls.py": "d6f2f402b7e43dd14b8ff8c7724e39c79ccae971aef81752648048a681f970a2",
+      "verify_learned_ablation.py": "277f942ca8535cf0a7f49fefe67d385163ca42a89628175d56c994ff6f39c4e4"
+    },
+    "reports": {
+      "a3.json": "59cb3ef0b765ea3e5f7376e5f9e49134b3ecd36665274023290c9d20c30d7eb6",
+      "c3.json": "7ea253a1d270bc2f00bff6de6e218d4effb82745af03f386cce29fa4438ebe33",
+      "cdr_pec.json": "34ee029c4b458bea430c43d15f75f494fcbab538e210c8ef1ea71aaf7d8aac64",
+      "controls.json": "6493d6bbb0911dfed7de10c1a7227daaaefd0906863b8402b835de384db2f77f",
+      "core.json": "27b822d4526252245846d8492b8e1ca7d0aecb240bb31f2cc5178d72ac3888b8",
+      "e2.json": "2d121ce08305f7394dc7ab215c5f8ad62735cb2308e24cd0db2ab98f9f4ed52f",
+      "hardware_shot_accounting.json": "c3b72a5fa4be091c2bc56a7f36e363ae423030b0b14962797d063a761e147e04",
+      "independent_fakekolkata.json": "cfda7b4f0627d2f5ff8c2f73a5159ec7ac56e856b1d712664bedf1ae2286860c",
+      "independent_hardware.json": "5da239434e1f37ee4ebeff7957722b574e457a3bd70153ea4c6fa4a3a48e2674",
+      "learned_ablation.json": "afa09d3b95b165f28a752f4a4861c2a080406b5daddd4baa06c2ae24fbc42642",
+      "noise.json": "1a47bf837235ac016bae82b2a0ee7e7fc7802ed4e0810b534a1e0eda1a56107a"
+    }
+  }
+}
+C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\work\reproduction_clean_run\figures\F8_dynamic_full_cost.png
+C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\work\reproduction_clean_run\figures\F9_e3_comparisons.png
+CONSOLIDATED_ANALYSIS_COMPLETE: C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\work\reproduction_clean_run

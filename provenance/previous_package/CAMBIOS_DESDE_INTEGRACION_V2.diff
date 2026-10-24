@@ -1,0 +1,11 @@
+--- v2/code/plot_corrected_e1.py
++++ v3/code/plot_corrected_e1.py
+@@ -35,7 +35,7 @@
+     ax.set_yticks(range(len(policies)), labels)
+     ax.grid(axis='x', alpha=.2)
+ axes[0].invert_yaxis()
+-fig.suptitle('Retrospective E1 audit | 48 instances | 10 fit / 10 select / 20 test', fontsize=12, y=1.01)
++fig.suptitle('Retrospective E1 comparison | 48 instances | 10 fit / 10 select / 20 test', fontsize=12, y=1.01)
+ fig.tight_layout()
+ args.output.parent.mkdir(parents=True, exist_ok=True)
+ fig.savefig(args.output, bbox_inches='tight')

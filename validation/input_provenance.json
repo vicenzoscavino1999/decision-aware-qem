@@ -1,0 +1,786 @@
+{
+  "inputs/learned_evidence/P001_propagation.npz": {
+    "sha256": "8b024ca305c0e6067e865fd72268f7685da176f361210441bea0e2e2d27d5d5c",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_a3_auditoria_v1\\inputs\\learned_evidence\\P001_propagation.npz"
+  },
+  "inputs/learned_evidence/P002_propagation.npz": {
+    "sha256": "6a2c53322c5c658bad60e202f58cf511acf17bf587c29efe33a6f8010fe840cc",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_a3_auditoria_v1\\inputs\\learned_evidence\\P002_propagation.npz"
+  },
+  "inputs/learned_evidence/P003_propagation.npz": {
+    "sha256": "42c58376ec8e1f24d7d08f6b110f4c837833e21a79f21cefedb2c856f78a5438",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_a3_auditoria_v1\\inputs\\learned_evidence\\P003_propagation.npz"
+  },
+  "inputs/learned_evidence/P004_propagation.npz": {
+    "sha256": "bf54eba1800bbd57a1a1df2f447d6e5db353be6cc27fa87c15a290e689336fad",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_a3_auditoria_v1\\inputs\\learned_evidence\\P004_propagation.npz"
+  },
+  "inputs/learned_evidence/diagnostics.json": {
+    "sha256": "dff1c9e3c05861a335fd8edeb8a9b53fe224dab57c12d1f4080c335e5da0082b",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_a3_auditoria_v1\\inputs\\learned_evidence\\diagnostics.json"
+  },
+  "inputs/learned_primitives/P001.npz": {
+    "sha256": "1bcf875a5f06b264aad50d58b7cea798f78857e83f2318092840af621086170d",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_primitives\\P001.npz"
+  },
+  "inputs/learned_primitives/P002.npz": {
+    "sha256": "f5223703f0cc75a1891e2cab0079bd6588304c609d217828bcce364f748dfca4",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_primitives\\P002.npz"
+  },
+  "inputs/learned_primitives/P003.npz": {
+    "sha256": "107a9f93946963c6e9216ab3b23e1b87cdc6d48050c98da12fb59de7532fc488",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_primitives\\P003.npz"
+  },
+  "inputs/learned_primitives/P004.npz": {
+    "sha256": "9b301c8116adfea7efe340ad30d7864cefab43cadedee4cdeb24b9849fa0ba7e",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_canal_ablaciones_v1\\results\\pilot\\cdev_primitives\\P004.npz"
+  },
+  "inputs/pilot/a3_frozen_prediction/P001.npz": {
+    "sha256": "7990dda15fbb200b719902c80ceac04a9692971d68eef2cf6bad2dc1b42ef11e",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\a3_frozen_prediction\\P001.npz"
+  },
+  "inputs/pilot/a3_frozen_prediction/P002.npz": {
+    "sha256": "d771e6ae5636fdaf49fbc78942e9d64324c87e636c2eb9159055d6db4ce9ad6a",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\a3_frozen_prediction\\P002.npz"
+  },
+  "inputs/pilot/a3_frozen_prediction/P003.npz": {
+    "sha256": "4d51f77fce7febed7a049c933effb40377831c8420a5bbf1b61541dc8f6db327",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\a3_frozen_prediction\\P003.npz"
+  },
+  "inputs/pilot/a3_frozen_prediction/P004.npz": {
+    "sha256": "d3e0c30e9c5e31116244c4f65a87f7f7f3d5c15d16916e5de912321f66434e4f",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\a3_frozen_prediction\\P004.npz"
+  },
+  "inputs/pilot/a3_gaussianity.md": {
+    "sha256": "c5df865330ce53970d0343f611d5c4e1d1b0bbafe7c7635db6abaf869d200d88",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\a3_gaussianity.md"
+  },
+  "inputs/pilot/a3_sigmahat_audit.md": {
+    "sha256": "8638ba7ea19737a3e66a42ade30103082085b3e296fa5c40593b4382da61243e",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\a3_sigmahat_audit.md"
+  },
+  "inputs/pilot/cdev_learned_arm.md": {
+    "sha256": "f57c3af8309faaa183055bf087fb9d242f32fa405dd90e890ff7aac7a01b9cfc",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\cdev_learned_arm.md"
+  },
+  "inputs/pilot/gate0_full_vs_diagonal.csv": {
+    "sha256": "1228c2ca610f55cbe14c44bc325482b37b8f535b6e07cbde135d8b3b3dbe4011",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\gate0_full_vs_diagonal.csv"
+  },
+  "inputs/pilot/pullback_frontier.csv": {
+    "sha256": "008a32ec06eb341a051a9771b356ce1d3ee4eead11bbd856ffa0be5a9a442d95",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\pullback_frontier.csv"
+  },
+  "inputs/pilot/raw/P001.npz": {
+    "sha256": "006782fbd2a70906380b12c367c1792210f3221a4ca270247a820bde782e0f71",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\raw\\P001.npz"
+  },
+  "inputs/pilot/raw/P002.npz": {
+    "sha256": "c87955ddea5a29eccf2be5bf2018e1ec2aae1c9609ad5bf4bbc1d4672ebfee49",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\raw\\P002.npz"
+  },
+  "inputs/pilot/raw/P003.npz": {
+    "sha256": "c7ce1e3b1dd0902af3369d073f293c3c818ceca6dfa767189d067d4577effb6c",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\raw\\P003.npz"
+  },
+  "inputs/pilot/raw/P004.npz": {
+    "sha256": "1b7eac238abe3e77bb87e598d59faec9a45fe93fd5ef8527fb5904e8e6c2fbb4",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\inputs\\pilot\\raw\\P004.npz"
+  },
+  "inputs/previous_e1/budget_ledger.csv": {
+    "sha256": "7e1c9f00495c8a63ccf322d204d65e4fbb36838e5f4fe6e502623d7bf9d1ea95",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\results\\e1\\budget_ledger.csv"
+  },
+  "inputs/previous_e1/diagnostics.json": {
+    "sha256": "e24aba5290a9475b325bd55981ab089aa36e1c3eaad66d76da72b0411130c31a",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\results\\e1\\diagnostics.json"
+  },
+  "inputs/previous_e1/manifest.json": {
+    "sha256": "7c8f7eca62b1182d74eeb88fa1d6c045108dd91d3190f18084d1c47bf9c85935",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\results\\e1\\manifest.json"
+  },
+  "inputs/previous_e1/outcomes.csv": {
+    "sha256": "f8b8aeb86d58e0afb20f8d610c74e0bd0a919a7af1d3150b1e877c5a3da4d6b7",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\results\\e1\\outcomes.csv"
+  },
+  "inputs/previous_e1/summary.csv": {
+    "sha256": "7933504f6f6c8f1df48f40f7bffc7ecfb3bccd2bb57b7cd34164bed54bc4ffe1",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\results\\e1\\summary.csv"
+  },
+  "inputs/previous_e3/F9_e3_series.csv": {
+    "sha256": "742fe2c8c1bdd517aae2602201aa49acbf1160b97ec99a100cd2f168fc7b280f",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_e3_v2\\results\\F9_e3_series.csv"
+  },
+  "inputs/previous_e3/e3_directional_by_instance.csv": {
+    "sha256": "10282b3ee65bdf0e06e03300ccf76fce787298b341bb6947e214498a151e8abf",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_e3_v2\\results\\e3_directional_by_instance.csv"
+  },
+  "inputs/previous_e3/e3_directional_summary.json": {
+    "sha256": "b57035173b9e651ed14c117d0284000db70b98c7c3369d514c5ee021f74e16eb",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_e3_v2\\results\\e3_directional_summary.json"
+  },
+  "inputs/previous_e3/e3_independent_mean_and_failure.csv": {
+    "sha256": "960ce69808681bddad59287f3e46154fd7316447d6f7d1966cbff3701a4d796c",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_e3_v2\\results\\e3_independent_mean_and_failure.csv"
+  },
+  "inputs/previous_e3/e3_pullback_frontier.csv": {
+    "sha256": "18299623d74697d73953e2ab3b53df7b3d919003e979fe5c9e076792eabb7663",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_e3_v2\\results\\e3_pullback_frontier.csv"
+  },
+  "inputs/previous_e3/e3_summary.json": {
+    "sha256": "9669ce95dd04ff516ebb11eab01c81e43ef67baa02fc7579e4efbf8f8cd66cba",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_e3_v2\\results\\e3_summary.json"
+  },
+  "inputs/previous_e3/frontier_changes.csv": {
+    "sha256": "c5eb71b020f30661c0e822662afbfc3a9ee25e5ea5f1e3f3d8928cb844e0725b",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_e3_v2\\results\\frontier_changes.csv"
+  },
+  "inputs/previous_e3/predicted_risk_numeric_checks.csv": {
+    "sha256": "aab93929699ba9333b70d234cff3f6b04b82d42d3f38b9794692c2d313fa3271",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte2_e3_v2\\results\\predicted_risk_numeric_checks.csv"
+  },
+  "inputs/protocol_previous/e1_protocol.json": {
+    "sha256": "ed450e5d582992e76f26146c08ed10ad544791c20352e8cff6ea6bf1b74ea5c3",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\code\\revision_v19\\protocol.json"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C001.npz": {
+    "sha256": "f28edcb42a06c94474267d7bf0a7721f39e677340d5eef86c60872cee8153217",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C001.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C002.npz": {
+    "sha256": "49d99a4fe8c544dd271fe09e2de020f87efe2d1fb9fa3ccaab525cbfbfe326a3",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C002.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C003.npz": {
+    "sha256": "5d7f60f6183f4100b3f9aaa1e222d4af44141573b4744fc5391e8532737028c5",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C003.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C004.npz": {
+    "sha256": "f139d26b15a7c5a5ad53dfaeaf46702e0ce8fcab80bfab849788175b2504f3dd",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C004.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C005.npz": {
+    "sha256": "0f1b9f564b6b4412acb393278ca6858a487bbb413b3e318b1b6331d3d8d33049",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C005.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C006.npz": {
+    "sha256": "e6d000a8eebbea11aa50e320e1d5439ebff9f8b266f4fa73b4e9acf465608017",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C006.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C007.npz": {
+    "sha256": "0a6cbd34d78b43d1773b5e9e3cf6e94710926894be5ea0e2aea3832f7e946f9c",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C007.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C008.npz": {
+    "sha256": "1652e50e9c7cbc2c2964d4f55d5a0f4a0b287c509efd0341a56139bfdc6bc6f8",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C008.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C009.npz": {
+    "sha256": "3d3feb0e62f223cc52508a618b6f779c95076091eb35cde166bc6000adff0973",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C009.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C010.npz": {
+    "sha256": "f011164e7849c02a9178a1378931fa2f2e9bf30a34b5ad15ab109d8e98d3977e",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C010.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C011.npz": {
+    "sha256": "91f8c667f8f0af8cd88103af6f633c91840b686b8c47a1acf0e0e6b6416ea02b",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C011.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C012.npz": {
+    "sha256": "3709a1c1267de78776b4f8807ba42d6a33e13e0cef2f4c01b15e7065a8ad5c49",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C012.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C013.npz": {
+    "sha256": "08a008426023a055b661e4c0c083c623807c3e1b8adf41bb47707384139e08ee",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C013.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C014.npz": {
+    "sha256": "2b268ef285b2f54394ea8b104dde1266102b70eb86536d025ae43b28b9098557",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C014.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C015.npz": {
+    "sha256": "a1b8a77867af5b4ab43607fa639f34f5d665c41478a0eba7a833b29a7fca78c9",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C015.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C016.npz": {
+    "sha256": "9f821a80a8c9a23d6499b5468dc326e90021f5585e920b0b8ecddc99108ae07f",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C016.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C017.npz": {
+    "sha256": "a0b954b4dce35f266bfbca939f1a892cd95f75886226c684c0bbb7533b02d100",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C017.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C018.npz": {
+    "sha256": "23efc5de8f688c506cd70f12afaf77cac054a5d2de58aa18cff72c62e0333e3e",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C018.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C019.npz": {
+    "sha256": "7ad4bc3b85c158c3ca0b3546db4a06d88f5445b6179bb1adbb032350e43ae712",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C019.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C020.npz": {
+    "sha256": "3c00db8de31a1b5a5e73a36243f84bb93363e17da99ff00ee8fca647a968400e",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C020.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C021.npz": {
+    "sha256": "fbeef428fcfc81b1bdab6206438541c5f8433db8830b5b69f8cac8796001038a",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C021.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C022.npz": {
+    "sha256": "2b99945f29d485901ac317ce0503c6e7a569d3d472a01e8dd96232a507cab762",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C022.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C023.npz": {
+    "sha256": "f7c351089a3a8aaacad7b3744f10ba6b1976104a4b908ca19d17b990e482b1ac",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C023.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C024.npz": {
+    "sha256": "9f0e9495476e92575b5ba9d8d335265e381ba26fc99aaaf7337561e8337d8f66",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C024.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C025.npz": {
+    "sha256": "61d3ddf91cf5d9ffc53c5c152f48165319928dbe863d92572041cd872b3c8471",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C025.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C026.npz": {
+    "sha256": "3b3ce149264c6d7d902f2bae96bee0031ec5e33d07965b2cfe327cedd37b05ca",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C026.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C027.npz": {
+    "sha256": "9ea320463a997ca9d42f5f38258ef93739406bf14ca586433468fc48a52195d3",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C027.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C028.npz": {
+    "sha256": "6225c1eab45486ab524fc4b7133073d9ffe74540b588e84724e833e6f68b90a3",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C028.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C029.npz": {
+    "sha256": "6bdf5babbdced5035d1a457ea710fb88b978f68a092af1da2c19986eb21493ed",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C029.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C030.npz": {
+    "sha256": "f0192ddc034bfd7e339b436b7ba7bf8d48a0c608b2e6661de4eb46ff0f5a0c70",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C030.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C031.npz": {
+    "sha256": "977214e946ae9065ce7c3bf0002624c6c13a6f083858d73c519be22fdd864cad",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C031.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C032.npz": {
+    "sha256": "b60addf1588f8a7acdbae6345f992107336862f70ca9b1182ea902ededcf174d",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C032.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C033.npz": {
+    "sha256": "57e5c2416d61bd20564447e3aa549c96eb592fcd665625bf5169f2ffe235445b",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C033.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C034.npz": {
+    "sha256": "4c93a9ea957545ae08ca259a7306d8213c85183a47edae0eb932eb5ad97c89b6",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C034.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C035.npz": {
+    "sha256": "43479e6cf141a36264002a57783bdf7c05a425d98d9882ea38a9b4575c6a4a9c",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C035.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C036.npz": {
+    "sha256": "aadc05712f5c848fef2f17a1f3ed12685e965fd21b9f1f20b159bfeef233c8f3",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C036.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C037.npz": {
+    "sha256": "7ba9557a1f1e0105a94df1d1d22aee8fcc9847921d40b471a57f4d80ac2d5498",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C037.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C038.npz": {
+    "sha256": "13f60025240053c20f3f41725e5cc7dc8d202b1eda81bbfa5c7b6f40d3f28c7a",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C038.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C039.npz": {
+    "sha256": "ddfc70e057127cf8802886cdeb0888a42790302f5fe655b52c4765f0adc14553",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C039.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C040.npz": {
+    "sha256": "d3b338c655c5eff8baa08887a842d8e12bbd8c778351e5352517099fa175f1d6",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C040.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C041.npz": {
+    "sha256": "bf35ffe60a97901d549df265980cbc356897e0753d5d526ac24033a6241082bd",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C041.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C042.npz": {
+    "sha256": "7fc65cf245914c0cdb97cfe84bb92747ca1b3ade550772e0b9aa61dd4cdba6a0",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C042.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C043.npz": {
+    "sha256": "33fe6bd1ceac9967baa7ee64e2075d3878f8998692b41c326e0a872548dc3144",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C043.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C044.npz": {
+    "sha256": "28154b27c6f86226c3af9deadadcdc09ca34820fc4d6a817a717a6b6ef7bc3b9",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C044.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C045.npz": {
+    "sha256": "03b0ab37ecdf5dc1680dff52252749f77474a95744e4a03488d761ff690e6954",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C045.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C046.npz": {
+    "sha256": "9ff87bbb29bba076b6b63f104e26fc78d4dfd00cf890ad53b80b817a87ee8f94",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C046.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C047.npz": {
+    "sha256": "e782e5f60308924a5cd2ddff4e86741591557879f22e7ddcaf95d9ecff867da6",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C047.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/a3/C048.npz": {
+    "sha256": "80c0f4e6266bc467306b660b4c37ac09ffb8971951262e8fb09ed7e1f33fa13e",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\a3\\C048.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C001.npz": {
+    "sha256": "5939beedff52b009a82ff18f5e62dd017d3239aabebfe8207a6308fc3c748634",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C001.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C002.npz": {
+    "sha256": "299f06d598366ced0d6d26adc23b65a9d8aacf01c436c6cba9abba31b7ab04ad",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C002.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C003.npz": {
+    "sha256": "f22c76a644577728628286184f34480058c70b484184e7b812da6bba5745bcf4",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C003.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C004.npz": {
+    "sha256": "c3f47642870ff92e33c3ca169a766f7594765c4a9f24360072b75543952f2057",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C004.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C005.npz": {
+    "sha256": "966b913c4a8d6e7385924cd813b0a7fe9f711cb78b7358008bc148ca1afa0981",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C005.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C006.npz": {
+    "sha256": "31ca3f17db1d47d12c9d1643a62682f32120d11c521ced0659f58388400f9224",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C006.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C007.npz": {
+    "sha256": "5b535747c8a073b71be5ce92d7fa515e1d585b05bf87344dfeefc10296af7123",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C007.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C008.npz": {
+    "sha256": "68aabbd3fb228c2281621bb8418ab1786a8036a69d372b2fa54c6b04384acda3",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C008.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C009.npz": {
+    "sha256": "a3f7b124170eb1c0798d7797ca037a3368d27d049eee8f2f32cf2bf113b0a62d",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C009.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C010.npz": {
+    "sha256": "4c5cb0035a2c777d99e761e73e3e9ae7f1f7e418b0bc71af9f75aa4080285cee",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C010.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C011.npz": {
+    "sha256": "f89239874f64f2175bccc5005085175234c3295e59d13f5ea20f6565abb9cecc",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C011.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C012.npz": {
+    "sha256": "1751e18c894eaf1a876dc5845c2dc811414541005749f35f1c3efa1b94c62364",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C012.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C013.npz": {
+    "sha256": "58d81bd17619d8453872f367d7c8532e658a44ec375f5def5e8b629a08c9b910",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C013.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C014.npz": {
+    "sha256": "ff569d64b6cc3f0d3df419678e7cfc0ed562b617a996d5ae65f87025e2704a20",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C014.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C015.npz": {
+    "sha256": "bfee3d042b72b9b1f16d03c185766270fbae88a2ed50417175a52f82099cfb48",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C015.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C016.npz": {
+    "sha256": "82466ffdcd9a3fd87b67486a506b09fcab72ce18419d5d2c88b6cec989bd3235",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C016.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C017.npz": {
+    "sha256": "3649d3b5ba070831380c65fb0bf925e64dd54adb06df16540c9b58873babca2b",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C017.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C018.npz": {
+    "sha256": "c37b3e3389d748d53237ee1258d9f0a7bf52dc77b9f5f39a559b10240b497280",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C018.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C019.npz": {
+    "sha256": "33a93cf69716f32d96ce56d5eedcb07cf20e95a31e3456b105d10389620f3c20",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C019.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C020.npz": {
+    "sha256": "49bb91c58a76d2153c97f6d3ac7b79d3fac167a65954950d24d5dfdb241574a7",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C020.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C021.npz": {
+    "sha256": "64ed5136d31ac4a446fa22b0540023a8c31a8fd9e0593ccf062c22dbeb1b78e4",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C021.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C022.npz": {
+    "sha256": "2e8bac49302166c964730af8bb991befe4a6e00feb05d9b7d386fd4cd2120500",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C022.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C023.npz": {
+    "sha256": "4db03bb4fe0ec4a084271bf5825a36ad8484e574dc7f7c335003ecd1958f1282",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C023.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C024.npz": {
+    "sha256": "bd603716827905578460894d4ea431e5b42791bbefe5583515c37bf79aa8f105",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C024.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C025.npz": {
+    "sha256": "de8945cf16efccb2a10e78617e4adf45e073816d5b8d6cd476f05e42ba6740f7",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C025.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C026.npz": {
+    "sha256": "055d299e862092d75f46bb5de94ac309e2b2abfb5116f11adef23245e482a322",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C026.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C027.npz": {
+    "sha256": "c642d13d33d30f22968bbd809c0a89171d72cbd9f52e78a69d080f0fffe5db4e",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C027.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C028.npz": {
+    "sha256": "802aebd8490d35dd00b58b25b2af7800022a92385a6c1421a7e11c7a56352fa5",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C028.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C029.npz": {
+    "sha256": "3c0137dd309ca5bbaca1b6907abe2fc9d89f2a91e86fa919d2e37ef3b854b0fe",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C029.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C030.npz": {
+    "sha256": "364504ab6a4760e68ab93708a4910a4a0f0606b1cb8a320d9182f276ca78612c",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C030.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C031.npz": {
+    "sha256": "66ac6ae0b14cb9f40b8c4310af492f36c96e0bdedb50c9b2dbf1561319dd8e63",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C031.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C032.npz": {
+    "sha256": "0a69163f59de24ae8a0441f190c7687ba3012b2a9e0c00a6f712dc35c620799f",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C032.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C033.npz": {
+    "sha256": "99704e0a40cc4d7d183ee9a28aec271b4a5f55f8cfbcce10ab78497455510a4f",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C033.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C034.npz": {
+    "sha256": "e4561742c28c355f09d58e453d5959031de1c12a6d485e97a4adba85a90ff76c",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C034.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C035.npz": {
+    "sha256": "9cddbb997843c2f835e25bdb36e34ce68ab5a2fa711da947c091a49e314ca32f",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C035.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C036.npz": {
+    "sha256": "1225a0f2afae95137791053d6bd0b46fdf1490b6740a1c764d6944f873252948",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C036.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C037.npz": {
+    "sha256": "baaa7754f50912175b8c1f192f3b01bc8d81788f585170a2e73c9f10187ffaea",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C037.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C038.npz": {
+    "sha256": "3071909b595daef0cf2c67c211bf1898c6870797e4cb33f14c8c8aae8b3c1e20",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C038.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C039.npz": {
+    "sha256": "d21b90e2cea5d0325202c40ea2558002b22c4190dd127e5f061fc8176a3971d9",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C039.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C040.npz": {
+    "sha256": "232b88738cb01809c9f93a501c0d5174bb6f404ccb29e348aa8a774b60918068",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C040.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C041.npz": {
+    "sha256": "a5c8f1d5978c05182d9875134613781013f75a2ba82de4b529050ad5be61dd78",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C041.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C042.npz": {
+    "sha256": "38e251867de9245efb47754eb32291bcbd3677eef6c7aa758c0bad3f3472ad31",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C042.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C043.npz": {
+    "sha256": "01a4da8ca5f11cadde2d6402151982c3100cdeeb359584b9d2e3923c33531899",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C043.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C044.npz": {
+    "sha256": "1939c6f36920b1acb1b34fb85919f2c27916f82e2160b895d78185dd993a512b",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C044.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C045.npz": {
+    "sha256": "23f6132f00f57ab64b9de6679aec4c615d2646fb54a8edbfb62d5a0890470916",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C045.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C046.npz": {
+    "sha256": "23c07cf82feb21a792f84edffd87bc3d2cfc4ebffd5cfb4c2ca9462abb812471",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C046.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C047.npz": {
+    "sha256": "7cbe3137663374d3465e1bb347c277659df680614056c592cd8ae84e2b47bc4c",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C047.npz"
+  },
+  "inputs/reproducibility/reference_confirmatory/raw/C048.npz": {
+    "sha256": "01605908a28df6a98307efe951eadcdc5d3059ed47535bb62154220b8725005b",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\revision_v21\\inputs\\reproducibility\\reference_confirmatory\\raw\\C048.npz"
+  },
+  "results/confirmatory/raw/C001.npz": {
+    "sha256": "5939beedff52b009a82ff18f5e62dd017d3239aabebfe8207a6308fc3c748634",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C001.npz"
+  },
+  "results/confirmatory/raw/C002.npz": {
+    "sha256": "299f06d598366ced0d6d26adc23b65a9d8aacf01c436c6cba9abba31b7ab04ad",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C002.npz"
+  },
+  "results/confirmatory/raw/C003.npz": {
+    "sha256": "f22c76a644577728628286184f34480058c70b484184e7b812da6bba5745bcf4",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C003.npz"
+  },
+  "results/confirmatory/raw/C004.npz": {
+    "sha256": "c3f47642870ff92e33c3ca169a766f7594765c4a9f24360072b75543952f2057",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C004.npz"
+  },
+  "results/confirmatory/raw/C005.npz": {
+    "sha256": "966b913c4a8d6e7385924cd813b0a7fe9f711cb78b7358008bc148ca1afa0981",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C005.npz"
+  },
+  "results/confirmatory/raw/C006.npz": {
+    "sha256": "31ca3f17db1d47d12c9d1643a62682f32120d11c521ced0659f58388400f9224",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C006.npz"
+  },
+  "results/confirmatory/raw/C007.npz": {
+    "sha256": "5b535747c8a073b71be5ce92d7fa515e1d585b05bf87344dfeefc10296af7123",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C007.npz"
+  },
+  "results/confirmatory/raw/C008.npz": {
+    "sha256": "68aabbd3fb228c2281621bb8418ab1786a8036a69d372b2fa54c6b04384acda3",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C008.npz"
+  },
+  "results/confirmatory/raw/C009.npz": {
+    "sha256": "a3f7b124170eb1c0798d7797ca037a3368d27d049eee8f2f32cf2bf113b0a62d",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C009.npz"
+  },
+  "results/confirmatory/raw/C010.npz": {
+    "sha256": "4c5cb0035a2c777d99e761e73e3e9ae7f1f7e418b0bc71af9f75aa4080285cee",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C010.npz"
+  },
+  "results/confirmatory/raw/C011.npz": {
+    "sha256": "f89239874f64f2175bccc5005085175234c3295e59d13f5ea20f6565abb9cecc",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C011.npz"
+  },
+  "results/confirmatory/raw/C012.npz": {
+    "sha256": "1751e18c894eaf1a876dc5845c2dc811414541005749f35f1c3efa1b94c62364",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C012.npz"
+  },
+  "results/confirmatory/raw/C013.npz": {
+    "sha256": "58d81bd17619d8453872f367d7c8532e658a44ec375f5def5e8b629a08c9b910",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C013.npz"
+  },
+  "results/confirmatory/raw/C014.npz": {
+    "sha256": "ff569d64b6cc3f0d3df419678e7cfc0ed562b617a996d5ae65f87025e2704a20",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C014.npz"
+  },
+  "results/confirmatory/raw/C015.npz": {
+    "sha256": "bfee3d042b72b9b1f16d03c185766270fbae88a2ed50417175a52f82099cfb48",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C015.npz"
+  },
+  "results/confirmatory/raw/C016.npz": {
+    "sha256": "82466ffdcd9a3fd87b67486a506b09fcab72ce18419d5d2c88b6cec989bd3235",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C016.npz"
+  },
+  "results/confirmatory/raw/C017.npz": {
+    "sha256": "3649d3b5ba070831380c65fb0bf925e64dd54adb06df16540c9b58873babca2b",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C017.npz"
+  },
+  "results/confirmatory/raw/C018.npz": {
+    "sha256": "c37b3e3389d748d53237ee1258d9f0a7bf52dc77b9f5f39a559b10240b497280",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C018.npz"
+  },
+  "results/confirmatory/raw/C019.npz": {
+    "sha256": "33a93cf69716f32d96ce56d5eedcb07cf20e95a31e3456b105d10389620f3c20",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C019.npz"
+  },
+  "results/confirmatory/raw/C020.npz": {
+    "sha256": "49bb91c58a76d2153c97f6d3ac7b79d3fac167a65954950d24d5dfdb241574a7",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C020.npz"
+  },
+  "results/confirmatory/raw/C021.npz": {
+    "sha256": "64ed5136d31ac4a446fa22b0540023a8c31a8fd9e0593ccf062c22dbeb1b78e4",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C021.npz"
+  },
+  "results/confirmatory/raw/C022.npz": {
+    "sha256": "2e8bac49302166c964730af8bb991befe4a6e00feb05d9b7d386fd4cd2120500",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C022.npz"
+  },
+  "results/confirmatory/raw/C023.npz": {
+    "sha256": "4db03bb4fe0ec4a084271bf5825a36ad8484e574dc7f7c335003ecd1958f1282",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C023.npz"
+  },
+  "results/confirmatory/raw/C024.npz": {
+    "sha256": "bd603716827905578460894d4ea431e5b42791bbefe5583515c37bf79aa8f105",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C024.npz"
+  },
+  "results/confirmatory/raw/C025.npz": {
+    "sha256": "de8945cf16efccb2a10e78617e4adf45e073816d5b8d6cd476f05e42ba6740f7",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C025.npz"
+  },
+  "results/confirmatory/raw/C026.npz": {
+    "sha256": "055d299e862092d75f46bb5de94ac309e2b2abfb5116f11adef23245e482a322",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C026.npz"
+  },
+  "results/confirmatory/raw/C027.npz": {
+    "sha256": "c642d13d33d30f22968bbd809c0a89171d72cbd9f52e78a69d080f0fffe5db4e",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C027.npz"
+  },
+  "results/confirmatory/raw/C028.npz": {
+    "sha256": "802aebd8490d35dd00b58b25b2af7800022a92385a6c1421a7e11c7a56352fa5",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C028.npz"
+  },
+  "results/confirmatory/raw/C029.npz": {
+    "sha256": "3c0137dd309ca5bbaca1b6907abe2fc9d89f2a91e86fa919d2e37ef3b854b0fe",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C029.npz"
+  },
+  "results/confirmatory/raw/C030.npz": {
+    "sha256": "364504ab6a4760e68ab93708a4910a4a0f0606b1cb8a320d9182f276ca78612c",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C030.npz"
+  },
+  "results/confirmatory/raw/C031.npz": {
+    "sha256": "66ac6ae0b14cb9f40b8c4310af492f36c96e0bdedb50c9b2dbf1561319dd8e63",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C031.npz"
+  },
+  "results/confirmatory/raw/C032.npz": {
+    "sha256": "0a69163f59de24ae8a0441f190c7687ba3012b2a9e0c00a6f712dc35c620799f",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C032.npz"
+  },
+  "results/confirmatory/raw/C033.npz": {
+    "sha256": "99704e0a40cc4d7d183ee9a28aec271b4a5f55f8cfbcce10ab78497455510a4f",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C033.npz"
+  },
+  "results/confirmatory/raw/C034.npz": {
+    "sha256": "e4561742c28c355f09d58e453d5959031de1c12a6d485e97a4adba85a90ff76c",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C034.npz"
+  },
+  "results/confirmatory/raw/C035.npz": {
+    "sha256": "9cddbb997843c2f835e25bdb36e34ce68ab5a2fa711da947c091a49e314ca32f",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C035.npz"
+  },
+  "results/confirmatory/raw/C036.npz": {
+    "sha256": "1225a0f2afae95137791053d6bd0b46fdf1490b6740a1c764d6944f873252948",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C036.npz"
+  },
+  "results/confirmatory/raw/C037.npz": {
+    "sha256": "baaa7754f50912175b8c1f192f3b01bc8d81788f585170a2e73c9f10187ffaea",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C037.npz"
+  },
+  "results/confirmatory/raw/C038.npz": {
+    "sha256": "3071909b595daef0cf2c67c211bf1898c6870797e4cb33f14c8c8aae8b3c1e20",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C038.npz"
+  },
+  "results/confirmatory/raw/C039.npz": {
+    "sha256": "d21b90e2cea5d0325202c40ea2558002b22c4190dd127e5f061fc8176a3971d9",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C039.npz"
+  },
+  "results/confirmatory/raw/C040.npz": {
+    "sha256": "232b88738cb01809c9f93a501c0d5174bb6f404ccb29e348aa8a774b60918068",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C040.npz"
+  },
+  "results/confirmatory/raw/C041.npz": {
+    "sha256": "a5c8f1d5978c05182d9875134613781013f75a2ba82de4b529050ad5be61dd78",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C041.npz"
+  },
+  "results/confirmatory/raw/C042.npz": {
+    "sha256": "38e251867de9245efb47754eb32291bcbd3677eef6c7aa758c0bad3f3472ad31",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C042.npz"
+  },
+  "results/confirmatory/raw/C043.npz": {
+    "sha256": "01a4da8ca5f11cadde2d6402151982c3100cdeeb359584b9d2e3923c33531899",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C043.npz"
+  },
+  "results/confirmatory/raw/C044.npz": {
+    "sha256": "1939c6f36920b1acb1b34fb85919f2c27916f82e2160b895d78185dd993a512b",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C044.npz"
+  },
+  "results/confirmatory/raw/C045.npz": {
+    "sha256": "23f6132f00f57ab64b9de6679aec4c615d2646fb54a8edbfb62d5a0890470916",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C045.npz"
+  },
+  "results/confirmatory/raw/C046.npz": {
+    "sha256": "23c07cf82feb21a792f84edffd87bc3d2cfc4ebffd5cfb4c2ca9462abb812471",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C046.npz"
+  },
+  "results/confirmatory/raw/C047.npz": {
+    "sha256": "7cbe3137663374d3465e1bb347c277659df680614056c592cd8ae84e2b47bc4c",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C047.npz"
+  },
+  "results/confirmatory/raw/C048.npz": {
+    "sha256": "01605908a28df6a98307efe951eadcdc5d3059ed47535bb62154220b8725005b",
+    "source": "inputs/reproducibility/reference_confirmatory/raw/C048.npz"
+  },
+  "results/pilot/a3_frozen_prediction/P001.npz": {
+    "sha256": "d678e4d4b09e80d2001a4bf9a7608cd6c204495235d5edc22fafdc034e88bae0",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\a3_frozen_prediction\\P001.npz"
+  },
+  "results/pilot/a3_frozen_prediction/P002.npz": {
+    "sha256": "c5f742da3b17ec4a74f849b647052f859e30cdcb100f40d844466c8e88a64dee",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\a3_frozen_prediction\\P002.npz"
+  },
+  "results/pilot/a3_frozen_prediction/P003.npz": {
+    "sha256": "79fa75675669c5d20de31fd6e490008ebfe768775e33d086452d1236cade5ee6",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\a3_frozen_prediction\\P003.npz"
+  },
+  "results/pilot/a3_frozen_prediction/P004.npz": {
+    "sha256": "2c427d38739c2d5050569df5d312322cff7edeb73e98d555838c44b682ebb83a",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\a3_frozen_prediction\\P004.npz"
+  },
+  "results/pilot/a3_primitive_evidence/P001.npz": {
+    "sha256": "f4dd63aafc7f4101bf193fa2d260f1ed1d95ac2de8382d3cb84cb192c7ca272d",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\a3_primitive_evidence\\P001.npz"
+  },
+  "results/pilot/a3_primitive_evidence/P002.npz": {
+    "sha256": "384aef8e7bb01e6a1483ee46f48eda90c2d35ccffce8bee3ca9f3b4b467e910c",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\a3_primitive_evidence\\P002.npz"
+  },
+  "results/pilot/a3_primitive_evidence/P003.npz": {
+    "sha256": "a0fc51a4a355886f036d132881c09454a9e9050b26ecc92aad035b767c266261",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\a3_primitive_evidence\\P003.npz"
+  },
+  "results/pilot/a3_primitive_evidence/P004.npz": {
+    "sha256": "5b9a1bfa629cf8d1b3aa7efa6e6a26115beedd6340ada26c5a93d0c646d22f50",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\a3_primitive_evidence\\P004.npz"
+  },
+  "results/pilot/executability_diagnostic.csv": {
+    "sha256": "2419381bc312ec622432f1e039f70a993e6cac66e5b967544500cc065186978e",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\executability_diagnostic.csv"
+  },
+  "results/pilot/executability_diagnostic.json": {
+    "sha256": "0fd32ffd6a066d02f1c269cb6c208500adcb99e412bcc94946d7cb2716354690",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\executability_diagnostic.json"
+  },
+  "results/pilot/executability_diagnostic.md": {
+    "sha256": "e782c926ca3069cf80138b2ae743ebf52a3b9ff0c1891be16e7ee1aa03b4c848",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\executability_diagnostic.md"
+  },
+  "results/pilot/pullback_frontier.csv": {
+    "sha256": "8619d1671923d1d91681aea822ca347a47d377f91ae481559c3a4c5d41794e5c",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\pullback_frontier.csv"
+  },
+  "results/pilot/raw/P001.npz": {
+    "sha256": "006782fbd2a70906380b12c367c1792210f3221a4ca270247a820bde782e0f71",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\raw\\P001.npz"
+  },
+  "results/pilot/raw/P002.npz": {
+    "sha256": "c87955ddea5a29eccf2be5bf2018e1ec2aae1c9609ad5bf4bbc1d4672ebfee49",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\raw\\P002.npz"
+  },
+  "results/pilot/raw/P003.npz": {
+    "sha256": "c7ce1e3b1dd0902af3369d073f293c3c818ceca6dfa767189d067d4577effb6c",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\raw\\P003.npz"
+  },
+  "results/pilot/raw/P004.npz": {
+    "sha256": "1b7eac238abe3e77bb87e598d59faec9a45fe93fd5ef8527fb5904e8e6c2fbb4",
+    "source": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\outputs\\correccion_codigo_parte3_generacion_ejecutabilidad_v1\\results\\pilot\\raw\\P004.npz"
+  }
+}

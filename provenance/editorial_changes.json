@@ -1,0 +1,35 @@
+{
+  "base": "v44",
+  "version": "v45",
+  "protected_sha256": {
+    "outputs/revision_v44/manuscript/main.tex": "a0798cdb848cf8fb7f014022d9759e405a0fe0c6abfcea0e8914e5106b82b363",
+    "outputs/revision_v44/decision_residual_fields_theory_v44.pdf": "34ad75b135346db123769dcb6c8d646f924ba768c5c65a00291e282623a8981e",
+    "outputs/revision_v44_manuscrito.zip": "91d62bb2faade37160a546dc136c3bb676a3355efbaef35410be91325bbccf4c",
+    "outputs/reproduccion_plan_v4/paquete_reproduccion_v4.zip": "08d13bad4747d992e1c4315181c1ccc148652409ebf479c807eda2438390492b",
+    "outputs/guia_reproduccion_v42.zip": "70af471c3a3366072141244a3502e24da5f3fcbd3856f0905ff2f8f45992b6a0",
+    "outputs/propuesta_figura_v1/esquema_estimacion_decision_coste.pdf": "7668eb7a9405de7e23e157563c00b16c3f86f97c5f38e8d557c64bf76ea464be",
+    "outputs/propuesta_figura_v1/main.tex": "8c31035e91e0cdd61e0f3f19c99dc4c38506cea6a43575a90529e45cba2890e5"
+  },
+  "new_source_sha256": "4d0b70cea6da3742245f3e477c968d33b7e86e7a3ae2ee108d0dc35f9c50427d",
+  "evidence_archives_sha256": {
+    "e1_particiones_v1.zip": "79bc7cd31f67d012c8702ac618b318b97ae652ed8609c6fdaaae16230d37021b",
+    "pec_decisiones_v2.zip": "685d50ca1e84e5d1f400c426207449fe805d272205799ef70d9f84e4491af10c",
+    "pec_muestreo_firmado_v1.zip": "4be1fe763eec0319c832e1a4c381bf9dac9a5e60c97bbd2086eb7dcfa3df5794"
+  },
+  "edits": [
+    {
+      "name": "introduce_measurement_decision_cost_overview",
+      "before": "Figure~\\ref{fig:pipeline} summarizes the representation.",
+      "after": "Figure~\\ref{fig:pipeline} connects the measurement records, estimation and decision objectives, and shot accounting."
+    },
+    {
+      "name": "replace_pipeline_with_approved_three_panel_schematic",
+      "before": "\\begin{figure}[!ht]\n    \\centering\n    \\resizebox{\\linewidth}{!}{%\n    \\begin{tikzpicture}[\n        >=Latex,\n        node distance=0.9cm,\n        stage/.style={draw, rounded corners=2pt, align=center, minimum height=1.05cm, inner xsep=7pt, font=\\small},\n        flow/.style={->, thick}\n    ]\n        \\node[stage] (residual) {residual field\\\\$E_m^{(B)}$};\n        \\node[stage, right=of residual] (law) {estimated-gap law\\\\$\\mathcal L(\\Delta+LE_m^{(B)})$};\n        \\node[stage, right=of law] (kernel) {mean and covariance\\\\$(\\mu_m,\\Sigma_m^{(B)})$};\n        \\node[stage, right=of kernel] (risk) {argmin risk\\\\$R_m(B)$};\n        \\draw[flow] (residual) -- node[midway, above=17pt, font=\\scriptsize] {$\\Delta+L(\\cdot)$} (law);\n        \\draw[flow] (law) -- node[midway, above=17pt, font=\\scriptsize] {Gaussian model} (kernel);\n        \\draw[flow] (kernel) -- node[midway, above=17pt, font=\\scriptsize] {failure event} (risk);\n    \\end{tikzpicture}%\n    }\n    \\caption{For a fixed ideal landscape and budget, adding the ideal gaps to the residual differences gives the estimated-gap law. This full law determines strict-argmin risk; in a Gaussian model, its effective mean and actual gap covariance suffice. MSE assesses the ambient residual field.}\n    \\label{fig:pipeline}\n\\end{figure}",
+      "after": "\\begin{figure}[!ht]\n    \\centering\n    \\includegraphics[width=\\linewidth]{figures/F0_estimation_decision_cost.pdf}\n    \\caption{Estimation, candidate selection and sampling cost in quantum error mitigation.\n(a) A schematic noisy circuit supplies protocol-dependent measurement records from which an estimator produces candidate values.\n(b) Given an ideal reference objective $F$, MSE measures pointwise squared estimation error, while the joint law of the estimated gaps determines selection risk. In a Gaussian model, this law is specified by effective margins and their covariance.\n(c) Normalized shot allocations in the full-cost static E1 comparison (Section~\\ref{sec:e1_reanalysis}): fitting, method selection and evaluation use $30nt$, $60nt$ and $60nt$ shots across 20 decisions, where $n=25$ is the number of candidates and $t$ the primitive prefix length. Untuned baselines devote the same $150nt$ total to evaluation. Ideal references are simulation inputs in E1; their acquisition and classical computation are outside this shot budget.}\n    \\label{fig:pipeline}\n\\end{figure}"
+    }
+  ],
+  "other_source_text_unchanged": true,
+  "scientific_code_unchanged": true,
+  "new_experiments_run": false,
+  "added_schematic": "manuscript/figures/F0_estimation_decision_cost.pdf"
+}

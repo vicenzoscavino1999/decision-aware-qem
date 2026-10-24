@@ -1,0 +1,24 @@
+{
+  "analysis_stages": [
+    "E1",
+    "E2",
+    "E3",
+    "FakeKolkata",
+    "Hardware",
+    "A3",
+    "C3"
+  ],
+  "date_utc": "2026-10-23T12:30:09.626832+00:00",
+  "entrypoint": "code/scripts/reproduce_all.py",
+  "independent_auxiliary_blocks": [
+    "CDR_PEC",
+    "Noise",
+    "Controls",
+    "Learned_channel_and_ablation"
+  ],
+  "manuscript_modified": false,
+  "new_E2_acquisition": false,
+  "new_hardware_jobs": 0,
+  "phase4_status": "Numeric consolidation complete; manuscript/PDF and final publication archive pending",
+  "revision": "part4_consolidation_v2"
+}

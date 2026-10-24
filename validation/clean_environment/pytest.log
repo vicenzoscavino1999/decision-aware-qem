@@ -1,0 +1,156 @@
+
+=================================== ERRORS ====================================
+_____________ ERROR collecting tests/test_a3_audit_corrections.py _____________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_a3_audit_corrections.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_a3_audit_corrections.py:5: in <module>
+    from experiments import a3_gaussianity_sigmahat_audit as a
+experiments\a3_gaussianity_sigmahat_audit.py:20: in <module>
+    from daqem.risk import gri_risk
+E   ModuleNotFoundError: No module named 'daqem'
+________ ERROR collecting tests/test_a3_gaussianity_sigmahat_audit.py _________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_a3_gaussianity_sigmahat_audit.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_a3_gaussianity_sigmahat_audit.py:3: in <module>
+    from experiments import a3_gaussianity_sigmahat_audit as f1c
+experiments\a3_gaussianity_sigmahat_audit.py:20: in <module>
+    from daqem.risk import gri_risk
+E   ModuleNotFoundError: No module named 'daqem'
+_____________ ERROR collecting tests/test_a3_pullback_frontier.py _____________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_a3_pullback_frontier.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_a3_pullback_frontier.py:5: in <module>
+    from experiments import a3_pullback_frontier as a3
+experiments\a3_pullback_frontier.py:23: in <module>
+    from daqem.candidates import (
+E   ModuleNotFoundError: No module named 'daqem'
+___________ ERROR collecting tests/test_aux_cdr_pec_corrections.py ____________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_aux_cdr_pec_corrections.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_aux_cdr_pec_corrections.py:10: in <module>
+    from daqem.cdr import bracketing_clifford_endpoint_angles, fit_linear_cdr
+E   ModuleNotFoundError: No module named 'daqem'
+___________ ERROR collecting tests/test_aux_controls_corrections.py ___________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_aux_controls_corrections.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_aux_controls_corrections.py:5: in <module>
+    from experiments import pilot_power_report as p
+experiments\pilot_power_report.py:15: in <module>
+    from daqem.decisions import integer_shot_sums, zne_failures
+E   ModuleNotFoundError: No module named 'daqem'
+____________ ERROR collecting tests/test_aux_noise_corrections.py _____________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_aux_noise_corrections.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_aux_noise_corrections.py:11: in <module>
+    from daqem.structured_noise import single_qubit_ad_pd_error, two_qubit_ad_pd_error, structured_noise_model, _scaled_rate
+E   ModuleNotFoundError: No module named 'daqem'
+________________ ERROR collecting tests/test_budget_ledger.py _________________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_budget_ledger.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_budget_ledger.py:3: in <module>
+    from daqem.budget import amortized_cost, total_cost, validate_ledger
+E   ModuleNotFoundError: No module named 'daqem'
+________________ ERROR collecting tests/test_cdev_learning.py _________________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_cdev_learning.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_cdev_learning.py:3: in <module>
+    from daqem.cdev import (
+E   ModuleNotFoundError: No module named 'daqem'
+_____________________ ERROR collecting tests/test_cdr.py ______________________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_cdr.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_cdr.py:6: in <module>
+    from daqem.budget import validate_ledger
+E   ModuleNotFoundError: No module named 'daqem'
+__________________ ERROR collecting tests/test_checkpoint.py __________________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_checkpoint.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_checkpoint.py:7: in <module>
+    from reproducibility import run_all
+E   ImportError: cannot import name 'run_all' from 'reproducibility' (unknown location)
+________ ERROR collecting tests/test_confirmatory_instance_manifest.py ________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_confirmatory_instance_manifest.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_confirmatory_instance_manifest.py:6: in <module>
+    from daqem.candidates import (
+E   ModuleNotFoundError: No module named 'daqem'
+_____________ ERROR collecting tests/test_confirmatory_raw_b42.py _____________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_confirmatory_raw_b42.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_confirmatory_raw_b42.py:5: in <module>
+    from daqem.candidates import landscape_for_instance, maxcut_graph_for_instance
+E   ModuleNotFoundError: No module named 'daqem'
+___________ ERROR collecting tests/test_confirmatory_wiring_b41.py ____________
+ImportError while importing test module 'C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\outputs\integracion_reproduccion_parte4_v3\code\tests\test_confirmatory_wiring_b41.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\ASROCK\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_confirmatory_wiring_b41.py:6: in <module>
+    from daqem.candidates import (
+E   ModuleNotFoundError: No module named 'daqem'
+=========================== short test summary info ===========================
+ERROR tests/test_a3_audit_corrections.py
+ERROR tests/test_a3_gaussianity_sigmahat_audit.py
+ERROR tests/test_a3_pullback_frontier.py
+ERROR tests/test_aux_cdr_pec_corrections.py
+ERROR tests/test_aux_controls_corrections.py
+ERROR tests/test_aux_noise_corrections.py
+ERROR tests/test_budget_ledger.py
+ERROR tests/test_cdev_learning.py
+ERROR tests/test_cdr.py
+ERROR tests/test_checkpoint.py
+ERROR tests/test_confirmatory_instance_manifest.py
+ERROR tests/test_confirmatory_raw_b42.py
+ERROR tests/test_confirmatory_wiring_b41.py
+!!!!!!!!!!!!!!!!!! Interrupted: 13 errors during collection !!!!!!!!!!!!!!!!!!!
+13 errors in 11.80s

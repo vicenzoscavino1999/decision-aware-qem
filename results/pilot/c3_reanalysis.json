@@ -1,0 +1,2466 @@
+{
+  "scope": "archived_learned_primitive_variances_with_current_gap_maps_no_new_characterization",
+  "rho_C": 0.25,
+  "c2": [
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "delta_rank_C": 1.7274335271960684e-05,
+      "tau_C": 0.034925746864795326,
+      "projected_error_over_tolerance": 0.0004946017429157106,
+      "relative_frobenius_error": 0.0001953493298665694,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 512,
+      "active_pair": true,
+      "delta_rank_C": 1.079085076534787e-05,
+      "tau_C": 0.039384693612234956,
+      "projected_error_over_tolerance": 0.0002739859010099209,
+      "relative_frobenius_error": 0.0001953493298664085,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 1024,
+      "active_pair": true,
+      "delta_rank_C": 2.2538644099515226e-06,
+      "tau_C": 0.03921532983745141,
+      "projected_error_over_tolerance": 5.747406484387231e-05,
+      "relative_frobenius_error": 0.0001953493298660867,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 2048,
+      "active_pair": true,
+      "delta_rank_C": 5.583565356634884e-06,
+      "tau_C": 0.03416959414571222,
+      "projected_error_over_tolerance": 0.00016340742394610908,
+      "relative_frobenius_error": 0.00019534932986544303,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 4096,
+      "active_pair": true,
+      "delta_rank_C": 1.2501931643557962e-05,
+      "tau_C": 0.02403966288142484,
+      "projected_error_over_tolerance": 0.0005200543662040309,
+      "relative_frobenius_error": 0.0001953493298641557,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 8192,
+      "active_pair": true,
+      "delta_rank_C": 1.3546822545039925e-05,
+      "tau_C": 0.011266272588190573,
+      "projected_error_over_tolerance": 0.0012024227568610268,
+      "relative_frobenius_error": 0.0001953493298615811,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "delta_rank_C": 1.6857581511685557e-05,
+      "tau_C": 0.03489865722545987,
+      "projected_error_over_tolerance": 0.0004830438432853893,
+      "relative_frobenius_error": 0.00019708438807021874,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": true,
+      "delta_rank_C": 1.0303470476816637e-05,
+      "tau_C": 0.03935239415745195,
+      "projected_error_over_tolerance": 0.00026182575920518736,
+      "relative_frobenius_error": 0.00019708438807005638,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": true,
+      "delta_rank_C": 1.7557970960714521e-06,
+      "tau_C": 0.03918196529083981,
+      "projected_error_over_tolerance": 4.481135856863037e-05,
+      "relative_frobenius_error": 0.0001970843880697316,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": true,
+      "delta_rank_C": 6.031762070985394e-06,
+      "tau_C": 0.0341404887235629,
+      "projected_error_over_tolerance": 0.0001766747429957681,
+      "relative_frobenius_error": 0.00019708438806908204,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": true,
+      "delta_rank_C": 1.284957764459951e-05,
+      "tau_C": 0.024018000831357605,
+      "projected_error_over_tolerance": 0.000534997801641478,
+      "relative_frobenius_error": 0.00019708438806778294,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": true,
+      "delta_rank_C": 1.3750365234147642e-05,
+      "tau_C": 0.011253743647142905,
+      "projected_error_over_tolerance": 0.0012218480947572125,
+      "relative_frobenius_error": 0.0001970843880651848,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": false,
+      "delta_rank_C": 4.1675376027512726e-07,
+      "tau_C": 2.7089639335453608e-05,
+      "projected_error_over_tolerance": 0.015384249126185306,
+      "relative_frobenius_error": 0.0001829970670703322,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": false,
+      "delta_rank_C": 4.873802885312331e-07,
+      "tau_C": 3.2299454783002446e-05,
+      "projected_error_over_tolerance": 0.015089427725811533,
+      "relative_frobenius_error": 0.00018299706707022498,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": false,
+      "delta_rank_C": 4.980673138800705e-07,
+      "tau_C": 3.336454661159727e-05,
+      "projected_error_over_tolerance": 0.014928040823637207,
+      "relative_frobenius_error": 0.00018299706707001053,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": false,
+      "delta_rank_C": 4.4819671435051065e-07,
+      "tau_C": 2.9105422149316995e-05,
+      "projected_error_over_tolerance": 0.015399079664646894,
+      "relative_frobenius_error": 0.00018299706706958162,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "delta_rank_C": 3.47646001041548e-07,
+      "tau_C": 2.1662050067233762e-05,
+      "projected_error_over_tolerance": 0.01604861958875263,
+      "relative_frobenius_error": 0.00018299706706872377,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "delta_rank_C": 2.0354268910771717e-07,
+      "tau_C": 1.2528941047668107e-05,
+      "projected_error_over_tolerance": 0.016245801487397106,
+      "relative_frobenius_error": 0.00018299706706700813,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "delta_rank_C": 3.493797104874265e-05,
+      "tau_C": 0.0651600798559111,
+      "projected_error_over_tolerance": 0.0005361867438775583,
+      "relative_frobenius_error": 0.0003939895374907905,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 512,
+      "active_pair": true,
+      "delta_rank_C": 2.3586642130173464e-05,
+      "tau_C": 0.04758707110909208,
+      "projected_error_over_tolerance": 0.0004956523185909408,
+      "relative_frobenius_error": 0.0003939895374904671,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 1024,
+      "active_pair": true,
+      "delta_rank_C": 3.600237201674905e-05,
+      "tau_C": 0.01664108721247831,
+      "projected_error_over_tolerance": 0.0021634627327565886,
+      "relative_frobenius_error": 0.0003939895374898201,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 2048,
+      "active_pair": true,
+      "delta_rank_C": 8.751939017609857e-06,
+      "tau_C": 0.0018526032248534774,
+      "projected_error_over_tolerance": 0.004724130294171354,
+      "relative_frobenius_error": 0.0003939895374885261,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "delta_rank_C": 3.065050043535446e-07,
+      "tau_C": 3.428252446958546e-05,
+      "projected_error_over_tolerance": 0.00894056109040242,
+      "relative_frobenius_error": 0.00039398953748593816,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "delta_rank_C": 4.3146848641045894e-10,
+      "tau_C": 2.5432389297716157e-08,
+      "projected_error_over_tolerance": 0.01696531463715857,
+      "relative_frobenius_error": 0.0003939895374807624,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "delta_rank_C": 3.307193212235624e-05,
+      "tau_C": 0.06515343779805219,
+      "projected_error_over_tolerance": 0.0005076007228485025,
+      "relative_frobenius_error": 0.0003993810337003858,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": true,
+      "delta_rank_C": 2.5561957548270033e-05,
+      "tau_C": 0.047555050613011296,
+      "projected_error_over_tolerance": 0.0005375235063103088,
+      "relative_frobenius_error": 0.00039938103370005753,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": true,
+      "delta_rank_C": 3.7107791216120104e-05,
+      "tau_C": 0.016614013939459826,
+      "projected_error_over_tolerance": 0.00223352353930471,
+      "relative_frobenius_error": 0.00039938103369940105,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": true,
+      "delta_rank_C": 8.953695201023827e-06,
+      "tau_C": 0.0018459676973370254,
+      "projected_error_over_tolerance": 0.004850407303410747,
+      "relative_frobenius_error": 0.000399381033698088,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "delta_rank_C": 3.119929447905116e-07,
+      "tau_C": 3.403046558432154e-05,
+      "projected_error_over_tolerance": 0.00916804808378092,
+      "relative_frobenius_error": 0.000399381033695462,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "delta_rank_C": 4.359717535038565e-10,
+      "tau_C": 2.5068013823478424e-08,
+      "projected_error_over_tolerance": 0.017391555492742315,
+      "relative_frobenius_error": 0.00039938103369020994,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": false,
+      "delta_rank_C": 1.8660389263864117e-06,
+      "tau_C": 6.642057858913253e-06,
+      "projected_error_over_tolerance": 0.2809428893911691,
+      "relative_frobenius_error": 0.00036722160063239244,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": false,
+      "delta_rank_C": 1.9753154180965696e-06,
+      "tau_C": 3.202049608078128e-05,
+      "projected_error_over_tolerance": 0.061689094794573,
+      "relative_frobenius_error": 0.00036722160063217875,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": false,
+      "delta_rank_C": 1.1054191993710541e-06,
+      "tau_C": 2.7073273018485278e-05,
+      "projected_error_over_tolerance": 0.04083064499132736,
+      "relative_frobenius_error": 0.0003672216006317513,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": false,
+      "delta_rank_C": 2.0175618341396988e-07,
+      "tau_C": 6.635527516452022e-06,
+      "projected_error_over_tolerance": 0.03040544748156628,
+      "relative_frobenius_error": 0.00036722160063089646,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "delta_rank_C": 5.487940436967009e-09,
+      "tau_C": 2.520588852639172e-07,
+      "projected_error_over_tolerance": 0.02177245381062796,
+      "relative_frobenius_error": 0.0003672216006291867,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "delta_rank_C": 4.503267093397573e-12,
+      "tau_C": 3.6437547423773253e-10,
+      "projected_error_over_tolerance": 0.012358864445578653,
+      "relative_frobenius_error": 0.00036722160062576737,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "delta_rank_C": 4.264906888898037e-06,
+      "tau_C": 0.002114433177854952,
+      "projected_error_over_tolerance": 0.002017045009303484,
+      "relative_frobenius_error": 0.00020324454106778562,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 512,
+      "active_pair": false,
+      "delta_rank_C": 2.907735298268961e-07,
+      "tau_C": 7.07503720657079e-05,
+      "projected_error_over_tolerance": 0.00410985159988765,
+      "relative_frobenius_error": 0.00020324454106764075,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 1024,
+      "active_pair": false,
+      "delta_rank_C": 1.017139944002092e-09,
+      "tau_C": 1.2699106479053743e-07,
+      "projected_error_over_tolerance": 0.008009539456022285,
+      "relative_frobenius_error": 0.00020324454106735097,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 2048,
+      "active_pair": false,
+      "delta_rank_C": 9.272811614540978e-15,
+      "tau_C": 5.89404554956781e-13,
+      "projected_error_over_tolerance": 0.009272811614540978,
+      "relative_frobenius_error": 0.0002032445410667714,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "delta_rank_C": 5.465911195357451e-25,
+      "tau_C": 1.7541142061255115e-23,
+      "projected_error_over_tolerance": 5.465911195357451e-13,
+      "relative_frobenius_error": 0.0002032445410656123,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "delta_rank_C": 1.3429280623744466e-45,
+      "tau_C": 2.1657346771006125e-44,
+      "projected_error_over_tolerance": 1.3429280623744467e-33,
+      "relative_frobenius_error": 0.00020324454106329415,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "delta_rank_C": 4.344890501126143e-06,
+      "tau_C": 0.0021137870524776115,
+      "projected_error_over_tolerance": 0.0020555005746834393,
+      "relative_frobenius_error": 0.00020546000665518923,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": false,
+      "delta_rank_C": 2.9546305629710697e-07,
+      "tau_C": 7.069010186396186e-05,
+      "projected_error_over_tolerance": 0.004179694872497211,
+      "relative_frobenius_error": 0.00020546000665504278,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": false,
+      "delta_rank_C": 1.0322886210796585e-09,
+      "tau_C": 1.2676681758639827e-07,
+      "projected_error_over_tolerance": 0.008143208457340182,
+      "relative_frobenius_error": 0.00020546000665474983,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": false,
+      "delta_rank_C": 9.394682327737546e-15,
+      "tau_C": 5.873558922063682e-13,
+      "projected_error_over_tolerance": 0.009394682327737547,
+      "relative_frobenius_error": 0.00020546000665416393,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "delta_rank_C": 5.51887898116535e-25,
+      "tau_C": 1.74205874309668e-23,
+      "projected_error_over_tolerance": 5.518878981165351e-13,
+      "relative_frobenius_error": 0.00020546000665299215,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "delta_rank_C": 1.3467170826197705e-45,
+      "tau_C": 2.1362161773687232e-44,
+      "projected_error_over_tolerance": 1.3467170826197705e-33,
+      "relative_frobenius_error": 0.0002054600066506486,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": false,
+      "delta_rank_C": 7.998361222810632e-08,
+      "tau_C": 6.461253773404341e-07,
+      "projected_error_over_tolerance": 0.12378961581316147,
+      "relative_frobenius_error": 0.00017256351640601445,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": false,
+      "delta_rank_C": 4.689526470210858e-09,
+      "tau_C": 6.02702017460377e-08,
+      "projected_error_over_tolerance": 0.07780837518963768,
+      "relative_frobenius_error": 0.00017256351640592668,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": false,
+      "delta_rank_C": 1.514867707756656e-11,
+      "tau_C": 2.2424720413916077e-10,
+      "projected_error_over_tolerance": 0.06755347133855799,
+      "relative_frobenius_error": 0.00017256351640575118,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": false,
+      "delta_rank_C": 1.2187071319656814e-16,
+      "tau_C": 2.0486627504127864e-15,
+      "projected_error_over_tolerance": 0.00012187071319656814,
+      "relative_frobenius_error": 0.0001725635164054001,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "delta_rank_C": 5.29677858078998e-27,
+      "tau_C": 1.205546302883165e-25,
+      "projected_error_over_tolerance": 5.296778580789981e-15,
+      "relative_frobenius_error": 0.000172563516404698,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "delta_rank_C": 3.7890202453238954e-48,
+      "tau_C": 2.9518499731889225e-46,
+      "projected_error_over_tolerance": 3.7890202453238953e-36,
+      "relative_frobenius_error": 0.0001725635164032938,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "delta_rank_C": 8.522379356668458e-06,
+      "tau_C": 0.019195190553560226,
+      "projected_error_over_tolerance": 0.00044398513955297886,
+      "relative_frobenius_error": 0.0002597287303698207,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 512,
+      "active_pair": true,
+      "delta_rank_C": 1.1235813583737327e-05,
+      "tau_C": 0.019810772462157067,
+      "projected_error_over_tolerance": 0.0005671567630792894,
+      "relative_frobenius_error": 0.0002597287303696144,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 1024,
+      "active_pair": true,
+      "delta_rank_C": 1.4635767110236113e-05,
+      "tau_C": 0.022966712772288178,
+      "projected_error_over_tolerance": 0.0006372599881989097,
+      "relative_frobenius_error": 0.00025972873036920167,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 2048,
+      "active_pair": true,
+      "delta_rank_C": 1.1256209516725406e-05,
+      "tau_C": 0.02552197880639398,
+      "projected_error_over_tolerance": 0.00044103984264360436,
+      "relative_frobenius_error": 0.00025972873036837616,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 4096,
+      "active_pair": true,
+      "delta_rank_C": 1.5090697843712767e-07,
+      "tau_C": 0.022846515098797815,
+      "projected_error_over_tolerance": 6.605251513613488e-06,
+      "relative_frobenius_error": 0.0002597287303667252,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 8192,
+      "active_pair": true,
+      "delta_rank_C": 1.030589958539178e-05,
+      "tau_C": 0.013427279923214325,
+      "projected_error_over_tolerance": 0.0007675344257606476,
+      "relative_frobenius_error": 0.00025972873036342336,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "delta_rank_C": 8.236720823595624e-06,
+      "tau_C": 0.01918908462723845,
+      "projected_error_over_tolerance": 0.0004292399029760801,
+      "relative_frobenius_error": 0.00026222943570645307,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": true,
+      "delta_rank_C": 1.0936660337804837e-05,
+      "tau_C": 0.01980420118953355,
+      "projected_error_over_tolerance": 0.0005522394078477057,
+      "relative_frobenius_error": 0.0002622294357062447,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": true,
+      "delta_rank_C": 1.4292874523456884e-05,
+      "tau_C": 0.022960208782546926,
+      "projected_error_over_tolerance": 0.0006225062959497795,
+      "relative_frobenius_error": 0.0002622294357058279,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": true,
+      "delta_rank_C": 1.0847035260120812e-05,
+      "tau_C": 0.025514506996292347,
+      "projected_error_over_tolerance": 0.00042513207336112956,
+      "relative_frobenius_error": 0.0002622294357049943,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": true,
+      "delta_rank_C": 2.7909543848886017e-07,
+      "tau_C": 0.022838637790768557,
+      "projected_error_over_tolerance": 1.2220318963229555e-05,
+      "relative_frobenius_error": 0.00026222943570332704,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": true,
+      "delta_rank_C": 1.064196835955244e-05,
+      "tau_C": 0.013421069867320806,
+      "projected_error_over_tolerance": 0.0007929299575039656,
+      "relative_frobenius_error": 0.00026222943569999263,
+      "c2_status": "pass",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": false,
+      "delta_rank_C": 2.8565853307283457e-07,
+      "tau_C": 6.105926321775534e-06,
+      "projected_error_over_tolerance": 0.04678381592226096,
+      "relative_frobenius_error": 0.0002347090948268669,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": false,
+      "delta_rank_C": 2.991532459324894e-07,
+      "tau_C": 6.571272623517865e-06,
+      "projected_error_over_tolerance": 0.04552440038202839,
+      "relative_frobenius_error": 0.00023470909482673416,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": false,
+      "delta_rank_C": 3.4289258677922937e-07,
+      "tau_C": 6.503989741252214e-06,
+      "projected_error_over_tolerance": 0.05272034557563927,
+      "relative_frobenius_error": 0.00023470909482646866,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": false,
+      "delta_rank_C": 4.0917425660459437e-07,
+      "tau_C": 7.471810101633558e-06,
+      "projected_error_over_tolerance": 0.05476240041420978,
+      "relative_frobenius_error": 0.00023470909482593765,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "delta_rank_C": 4.3000241692598784e-07,
+      "tau_C": 7.877308029258234e-06,
+      "projected_error_over_tolerance": 0.05458748284678655,
+      "relative_frobenius_error": 0.00023470909482487565,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "delta_rank_C": 3.360687741606606e-07,
+      "tau_C": 6.210055893518529e-06,
+      "projected_error_over_tolerance": 0.054116867854831635,
+      "relative_frobenius_error": 0.00023470909482275164,
+      "c2_status": "inactive",
+      "frob_secondary": "pass"
+    }
+  ],
+  "c3": [
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.37488579008740053,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.01663252741895501,
+          "bootstrap_ratio_ci_high": 0.803613616808103,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.016137925676039302,
+          "bootstrap_ratio_ci_high": 0.8031190150651872,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.3743911883444848,
+      "same_sample_calibration_pair": false,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "empirical_fallback_only"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 512,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.12521940109706364,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.007977153414794077,
+          "bootstrap_ratio_ci_high": 0.5184356095064007,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.008251139315803997,
+          "bootstrap_ratio_ci_high": 0.5181616236053908,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.12494541519605377,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 1024,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.022573706423148005,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.006346746505215046,
+          "bootstrap_ratio_ci_high": 0.5413397336529825,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.006404220570058919,
+          "bootstrap_ratio_ci_high": 0.541285133291381,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.022516232358304022,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 2048,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.06867993285678445,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.00793857961334254,
+          "bootstrap_ratio_ci_high": 0.5530885702037485,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.007775172189396432,
+          "bootstrap_ratio_ci_high": 0.5529333331509996,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.06851652543283834,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 4096,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.06684437241451131,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.02282690980534591,
+          "bootstrap_ratio_ci_high": 0.7073900639115679,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.022753675541490784,
+          "bootstrap_ratio_ci_high": 0.7068700095453637,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.06632431804830717,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 8192,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.7038225741298629,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.042484291145609324,
+          "bootstrap_ratio_ci_high": 1.6139037807418117,
+          "bootstrap_fail_fraction": 0.3,
+          "verdict": "interval_crosses_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.042156172388372486,
+          "bootstrap_ratio_ci_high": 1.612701357984951,
+          "bootstrap_fail_fraction": 0.3,
+          "verdict": "interval_crosses_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.7026201513730017,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_crosses_threshold;learned:interval_crosses_threshold",
+      "c3_interpretation": "inconclusive_sampling"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.37471006877877266,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.023777121458050637,
+          "bootstrap_ratio_ci_high": 0.802086718219675,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.024236013109171763,
+          "bootstrap_ratio_ci_high": 0.8016036743763897,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.37422702493548704,
+      "same_sample_calibration_pair": false,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "empirical_fallback_only"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.12803641534949514,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.008574064001742458,
+          "bootstrap_ratio_ci_high": 0.5085390813897382,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.008325329530497525,
+          "bootstrap_ratio_ci_high": 0.508277255630533,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.12777458959029003,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.02564241805726555,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.005915849644128549,
+          "bootstrap_ratio_ci_high": 0.5343313329184954,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.0058732788534883494,
+          "bootstrap_ratio_ci_high": 0.5342887621278553,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.025597606698696856,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.05913499971984606,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.005278853205468001,
+          "bootstrap_ratio_ci_high": 0.537331079275974,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.005102178462472232,
+          "bootstrap_ratio_ci_high": 0.5371632382701279,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.058958324976850315,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.0657515837568724,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.015092566213069607,
+          "bootstrap_ratio_ci_high": 0.6962741732131735,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.015600814124629016,
+          "bootstrap_ratio_ci_high": 0.695739175411532,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.06521658595523086,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.6881442737035895,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.05199948307058076,
+          "bootstrap_ratio_ci_high": 1.5864095458062546,
+          "bootstrap_fail_fraction": 0.28,
+          "verdict": "interval_crosses_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.05316023876060012,
+          "bootstrap_ratio_ci_high": 1.5851876977114974,
+          "bootstrap_fail_fraction": 0.28,
+          "verdict": "interval_crosses_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.6869224256088323,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_crosses_threshold;learned:interval_crosses_threshold",
+      "c3_interpretation": "inconclusive_sampling"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 0.6012615509852458,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 0.5858773018594114,
+      "same_sample_calibration_pair": false,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 3.3069207372925793,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 3.3220101650184133,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 3.5811963113536303,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 3.596124352177317,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 11.264830274089823,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 11.280229353754445,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 1.2784840282276206,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 1.2945326478163182,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P001",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 14.786383354716412,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 14.802629156203684,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.028247038002611982,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.007033394356730364,
+          "bootstrap_ratio_ci_high": 0.31577333344759656,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.006509001055881248,
+          "bootstrap_ratio_ci_high": 0.3163095201914741,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.02878322474648977,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 512,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.03974501571949812,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.0023942107656083358,
+          "bootstrap_ratio_ci_high": 0.39911776488473805,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.002409159101038955,
+          "bootstrap_ratio_ci_high": 0.39961341720332905,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.040240668038089095,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 1024,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.7986933801933132,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.14557497834346309,
+          "bootstrap_ratio_ci_high": 1.5671747809528134,
+          "bootstrap_fail_fraction": 0.37,
+          "verdict": "interval_crosses_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.1434115156107065,
+          "bootstrap_ratio_ci_high": 1.565011318220057,
+          "bootstrap_fail_fraction": 0.365,
+          "verdict": "interval_crosses_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.7965299174605566,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_crosses_threshold;learned:interval_crosses_threshold",
+      "c3_interpretation": "inconclusive_sampling"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 2048,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 1.8096820298265985,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.3151115256094385,
+          "bootstrap_ratio_ci_high": 3.6339933596654883,
+          "bootstrap_fail_fraction": 0.86,
+          "verdict": "interval_crosses_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.3106236018299757,
+          "bootstrap_ratio_ci_high": 3.629269229371317,
+          "bootstrap_fail_fraction": 0.85,
+          "verdict": "interval_crosses_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 1.8049578995324276,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_crosses_threshold;learned:interval_crosses_threshold",
+      "c3_interpretation": "inconclusive_sampling"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 0.51102453724737,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 0.5020839761569674,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 8.210815812265071,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 8.22778112690223,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.02635274335442465,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.0073765810183300685,
+          "bootstrap_ratio_ci_high": 0.30634413503249364,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.007884181741178572,
+          "bootstrap_ratio_ci_high": 0.30685173575534214,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.026860344077273172,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.039073374729421316,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.001378834098838368,
+          "bootstrap_ratio_ci_high": 0.3896395961068258,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.0019163576051486769,
+          "bootstrap_ratio_ci_high": 0.3901771196131361,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.039610898235731655,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.7839983892958817,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.13131740549511603,
+          "bootstrap_ratio_ci_high": 1.5420329079978143,
+          "bootstrap_fail_fraction": 0.35,
+          "verdict": "interval_crosses_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.12908388195581133,
+          "bootstrap_ratio_ci_high": 1.5397993844585098,
+          "bootstrap_fail_fraction": 0.35,
+          "verdict": "interval_crosses_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.7817648657565771,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_crosses_threshold;learned:interval_crosses_threshold",
+      "c3_interpretation": "inconclusive_sampling"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 1.71350441798332,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.32788737500220494,
+          "bootstrap_ratio_ci_high": 3.5057561329661158,
+          "bootstrap_fail_fraction": 0.815,
+          "verdict": "interval_crosses_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.3230369676987942,
+          "bootstrap_ratio_ci_high": 3.5009057256627054,
+          "bootstrap_fail_fraction": 0.81,
+          "verdict": "interval_crosses_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 1.7086540106799093,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_crosses_threshold;learned:interval_crosses_threshold",
+      "c3_interpretation": "inconclusive_sampling"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 0.4688447180963446,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 0.4596766700125637,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 8.414019724039518,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 8.431411279532261,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 18.609808830065933,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 18.890751719459143,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 1.0372286648265396,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 0.9755395700319667,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 9.816545911117899,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 9.85737655610922,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 28.565771011376157,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 28.59617645885787,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 6.205721165255339,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 6.227493619065942,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P002",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 5.76904515396249,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 5.7814040184081295,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "fail",
+      "true_vs_sigmahat_ratio": 2.1076753489134084,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.229967638700446,
+          "bootstrap_ratio_ci_high": 4.485876840008509,
+          "bootstrap_fail_fraction": 0.83,
+          "verdict": "interval_crosses_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.22805144594160767,
+          "bootstrap_ratio_ci_high": 4.4878938850178125,
+          "bootstrap_fail_fraction": 0.83,
+          "verdict": "interval_crosses_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 2.109692393922712,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_crosses_threshold;learned:interval_crosses_threshold",
+      "c3_interpretation": "inconclusive_sampling"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 512,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 1.8173696575131282,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 1.8214795091130151,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 1024,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 0.6404720560481426,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 0.648481595504165,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 2048,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 0.8912451334625782,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 0.9005179450771192,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 3.9606051209548736e-10,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 3.9660710321502315e-10,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 1.988356381396355e-31,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 2.0017856620201e-31,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "fail",
+      "true_vs_sigmahat_ratio": 2.104221301382281,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.2361824176204834,
+          "bootstrap_ratio_ci_high": 4.504439250252663,
+          "bootstrap_fail_fraction": 0.835,
+          "verdict": "interval_crosses_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.2342296920745341,
+          "bootstrap_ratio_ci_high": 4.506494750827346,
+          "bootstrap_fail_fraction": 0.835,
+          "verdict": "interval_crosses_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 2.1062768019569647,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_crosses_threshold;learned:interval_crosses_threshold",
+      "c3_interpretation": "inconclusive_sampling"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 1.8237563242390593,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 1.8279360191115557,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 0.7185079614099765,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 0.7266511698673168,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 0.7411641593355681,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 0.7505588416633058,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 3.854165338501748e-10,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 3.8596842174829136e-10,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 1.780337952497115e-31,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 1.7938051233233127e-31,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 13.407527058797998,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 13.283737442983384,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 5.673465089144039,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 5.751273464333347,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 43.47318108031002,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 43.5407345516486,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 0.15008097412701008,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 0.14995910341381347,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 1.0643978245312515e-11,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 1.063868146673177e-11,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P003",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 2.0801842889924017e-32,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 2.0798053869678726e-32,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.14702680205874483,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.007462664896328991,
+          "bootstrap_ratio_ci_high": 0.6413508665525269,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.007040879013753657,
+          "bootstrap_ratio_ci_high": 0.6409068814129739,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.14658281691919187,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 512,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.32457603751253483,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.018886967319617826,
+          "bootstrap_ratio_ci_high": 0.8791774818246966,
+          "bootstrap_fail_fraction": 0.015,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.018319810556538536,
+          "bootstrap_ratio_ci_high": 0.8786103250616173,
+          "bootstrap_fail_fraction": 0.015,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.32400888074945566,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 1024,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.35825108041624604,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.011957680827836272,
+          "bootstrap_ratio_ci_high": 0.8562499183094947,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.011320420839637363,
+          "bootstrap_ratio_ci_high": 0.8556126583212958,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.3576138204280473,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 2048,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.031242599722357878,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.01335199503983435,
+          "bootstrap_ratio_ci_high": 0.6051311916090433,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.012933007189322923,
+          "bootstrap_ratio_ci_high": 0.6046901517663997,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.030801559879714238,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 4096,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.012359474094918997,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.014350823329205968,
+          "bootstrap_ratio_ci_high": 0.635549354596968,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.014344218077692357,
+          "bootstrap_ratio_ci_high": 0.6355559598484817,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.012366079346432595,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Accuracy-ZNE",
+      "budget": 8192,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.09027736993976551,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.013896416789436422,
+          "bootstrap_ratio_ci_high": 1.13285395556474,
+          "bootstrap_fail_fraction": 0.045,
+          "verdict": "interval_crosses_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.013167259084963802,
+          "bootstrap_ratio_ci_high": 1.1321247978602673,
+          "bootstrap_fail_fraction": 0.045,
+          "verdict": "interval_crosses_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.09104490436552615,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_crosses_threshold;learned:interval_crosses_threshold",
+      "c3_interpretation": "inconclusive_sampling"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.14063023166629282,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.009062258600296498,
+          "bootstrap_ratio_ci_high": 0.6325084340663791,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.009491498503272579,
+          "bootstrap_ratio_ci_high": 0.6320791941634031,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.14020099176331677,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.32208858987654965,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.019021122338546286,
+          "bootstrap_ratio_ci_high": 0.866273415973073,
+          "bootstrap_fail_fraction": 0.015,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.019560764373730836,
+          "bootstrap_ratio_ci_high": 0.8657211765652252,
+          "bootstrap_fail_fraction": 0.015,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.3215363504687021,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.35030409392762596,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.013815877386217703,
+          "bootstrap_ratio_ci_high": 0.8390208569865566,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.013193371090267924,
+          "bootstrap_ratio_ci_high": 0.8383983506906069,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.3496815876316762,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.02544484967812473,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.011295696004047848,
+          "bootstrap_ratio_ci_high": 0.5819319385698354,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.011720828077408978,
+          "bootstrap_ratio_ci_high": 0.5815068064964742,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.0250197176047636,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.016066225454957003,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.012035668165339538,
+          "bootstrap_ratio_ci_high": 0.6325432820948456,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.012024058862324471,
+          "bootstrap_ratio_ci_high": 0.6325316727918305,
+          "bootstrap_fail_fraction": 0.0,
+          "verdict": "interval_below_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.016054005135993782,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_below_threshold;learned:interval_below_threshold",
+      "c3_interpretation": "no_projected_discrepancy_detected_conditional"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Raw_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": true,
+      "true_vs_sigmahat_status": "pass",
+      "archived_a3_status": "pass",
+      "true_vs_sigmahat_ratio": 0.0842844653295414,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": true,
+      "sampling_intervals_at_C3_tolerance": {
+        "reference": {
+          "bootstrap_ratio_ci_low": 0.022904752882018622,
+          "bootstrap_ratio_ci_high": 1.1069395731712388,
+          "bootstrap_fail_fraction": 0.04,
+          "verdict": "interval_crosses_threshold"
+        },
+        "learned": {
+          "bootstrap_ratio_ci_low": 0.023102056707819917,
+          "bootstrap_ratio_ci_high": 1.1076928566308677,
+          "bootstrap_fail_fraction": 0.04,
+          "verdict": "interval_crosses_threshold"
+        }
+      },
+      "learned_vs_sigmahat_ratio": 0.08507739528704537,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "reference:interval_crosses_threshold;learned:interval_crosses_threshold",
+      "c3_interpretation": "inconclusive_sampling"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 256,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 20.249518073056716,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 20.202734257134367,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 512,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 7.821132070689078,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 7.775607670306853,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 1024,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 28.412487976501374,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 28.359767630926008,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 2048,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 19.829220874625225,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 19.774458474210896,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 4096,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 10.734605272987404,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 10.680017790140688,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    },
+    {
+      "cell": "P004",
+      "pair_id": "Accuracy-ZNE_vs_Decision-ZNE",
+      "budget": 8192,
+      "active_pair": false,
+      "true_vs_sigmahat_status": "fail",
+      "archived_a3_status": "ambiguous",
+      "true_vs_sigmahat_ratio": 13.04204348301986,
+      "validation_scope": "matched-source joint bootstrap; full gradient; C3 tolerance; same-sample calibration",
+      "archived_active_pair": false,
+      "sampling_intervals_at_C3_tolerance": null,
+      "learned_vs_sigmahat_ratio": 12.98792661516502,
+      "same_sample_calibration_pair": true,
+      "sigmahat_audit_verdict": "not_reported",
+      "c3_interpretation": "inactive_pair"
+    }
+  ]
+}

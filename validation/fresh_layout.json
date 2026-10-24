@@ -1,0 +1,13 @@
+{
+  "destination": "C:\\Users\\ASROCK\\Documents\\Codex\\2026-10-22\\te-2\\work\\integration4\\fresh_layout_check",
+  "confirmatory_raw_files": 48,
+  "pilot_files": 4,
+  "cached_receipts_copied": false,
+  "relocated_input_fingerprints": {
+    "confirmatory": "3d02ad747fd41ac27316165f624055d1ed591bf12e5936e5643364d7e6435adb",
+    "e1": "da8c1174af4eec9fc9bc0760d9e62f69d3f6710730cb955da16c502591085e46",
+    "pilot": "982ca7ea2b08fd261bd49443f8585924badf072c14e138628bdfbb67b0d310fc"
+  },
+  "existing_destination_rejected": true,
+  "nested_destination_rejected": true
+}

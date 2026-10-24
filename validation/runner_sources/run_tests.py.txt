@@ -1,0 +1,16 @@
+from pathlib import Path
+import os,subprocess,sys,json
+root=Path(__file__).resolve().parents[2];out=root/'outputs/integracion_reproduccion_parte4_v1'
+env=os.environ.copy();env['PYTHONPATH']=str(out/'code/src')+';'+str(out/'code')
+for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS'):env[key]='1'
+names=['test_e0_executability.py','test_generation_corrections.py','test_a3_pullback_frontier.py',
+    'test_e3_confirmatory_b45.py','test_e3_budget_alignment.py','test_learned_ablation_corrections.py',
+    'test_cdev_learning.py','test_a3_audit_corrections.py','test_a3_gaussianity_sigmahat_audit.py',
+    'test_freeze_configs_b3.py::test_pullback_prediction_spec_fields_match_a3_config',
+    'test_integrated_reproduction.py','test_e3_plot_regression.py','test_e3_summary_ties.py',
+    'test_v21_corrections.py','test_v20_regressions.py','test_gri_risk.py','test_selector_logic.py']
+command=[sys.executable,'-m','pytest',*[str(out/'code/tests'/name) for name in names],'-q']
+r=subprocess.run(command,env=env,capture_output=True,text=True,encoding='utf-8',errors='replace')
+(out/'validation/tests.txt').write_text('COMMAND\n'+' '.join(command)+'\n\n'+r.stdout+r.stderr,encoding='utf-8')
+(out/'validation/test_execution.json').write_text(json.dumps(dict(command=command,exit_code=r.returncode),indent=2),encoding='utf-8')
+print(r.stdout[-3500:]);raise SystemExit(r.returncode)

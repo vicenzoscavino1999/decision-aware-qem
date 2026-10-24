@@ -1,0 +1,9 @@
+{
+  "e1_source": "results/e1/summary.csv",
+  "e3_series_identical_to_previous": true,
+  "e3_sources": [
+    "results/confirmatory/e3_independent_mean_and_failure.csv",
+    "results/confirmatory/e3_pullback_frontier.csv"
+  ],
+  "visual_inspection": "Both PNG figures inspected; labels and intervals visible, no clipping"
+}

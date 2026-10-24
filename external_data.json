@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "name": "datos_E2_v3.zip",
+      "bytes": 4763777177,
+      "sha256": "5f417c4afd27fd64cd11ce697fd78c763fbbb18f1c3881aff5c14a2ab0698882",
+      "purpose": "Replay all 25,600 original E2 round files; optional for the main analysis reproduction",
+      "download_url": "https://zenodo.org/records/23607497/files/datos_E2_v3.zip?download=1",
+      "publication_status": "Archived on Zenodo",
+      "doi": "10.5281/zenodo.23607497"
+    }
+  ]
+}

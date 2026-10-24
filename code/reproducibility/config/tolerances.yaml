@@ -1,0 +1,47 @@
+level1:
+  numeric_abs:
+    value: 0.000000000001
+    justification: deterministic synthetic Level 1 outputs should match to CSV round-trip precision.
+  integer_abs:
+    value: 0
+    justification: row keys, budgets, and counts are exact in deterministic fixtures.
+
+level2:
+  numeric_abs:
+    value: 0.000001
+    justification: Approximate multivariate Gaussian CDF integration; corrected Linux/Windows calibration observed at most 6.49e-7, with identical decisions and zero drift over three Linux repeats.
+  integer_abs:
+    value: 0
+    justification: discrete budgets and row identities are not tolerance-based.
+
+level3:
+  numeric_abs:
+    value: 0.000000000001
+    justification: hardware post-processing is deterministic once raw counts and calibration snapshots are frozen.
+  integer_abs:
+    value: 0
+    justification: raw-count derived keys and budgets are exact after archival.
+
+verdict_fields:
+  hard_fail_on_flip: true
+  justification: any pass/fail or claim-verdict change is a hard reproducibility failure.
+
+release_comparison:
+  regular_abs:
+    value: 0.0000000001
+    justification: Floating covariance and projection arithmetic; empirical errors are below this bound. Integer, string and boolean fields remain exact.
+  relative:
+    value: 0.00000001
+    justification: Relative floating-point arithmetic allowance; never applies to discrete labels or decisions.
+  cdf_abs:
+    value: 0.000001
+    justification: Existing Level 2 bound, confirmed by 192 fixed FakeKolkata scores repeated three times on Linux and compared with Windows; only approximate CDF risk fields use this bound.
+  derivative_abs:
+    value: 0.000000001
+    justification: Covariance gradients and fitted gap maps amplify platform roundoff; largest observed absolute difference is 2.41e-10.
+  difference_of_risks_abs:
+    value: 0.000002
+    justification: Triangle inequality for the difference of two CDF risks; the half-difference threshold uses cdf_abs.
+  ratio_rule:
+    value: compare_numerators_and_denominators
+    justification: Inactive denominators can approach 1e-12. Independently validate the ratio equation, compare unscaled physical numerators tightly, compare risk denominators at their CDF bound, and require identical classifications.

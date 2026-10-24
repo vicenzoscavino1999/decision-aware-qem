@@ -1,0 +1,23 @@
+{
+  "confirmatory": {
+    "fingerprint": "3d02ad747fd41ac27316165f624055d1ed591bf12e5936e5643364d7e6435adb",
+    "verified_outputs": 244,
+    "original_seconds": 449.09318999998504
+  },
+  "e1": {
+    "fingerprint": "da8c1174af4eec9fc9bc0760d9e62f69d3f6710730cb955da16c502591085e46",
+    "verified_outputs": 52,
+    "original_seconds": 96.09610639998573
+  },
+  "pilot": {
+    "fingerprint": "982ca7ea2b08fd261bd49443f8585924badf072c14e138628bdfbb67b0d310fc",
+    "verified_outputs": 152,
+    "original_seconds": 376.84703099998296
+  },
+  "c3": {
+    "fingerprint": "5a03988c8bd583b17ad63ba1c38f253df6968bafc90239fafe5d62e9f92c1f8d",
+    "verified_outputs": 6,
+    "original_seconds": 34.784196799999336
+  },
+  "cache_validation_seconds": 0.6321486000088044
+}

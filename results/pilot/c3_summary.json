@@ -1,0 +1,10 @@
+{
+  "active": 34,
+  "interpretations": {
+    "empirical_fallback_only": 2,
+    "inactive_pair": 38,
+    "inconclusive_sampling": 10,
+    "no_projected_discrepancy_detected_conditional": 22
+  },
+  "active_changes": 0
+}

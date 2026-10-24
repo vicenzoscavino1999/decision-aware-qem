@@ -1,0 +1,16 @@
+........................................................................ [ 23%]
+........................................................................ [ 46%]
+........................................................................ [ 69%]
+........................................................................ [ 92%]
+.......................                                                  [100%]
+============================== warnings summary ===============================
+tests/test_generation_corrections.py: 3 warnings
+tests/test_learned_ablation_corrections.py: 4 warnings
+tests/test_hardware_corrections.py: 284 warnings
+tests/test_aux_cdr_pec_corrections.py: 8 warnings
+tests/test_cdr.py: 24 warnings
+  C:\Users\ASROCK\Documents\Codex\2026-10-22\te-2\work\reproduction_clean_env\Lib\site-packages\stevedore\extension.py:338: DeprecationWarning: Since backends now support running jobs that contain both fractional gates and dynamic circuit, IBMFractionalTranslationPlugin is deprecated as of qiskit-ibm-runtime 0.42.0 and will be removed no sooner than 3 months after the release date. Use IBMDynamicFractionalTranslationPlugin instead.
+    obj = plugin(*invoke_args, **invoke_kwds)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+311 passed, 323 warnings in 11.42s

@@ -1,0 +1,58 @@
+[
+  {
+    "instance": "C009",
+    "budget": 256,
+    "pair": "Raw_vs_Accuracy-ZNE",
+    "old_covariance_order": "Raw<Accuracy-ZNE",
+    "old_all40_failure_order": "Raw<Accuracy-ZNE",
+    "method_mean_train_order": "Accuracy-ZNE<Raw",
+    "test_failure_order": "Raw<Accuracy-ZNE",
+    "left_test_failure": 0.2,
+    "right_test_failure": 0.25,
+    "left_predicted_risk": 0.26815025606806075,
+    "right_predicted_risk": 0.24621692050204724,
+    "test_paired_difference": -0.05
+  },
+  {
+    "instance": "C009",
+    "budget": 256,
+    "pair": "Raw_vs_Decision-ZNE",
+    "old_covariance_order": "Raw<Decision-ZNE",
+    "old_all40_failure_order": "tie",
+    "method_mean_train_order": "Decision-ZNE<Raw",
+    "test_failure_order": "Raw<Decision-ZNE",
+    "left_test_failure": 0.2,
+    "right_test_failure": 0.25,
+    "left_predicted_risk": 0.26815025606806075,
+    "right_predicted_risk": 0.24208756092055073,
+    "test_paired_difference": -0.05
+  },
+  {
+    "instance": "C009",
+    "budget": 512,
+    "pair": "Raw_vs_Accuracy-ZNE",
+    "old_covariance_order": "Raw<Accuracy-ZNE",
+    "old_all40_failure_order": "Raw<Accuracy-ZNE",
+    "method_mean_train_order": "Raw<Accuracy-ZNE",
+    "test_failure_order": "Raw<Accuracy-ZNE",
+    "left_test_failure": 0.05,
+    "right_test_failure": 0.15,
+    "left_predicted_risk": 0.18599507063330234,
+    "right_predicted_risk": 0.2146314674497859,
+    "test_paired_difference": -0.1
+  },
+  {
+    "instance": "C009",
+    "budget": 512,
+    "pair": "Raw_vs_Decision-ZNE",
+    "old_covariance_order": "Raw<Decision-ZNE",
+    "old_all40_failure_order": "Raw<Decision-ZNE",
+    "method_mean_train_order": "Raw<Decision-ZNE",
+    "test_failure_order": "Raw<Decision-ZNE",
+    "left_test_failure": 0.05,
+    "right_test_failure": 0.15,
+    "left_predicted_risk": 0.18599507063330234,
+    "right_predicted_risk": 0.20890939912406392,
+    "test_paired_difference": -0.1
+  }
+]

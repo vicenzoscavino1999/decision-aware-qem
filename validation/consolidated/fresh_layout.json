@@ -1,0 +1,13 @@
+{
+  "fingerprints_equal": {
+    "confirmatory": "3d02ad747fd41ac27316165f624055d1ed591bf12e5936e5643364d7e6435adb",
+    "e1": "da8c1174af4eec9fc9bc0760d9e62f69d3f6710730cb955da16c502591085e46",
+    "pilot": "982ca7ea2b08fd261bd49443f8585924badf072c14e138628bdfbb67b0d310fc",
+    "e2": "5dfd9f6565dafbc899b2145562b72026b3a12505b9455c341fefab9459516033",
+    "fakekolkata": "1e9265ea76c96c9a724101ff45fdc9064432732593f6451370554cbc8b4ece89",
+    "hardware": "5f6d80911c6a52850502ad2d3381bcef2ab3e445bdd3137396daaff40e19e5f1"
+  },
+  "imported_evidence_files_verified": 491,
+  "completed_stage_receipts_copied": false,
+  "scope": "Layout and identity smoke test; no duplicate physical or numerical run"
+}

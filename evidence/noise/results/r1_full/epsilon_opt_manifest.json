@@ -1,0 +1,120 @@
+{
+  "rows": [
+    {
+      "difficulty_tercile": "hard",
+      "epsilon_opt_ideal": 0.004838919974819191,
+      "graph_seed": 1049161139,
+      "instance_id": "R1_001",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "hard",
+      "epsilon_opt_ideal": 0.004302558941785008,
+      "graph_seed": 445775445,
+      "instance_id": "R1_002",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "hard",
+      "epsilon_opt_ideal": 0.004087393915358462,
+      "graph_seed": 71449690,
+      "instance_id": "R1_003",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "hard",
+      "epsilon_opt_ideal": 0.006925106487254311,
+      "graph_seed": 1531297052,
+      "instance_id": "R1_004",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "medium",
+      "epsilon_opt_ideal": 0.013476091046384652,
+      "graph_seed": 561349743,
+      "instance_id": "R1_005",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "hard",
+      "epsilon_opt_ideal": 0.005327498885149424,
+      "graph_seed": 1940726924,
+      "instance_id": "R1_006",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "medium",
+      "epsilon_opt_ideal": 0.015003653293208855,
+      "graph_seed": 311678983,
+      "instance_id": "R1_007",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "medium",
+      "epsilon_opt_ideal": 0.018722959595934584,
+      "graph_seed": 4110310,
+      "instance_id": "R1_008",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "easy",
+      "epsilon_opt_ideal": 0.034331754439173634,
+      "graph_seed": 1299207260,
+      "instance_id": "R1_009",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "easy",
+      "epsilon_opt_ideal": 0.07001441989878315,
+      "graph_seed": 465277867,
+      "instance_id": "R1_010",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "easy",
+      "epsilon_opt_ideal": 0.045310246179921305,
+      "graph_seed": 1901823764,
+      "instance_id": "R1_011",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "hard",
+      "epsilon_opt_ideal": 0.0017508008777186034,
+      "graph_seed": 890175076,
+      "instance_id": "R1_012",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "easy",
+      "epsilon_opt_ideal": 0.06739114076569691,
+      "graph_seed": 1900578261,
+      "instance_id": "R1_013",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "easy",
+      "epsilon_opt_ideal": 0.04814029089924219,
+      "graph_seed": 1880966117,
+      "instance_id": "R1_014",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "medium",
+      "epsilon_opt_ideal": 0.00994983493891766,
+      "graph_seed": 1821576534,
+      "instance_id": "R1_015",
+      "x_star": 0
+    },
+    {
+      "difficulty_tercile": "medium",
+      "epsilon_opt_ideal": 0.014328846477795452,
+      "graph_seed": 959989367,
+      "instance_id": "R1_016",
+      "x_star": 0
+    }
+  ],
+  "tercile_bounds": {
+    "hard_medium": 0.006925106487254311,
+    "medium_easy": 0.018722959595934584
+  }
+}

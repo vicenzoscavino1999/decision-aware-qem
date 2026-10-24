@@ -1,0 +1,12 @@
+{
+  "version": "1.2.0",
+  "git_tag": "v1.2.0",
+  "manuscript_revision": "v45",
+  "manuscript_pdf": "decision_residual_fields_theory_v45.pdf",
+  "title": "Accuracy, Decision Risk, and Sampling Cost in Quantum Error Mitigation",
+  "entrypoint": "reproduce.py",
+  "canonical_environment": "Linux amd64 / Python 3.12.10 / pinned Docker",
+  "scope": "Reported analyses recomputed from archived inputs, with signed-PEC and E1-partition checks",
+  "full_fresh_simulation_campaigns": false,
+  "hardware": "Archived counts; no new hardware jobs"
+}

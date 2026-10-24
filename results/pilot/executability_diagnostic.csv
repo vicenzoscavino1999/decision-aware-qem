@@ -1,0 +1,6 @@
+block,acquisition_circuits,estimated_shots,wall_hours_proxy,timing_status,proxy_exceeds_ceiling,decision
+E1_static,144000,1179648000,9.268228720012122,single_worker_QAOA_proxy,False,conditional
+E2_dynamic,384000,3145728000,24.715276586698987,single_worker_QAOA_proxy,False,conditional
+Pilot_shared,60000,491520000,3.861761966671717,single_worker_QAOA_proxy,False,conditional
+Uniform_Cdev,1000,4096000,,not_measured,,conditional
+E3_pullback,0,0,,reuses_E1_raw_analysis_time_not_measured,,conditional

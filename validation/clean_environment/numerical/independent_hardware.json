@@ -1,0 +1,63 @@
+{
+  "counts_records_checked": 1680,
+  "gap_vectors_checked": 180,
+  "gap_max_abs_error": 6.661338147750939e-16,
+  "measured_covariance_max_abs_error": 3.469446951953614e-18,
+  "executed_coefficients_preserved": true,
+  "independent_Pauli_twirl_probability_vectors": 12,
+  "probability_max_abs_error": 1.942890293094024e-16,
+  "ideal_folded_objective_max_abs_error": 3.730349362740526e-14,
+  "covariance_pullback_max_abs_error": 5.204170427930421e-18,
+  "deterministic_risk_integrals": {
+    "Raw": {
+      "quadrature": 2.364935777533362e-10,
+      "reported": 2.364935777533712e-10,
+      "absolute_difference": 3.5000079668649983e-23,
+      "quadrature_error": 3.274506902197433e-15
+    },
+    "Accuracy-ZNE": {
+      "quadrature": 0.011184501040911366,
+      "reported": 0.011184501397944357,
+      "absolute_difference": 3.5703299171296887e-10,
+      "quadrature_error": 4.056775246393311e-15
+    },
+    "DA-ZNE": {
+      "quadrature": 0.011184157275703334,
+      "reported": 0.011184157632782021,
+      "absolute_difference": 3.5707868779877305e-10,
+      "quadrature_error": 4.05599606975156e-15
+    }
+  },
+  "independent_bootstrap_draws": 10000,
+  "projected_checks": [
+    {
+      "pair": [
+        "Raw",
+        "Accuracy-ZNE"
+      ],
+      "independent_projected_error": 0.002253181014596404,
+      "independent_ucb95": 0.006290419084579047
+    },
+    {
+      "pair": [
+        "Raw",
+        "DA-ZNE"
+      ],
+      "independent_projected_error": 0.0037676899289308253,
+      "independent_ucb95": 0.011227768962394793
+    },
+    {
+      "pair": [
+        "Accuracy-ZNE",
+        "DA-ZNE"
+      ],
+      "independent_projected_error": 0.00602087094352723,
+      "independent_ucb95": 0.013955256592487112
+    }
+  ],
+  "gradient_scope": "Analytic production gradients already regression-tested; independent contraction/bootstrap and risk integral here",
+  "main_shots": 3780128,
+  "label_unchanged": true,
+  "feasibility_raw_counts_available": false,
+  "new_hardware_jobs": 0
+}

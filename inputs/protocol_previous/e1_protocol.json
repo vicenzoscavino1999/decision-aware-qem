@@ -1,0 +1,32 @@
+{
+  "revision": "v19-retrospective-audit-2026-10-22",
+  "status": "Post hoc methodological reanalysis. Not a new preregistered confirmatory experiment.",
+  "instances": "C001-C048; include all without outcome-based exclusions",
+  "base_shots_per_scale": [512, 1024],
+  "primary_base_shots": 512,
+  "replicate_split": {"fit": 10, "select": 10, "test": 20},
+  "split_rule": "Sort replicate IDs 0..39 by SHA256(v19-e1-independent-2026-10-22|instance_id|replicate_id). First 10 fit, next 10 select, final 20 test. No rerandomization.",
+  "method_menu": ["Raw", "Accuracy-ZNE", "Decision-ZNE"],
+  "coefficients": "Richardson order 1 at scales 1,2,3. Accuracy-ZNE minimum norm. Decision-ZNE fitted only on fit replicas, using covariance of primitive gaps and known ideal gaps as tuning references, not certified effective margins.",
+  "oracle_scope": "Ideal landscape and optimum are available to tuning and MSE selection. This is an oracle-assisted simulation audit, not an operational unknown-ground-truth algorithm.",
+  "selection": "Fit coefficients on fit only. Estimate MSE and Gaussian gap risk on select only. Use Ledoit-Wolf covariance for GRI, including when repetitions < gap dimension. Freeze selections before evaluating test outcomes.",
+  "risk_integration": "SciPy multivariate_normal CDF; deterministic seed; maxpts=1000000, abseps=releps=1e-6. Ties lexicographic. This is a numerical plug-in score, not a risk certificate.",
+  "exact_blocks": {
+    "zne_eval": "First t shots at each of 3 scales: 3t per candidate.",
+    "raw_eval": "Scale 1 shots (t,4t]: reconstructed as (4t*mean(4t)-t*mean(t))/(3t).",
+    "raw_total_matched": "Scale 1 shots (t/2,8t]: 7.5t per candidate.",
+    "accuracy_zne_total_matched": "At each scale combine disjoint blocks (t/2,t] and (2t,4t]: 2.5t per scale, total 7.5t per candidate.",
+    "decision_zne_total_matched": "First 2t shots at each scale: 6t per candidate; use same coefficients fitted on fit replicas."
+  },
+  "budget_accounting": {
+    "evaluation_matched": "All methods use 3t shots per candidate per test decision. Fit and selection overhead are additional and must be reported.",
+    "end_to_end_matched": "For each instance and 20 test decisions: each selector pays 10*3t fit + 10*6t selection + 20*3t evaluation = 150t shots per candidate. Always-Raw and fixed Accuracy-ZNE each use 20*7.5t=150t. Fixed Decision-ZNE pays 10*3t fit + 20*6t evaluation=150t.",
+    "selection_acquisition": "Union of all candidate-method records costs 4t on scale 1 and t on each other scale = 6t, not 9t; shared records counted once.",
+    "amortization": "Pilot costs amortized over 20 independent decisions on the same fixed landscape. No single-decision or cross-landscape transfer advantage is claimed.",
+    "excluded_costs": "Classical ideal simulation, transpilation, computation and storage are not shot costs. Oracle cost is not claimed physically implementable. Quantum noise-learning or hardware calibration not used by this audit."
+  },
+  "inference": "Report paired failure differences with 95% percentile bootstrap intervals resampling all 48 instance clusters, 10000 draws. Descriptive post hoc intervals; no confirmatory p-values or threshold-pass claims. No optional stopping or selection of favorable budgets.",
+  "primary_comparisons": ["GRI-selector versus always-Raw at equal end-to-end cost", "GRI-selector versus MSE-selector at equal end-to-end cost"],
+  "secondary": "Evaluation-matched contrasts and individual method baselines; larger budget is sensitivity, not an independently powered confirmation.",
+  "historical_record": "v18 source, 52-file freeze, original results and v1.1.0 archive are preserved. This additive package has its own source/input hashes."
+}

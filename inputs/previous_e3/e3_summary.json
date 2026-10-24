@@ -1,0 +1,16 @@
+{
+  "active_pairs": 502,
+  "old_covariance_score_vs_all40_actual_failure": {
+    "match": 302,
+    "ties": 67,
+    "reversal": 133,
+    "prediction_only_ties": 0
+  },
+  "new_method_mean_train_vs_independent_test": {
+    "match": 310,
+    "ties": 98,
+    "reversal": 94,
+    "prediction_only_ties": 0
+  },
+  "scope": "descriptive pairs selected by historical covariance endpoint; 20 train/20 test; 48 dependent instance clusters; no independent significance claim"
+}
