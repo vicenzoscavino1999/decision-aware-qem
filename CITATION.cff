@@ -3,7 +3,8 @@ message: "Please cite the manuscript and the version of this reproduction packag
 type: software
 title: "Code and data for: Accuracy, Decision Risk, and Sampling Cost in Quantum Error Mitigation"
 authors:
-  - family-names: Scavino
+  - family-names: Scavino Alfaro
+    email: "vicenzoscavino@hotmail.com"
     given-names: Vicenzo
     affiliation: Independent Researcher
     orcid: "https://orcid.org/0009-0000-2472-9785"

@@ -2,6 +2,10 @@
 
 Code, measurement records and analyses for manuscript **v45**, packaged as software version **1.2.0**. The [article](decision_residual_fields_theory_v45.pdf) and [LaTeX sources](manuscript/main.tex) are included.
 
+Author: **Vicenzo Scavino Alfaro** · Contact: **vicenzoscavino@hotmail.com**.
+
+The [current manuscript (v47)](https://github.com/vicenzoscavino1999/decision-aware-qem/releases/download/v1.2.0/decision_residual_fields_theory_v47.pdf) standardizes the author name and email and includes the published DOI links. Its scientific content matches the v45 manuscript archived with this code release.
+
 The main command recalculates the reported analyses from archived inputs, runs the numerical tests, regenerates five empirical figures, replays signed-PEC and E1-partition decisions, and checks their correspondence with the article. Hardware analysis uses the included counts.
 
 **[Guía completa en español](docs/REPRODUCIR_ES.md)** · [Methods](docs/METHODS.md) · [Results map](docs/RESULTS.md) · [Optional runs and compilation](docs/OPTIONAL.md)

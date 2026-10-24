@@ -5,7 +5,7 @@
   "description": "Code, archived measurement records and reproducible analyses relating estimation accuracy, candidate-selection risk and sampling cost in quantum error mitigation. The package includes the v45 manuscript, signed-PEC controls and E1 partition sensitivity. The separate E2 shot archive supports replay from individual measurement rounds.",
   "creators": [
     {
-      "name": "Scavino, Vicenzo",
+      "name": "Scavino Alfaro, Vicenzo",
       "affiliation": "Independent Researcher",
       "orcid": "0009-0000-2472-9785"
     }
@@ -18,7 +18,7 @@
     "QAOA",
     "reproducibility"
   ],
-  "notes": "Code: MIT. Numerical outputs, original figures and measurement data: CC BY 4.0, as specified in LICENSE-DATA.",
+  "notes": "Code: MIT. Numerical outputs, original figures and measurement data: CC BY 4.0, as specified in LICENSE-DATA.\n\nContact: Vicenzo Scavino Alfaro (vicenzoscavino@hotmail.com).",
   "related_identifiers": [
     {
       "identifier": "10.5281/zenodo.23607497",
